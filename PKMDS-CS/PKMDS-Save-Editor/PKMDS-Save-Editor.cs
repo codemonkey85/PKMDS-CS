@@ -21,9 +21,12 @@ namespace PKMDS_Save_Editor
         private void PKMDS_Save_Editor_Load(object sender, EventArgs e)
         {
             PokeList.Clear();
-            PokeList.Add(new Pokemon {HP_IV = 25 });
+            PokeList.Add(new Pokemon { HP_IV = 25 });
             bs.DataSource = PokeList;
             dgData.DataSource = bs;
+
+            int size = System.Runtime.InteropServices.Marshal.SizeOf(typeof(Pokemon));
+            MessageBox.Show(string.Format("Size of Pokemon object: {0} bytes", size));
         }
     }
 }

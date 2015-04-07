@@ -59,72 +59,74 @@ namespace PKMDS_CS
         private Forms forms;
         [FieldOffset(0x1E)]
         [MarshalAsAttribute(UnmanagedType.ByValArray, SizeConst = 6)]
-        private Forms efforts;
+        private byte[] efforts;
         [FieldOffset(0x24)]
         [MarshalAsAttribute(UnmanagedType.ByValArray, SizeConst = 6)]
-        private Forms contests;
+        private byte[] contests;
         [FieldOffset(0x2A)]
-        [MarshalAsAttribute(UnmanagedType.ByValArray, SizeConst = 6)]
-        private Forms pokerus;
+        [MarshalAsAttribute(UnmanagedType.U1)]
+        private byte pokerus;
+
+
 
         /*
          0x1E	HP Effort Value
-0x1F	Attack Effort Value
-0x20	Defense Effort Value
-0x21	Speed Effort Value
-0x22	SP Attack Effort Value
-0x23	SP Defense Effort Value
-0x24	Contest Stat: Cool
-0x25	Contest Stat: Beauty
-0x26	Contest Stat: Cute
-0x27	Contest Stat: Smart
-0x28	Contest Stat: Tough
-0x29	Contest Stat: Sheen
-0x2A	Markings
-0x2B	Pokérus
-0x2C-0x2F	(Secret) Super Training
-Gold Medal Flags
-0x30-0x35	Ribbons
-0x36-0x37	Unused
-0x38	Contest Memory Ribbon [Count]
-0x39	Battle Memory Ribbon [Count]
-0x3A	Distribution Super Training Flags
-0x3B-0x3F	Unused
+         1F	Attack Effort Value
+         20	Defense Effort Value
+         21	Speed Effort Value
+         22	SP Attack Effort Value
+         23	SP Defense Effort Value
+         24	Contest Stat: Cool
+         25	Contest Stat: Beauty
+         26	Contest Stat: Cute
+         27	Contest Stat: Smart
+         28	Contest Stat: Tough
+         29	Contest Stat: Sheen
+         2A	Markings
+         2B	Pokérus
+         2C-0x2F	(Secret) Super Training
+         Gold Medal Flags
+         30-         35	Ribbons
+         36-0x37	Unused
+         38	Contest Memory Ribbon [Count]
+         39	Battle Memory Ribbon [Count]
+         3A	Distribution Super Training Flags
+         3B-0x3F	Unused
          */
 
         #endregion
         #region Block B
         /*
          Block B (0x40-0x77)[edit]
-Offset	Contents
-0x40-0x57	Nickname
-0x58-0x59	Null Terminator
-0x5A-0x5B	Move 1 ID
-0x5C-0x5D	Move 2 ID
-0x5E-0x5F	Move 3 ID
-0x60-0x61	Move 4 ID
-0x62	Move 1 Current PP
-0x63	Move 2 Current PP
-0x64	Move 3 Current PP
-0x65	Move 4 Current PP
-0x66-0x69	Move PP Ups
-0x6A-0x6B	Relearn Move 1 ID
-0x6C-0x6D	Relearn Move 2 ID
-0x6E-0x6F	Relearn Move 3 ID
-0x70-0x71	Relearn Move 4 ID
-0x72	"Secret" Super Training Flag
-0 - Missions Unavailable
-1 - Missions Available
-0x73	Unused
-0x74-0x77	Bits 0-29 - Individual Values
-HP ( [0-31] << 0 )
-Attack ( [0-31] << 5 )
-Defense ( [0-31] << 10 )
-Speed ( [0-31] << 15 )
-SP Attack ( [0-31] << 20 )
-SP Defense ( [0-31] << 25 )
-Bit 30 - IsEgg Flag
-Bit 31 - IsNicknamed Flag
+         Offset	Contents
+         40-0x57	Nickname
+         58-0x59	Null Terminator
+         0x5A-0x5B	Move 1 ID
+         0x5C-0x5D	Move 2 ID
+         0x5E-0x5F	Move 3 ID
+         0x60-0x61	Move 4 ID
+         0x62	Move 1 Current PP
+         0x63	Move 2 Current PP
+         0x64	Move 3 Current PP
+         0x65	Move 4 Current PP
+         0x66-0x69	Move PP Ups
+         0x6A-0x6B	Relearn Move 1 ID
+         0x6C-0x6D	Relearn Move 2 ID
+         0x6E-0x6F	Relearn Move 3 ID
+         0x70-0x71	Relearn Move 4 ID
+         0x72	"Secret" Super Training Flag
+         0 - Missions Unavailable
+         1 - Missions Available
+         0x73	Unused
+         0x74-0x77	Bits 0-29 - Individual Values
+         HP ( [0-31] << 0 )
+         Attack ( [0-31] << 5 )
+         Defense ( [0-31] << 10 )
+         Speed ( [0-31] << 15 )
+         SP Attack ( [0-31] << 20 )
+         SP Defense ( [0-31] << 25 )
+         Bit 30 - IsEgg Flag
+         Bit 31 - IsNicknamed Flag
          */
         [FieldOffset(0x74)]
         [MarshalAsAttribute(UnmanagedType.Struct)]
@@ -133,64 +135,64 @@ Bit 31 - IsNicknamed Flag
         #region Block C
         /*
          Block C (0x78-0xAF)[edit]
-Offset	Contents
-0x78-0x8F	Latest NotOT Handler
-Updates Every Trade
-0x90-0x91	Null Terminator
-0x92	NotOT Gender
-0 - Male
-1 - Female
-0x93	Current Handler
-0 - OT
-1 - NotOT
-0x94-0x95	Geolocation 1 - (Region,Country)
-0x96-0x97	Geolocation 2 - (Region,Country)
-0x98-0x99	Geolocation 3 - (Region,Country)
-0x9A-0x9B	Geolocation 4 - (Region,Country)
-0x9C-0x9D	Geolocation 5 - (Region,Country)
-0x9E-0x9F	Unused
-0xA0-0xA1	Unused
-0xA2	NotOT Friendship
-0xA3	NotOT Affection
-0xA4	NotOT Memory Intensity
-0xA5	NotOT Memory Line
-0xA6	NotOT Memory Feeling
-0xA7	Unused
-0xA8-0xA9	NotOT Memory TextVar
-0xAA-0xAB	Unused
-0xAC-0xAD	Unused
-0xAE	Fullness
-0xAF	Enjoyment
+         Offset	Contents
+         0x78-0x8F	Latest NotOT Handler
+         Updates Every Trade
+         0x90-0x91	Null Terminator
+         0x92	NotOT Gender
+         0 - Male
+         1 - Female
+         0x93	Current Handler
+         0 - OT
+         1 - NotOT
+         0x94-0x95	Geolocation 1 - (Region,Country)
+         0x96-0x97	Geolocation 2 - (Region,Country)
+         0x98-0x99	Geolocation 3 - (Region,Country)
+         0x9A-0x9B	Geolocation 4 - (Region,Country)
+         0x9C-0x9D	Geolocation 5 - (Region,Country)
+         0x9E-0x9F	Unused
+         0xA0-0xA1	Unused
+         0xA2	NotOT Friendship
+         0xA3	NotOT Affection
+         0xA4	NotOT Memory Intensity
+         0xA5	NotOT Memory Line
+         0xA6	NotOT Memory Feeling
+         0xA7	Unused
+         0xA8-0xA9	NotOT Memory TextVar
+         0xAA-0xAB	Unused
+         0xAC-0xAD	Unused
+         0xAE	Fullness
+         0xAF	Enjoyment
          */
 
         #endregion
         #region Block D
         /*
          Block D (0xB0-0xE7)[edit]
-Offset	Contents
-0xB0-0xC7	OT Name
-0xC8-0xC9	Null Terminator
-0xCA	OT Friendship
-0xCB	OT Affection
-0xCC	OT Memory Intensity
-0xCD	OT Memory Line
-0xCE-0xCF	OT Memory TextVar
-0xD0	OT Memory Feeling
-0xD1-0xD3	Date Egg Received
-0xD4-0xD6	Date Met
-0xD7	Unknown / Unused
-0xD8-0xD9	Egg Location
-0xDA-0xDB	Met At Location
-0xDC	Pokéball
-0xDD	Bit 0-6 - Encounter Level
-Bit 7 - Female OT Gender
-0xDE	Encounter Type (Gen 4)
-0xDF	OT Game ID
-0xE0	Country ID
-0xE1	Region ID
-0xE2	3DS Region ID
-0xE3	OT Language ID
-0xE4-0xE7	Unused
+         Offset	Contents
+         0xB0-0xC7	OT Name
+         0xC8-0xC9	Null Terminator
+         0xCA	OT Friendship
+         0xCB	OT Affection
+         0xCC	OT Memory Intensity
+         0xCD	OT Memory Line
+         0xCE-0xCF	OT Memory TextVar
+         0xD0	OT Memory Feeling
+         0xD1-0xD3	Date Egg Received
+         0xD4-0xD6	Date Met
+         0xD7	Unknown / Unused
+         0xD8-0xD9	Egg Location
+         0xDA-0xDB	Met At Location
+         0xDC	Pokéball
+         0xDD	Bit 0-6 - Encounter Level
+         Bit 7 - Female OT Gender
+         0xDE	Encounter Type (Gen 4)
+         0xDF	OT Game ID
+         0xE0	Country ID
+         0xE1	Region ID
+         0xE2	3DS Region ID
+         0xE3	OT Language ID
+         0xE4-0xE7	Unused
          */
 
         #endregion
