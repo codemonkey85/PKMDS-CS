@@ -21,7 +21,7 @@ namespace PKMDS_Save_Editor
         private void PKMDS_Save_Editor_Load(object sender, EventArgs e)
         {
             PokeList.Clear();
-            PokeList.Add(new Pokemon { HP_IV = 25 });
+            PokeList.Add(new Pokemon { /*HP_IV = 25*/ });
             bs.DataSource = PokeList;
             dgData.DataSource = bs;
 

@@ -55,8 +55,9 @@ namespace PKMDS_CS
         [MarshalAsAttribute(UnmanagedType.U1)]
         private byte nature;
         [FieldOffset(0x1D)]
-        [MarshalAsAttribute(UnmanagedType.Struct)]
-        private Forms forms;
+        [MarshalAsAttribute(UnmanagedType.U1)]
+        private byte forms;
+        /*
         [FieldOffset(0x1E)]
         [MarshalAsAttribute(UnmanagedType.ByValArray, SizeConst = 6)]
         private byte[] efforts;
@@ -65,8 +66,19 @@ namespace PKMDS_CS
         private byte[] contests;
         [FieldOffset(0x2A)]
         [MarshalAsAttribute(UnmanagedType.U1)]
+        private byte markings;
+        [FieldOffset(0x2B)]
+        [MarshalAsAttribute(UnmanagedType.U1)]
         private byte pokerus;
-
+        [FieldOffset(0x2C)]
+        [MarshalAsAttribute(UnmanagedType.U4)]
+        private uint supertraininggoldmedals;
+        [FieldOffset(0x30)]
+        [MarshalAsAttribute(UnmanagedType.ByValArray, SizeConst = 6)]
+        private byte[] ribbons;
+        [FieldOffset(0x36)]
+        [MarshalAsAttribute(UnmanagedType.U4)]
+        private ushort unused1;
 
 
         /*
@@ -128,11 +140,13 @@ namespace PKMDS_CS
          Bit 30 - IsEgg Flag
          Bit 31 - IsNicknamed Flag
          */
+        /*
         [FieldOffset(0x74)]
         [MarshalAsAttribute(UnmanagedType.Struct)]
         private IVs ivs;
         #endregion
         #region Block C
+        */
         /*
          Block C (0x78-0xAF)[edit]
          Offset	Contents
@@ -196,6 +210,7 @@ namespace PKMDS_CS
          */
 
         #endregion
+        /*
         [DisplayName("HP IV")]
         public uint HP_IV
         {
@@ -248,6 +263,7 @@ namespace PKMDS_CS
         {
             ivs = new IVs();
         }
+         */
     }
     public enum Gender : byte
     {
@@ -392,30 +408,30 @@ Flag Value	0x35
     {
         public Forms()
         {
-            Data = 0u;
+            Data = 0;
         }
         [FieldOffset(0)]
         [MarshalAsAttribute(UnmanagedType.U1)]
-        internal uint Data;
+        internal byte Data;
         internal bool fateful
         {
             get { return ((Data >> 0) & 0x1F) == 1; }
-            set { Data = (Data & ~(0x1Fu << 0)) | (Convert.ToUInt32(value) & 0x1Fu) << 0; }
+            set { Data = Convert.ToByte((Data & ~(0x1F << 0)) | (Convert.ToByte(value) & 0x1F) << 0); }
         }
         internal bool female
         {
             get { return ((Data >> 1) & 0x1F) == 1; }
-            set { Data = (Data & ~(0x1Fu << 1)) | (Convert.ToUInt32(value) & 0x1Fu) << 1; }
+            set { Data = Convert.ToByte((Data & ~(0x1F << 1)) | (Convert.ToByte(value) & 0x1F) << 1); }
         }
         internal bool genderless
         {
             get { return ((Data >> 2) & 0x1F) == 1; }
-            set { Data = (Data & ~(0x1Fu << 2)) | (Convert.ToUInt32(value) & 0x1Fu) << 2; }
+            set { Data = Convert.ToByte((Data & ~(0x1F << 2)) | (Convert.ToByte(value) & 0x1F) << 2); }
         }
-        internal uint alternateforms
+        internal byte alternateforms
         {
-            get { return (Data >> 3) & 0x1F; }
-            set { Data = (Data & ~(0x1Fu << 3)) | (value & 0x1Fu) << 3; }
+            get { return Convert.ToByte((Data >> 3) & 0x1F); }
+            set { Data = Convert.ToByte((Data & ~(0x1F << 3)) | (value & 0x1F) << 3); }
         }
     }
 }
