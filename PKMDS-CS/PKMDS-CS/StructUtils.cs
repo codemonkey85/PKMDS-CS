@@ -1,15 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
+﻿#region Using
+
+using System;
 using System.IO;
-using System.Linq;
 using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
+
+#endregion Using
+
 namespace PKMDS_CS
 {
     public class StructUtils
     {
-        static public TType RawDeserialize<TType>(byte[] rawData, int position = 0)
+        public static TType RawDeserialize<TType>(byte[] rawData, int position = 0)
         {
             Type anyType = typeof(TType);
             int rawsize = Marshal.SizeOf(anyType);
@@ -20,7 +21,8 @@ namespace PKMDS_CS
             Marshal.FreeHGlobal(buffer);
             return (TType)retobj;
         }
-        static public TType RawDeserialize<TType>(string fileName)
+
+        public static TType RawDeserialize<TType>(string fileName)
         {
             if (File.Exists(fileName))
             {
@@ -36,16 +38,15 @@ namespace PKMDS_CS
                 }
                 return RawDeserialize<TType>(data, 0);
             }
-            else
-            {
-                return default(TType);
-            }
+            return default(TType);
         }
-        static public void RawSerialize<TType>(byte[] rawData, int position, TType value)
+
+        public static void RawSerialize<TType>(byte[] rawData, int position, TType value)
         {
             var Data = RawSerialize(value);
             Array.Copy(Data, 0, rawData, position, Data.Length);
         }
+
         public static void RawSerialize(object anything, string fileName)
         {
             if (anything == null || string.IsNullOrEmpty(fileName))
@@ -66,6 +67,7 @@ namespace PKMDS_CS
                 }
             }
         }
+
         public static byte[] RawSerialize(object anything)
         {
             int rawSize = Marshal.SizeOf(anything);

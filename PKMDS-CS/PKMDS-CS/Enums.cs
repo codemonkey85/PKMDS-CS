@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-namespace PKMDS_CS
+﻿namespace PKMDS_CS
 {
     public enum Species : ushort
     {
@@ -730,6 +725,7 @@ namespace PKMDS_CS
         Hoopa,
         Volcanion
     }
+
     public enum Moves : ushort
     {
         NOTHING = 0,
@@ -1355,6 +1351,7 @@ namespace PKMDS_CS
         Dragon_Ascent = 620,
         Hyperspace_Fury = 621
     }
+
     public enum Items : ushort
     {
         NOTHING = 0x0000,
@@ -2117,6 +2114,7 @@ namespace PKMDS_CS
         Meteorite_Shard = 0x0306,
         Eon_Flute = 0x0307
     }
+
     public enum Abilities : byte
     {
         Stench = 1,
@@ -2311,6 +2309,7 @@ namespace PKMDS_CS
         Desolate_Land = 190,
         Delta_Stream = 191
     }
+
     public enum PokemonColors
     {
         Black = 0x5A5A5A,
@@ -2324,6 +2323,7 @@ namespace PKMDS_CS
         White = 0xF7F7F7,
         Yellow = 0xF7D64A
     }
+
     public enum SpindaSpots
     {
         TopLeft,
@@ -2331,22 +2331,26 @@ namespace PKMDS_CS
         BottomLeft,
         BottomRight
     }
+
     public enum SpindaColorsBase : uint
     {
         BaseLight = 0xffe6d6a5,
         BaseShaded = 0xffcea573
     }
+
     public enum SpindaColorsNormalSpot : uint
     {
         NormalSpotLight = 0xffef524a,
         NormalSpotShaded = 0xffbd4a31
     }
+
     public enum SpindaColorsShinySpot : uint
     {
         ShinySpotLight = 0xffa5ce10,
         ShinyShaded = 0xff7b9c00
     }
-    public enum Markings : int
+
+    public enum Markings
     {
         Circle,
         Triangle,
@@ -2355,13 +2359,15 @@ namespace PKMDS_CS
         Star,
         Diamond
     }
-    public enum Genders : int
+
+    public enum Genders
     {
         Male,
         Female,
         Genderless
     }
-    public enum NatureStats : int
+
+    public enum NatureStats
     {
         HP = 1,
         Attack,
@@ -2370,7 +2376,8 @@ namespace PKMDS_CS
         SpecialDefense,
         Speed
     }
-    public enum Stats : int
+
+    public enum Stats
     {
         HP,
         Attack,
@@ -2379,12 +2386,14 @@ namespace PKMDS_CS
         SpecialDefense,
         Speed
     }
-    public enum NatureEffect : int
+
+    public enum NatureEffect
     {
         Increase,
         Decrease,
         NoEffect
     }
+
     /*
 Value	Language
 0x1	日本語 (Japan)
@@ -2394,7 +2403,7 @@ Value	Language
 0x5	Deutsch (Germany)
 0x7	Español (Spain/Latin Americas)
 0x8	한국어 (South Korea)
-     
+
      Markings[edit]
 Bit	Marking
 0x01	Circle
