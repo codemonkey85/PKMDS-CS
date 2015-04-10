@@ -1,11 +1,12 @@
 ﻿#region Using
 
-using PKMDS_CS;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Windows.Forms;
+using PKMDS_CS;
 
-#endregion Using
+#endregion
 
 namespace PKMDS_Save_Editor
 {
@@ -28,6 +29,16 @@ namespace PKMDS_Save_Editor
             PokeList.Add(StructUtils.RawDeserialize<Pokemon>(charizard));
             PokeList.Add(StructUtils.RawDeserialize<Pokemon>(jynx));
             PokeList.Add(StructUtils.RawDeserialize<Pokemon>(mewtwo));
+
+            //PokeList[0].Species = Species.Farfetchd;
+
+            Pokemon pkm = new Pokemon();
+            Debug.WriteLine(pkm.Species.EnumToString());
+            foreach (Pokemon pokemon in PokeList)
+            {
+                Debug.WriteLine(pokemon.Species.EnumToString());
+            }
+
             bs.DataSource = PokeList;
             dgData.DataSource = bs;
         }
