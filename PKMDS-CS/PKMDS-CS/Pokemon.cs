@@ -57,13 +57,42 @@ namespace PKMDS_CS
         [FieldOffset(0x1D)]
         [MarshalAsAttribute(UnmanagedType.U1)]
         private byte forms;
-        /*
         [FieldOffset(0x1E)]
-        [MarshalAsAttribute(UnmanagedType.ByValArray, SizeConst = 6)]
-        private byte[] efforts;
+        [MarshalAsAttribute(UnmanagedType.U1)]
+        private byte hp_effort;
+        [FieldOffset(0x1F)]
+        [MarshalAsAttribute(UnmanagedType.U1)]
+        private byte attack_effort;
+        [FieldOffset(0x20)]
+        [MarshalAsAttribute(UnmanagedType.U1)]
+        private byte defense_effort;
+        [FieldOffset(0x21)]
+        [MarshalAsAttribute(UnmanagedType.U1)]
+        private byte speed_effort;
+        [FieldOffset(0x22)]
+        [MarshalAsAttribute(UnmanagedType.U1)]
+        private byte spattack_effort;
+        [FieldOffset(0x23)]
+        [MarshalAsAttribute(UnmanagedType.U1)]
+        private byte spdefense_effort;
         [FieldOffset(0x24)]
-        [MarshalAsAttribute(UnmanagedType.ByValArray, SizeConst = 6)]
-        private byte[] contests;
+        [MarshalAsAttribute(UnmanagedType.U1)]
+        private byte cool;
+        [FieldOffset(0x25)]
+        [MarshalAsAttribute(UnmanagedType.U1)]
+        private byte beauty;
+        [FieldOffset(0x26)]
+        [MarshalAsAttribute(UnmanagedType.U1)]
+        private byte cute;
+        [FieldOffset(0x27)]
+        [MarshalAsAttribute(UnmanagedType.U1)]
+        private byte smart;
+        [FieldOffset(0x28)]
+        [MarshalAsAttribute(UnmanagedType.U1)]
+        private byte tough;
+        [FieldOffset(0x29)]
+        [MarshalAsAttribute(UnmanagedType.U1)]
+        private byte sheen;
         [FieldOffset(0x2A)]
         [MarshalAsAttribute(UnmanagedType.U1)]
         private byte markings;
@@ -76,194 +105,256 @@ namespace PKMDS_CS
         [FieldOffset(0x30)]
         [MarshalAsAttribute(UnmanagedType.ByValArray, SizeConst = 6)]
         private byte[] ribbons;
-        [FieldOffset(0x36)]
-        [MarshalAsAttribute(UnmanagedType.U4)]
-        private ushort unused1;
-
-
-        /*
-         0x1E	HP Effort Value
-         1F	Attack Effort Value
-         20	Defense Effort Value
-         21	Speed Effort Value
-         22	SP Attack Effort Value
-         23	SP Defense Effort Value
-         24	Contest Stat: Cool
-         25	Contest Stat: Beauty
-         26	Contest Stat: Cute
-         27	Contest Stat: Smart
-         28	Contest Stat: Tough
-         29	Contest Stat: Sheen
-         2A	Markings
-         2B	Pokérus
-         2C-0x2F	(Secret) Super Training
-         Gold Medal Flags
-         30-         35	Ribbons
-         36-0x37	Unused
-         38	Contest Memory Ribbon [Count]
-         39	Battle Memory Ribbon [Count]
-         3A	Distribution Super Training Flags
-         3B-0x3F	Unused
-         */
-
+        [FieldOffset(0x38)]
+        [MarshalAsAttribute(UnmanagedType.U1)]
+        private byte contestmemoryribbons;
+        [FieldOffset(0x39)]
+        [MarshalAsAttribute(UnmanagedType.U1)]
+        private byte battlememoryribbons;
+        [FieldOffset(0x3A)]
+        [MarshalAsAttribute(UnmanagedType.U1)]
+        private byte distributionsupertrainingflags;
         #endregion
         #region Block B
-        /*
-         Block B (0x40-0x77)[edit]
-         Offset	Contents
-         40-0x57	Nickname
-         58-0x59	Null Terminator
-         0x5A-0x5B	Move 1 ID
-         0x5C-0x5D	Move 2 ID
-         0x5E-0x5F	Move 3 ID
-         0x60-0x61	Move 4 ID
-         0x62	Move 1 Current PP
-         0x63	Move 2 Current PP
-         0x64	Move 3 Current PP
-         0x65	Move 4 Current PP
-         0x66-0x69	Move PP Ups
-         0x6A-0x6B	Relearn Move 1 ID
-         0x6C-0x6D	Relearn Move 2 ID
-         0x6E-0x6F	Relearn Move 3 ID
-         0x70-0x71	Relearn Move 4 ID
-         0x72	"Secret" Super Training Flag
-         0 - Missions Unavailable
-         1 - Missions Available
-         0x73	Unused
-         0x74-0x77	Bits 0-29 - Individual Values
-         HP ( [0-31] << 0 )
-         Attack ( [0-31] << 5 )
-         Defense ( [0-31] << 10 )
-         Speed ( [0-31] << 15 )
-         SP Attack ( [0-31] << 20 )
-         SP Defense ( [0-31] << 25 )
-         Bit 30 - IsEgg Flag
-         Bit 31 - IsNicknamed Flag
-         */
-        /*
+        [FieldOffset(0x40)]
+        [MarshalAsAttribute(UnmanagedType.ByValTStr, SizeConst = 12)]
+        private string nickname;
+        [FieldOffset(0x5A)]
+        [MarshalAsAttribute(UnmanagedType.U2)]
+        private ushort move1id;
+        [FieldOffset(0x5C)]
+        [MarshalAsAttribute(UnmanagedType.U2)]
+        private ushort move2id;
+        [FieldOffset(0x5E)]
+        [MarshalAsAttribute(UnmanagedType.U2)]
+        private ushort move3id;
+        [FieldOffset(0x60)]
+        [MarshalAsAttribute(UnmanagedType.U2)]
+        private ushort move4id;
+        [FieldOffset(0x62)]
+        [MarshalAsAttribute(UnmanagedType.U1)]
+        private byte move1currentpp;
+        [FieldOffset(0x63)]
+        [MarshalAsAttribute(UnmanagedType.U1)]
+        private byte move2currentpp;
+        [FieldOffset(0x64)]
+        [MarshalAsAttribute(UnmanagedType.U1)]
+        private byte move3currentpp;
+        [FieldOffset(0x65)]
+        [MarshalAsAttribute(UnmanagedType.U1)]
+        private byte move4currentpp;
+        [FieldOffset(0x6A)]
+        [MarshalAsAttribute(UnmanagedType.U2)]
+        private ushort relearnmove1id;
+        [FieldOffset(0x6C)]
+        [MarshalAsAttribute(UnmanagedType.U2)]
+        private ushort relearnmove2id;
+        [FieldOffset(0x6E)]
+        [MarshalAsAttribute(UnmanagedType.U2)]
+        private ushort relearnmove3id;
+        [FieldOffset(0x70)]
+        [MarshalAsAttribute(UnmanagedType.U2)]
+        private ushort relearnmove4id;
+        [FieldOffset(0x72)]
+        [MarshalAsAttribute(UnmanagedType.U1)]
+        private byte secretsupertrainingflag;
         [FieldOffset(0x74)]
-        [MarshalAsAttribute(UnmanagedType.Struct)]
-        private IVs ivs;
+        [MarshalAsAttribute(UnmanagedType.U4)]
+        internal uint ivs;
         #endregion
         #region Block C
-        */
-        /*
-         Block C (0x78-0xAF)[edit]
-         Offset	Contents
-         0x78-0x8F	Latest NotOT Handler
-         Updates Every Trade
-         0x90-0x91	Null Terminator
-         0x92	NotOT Gender
-         0 - Male
-         1 - Female
-         0x93	Current Handler
-         0 - OT
-         1 - NotOT
-         0x94-0x95	Geolocation 1 - (Region,Country)
-         0x96-0x97	Geolocation 2 - (Region,Country)
-         0x98-0x99	Geolocation 3 - (Region,Country)
-         0x9A-0x9B	Geolocation 4 - (Region,Country)
-         0x9C-0x9D	Geolocation 5 - (Region,Country)
-         0x9E-0x9F	Unused
-         0xA0-0xA1	Unused
-         0xA2	NotOT Friendship
-         0xA3	NotOT Affection
-         0xA4	NotOT Memory Intensity
-         0xA5	NotOT Memory Line
-         0xA6	NotOT Memory Feeling
-         0xA7	Unused
-         0xA8-0xA9	NotOT Memory TextVar
-         0xAA-0xAB	Unused
-         0xAC-0xAD	Unused
-         0xAE	Fullness
-         0xAF	Enjoyment
-         */
-
+        [FieldOffset(0x78)]
+        [MarshalAsAttribute(UnmanagedType.ByValTStr, SizeConst = 12)]
+        private string lasttrainername;
+        [FieldOffset(0x92)]
+        [MarshalAsAttribute(UnmanagedType.U1)]
+        private byte lasttrainergender;
+        [FieldOffset(0x93)]
+        [MarshalAsAttribute(UnmanagedType.U1)]
+        private byte currenthandler;
+        [FieldOffset(0x94)]
+        [MarshalAsAttribute(UnmanagedType.U2)]
+        private ushort location1;
+        [FieldOffset(0x96)]
+        [MarshalAsAttribute(UnmanagedType.U2)]
+        private ushort location2;
+        [FieldOffset(0x98)]
+        [MarshalAsAttribute(UnmanagedType.U2)]
+        private ushort location3;
+        [FieldOffset(0x9A)]
+        [MarshalAsAttribute(UnmanagedType.U2)]
+        private ushort location4;
+        [FieldOffset(0x9C)]
+        [MarshalAsAttribute(UnmanagedType.U2)]
+        private ushort location5;
+        [FieldOffset(0xA2)]
+        [MarshalAsAttribute(UnmanagedType.U1)]
+        private byte lasttrainerfriendship;
+        [FieldOffset(0xA3)]
+        [MarshalAsAttribute(UnmanagedType.U1)]
+        private byte lasttraineraffection;
+        [FieldOffset(0xA4)]
+        [MarshalAsAttribute(UnmanagedType.U1)]
+        private byte lasttrainermemoryintensity;
+        [FieldOffset(0xA5)]
+        [MarshalAsAttribute(UnmanagedType.U1)]
+        private byte lasttrainermemoryline;
+        [FieldOffset(0xA6)]
+        [MarshalAsAttribute(UnmanagedType.U1)]
+        private byte lasttrainermemoryfeeling;
+        [FieldOffset(0xA8)]
+        [MarshalAsAttribute(UnmanagedType.U2)]
+        private ushort lasttrainermemorytext;
+        [FieldOffset(0xAE)]
+        [MarshalAsAttribute(UnmanagedType.U1)]
+        private byte fullness;
+        [FieldOffset(0xAF)]
+        [MarshalAsAttribute(UnmanagedType.U1)]
+        private byte enjoyment;
         #endregion
         #region Block D
-        /*
-         Block D (0xB0-0xE7)[edit]
-         Offset	Contents
-         0xB0-0xC7	OT Name
-         0xC8-0xC9	Null Terminator
-         0xCA	OT Friendship
-         0xCB	OT Affection
-         0xCC	OT Memory Intensity
-         0xCD	OT Memory Line
-         0xCE-0xCF	OT Memory TextVar
-         0xD0	OT Memory Feeling
-         0xD1-0xD3	Date Egg Received
-         0xD4-0xD6	Date Met
-         0xD7	Unknown / Unused
-         0xD8-0xD9	Egg Location
-         0xDA-0xDB	Met At Location
-         0xDC	Pokéball
-         0xDD	Bit 0-6 - Encounter Level
-         Bit 7 - Female OT Gender
-         0xDE	Encounter Type (Gen 4)
-         0xDF	OT Game ID
-         0xE0	Country ID
-         0xE1	Region ID
-         0xE2	3DS Region ID
-         0xE3	OT Language ID
-         0xE4-0xE7	Unused
-         */
-
+        [FieldOffset(0xB0)]
+        [MarshalAsAttribute(UnmanagedType.ByValTStr, SizeConst = 12)]
+        private string otname;
+        [FieldOffset(0xCA)]
+        [MarshalAsAttribute(UnmanagedType.U1)]
+        private byte otfriendship;
+        [FieldOffset(0xCB)]
+        [MarshalAsAttribute(UnmanagedType.U1)]
+        private byte otaffection;
+        [FieldOffset(0xCC)]
+        [MarshalAsAttribute(UnmanagedType.U1)]
+        private byte otmemoryintensity;
+        [FieldOffset(0xCD)]
+        [MarshalAsAttribute(UnmanagedType.U1)]
+        private byte otmemoryline;
+        [FieldOffset(0xCE)]
+        [MarshalAsAttribute(UnmanagedType.U2)]
+        private ushort otmemorytext;
+        [FieldOffset(0xD0)]
+        [MarshalAsAttribute(UnmanagedType.U1)]
+        private byte otmemoryfeeling;
+        [FieldOffset(0xD1)]
+        [MarshalAsAttribute(UnmanagedType.U1)]
+        private byte eggyear;
+        [FieldOffset(0xD2)]
+        [MarshalAsAttribute(UnmanagedType.U1)]
+        private byte eggmonth;
+        [FieldOffset(0xD3)]
+        [MarshalAsAttribute(UnmanagedType.U1)]
+        private byte eggday;
+        [FieldOffset(0xD4)]
+        [MarshalAsAttribute(UnmanagedType.U1)]
+        private byte metyear;
+        [FieldOffset(0xD5)]
+        [MarshalAsAttribute(UnmanagedType.U1)]
+        private byte metmonth;
+        [FieldOffset(0xD6)]
+        [MarshalAsAttribute(UnmanagedType.U1)]
+        private byte metday;
+        [FieldOffset(0xD8)]
+        [MarshalAsAttribute(UnmanagedType.U2)]
+        private ushort egglocation;
+        [FieldOffset(0xDA)]
+        [MarshalAsAttribute(UnmanagedType.U2)]
+        private ushort metlocation;
+        [FieldOffset(0xDC)]
+        [MarshalAsAttribute(UnmanagedType.U1)]
+        private byte pokeball;
+        [FieldOffset(0xDD)]
+        [MarshalAsAttribute(UnmanagedType.U1)]
+        private byte metlevelotgender;
+        [FieldOffset(0xDE)]
+        [MarshalAsAttribute(UnmanagedType.U1)]
+        private byte encounter;
+        [FieldOffset(0xDF)]
+        [MarshalAsAttribute(UnmanagedType.U1)]
+        private byte otgame;
+        [FieldOffset(0xE0)]
+        [MarshalAsAttribute(UnmanagedType.U1)]
+        private byte country;
+        [FieldOffset(0xE1)]
+        [MarshalAsAttribute(UnmanagedType.U1)]
+        private byte region;
+        [FieldOffset(0xE2)]
+        [MarshalAsAttribute(UnmanagedType.U1)]
+        private byte tdsregion;
+        [FieldOffset(0xE3)]
+        [MarshalAsAttribute(UnmanagedType.U1)]
+        private byte otlang;
         #endregion
-        /*
         [DisplayName("HP IV")]
         public uint HP_IV
         {
-            get { return ivs.HP_IV; }
-            set { ivs.HP_IV = value; }
+            get { return (ivs >> 00) & 0x1F; }
+            set { ivs = (ivs & ~(0x1Fu << 00)) | (value & 0x1Fu) << 00; }
         }
         [DisplayName("Attack IV")]
         public uint Attack_IV
         {
-            get { return ivs.Attack_IV; }
-            set { ivs.Attack_IV = value; }
+            get { return (ivs >> 05) & 0x1F; }
+            set { ivs = (ivs & ~(0x1Fu << 05)) | (value & 0x1Fu) << 05; }
         }
         [DisplayName("Defense IV")]
         public uint Defense_IV
         {
-            get { return ivs.Defense_IV; }
-            set { ivs.Defense_IV = value; }
-        }
-        [DisplayName("Special Attack IV")]
-        public uint SpecialAttack_IV
-        {
-            get { return ivs.SpecialAttack_IV; }
-            set { ivs.SpecialAttack_IV = value; }
-        }
-        [DisplayName("Special Defense IV")]
-        public uint SpecialDefense_IV
-        {
-            get { return ivs.SpecialDefense_IV; }
-            set { ivs.SpecialDefense_IV = value; }
+            get { return (ivs >> 10) & 0x1F; }
+            set { ivs = (ivs & ~(0x1Fu << 10)) | (value & 0x1Fu) << 10; }
         }
         [DisplayName("Speed IV")]
         public uint Speed_IV
         {
-            get { return ivs.Speed_IV; }
-            set { ivs.Speed_IV = value; }
+            get { return (ivs >> 15) & 0x1F; }
+            set { ivs = (ivs & ~(0x1Fu << 15)) | (value & 0x1Fu) << 15; }
         }
-        [DisplayName("TEST7")]
-        public bool Value7
+        [DisplayName("Special Attack IV")]
+        public uint SpecialAttack_IV
         {
-            get { return ivs.Value7; }
-            set { ivs.Value7 = value; }
+            get { return (ivs >> 20) & 0x1F; }
+            set { ivs = (ivs & ~(0x1Fu << 20)) | (value & 0x1Fu) << 20; }
         }
-        [DisplayName("TEST8")]
-        public bool Value8
+        [DisplayName("Special Defense IV")]
+        public uint SpecialDefense_IV
         {
-            get { return ivs.Value8; }
-            set { ivs.Value8 = value; }
+            get { return (ivs >> 25) & 0x1F; }
+            set { ivs = (ivs & ~(0x1Fu << 25)) | (value & 0x1Fu) << 25; }
         }
-        public Pokemon()
+        [DisplayName("Is Egg")]
+        public bool IsEgg
         {
-            ivs = new IVs();
+            get { return ((ivs >> 30) & 0x01u) == 1; }
+            set { ivs = (ivs & ~(0x01u << 30)) | (Convert.ToUInt32(value) & 0x01u) << 30; }
         }
-         */
+        [DisplayName("Is Nicknamed")]
+        public bool IsNicknamed
+        {
+            get { return ((ivs >> 31) & 0x01u) == 1; }
+            set { ivs = (ivs & ~(0x01u << 31)) | (Convert.ToUInt32(value) & 0x01u) << 31; }
+        }
+        [DisplayName("Fateful Encounter")]
+        public bool Fateful
+        {
+            get { return ((forms >> 0) & 0x1F) == 1; }
+            set { forms = Convert.ToByte((forms & ~(0x1F << 0)) | (Convert.ToByte(value) & 0x1F) << 0); }
+        }
+        [DisplayName("Is Female")]
+        public bool Female
+        {
+            get { return ((forms >> 1) & 0x1F) == 1; }
+            set { forms = Convert.ToByte((forms & ~(0x1F << 1)) | (Convert.ToByte(value) & 0x1F) << 1); }
+        }
+        [DisplayName("Is Genderless")]
+        public bool Genderless
+        {
+            get { return ((forms >> 2) & 0x1F) == 1; }
+            set { forms = Convert.ToByte((forms & ~(0x1F << 2)) | (Convert.ToByte(value) & 0x1F) << 2); }
+        }
+        [DisplayName("Form ID")]
+        public byte AlternateForm
+        {
+            get { return Convert.ToByte((forms >> 3) & 0x1F); }
+            set { forms = Convert.ToByte((forms & ~(0x1F << 3)) | (value & 0x1F) << 3); }
+        }
     }
     public enum Gender : byte
     {
@@ -350,88 +441,4 @@ Flag Value	0x35
 0x10	Cleverness Master Ribbon
 0x20	Toughness Master Ribbon
      */
-    [StructLayout(LayoutKind.Explicit, Size = 4, Pack = 1, CharSet = CharSet.Unicode)]
-    [Serializable]
-    internal class IVs
-    {
-        public IVs()
-        {
-            Data = 0u;
-        }
-        [FieldOffset(0)]
-        [MarshalAsAttribute(UnmanagedType.U4)]
-        internal uint Data;
-        internal uint HP_IV
-        {
-            get { return (Data >> 00) & 0x1F; }
-            set { Data = (Data & ~(0x1Fu << 00)) | (value & 0x1Fu) << 00; }
-        }
-        internal uint Attack_IV
-        {
-            get { return (Data >> 05) & 0x1F; }
-            set { Data = (Data & ~(0x1Fu << 05)) | (value & 0x1Fu) << 05; }
-        }
-        internal uint Defense_IV
-        {
-            get { return (Data >> 10) & 0x1F; }
-            set { Data = (Data & ~(0x1Fu << 10)) | (value & 0x1Fu) << 10; }
-        }
-        internal uint SpecialAttack_IV
-        {
-            get { return (Data >> 15) & 0x1F; }
-            set { Data = (Data & ~(0x1Fu << 15)) | (value & 0x1Fu) << 15; }
-        }
-        internal uint SpecialDefense_IV
-        {
-            get { return (Data >> 20) & 0x1F; }
-            set { Data = (Data & ~(0x1Fu << 20)) | (value & 0x1Fu) << 20; }
-        }
-        internal uint Speed_IV
-        {
-            get { return (Data >> 25) & 0x1F; }
-            set { Data = (Data & ~(0x1Fu << 25)) | (value & 0x1Fu) << 25; }
-        }
-        internal bool Value7
-        {
-            get { return ((Data >> 30) & 0x01u) == 1; }
-            set { Data = (Data & ~(0x01u << 30)) | (Convert.ToUInt32(value) & 0x01u) << 30; }
-        }
-        internal bool Value8
-        {
-            get { return ((Data >> 31) & 0x01u) == 1; }
-            set { Data = (Data & ~(0x01u << 31)) | (Convert.ToUInt32(value) & 0x01u) << 31; }
-        }
-    }
-    [StructLayout(LayoutKind.Explicit, Size = 1, Pack = 1, CharSet = CharSet.Unicode)]
-    [Serializable]
-    internal class Forms
-    {
-        public Forms()
-        {
-            Data = 0;
-        }
-        [FieldOffset(0)]
-        [MarshalAsAttribute(UnmanagedType.U1)]
-        internal byte Data;
-        internal bool fateful
-        {
-            get { return ((Data >> 0) & 0x1F) == 1; }
-            set { Data = Convert.ToByte((Data & ~(0x1F << 0)) | (Convert.ToByte(value) & 0x1F) << 0); }
-        }
-        internal bool female
-        {
-            get { return ((Data >> 1) & 0x1F) == 1; }
-            set { Data = Convert.ToByte((Data & ~(0x1F << 1)) | (Convert.ToByte(value) & 0x1F) << 1); }
-        }
-        internal bool genderless
-        {
-            get { return ((Data >> 2) & 0x1F) == 1; }
-            set { Data = Convert.ToByte((Data & ~(0x1F << 2)) | (Convert.ToByte(value) & 0x1F) << 2); }
-        }
-        internal byte alternateforms
-        {
-            get { return Convert.ToByte((Data >> 3) & 0x1F); }
-            set { Data = Convert.ToByte((Data & ~(0x1F << 3)) | (value & 0x1F) << 3); }
-        }
-    }
 }
