@@ -355,90 +355,17 @@ namespace PKMDS_CS
             get { return Convert.ToByte((forms >> 3) & 0x1F); }
             set { forms = Convert.ToByte((forms & ~(0x1F << 3)) | (value & 0x1F) << 3); }
         }
+        [DisplayName("Species")]
+        public Species Species 
+        {
+            get
+            {
+                return (Species)species;
+            }
+            set
+            {
+                species = (ushort)value;
+            } 
+        }
     }
-    public enum Gender : byte
-    {
-        Male = 0,
-        Female
-    }
-    /*
-     
-Value	Language
-0x1	日本語 (Japan)
-0x2	English (US/UK/AU)
-0x3	Français (France/Québec)
-0x4	Italiano (Italy)
-0x5	Deutsch (Germany)
-0x7	Español (Spain/Latin Americas)
-0x8	한국어 (South Korea)
-     
-     Markings[edit]
-Bit	Marking
-0x01	Circle
-0x02	Triangle
-0x04	Square
-0x08	Heart
-0x10	Star
-0x20	Diamon
-
-     Encounter Types
-     Value	Country
-0x0	Pal Park, Egg, Hatched, Special Event
-0x2	Tall Grass
-0x4	Dialga/Palkia In-Game Event
-0x5	Cave, Hall of Origin
-0x7	Surfing, Fishing
-0x9	Building
-0xA	Great Marsh (Safari Zone)
-0xC	Starter, Fossil, Gift (Eevee)
-Medals & Ribbons[edit]
-Super Training Medals[edit]
-Flag Value	0x2C	0x2D	0x2E	0x2F
-0x01	Unused	Sp. Atk Level 2	Atk Level 3	Follow Those Fleeing Goals!
-0x02	Unused	HP Level 2	Sp. Def Level 3	Watch Out! That's One Tricky Second Half!
-0x04	Sp. Atk Level 1	Atk Level 2	Speed Level 3	An Opening of Lighting-Quick Attacks!
-0x08	HP Level 1	Sp. Def Level 2	Def Level 3	Those Long Shots Are No Long Shot!
-0x10	Atk Level 1	Speed Level 2	The Troubles Keep on Coming?!	Scatterbug Lugs Back!
-0x20	Sp. Def Level 1	Def Level 2	The Leaf Stone Cup Begins!	A Barrage of Bitbots!
-0x40	Speed Level 1	Sp. Atk Level 3	The Fire Stone Cup Begins!	Drag Down Hydreigon!
-0x80	Def Level 1	HP Level 3	The Water Stone Cup Begins!	The Battle for the Best: Version X/Y!
-Ribbon Set 1[edit]
-Flag Value	0x30	0x31
-0x01	Kalos Champ Ribbon	Alert Ribbon
-0x02	Champion Ribbon	Shock Ribbon
-0x04	Sinnoh Champ Ribbon	Downcast Ribbon
-0x08	Best Friends Ribbon	Careless Ribbon
-0x10	Training Ribbon	Relax Ribbon
-0x20	Skillful Battler Ribbon	Snooze Ribbon
-0x40	Expert Battler Ribbon	Smile Ribbon
-0x80	Effort Ribbon	Gorgeous Ribbon
-Ribbon Set 2[edit]
-Flag Value	0x32	0x33
-0x01	Royal Ribbon	Earth Ribbon
-0x02	Gorgeous Royal Ribbon	World Ribbon
-0x04	Artist Ribbon	Classic Ribbon
-0x08	Footprint Ribbon	Premier Ribbon
-0x10	Record Ribbon	Event Ribbon
-0x20	Legend Ribbon	Birthday Ribbon
-0x40	Country Ribbon	Special Ribbon
-0x80	National Ribbon	Souvenir Ribbon
-Ribbon Set 3[edit]
-Flag Value	0x34
-0x01	Wishing Ribbon
-0x02	Battle Champion Ribbon
-0x04	Regional Champion Ribbon
-0x08	National Champion Ribbon
-0x10	World Champion Ribbon
-0x20	None
-0x40	None
-0x80	Hoenn Champion Ribbon
-Ribbon Set 4[edit]
-Flag Value	0x35
-0x01	Contest Star Ribbon
-0x02	Coolness Master Ribbon
-0x04	Beauty Master Ribbon
-0x08	Cuteness Master Ribbon
-0x10	Cleverness Master Ribbon
-0x20	Toughness Master Ribbon
-     */
 }
