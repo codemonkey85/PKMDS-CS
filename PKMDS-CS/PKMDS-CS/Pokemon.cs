@@ -632,5 +632,132 @@ namespace PKMDS_CS
             set { move4id = (ushort)value; }
         }
 
+        [DisplayName("Relearn Move 1")]
+        public Moves RelearnMove1
+        {
+            get { return (Moves)relearnmove1id; }
+            set { relearnmove1id = (ushort)value; }
+        }
+
+        [DisplayName("Relearn Move 2")]
+        public Moves RelearnMove2
+        {
+            get { return (Moves)relearnmove2id; }
+            set { relearnmove2id = (ushort)value; }
+        }
+
+        [DisplayName("Relearn Move 3")]
+        public Moves RelearnMove3
+        {
+            get { return (Moves)relearnmove3id; }
+            set { relearnmove3id = (ushort)value; }
+        }
+
+        [DisplayName("Relearn Move 4")]
+        public Moves RelearnMove4
+        {
+            get { return (Moves)relearnmove4id; }
+            set { relearnmove4id = (ushort)value; }
+        }
+
+        [DisplayName("Nickname")]
+        public string Nickname
+        {
+            get { return nickname; }
+            set { nickname = value.Length > 12 ? value.Substring(0, 12) : value; }
+        }
+
+        [DisplayName("Ball")]
+        public Items Ball
+        {
+            get { return Extensions.BallToItem(pokeball); }
+            set { pokeball = Extensions.ItemToBall(value); }
+        }
+
+        [DisplayName("Egg Location")]
+        public Locations EggLocation
+        {
+            get { return (Locations)egglocation; }
+            set { egglocation = (ushort)value; }
+        }
+
+        [DisplayName("Met Location")]
+        public Locations MetLocation
+        {
+            get { return (Locations)metlocation; }
+            set { metlocation = (ushort)value; }
+        }
+
+        [DisplayName("Egg Date")]
+        public DateTime EggDate
+        {
+            get
+            {
+                try
+                {
+                    return new DateTime(eggyear + 2000, eggmonth, eggday);
+                }
+                catch (Exception)
+                {
+
+                }
+                return DateTime.MinValue;
+            }
+            set
+            {
+                if (value == null)
+                {
+                    eggyear = 0;
+                    eggmonth = 0;
+                    eggday = 0;
+                }
+                else
+                {
+                    eggyear = (byte)(value.Year - 2000);
+                    eggmonth = (byte)value.Month;
+                    eggday = (byte)value.Day;
+                }
+            }
+        }
+
+        [DisplayName("Met Date")]
+        public DateTime MetDate
+        {
+            get
+            {
+                try
+                {
+                    return new DateTime(metyear + 2000, metmonth, metday);
+                }
+                catch (Exception)
+                {
+
+                }
+                return DateTime.MinValue;
+            }
+            set
+            {
+                if (value == null)
+                {
+                    metyear = 0;
+                    metmonth = 0;
+                    metday = 0;
+                }
+                else
+                {
+                    metyear = (byte)(value.Year - 2000);
+                    metmonth = (byte)value.Month;
+                    metday = (byte)value.Day;
+                }
+            }
+        }
+
+        [DisplayName("OT Name")]
+        public string OTName
+        {
+            get { return otname; }
+            set { otname = value.Length > 12 ? value.Substring(0, 12) : value; }
+        }
+
     }
 }

@@ -35,6 +35,23 @@ namespace PKMDS_CS
             }
             return null;
         }
+        
+        internal static System.Collections.Generic.List<ushort> BallsToItems = new System.Collections.Generic.List<ushort> { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 492, 493, 494, 495, 496, 497, 498, 499, 576 };
+        
+        public static Items BallToItem(byte ball)
+        {
+            if (ball < 0 || ball >= BallsToItems.Count)
+                return Items.NoItem;
+            return (Items)BallsToItems[ball];
+        }
+
+        public static byte ItemToBall(Items item)
+        {
+            if (!BallsToItems.Contains((ushort)item))
+                return 0;
+            return (byte)(BallsToItems.IndexOf((ushort)item));
+        }
+
     }
 
     public enum Species : ushort
@@ -7249,8 +7266,8 @@ namespace PKMDS_CS
         [Description("a stranger")]
         a_stranger = 60001,
 
-        [Description("a Day-Care CoupleXY/Day Care helpers (ORAS)")]
-        a_Day_Care_CoupleXY_Day_Care_helpers_ORAS = 60002,
+        [Description("Day-Care")]
+        Day_Care = 60002,
 
         [Description("a treasure hunter")]
         a_treasure_hunter = 60003,

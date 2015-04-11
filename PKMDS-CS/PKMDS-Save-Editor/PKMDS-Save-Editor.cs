@@ -32,8 +32,11 @@ namespace PKMDS_Save_Editor
 
             //PokeList[0].Species = Species.Farfetchd;
 
+
+
             Pokemon pkm = new Pokemon();
             Debug.WriteLine(pkm.Species.EnumToString());
+
             foreach (Pokemon pokemon in PokeList)
             {
                 Debug.WriteLine(pokemon.Species.EnumToString());
