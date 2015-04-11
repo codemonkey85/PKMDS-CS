@@ -34,8 +34,8 @@ namespace PKMDS_Save_Editor
 
 
 
-            Pokemon pkm = new Pokemon();
-            Debug.WriteLine(pkm.Species.EnumToString());
+            Pokemon pkm = new Pokemon { Species = Species.Nidoran_m };
+            Debug.WriteLine(pkm.ToString());
 
             foreach (Pokemon pokemon in PokeList)
             {

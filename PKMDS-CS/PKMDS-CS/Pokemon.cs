@@ -380,6 +380,8 @@ namespace PKMDS_CS
 
         #endregion Block D
 
+        #region Pokemon Properties
+
         [DisplayName("HP IV")]
         public uint HP_IV
         {
@@ -758,6 +760,17 @@ namespace PKMDS_CS
             get { return otname; }
             set { otname = value.Length > 12 ? value.Substring(0, 12) : value; }
         }
+
+        #endregion
+
+        #region Other Properties
+
+        public override string ToString()
+        {
+            return string.Format("{0}", Species.EnumToString());
+        }
+        
+        #endregion
 
     }
 }
