@@ -22,7 +22,7 @@ namespace PKMDS_CS
             return (TType)retobj;
         }
 
-        public static TType RawDeserialize<TType>(string fileName)
+        public static TType RawDeserialize<TType>(string fileName, int position = 0)
         {
             if (File.Exists(fileName))
             {
@@ -36,7 +36,7 @@ namespace PKMDS_CS
                         fs.Close();
                     }
                 }
-                return RawDeserialize<TType>(data, 0);
+                return RawDeserialize<TType>(data, position);
             }
             return default(TType);
         }

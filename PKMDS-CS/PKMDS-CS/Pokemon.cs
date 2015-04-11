@@ -761,6 +761,22 @@ namespace PKMDS_CS
             set { otname = value.Length > 12 ? value.Substring(0, 12) : value; }
         }
 
+        [DisplayName("Contest Memory Ribbon Count")]
+        public byte ContestMemoryRibbonCount
+        {
+            get { return contestmemoryribbons; }
+            set { contestmemoryribbons = value; }
+        }
+
+        [DisplayName("Battle Memory Ribbon Count")]
+        public byte BattleMemoryRibbonCount
+        {
+            get { return battlememoryribbons; }
+            set { battlememoryribbons = value; }
+        }
+
+
+
         #endregion
 
         #region Other Properties
@@ -769,7 +785,7 @@ namespace PKMDS_CS
         {
             return string.Format("{0}", Species.EnumToString());
         }
-        
+
         #endregion
 
     }
