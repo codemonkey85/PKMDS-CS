@@ -28,6 +28,8 @@ namespace PKMDS_Save_Editor
         {
             // PokeList.Clear();
 
+            MessageBox.Show(string.Format("Size of PC Box: {0}", System.Runtime.InteropServices.Marshal.SizeOf(typeof(PCBox)).ToString("X")));
+
             //XYSav sav = StructUtils.RawDeserialize<XYSav>(xysavfile);
             //PCStorageSystem pcstorage = StructUtils.RawDeserialize<PCStorageSystem>(xysavfile, 0x27A00);
             //PCBox box = StructUtils.RawDeserialize<PCBox>(xysavfile, 0x27A00);

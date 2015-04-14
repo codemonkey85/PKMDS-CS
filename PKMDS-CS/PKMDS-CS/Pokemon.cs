@@ -8,7 +8,7 @@ using System.Runtime.InteropServices;
 
 namespace PKMDS_CS
 {
-    [StructLayout(LayoutKind.Explicit, Size = 232, Pack = 1, CharSet = CharSet.Unicode)]
+    [StructLayout(LayoutKind.Explicit, Size = 0xE8, Pack = 1, CharSet = CharSet.Unicode)]
     [Serializable]
     public class Pokemon
     {
