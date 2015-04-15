@@ -14,19 +14,12 @@ namespace PKMDS_CS
     {
         [FieldOffset(0x27A00)]
         [MarshalAs(UnmanagedType.Struct)]
-        private PCStorageSystem PCStorageSystem;
+        private PCStorageSystem pcstoragesystem;
 
-
-
-        //    [FieldOffset(0x27A00)]
-        //    [MarshalAs(UnmanagedType.Struct)]
-        //    private PCStorageSystem pcstoragesystem;
-
-        //    [DisplayName("PC Storage System")]
-        //    public PCStorageSystem PCStorageSystem
-        //    {
-        //        get { return pcstoragesystem; }
-        //        set { pcstoragesystem = value; }
-        //    }
+        public PCStorageSystem PCStorageSystem
+        {
+            get { return pcstoragesystem; }
+            set { pcstoragesystem = value; }
+        }
     }
 }
