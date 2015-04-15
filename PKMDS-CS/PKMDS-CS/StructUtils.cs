@@ -4,7 +4,7 @@ using System;
 using System.IO;
 using System.Runtime.InteropServices;
 
-#endregion Using
+#endregion
 
 namespace PKMDS_CS
 {
@@ -12,14 +12,14 @@ namespace PKMDS_CS
     {
         public static TType RawDeserialize<TType>(byte[] rawData, int position = 0)
         {
-            Type anyType = typeof(TType);
+            Type anyType = typeof (TType);
             int rawsize = Marshal.SizeOf(anyType);
             if (rawsize > rawData.Length) return default(TType);
             IntPtr buffer = Marshal.AllocHGlobal(rawsize);
             Marshal.Copy(rawData, position, buffer, rawsize);
             object retobj = Marshal.PtrToStructure(buffer, anyType);
             Marshal.FreeHGlobal(buffer);
-            return (TType)retobj;
+            return (TType) retobj;
         }
 
         public static TType RawDeserialize<TType>(string fileName, int position = 0)
@@ -31,7 +31,7 @@ namespace PKMDS_CS
                 {
                     using (BinaryReader br = new BinaryReader(fs))
                     {
-                        data = br.ReadBytes((int)fs.Length);
+                        data = br.ReadBytes((int) fs.Length);
                         br.Close();
                         fs.Close();
                     }
@@ -78,6 +78,5 @@ namespace PKMDS_CS
             Marshal.FreeHGlobal(buffer);
             return rawDatas;
         }
-
     }
 }

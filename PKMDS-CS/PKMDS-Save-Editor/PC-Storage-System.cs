@@ -1,7 +1,6 @@
 ﻿#region Using
 
 using System;
-using System.Collections.Generic;
 using System.Diagnostics;
 using System.Windows.Forms;
 using PKMDS_CS;
@@ -16,8 +15,9 @@ namespace PKMDS_Save_Editor
         private string charizard = @"..\..\..\files\pk6\006 - Charizard - 853622BD286F.pk6";
         private string jynx = @"..\..\..\files\pk6\124 - Jynx - 8028D005DE59.pk6";
         private string mewtwo = @"..\..\..\files\pk6\150 - Mewtwo - 9AA4BEBE0B35.pk6";
+        private XYSav sav;
         private string xysavfile = @"..\..\..\files\sav\PokemonXYDecrypted.sav";
-            XYSav sav;
+
         public PKMDS_Save_Editor()
         {
             InitializeComponent();
@@ -26,9 +26,9 @@ namespace PKMDS_Save_Editor
         private void PKMDS_Save_Editor_Load(object sender, EventArgs e)
         {
             sav = StructUtils.RawDeserialize<XYSav>(xysavfile);
-            for (int box = 0; box < 31; box++ )
+            for (int box = 0; box < 31; box++)
             {
-                for (int slot = 0; slot < 30; slot++) 
+                for (int slot = 0; slot < 30; slot++)
                 {
                     Pokemon pokemon = sav.PCStorageSystem[box][slot];
                     PokePRNG.DecryptPokemon(ref pokemon);
@@ -41,7 +41,7 @@ namespace PKMDS_Save_Editor
 
         private void dgData_CellEndEdit(object sender, DataGridViewCellEventArgs e)
         {
-            System.Diagnostics.Debug.WriteLine("");
+            Debug.WriteLine("");
         }
     }
 }
