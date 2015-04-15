@@ -16,15 +16,15 @@ namespace PKMDS_CS
 
         [FieldOffset(0x00)]
         [MarshalAs(UnmanagedType.U4)]
-        private uint encryptionkey;
+        internal uint encryptionkey;
 
         [FieldOffset(0x04)]
         [MarshalAs(UnmanagedType.U2)]
-        private ushort sanity;
+        internal ushort sanity;
 
         [FieldOffset(0x06)]
         [MarshalAs(UnmanagedType.U2)]
-        private ushort checksum;
+        internal ushort checksum;
 
         #endregion Unencrypted Bytes
 
@@ -785,6 +785,10 @@ namespace PKMDS_CS
         {
             return string.Format("{0}", Species.EnumToString());
         }
+
+        #endregion
+
+        #region Methods
 
         #endregion
 

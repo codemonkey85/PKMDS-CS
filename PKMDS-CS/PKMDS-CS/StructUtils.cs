@@ -78,5 +78,6 @@ namespace PKMDS_CS
             Marshal.FreeHGlobal(buffer);
             return rawDatas;
         }
+
     }
 }

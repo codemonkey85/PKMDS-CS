@@ -41,6 +41,7 @@
             this.dgData.RowTemplate.Height = 28;
             this.dgData.Size = new System.Drawing.Size(745, 560);
             this.dgData.TabIndex = 0;
+            this.dgData.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgData_CellEndEdit);
             // 
             // PKMDS_Save_Editor
             // 
