@@ -740,5 +740,100 @@ namespace PKMDS_CS
         }
 
         #endregion Other Properties
+
+        #region Methods
+
+        internal void CloneFrom(Pokemon pokemon)
+        {
+            encryptionkey = pokemon.encryptionkey;
+            sanity = pokemon.sanity;
+            checksum = pokemon.checksum;
+            species = pokemon.species;
+            item = pokemon.item;
+            otid = pokemon.otid;
+            sid = pokemon.sid;
+            exp = pokemon.exp;
+            ability = pokemon.ability;
+            abilitynum = pokemon.abilitynum;
+            supertraining = pokemon.supertraining;
+            pid = pokemon.pid;
+            nature = pokemon.nature;
+            forms = pokemon.forms;
+            hp_effort = pokemon.hp_effort;
+            attack_effort = pokemon.attack_effort;
+            defense_effort = pokemon.defense_effort;
+            speed_effort = pokemon.speed_effort;
+            spattack_effort = pokemon.spattack_effort;
+            spdefense_effort = pokemon.spdefense_effort;
+            cool = pokemon.cool;
+            beauty = pokemon.beauty;
+            cute = pokemon.cute;
+            smart = pokemon.smart;
+            tough = pokemon.tough;
+            sheen = pokemon.sheen;
+            markings = pokemon.markings;
+            pokerus = pokemon.pokerus;
+            supertraininggoldmedals = pokemon.supertraininggoldmedals;
+            ribbons = pokemon.ribbons;
+            contestmemoryribbons = pokemon.contestmemoryribbons;
+            battlememoryribbons = pokemon.battlememoryribbons;
+            distributionsupertrainingflags = pokemon.distributionsupertrainingflags;
+            nickname = pokemon.nickname;
+            move1id = pokemon.move1id;
+            move2id = pokemon.move2id;
+            move3id = pokemon.move3id;
+            move4id = pokemon.move4id;
+            move1currentpp = pokemon.move1currentpp;
+            move2currentpp = pokemon.move2currentpp;
+            move3currentpp = pokemon.move3currentpp;
+            move4currentpp = pokemon.move4currentpp;
+            relearnmove1id = pokemon.relearnmove1id;
+            relearnmove2id = pokemon.relearnmove2id;
+            relearnmove3id = pokemon.relearnmove3id;
+            relearnmove4id = pokemon.relearnmove4id;
+            secretsupertrainingflag = pokemon.secretsupertrainingflag;
+            ivs = pokemon.ivs;
+            lasttrainername = pokemon.lasttrainername;
+            lasttrainergender = pokemon.lasttrainergender;
+            currenthandler = pokemon.currenthandler;
+            location1 = pokemon.location1;
+            location2 = pokemon.location2;
+            location3 = pokemon.location3;
+            location4 = pokemon.location4;
+            location5 = pokemon.location5;
+            lasttrainerfriendship = pokemon.lasttrainerfriendship;
+            lasttraineraffection = pokemon.lasttraineraffection;
+            lasttrainermemoryintensity = pokemon.lasttrainermemoryintensity;
+            lasttrainermemoryline = pokemon.lasttrainermemoryline;
+            lasttrainermemoryfeeling = pokemon.lasttrainermemoryfeeling;
+            lasttrainermemorytext = pokemon.lasttrainermemorytext;
+            fullness = pokemon.fullness;
+            enjoyment = pokemon.enjoyment;
+            otname = pokemon.otname;
+            otfriendship = pokemon.otfriendship;
+            otaffection = pokemon.otaffection;
+            otmemoryintensity = pokemon.otmemoryintensity;
+            otmemoryline = pokemon.otmemoryline;
+            otmemorytext = pokemon.otmemorytext;
+            otmemoryfeeling = pokemon.otmemoryfeeling;
+            eggyear = pokemon.eggyear;
+            eggmonth = pokemon.eggmonth;
+            eggday = pokemon.eggday;
+            metyear = pokemon.metyear;
+            metmonth = pokemon.metmonth;
+            metday = pokemon.metday;
+            egglocation = pokemon.egglocation;
+            metlocation = pokemon.metlocation;
+            pokeball = pokemon.pokeball;
+            metlevelotgender = pokemon.metlevelotgender;
+            encounter = pokemon.encounter;
+            otgame = pokemon.otgame;
+            country = pokemon.country;
+            region = pokemon.region;
+            tdsregion = pokemon.tdsregion;
+            otlang = pokemon.otlang;
+        }
+
+        #endregion
     }
 }

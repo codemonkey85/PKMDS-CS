@@ -32,7 +32,6 @@ namespace PKMDS_Save_Editor
                 {
                     Pokemon pokemon = sav.PCStorageSystem[box][slot];
                     PokePRNG.DecryptPokemon(ref pokemon);
-                    sav.PCStorageSystem[box][slot] = pokemon;
                 }
             }
             bs.DataSource = sav.PCStorageSystem.Boxes[0].Pokemon;

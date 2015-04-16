@@ -10,6 +10,11 @@ namespace PKMDS_CS
 {
     public class StructUtils
     {
+        public static void RawDeserialize(byte[] rawData, ref Pokemon pokemon)
+        {
+            pokemon.CloneFrom(RawDeserialize<Pokemon>(rawData));
+        }
+
         public static TType RawDeserialize<TType>(byte[] rawData, int position = 0)
         {
             Type anyType = typeof (TType);
