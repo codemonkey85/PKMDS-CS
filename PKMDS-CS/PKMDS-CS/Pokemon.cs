@@ -237,7 +237,7 @@ namespace PKMDS_CS
                 }
                 else
                 {
-                    ivs = (ivs & ~(0x1Fu << 00)) | (value & 0x1Fu) << 00;
+                    ivs = (ivs & ~(0x1Fu << 05)) | (value & 0x1Fu) << 05;
                 }
             }
         }
@@ -254,7 +254,7 @@ namespace PKMDS_CS
                 }
                 else
                 {
-                    ivs = (ivs & ~(0x1Fu << 00)) | (value & 0x1Fu) << 00;
+                    ivs = (ivs & ~(0x1Fu << 10)) | (value & 0x1Fu) << 10;
                 }
             }
         }
@@ -271,7 +271,7 @@ namespace PKMDS_CS
                 }
                 else
                 {
-                    ivs = (ivs & ~(0x1Fu << 00)) | (value & 0x1Fu) << 00;
+                    ivs = (ivs & ~(0x1Fu << 15)) | (value & 0x1Fu) << 15;
                 }
             }
         }
@@ -288,7 +288,7 @@ namespace PKMDS_CS
                 }
                 else
                 {
-                    ivs = (ivs & ~(0x1Fu << 00)) | (value & 0x1Fu) << 00;
+                    ivs = (ivs & ~(0x1Fu << 20)) | (value & 0x1Fu) << 20;
                 }
             }
         }
@@ -305,7 +305,7 @@ namespace PKMDS_CS
                 }
                 else
                 {
-                    ivs = (ivs & ~(0x1Fu << 00)) | (value & 0x1Fu) << 00;
+                    ivs = (ivs & ~(0x1Fu << 25)) | (value & 0x1Fu) << 25;
                 }
             }
         }
