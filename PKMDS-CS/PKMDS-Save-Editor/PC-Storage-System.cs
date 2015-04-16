@@ -26,12 +26,11 @@ namespace PKMDS_Save_Editor
         private void PKMDS_Save_Editor_Load(object sender, EventArgs e)
         {
             sav = StructUtils.RawDeserialize<XYSav>(xysavfile);
-            for (int box = 0; box < 31; box++)
+            foreach (PCBox box in sav.PCStorageSystem.Boxes)
             {
-                for (int slot = 0; slot < 30; slot++)
+                foreach (Pokemon pokemon in box.Pokemon)
                 {
-                    Pokemon pokemon = sav.PCStorageSystem[box][slot];
-                    PokePRNG.DecryptPokemon(ref pokemon);
+                    PokePRNG.DecryptPokemon(pokemon);
                 }
             }
             bs.DataSource = sav.PCStorageSystem.Boxes[0].Pokemon;

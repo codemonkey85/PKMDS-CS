@@ -137,7 +137,7 @@ namespace PKMDS_CS
             }
         }
 
-        public static void DecryptPokemon(ref Pokemon pokemon)
+        public static void DecryptPokemon(/*ref*/ Pokemon pokemon)
         {
             byte[] ekx = StructUtils.RawSerialize(pokemon);
             byte[] pkx = new byte[232];
@@ -151,8 +151,7 @@ namespace PKMDS_CS
                     pkx, i, 2);
             }
             pkx = shuffleArray(pkx, sv);
-            //pokemon = StructUtils.RawDeserialize<Pokemon>(pkx);
-            StructUtils.RawDeserialize(pkx, ref pokemon);
+            StructUtils.RawDeserialize(pkx, pokemon);
         }
 
         public static void EncryptPokemon(ref Pokemon pokemon)
@@ -170,8 +169,7 @@ namespace PKMDS_CS
                 Array.Copy(BitConverter.GetBytes((ushort) (BitConverter.ToUInt16(pkx, i) ^ (LCRNG(ref seed) >> 16))), 0,
                     ekx, i, 2);
             }
-            //pokemon = StructUtils.RawDeserialize<Pokemon>(ekx);
-            StructUtils.RawDeserialize(ekx, ref pokemon);
+            StructUtils.RawDeserialize(ekx, pokemon);
         }
     }
 }
