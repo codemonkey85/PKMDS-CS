@@ -154,7 +154,7 @@ namespace PKMDS_CS
             StructUtils.RawDeserialize(pkx, pokemon);
         }
 
-        public static void EncryptPokemon(ref Pokemon pokemon)
+        public static void EncryptPokemon(Pokemon pokemon)
         {
             byte[] pkx = StructUtils.RawSerialize(pokemon);
             byte[] ekx = new byte[232];
