@@ -3004,9 +3004,6 @@ namespace PKMDS_CS
 
         [Description("Griseous Orb")] Griseous_Orb = 0x0070,
 
-        //[Description("unknown")] unknown = 0x0071,
-        //[Description("unknown")] unknown = 0x0072,
-        //[Description("unknown")] unknown = 0x0073,
         [Description("Douse Drive")] Douse_Drive = 0x0074,
 
         [Description("Shock Drive")] Shock_Drive = 0x0075,
@@ -3015,20 +3012,6 @@ namespace PKMDS_CS
 
         [Description("Chill Drive")] Chill_Drive = 0x0077,
 
-        //[Description("unknown")] unknown = 0x0078,
-        //[Description("unknown")] unknown = 0x0079,
-        //[Description("unknown")] unknown = 0x007A,
-        //[Description("unknown")] unknown = 0x007B,
-        //[Description("unknown")] unknown = 0x007C,
-        //[Description("unknown")] unknown = 0x007D,
-        //[Description("unknown")] unknown = 0x007E,
-        //[Description("unknown")] unknown = 0x007F,
-        //[Description("unknown")] unknown = 0x0080,
-        //[Description("unknown")] unknown = 0x0081,
-        //[Description("unknown")] unknown = 0x0082,
-        //[Description("unknown")] unknown = 0x0083,
-        //[Description("unknown")] unknown = 0x0084,
-        //[Description("unknown")] unknown = 0x0085,
         [Description("Sweet Heart")] Sweet_Heart = 0x0086,
 
         [Description("Adamant Orb")] Adamant_Orb = 0x0087,
@@ -3613,8 +3596,6 @@ namespace PKMDS_CS
 
         [Description("HM06")] HM06 = 0x01A9,
 
-        //[Description("unknown")] unknown = 0x01AA,
-        //[Description("unknown")] unknown = 0x01AB,
         [Description("Explorer Kit")] Explorer_Kit = 0x01AC,
 
         [Description("Loot Sack")] Loot_Sack = 0x01AD,

@@ -1,7 +1,6 @@
 ﻿#region Using
 
 using System;
-using System.Diagnostics;
 using System.Windows.Forms;
 using PKMDS_CS;
 
@@ -35,11 +34,6 @@ namespace PKMDS_Save_Editor
             }
             bs.DataSource = sav.PCStorageSystem.Boxes[0].Pokemon;
             dgData.DataSource = bs;
-        }
-
-        private void dgData_CellEndEdit(object sender, DataGridViewCellEventArgs e)
-        {
-            Debug.WriteLine("");
         }
     }
 }

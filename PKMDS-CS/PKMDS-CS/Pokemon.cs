@@ -208,7 +208,6 @@ namespace PKMDS_CS
 
         #region Pokemon Properties
 
-        //[Range(typeof (byte), "0", "31")]
         [DisplayName("HP IV")]
         public uint HP_IV
         {

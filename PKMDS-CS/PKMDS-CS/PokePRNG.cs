@@ -53,15 +53,12 @@ namespace PKMDS_CS
 
             uint seed = pv;
 
-            // Decrypt Blocks with RNG Seed
             for (int i = 8; i < 232; i += 2)
                 Array.Copy(BitConverter.GetBytes((ushort) (BitConverter.ToUInt16(pkx, i) ^ (LCRNG(ref seed) >> 16))), 0,
                     pkx, i, 2);
 
-            // Deshuffle
             pkx = shuffleArray(pkx, sv);
 
-            // Decrypt the Party Stats
             seed = pv;
             if (pkx.Length <= 232) return pkx;
             for (int i = 232; i < 260; i += 2)
@@ -73,40 +70,33 @@ namespace PKMDS_CS
 
         internal static byte[] encryptArray(byte[] pkx)
         {
-            // Shuffle
             uint pv = BitConverter.ToUInt32(pkx, 0);
             uint sv = (((pv & 0x3E000) >> 0xD)%24);
 
             byte[] ekx = (byte[]) pkx.Clone();
 
-            // If I unshuffle 11 times, the 12th (decryption) will always decrypt to ABCD.
-            // 2 x 3 x 4 = 12 (possible unshuffle loops -> total iterations)
             for (int i = 0; i < 11; i++)
                 ekx = shuffleArray(ekx, sv);
 
             uint seed = pv;
-            // Encrypt Blocks with RNG Seed
             for (int i = 8; i < 232; i += 2)
                 Array.Copy(BitConverter.GetBytes((ushort) (BitConverter.ToUInt16(ekx, i) ^ (LCRNG(ref seed) >> 16))), 0,
                     ekx, i, 2);
 
-            // If no party stats, return.
             if (ekx.Length <= 232) return ekx;
 
-            // Encrypt the Party Stats
             seed = pv;
             for (int i = 232; i < 260; i += 2)
                 Array.Copy(BitConverter.GetBytes((ushort) (BitConverter.ToUInt16(ekx, i) ^ (LCRNG(ref seed) >> 16))), 0,
                     ekx, i, 2);
 
-            // Done
             return ekx;
         }
 
         internal static ushort getCHK(byte[] data)
         {
             ushort chk = 0;
-            for (int i = 8; i < 232; i += 2) // Loop through the entire PKX
+            for (int i = 8; i < 232; i += 2)
                 chk += BitConverter.ToUInt16(data, i);
 
             return chk;
@@ -114,30 +104,18 @@ namespace PKMDS_CS
 
         internal static bool verifychk(byte[] input)
         {
-            ushort checksum = 0;
-            if (input.Length == 100 || input.Length == 80) // Gen 3 Files
-            {
-                for (int i = 32; i < 80; i += 2)
-                    checksum += BitConverter.ToUInt16(input, i);
+            if (input.Length == 232 || input.Length == 260)
+                Array.Resize(ref input, 232);
+            else throw new Exception("Wrong sized input array to verifychecksum");
 
-                return (checksum == BitConverter.ToUInt16(input, 28));
-            }
-            {
-                if (input.Length == 236 || input.Length == 220 || input.Length == 136) // Gen 4/5
-                    Array.Resize(ref input, 136);
-                else if (input.Length == 232 || input.Length == 260) // Gen 6
-                    Array.Resize(ref input, 232);
-                else throw new Exception("Wrong sized input array to verifychecksum");
+            ushort chk = 0;
+            for (int i = 8; i < input.Length; i += 2)
+                chk += BitConverter.ToUInt16(input, i);
 
-                ushort chk = 0;
-                for (int i = 8; i < input.Length; i += 2)
-                    chk += BitConverter.ToUInt16(input, i);
-
-                return (chk == BitConverter.ToUInt16(input, 0x6));
-            }
+            return (chk == BitConverter.ToUInt16(input, 0x6));
         }
 
-        public static void DecryptPokemon(/*ref*/ Pokemon pokemon)
+        public static void DecryptPokemon(Pokemon pokemon)
         {
             byte[] ekx = StructUtils.RawSerialize(pokemon);
             byte[] pkx = new byte[232];
