@@ -729,6 +729,43 @@ namespace PKMDS_CS
             set { battlememoryribbons = value; }
         }
 
+        [DisplayName("3DS Region")]
+        public byte TDSRegion
+        {
+            get { return tdsregion; }
+            set { tdsregion = value; }
+        }
+
+        [DisplayName("Secret Super Training Available")]
+        public bool SecretSuperTrainingAvailable
+        {
+            get { return secretsupertrainingflag != 0; }
+            set { secretsupertrainingflag = value ? Convert.ToByte(1) : Convert.ToByte(0); }
+        }
+
+        [DisplayName("Met At Level")]
+        public int MetLevel
+        {
+            get { return (metlevelotgender) & 0x7F; }
+            set
+            {
+                metlevelotgender = Convert.ToByte(value > 127
+                    ? (metlevelotgender & ~(0x7Fu)) | (127 & 0x7Fu)
+                    : (metlevelotgender & ~(0x7Fu)) | (value & 0x7Fu));
+            }
+        }
+
+        [DisplayName("OT Gender")]
+        public Genders OTGender
+        {
+            get { return (((metlevelotgender) & 0x80) >> 7) == 1 ? Genders.Female : Genders.Male; }
+            set
+            {
+                metlevelotgender =
+                    Convert.ToByte((metlevelotgender & ~(0x01u << 7)) | (Convert.ToUInt32(value) & 0x01u) << 7);
+            }
+        }
+
         #endregion Pokemon Properties
 
         #region Other Properties
