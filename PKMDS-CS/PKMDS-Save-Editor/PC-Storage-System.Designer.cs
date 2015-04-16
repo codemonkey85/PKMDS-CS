@@ -43,13 +43,14 @@
             this.dgData.Margin = new System.Windows.Forms.Padding(2);
             this.dgData.Name = "dgData";
             this.dgData.RowTemplate.Height = 28;
-            this.dgData.Size = new System.Drawing.Size(475, 179);
+            this.dgData.Size = new System.Drawing.Size(475, 315);
             this.dgData.TabIndex = 0;
             // 
             // boxesComboBox
             // 
             this.boxesComboBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.boxesComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.boxesComboBox.FormattingEnabled = true;
             this.boxesComboBox.Items.AddRange(new object[] {
             "Box 1",

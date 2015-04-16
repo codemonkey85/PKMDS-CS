@@ -31,6 +31,7 @@ namespace PKMDS_Save_Editor
             _boxesBindingSource.DataSource = _sav.PCStorageSystem.Boxes;
             dgData.DataSource = _boxesBindingSource;
             dgData.DataMember = "Pokemon";
+            boxesComboBox.SelectedIndex = 0;
         }
 
         private void LoadSave(string saveFileName)
