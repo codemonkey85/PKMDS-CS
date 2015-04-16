@@ -8,8 +8,6 @@ namespace PKMDS_CS
 {
     public static class PokePRNG
     {
-        // prng: Result = [(0x41C64E6D * Seed) + 0x6073]
-        // shuffle: ((pid & 0x3E000) >> 0xD) % 24
         internal static uint LCRNG(uint seed)
         {
             const uint a = 0x41C64E6D;
@@ -33,18 +31,13 @@ namespace PKMDS_CS
             byte[] ekx = new byte[232];
             Array.Copy(pkx, ekx, 8);
 
-            // Now to shuffle the blocks
-
-            // Define Shuffle Order Structure
             byte[] aloc = {0, 0, 0, 0, 0, 0, 1, 1, 2, 3, 2, 3, 1, 1, 2, 3, 2, 3, 1, 1, 2, 3, 2, 3};
             byte[] bloc = {1, 1, 2, 3, 2, 3, 0, 0, 0, 0, 0, 0, 2, 3, 1, 1, 3, 2, 2, 3, 1, 1, 3, 2};
             byte[] cloc = {2, 3, 1, 1, 3, 2, 2, 3, 1, 1, 3, 2, 0, 0, 0, 0, 0, 0, 3, 2, 3, 2, 1, 1};
             byte[] dloc = {3, 2, 3, 2, 1, 1, 3, 2, 3, 2, 1, 1, 3, 2, 3, 2, 1, 1, 0, 0, 0, 0, 0, 0};
 
-            // Get Shuffle Order
             byte[] shlog = {aloc[sv], bloc[sv], cloc[sv], dloc[sv]};
 
-            // UnShuffle Away!
             for (int b = 0; b < 4; b++)
                 Array.Copy(pkx, 8 + 56*shlog[b], ekx, 8 + 56*b, 56);
 
@@ -159,6 +152,24 @@ namespace PKMDS_CS
             }
             pkx = shuffleArray(pkx, sv);
             pokemon = StructUtils.RawDeserialize<Pokemon>(pkx);
+        }
+
+        public static void EncryptPokemon(ref Pokemon pokemon)
+        {
+            byte[] pkx = StructUtils.RawSerialize(pokemon);
+            byte[] ekx = new byte[232];
+            Array.Copy(pkx, 0, ekx, 0, 8);
+            uint pv = pokemon.encryptionkey;
+            uint sv = (((pv & 0x3E000) >> 0xD)%24);
+            uint seed = pv;
+            for (int i = 0; i < 11; i++)
+                pkx = shuffleArray(pkx, sv);
+            for (int i = 8; i < 232; i += 2)
+            {
+                Array.Copy(BitConverter.GetBytes((ushort) (BitConverter.ToUInt16(pkx, i) ^ (LCRNG(ref seed) >> 16))), 0,
+                    ekx, i, 2);
+            }
+            pokemon = StructUtils.RawDeserialize<Pokemon>(ekx);
         }
     }
 }
