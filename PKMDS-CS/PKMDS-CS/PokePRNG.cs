@@ -157,6 +157,7 @@ namespace PKMDS_CS
         public static void EncryptPokemon(Pokemon pokemon)
         {
             byte[] pkx = StructUtils.RawSerialize(pokemon);
+            pokemon.checksum = getCHK(pkx);
             byte[] ekx = new byte[232];
             Array.Copy(pkx, 0, ekx, 0, 8);
             uint pv = pokemon.encryptionkey;
