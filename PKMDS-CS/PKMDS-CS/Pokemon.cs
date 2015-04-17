@@ -501,22 +501,22 @@ namespace PKMDS_CS
         [DisplayName("Is Fateful Encounter")]
         public bool Fateful
         {
-            get { return ((forms >> 0) & 0x1F) == 1; }
-            set { forms = Convert.ToByte((forms & ~(0x1F << 0)) | (Convert.ToByte(value) & 0x1F) << 0); }
+            get { return (forms & 0x01) == 0x01; }
+            set { forms = Convert.ToByte(forms & ~(0x01u << 00) | (Convert.ToByte(value) & (0x01u)) << 00); }
         }
 
         [DisplayName("Is Female")]
         public bool Female
         {
-            get { return ((forms >> 1) & 0x1F) == 1; }
-            set { forms = Convert.ToByte((forms & ~(0x1F << 1)) | (Convert.ToByte(value) & 0x1F) << 1); }
+            get { return (forms & 0x02) == 0x02; }
+            set { forms = Convert.ToByte(forms & ~(0x01u << 01) | (Convert.ToByte(value) & (0x01u)) << 01); }
         }
 
         [DisplayName("Is Genderless")]
         public bool Genderless
         {
-            get { return ((forms >> 2) & 0x1F) == 1; }
-            set { forms = Convert.ToByte((forms & ~(0x1F << 2)) | (Convert.ToByte(value) & 0x1F) << 2); }
+            get { return (forms & 0x04) == 0x04; }
+            set { forms = Convert.ToByte(forms & ~(0x01u << 02) | (Convert.ToByte(value) & (0x01u)) << 02); }
         }
 
         [DisplayName("Form ID")]
