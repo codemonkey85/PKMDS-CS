@@ -3,6 +3,7 @@
 
 # Misc
 PKMDS-CS/files/secret/*
+*veekun-pokedex.sqlite
 
 # User-specific files
 *.suo
