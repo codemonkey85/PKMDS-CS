@@ -14,195 +14,369 @@ namespace PKMDS_CS
     {
         #region Unencrypted Bytes
 
-        [FieldOffset(0x00)] [MarshalAs(UnmanagedType.U4)] internal uint encryptionkey;
+        [FieldOffset(0x00)]
+        [MarshalAs(UnmanagedType.U4)]
+        internal uint encryptionkey;
 
-        [FieldOffset(0x04)] [MarshalAs(UnmanagedType.U2)] internal ushort sanity;
+        [FieldOffset(0x04)]
+        [MarshalAs(UnmanagedType.U2)]
+        internal ushort sanity;
 
-        [FieldOffset(0x06)] [MarshalAs(UnmanagedType.U2)] internal ushort checksum;
+        [FieldOffset(0x06)]
+        [MarshalAs(UnmanagedType.U2)]
+        internal ushort checksum;
 
         #endregion Unencrypted Bytes
 
         #region Block A
 
-        [FieldOffset(0x08)] [MarshalAs(UnmanagedType.U2)] private ushort species;
+        [FieldOffset(0x08)]
+        [MarshalAs(UnmanagedType.U2)]
+        private ushort species;
 
-        [FieldOffset(0x0A)] [MarshalAs(UnmanagedType.U2)] private ushort item;
+        [FieldOffset(0x0A)]
+        [MarshalAs(UnmanagedType.U2)]
+        private ushort item;
 
-        [FieldOffset(0x0C)] [MarshalAs(UnmanagedType.U2)] private ushort otid;
+        [FieldOffset(0x0C)]
+        [MarshalAs(UnmanagedType.U2)]
+        private ushort otid;
 
-        [FieldOffset(0x0E)] [MarshalAs(UnmanagedType.U2)] private ushort sid;
+        [FieldOffset(0x0E)]
+        [MarshalAs(UnmanagedType.U2)]
+        private ushort sid;
 
-        [FieldOffset(0x10)] [MarshalAs(UnmanagedType.U4)] private uint exp;
+        [FieldOffset(0x10)]
+        [MarshalAs(UnmanagedType.U4)]
+        private uint exp;
 
-        [FieldOffset(0x14)] [MarshalAs(UnmanagedType.U1)] private byte ability;
+        [FieldOffset(0x14)]
+        [MarshalAs(UnmanagedType.U1)]
+        private byte ability;
 
-        [FieldOffset(0x15)] [MarshalAs(UnmanagedType.U1)] private byte abilitynum;
+        [FieldOffset(0x15)]
+        [MarshalAs(UnmanagedType.U1)]
+        private byte abilitynum;
 
-        [FieldOffset(0x16)] [MarshalAs(UnmanagedType.U2)] private ushort supertraining;
+        [FieldOffset(0x16)]
+        [MarshalAs(UnmanagedType.U2)]
+        private ushort supertraining;
 
-        [FieldOffset(0x18)] [MarshalAs(UnmanagedType.U4)] private uint pid;
+        [FieldOffset(0x18)]
+        [MarshalAs(UnmanagedType.U4)]
+        private uint pid;
 
-        [FieldOffset(0x1C)] [MarshalAs(UnmanagedType.U1)] private byte nature;
+        [FieldOffset(0x1C)]
+        [MarshalAs(UnmanagedType.U1)]
+        private byte nature;
 
-        [FieldOffset(0x1D)] [MarshalAs(UnmanagedType.U1)] private byte forms;
+        [FieldOffset(0x1D)]
+        [MarshalAs(UnmanagedType.U1)]
+        private byte forms;
 
-        [FieldOffset(0x1E)] [MarshalAs(UnmanagedType.U1)] private byte hp_effort;
+        [FieldOffset(0x1E)]
+        [MarshalAs(UnmanagedType.U1)]
+        private byte hp_effort;
 
-        [FieldOffset(0x1F)] [MarshalAs(UnmanagedType.U1)] private byte attack_effort;
+        [FieldOffset(0x1F)]
+        [MarshalAs(UnmanagedType.U1)]
+        private byte attack_effort;
 
-        [FieldOffset(0x20)] [MarshalAs(UnmanagedType.U1)] private byte defense_effort;
+        [FieldOffset(0x20)]
+        [MarshalAs(UnmanagedType.U1)]
+        private byte defense_effort;
 
-        [FieldOffset(0x21)] [MarshalAs(UnmanagedType.U1)] private byte speed_effort;
+        [FieldOffset(0x21)]
+        [MarshalAs(UnmanagedType.U1)]
+        private byte speed_effort;
 
-        [FieldOffset(0x22)] [MarshalAs(UnmanagedType.U1)] private byte spattack_effort;
+        [FieldOffset(0x22)]
+        [MarshalAs(UnmanagedType.U1)]
+        private byte spattack_effort;
 
-        [FieldOffset(0x23)] [MarshalAs(UnmanagedType.U1)] private byte spdefense_effort;
+        [FieldOffset(0x23)]
+        [MarshalAs(UnmanagedType.U1)]
+        private byte spdefense_effort;
 
-        [FieldOffset(0x24)] [MarshalAs(UnmanagedType.U1)] private byte cool;
+        [FieldOffset(0x24)]
+        [MarshalAs(UnmanagedType.U1)]
+        private byte cool;
 
-        [FieldOffset(0x25)] [MarshalAs(UnmanagedType.U1)] private byte beauty;
+        [FieldOffset(0x25)]
+        [MarshalAs(UnmanagedType.U1)]
+        private byte beauty;
 
-        [FieldOffset(0x26)] [MarshalAs(UnmanagedType.U1)] private byte cute;
+        [FieldOffset(0x26)]
+        [MarshalAs(UnmanagedType.U1)]
+        private byte cute;
 
-        [FieldOffset(0x27)] [MarshalAs(UnmanagedType.U1)] private byte smart;
+        [FieldOffset(0x27)]
+        [MarshalAs(UnmanagedType.U1)]
+        private byte smart;
 
-        [FieldOffset(0x28)] [MarshalAs(UnmanagedType.U1)] private byte tough;
+        [FieldOffset(0x28)]
+        [MarshalAs(UnmanagedType.U1)]
+        private byte tough;
 
-        [FieldOffset(0x29)] [MarshalAs(UnmanagedType.U1)] private byte sheen;
+        [FieldOffset(0x29)]
+        [MarshalAs(UnmanagedType.U1)]
+        private byte sheen;
 
-        [FieldOffset(0x2A)] [MarshalAs(UnmanagedType.U1)] private byte markings;
+        [FieldOffset(0x2A)]
+        [MarshalAs(UnmanagedType.U1)]
+        private byte markings;
 
-        [FieldOffset(0x2B)] [MarshalAs(UnmanagedType.U1)] private byte pokerus;
+        [FieldOffset(0x2B)]
+        [MarshalAs(UnmanagedType.U1)]
+        private byte pokerus;
 
-        [FieldOffset(0x2C)] [MarshalAs(UnmanagedType.U4)] private uint supertraininggoldmedals;
+        [FieldOffset(0x2C)]
+        [MarshalAs(UnmanagedType.U4)]
+        private uint supertraininggoldmedals;
 
-        [FieldOffset(0x30)] [MarshalAs(UnmanagedType.ByValArray, SizeConst = 6)] private byte[] ribbons;
+        [FieldOffset(0x30)]
+        [MarshalAs(UnmanagedType.ByValArray, SizeConst = 6)]
+        private byte[] ribbons;
 
-        [FieldOffset(0x38)] [MarshalAs(UnmanagedType.U1)] private byte contestmemoryribbons;
+        [FieldOffset(0x38)]
+        [MarshalAs(UnmanagedType.U1)]
+        private byte contestmemoryribbons;
 
-        [FieldOffset(0x39)] [MarshalAs(UnmanagedType.U1)] private byte battlememoryribbons;
+        [FieldOffset(0x39)]
+        [MarshalAs(UnmanagedType.U1)]
+        private byte battlememoryribbons;
 
-        [FieldOffset(0x3A)] [MarshalAs(UnmanagedType.U1)] private byte distributionsupertrainingflags;
+        [FieldOffset(0x3A)]
+        [MarshalAs(UnmanagedType.U1)]
+        private byte distributionsupertrainingflags;
 
         #endregion Block A
 
         #region Block B
 
-        [FieldOffset(0x40)] [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 12)] private string nickname;
+        [FieldOffset(0x40)]
+        [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 12)]
+        private string nickname;
 
-        [FieldOffset(0x5A)] [MarshalAs(UnmanagedType.U2)] private ushort move1id;
+        [FieldOffset(0x5A)]
+        [MarshalAs(UnmanagedType.U2)]
+        private ushort move1id;
 
-        [FieldOffset(0x5C)] [MarshalAs(UnmanagedType.U2)] private ushort move2id;
+        [FieldOffset(0x5C)]
+        [MarshalAs(UnmanagedType.U2)]
+        private ushort move2id;
 
-        [FieldOffset(0x5E)] [MarshalAs(UnmanagedType.U2)] private ushort move3id;
+        [FieldOffset(0x5E)]
+        [MarshalAs(UnmanagedType.U2)]
+        private ushort move3id;
 
-        [FieldOffset(0x60)] [MarshalAs(UnmanagedType.U2)] private ushort move4id;
+        [FieldOffset(0x60)]
+        [MarshalAs(UnmanagedType.U2)]
+        private ushort move4id;
 
-        [FieldOffset(0x62)] [MarshalAs(UnmanagedType.U1)] private byte move1currentpp;
+        [FieldOffset(0x62)]
+        [MarshalAs(UnmanagedType.U1)]
+        private byte move1currentpp;
 
-        [FieldOffset(0x63)] [MarshalAs(UnmanagedType.U1)] private byte move2currentpp;
+        [FieldOffset(0x63)]
+        [MarshalAs(UnmanagedType.U1)]
+        private byte move2currentpp;
 
-        [FieldOffset(0x64)] [MarshalAs(UnmanagedType.U1)] private byte move3currentpp;
+        [FieldOffset(0x64)]
+        [MarshalAs(UnmanagedType.U1)]
+        private byte move3currentpp;
 
-        [FieldOffset(0x65)] [MarshalAs(UnmanagedType.U1)] private byte move4currentpp;
+        [FieldOffset(0x65)]
+        [MarshalAs(UnmanagedType.U1)]
+        private byte move4currentpp;
 
-        [FieldOffset(0x6A)] [MarshalAs(UnmanagedType.U2)] private ushort relearnmove1id;
+        [FieldOffset(0x6A)]
+        [MarshalAs(UnmanagedType.U2)]
+        private ushort relearnmove1id;
 
-        [FieldOffset(0x6C)] [MarshalAs(UnmanagedType.U2)] private ushort relearnmove2id;
+        [FieldOffset(0x6C)]
+        [MarshalAs(UnmanagedType.U2)]
+        private ushort relearnmove2id;
 
-        [FieldOffset(0x6E)] [MarshalAs(UnmanagedType.U2)] private ushort relearnmove3id;
+        [FieldOffset(0x6E)]
+        [MarshalAs(UnmanagedType.U2)]
+        private ushort relearnmove3id;
 
-        [FieldOffset(0x70)] [MarshalAs(UnmanagedType.U2)] private ushort relearnmove4id;
+        [FieldOffset(0x70)]
+        [MarshalAs(UnmanagedType.U2)]
+        private ushort relearnmove4id;
 
-        [FieldOffset(0x72)] [MarshalAs(UnmanagedType.U1)] private byte secretsupertrainingflag;
+        [FieldOffset(0x72)]
+        [MarshalAs(UnmanagedType.U1)]
+        private byte secretsupertrainingflag;
 
-        [FieldOffset(0x74)] [MarshalAs(UnmanagedType.U4)] internal uint ivs;
+        [FieldOffset(0x74)]
+        [MarshalAs(UnmanagedType.U4)]
+        internal uint ivs;
 
         #endregion Block B
 
         #region Block C
 
-        [FieldOffset(0x78)] [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 12)] private string lasttrainername;
+        [FieldOffset(0x78)]
+        [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 12)]
+        private string lasttrainername;
 
-        [FieldOffset(0x92)] [MarshalAs(UnmanagedType.U1)] private byte lasttrainergender;
+        [FieldOffset(0x92)]
+        [MarshalAs(UnmanagedType.U1)]
+        private byte lasttrainergender;
 
-        [FieldOffset(0x93)] [MarshalAs(UnmanagedType.U1)] private byte currenthandler;
+        [FieldOffset(0x93)]
+        [MarshalAs(UnmanagedType.U1)]
+        private byte currenthandler;
 
-        [FieldOffset(0x94)] [MarshalAs(UnmanagedType.U2)] private ushort location1;
+        [FieldOffset(0x94)]
+        [MarshalAs(UnmanagedType.U2)]
+        private ushort location1;
 
-        [FieldOffset(0x96)] [MarshalAs(UnmanagedType.U2)] private ushort location2;
+        [FieldOffset(0x96)]
+        [MarshalAs(UnmanagedType.U2)]
+        private ushort location2;
 
-        [FieldOffset(0x98)] [MarshalAs(UnmanagedType.U2)] private ushort location3;
+        [FieldOffset(0x98)]
+        [MarshalAs(UnmanagedType.U2)]
+        private ushort location3;
 
-        [FieldOffset(0x9A)] [MarshalAs(UnmanagedType.U2)] private ushort location4;
+        [FieldOffset(0x9A)]
+        [MarshalAs(UnmanagedType.U2)]
+        private ushort location4;
 
-        [FieldOffset(0x9C)] [MarshalAs(UnmanagedType.U2)] private ushort location5;
+        [FieldOffset(0x9C)]
+        [MarshalAs(UnmanagedType.U2)]
+        private ushort location5;
 
-        [FieldOffset(0xA2)] [MarshalAs(UnmanagedType.U1)] private byte lasttrainerfriendship;
+        [FieldOffset(0xA2)]
+        [MarshalAs(UnmanagedType.U1)]
+        private byte lasttrainerfriendship;
 
-        [FieldOffset(0xA3)] [MarshalAs(UnmanagedType.U1)] private byte lasttraineraffection;
+        [FieldOffset(0xA3)]
+        [MarshalAs(UnmanagedType.U1)]
+        private byte lasttraineraffection;
 
-        [FieldOffset(0xA4)] [MarshalAs(UnmanagedType.U1)] private byte lasttrainermemoryintensity;
+        [FieldOffset(0xA4)]
+        [MarshalAs(UnmanagedType.U1)]
+        private byte lasttrainermemoryintensity;
 
-        [FieldOffset(0xA5)] [MarshalAs(UnmanagedType.U1)] private byte lasttrainermemoryline;
+        [FieldOffset(0xA5)]
+        [MarshalAs(UnmanagedType.U1)]
+        private byte lasttrainermemoryline;
 
-        [FieldOffset(0xA6)] [MarshalAs(UnmanagedType.U1)] private byte lasttrainermemoryfeeling;
+        [FieldOffset(0xA6)]
+        [MarshalAs(UnmanagedType.U1)]
+        private byte lasttrainermemoryfeeling;
 
-        [FieldOffset(0xA8)] [MarshalAs(UnmanagedType.U2)] private ushort lasttrainermemorytext;
+        [FieldOffset(0xA8)]
+        [MarshalAs(UnmanagedType.U2)]
+        private ushort lasttrainermemorytext;
 
-        [FieldOffset(0xAE)] [MarshalAs(UnmanagedType.U1)] private byte fullness;
+        [FieldOffset(0xAE)]
+        [MarshalAs(UnmanagedType.U1)]
+        private byte fullness;
 
-        [FieldOffset(0xAF)] [MarshalAs(UnmanagedType.U1)] private byte enjoyment;
+        [FieldOffset(0xAF)]
+        [MarshalAs(UnmanagedType.U1)]
+        private byte enjoyment;
 
         #endregion Block C
 
         #region Block D
 
-        [FieldOffset(0xB0)] [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 12)] private string otname;
+        [FieldOffset(0xB0)]
+        [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 12)]
+        private string otname;
 
-        [FieldOffset(0xCA)] [MarshalAs(UnmanagedType.U1)] private byte otfriendship;
+        [FieldOffset(0xCA)]
+        [MarshalAs(UnmanagedType.U1)]
+        private byte otfriendship;
 
-        [FieldOffset(0xCB)] [MarshalAs(UnmanagedType.U1)] private byte otaffection;
+        [FieldOffset(0xCB)]
+        [MarshalAs(UnmanagedType.U1)]
+        private byte otaffection;
 
-        [FieldOffset(0xCC)] [MarshalAs(UnmanagedType.U1)] private byte otmemoryintensity;
+        [FieldOffset(0xCC)]
+        [MarshalAs(UnmanagedType.U1)]
+        private byte otmemoryintensity;
 
-        [FieldOffset(0xCD)] [MarshalAs(UnmanagedType.U1)] private byte otmemoryline;
+        [FieldOffset(0xCD)]
+        [MarshalAs(UnmanagedType.U1)]
+        private byte otmemoryline;
 
-        [FieldOffset(0xCE)] [MarshalAs(UnmanagedType.U2)] private ushort otmemorytext;
+        [FieldOffset(0xCE)]
+        [MarshalAs(UnmanagedType.U2)]
+        private ushort otmemorytext;
 
-        [FieldOffset(0xD0)] [MarshalAs(UnmanagedType.U1)] private byte otmemoryfeeling;
+        [FieldOffset(0xD0)]
+        [MarshalAs(UnmanagedType.U1)]
+        private byte otmemoryfeeling;
 
-        [FieldOffset(0xD1)] [MarshalAs(UnmanagedType.U1)] private byte eggyear;
+        [FieldOffset(0xD1)]
+        [MarshalAs(UnmanagedType.U1)]
+        private byte eggyear;
 
-        [FieldOffset(0xD2)] [MarshalAs(UnmanagedType.U1)] private byte eggmonth;
+        [FieldOffset(0xD2)]
+        [MarshalAs(UnmanagedType.U1)]
+        private byte eggmonth;
 
-        [FieldOffset(0xD3)] [MarshalAs(UnmanagedType.U1)] private byte eggday;
+        [FieldOffset(0xD3)]
+        [MarshalAs(UnmanagedType.U1)]
+        private byte eggday;
 
-        [FieldOffset(0xD4)] [MarshalAs(UnmanagedType.U1)] private byte metyear;
+        [FieldOffset(0xD4)]
+        [MarshalAs(UnmanagedType.U1)]
+        private byte metyear;
 
-        [FieldOffset(0xD5)] [MarshalAs(UnmanagedType.U1)] private byte metmonth;
+        [FieldOffset(0xD5)]
+        [MarshalAs(UnmanagedType.U1)]
+        private byte metmonth;
 
-        [FieldOffset(0xD6)] [MarshalAs(UnmanagedType.U1)] private byte metday;
+        [FieldOffset(0xD6)]
+        [MarshalAs(UnmanagedType.U1)]
+        private byte metday;
 
-        [FieldOffset(0xD8)] [MarshalAs(UnmanagedType.U2)] private ushort egglocation;
+        [FieldOffset(0xD8)]
+        [MarshalAs(UnmanagedType.U2)]
+        private ushort egglocation;
 
-        [FieldOffset(0xDA)] [MarshalAs(UnmanagedType.U2)] private ushort metlocation;
+        [FieldOffset(0xDA)]
+        [MarshalAs(UnmanagedType.U2)]
+        private ushort metlocation;
 
-        [FieldOffset(0xDC)] [MarshalAs(UnmanagedType.U1)] private byte pokeball;
+        [FieldOffset(0xDC)]
+        [MarshalAs(UnmanagedType.U1)]
+        private byte pokeball;
 
-        [FieldOffset(0xDD)] [MarshalAs(UnmanagedType.U1)] private byte metlevelotgender;
+        [FieldOffset(0xDD)]
+        [MarshalAs(UnmanagedType.U1)]
+        private byte metlevelotgender;
 
-        [FieldOffset(0xDE)] [MarshalAs(UnmanagedType.U1)] private byte encounter;
+        [FieldOffset(0xDE)]
+        [MarshalAs(UnmanagedType.U1)]
+        private byte encounter;
 
-        [FieldOffset(0xDF)] [MarshalAs(UnmanagedType.U1)] private byte otgame;
+        [FieldOffset(0xDF)]
+        [MarshalAs(UnmanagedType.U1)]
+        private byte otgame;
 
-        [FieldOffset(0xE0)] [MarshalAs(UnmanagedType.U1)] private byte country;
+        [FieldOffset(0xE0)]
+        [MarshalAs(UnmanagedType.U1)]
+        private byte country;
 
-        [FieldOffset(0xE1)] [MarshalAs(UnmanagedType.U1)] private byte region;
+        [FieldOffset(0xE1)]
+        [MarshalAs(UnmanagedType.U1)]
+        private byte region;
 
-        [FieldOffset(0xE2)] [MarshalAs(UnmanagedType.U1)] private byte tdsregion;
+        [FieldOffset(0xE2)]
+        [MarshalAs(UnmanagedType.U1)]
+        private byte tdsregion;
 
-        [FieldOffset(0xE3)] [MarshalAs(UnmanagedType.U1)] private byte otlang;
+        [FieldOffset(0xE3)]
+        [MarshalAs(UnmanagedType.U1)]
+        private byte otlang;
 
         #endregion Block D
 
@@ -357,11 +531,11 @@ namespace PKMDS_CS
         {
             get
             {
-                return Enum.IsDefined(typeof (Species), species)
-                    ? (Species) species
+                return Enum.IsDefined(typeof(Species), species)
+                    ? (Species)species
                     : Species.NoSpecies;
             }
-            set { species = (ushort) value; }
+            set { species = (ushort)value; }
         }
 
         [DisplayName("Held Item")]
@@ -369,11 +543,11 @@ namespace PKMDS_CS
         {
             get
             {
-                return Enum.IsDefined(typeof (Items), item)
-                    ? (Items) item
+                return Enum.IsDefined(typeof(Items), item)
+                    ? (Items)item
                     : Items.NoItem;
             }
-            set { item = (ushort) value; }
+            set { item = (ushort)value; }
         }
 
         [DisplayName("Trainer ID")]
@@ -402,11 +576,11 @@ namespace PKMDS_CS
         {
             get
             {
-                return Enum.IsDefined(typeof (Abilities), ability)
-                    ? (Abilities) ability
+                return Enum.IsDefined(typeof(Abilities), ability)
+                    ? (Abilities)ability
                     : Abilities.NoAbility;
             }
-            set { ability = (byte) value; }
+            set { ability = (byte)value; }
         }
 
         [DisplayName("Personality Value")]
@@ -421,11 +595,11 @@ namespace PKMDS_CS
         {
             get
             {
-                return Enum.IsDefined(typeof (Natures), nature)
-                    ? (Natures) nature
+                return Enum.IsDefined(typeof(Natures), nature)
+                    ? (Natures)nature
                     : Natures.Hardy;
             }
-            set { nature = (byte) value; }
+            set { nature = (byte)value; }
         }
 
         [DisplayName("HP Effort")]
@@ -517,11 +691,11 @@ namespace PKMDS_CS
         {
             get
             {
-                return Enum.IsDefined(typeof (Moves), move1id)
-                    ? (Moves) move1id
+                return Enum.IsDefined(typeof(Moves), move1id)
+                    ? (Moves)move1id
                     : Moves.NoMove;
             }
-            set { move1id = (ushort) value; }
+            set { move1id = (ushort)value; }
         }
 
         [DisplayName("Move 2")]
@@ -529,11 +703,11 @@ namespace PKMDS_CS
         {
             get
             {
-                return Enum.IsDefined(typeof (Moves), move2id)
-                    ? (Moves) move2id
+                return Enum.IsDefined(typeof(Moves), move2id)
+                    ? (Moves)move2id
                     : Moves.NoMove;
             }
-            set { move2id = (ushort) value; }
+            set { move2id = (ushort)value; }
         }
 
         [DisplayName("Move 3")]
@@ -541,11 +715,11 @@ namespace PKMDS_CS
         {
             get
             {
-                return Enum.IsDefined(typeof (Moves), move3id)
-                    ? (Moves) move3id
+                return Enum.IsDefined(typeof(Moves), move3id)
+                    ? (Moves)move3id
                     : Moves.NoMove;
             }
-            set { move3id = (ushort) value; }
+            set { move3id = (ushort)value; }
         }
 
         [DisplayName("Move 4")]
@@ -553,11 +727,11 @@ namespace PKMDS_CS
         {
             get
             {
-                return Enum.IsDefined(typeof (Moves), move4id)
-                    ? (Moves) move4id
+                return Enum.IsDefined(typeof(Moves), move4id)
+                    ? (Moves)move4id
                     : Moves.NoMove;
             }
-            set { move4id = (ushort) value; }
+            set { move4id = (ushort)value; }
         }
 
         [DisplayName("Relearn Move 1")]
@@ -565,11 +739,11 @@ namespace PKMDS_CS
         {
             get
             {
-                return Enum.IsDefined(typeof (Moves), relearnmove1id)
-                    ? (Moves) relearnmove1id
+                return Enum.IsDefined(typeof(Moves), relearnmove1id)
+                    ? (Moves)relearnmove1id
                     : Moves.NoMove;
             }
-            set { relearnmove1id = (ushort) value; }
+            set { relearnmove1id = (ushort)value; }
         }
 
         [DisplayName("Relearn Move 2")]
@@ -577,11 +751,11 @@ namespace PKMDS_CS
         {
             get
             {
-                return Enum.IsDefined(typeof (Moves), relearnmove2id)
-                    ? (Moves) relearnmove2id
+                return Enum.IsDefined(typeof(Moves), relearnmove2id)
+                    ? (Moves)relearnmove2id
                     : Moves.NoMove;
             }
-            set { relearnmove2id = (ushort) value; }
+            set { relearnmove2id = (ushort)value; }
         }
 
         [DisplayName("Relearn Move 3")]
@@ -589,11 +763,11 @@ namespace PKMDS_CS
         {
             get
             {
-                return Enum.IsDefined(typeof (Moves), relearnmove3id)
-                    ? (Moves) relearnmove3id
+                return Enum.IsDefined(typeof(Moves), relearnmove3id)
+                    ? (Moves)relearnmove3id
                     : Moves.NoMove;
             }
-            set { relearnmove3id = (ushort) value; }
+            set { relearnmove3id = (ushort)value; }
         }
 
         [DisplayName("Relearn Move 4")]
@@ -601,11 +775,11 @@ namespace PKMDS_CS
         {
             get
             {
-                return Enum.IsDefined(typeof (Moves), relearnmove4id)
-                    ? (Moves) relearnmove4id
+                return Enum.IsDefined(typeof(Moves), relearnmove4id)
+                    ? (Moves)relearnmove4id
                     : Moves.NoMove;
             }
-            set { relearnmove4id = (ushort) value; }
+            set { relearnmove4id = (ushort)value; }
         }
 
         [DisplayName("Nickname")]
@@ -627,11 +801,11 @@ namespace PKMDS_CS
         {
             get
             {
-                return Enum.IsDefined(typeof (Locations), egglocation)
-                    ? (Locations) egglocation
+                return Enum.IsDefined(typeof(Locations), egglocation)
+                    ? (Locations)egglocation
                     : Locations.Mystery_Zone;
             }
-            set { egglocation = (ushort) value; }
+            set { egglocation = (ushort)value; }
         }
 
         [DisplayName("Met Location")]
@@ -639,11 +813,11 @@ namespace PKMDS_CS
         {
             get
             {
-                return Enum.IsDefined(typeof (Locations), metlocation)
-                    ? (Locations) metlocation
+                return Enum.IsDefined(typeof(Locations), metlocation)
+                    ? (Locations)metlocation
                     : Locations.Mystery_Zone;
             }
-            set { metlocation = (ushort) value; }
+            set { metlocation = (ushort)value; }
         }
 
         [DisplayName("Egg Date")]
@@ -670,9 +844,9 @@ namespace PKMDS_CS
                 }
                 else
                 {
-                    eggyear = (byte) (value.Year - 2000);
-                    eggmonth = (byte) value.Month;
-                    eggday = (byte) value.Day;
+                    eggyear = (byte)(value.Year - 2000);
+                    eggmonth = (byte)value.Month;
+                    eggday = (byte)value.Day;
                 }
             }
         }
@@ -701,9 +875,9 @@ namespace PKMDS_CS
                 }
                 else
                 {
-                    metyear = (byte) (value.Year - 2000);
-                    metmonth = (byte) value.Month;
-                    metday = (byte) value.Day;
+                    metyear = (byte)(value.Year - 2000);
+                    metmonth = (byte)value.Month;
+                    metday = (byte)value.Day;
                 }
             }
         }
@@ -764,6 +938,13 @@ namespace PKMDS_CS
                 metlevelotgender =
                     Convert.ToByte((metlevelotgender & ~(0x01u << 7)) | (Convert.ToUInt32(value) & 0x01u) << 7);
             }
+        }
+
+        [DisplayName("Level")]
+        public int Level
+        {
+            get { return DBTools.GetLevel(species, exp); }
+            set { exp = DBTools.GetEXPAtLevel(species, value); }
         }
 
         #endregion Pokemon Properties

@@ -12,6 +12,7 @@ namespace PKMDS_CS
         private static DbConnection con;
         public static void OpenDB(string DBFile)
         {
+            if (con != null) return;
             try
             {
                 var connString = string.Format(@"Data Source={0}; Pooling=false; FailIfMissing=false;", DBFile);
@@ -19,7 +20,6 @@ namespace PKMDS_CS
                     con = factory.CreateConnection();
                 con.ConnectionString = connString;
                 con.Open();
-                test();
             }
             catch (Exception ex)
             {
@@ -38,18 +38,39 @@ namespace PKMDS_CS
 
             }
         }
-        public static void test()
+        public static int GetLevel(ushort Species, uint EXP)
         {
+            int level = 0;
             using (System.Data.Common.DbCommand cmd = con.CreateCommand())
             {
-                cmd.CommandText = @"select * from pokemon";
+                cmd.CommandText = string.Format(@"select experience.level from experience join pokemon_species on pokemon_species.growth_rate_id = experience.growth_rate_id where pokemon_species.id = {0} and experience.experience <= {1} order by experience.level desc limit 1", Species, EXP);
                 DataTable dtout = new DataTable();
                 dtout.Load(cmd.ExecuteReader());
                 if (dtout != null)
                 {
-                    System.Diagnostics.Debug.WriteLine(string.Format("{0}", dtout.Rows.Count));
+                    if (dtout.Rows.Count != 0)
+                        int.TryParse(dtout.Rows[0].ItemArray[0].ToString(), out level);
                 }
             }
+            return level;
         }
+
+        public static uint GetEXPAtLevel(ushort Species, int Level)
+        {
+            uint exp = 0;
+            using (System.Data.Common.DbCommand cmd = con.CreateCommand())
+            {
+                cmd.CommandText = string.Format(@"select experience.experience from experience join pokemon_species on pokemon_species.growth_rate_id = experience.growth_rate_id where pokemon_species.id = {0} and experience.level = {1} order by experience.level desc limit 1", Species, Level);
+                DataTable dtout = new DataTable();
+                dtout.Load(cmd.ExecuteReader());
+                if (dtout != null)
+                {
+                    if (dtout.Rows.Count != 0)
+                        uint.TryParse(dtout.Rows[0].ItemArray[0].ToString(), out exp);
+                }
+            }
+            return exp;
+        }
+
     }
 }
