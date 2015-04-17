@@ -11,6 +11,7 @@ namespace PKMDS_Save_Editor
 {
     public partial class PKMDS_Save_Editor : Form
     {
+        private const string veekundb = @"..\..\..\files\db\veekun-pokedex.sqlite";
         private const string charizard = @"..\..\..\files\pk6\006 - Charizard - 853622BD286F.pk6";
         private const string jynx = @"..\..\..\files\pk6\124 - Jynx - 8028D005DE59.pk6";
         private const string mewtwo = @"..\..\..\files\pk6\150 - Mewtwo - 9AA4BEBE0B35.pk6";
@@ -37,10 +38,11 @@ namespace PKMDS_Save_Editor
             LoadSave(xysavfile);
             _boxesCurrencyManager = _boxesBindingSource.CurrencyManager;
             _boxesBindingSource.DataSource = _sav.PCStorageSystem.Boxes;
-                // .Where(box => box.Pokemon.Any(pokemon => pokemon.Species == Species.Charmander));
+            // .Where(box => box.Pokemon.Any(pokemon => pokemon.Species == Species.Charmander));
             dgData.DataSource = _boxesBindingSource;
             dgData.DataMember = "Pokemon";
             boxesComboBox.SelectedIndex = 0;
+            DBTools.OpenDB(veekundb);
         }
 
         private void LoadSave(string saveFileName)
@@ -66,6 +68,11 @@ namespace PKMDS_Save_Editor
         {
             if (boxesComboBox.SelectedIndex == -1) return;
             _boxesCurrencyManager.Position = boxesComboBox.SelectedIndex;
+        }
+
+        private void PKMDS_Save_Editor_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            DBTools.CloseDB();
         }
     }
 }

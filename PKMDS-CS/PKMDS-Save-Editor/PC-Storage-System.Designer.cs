@@ -100,6 +100,7 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "PKMDS_Save_Editor";
             this.Text = "Form1";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.PKMDS_Save_Editor_FormClosing);
             this.Load += new System.EventHandler(this.PKMDS_Save_Editor_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgData)).EndInit();
             this.ResumeLayout(false);
