@@ -34,10 +34,10 @@ namespace PKMDS_Save_Editor
 
         private void PKMDS_Save_Editor_Load(object sender, EventArgs e)
         {
-            //LoadSave(xysavfile);
-            LoadSave(ramsav_combined);
+            LoadSave(xysavfile);
             _boxesCurrencyManager = _boxesBindingSource.CurrencyManager;
             _boxesBindingSource.DataSource = _sav.PCStorageSystem.Boxes;
+                // .Where(box => box.Pokemon.Any(pokemon => pokemon.Species == Species.Charmander));
             dgData.DataSource = _boxesBindingSource;
             dgData.DataMember = "Pokemon";
             boxesComboBox.SelectedIndex = 0;
@@ -51,6 +51,15 @@ namespace PKMDS_Save_Editor
             {
                 PokePRNG.DecryptPokemon(pokemon);
             }
+        }
+
+        private void WriteSave(string saveFileName)
+        {
+            foreach (var pokemon in _sav.PCStorageSystem.Boxes.SelectMany(box => box.Pokemon))
+            {
+                PokePRNG.EncryptPokemon(pokemon);
+            }
+            StructUtils.RawSerialize(_sav, saveFileName);
         }
 
         private void boxesComboBox_SelectedIndexChanged(object sender, EventArgs e)
