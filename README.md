@@ -6,7 +6,7 @@
 <a href="//plus.google.com/u/0/116414067936940758871?prsrc=3"
    rel="publisher" target="_top" style="text-decoration:none;display:inline-block;color:#333;text-align:center; font:13px/16px arial,sans-serif;white-space:nowrap;">
 <span style="display:inline-block;font-weight:bold;vertical-align:top;margin-right:5px; margin-top:8px;">Michael Bond</span><span style="display:inline-block;vertical-align:top;margin-right:15px; margin-top:8px;"> on</span>
-<img src="https://developers.google.com/+/images/branding/sign-in-buttons/Red-signin_Short_base_44dp.png" alt="Google+" style="border:0;width:32px;height:32px;"/>
+<img src="https://developers.google.com/+/images/branding/sign-in-buttons/Red-signin_Short_base_44dp.png" alt="Google+" style="border:0;width:39px;height:40px;;"/>
 </a>
 
 Thanks to Kaphotics (@kwsch), from whom I have stolen a few pieces of code and much documentation. Check out [his project, PKHeX](https://github.com/kwsch/PKHeX/ "PKHeX on GitHub").
