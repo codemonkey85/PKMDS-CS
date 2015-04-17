@@ -520,7 +520,7 @@ namespace PKMDS_CS
         }
 
         [DisplayName("Form ID")]
-        public byte AlternateForm
+        public byte FormID
         {
             get { return Convert.ToByte((forms >> 3) & 0x1F); }
             set { forms = Convert.ToByte((forms & ~(0x1F << 3)) | (value & 0x1F) << 3); }
@@ -947,13 +947,28 @@ namespace PKMDS_CS
             set { exp = DBTools.GetEXPAtLevel(species, value); }
         }
 
+        [DisplayName("Form Name")]
+        public string FormName
+        {
+            get { return DBTools.GetFormName(species, FormID, 9); }
+        }
+
+        [Browsable(false)]
+        private string PokemonName
+        {
+            get { return DBTools.GetPokemonName(species, FormID, 9); }
+        }
+
         #endregion Pokemon Properties
 
         #region Other Properties
 
         public override string ToString()
         {
-            return string.Format("{0}", Species.EnumToString());
+            string pokemonname = PokemonName;
+            if (pokemonname == "")
+            { return string.Format("{0}", Species.EnumToString()); }
+            else { return pokemonname; }
         }
 
         #endregion Other Properties

@@ -71,6 +71,39 @@ namespace PKMDS_CS
             }
             return exp;
         }
-
+        public static string GetFormName(ushort Species, byte FormID, int langid = 9)
+        {
+            string formname = string.Empty;
+            using (System.Data.Common.DbCommand cmd = con.CreateCommand())
+            {
+                cmd.CommandText = string.Format(@"select form_name from pokemon join pokemon_forms on pokemon.id = pokemon_forms.pokemon_id join pokemon_form_generations on pokemon_form_generations.pokemon_form_id = pokemon_forms.id join pokemon_form_names on pokemon_form_names.pokemon_form_id = pokemon_forms.id 
+where pokemon.species_id = {0} and pokemon_form_generations.game_index = {1} and local_language_id = {2}", Species, FormID, langid);
+                DataTable dtout = new DataTable();
+                dtout.Load(cmd.ExecuteReader());
+                if (dtout != null)
+                {
+                    if (dtout.Rows.Count != 0)
+                        formname = dtout.Rows[0].ItemArray[0].ToString();
+                }
+            }
+            return formname;
+        }
+        internal static string GetPokemonName(ushort Species, byte FormID, int langid = 9)
+        {
+            string pokemonname = string.Empty;
+            using (System.Data.Common.DbCommand cmd = con.CreateCommand())
+            {
+                cmd.CommandText = string.Format(@"select pokemon_name from pokemon join pokemon_forms on pokemon.id = pokemon_forms.pokemon_id join pokemon_form_generations on pokemon_form_generations.pokemon_form_id = pokemon_forms.id join pokemon_form_names on pokemon_form_names.pokemon_form_id = pokemon_forms.id 
+where pokemon.species_id = {0} and pokemon_form_generations.game_index = {1} and local_language_id = {2}", Species, FormID, langid);
+                DataTable dtout = new DataTable();
+                dtout.Load(cmd.ExecuteReader());
+                if (dtout != null)
+                {
+                    if (dtout.Rows.Count != 0)
+                        pokemonname = dtout.Rows[0].ItemArray[0].ToString();
+                }
+            }
+            return pokemonname;
+        }
     }
 }
