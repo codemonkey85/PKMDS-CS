@@ -40,6 +40,8 @@ namespace PKMDS_CS
         }
         public static int GetLevel(ushort Species, uint EXP)
         {
+            if (con == null) return 0;
+            if (con.State != ConnectionState.Open) return 0;
             int level = 0;
             using (System.Data.Common.DbCommand cmd = con.CreateCommand())
             {
@@ -54,9 +56,10 @@ namespace PKMDS_CS
             }
             return level;
         }
-
         public static uint GetEXPAtLevel(ushort Species, int Level)
         {
+            if (con == null) return 0u;
+            if (con.State != ConnectionState.Open) return 0u;
             uint exp = 0;
             using (System.Data.Common.DbCommand cmd = con.CreateCommand())
             {
@@ -73,6 +76,8 @@ namespace PKMDS_CS
         }
         public static string GetFormName(ushort Species, byte FormID, int langid = 9)
         {
+            if (con == null) return string.Empty;
+            if (con.State != ConnectionState.Open) return string.Empty;
             string formname = string.Empty;
             using (System.Data.Common.DbCommand cmd = con.CreateCommand())
             {
@@ -90,6 +95,8 @@ where pokemon.species_id = {0} and pokemon_form_generations.game_index = {1} and
         }
         internal static string GetPokemonName(ushort Species, byte FormID, int langid = 9)
         {
+            if (con == null) return string.Empty;
+            if (con.State != ConnectionState.Open) return string.Empty;
             string pokemonname = string.Empty;
             using (System.Data.Common.DbCommand cmd = con.CreateCommand())
             {
