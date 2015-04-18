@@ -12,6 +12,7 @@ namespace PKMDS_Save_Editor
     public partial class PKMDS_Save_Editor : Form
     {
         private const string veekundb = @"..\..\..\..\PKMDS-DB\veekun-pokedex.sqlite";
+        private const string yellowstone = @"..\..\..\files\pk6\Yellowstone - C9A14631.pk6";
         private const string charizard = @"..\..\..\files\pk6\006 - Charizard - 853622BD286F.pk6";
         private const string jynx = @"..\..\..\files\pk6\124 - Jynx - 8028D005DE59.pk6";
         private const string mewtwo = @"..\..\..\files\pk6\150 - Mewtwo - 9AA4BEBE0B35.pk6";
@@ -35,6 +36,12 @@ namespace PKMDS_Save_Editor
 
         private void PKMDS_Save_Editor_Load(object sender, EventArgs e)
         {
+
+            Pokemon pkm = StructUtils.RawDeserialize<Pokemon>(yellowstone);
+            pkm.PokeRusDays = 11;
+            pkm.PokeRusStrain = 11;
+            System.Diagnostics.Debug.WriteLine(pkm.ToString());
+
             LoadSave(xysavfile);
             _boxesCurrencyManager = _boxesBindingSource.CurrencyManager;
             _boxesBindingSource.DataSource = _sav.PCStorageSystem.Boxes;

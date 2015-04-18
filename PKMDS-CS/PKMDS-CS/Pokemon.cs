@@ -190,6 +190,22 @@ namespace PKMDS_CS
         [MarshalAs(UnmanagedType.U1)]
         private byte move4currentpp;
 
+        [FieldOffset(0x66)]
+        [MarshalAs(UnmanagedType.U1)]
+        private byte move1ppups;
+
+        [FieldOffset(0x67)]
+        [MarshalAs(UnmanagedType.U1)]
+        private byte move2ppups;
+
+        [FieldOffset(0x68)]
+        [MarshalAs(UnmanagedType.U1)]
+        private byte move3ppups;
+
+        [FieldOffset(0x69)]
+        [MarshalAs(UnmanagedType.U1)]
+        private byte move4ppups;
+
         [FieldOffset(0x6A)]
         [MarshalAs(UnmanagedType.U2)]
         private ushort relearnmove1id;
@@ -1160,6 +1176,82 @@ namespace PKMDS_CS
         {
             get { return otmemorytext; }
             set { otmemorytext = value; }
+        }
+
+        [DisplayName("Move 1 Current PP")]
+        public byte Move1CurrentPP
+        {
+            get { return move1currentpp; }
+            set { move1currentpp = value; }
+        }
+
+        [DisplayName("Move 2 Current PP")]
+        public byte Move2CurrentPP
+        {
+            get { return move2currentpp; }
+            set { move2currentpp = value; }
+        }
+
+        [DisplayName("Move 3 Current PP")]
+        public byte Move3CurrentPP
+        {
+            get { return move3currentpp; }
+            set { move3currentpp = value; }
+        }
+
+        [DisplayName("Move 4 Current PP")]
+        public byte Move4CurrentPP
+        {
+            get { return move4currentpp; }
+            set { move4currentpp = value; }
+        }
+
+        [DisplayName("Move 1 PP Ups")]
+        public byte Move1PPUps
+        {
+            get { return move1ppups; }
+            set { move1ppups = value; }
+        }
+
+        [DisplayName("Move 2 PP Ups")]
+        public byte Move2PPUps
+        {
+            get { return move2ppups; }
+            set { move2ppups = value; }
+        }
+
+        [DisplayName("Move 3 PP Ups")]
+        public byte Move3PPUps
+        {
+            get { return move3ppups; }
+            set { move3ppups = value; }
+        }
+
+        [DisplayName("Move 4 PP Ups")]
+        public byte Move4PPUps
+        {
+            get { return move4ppups; }
+            set { move4ppups = value; }
+        }
+
+        [DisplayName("PokeRus Days")]
+        public int PokeRusDays
+        {
+            get { return (pokerus & 0x0F) >> 0; }
+            set
+            {
+                pokerus = Convert.ToByte((pokerus & ~(0x0Fu << 00)) | (value & 0x0Fu) << 00);
+            }
+        }
+
+        [DisplayName("PokeRus Strain")]
+        public int PokeRusStrain
+        {
+            get { return (pokerus & 0xF0) >> 4; }
+            set
+            {
+                pokerus = Convert.ToByte((pokerus & ~(0x0Fu << 04)) | (value & 0x0Fu) << 04);
+            }
         }
 
         #endregion Pokemon Properties
