@@ -28,13 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.comboBoxes = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
+            // 
+            // comboBoxes
+            // 
+            this.comboBoxes.FormattingEnabled = true;
+            this.comboBoxes.Location = new System.Drawing.Point(546, 767);
+            this.comboBoxes.Name = "comboBoxes";
+            this.comboBoxes.Size = new System.Drawing.Size(484, 28);
+            this.comboBoxes.TabIndex = 0;
+            this.comboBoxes.SelectedIndexChanged += new System.EventHandler(this.comboBoxes_SelectedIndexChanged);
             // 
             // PKMDS_Save_Editor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(842, 530);
+            this.ClientSize = new System.Drawing.Size(1161, 909);
+            this.Controls.Add(this.comboBoxes);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "PKMDS_Save_Editor";
@@ -46,6 +57,8 @@
         }
 
         #endregion
+
+        private System.Windows.Forms.ComboBox comboBoxes;
 
 
     }

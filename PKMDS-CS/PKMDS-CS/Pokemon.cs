@@ -2,6 +2,7 @@
 
 using System;
 using System.ComponentModel;
+using System.Drawing;
 using System.Runtime.InteropServices;
 
 #endregion
@@ -1252,6 +1253,23 @@ namespace PKMDS_CS
             {
                 pokerus = Convert.ToByte((pokerus & ~(0x0Fu << 04)) | (value & 0x0Fu) << 04);
             }
+        }
+
+        [DisplayName("Gender")]
+        public Genders Gender
+        {
+            get
+            {
+                if (this.Female) return Genders.Female;
+                if (this.Genderless) return Genders.Genderless;
+                return Genders.Male;
+            }
+        }
+
+        [DisplayName("Box Icon")]
+        public Image BoxIcon
+        {
+            get { return Images.GetPokemonImage(species, FormID, Gender); }
         }
 
         #endregion Pokemon Properties

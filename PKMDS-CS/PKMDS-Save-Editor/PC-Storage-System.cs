@@ -6,6 +6,7 @@ using System.Windows.Forms;
 using PKMDS_CS;
 using System.Drawing;
 using System.Data;
+using System.Collections.Generic;
 
 #endregion
 
@@ -28,6 +29,7 @@ namespace PKMDS_Save_Editor
         private const string ramsav2 = @"..\..\..\files\secret\ramsav2.bin";
         private const string ramsav_combined = @"..\..\..\files\secret\ramsav_combined.bin";
         private readonly BindingSource _boxesBindingSource = new BindingSource();
+        private readonly BindingSource _pokemonBindingSource = new BindingSource();
         private CurrencyManager _boxesCurrencyManager;
         private XYSav _sav;
         //private ORASSav _sav;
@@ -37,13 +39,31 @@ namespace PKMDS_Save_Editor
             InitializeComponent();
         }
 
+        List<PictureBox> pbSlots = new List<PictureBox>();
         private void PKMDS_Save_Editor_Load(object sender, EventArgs e)
         {
             DBTools.OpenDB(veekundb);
-
             LoadSave(xysavfile);
             _boxesCurrencyManager = _boxesBindingSource.CurrencyManager;
             _boxesBindingSource.DataSource = _sav.PCStorageSystem.Boxes;
+            _pokemonBindingSource.DataSource = _boxesCurrencyManager.Current;
+            _pokemonBindingSource.DataMember = "Pokemon";
+            FlowLayoutPanel flpMain = new FlowLayoutPanel();
+            flpMain.Name = "flpMain";
+            flpMain.Size = new Size(6 * 40, 5 * 40);
+            flpMain.Location = new Point(0, 0);
+            pbSlots.Clear();
+            for (int slot = 0; slot < 30; slot++)
+            {
+                pbSlots.Add(new PictureBox { Name = string.Format("pbSlot{00}", slot), Size = new Size(40, 40), Margin = new Padding(0, 0, 0, 0) });
+                pbSlots[slot].DataBindings.Add("Image", _pokemonBindingSource[slot], "BoxIcon", true, DataSourceUpdateMode.Never, null);
+                pbSlots[slot].DataBindings[0].Format += new ConvertEventHandler(ImageFormatEvent);
+                flpMain.Controls.Add(pbSlots[slot]);
+
+                comboBoxes.Items.Add(string.Format("Box {0}", slot + 1));
+            }
+            this.Controls.Add(flpMain);
+            comboBoxes.SelectedIndex = 0;
         }
 
         private void LoadSave(string saveFileName)
@@ -70,5 +90,33 @@ namespace PKMDS_Save_Editor
             DBTools.CloseDB();
         }
 
+        private void comboBoxes_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (comboBoxes.SelectedIndex == -1) return;
+            try
+            {
+                foreach (PictureBox pbSlot in pbSlots)
+                {
+                    pbSlot.DataBindings.Clear();
+                }
+                _boxesCurrencyManager.Position = comboBoxes.SelectedIndex;
+                _pokemonBindingSource.DataSource = _boxesCurrencyManager.Current;
+                //_pokemonBindingSource.ResetBindings(false);
+                for (int slot = 0; slot < 30; slot++)
+                {
+                    pbSlots[slot].DataBindings.Add("Image", _pokemonBindingSource[slot], "BoxIcon", true, DataSourceUpdateMode.Never, null);
+                    pbSlots[slot].DataBindings[0].Format += new ConvertEventHandler(ImageFormatEvent);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(string.Format("Error with databinding: {0}", ex.Message), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        private void ImageFormatEvent(object sender, ConvertEventArgs cevent)
+        {
+            if (cevent.DesiredType == typeof(Image)) return;
+            System.Diagnostics.Debug.WriteLine("");
+        }
     }
 }
