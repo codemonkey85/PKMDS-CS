@@ -37,37 +37,13 @@ namespace PKMDS_Save_Editor
             InitializeComponent();
         }
 
-        private void txtIdentifier_TextChanged(object sender, EventArgs e)
-        {
-            pbImage.Image = Images.GetImageFromResource(txtIdentifier.Text);
-        }
-
         private void PKMDS_Save_Editor_Load(object sender, EventArgs e)
         {
             DBTools.OpenDB(veekundb);
 
-            cbItems.DataSource = DBTools.GetItemDataTable;
-            cbItems.DisplayMember = DBTools.ItemDataTableColumns.name.ToString();
-            cbItems.ValueMember = DBTools.ItemDataTableColumns.id.ToString();
-            cbItems.SelectedIndex = -1;
-
-            DataView view = new DataView(DBTools.GetPokemonDataTable);
-            cbSpecies.DataSource = view.ToTable(true, DBTools.PokemonDataTableColumns.species_id.ToString(), DBTools.PokemonDataTableColumns.name.ToString());
-
-            cbSpecies.DisplayMember = DBTools.PokemonDataTableColumns.name.ToString();
-            cbSpecies.ValueMember = DBTools.PokemonDataTableColumns.species_id.ToString();
-            cbSpecies.SelectedIndex = -1;
-
-            Pokemon pkm = StructUtils.RawDeserialize<Pokemon>(yellowstone);
-            pkm.PokeRusDays = 11;
-            pkm.PokeRusStrain = 11;
-            System.Diagnostics.Debug.WriteLine(pkm.ToString());
             LoadSave(xysavfile);
             _boxesCurrencyManager = _boxesBindingSource.CurrencyManager;
             _boxesBindingSource.DataSource = _sav.PCStorageSystem.Boxes;
-            //dgData.DataSource = _boxesBindingSource;
-            //dgData.DataMember = "Pokemon";
-            //boxesComboBox.SelectedIndex = 0;
         }
 
         private void LoadSave(string saveFileName)
@@ -89,55 +65,10 @@ namespace PKMDS_Save_Editor
             StructUtils.RawSerialize(_sav, saveFileName);
         }
 
-        private void boxesComboBox_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            //if (boxesComboBox.SelectedIndex == -1) return;
-            //_boxesCurrencyManager.Position = boxesComboBox.SelectedIndex;
-        }
-
         private void PKMDS_Save_Editor_FormClosing(object sender, FormClosingEventArgs e)
         {
             DBTools.CloseDB();
         }
 
-        private void cbItems_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (cbItems.SelectedIndex == -1) return;
-            if (
-                (cbItems.SelectedValue).GetType() == typeof(System.Data.DataRowView)
-                ) return;
-            ushort item = 0;
-            ushort.TryParse(cbItems.SelectedValue.ToString(), out item);
-            pbItemImage.Image = Images.GetItemImage(item);
-        }
-
-        private void SetPokemonImage()
-        {
-            if (cbSpecies.SelectedIndex == -1) return;
-            if (
-                (cbSpecies.SelectedValue).GetType() == typeof(System.Data.DataRowView)
-                ) return;
-            Genders gender = Genders.Male;
-            if (cbPokemonGender.SelectedIndex != -1) gender = (Genders)cbPokemonGender.SelectedIndex;
-            ushort species = 0;
-            ushort.TryParse(cbSpecies.SelectedValue.ToString(), out species);
-            pbSpeciesImage.Image = Images.GetPokemonImage(species, Convert.ToByte(numForm.Value), gender);
-            pbPokemonImageLarge.Image = pbSpeciesImage.Image;
-        }
-
-        private void cbSpecies_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            SetPokemonImage();
-        }
-
-        private void numForm_ValueChanged(object sender, EventArgs e)
-        {
-            SetPokemonImage();
-        }
-
-        private void cbPokemonGender_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            SetPokemonImage();
-        }
     }
 }
