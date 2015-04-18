@@ -23,7 +23,7 @@ namespace PKMDS_CS
             }
             catch (Exception ex)
             {
-
+                System.Diagnostics.Debug.WriteLine("Error opening database: {0}", ex.Message);
             }
         }
         public static void CloseDB()
@@ -35,7 +35,7 @@ namespace PKMDS_CS
             }
             catch (Exception ex)
             {
-
+                System.Diagnostics.Debug.WriteLine("Error closing database: {0}", ex.Message);
             }
         }
         public static int GetLevel(ushort Species, uint EXP)

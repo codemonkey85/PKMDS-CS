@@ -526,6 +526,48 @@ namespace PKMDS_CS
             set { forms = Convert.ToByte((forms & ~(0x1F << 3)) | (value & 0x1F) << 3); }
         }
 
+        [DisplayName("Circle")]
+        public bool Circle
+        {
+            get { return (markings & 0x01) == 0x01; }
+            set { markings = Convert.ToByte(markings & ~(0x01u << 00) | (Convert.ToByte(value) & (0x01u)) << 00); }
+        }
+
+        [DisplayName("Triangle")]
+        public bool Triangle
+        {
+            get { return (markings & 0x02) == 0x02; }
+            set { markings = Convert.ToByte(markings & ~(0x01u << 01) | (Convert.ToByte(value) & (0x01u)) << 01); }
+        }
+
+        [DisplayName("Square")]
+        public bool Square
+        {
+            get { return (markings & 0x04) == 0x04; }
+            set { markings = Convert.ToByte(markings & ~(0x01u << 02) | (Convert.ToByte(value) & (0x01u)) << 02); }
+        }
+
+        [DisplayName("Heart")]
+        public bool Heart
+        {
+            get { return (markings & 0x08) == 0x08; }
+            set { markings = Convert.ToByte(markings & ~(0x01u << 03) | (Convert.ToByte(value) & (0x01u)) << 03); }
+        }
+
+        [DisplayName("Star")]
+        public bool Star
+        {
+            get { return (markings & 0x10) == 0x10; }
+            set { markings = Convert.ToByte(markings & ~(0x01u << 04) | (Convert.ToByte(value) & (0x01u)) << 04); }
+        }
+
+        [DisplayName("Diamond")]
+        public bool Diamond
+        {
+            get { return (markings & 0x20) == 0x20; }
+            set { markings = Convert.ToByte(markings & ~(0x01u << 05) | (Convert.ToByte(value) & (0x01u)) << 05); }
+        }
+
         [DisplayName("Species")]
         public Species Species
         {
@@ -789,6 +831,13 @@ namespace PKMDS_CS
             set { nickname = value.Length > 12 ? value.Substring(0, 12) : value; }
         }
 
+        [DisplayName("Last Trainer Name")]
+        public string LastTrainerName
+        {
+            get { return lasttrainername; }
+            set { lasttrainername = value.Length > 12 ? value.Substring(0, 12) : value; }
+        }
+
         [DisplayName("Ball")]
         public Items Ball
         {
@@ -957,6 +1006,160 @@ namespace PKMDS_CS
         private string PokemonName
         {
             get { return DBTools.GetPokemonName(species, FormID, 9); }
+        }
+
+        [DisplayName("Region ID")]
+        public byte RegionID
+        {
+            get { return region; }
+            set { region = value; }
+        }
+
+        [DisplayName("Ability Number")]
+        public byte AbilityNum
+        {
+            get { return abilitynum; }
+            set { abilitynum = value; }
+        }
+
+        [DisplayName("Country")]
+        public byte Country
+        {
+            get { return country; }
+            set { country = value; }
+        }
+
+        [DisplayName("Encounter Type")]
+        public byte EncounterType
+        {
+            get { return encounter; }
+            set { encounter = value; }
+        }
+
+        [DisplayName("Enjoyment")]
+        public byte Enjoyment
+        {
+            get { return enjoyment; }
+            set { enjoyment = value; }
+        }
+
+        [DisplayName("Fullness")]
+        public byte Fullness
+        {
+            get { return fullness; }
+            set { fullness = value; }
+        }
+
+        [DisplayName("Current Trainer Is OT")]
+        public bool CurrentTrainerIsOT
+        {
+            get { return currenthandler == 1; }
+            set { currenthandler = value ? Convert.ToByte(1) : Convert.ToByte(0); }
+        }
+
+        [DisplayName("Last Trainer Affection")]
+        public byte LastTrainerAffection
+        {
+            get { return lasttraineraffection; }
+            set { lasttraineraffection = value; }
+        }
+
+        [DisplayName("Last Trainer Friendship")]
+        public byte LastTrainerFriendship
+        {
+            get { return lasttrainerfriendship; }
+            set { lasttrainerfriendship = value; }
+        }
+
+        [DisplayName("Last Trainer Gender")]
+        public Genders LastTrainerGender
+        {
+            get { return (Genders)lasttrainergender; }
+            set { lasttrainergender = (byte)value; }
+        }
+
+        [DisplayName("Last Trainer Memory Feeling")]
+        public byte LastTrainerMemoryFeeling
+        {
+            get { return lasttrainermemoryfeeling; }
+            set { lasttrainermemoryfeeling = value; }
+        }
+
+        [DisplayName("Last Trainer Memory Intensity")]
+        public byte LastTrainerMemoryIntensity
+        {
+            get { return lasttrainermemoryintensity; }
+            set { lasttrainermemoryintensity = value; }
+        }
+
+        [DisplayName("Last Trainer Memory Line")]
+        public byte LastTrainerMemoryLine
+        {
+            get { return lasttrainermemoryline; }
+            set { lasttrainermemoryline = value; }
+        }
+
+        [DisplayName("Last Trainer Memory Text Var")]
+        public ushort LastTrainerMemoryTextVar
+        {
+            get { return lasttrainermemorytext; }
+            set { lasttrainermemorytext = value; }
+        }
+
+        [DisplayName("OT Affection")]
+        public byte OTAffection
+        {
+            get { return otaffection; }
+            set { otaffection = value; }
+        }
+
+        [DisplayName("OT Friendship")]
+        public byte OTFriendship
+        {
+            get { return otfriendship; }
+            set { otfriendship = value; }
+        }
+
+        [DisplayName("OT Game ID")]
+        public byte OTGameID
+        {
+            get { return otgame; }
+            set { otgame = value; }
+        }
+
+        [DisplayName("OT Language ID")]
+        public byte OTLanguageID
+        {
+            get { return otlang; }
+            set { otlang = value; }
+        }
+
+        [DisplayName("OT Memory Feeling")]
+        public byte OTMemoryFeeling
+        {
+            get { return otmemoryfeeling; }
+            set { otmemoryfeeling = value; }
+        }
+
+        [DisplayName("OT Memory Intensity")]
+        public byte OTMemoryIntensity
+        {
+            get { return otmemoryintensity; }
+            set { otmemoryintensity = value; }
+        }
+
+        [DisplayName("OT Memory Line")]
+        public byte OTMemoryLine
+        {
+            get { return otmemoryline; }
+            set { otmemoryline = value; }
+        }
+
+        [DisplayName("OT Memory Text Var")]
+        public ushort OTMemoryTextVar
+        {
+            get { return otmemorytext; }
+            set { otmemorytext = value; }
         }
 
         #endregion Pokemon Properties

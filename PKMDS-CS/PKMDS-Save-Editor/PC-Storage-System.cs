@@ -73,6 +73,7 @@ namespace PKMDS_Save_Editor
         private void PKMDS_Save_Editor_FormClosing(object sender, FormClosingEventArgs e)
         {
             DBTools.CloseDB();
+            //StructUtils.RawSerialize(_sav.PCStorageSystem[0][0], @"C:\Users\Mike\Downloads\test.pk6");
         }
     }
 }
