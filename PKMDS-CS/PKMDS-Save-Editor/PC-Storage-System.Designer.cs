@@ -28,89 +28,156 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dgData = new System.Windows.Forms.DataGridView();
-            this.boxesComboBox = new System.Windows.Forms.ComboBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dgData)).BeginInit();
+            this.pbImage = new System.Windows.Forms.PictureBox();
+            this.txtIdentifier = new System.Windows.Forms.TextBox();
+            this.cbItems = new System.Windows.Forms.ComboBox();
+            this.pbItemImage = new System.Windows.Forms.PictureBox();
+            this.pbSpeciesImage = new System.Windows.Forms.PictureBox();
+            this.cbSpecies = new System.Windows.Forms.ComboBox();
+            this.numForm = new System.Windows.Forms.NumericUpDown();
+            this.cbPokemonGender = new System.Windows.Forms.ComboBox();
+            this.pbPokemonImageLarge = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pbImage)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbItemImage)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbSpeciesImage)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numForm)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPokemonImageLarge)).BeginInit();
             this.SuspendLayout();
             // 
-            // dgData
+            // pbImage
             // 
-            this.dgData.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dgData.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgData.Location = new System.Drawing.Point(11, 11);
-            this.dgData.Margin = new System.Windows.Forms.Padding(2);
-            this.dgData.Name = "dgData";
-            this.dgData.RowTemplate.Height = 28;
-            this.dgData.Size = new System.Drawing.Size(475, 315);
-            this.dgData.TabIndex = 0;
+            this.pbImage.Location = new System.Drawing.Point(12, 44);
+            this.pbImage.Name = "pbImage";
+            this.pbImage.Size = new System.Drawing.Size(200, 200);
+            this.pbImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pbImage.TabIndex = 0;
+            this.pbImage.TabStop = false;
             // 
-            // boxesComboBox
+            // txtIdentifier
             // 
-            this.boxesComboBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.boxesComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.boxesComboBox.FormattingEnabled = true;
-            this.boxesComboBox.Items.AddRange(new object[] {
-            "Box 1",
-            "Box 2",
-            "Box 3",
-            "Box 4",
-            "Box 5",
-            "Box 6",
-            "Box 7",
-            "Box 8",
-            "Box 9",
-            "Box 10",
-            "Box 11",
-            "Box 12",
-            "Box 13",
-            "Box 14",
-            "Box 15",
-            "Box 16",
-            "Box 17",
-            "Box 18",
-            "Box 19",
-            "Box 20",
-            "Box 21",
-            "Box 22",
-            "Box 23",
-            "Box 24",
-            "Box 25",
-            "Box 26",
-            "Box 27",
-            "Box 28",
-            "Box 29",
-            "Box 30",
-            "Box 31"});
-            this.boxesComboBox.Location = new System.Drawing.Point(12, 331);
-            this.boxesComboBox.Name = "boxesComboBox";
-            this.boxesComboBox.Size = new System.Drawing.Size(473, 21);
-            this.boxesComboBox.TabIndex = 1;
-            this.boxesComboBox.SelectedIndexChanged += new System.EventHandler(this.boxesComboBox_SelectedIndexChanged);
+            this.txtIdentifier.Location = new System.Drawing.Point(12, 12);
+            this.txtIdentifier.Name = "txtIdentifier";
+            this.txtIdentifier.Size = new System.Drawing.Size(200, 26);
+            this.txtIdentifier.TabIndex = 0;
+            this.txtIdentifier.TextChanged += new System.EventHandler(this.txtIdentifier_TextChanged);
+            // 
+            // cbItems
+            // 
+            this.cbItems.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.cbItems.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cbItems.FormattingEnabled = true;
+            this.cbItems.Location = new System.Drawing.Point(218, 10);
+            this.cbItems.Name = "cbItems";
+            this.cbItems.Size = new System.Drawing.Size(200, 28);
+            this.cbItems.TabIndex = 1;
+            this.cbItems.SelectedIndexChanged += new System.EventHandler(this.cbItems_SelectedIndexChanged);
+            // 
+            // pbItemImage
+            // 
+            this.pbItemImage.Location = new System.Drawing.Point(218, 44);
+            this.pbItemImage.Name = "pbItemImage";
+            this.pbItemImage.Size = new System.Drawing.Size(200, 200);
+            this.pbItemImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pbItemImage.TabIndex = 2;
+            this.pbItemImage.TabStop = false;
+            // 
+            // pbSpeciesImage
+            // 
+            this.pbSpeciesImage.Location = new System.Drawing.Point(424, 44);
+            this.pbSpeciesImage.Name = "pbSpeciesImage";
+            this.pbSpeciesImage.Size = new System.Drawing.Size(50, 50);
+            this.pbSpeciesImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pbSpeciesImage.TabIndex = 4;
+            this.pbSpeciesImage.TabStop = false;
+            // 
+            // cbSpecies
+            // 
+            this.cbSpecies.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.cbSpecies.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cbSpecies.FormattingEnabled = true;
+            this.cbSpecies.Location = new System.Drawing.Point(424, 10);
+            this.cbSpecies.Name = "cbSpecies";
+            this.cbSpecies.Size = new System.Drawing.Size(200, 28);
+            this.cbSpecies.TabIndex = 2;
+            this.cbSpecies.SelectedIndexChanged += new System.EventHandler(this.cbSpecies_SelectedIndexChanged);
+            // 
+            // numForm
+            // 
+            this.numForm.Location = new System.Drawing.Point(630, 12);
+            this.numForm.Maximum = new decimal(new int[] {
+            31,
+            0,
+            0,
+            0});
+            this.numForm.Name = "numForm";
+            this.numForm.Size = new System.Drawing.Size(121, 26);
+            this.numForm.TabIndex = 5;
+            this.numForm.ValueChanged += new System.EventHandler(this.numForm_ValueChanged);
+            // 
+            // cbPokemonGender
+            // 
+            this.cbPokemonGender.FormattingEnabled = true;
+            this.cbPokemonGender.Items.AddRange(new object[] {
+            "Male",
+            "Female",
+            "Genderless"});
+            this.cbPokemonGender.Location = new System.Drawing.Point(630, 44);
+            this.cbPokemonGender.Name = "cbPokemonGender";
+            this.cbPokemonGender.Size = new System.Drawing.Size(121, 28);
+            this.cbPokemonGender.TabIndex = 6;
+            this.cbPokemonGender.SelectedIndexChanged += new System.EventHandler(this.cbPokemonGender_SelectedIndexChanged);
+            // 
+            // pbPokemonImageLarge
+            // 
+            this.pbPokemonImageLarge.Location = new System.Drawing.Point(424, 100);
+            this.pbPokemonImageLarge.Name = "pbPokemonImageLarge";
+            this.pbPokemonImageLarge.Size = new System.Drawing.Size(160, 120);
+            this.pbPokemonImageLarge.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbPokemonImageLarge.TabIndex = 7;
+            this.pbPokemonImageLarge.TabStop = false;
             // 
             // PKMDS_Save_Editor
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(497, 364);
-            this.Controls.Add(this.boxesComboBox);
-            this.Controls.Add(this.dgData);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.ClientSize = new System.Drawing.Size(842, 530);
+            this.Controls.Add(this.pbPokemonImageLarge);
+            this.Controls.Add(this.cbPokemonGender);
+            this.Controls.Add(this.numForm);
+            this.Controls.Add(this.pbSpeciesImage);
+            this.Controls.Add(this.cbSpecies);
+            this.Controls.Add(this.pbItemImage);
+            this.Controls.Add(this.cbItems);
+            this.Controls.Add(this.txtIdentifier);
+            this.Controls.Add(this.pbImage);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "PKMDS_Save_Editor";
             this.Text = "Form1";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.PKMDS_Save_Editor_FormClosing);
             this.Load += new System.EventHandler(this.PKMDS_Save_Editor_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dgData)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbImage)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbItemImage)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbSpeciesImage)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numForm)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPokemonImageLarge)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dgData;
-        private System.Windows.Forms.ComboBox boxesComboBox;
+        private System.Windows.Forms.PictureBox pbImage;
+        private System.Windows.Forms.TextBox txtIdentifier;
+        private System.Windows.Forms.ComboBox cbItems;
+        private System.Windows.Forms.PictureBox pbItemImage;
+        private System.Windows.Forms.PictureBox pbSpeciesImage;
+        private System.Windows.Forms.ComboBox cbSpecies;
+        private System.Windows.Forms.NumericUpDown numForm;
+        private System.Windows.Forms.ComboBox cbPokemonGender;
+        private System.Windows.Forms.PictureBox pbPokemonImageLarge;
+
     }
 }
 
