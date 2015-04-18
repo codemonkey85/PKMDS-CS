@@ -57,7 +57,6 @@ namespace PKMDS_Save_Editor
             {
                 pbSlots.Add(new PictureBox { Name = string.Format("pbSlot{00}", slot), Size = new Size(40, 40), Margin = new Padding(0, 0, 0, 0) });
                 pbSlots[slot].DataBindings.Add("Image", _pokemonBindingSource[slot], "BoxIcon", true, DataSourceUpdateMode.Never, null);
-                pbSlots[slot].DataBindings[0].Format += new ConvertEventHandler(ImageFormatEvent);
                 flpMain.Controls.Add(pbSlots[slot]);
 
                 comboBoxes.Items.Add(string.Format("Box {0}", slot + 1));
@@ -101,22 +100,15 @@ namespace PKMDS_Save_Editor
                 }
                 _boxesCurrencyManager.Position = comboBoxes.SelectedIndex;
                 _pokemonBindingSource.DataSource = _boxesCurrencyManager.Current;
-                //_pokemonBindingSource.ResetBindings(false);
                 for (int slot = 0; slot < 30; slot++)
                 {
                     pbSlots[slot].DataBindings.Add("Image", _pokemonBindingSource[slot], "BoxIcon", true, DataSourceUpdateMode.Never, null);
-                    pbSlots[slot].DataBindings[0].Format += new ConvertEventHandler(ImageFormatEvent);
                 }
             }
             catch (Exception ex)
             {
                 MessageBox.Show(string.Format("Error with databinding: {0}", ex.Message), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-        }
-        private void ImageFormatEvent(object sender, ConvertEventArgs cevent)
-        {
-            if (cevent.DesiredType == typeof(Image)) return;
-            System.Diagnostics.Debug.WriteLine("");
         }
     }
 }
