@@ -143,21 +143,24 @@ namespace PKMDS_CS
             string pokemonname = string.Empty;
             using (System.Data.Common.DbCommand cmd = con.CreateCommand())
             {
-                if (FormID == 0)
-                {
-                    cmd.CommandText = string.Format(@"select name from pokemon_species_names where pokemon_species_names.pokemon_species_id = {0} and pokemon_species_Names.local_language_id = {1}
-", Species, langid);
-                }
-                else
-                {
-                    cmd.CommandText = string.Format(@"select pokemon_name from pokemon join pokemon_forms on pokemon.id = pokemon_forms.pokemon_id join pokemon_form_names on pokemon_form_names.pokemon_form_id = pokemon_forms.id where pokemon.species_id = {0} and pokemon_forms.form_order -1 = {1} and local_language_id = {2} order by form_order", Species, FormID, langid);
-                }
+                cmd.CommandText = string.Format(@"select pokemon_name from pokemon join pokemon_forms on pokemon.id = pokemon_forms.pokemon_id join pokemon_form_names on pokemon_form_names.pokemon_form_id = pokemon_forms.id where pokemon.species_id = {0} and pokemon_forms.form_order -1 = {1} and local_language_id = {2} order by form_order", Species, FormID, langid);
                 DataTable dtout = new DataTable();
                 dtout.Load(cmd.ExecuteReader());
                 if (dtout != null)
                 {
                     if (dtout.Rows.Count != 0)
+                    {
                         pokemonname = dtout.Rows[0].ItemArray[0].ToString();
+                    }
+                    else
+                    {
+                        dtout.Clear();
+                        dtout.Load(cmd.ExecuteReader());
+                        if (dtout.Rows.Count != 0)
+                        {
+                            pokemonname = dtout.Rows[0].ItemArray[0].ToString();
+                        }
+                    }
                 }
             }
             return pokemonname;

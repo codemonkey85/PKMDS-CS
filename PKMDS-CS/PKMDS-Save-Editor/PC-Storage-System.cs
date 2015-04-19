@@ -79,9 +79,14 @@ namespace PKMDS_Save_Editor
         {
             _sav = StructUtils.RawDeserialize<XYSav>(saveFileName);
             //_sav = StructUtils.RawDeserialize<ORASSav>(saveFileName);
+            ushort species = 0;
             foreach (var pokemon in _sav.PCStorageSystem.Boxes.SelectMany(box => box.Pokemon))
             {
                 PokePRNG.DecryptPokemon(pokemon);
+                if (pokemon.Species != Species.NoSpecies) 
+                {
+                    pokemon.Species = (Species)(++species);
+                }
             }
         }
 
