@@ -31,11 +31,11 @@ namespace PKMDS_CS
             string formidstr = string.Empty;
             if (formid != 0)
             {
-                var results = DBTools.GetPokemonDataTable.Select(string.Format("species_id = {0} and game_index = {1}", species, formid));
+                var results = DBTools.GetPokemonDataTable.Select(string.Format("species_id = {0} and form_id = {1}", species, formid));
                 if (results.Length > 0)
                 {
-                    formidstr = string.Format("-{0}",
-                        results[0].ItemArray[(int)DBTools.ItemDataTableColumns.identifier]
+                    formidstr = string.Format("_{0}",
+                        results[0].ItemArray[(int)DBTools.PokemonDataTableColumns.form_identifier]
                         );
                 }
                 else
@@ -45,8 +45,8 @@ namespace PKMDS_CS
                     results = DBTools.GetPokemonDataTable.Select(string.Format("species_id = {0} and form_id = {1}", species, formid));
                     if (results.Length > 0)
                     {
-                        formidstr = string.Format("-{0}",
-                            results[row].ItemArray[(int)DBTools.ItemDataTableColumns.identifier]
+                        formidstr = string.Format("_{0}",
+                            results[row].ItemArray[(int)DBTools.PokemonDataTableColumns.form_identifier]
                             );
                     }
                 }
@@ -59,8 +59,8 @@ namespace PKMDS_CS
                     species == (ushort)Species.Pyroar ||
                     species == (ushort)Species.Meowstic
                     )
-                    formidstr = "-f";
-            return GetImageFromResource(string.Format("_{0}{1}", species, formidstr));
+                    formidstr = "_f";
+            return GetImageFromResource(string.Format("_{0}{1}", species, formidstr.Replace("-", "_")));
         }
     }
 }

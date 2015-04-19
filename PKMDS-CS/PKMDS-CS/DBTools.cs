@@ -19,7 +19,7 @@ namespace PKMDS_CS
             identifier,
             species_id,
             form_id,
-            game_index,
+            //game_index,
             color_id,
             gender_rate,
             hatch_counter,
@@ -118,13 +118,14 @@ namespace PKMDS_CS
         }
         public static string GetFormName(ushort Species, byte FormID, int langid = 9)
         {
+            if (FormID == 0) return string.Empty;
             if (con == null) return string.Empty;
             if (con.State != ConnectionState.Open) return string.Empty;
             string formname = string.Empty;
             using (System.Data.Common.DbCommand cmd = con.CreateCommand())
             {
                 cmd.CommandText = string.Format(@"select form_name from pokemon join pokemon_forms on pokemon.id = pokemon_forms.pokemon_id join pokemon_form_generations on pokemon_form_generations.pokemon_form_id = pokemon_forms.id join pokemon_form_names on pokemon_form_names.pokemon_form_id = pokemon_forms.id 
-where pokemon.species_id = {0} and pokemon_form_generations.game_index = {1} and local_language_id = {2}", Species, FormID, langid);
+                    where pokemon.species_id = {0} and pokemon_form_generations.game_index = {1} and local_language_id = {2}", Species, FormID, langid);
                 DataTable dtout = new DataTable();
                 dtout.Load(cmd.ExecuteReader());
                 if (dtout != null)
@@ -142,8 +143,15 @@ where pokemon.species_id = {0} and pokemon_form_generations.game_index = {1} and
             string pokemonname = string.Empty;
             using (System.Data.Common.DbCommand cmd = con.CreateCommand())
             {
-                cmd.CommandText = string.Format(@"select pokemon_name from pokemon join pokemon_forms on pokemon.id = pokemon_forms.pokemon_id join pokemon_form_generations on pokemon_form_generations.pokemon_form_id = pokemon_forms.id join pokemon_form_names on pokemon_form_names.pokemon_form_id = pokemon_forms.id 
-where pokemon.species_id = {0} and pokemon_form_generations.game_index = {1} and local_language_id = {2}", Species, FormID, langid);
+                if (FormID == 0)
+                {
+                    cmd.CommandText = string.Format(@"select name from pokemon_species_names where pokemon_species_names.pokemon_species_id = {0} and pokemon_species_Names.local_language_id = {1}
+", Species, langid);
+                }
+                else
+                {
+                    cmd.CommandText = string.Format(@"select pokemon_name from pokemon join pokemon_forms on pokemon.id = pokemon_forms.pokemon_id join pokemon_form_names on pokemon_form_names.pokemon_form_id = pokemon_forms.id where pokemon.species_id = {0} and pokemon_forms.form_order -1 = {1} and local_language_id = {2} order by form_order", Species, FormID, langid);
+                }
                 DataTable dtout = new DataTable();
                 dtout.Load(cmd.ExecuteReader());
                 if (dtout != null)
@@ -162,13 +170,15 @@ where pokemon.species_id = {0} and pokemon_form_generations.game_index = {1} and
                 if (con.State != ConnectionState.Open) return null;
                 if (PokemonDataTable != null) return PokemonDataTable;
                 var sbSQL = new StringBuilder();
+                sbSQL.Append("--select pokemon_forms.identifier from pokemon join pokemon_forms on pokemon.id = pokemon_forms.pokemon_id join pokemon_form_names on pokemon_form_names.pokemon_form_id = pokemon_forms.id where pokemon.species_id = 666 and local_language_id = 9 and pokemon_forms.form_order -1 = 18 order by form_order \n");
+                sbSQL.Append(" \n");
                 sbSQL.Append("select \n");
                 sbSQL.Append("pokemon_species_names.name as [name], \n");
                 sbSQL.Append("pokemon_forms.form_identifier as [form_identifier], \n");
                 sbSQL.Append("pokemon.identifier as [identifier], \n");
                 sbSQL.Append("pokemon.species_id as [species_id], \n");
                 sbSQL.Append("pokemon_forms.form_order -1 as [form_id], \n");
-                sbSQL.Append("pokemon_form_generations.game_index as [game_index], \n");
+                //sbSQL.Append("pokemon_forms.game_index as [game_index], \n");
                 sbSQL.Append("pokemon_species.color_id as [color_id], \n");
                 sbSQL.Append("pokemon_species.gender_rate as [gender_rate], \n");
                 sbSQL.Append("pokemon_species.hatch_counter as [hatch_counter], \n");
@@ -186,7 +196,6 @@ where pokemon.species_id = {0} and pokemon_form_generations.game_index = {1} and
                 sbSQL.Append("pokemonstats.spdefense as [sp_defense] \n");
                 sbSQL.Append("from pokemon \n");
                 sbSQL.Append("join pokemon_species_names on pokemon_species_names.pokemon_species_id = pokemon_species.id \n");
-                sbSQL.Append("join pokemon_form_generations on pokemon_form_generations.pokemon_form_id = pokemon_forms.id \n");
                 sbSQL.Append("join pokemon_species on pokemon_species.id = pokemon.species_id \n");
                 sbSQL.Append("join pokemon_forms on pokemon.id = pokemon_forms.pokemon_id \n");
                 sbSQL.Append("join (select type1.pokemon_id, type1.type_id as [type_1], type2.type_id as [type_2] from pokemon_types [type1] join pokemon_types [type2] on type1.pokemon_id = type2.pokemon_id where type1.slot = 1 group by type1.pokemon_id) pokemontypes on pokemontypes.pokemon_id = pokemon.id \n");
@@ -213,7 +222,6 @@ where pokemon.species_id = {0} and pokemon_form_generations.game_index = {1} and
                 sbSQL.Append("where type1name.local_language_id = 9 \n");
                 sbSQL.Append("and type2name.local_language_id = 9 \n");
                 sbSQL.Append("and pokemon_species_names.local_language_id = 9 \n");
-                sbSQL.Append("and pokemon_form_generations.generation_id = 6 \n");
                 sbSQL.Append("order by pokemon.species_id asc, form_order asc");
                 using (var cmd = con.CreateCommand())
                 {

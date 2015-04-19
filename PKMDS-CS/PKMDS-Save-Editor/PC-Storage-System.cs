@@ -50,19 +50,29 @@ namespace PKMDS_Save_Editor
             _pokemonBindingSource.DataMember = "Pokemon";
             FlowLayoutPanel flpMain = new FlowLayoutPanel();
             flpMain.Name = "flpMain";
-            flpMain.Size = new Size(6 * 40, 5 * 40);
+            flpMain.Size = new Size(6 * 40, 5 * 30);
             flpMain.Location = new Point(0, 0);
             pbSlots.Clear();
             for (int slot = 0; slot < 30; slot++)
             {
-                pbSlots.Add(new PictureBox { Name = string.Format("pbSlot{00}", slot), Size = new Size(40, 40), Margin = new Padding(0, 0, 0, 0) });
+                pbSlots.Add(new PictureBox { Name = string.Format("pbSlot{00}", slot), Tag = string.Format("{0}", slot), Size = new Size(40, 30), Margin = new Padding(0, 0, 0, 0), SizeMode = PictureBoxSizeMode.CenterImage, BorderStyle = BorderStyle.FixedSingle });
                 pbSlots[slot].DataBindings.Add("Image", _pokemonBindingSource[slot], "BoxIcon", true, DataSourceUpdateMode.Never, null);
+                pbSlots[slot].DoubleClick += PKMDS_Save_Editor_DoubleClick;
                 flpMain.Controls.Add(pbSlots[slot]);
-
                 comboBoxes.Items.Add(string.Format("Box {0}", slot + 1));
             }
+            comboBoxes.Items.Add(string.Format("Box {0}", 31));
             this.Controls.Add(flpMain);
             comboBoxes.SelectedIndex = 0;
+        }
+
+        void PKMDS_Save_Editor_DoubleClick(object sender, EventArgs e)
+        {
+            int slot = 0;
+            if (int.TryParse(((PictureBox)sender).Tag.ToString(), out slot))
+            {
+                MessageBox.Show(_pokemonBindingSource[slot].ToString());
+            }
         }
 
         private void LoadSave(string saveFileName)
