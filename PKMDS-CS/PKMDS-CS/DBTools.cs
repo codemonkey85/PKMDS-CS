@@ -9,9 +9,11 @@ namespace PKMDS_CS
 {
     public static class DBTools
     {
+        // select game_index, name, decreased_stat_id, increased_stat_id from natures join nature_names on natures.id = nature_Names.nature_id where local_language_id = 9 order by game_index asc
         private static DbConnection con;
         private static DataTable PokemonDataTable;
         private static DataTable ItemDataTable;
+        private static DataTable NatureDataTable;
         public enum PokemonDataTableColumns
         {
             name,
@@ -41,6 +43,13 @@ namespace PKMDS_CS
             id,
             identifier,
             name
+        }
+        public enum NatureDataTableColumns
+        {
+            game_index,
+            name,
+            decreased_stat_id,
+            increased_stat_id
         }
         public static void OpenDB(string DBFile)
         {
@@ -217,7 +226,7 @@ namespace PKMDS_CS
                 sbSQL.Append("join pokemon_stats spdstats on defstats.pokemon_id = spdstats.pokemon_id \n");
                 sbSQL.Append("join pokemon_stats spatkstats on spdstats.pokemon_id = spatkstats.pokemon_id \n");
                 sbSQL.Append("join pokemon_stats spdefstats on spatkstats.pokemon_id = spdefstats.pokemon_id \n");
-                sbSQL.Append("where hpstats.stat_id = 1 and atkstats.stat_id = 2 and defstats.stat_id = 3 and spdstats.stat_id = 4 and spatkstats.stat_id = 5 and spdefstats.stat_id = 6 \n");
+                sbSQL.Append("where hpstats.stat_id = 1 and atkstats.stat_id = 2 and defstats.stat_id = 3 and spdstats.stat_id = 6 and spatkstats.stat_id = 4 and spdefstats.stat_id = 5 \n");
                 sbSQL.Append(") pokemonstats on pokemonstats.pokemon_id = pokemon.id \n");
                 sbSQL.Append("join type_names type1name on type1name.type_id = pokemontypes.type_1 join type_names type2name on pokemontypes.type_2 = type2name.type_id \n");
                 sbSQL.Append("join (select type_id, game_index from type_game_indices where generation_id = 6) gametypes1 on gametypes1.type_id = pokemontypes.type_1 \n");
@@ -250,6 +259,64 @@ namespace PKMDS_CS
                 }
                 return ItemDataTable;
             }
+        }
+        public static DataTable GetNatureDataTable
+        {
+            get
+            {
+                if (con == null) return null;
+                if (con.State != ConnectionState.Open) return null;
+                if (NatureDataTable != null) return NatureDataTable;
+                using (var cmd = con.CreateCommand())
+                {
+                    cmd.CommandText = string.Format(@"select game_index, name, decreased_stat_id, increased_stat_id from natures join nature_names on natures.id = nature_Names.nature_id where local_language_id = 9 order by game_index asc");
+                    NatureDataTable = new DataTable();
+                    NatureDataTable.Load(cmd.ExecuteReader());
+                }
+                return NatureDataTable;
+            }
+        }
+        internal static ushort[] CalcStats(
+            ushort species, byte formid, byte nature, int level,
+            uint HP_IV, uint ATK_IV, uint DEF_IV, uint SPE_IV, uint SPA_IV, uint SPD_IV,
+            byte HP_EV, byte ATK_EV, byte DEF_EV, byte SPE_EV, byte SPA_EV, byte SPD_EV
+            )
+        {
+            ushort[] stats = new ushort[6];
+            var results = GetPokemonDataTable.Select(string.Format("species_id = {0} and form_id = {1}", species, formid));
+            DataRow PokemonDataRow;
+            if (results.Length > 0)
+            {
+                PokemonDataRow = (DataRow)results[0];
+            }
+            else
+            {
+                return stats;
+            }
+
+            int HP_B = 0, ATK_B = 0, DEF_B = 0, SPA_B = 0, SPD_B = 0, SPE_B = 0;
+
+            int.TryParse(PokemonDataRow["hp"].ToString(), out HP_B);
+            int.TryParse(PokemonDataRow["attack"].ToString(), out ATK_B);
+            int.TryParse(PokemonDataRow["defense"].ToString(), out DEF_B);
+            int.TryParse(PokemonDataRow["sp_attack"].ToString(), out SPA_B);
+            int.TryParse(PokemonDataRow["sp_defense"].ToString(), out SPD_B);
+            int.TryParse(PokemonDataRow["speed"].ToString(), out SPE_B);
+
+            stats[0] = (HP_B == 1) ? (ushort)1 : (ushort)((((HP_IV + (2 * HP_B) + (HP_EV / 4) + 100) * level) / 100) + 10);
+            stats[1] = (ushort)((((ATK_IV + (2 * ATK_B) + (ATK_EV / 4)) * level) / 100) + 5);
+            stats[2] = (ushort)((((DEF_IV + (2 * DEF_B) + (DEF_EV / 4)) * level) / 100) + 5);
+            stats[3] = (ushort)((((SPE_IV + (2 * SPE_B) + (SPE_EV / 4)) * level) / 100) + 5);
+            stats[4] = (ushort)((((SPA_IV + (2 * SPA_B) + (SPA_EV / 4)) * level) / 100) + 5);
+            stats[5] = (ushort)((((SPD_IV + (2 * SPD_B) + (SPD_EV / 4)) * level) / 100) + 5);
+
+            int incr = nature / 5 + 1;
+            int decr = nature % 5 + 1;
+            if (incr == decr) return stats; // if neutral return stats without mod
+            stats[incr] *= 11; stats[incr] /= 10;
+            stats[decr] *= 9; stats[decr] /= 10;
+
+            return stats;
         }
     }
 }

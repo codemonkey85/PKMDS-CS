@@ -71,7 +71,17 @@ namespace PKMDS_Save_Editor
             int slot = 0;
             if (int.TryParse(((PictureBox)sender).Tag.ToString(), out slot))
             {
+                Pokemon pokemon = (Pokemon)_pokemonBindingSource[slot];
+                //pokemon.HPEffort = 1; pokemon.AttackEffort = 2; pokemon.DefenseEffort = 3; pokemon.SpAttackEffort = 252; pokemon.SpDefenseEffort = 0; pokemon.SpeedEffort = 252;
                 MessageBox.Show(_pokemonBindingSource[slot].ToString());
+                MessageBox.Show(string.Format("Stats are:\nHP={0}\nAttack={1}\nDefense={2}\nSpecial Attack={4}\nSpecial Defense={5}\nSpeed={3}",
+                    pokemon.HP,
+                    pokemon.Attack,
+                    pokemon.Defense,
+                    pokemon.Speed,
+                    pokemon.SpecialAttack,
+                    pokemon.SpecialDefense
+                    ));
             }
         }
 
@@ -83,10 +93,10 @@ namespace PKMDS_Save_Editor
             foreach (var pokemon in _sav.PCStorageSystem.Boxes.SelectMany(box => box.Pokemon))
             {
                 PokePRNG.DecryptPokemon(pokemon);
-                if (pokemon.Species != Species.NoSpecies) 
-                {
-                    pokemon.Species = (Species)(++species);
-                }
+                //if (pokemon.Species != Species.NoSpecies) 
+                //{
+                //    pokemon.Species = (Species)(++species);
+                //}
             }
         }
 

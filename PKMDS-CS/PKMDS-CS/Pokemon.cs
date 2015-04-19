@@ -1272,6 +1272,60 @@ namespace PKMDS_CS
             get { return Images.GetPokemonImage(species, FormID, Gender); }
         }
 
+        [DisplayName("HP")]
+        public int HP
+        {
+            get
+            {
+                return DBTools.CalcStats(species, FormID, nature, Level, HP_IV, Attack_IV, Defense_IV, Speed_IV, SpecialAttack_IV, SpecialDefense_IV, hp_effort, attack_effort, defense_effort, speed_effort, spattack_effort, spdefense_effort)[0];
+            }
+        }
+
+        [DisplayName("Attack")]
+        public int Attack
+        {
+            get
+            {
+                return DBTools.CalcStats(species, FormID, nature, Level, HP_IV, Attack_IV, Defense_IV, Speed_IV, SpecialAttack_IV, SpecialDefense_IV, hp_effort, attack_effort, defense_effort, speed_effort, spattack_effort, spdefense_effort)[1];
+            }
+        }
+
+        [DisplayName("Defense")]
+        public int Defense
+        {
+            get
+            {
+                return DBTools.CalcStats(species, FormID, nature, Level, HP_IV, Attack_IV, Defense_IV, Speed_IV, SpecialAttack_IV, SpecialDefense_IV, hp_effort, attack_effort, defense_effort, speed_effort, spattack_effort, spdefense_effort)[2];
+            }
+        }
+
+        [DisplayName("Speed")]
+        public int Speed
+        {
+            get
+            {
+                return DBTools.CalcStats(species, FormID, nature, Level, HP_IV, Attack_IV, Defense_IV, Speed_IV, SpecialAttack_IV, SpecialDefense_IV, hp_effort, attack_effort, defense_effort, speed_effort, spattack_effort, spdefense_effort)[3];
+            }
+        }
+
+        [DisplayName("Special Attack")]
+        public int SpecialAttack
+        {
+            get
+            {
+                return DBTools.CalcStats(species, FormID, nature, Level, HP_IV, Attack_IV, Defense_IV, Speed_IV, SpecialAttack_IV, SpecialDefense_IV, hp_effort, attack_effort, defense_effort, speed_effort, spattack_effort, spdefense_effort)[4];
+            }
+        }
+
+        [DisplayName("Special Defense")]
+        public int SpecialDefense
+        {
+            get
+            {
+                return DBTools.CalcStats(species, FormID, nature, Level, HP_IV, Attack_IV, Defense_IV, Speed_IV, SpecialAttack_IV, SpecialDefense_IV, hp_effort, attack_effort, defense_effort, speed_effort, spattack_effort, spdefense_effort)[5];
+            }
+        }
+
         #endregion Pokemon Properties
 
         #region Other Properties
