@@ -10,11 +10,6 @@ namespace PKMDS_CS
 {
     public class StructUtils
     {
-        public static void RawDeserialize(byte[] rawData, Pokemon pokemon)
-        {
-            pokemon.CloneFrom(RawDeserialize<Pokemon>(rawData));
-        }
-
         public static TType RawDeserialize<TType>(byte[] rawData, int position = 0)
         {
             Type anyType = typeof(TType);
@@ -26,7 +21,6 @@ namespace PKMDS_CS
             Marshal.FreeHGlobal(buffer);
             return (TType)retobj;
         }
-
         public static TType RawDeserialize<TType>(string fileName, int position = 0)
         {
             if (File.Exists(fileName))
@@ -45,28 +39,13 @@ namespace PKMDS_CS
             }
             return default(TType);
         }
-
-        public static void RawSerialize<TType>(byte[] rawData, int position, TType value)
-        {
-            var Data = RawSerialize(value);
-            Array.Copy(Data, 0, rawData, position, Data.Length);
-        }
-
         public static void RawSerialize(object anything, string fileName)
         {
             if (anything == null || string.IsNullOrEmpty(fileName))
             {
                 return;
             }
-            byte[] data;
-            if (anything.GetType() == typeof(Pokemon))
-            {
-                data = RawSerializePokemon((Pokemon)anything);
-            }
-            else
-            {
-                data = RawSerialize(anything);
-            }
+            byte[] data = RawSerialize(anything);
             if (data != null)
             {
                 using (FileStream fs = new FileStream(fileName, FileMode.Create, FileAccess.Write))
@@ -80,27 +59,15 @@ namespace PKMDS_CS
                 }
             }
         }
-
         public static byte[] RawSerialize(object anything)
         {
             int rawSize = Marshal.SizeOf(anything);
             IntPtr buffer = Marshal.AllocHGlobal(rawSize);
             Marshal.StructureToPtr(anything, buffer, false);
             byte[] rawDatas = new byte[rawSize];
+            //Array.Clear(rawDatas, 0, rawSize);
             Marshal.Copy(buffer, rawDatas, 0, rawSize);
             Marshal.FreeHGlobal(buffer);
-            return rawDatas;
-        }
-
-        private static byte[] RawSerializePokemon(Pokemon pokemon)
-        {
-            int rawSize = Marshal.SizeOf(pokemon);
-            IntPtr buffer = Marshal.AllocHGlobal(rawSize);
-            Marshal.StructureToPtr(pokemon, buffer, false);
-            byte[] rawDatas = new byte[rawSize];
-            Marshal.Copy(buffer, rawDatas, 0, rawSize);
-            Marshal.FreeHGlobal(buffer);
-            Array.Copy(BitConverter.GetBytes(PokePRNG.getCHK(rawDatas)), 0, rawDatas, 6, 2);
             return rawDatas;
         }
     }
