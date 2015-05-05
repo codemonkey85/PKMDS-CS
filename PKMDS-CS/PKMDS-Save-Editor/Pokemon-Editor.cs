@@ -27,8 +27,8 @@ namespace PKMDS_Save_Editor
                     .Cast<Species>()
                     .Where(p => p != Species.NoSpecies)
                     .ToArray<Species>();
-            pbSprite.DataBindings.Add("Image", _pokemonBindingSource, "BoxIcon");
-            speciesComboBox.DataBindings.Add("SelectedItem", tempPokemon, "Species");
+            pbSprite.DataBindings.Add("Image", _pokemonBindingSource, "BoxIcon", false, DataSourceUpdateMode.Never, null);
+            speciesComboBox.DataBindings.Add("SelectedItem", tempPokemon, "Species", false, DataSourceUpdateMode.OnPropertyChanged, Species.NoSpecies);
             FormPopulated = true;
         }
         public void SetForm()
@@ -52,5 +52,6 @@ namespace PKMDS_Save_Editor
         {
             this.Close();
         }
+
     }
 }

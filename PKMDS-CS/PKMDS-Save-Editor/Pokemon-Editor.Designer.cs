@@ -42,9 +42,10 @@
             // 
             this.buttonOk.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.buttonOk.AutoSize = true;
-            this.buttonOk.Location = new System.Drawing.Point(285, 8);
+            this.buttonOk.Location = new System.Drawing.Point(190, 4);
+            this.buttonOk.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonOk.Name = "buttonOk";
-            this.buttonOk.Size = new System.Drawing.Size(60, 30);
+            this.buttonOk.Size = new System.Drawing.Size(40, 23);
             this.buttonOk.TabIndex = 1;
             this.buttonOk.Text = "Ok";
             this.buttonOk.UseVisualStyleBackColor = true;
@@ -54,9 +55,10 @@
             // 
             this.buttonApply.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.buttonApply.AutoSize = true;
-            this.buttonApply.Location = new System.Drawing.Point(75, 8);
+            this.buttonApply.Location = new System.Drawing.Point(48, 4);
+            this.buttonApply.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonApply.Name = "buttonApply";
-            this.buttonApply.Size = new System.Drawing.Size(60, 30);
+            this.buttonApply.Size = new System.Drawing.Size(43, 23);
             this.buttonApply.TabIndex = 0;
             this.buttonApply.Text = "Apply";
             this.buttonApply.UseVisualStyleBackColor = true;
@@ -66,9 +68,10 @@
             // 
             this.buttonCancel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.buttonCancel.AutoSize = true;
-            this.buttonCancel.Location = new System.Drawing.Point(492, 8);
+            this.buttonCancel.Location = new System.Drawing.Point(326, 4);
+            this.buttonCancel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonCancel.Name = "buttonCancel";
-            this.buttonCancel.Size = new System.Drawing.Size(68, 30);
+            this.buttonCancel.Size = new System.Drawing.Size(50, 23);
             this.buttonCancel.TabIndex = 2;
             this.buttonCancel.Text = "Cancel";
             this.buttonCancel.UseVisualStyleBackColor = true;
@@ -84,18 +87,20 @@
             this.tablelayoutButtons.Controls.Add(this.buttonCancel, 2, 0);
             this.tablelayoutButtons.Controls.Add(this.buttonOk, 1, 0);
             this.tablelayoutButtons.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.tablelayoutButtons.Location = new System.Drawing.Point(0, 447);
+            this.tablelayoutButtons.Location = new System.Drawing.Point(0, 290);
+            this.tablelayoutButtons.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tablelayoutButtons.Name = "tablelayoutButtons";
             this.tablelayoutButtons.RowCount = 1;
             this.tablelayoutButtons.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tablelayoutButtons.Size = new System.Drawing.Size(633, 47);
+            this.tablelayoutButtons.Size = new System.Drawing.Size(422, 31);
             this.tablelayoutButtons.TabIndex = 3;
             // 
             // pbSprite
             // 
-            this.pbSprite.Location = new System.Drawing.Point(541, 12);
+            this.pbSprite.Location = new System.Drawing.Point(325, 11);
+            this.pbSprite.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pbSprite.Name = "pbSprite";
-            this.pbSprite.Size = new System.Drawing.Size(80, 60);
+            this.pbSprite.Size = new System.Drawing.Size(86, 36);
             this.pbSprite.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbSprite.TabIndex = 4;
             this.pbSprite.TabStop = false;
@@ -105,19 +110,21 @@
             this.speciesComboBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.speciesComboBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.speciesComboBox.FormattingEnabled = true;
-            this.speciesComboBox.Location = new System.Drawing.Point(492, 78);
+            this.speciesComboBox.Location = new System.Drawing.Point(325, 51);
+            this.speciesComboBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.speciesComboBox.Name = "speciesComboBox";
-            this.speciesComboBox.Size = new System.Drawing.Size(129, 28);
+            this.speciesComboBox.Size = new System.Drawing.Size(86, 21);
             this.speciesComboBox.TabIndex = 5;
             // 
             // Pokemon_Editor
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(633, 494);
+            this.ClientSize = new System.Drawing.Size(422, 321);
             this.Controls.Add(this.speciesComboBox);
             this.Controls.Add(this.pbSprite);
             this.Controls.Add(this.tablelayoutButtons);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Pokemon_Editor";
             this.Text = "Pokemon_Editor";
             this.tablelayoutButtons.ResumeLayout(false);
