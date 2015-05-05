@@ -17,6 +17,8 @@ namespace PKMDS_CS
         [MarshalAs(UnmanagedType.ByValArray, SizeConst = 232)]
         internal byte[] data;
 
+        public Pokemon() { this.data = new byte[232]; }
+
         internal uint EncryptionKey
         {
             get { return BitConverter.ToUInt32(data, 0x00); }

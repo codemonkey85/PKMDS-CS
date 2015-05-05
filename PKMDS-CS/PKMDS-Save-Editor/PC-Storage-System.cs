@@ -15,7 +15,6 @@ namespace PKMDS_Save_Editor
     public partial class PKMDS_Save_Editor : Form
     {
         private const string veekundb = @"..\..\..\..\PKMDS-DB\veekun-pokedex.sqlite";
-
         private const string yellowstone = @"..\..\..\files\pk6\Yellowstone - C9A14631.pk6";
         private const string charizard = @"..\..\..\files\pk6\006 - Charizard - 853622BD286F.pk6";
         private const string jynx = @"..\..\..\files\pk6\124 - Jynx - 8028D005DE59.pk6";
@@ -28,6 +27,8 @@ namespace PKMDS_Save_Editor
         private const string ramsav = @"..\..\..\files\secret\ramsav.bin";
         private const string ramsav2 = @"..\..\..\files\secret\ramsav2.bin";
         private const string ramsav_combined = @"..\..\..\files\secret\ramsav_combined.bin";
+        private static Pokemon_Editor PokemonForm = new Pokemon_Editor();
+        private static readonly Color SelectionColor = System.Drawing.Color.FromArgb(127, 255, 165, 0);
         private readonly BindingSource _boxesBindingSource = new BindingSource();
         private readonly BindingSource _pokemonBindingSource = new BindingSource();
         private CurrencyManager _boxesCurrencyManager;
@@ -55,33 +56,48 @@ namespace PKMDS_Save_Editor
             pbSlots.Clear();
             for (int slot = 0; slot < 30; slot++)
             {
-                pbSlots.Add(new PictureBox { Name = string.Format("pbSlot{00}", slot), Tag = string.Format("{0}", slot), Size = new Size(40, 30), Margin = new Padding(0, 0, 0, 0), SizeMode = PictureBoxSizeMode.CenterImage, BorderStyle = BorderStyle.FixedSingle });
+                pbSlots.Add(new PictureBox
+                {
+                    Name = string.Format("pbSlot{00}", slot),
+                    Tag = string.Format("{0}", slot),
+                    Size = new Size(40, 30),
+                    Margin = new Padding(0, 0, 0, 0),
+                    SizeMode = PictureBoxSizeMode.CenterImage,
+                    BorderStyle = BorderStyle.None
+                });
                 pbSlots[slot].DataBindings.Add("Image", _pokemonBindingSource[slot], "BoxIcon", true, DataSourceUpdateMode.Never, null);
-                pbSlots[slot].DoubleClick += PKMDS_Save_Editor_DoubleClick;
+                pbSlots[slot].DoubleClick += slot_DoubleClick;
+                pbSlots[slot].MouseEnter += slot_MouseEnter;
+                pbSlots[slot].MouseLeave += slot_MouseLeave;
                 flpMain.Controls.Add(pbSlots[slot]);
                 comboBoxes.Items.Add(string.Format("Box {0}", slot + 1));
             }
             comboBoxes.Items.Add(string.Format("Box {0}", 31));
-            this.Controls.Add(flpMain);
+            //this.Controls.Add(flpMain);
+            panelBoxedPokemon.Controls.Add(flpMain);
             comboBoxes.SelectedIndex = 0;
         }
 
-        void PKMDS_Save_Editor_DoubleClick(object sender, EventArgs e)
+        void slot_MouseLeave(object sender, EventArgs e)
+        {
+            ((PictureBox)sender).BackColor = System.Drawing.SystemColors.Control;
+        }
+
+        void slot_MouseEnter(object sender, EventArgs e)
+        {
+            ((PictureBox)sender).BackColor = SelectionColor;
+        }
+
+        void slot_DoubleClick(object sender, EventArgs e)
         {
             int slot = 0;
             if (int.TryParse(((PictureBox)sender).Tag.ToString(), out slot))
             {
                 Pokemon pokemon = (Pokemon)_pokemonBindingSource[slot];
-                //pokemon.HPEffort = 1; pokemon.AttackEffort = 2; pokemon.DefenseEffort = 3; pokemon.SpAttackEffort = 252; pokemon.SpDefenseEffort = 0; pokemon.SpeedEffort = 252;
-                MessageBox.Show(_pokemonBindingSource[slot].ToString());
-                MessageBox.Show(string.Format("Stats are:\nHP={0}\nAttack={1}\nDefense={2}\nSpecial Attack={4}\nSpecial Defense={5}\nSpeed={3}",
-                    pokemon.HP,
-                    pokemon.Attack,
-                    pokemon.Defense,
-                    pokemon.Speed,
-                    pokemon.SpecialAttack,
-                    pokemon.SpecialDefense
-                    ));
+                PokemonForm.Pokemon = pokemon;
+                PokemonForm.SetForm();
+                PokemonForm.ShowDialog();
+                RefreshBoxSlots();
             }
         }
 
@@ -89,14 +105,10 @@ namespace PKMDS_Save_Editor
         {
             _sav = StructUtils.RawDeserialize<XYSav>(saveFileName);
             //_sav = StructUtils.RawDeserialize<ORASSav>(saveFileName);
-            ushort species = 0;
             foreach (var pokemon in _sav.PCStorageSystem.Boxes.SelectMany(box => box.Pokemon))
             {
+                //pokemon.Decrypt();
                 PokePRNG.DecryptPokemon(pokemon);
-                //if (pokemon.Species != Species.NoSpecies) 
-                //{
-                //    pokemon.Species = (Species)(++species);
-                //}
             }
         }
 
@@ -104,6 +116,7 @@ namespace PKMDS_Save_Editor
         {
             foreach (var pokemon in _sav.PCStorageSystem.Boxes.SelectMany(box => box.Pokemon))
             {
+                //pokemon.Encrypt();
                 PokePRNG.EncryptPokemon(pokemon);
             }
             StructUtils.RawSerialize(_sav, saveFileName);
@@ -119,20 +132,33 @@ namespace PKMDS_Save_Editor
             if (comboBoxes.SelectedIndex == -1) return;
             try
             {
-                foreach (PictureBox pbSlot in pbSlots)
-                {
-                    pbSlot.DataBindings.Clear();
-                }
                 _boxesCurrencyManager.Position = comboBoxes.SelectedIndex;
                 _pokemonBindingSource.DataSource = _boxesCurrencyManager.Current;
-                for (int slot = 0; slot < 30; slot++)
-                {
-                    pbSlots[slot].DataBindings.Add("Image", _pokemonBindingSource[slot], "BoxIcon", true, DataSourceUpdateMode.Never, null);
-                }
+                RefreshBoxSlots();
             }
             catch (Exception ex)
             {
                 MessageBox.Show(string.Format("Error with databinding: {0}", ex.Message), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void RefreshBoxSlots(int Slot = 0)
+        {
+            if (Slot != 0)
+            {
+                pbSlots[Slot].DataBindings.Clear();
+                pbSlots[Slot].DataBindings.Add("Image", _pokemonBindingSource[Slot], "BoxIcon", true, DataSourceUpdateMode.Never, null);
+            }
+            else
+            {
+                foreach (PictureBox pbSlot in pbSlots)
+                {
+                    pbSlot.DataBindings.Clear();
+                }
+                for (int slot = 0; slot < 30; slot++)
+                {
+                    pbSlots[slot].DataBindings.Add("Image", _pokemonBindingSource[slot], "BoxIcon", true, DataSourceUpdateMode.Never, null);
+                }
             }
         }
     }
