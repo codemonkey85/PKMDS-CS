@@ -4,7 +4,7 @@ using System;
 using System.IO;
 using System.Runtime.InteropServices;
 
-#endregion
+#endregion Using
 
 namespace PKMDS_CS
 {
@@ -21,6 +21,7 @@ namespace PKMDS_CS
             Marshal.FreeHGlobal(buffer);
             return (TType)retobj;
         }
+
         public static TType RawDeserialize<TType>(string fileName, int position = 0)
         {
             if (File.Exists(fileName))
@@ -39,6 +40,7 @@ namespace PKMDS_CS
             }
             return default(TType);
         }
+
         public static void RawSerialize(object anything, string fileName)
         {
             if (anything == null || string.IsNullOrEmpty(fileName))
@@ -59,6 +61,7 @@ namespace PKMDS_CS
                 }
             }
         }
+
         public static byte[] RawSerialize(object anything)
         {
             int rawSize = Marshal.SizeOf(anything);

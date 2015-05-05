@@ -17,7 +17,10 @@ namespace PKMDS_CS
         [MarshalAs(UnmanagedType.ByValArray, SizeConst = 232)]
         internal byte[] data;
 
-        public Pokemon() { this.data = new byte[232]; }
+        public Pokemon()
+        {
+            this.data = new byte[232];
+        }
 
         internal uint EncryptionKey
         {
@@ -294,8 +297,11 @@ namespace PKMDS_CS
         }
 
         private byte move1ppups { get { return data[0x66]; } set { data[0x66] = value; } }
+
         private byte move2ppups { get { return data[0x67]; } set { data[0x67] = value; } }
+
         private byte move3ppups { get { return data[0x68]; } set { data[0x68] = value; } }
+
         private byte move4ppups { get { return data[0x69]; } set { data[0x69] = value; } }
 
         [DisplayName("Relearn Move 1 ID")]
@@ -335,11 +341,12 @@ namespace PKMDS_CS
 
         //[DisplayName("Unused")] public byte Unused { get {return data[0x73]; } set {Array.Copy(BitConverter.GetBytes(value),0,data,0x73,1); } }
         [DisplayName("IVs")]
-        internal uint ivs 
-        { 
-            get {return BitConverter.ToUInt32(data, 0x74); } 
-            set {Array.Copy(BitConverter.GetBytes(value),0,data,0x74,4); }
+        internal uint ivs
+        {
+            get { return BitConverter.ToUInt32(data, 0x74); }
+            set { Array.Copy(BitConverter.GetBytes(value), 0, data, 0x74, 4); }
         }
+
         //[DisplayName("Latest NotOT Handler Updates Every Trade")] public byte[24] LatestNotOTHandlerUpdatesEveryTrade { get {return ; } set {; } }
         //[DisplayName("Null Terminator")] public ushort NullTerminator { get {return BitConverter.ToUInt16(data, 0x90); } set {Array.Copy(BitConverter.GetBytes(value),0,data,0x90,2); } }
         public byte lasttrainergender
@@ -496,10 +503,15 @@ namespace PKMDS_CS
         }
 
         private byte datemetyear { get { return data[0xD1]; } set { data[0xD1] = value; } }
+
         private byte datemetmonth { get { return data[0xD2]; } set { data[0xD2] = value; } }
+
         private byte datemetday { get { return data[0xD3]; } set { data[0xD3] = value; } }
+
         private byte eggmetyear { get { return data[0xD4]; } set { data[0xD4] = value; } }
+
         private byte eggmetmonth { get { return data[0xD5]; } set { data[0xD5] = value; } }
+
         private byte eggmetday { get { return data[0xD6]; } set { data[0xD6] = value; } }
 
         //[DisplayName("Date Egg Received")] public byte[3] DateEggReceived { get {return ; } set {; } }

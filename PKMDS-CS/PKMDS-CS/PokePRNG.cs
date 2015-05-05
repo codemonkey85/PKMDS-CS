@@ -16,6 +16,7 @@ namespace PKMDS_CS
             seed = (seed * a + c) & 0xFFFFFFFF;
             return seed;
         }
+
         internal static uint LCRNG(ref uint seed)
         {
             const uint a = 0x41C64E6D;
@@ -24,6 +25,7 @@ namespace PKMDS_CS
             seed = (seed * a + c) & 0xFFFFFFFF;
             return seed;
         }
+
         internal static byte[] shuffleArray(byte[] pkx, uint sv)
         {
             byte[] ekx = new byte[232];
@@ -41,6 +43,7 @@ namespace PKMDS_CS
 
             return ekx;
         }
+
         public static byte[] decryptArray(byte[] ekx)
         {
             byte[] pkx = (byte[])ekx.Clone();
@@ -57,6 +60,7 @@ namespace PKMDS_CS
 
             return pkx;
         }
+
         public static byte[] encryptArray(byte[] pkx)
         {
             uint pv = BitConverter.ToUInt32(pkx, 0);
@@ -73,6 +77,7 @@ namespace PKMDS_CS
 
             return ekx;
         }
+
         internal static ushort getCHK(byte[] data)
         {
             ushort chk = 0;
@@ -81,6 +86,7 @@ namespace PKMDS_CS
 
             return chk;
         }
+
         internal static bool verifychk(byte[] input)
         {
             ushort checksum = 0;
@@ -105,18 +111,22 @@ namespace PKMDS_CS
                 return (chk == BitConverter.ToUInt16(input, 0x6));
             }
         }
+
         internal static uint getPSV(uint PID)
         {
             return Convert.ToUInt16(((PID >> 16) ^ (PID & 0xFFFF)) >> 4);
         }
+
         internal static uint getTSV(uint TID, uint SID)
         {
             return ((TID ^ SID) >> 4);
         }
+
         public static void EncryptPokemon(Pokemon pokemon)
         {
             Array.Copy(PokePRNG.encryptArray(pokemon.data), 0, pokemon.data, 0, 232);
         }
+
         public static void DecryptPokemon(Pokemon pokemon)
         {
             Array.Copy(PokePRNG.decryptArray(pokemon.data), 0, pokemon.data, 0, 232);

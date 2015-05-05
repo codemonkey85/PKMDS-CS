@@ -1,19 +1,19 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Data.Common;
 using System.Data;
+using System.Data.Common;
+using System.Text;
+
 namespace PKMDS_CS
 {
     public static class DBTools
     {
         // select game_index, name, decreased_stat_id, increased_stat_id from natures join nature_names on natures.id = nature_Names.nature_id where local_language_id = 9 order by game_index asc
         private static DbConnection con;
+
         private static DataTable PokemonDataTable;
         private static DataTable ItemDataTable;
         private static DataTable NatureDataTable;
+
         public enum PokemonDataTableColumns
         {
             name,
@@ -21,8 +21,10 @@ namespace PKMDS_CS
             identifier,
             species_id,
             form_id,
+
             //game_index,
             color_id,
+
             gender_rate,
             hatch_counter,
             has_gender_differences,
@@ -38,12 +40,14 @@ namespace PKMDS_CS
             sp_attack,
             sp_defense
         }
+
         public enum ItemDataTableColumns
         {
             id,
             identifier,
             name
         }
+
         public enum NatureDataTableColumns
         {
             game_index,
@@ -51,6 +55,7 @@ namespace PKMDS_CS
             decreased_stat_id,
             increased_stat_id
         }
+
         public static void OpenDB(string DBFile)
         {
             if (con != null) return;
@@ -67,6 +72,7 @@ namespace PKMDS_CS
                 System.Diagnostics.Debug.WriteLine("Error opening database: {0}", ex.Message);
             }
         }
+
         public static void CloseDB()
         {
             try
@@ -79,6 +85,7 @@ namespace PKMDS_CS
                 System.Diagnostics.Debug.WriteLine("Error closing database: {0}", ex.Message);
             }
         }
+
         private static int GetGrowthRateID(ushort species)
         {
             int growthrateid = 0;
@@ -86,6 +93,7 @@ namespace PKMDS_CS
                 species))[0].ItemArray[(int)DBTools.PokemonDataTableColumns.growth_rate_id].ToString(), out growthrateid);
             return growthrateid;
         }
+
         public static int GetLevel(ushort species, uint EXP)
         {
             if (con == null) return 0;
@@ -107,6 +115,7 @@ namespace PKMDS_CS
             }
             return level;
         }
+
         public static uint GetEXPAtLevel(ushort Species, int Level)
         {
             if (con == null) return 0u;
@@ -125,6 +134,7 @@ namespace PKMDS_CS
             }
             return exp;
         }
+
         public static string GetFormName(ushort Species, byte FormID, int langid = 9)
         {
             if (FormID == 0) return string.Empty;
@@ -133,7 +143,7 @@ namespace PKMDS_CS
             string formname = string.Empty;
             using (System.Data.Common.DbCommand cmd = con.CreateCommand())
             {
-                cmd.CommandText = string.Format(@"select form_name from pokemon join pokemon_forms on pokemon.id = pokemon_forms.pokemon_id join pokemon_form_generations on pokemon_form_generations.pokemon_form_id = pokemon_forms.id join pokemon_form_names on pokemon_form_names.pokemon_form_id = pokemon_forms.id 
+                cmd.CommandText = string.Format(@"select form_name from pokemon join pokemon_forms on pokemon.id = pokemon_forms.pokemon_id join pokemon_form_generations on pokemon_form_generations.pokemon_form_id = pokemon_forms.id join pokemon_form_names on pokemon_form_names.pokemon_form_id = pokemon_forms.id
                     where pokemon.species_id = {0} and pokemon_form_generations.game_index = {1} and local_language_id = {2}", Species, FormID, langid);
                 DataTable dtout = new DataTable();
                 dtout.Load(cmd.ExecuteReader());
@@ -145,6 +155,7 @@ namespace PKMDS_CS
             }
             return formname;
         }
+
         internal static string GetPokemonName(ushort Species, byte FormID, int langid = 9)
         {
             if (con == null) return string.Empty;
@@ -174,6 +185,7 @@ namespace PKMDS_CS
             }
             return pokemonname;
         }
+
         public static DataTable GetPokemonDataTable
         {
             get
@@ -244,6 +256,7 @@ namespace PKMDS_CS
                 return PokemonDataTable;
             }
         }
+
         public static DataTable GetItemDataTable
         {
             get
@@ -260,6 +273,7 @@ namespace PKMDS_CS
                 return ItemDataTable;
             }
         }
+
         public static DataTable GetNatureDataTable
         {
             get
@@ -276,6 +290,7 @@ namespace PKMDS_CS
                 return NatureDataTable;
             }
         }
+
         internal static ushort[] CalcStats(
             ushort species, byte formid, byte nature, int level,
             uint HP_IV, uint ATK_IV, uint DEF_IV, uint SPE_IV, uint SPA_IV, uint SPD_IV,

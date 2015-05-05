@@ -1,10 +1,5 @@
-﻿using PKMDS_CS;
-using System;
-using System.Collections.Generic;
+﻿using System;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace PKMDS_CS
 {
@@ -22,10 +17,12 @@ namespace PKMDS_CS
                 return null;
             }
         }
+
         public static Image GetItemImage(ushort item)
         {
             return GetImageFromResource(DBTools.GetItemDataTable.Select(string.Format("id = {0}", item))[0].ItemArray[(int)DBTools.ItemDataTableColumns.identifier].ToString());
         }
+
         public static Image GetPokemonImage(ushort species, byte formid = 0, Genders gender = Genders.Male)
         {
             string formidstr = string.Empty;

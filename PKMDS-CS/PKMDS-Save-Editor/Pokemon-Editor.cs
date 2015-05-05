@@ -1,11 +1,11 @@
 ﻿#region Using
 
-using System.Windows.Forms;
 using PKMDS_CS;
 using System;
 using System.Linq;
+using System.Windows.Forms;
 
-#endregion
+#endregion Using
 
 namespace PKMDS_Save_Editor
 {
@@ -15,11 +15,15 @@ namespace PKMDS_Save_Editor
         {
             InitializeComponent();
         }
+
         private bool FormPopulated = false;
         private Pokemon _pokemon;
         private Pokemon tempPokemon = new Pokemon();
+
         public Pokemon Pokemon { get { return _pokemon; } set { _pokemon = value; tempPokemon.CloneFrom(_pokemon); } }
+
         private readonly BindingSource _pokemonBindingSource = new BindingSource();
+
         public void PopulateForm()
         {
             if (FormPopulated) return;
@@ -31,6 +35,7 @@ namespace PKMDS_Save_Editor
             speciesComboBox.DataBindings.Add("SelectedItem", tempPokemon, "Species", false, DataSourceUpdateMode.OnPropertyChanged, Species.NoSpecies);
             FormPopulated = true;
         }
+
         public void SetForm()
         {
             PopulateForm();
@@ -52,6 +57,5 @@ namespace PKMDS_Save_Editor
         {
             this.Close();
         }
-
     }
 }

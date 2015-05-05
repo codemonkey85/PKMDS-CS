@@ -3,7 +3,7 @@
 using System;
 using System.Runtime.InteropServices;
 
-#endregion
+#endregion Using
 
 namespace PKMDS_CS
 {
@@ -11,7 +11,9 @@ namespace PKMDS_CS
     [Serializable]
     public class ORASSav
     {
-        [FieldOffset(0x38400)] [MarshalAs(UnmanagedType.Struct)] private PCStorageSystem pcstoragesystem;
+        [FieldOffset(0x38400)]
+        [MarshalAs(UnmanagedType.Struct)]
+        private PCStorageSystem pcstoragesystem;
 
         public PCStorageSystem PCStorageSystem
         {

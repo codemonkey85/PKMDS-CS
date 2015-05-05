@@ -1,14 +1,13 @@
 ﻿#region Using
 
+using PKMDS_CS;
 using System;
+using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
-using PKMDS_CS;
-using System.Drawing;
-using System.Data;
-using System.Collections.Generic;
 
-#endregion
+#endregion Using
 
 namespace PKMDS_Save_Editor
 {
@@ -40,7 +39,8 @@ namespace PKMDS_Save_Editor
             InitializeComponent();
         }
 
-        List<PictureBox> pbSlots = new List<PictureBox>();
+        private List<PictureBox> pbSlots = new List<PictureBox>();
+
         private void PKMDS_Save_Editor_Load(object sender, EventArgs e)
         {
             DBTools.OpenDB(veekundb);
@@ -78,17 +78,17 @@ namespace PKMDS_Save_Editor
             comboBoxes.SelectedIndex = 0;
         }
 
-        void slot_MouseLeave(object sender, EventArgs e)
+        private void slot_MouseLeave(object sender, EventArgs e)
         {
             ((PictureBox)sender).BackColor = System.Drawing.SystemColors.Control;
         }
 
-        void slot_MouseEnter(object sender, EventArgs e)
+        private void slot_MouseEnter(object sender, EventArgs e)
         {
             ((PictureBox)sender).BackColor = SelectionColor;
         }
 
-        void slot_DoubleClick(object sender, EventArgs e)
+        private void slot_DoubleClick(object sender, EventArgs e)
         {
             int slot = 0;
             if (int.TryParse(((PictureBox)sender).Tag.ToString(), out slot))
