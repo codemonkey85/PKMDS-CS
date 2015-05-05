@@ -8026,6 +8026,280 @@ namespace PKMDS_CS
         NoEffect
     }
 
+    [Flags]
+    public enum Ribbons_0x30
+    {
+        [Description("Kalos Champ Ribbon")]
+        Kalos_Champ_Ribbon = 0x01,
+
+        [Description("Champion Ribbon")]
+        Champion_Ribbon = 0x02,
+
+        [Description("Sinnoh Champ Ribbon")]
+        Sinnoh_Champ_Ribbon = 0x04,
+
+        [Description("Best Friends Ribbon")]
+        Best_Friends_Ribbon = 0x08,
+
+        [Description("Training Ribbon")]
+        Training_Ribbon = 0x10,
+
+        [Description("Skillful Battler Ribbon")]
+        Skillful_Battler_Ribbon = 0x20,
+
+        [Description("Expert Battler Ribbon")]
+        Expert_Battler_Ribbon = 0x40,
+
+        [Description("Effort Ribbon")]
+        Effort_Ribbon = 0x80,
+    }
+
+    [Flags]
+    public enum Ribbons_0x31
+    {
+        [Description("Alert Ribbon")]
+        Alert_Ribbon = 0x01,
+
+        [Description("Shock Ribbon")]
+        Shock_Ribbon = 0x02,
+
+        [Description("Downcast Ribbon")]
+        Downcast_Ribbon = 0x04,
+
+        [Description("Careless Ribbon")]
+        Careless_Ribbon = 0x08,
+
+        [Description("Relax Ribbon")]
+        Relax_Ribbon = 0x10,
+
+        [Description("Snooze Ribbon")]
+        Snooze_Ribbon = 0x20,
+
+        [Description("Smile Ribbon")]
+        Smile_Ribbon = 0x40,
+
+        [Description("Gorgeous Ribbon")]
+        Gorgeous_Ribbon = 0x80,
+    }
+
+    [Flags]
+    public enum Ribbons_0x32
+    {
+        [Description("Royal Ribbon")]
+        Royal_Ribbon = 0x01,
+
+        [Description("Gorgeous Royal Ribbon")]
+        Gorgeous_Royal_Ribbon = 0x02,
+
+        [Description("Artist Ribbon")]
+        Artist_Ribbon = 0x04,
+
+        [Description("Footprint Ribbon")]
+        Footprint_Ribbon = 0x08,
+
+        [Description("Record Ribbon")]
+        Record_Ribbon = 0x10,
+
+        [Description("Legend Ribbon")]
+        Legend_Ribbon = 0x20,
+
+        [Description("Country Ribbon")]
+        Country_Ribbon = 0x40,
+
+        [Description("National Ribbon")]
+        National_Ribbon = 0x80,
+    }
+
+    [Flags]
+    public enum Ribbons_0x33
+    {
+        [Description("Earth Ribbon")]
+        Earth_Ribbon = 0x01,
+
+        [Description("World Ribbon")]
+        World_Ribbon = 0x02,
+
+        [Description("Classic Ribbon")]
+        Classic_Ribbon = 0x04,
+
+        [Description("Premier Ribbon")]
+        Premier_Ribbon = 0x08,
+
+        [Description("Event Ribbon")]
+        Event_Ribbon = 0x10,
+
+        [Description("Birthday Ribbon")]
+        Birthday_Ribbon = 0x20,
+
+        [Description("Special Ribbon")]
+        Special_Ribbon = 0x40,
+
+        [Description("Souvenir Ribbon")]
+        Souvenir_Ribbon = 0x80,
+    }
+
+    [Flags]
+    public enum Ribbons_0x34
+    {
+        [Description("Wishing Ribbon")]
+        Wishing_Ribbon = 0x01,
+
+        [Description("Battle Champion Ribbon")]
+        Battle_Champion_Ribbon = 0x02,
+
+        [Description("Regional Champion Ribbon")]
+        Regional_Champion_Ribbon = 0x04,
+
+        [Description("National Champion Ribbon")]
+        National_Champion_Ribbon = 0x08,
+
+        [Description("World Champion Ribbon")]
+        World_Champion_Ribbon = 0x10,
+
+        //[Description("None")]
+        //None = 0x20,
+
+        //[Description("None")]
+        //None = 0x40,
+
+        [Description("Hoenn Champion Ribbon")]
+        Hoenn_Champion_Ribbon = 0x80,
+    }
+
+    [Flags]
+    public enum Ribbons_0x35
+    {
+        [Description("Contest Star Ribbon")]
+        Contest_Star_Ribbon = 0x01,
+
+        [Description("Coolness Master Ribbon")]
+        Coolness_Master_Ribbon = 0x02,
+
+        [Description("Beauty Master Ribbon")]
+        Beauty_Master_Ribbon = 0x04,
+
+        [Description("Cuteness Master Ribbon")]
+        Cuteness_Master_Ribbon = 0x08,
+
+        [Description("Cleverness Master Ribbon")]
+        Cleverness_Master_Ribbon = 0x10,
+
+        [Description("Toughness Master Ribbon")]
+        Toughness_Master_Ribbon = 0x20
+    }
+
+    [Flags]
+    public enum Medals_0x2C
+    {
+        //[Description("Unused")]
+        //Unused = 0x01,
+
+        //[Description("Unused")]
+        //Unused = 0x02,
+
+        [Description("Sp. Atk Level 1")]
+        Sp_Atk_Level_1 = 0x04,
+
+        [Description("HP Level 1")]
+        HP_Level_1 = 0x08,
+
+        [Description("Atk Level 1")]
+        Atk_Level_1 = 0x10,
+
+        [Description("Sp. Def Level 1")]
+        Sp_Def_Level_1 = 0x20,
+
+        [Description("Speed Level 1")]
+        Speed_Level_1 = 0x40,
+
+        [Description("Def Level 1")]
+        Def_Level_1 = 0x80,
+    }
+
+    [Flags]
+    public enum Medals_0x2D
+    {
+        [Description("Sp. Atk Level 2")]
+        Sp_Atk_Level_2 = 0x01,
+
+        [Description("HP Level 2")]
+        HP_Level_2 = 0x02,
+
+        [Description("Atk Level 2")]
+        Atk_Level_2 = 0x04,
+
+        [Description("Sp. Def Level 2")]
+        Sp_Def_Level_2 = 0x08,
+
+        [Description("Speed Level 2")]
+        Speed_Level_2 = 0x10,
+
+        [Description("Def Level 2")]
+        Def_Level_2 = 0x20,
+
+        [Description("Sp. Atk Level 3")]
+        Sp_Atk_Level_3 = 0x40,
+
+        [Description("HP Level 3")]
+        HP_Level_3 = 0x80,
+    }
+
+    [Flags]
+    public enum Medals_0x2E
+    {
+        [Description("Atk Level 3")]
+        Atk_Level_3 = 0x01,
+
+        [Description("Sp. Def Level 3")]
+        Sp_Def_Level_3 = 0x02,
+
+        [Description("Speed Level 3")]
+        Speed_Level_3 = 0x04,
+
+        [Description("Def Level 3")]
+        Def_Level_3 = 0x08,
+
+        [Description("The Troubles Keep on Coming?!")]
+        The_Troubles_Keep_on_Coming = 0x10,
+
+        [Description("The Leaf Stone Cup Begins!")]
+        The_Leaf_Stone_Cup_Begins = 0x20,
+
+        [Description("The Fire Stone Cup Begins!")]
+        The_Fire_Stone_Cup_Begins = 0x40,
+
+        [Description("The Water Stone Cup Begins!")]
+        The_Water_Stone_Cup_Begins = 0x80,
+    }
+
+    [Flags]
+    public enum Medals_0x2F
+    {
+        [Description("Follow Those Fleeing Goals!")]
+        Follow_Those_Fleeing_Goals = 0x01,
+
+        [Description("Watch Out! That's One Tricky Second Half!")]
+        Watch_Out_Thats_One_Tricky_Second_Half = 0x02,
+
+        [Description("An Opening of Lighting-Quick Attacks!")]
+        An_Opening_of_Lighting_Quick_Attacks = 0x04,
+
+        [Description("Those Long Shots Are No Long Shot!")]
+        Those_Long_Shots_Are_No_Long_Shot = 0x08,
+
+        [Description("Scatterbug Lugs Back!")]
+        Scatterbug_Lugs_Back = 0x10,
+
+        [Description("A Barrage of Bitbots!")]
+        A_Barrage_of_Bitbots = 0x20,
+
+        [Description("Drag Down Hydreigon!")]
+        Drag_Down_Hydreigon = 0x40,
+
+        [Description("The Battle for the Best: Version X/Y!")]
+        The_Battle_for_the_Best_Version_X_Y = 0x80,
+    }
+
     /*
 Value	Language
 0x1	日本語 (Japan)
