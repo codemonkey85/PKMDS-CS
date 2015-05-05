@@ -11,22 +11,11 @@ using System.Windows.Forms;
 
 namespace PKMDS_Save_Editor
 {
-    public partial class PKMDS_Save_Editor : Form
+    public partial class PC_Storage_System_Form : Form
     {
         private const string veekundb = @"..\..\..\..\PKMDS-DB\veekun-pokedex.sqlite";
-        private const string yellowstone = @"..\..\..\files\pk6\Yellowstone - C9A14631.pk6";
-        private const string charizard = @"..\..\..\files\pk6\006 - Charizard - 853622BD286F.pk6";
-        private const string jynx = @"..\..\..\files\pk6\124 - Jynx - 8028D005DE59.pk6";
-        private const string mewtwo = @"..\..\..\files\pk6\150 - Mewtwo - 9AA4BEBE0B35.pk6";
         private const string xysavfile = @"..\..\..\files\sav\PokemonXYDecrypted.sav";
-        private const string main = @"..\..\..\files\secret\main.sav";
-        private const string main1 = @"..\..\..\files\secret\main1.sav";
-        private const string main25 = @"..\..\..\files\secret\main25.sav";
-        private const string main37 = @"..\..\..\files\secret\main37.sav";
-        private const string ramsav = @"..\..\..\files\secret\ramsav.bin";
-        private const string ramsav2 = @"..\..\..\files\secret\ramsav2.bin";
-        private const string ramsav_combined = @"..\..\..\files\secret\ramsav_combined.bin";
-        private static Pokemon_Editor PokemonForm = new Pokemon_Editor();
+        private static Pokemon_Editor_Form PokemonEditorForm = new Pokemon_Editor_Form();
         private static readonly Color SelectionColor = System.Drawing.Color.FromArgb(127, 255, 165, 0);
         private readonly BindingSource _boxesBindingSource = new BindingSource();
         private readonly BindingSource _pokemonBindingSource = new BindingSource();
@@ -34,7 +23,7 @@ namespace PKMDS_Save_Editor
         private XYSav _sav;
         //private ORASSav _sav;
 
-        public PKMDS_Save_Editor()
+        public PC_Storage_System_Form()
         {
             InitializeComponent();
         }
@@ -73,7 +62,6 @@ namespace PKMDS_Save_Editor
                 comboBoxes.Items.Add(string.Format("Box {0}", slot + 1));
             }
             comboBoxes.Items.Add(string.Format("Box {0}", 31));
-            //this.Controls.Add(flpMain);
             panelBoxedPokemon.Controls.Add(flpMain);
             comboBoxes.SelectedIndex = 0;
         }
@@ -94,9 +82,9 @@ namespace PKMDS_Save_Editor
             if (int.TryParse(((PictureBox)sender).Tag.ToString(), out slot))
             {
                 Pokemon pokemon = (Pokemon)_pokemonBindingSource[slot];
-                PokemonForm.Pokemon = pokemon;
-                PokemonForm.SetForm();
-                PokemonForm.ShowDialog();
+                PokemonEditorForm.Pokemon = pokemon;
+                PokemonEditorForm.SetForm();
+                PokemonEditorForm.ShowDialog();
                 RefreshBoxSlots();
             }
         }

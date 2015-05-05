@@ -1,6 +1,6 @@
 ﻿namespace PKMDS_Save_Editor
 {
-    partial class PKMDS_Save_Editor
+    partial class PC_Storage_System_Form
     {
         /// <summary>
         /// Required designer variable.

@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace PKMDS_Save_Editor
 {
-    public partial class Pokemon_Editor : Form
+    public partial class Pokemon_Editor_Form : Form
     {
-        public Pokemon_Editor()
+        public Pokemon_Editor_Form()
         {
             InitializeComponent();
         }

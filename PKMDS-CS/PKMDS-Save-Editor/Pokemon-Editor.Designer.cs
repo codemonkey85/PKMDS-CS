@@ -1,6 +1,6 @@
 ﻿namespace PKMDS_Save_Editor
 {
-    partial class Pokemon_Editor
+    partial class Pokemon_Editor_Form
     {
         /// <summary>
         /// Required designer variable.

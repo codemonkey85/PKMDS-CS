@@ -13,7 +13,7 @@ namespace PKMDS_Save_Editor
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new PKMDS_Save_Editor());
+            Application.Run(new PC_Storage_System_Form());
         }
     }
 }
