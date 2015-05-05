@@ -7,7 +7,6 @@ namespace PKMDS_CS
 {
     public static class DBTools
     {
-        // select game_index, name, decreased_stat_id, increased_stat_id from natures join nature_names on natures.id = nature_Names.nature_id where local_language_id = 9 order by game_index asc
         private static DbConnection con;
 
         private static DataTable PokemonDataTable;
@@ -21,10 +20,7 @@ namespace PKMDS_CS
             identifier,
             species_id,
             form_id,
-
-            //game_index,
             color_id,
-
             gender_rate,
             hatch_counter,
             has_gender_differences,
@@ -84,6 +80,24 @@ namespace PKMDS_CS
             {
                 System.Diagnostics.Debug.WriteLine("Error closing database: {0}", ex.Message);
             }
+        }
+
+        public static DataTable GetData(string SQL)
+        {
+            DataTable table = new DataTable();
+            try
+            {
+                using (System.Data.Common.DbCommand cmd = con.CreateCommand())
+                {
+                    cmd.CommandText = SQL;
+                    table.Load(cmd.ExecuteReader());
+                }
+            }
+            catch (Exception)
+            {
+                return null;
+            }
+            return table;
         }
 
         private static int GetGrowthRateID(ushort species)
@@ -202,7 +216,6 @@ namespace PKMDS_CS
                 sbSQL.Append("pokemon.identifier as [identifier], \n");
                 sbSQL.Append("pokemon.species_id as [species_id], \n");
                 sbSQL.Append("pokemon_forms.form_order -1 as [form_id], \n");
-                //sbSQL.Append("pokemon_forms.game_index as [game_index], \n");
                 sbSQL.Append("pokemon_species.color_id as [color_id], \n");
                 sbSQL.Append("pokemon_species.gender_rate as [gender_rate], \n");
                 sbSQL.Append("pokemon_species.hatch_counter as [hatch_counter], \n");

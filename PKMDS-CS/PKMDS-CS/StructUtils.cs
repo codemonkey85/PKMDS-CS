@@ -68,7 +68,6 @@ namespace PKMDS_CS
             IntPtr buffer = Marshal.AllocHGlobal(rawSize);
             Marshal.StructureToPtr(anything, buffer, false);
             byte[] rawDatas = new byte[rawSize];
-            //Array.Clear(rawDatas, 0, rawSize);
             Marshal.Copy(buffer, rawDatas, 0, rawSize);
             Marshal.FreeHGlobal(buffer);
             return rawDatas;
