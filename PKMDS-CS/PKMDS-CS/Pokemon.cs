@@ -9,6 +9,18 @@ using System.Runtime.InteropServices;
 
 namespace PKMDS_CS
 {
+    enum Offsets
+    {
+        NicknameOffset = 0x40,
+        LastTrainerNameOffset = 0x78,
+        OTNameOffset = 0xB0
+    }
+    enum Consts
+    {
+        NameMaxLength = 24
+    }
+
+
     [StructLayout(LayoutKind.Explicit, Pack = 1, CharSet = CharSet.Unicode)]
     [Serializable]
     public class Pokemon
@@ -237,9 +249,6 @@ namespace PKMDS_CS
             set { Array.Copy(BitConverter.GetBytes(value), 0, data, 0x3A, 1); }
         }
 
-        //[DisplayName("Unused")] public byte[5] Unused { get {return ; } set {; } }
-        //[DisplayName("Nickname")] public byte[24] Nickname { get {return ; } set {; } }
-        //[DisplayName("Null Terminator")] public ushort NullTerminator { get {return BitConverter.ToUInt16(data, 0x58); } set {Array.Copy(BitConverter.GetBytes(value),0,data,0x58,2); } }
         [DisplayName("Move 1 ID")]
         public ushort move1id
         {
@@ -347,8 +356,6 @@ namespace PKMDS_CS
             set { Array.Copy(BitConverter.GetBytes(value), 0, data, 0x74, 4); }
         }
 
-        //[DisplayName("Latest NotOT Handler Updates Every Trade")] public byte[24] LatestNotOTHandlerUpdatesEveryTrade { get {return ; } set {; } }
-        //[DisplayName("Null Terminator")] public ushort NullTerminator { get {return BitConverter.ToUInt16(data, 0x90); } set {Array.Copy(BitConverter.GetBytes(value),0,data,0x90,2); } }
         public byte lasttrainergender
         {
             get { return data[0x92]; }
@@ -457,8 +464,6 @@ namespace PKMDS_CS
             set { Array.Copy(BitConverter.GetBytes(value), 0, data, 0xAF, 1); }
         }
 
-        //[DisplayName("OT Name")] public byte[24] OTName { get {return ; } set {; } }
-        //[DisplayName("Null Terminator")] public ushort NullTerminator { get {return BitConverter.ToUInt16(data, 0xC8); } set {Array.Copy(BitConverter.GetBytes(value),0,data,0xC8,2); } }
         [DisplayName("OT Friendship")]
         public byte OTFriendship
         {
@@ -930,6 +935,61 @@ namespace PKMDS_CS
             set { relearnmove4id = (ushort)value; }
         }
 
+        [DisplayName("Nickname")]
+        public string Nickname
+        {
+            get
+            {
+                return System.Text.Encoding.Unicode.GetString(data, (int)Offsets.NicknameOffset, (int)Consts.NameMaxLength);
+            }
+            set
+            {
+                byte[] sdata = System.Text.Encoding.Unicode.GetBytes(value);
+                int length = sdata.Length > (int)Consts.NameMaxLength ? (int)Consts.NameMaxLength : sdata.Length;
+                Array.Copy(sdata, 0, data, (int)Offsets.NicknameOffset, length);
+            }
+        }
+
+        [DisplayName("Last Trainer Name")]
+        public string LastTrainerName
+        {
+            get
+            {
+                return System.Text.Encoding.Unicode.GetString(data, (int)Offsets.LastTrainerNameOffset, (int)Consts.NameMaxLength);
+            }
+            set
+            {
+                byte[] sdata = System.Text.Encoding.Unicode.GetBytes(value);
+                int length = sdata.Length > (int)Consts.NameMaxLength ? (int)Consts.NameMaxLength : sdata.Length;
+                Array.Copy(sdata, 0, data, (int)Offsets.LastTrainerNameOffset, length);
+            }
+        }
+
+        [DisplayName("OT Name")]
+        public string OTName
+        {
+            get
+            {
+                return System.Text.Encoding.Unicode.GetString(data, (int)Offsets.OTNameOffset, (int)Consts.NameMaxLength);
+            }
+            set
+            {
+                byte[] sdata = System.Text.Encoding.Unicode.GetBytes(value);
+                int length = sdata.Length > (int)Consts.NameMaxLength ? (int)Consts.NameMaxLength : sdata.Length;
+                Array.Copy(sdata, 0, data, (int)Offsets.OTNameOffset, length);
+            }
+        }
+
+        // 0x40-0x57	Nickname
+        // 0x58-0x59	Null Terminator
+
+        //[DisplayName("Unused")] public byte[5] Unused { get {return ; } set {; } }
+        //[DisplayName("Nickname")] public byte[24] Nickname { get {return ; } set {; } }
+        //[DisplayName("Null Terminator")] public ushort NullTerminator { get {return BitConverter.ToUInt16(data, 0x58); } set {Array.Copy(BitConverter.GetBytes(value),0,data,0x58,2); } }
+
+        // 0x40-0x57	Nickname
+        // 0x58-0x59	Null Terminator
+
         //[DisplayName("Nickname")]
         //public string Nickname
         //{
@@ -937,12 +997,35 @@ namespace PKMDS_CS
         //    set { nickname = value.Length > 12 ? value.Substring(0, 12) : value; }
         //}
 
+        // 0x78-0x8F	Latest NotOT Handler
+        // Updates Every Trade
+        // 0x90-0x91	Null Terminator
+
         //[DisplayName("Last Trainer Name")]
         //public string LastTrainerName
         //{
         //    get { return lasttrainername; }
         //    set { lasttrainername = value.Length > 12 ? value.Substring(0, 12) : value; }
         //}
+
+        // 0xB0-0xC7	OT Name
+        // 0xC8-0xC9	Null Terminator
+
+        //[DisplayName("Original Trainer Name")]
+        //public string OTName
+        //{
+        //    get { return otname; }
+        //    set { otname = value.Length > 12 ? value.Substring(0, 12) : value; }
+        //}
+
+        //[DisplayName("Latest NotOT Handler Updates Every Trade")] public byte[24] LatestNotOTHandlerUpdatesEveryTrade { get {return ; } set {; } }
+        //[DisplayName("Null Terminator")] public ushort NullTerminator { get {return BitConverter.ToUInt16(data, 0x90); } set {Array.Copy(BitConverter.GetBytes(value),0,data,0x90,2); } }
+
+        // 0xB0-0xC7	OT Name
+        // 0xC8-0xC9	Null Terminator
+
+        //[DisplayName("OT Name")] public byte[24] OTName { get {return ; } set {; } }
+        //[DisplayName("Null Terminator")] public ushort NullTerminator { get {return BitConverter.ToUInt16(data, 0xC8); } set {Array.Copy(BitConverter.GetBytes(value),0,data,0xC8,2); } }
 
         [DisplayName("Ball")]
         public Items Ball
@@ -1036,13 +1119,6 @@ namespace PKMDS_CS
                 }
             }
         }
-
-        //[DisplayName("Original Trainer Name")]
-        //public string OTName
-        //{
-        //    get { return otname; }
-        //    set { otname = value.Length > 12 ? value.Substring(0, 12) : value; }
-        //}
 
         [DisplayName("Secret Super Training Available")]
         public bool SecretSuperTrainingAvailable

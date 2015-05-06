@@ -29,10 +29,11 @@ namespace PKMDS_Save_Editor
             if (FormPopulated) return;
             speciesComboBox.DataSource = Enum.GetValues(typeof(Species))
                     .Cast<Species>()
-                    .Where(p => p != Species.NoSpecies)
+                    .Where(s => s != Species.NoSpecies)
                     .ToArray<Species>();
             pbSprite.DataBindings.Add("Image", _pokemonBindingSource, "BoxIcon", false, DataSourceUpdateMode.Never, null);
             speciesComboBox.DataBindings.Add("SelectedItem", tempPokemon, "Species", false, DataSourceUpdateMode.OnPropertyChanged, Species.NoSpecies);
+            textNickname.DataBindings.Add("Text", _pokemonBindingSource, "Nickname", false, DataSourceUpdateMode.OnValidation, "");
             FormPopulated = true;
         }
 
