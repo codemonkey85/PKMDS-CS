@@ -34,6 +34,7 @@ namespace PKMDS_Save_Editor
             pbSprite.DataBindings.Add("Image", _pokemonBindingSource, "BoxIcon", false, DataSourceUpdateMode.Never, null);
             speciesComboBox.DataBindings.Add("SelectedItem", tempPokemon, "Species", false, DataSourceUpdateMode.OnPropertyChanged, Species.NoSpecies);
             textNickname.DataBindings.Add("Text", _pokemonBindingSource, "Nickname", false, DataSourceUpdateMode.OnValidation, "");
+            checkNicknamed.DataBindings.Add("Checked", _pokemonBindingSource, "IsNicknamed", false, DataSourceUpdateMode.OnPropertyChanged, false);
             FormPopulated = true;
         }
 

@@ -35,6 +35,7 @@
             this.pbSprite = new System.Windows.Forms.PictureBox();
             this.speciesComboBox = new System.Windows.Forms.ComboBox();
             this.textNickname = new System.Windows.Forms.TextBox();
+            this.checkNicknamed = new System.Windows.Forms.CheckBox();
             this.tablelayoutButtons.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbSprite)).BeginInit();
             this.SuspendLayout();
@@ -113,21 +114,34 @@
             // 
             // textNickname
             // 
-            this.textNickname.Location = new System.Drawing.Point(280, 17);
+            this.textNickname.Location = new System.Drawing.Point(337, 17);
+            this.textNickname.MaxLength = 12;
             this.textNickname.Name = "textNickname";
-            this.textNickname.Size = new System.Drawing.Size(202, 26);
+            this.textNickname.Size = new System.Drawing.Size(145, 26);
             this.textNickname.TabIndex = 6;
+            // 
+            // checkNicknamed
+            // 
+            this.checkNicknamed.AutoSize = true;
+            this.checkNicknamed.Location = new System.Drawing.Point(369, 48);
+            this.checkNicknamed.Name = "checkNicknamed";
+            this.checkNicknamed.Size = new System.Drawing.Size(114, 24);
+            this.checkNicknamed.TabIndex = 7;
+            this.checkNicknamed.Text = "Nicknamed";
+            this.checkNicknamed.UseVisualStyleBackColor = true;
             // 
             // Pokemon_Editor_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(633, 494);
+            this.Controls.Add(this.checkNicknamed);
             this.Controls.Add(this.textNickname);
             this.Controls.Add(this.speciesComboBox);
             this.Controls.Add(this.pbSprite);
             this.Controls.Add(this.tablelayoutButtons);
             this.Name = "Pokemon_Editor_Form";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Pokemon_Editor";
             this.tablelayoutButtons.ResumeLayout(false);
             this.tablelayoutButtons.PerformLayout();
@@ -146,5 +160,6 @@
         private System.Windows.Forms.PictureBox pbSprite;
         private System.Windows.Forms.ComboBox speciesComboBox;
         private System.Windows.Forms.TextBox textNickname;
+        private System.Windows.Forms.CheckBox checkNicknamed;
     }
 }

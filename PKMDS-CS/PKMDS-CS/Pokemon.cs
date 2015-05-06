@@ -15,11 +15,11 @@ namespace PKMDS_CS
         LastTrainerNameOffset = 0x78,
         OTNameOffset = 0xB0
     }
+    
     enum Consts
     {
         NameMaxLength = 24
     }
-
 
     [StructLayout(LayoutKind.Explicit, Pack = 1, CharSet = CharSet.Unicode)]
     [Serializable]
@@ -979,53 +979,6 @@ namespace PKMDS_CS
                 Array.Copy(sdata, 0, data, (int)Offsets.OTNameOffset, length);
             }
         }
-
-        // 0x40-0x57	Nickname
-        // 0x58-0x59	Null Terminator
-
-        //[DisplayName("Unused")] public byte[5] Unused { get {return ; } set {; } }
-        //[DisplayName("Nickname")] public byte[24] Nickname { get {return ; } set {; } }
-        //[DisplayName("Null Terminator")] public ushort NullTerminator { get {return BitConverter.ToUInt16(data, 0x58); } set {Array.Copy(BitConverter.GetBytes(value),0,data,0x58,2); } }
-
-        // 0x40-0x57	Nickname
-        // 0x58-0x59	Null Terminator
-
-        //[DisplayName("Nickname")]
-        //public string Nickname
-        //{
-        //    get { return nickname; }
-        //    set { nickname = value.Length > 12 ? value.Substring(0, 12) : value; }
-        //}
-
-        // 0x78-0x8F	Latest NotOT Handler
-        // Updates Every Trade
-        // 0x90-0x91	Null Terminator
-
-        //[DisplayName("Last Trainer Name")]
-        //public string LastTrainerName
-        //{
-        //    get { return lasttrainername; }
-        //    set { lasttrainername = value.Length > 12 ? value.Substring(0, 12) : value; }
-        //}
-
-        // 0xB0-0xC7	OT Name
-        // 0xC8-0xC9	Null Terminator
-
-        //[DisplayName("Original Trainer Name")]
-        //public string OTName
-        //{
-        //    get { return otname; }
-        //    set { otname = value.Length > 12 ? value.Substring(0, 12) : value; }
-        //}
-
-        //[DisplayName("Latest NotOT Handler Updates Every Trade")] public byte[24] LatestNotOTHandlerUpdatesEveryTrade { get {return ; } set {; } }
-        //[DisplayName("Null Terminator")] public ushort NullTerminator { get {return BitConverter.ToUInt16(data, 0x90); } set {Array.Copy(BitConverter.GetBytes(value),0,data,0x90,2); } }
-
-        // 0xB0-0xC7	OT Name
-        // 0xC8-0xC9	Null Terminator
-
-        //[DisplayName("OT Name")] public byte[24] OTName { get {return ; } set {; } }
-        //[DisplayName("Null Terminator")] public ushort NullTerminator { get {return BitConverter.ToUInt16(data, 0xC8); } set {Array.Copy(BitConverter.GetBytes(value),0,data,0xC8,2); } }
 
         [DisplayName("Ball")]
         public Items Ball
