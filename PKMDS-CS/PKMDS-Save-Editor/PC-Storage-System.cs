@@ -91,7 +91,7 @@ namespace PKMDS_Save_Editor
                 PokemonEditorForm.Pokemon = pokemon;
                 PokemonEditorForm.SetForm();
                 PokemonEditorForm.ShowDialog();
-                RefreshBoxSlots();
+                RefreshBoxSlots(slot);
             }
         }
 
@@ -122,7 +122,14 @@ namespace PKMDS_Save_Editor
 
         private void PKMDS_Save_Editor_FormClosing(object sender, FormClosingEventArgs e)
         {
-            DBTools.CloseDB();
+            try
+            {
+                DBTools.CloseDB();
+            }
+            catch (Exception)
+            {
+
+            }
         }
 
         private void comboBoxes_SelectedIndexChanged(object sender, EventArgs e)

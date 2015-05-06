@@ -76,9 +76,7 @@ namespace PKMDS_Save_Editor
             Graphics g = e.Graphics;
             PictureBox picbox = (PictureBox)sender;
             g.Clear(picbox.BackColor);
-
             g.InterpolationMode = InterpolationMode.NearestNeighbor;
-            // Draw the image using g.DrawImage()
             g.DrawImage(picbox.Image, new Rectangle(new Point(0, 0), picbox.Size));
         }
     }
