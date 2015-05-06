@@ -15,7 +15,7 @@ namespace PKMDS_CS
         LastTrainerNameOffset = 0x78,
         OTNameOffset = 0xB0
     }
-    
+
     enum Consts
     {
         NameMaxLength = 24
@@ -32,6 +32,15 @@ namespace PKMDS_CS
         public Pokemon()
         {
             this.data = new byte[232];
+        }
+
+        static void Swap(Pokemon a, Pokemon b)
+        {
+            Pokemon c = new Pokemon();
+            c.CloneFrom(a);
+            a.CloneFrom(b);
+            b.CloneFrom(c);
+            c = null;
         }
 
         internal uint EncryptionKey
@@ -946,6 +955,7 @@ namespace PKMDS_CS
             {
                 byte[] sdata = System.Text.Encoding.Unicode.GetBytes(value);
                 int length = sdata.Length > (int)Consts.NameMaxLength ? (int)Consts.NameMaxLength : sdata.Length;
+                Array.Clear(data, (int)Offsets.NicknameOffset, (int)Consts.NameMaxLength);
                 Array.Copy(sdata, 0, data, (int)Offsets.NicknameOffset, length);
             }
         }
@@ -961,6 +971,7 @@ namespace PKMDS_CS
             {
                 byte[] sdata = System.Text.Encoding.Unicode.GetBytes(value);
                 int length = sdata.Length > (int)Consts.NameMaxLength ? (int)Consts.NameMaxLength : sdata.Length;
+                Array.Clear(data, (int)Offsets.LastTrainerNameOffset, (int)Consts.NameMaxLength);
                 Array.Copy(sdata, 0, data, (int)Offsets.LastTrainerNameOffset, length);
             }
         }
@@ -976,6 +987,7 @@ namespace PKMDS_CS
             {
                 byte[] sdata = System.Text.Encoding.Unicode.GetBytes(value);
                 int length = sdata.Length > (int)Consts.NameMaxLength ? (int)Consts.NameMaxLength : sdata.Length;
+                Array.Clear(data, (int)Offsets.OTNameOffset, (int)Consts.NameMaxLength);
                 Array.Copy(sdata, 0, data, (int)Offsets.OTNameOffset, length);
             }
         }

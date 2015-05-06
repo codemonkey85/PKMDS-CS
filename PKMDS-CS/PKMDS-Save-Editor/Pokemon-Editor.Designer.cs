@@ -36,6 +36,7 @@
             this.speciesComboBox = new System.Windows.Forms.ComboBox();
             this.textNickname = new System.Windows.Forms.TextBox();
             this.checkNicknamed = new System.Windows.Forms.CheckBox();
+            this.itemComboBox = new System.Windows.Forms.ComboBox();
             this.tablelayoutButtons.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbSprite)).BeginInit();
             this.SuspendLayout();
@@ -91,7 +92,7 @@
             this.tablelayoutButtons.RowCount = 1;
             this.tablelayoutButtons.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tablelayoutButtons.Size = new System.Drawing.Size(633, 48);
-            this.tablelayoutButtons.TabIndex = 3;
+            this.tablelayoutButtons.TabIndex = 4;
             // 
             // pbSprite
             // 
@@ -110,7 +111,7 @@
             this.speciesComboBox.Location = new System.Drawing.Point(488, 78);
             this.speciesComboBox.Name = "speciesComboBox";
             this.speciesComboBox.Size = new System.Drawing.Size(127, 28);
-            this.speciesComboBox.TabIndex = 5;
+            this.speciesComboBox.TabIndex = 2;
             // 
             // textNickname
             // 
@@ -118,7 +119,7 @@
             this.textNickname.MaxLength = 12;
             this.textNickname.Name = "textNickname";
             this.textNickname.Size = new System.Drawing.Size(145, 26);
-            this.textNickname.TabIndex = 6;
+            this.textNickname.TabIndex = 0;
             // 
             // checkNicknamed
             // 
@@ -126,15 +127,26 @@
             this.checkNicknamed.Location = new System.Drawing.Point(369, 48);
             this.checkNicknamed.Name = "checkNicknamed";
             this.checkNicknamed.Size = new System.Drawing.Size(114, 24);
-            this.checkNicknamed.TabIndex = 7;
+            this.checkNicknamed.TabIndex = 1;
             this.checkNicknamed.Text = "Nicknamed";
             this.checkNicknamed.UseVisualStyleBackColor = true;
+            // 
+            // itemComboBox
+            // 
+            this.itemComboBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.itemComboBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.itemComboBox.FormattingEnabled = true;
+            this.itemComboBox.Location = new System.Drawing.Point(431, 158);
+            this.itemComboBox.Name = "itemComboBox";
+            this.itemComboBox.Size = new System.Drawing.Size(186, 28);
+            this.itemComboBox.TabIndex = 3;
             // 
             // Pokemon_Editor_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(633, 494);
+            this.Controls.Add(this.itemComboBox);
             this.Controls.Add(this.checkNicknamed);
             this.Controls.Add(this.textNickname);
             this.Controls.Add(this.speciesComboBox);
@@ -161,5 +173,6 @@
         private System.Windows.Forms.ComboBox speciesComboBox;
         private System.Windows.Forms.TextBox textNickname;
         private System.Windows.Forms.CheckBox checkNicknamed;
+        private System.Windows.Forms.ComboBox itemComboBox;
     }
 }
