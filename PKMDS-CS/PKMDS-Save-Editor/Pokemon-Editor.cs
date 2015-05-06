@@ -2,6 +2,7 @@
 
 using PKMDS_CS;
 using System;
+using System.Collections.Generic;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Linq;
@@ -30,18 +31,28 @@ namespace PKMDS_Save_Editor
         public void PopulateForm()
         {
             if (FormPopulated) return;
-            speciesComboBox.DataSource = Enum.GetValues(typeof(Species))
-                    .Cast<Species>()
-                    .Where(s => s != Species.NoSpecies)
-                    .ToArray<Species>();
 
-            itemComboBox.DataSource = Enum.GetValues(typeof(Items))
-                    .Cast<Items>()
-                    .ToArray<Items>();
+            List<SpeciesObject> SpeciesList = new List<SpeciesObject>();
+            foreach (var species in Enum.GetValues(typeof(Species)).Cast<Species>().Where(s => s != Species.NoSpecies).ToArray<Species>())
+            {
+                SpeciesList.Add(new SpeciesObject(species));
+            }
+            speciesComboBox.DataSource = SpeciesList;
+            speciesComboBox.ValueMember = "Value";
+            speciesComboBox.DisplayMember = "Name";
+
+            List<ItemObject> ItemList = new List<ItemObject>();
+            foreach (var item in Enum.GetValues(typeof(Items)).Cast<Items>().ToArray<Items>())
+            {
+                ItemList.Add(new ItemObject(item));
+            }
+            itemComboBox.DataSource = ItemList;
+            itemComboBox.ValueMember = "Value";
+            itemComboBox.DisplayMember = "Name";
 
             pbSprite.DataBindings.Add("Image", _pokemonBindingSource, "BoxIcon", false, DataSourceUpdateMode.Never, null);
-            speciesComboBox.DataBindings.Add("SelectedItem", tempPokemon, "Species", false, DataSourceUpdateMode.OnPropertyChanged, Species.NoSpecies);
-            itemComboBox.DataBindings.Add("SelectedItem", tempPokemon, "HeldItem", false, DataSourceUpdateMode.OnPropertyChanged, Items.NoItem);
+            speciesComboBox.DataBindings.Add("SelectedValue", tempPokemon, "Species", false, DataSourceUpdateMode.OnPropertyChanged, Species.NoSpecies);
+            itemComboBox.DataBindings.Add("SelectedValue", tempPokemon, "HeldItem", false, DataSourceUpdateMode.OnPropertyChanged, Items.NoItem);
             textNickname.DataBindings.Add("Text", _pokemonBindingSource, "Nickname", false, DataSourceUpdateMode.OnValidation, "");
             checkNicknamed.DataBindings.Add("Checked", _pokemonBindingSource, "IsNicknamed", false, DataSourceUpdateMode.OnPropertyChanged, false);
             FormPopulated = true;
@@ -53,6 +64,9 @@ namespace PKMDS_Save_Editor
             PopulateForm();
             _pokemonBindingSource.DataSource = tempPokemon;
             FormSet = true;
+
+            //tempPokemon.HeldItem = Items.Acro_Bike;
+
         }
 
         private void buttonApply_Click(object sender, System.EventArgs e)

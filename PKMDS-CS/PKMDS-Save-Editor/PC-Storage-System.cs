@@ -127,10 +127,7 @@ namespace PKMDS_Save_Editor
                 WriteSave(xysavfile);
                 DBTools.CloseDB();
             }
-            catch (Exception)
-            {
-
-            }
+            catch (Exception) { }
         }
 
         private void comboBoxes_SelectedIndexChanged(object sender, EventArgs e)

@@ -8300,6 +8300,66 @@ namespace PKMDS_CS
         The_Battle_for_the_Best_Version_X_Y = 0x80,
     }
 
+    public class ItemObject
+    {
+        public ItemObject(Items item)
+        {
+            Value = item;
+        }
+        private Items value;
+        public Items Value
+        {
+            get
+            {
+                return value;
+            }
+            set
+            {
+                this.value = Enum.IsDefined(typeof(Items), value)
+                    ? (Items)value
+                    : Items.NoItem;
+            }
+        }
+        public string Name
+        {
+            get { return value.EnumToString(); }
+        }
+        public override string ToString()
+        {
+            return value.EnumToString();
+        }
+    }
+
+    public class SpeciesObject
+    {
+        public SpeciesObject(Species species)
+        {
+            Value = species;
+        }
+        private Species value;
+        public Species Value
+        {
+            get
+            {
+                return value;
+            }
+            set
+            {
+                this.value = Enum.IsDefined(typeof(Species), value)
+                    ? (Species)value
+                    : Species.NoSpecies;
+            }
+        }
+        public string Name
+        {
+            get { return value.EnumToString(); }
+        }
+        public override string ToString()
+        {
+            return value.EnumToString();
+        }
+    }
+
     /*
 Value	Language
 0x1	日本語 (Japan)

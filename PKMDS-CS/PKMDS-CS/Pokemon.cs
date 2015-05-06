@@ -814,7 +814,10 @@ namespace PKMDS_CS
                     ? (Items)helditem
                     : Items.NoItem;
             }
-            set { helditem = (ushort)value; }
+            set
+            {
+                helditem = (ushort)value;
+            }
         }
 
         [DisplayName("Experience Points")]
