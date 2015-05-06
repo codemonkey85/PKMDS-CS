@@ -65,11 +65,9 @@ namespace PKMDS_Save_Editor
                 pbSlots[slot].MouseEnter += slot_MouseEnter;
                 pbSlots[slot].MouseLeave += slot_MouseLeave;
                 flpMain.Controls.Add(pbSlots[slot]);
-                //comboBoxes.Items.Add(string.Format("Box {0}", slot + 1));
             }
-            //comboBoxes.Items.Add(string.Format("Box {0}", 31));
             panelBoxedPokemon.Controls.Add(flpMain);
-            comboBoxes.SelectedIndex = 0;
+            comboBoxes.DataBindings.Add("SelectedIndex", _sav, "CurrentBox", false, DataSourceUpdateMode.OnPropertyChanged, 0);
         }
 
         private void slot_MouseLeave(object sender, EventArgs e)
@@ -97,6 +95,7 @@ namespace PKMDS_Save_Editor
 
         private void LoadSave(string saveFileName)
         {
+
             _sav = StructUtils.RawDeserialize<XYSav>(saveFileName);
             //_sav = StructUtils.RawDeserialize<ORASSav>(saveFileName);
             foreach (var pokemon in _sav.PCStorageSystem.Boxes.SelectMany(box => box.Pokemon))
@@ -105,6 +104,7 @@ namespace PKMDS_Save_Editor
                 PokePRNG.DecryptPokemon(pokemon);
             }
             comboBoxes.Items.Clear();
+            comboBoxes.DataBindings.Clear();
             comboBoxes.DataSource = _boxenamesBindingSource;
             textBoxName.DataBindings.Clear();
             textBoxName.DataBindings.Add("Text", _boxenamesBindingSource, null, false, DataSourceUpdateMode.OnValidation, "");

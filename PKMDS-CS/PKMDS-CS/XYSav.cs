@@ -1,6 +1,7 @@
 ﻿#region Using
 
 using System;
+using System.ComponentModel;
 using System.Runtime.InteropServices;
 
 #endregion Using
@@ -18,6 +19,17 @@ namespace PKMDS_CS
         [FieldOffset(0x9800)]
         [MarshalAs(UnmanagedType.Struct)]
         private PCStorageBoxNames pcstorageboxnames;
+
+        [FieldOffset(0x483F)]
+        [MarshalAs(UnmanagedType.U1)]
+        private byte currentbox;
+
+        [DisplayName("Current Box")]
+        public byte CurrentBox
+        {
+            get { return currentbox; }
+            set { currentbox = value; }
+        }
 
         public PCStorageSystem PCStorageSystem
         {
