@@ -45,9 +45,10 @@
             // 
             this.buttonOk.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.buttonOk.AutoSize = true;
-            this.buttonOk.Location = new System.Drawing.Point(286, 3);
+            this.buttonOk.Location = new System.Drawing.Point(190, 2);
+            this.buttonOk.Margin = new System.Windows.Forms.Padding(2);
             this.buttonOk.Name = "buttonOk";
-            this.buttonOk.Size = new System.Drawing.Size(60, 42);
+            this.buttonOk.Size = new System.Drawing.Size(40, 27);
             this.buttonOk.TabIndex = 1;
             this.buttonOk.Text = "Ok";
             this.buttonOk.UseVisualStyleBackColor = true;
@@ -57,9 +58,10 @@
             // 
             this.buttonApply.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.buttonApply.AutoSize = true;
-            this.buttonApply.Location = new System.Drawing.Point(62, 3);
+            this.buttonApply.Location = new System.Drawing.Point(41, 2);
+            this.buttonApply.Margin = new System.Windows.Forms.Padding(2);
             this.buttonApply.Name = "buttonApply";
-            this.buttonApply.Size = new System.Drawing.Size(87, 42);
+            this.buttonApply.Size = new System.Drawing.Size(58, 27);
             this.buttonApply.TabIndex = 0;
             this.buttonApply.Text = "Apply";
             this.buttonApply.UseVisualStyleBackColor = true;
@@ -69,9 +71,10 @@
             // 
             this.buttonCancel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.buttonCancel.AutoSize = true;
-            this.buttonCancel.Location = new System.Drawing.Point(476, 3);
+            this.buttonCancel.Location = new System.Drawing.Point(317, 2);
+            this.buttonCancel.Margin = new System.Windows.Forms.Padding(2);
             this.buttonCancel.Name = "buttonCancel";
-            this.buttonCancel.Size = new System.Drawing.Size(102, 42);
+            this.buttonCancel.Size = new System.Drawing.Size(68, 27);
             this.buttonCancel.TabIndex = 2;
             this.buttonCancel.Text = "Cancel";
             this.buttonCancel.UseVisualStyleBackColor = true;
@@ -87,46 +90,51 @@
             this.tablelayoutButtons.Controls.Add(this.buttonCancel, 2, 0);
             this.tablelayoutButtons.Controls.Add(this.buttonOk, 1, 0);
             this.tablelayoutButtons.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.tablelayoutButtons.Location = new System.Drawing.Point(0, 446);
+            this.tablelayoutButtons.Location = new System.Drawing.Point(0, 290);
+            this.tablelayoutButtons.Margin = new System.Windows.Forms.Padding(2);
             this.tablelayoutButtons.Name = "tablelayoutButtons";
             this.tablelayoutButtons.RowCount = 1;
             this.tablelayoutButtons.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tablelayoutButtons.Size = new System.Drawing.Size(633, 48);
+            this.tablelayoutButtons.Size = new System.Drawing.Size(422, 31);
             this.tablelayoutButtons.TabIndex = 4;
             // 
             // pbSprite
             // 
-            this.pbSprite.Location = new System.Drawing.Point(488, 17);
+            this.pbSprite.Location = new System.Drawing.Point(331, 11);
+            this.pbSprite.Margin = new System.Windows.Forms.Padding(2);
             this.pbSprite.Name = "pbSprite";
-            this.pbSprite.Size = new System.Drawing.Size(129, 55);
-            this.pbSprite.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbSprite.Size = new System.Drawing.Size(80, 60);
             this.pbSprite.TabIndex = 4;
             this.pbSprite.TabStop = false;
+            this.pbSprite.Paint += new System.Windows.Forms.PaintEventHandler(this.pbSprite_Paint);
             // 
             // speciesComboBox
             // 
             this.speciesComboBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.speciesComboBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.speciesComboBox.FormattingEnabled = true;
-            this.speciesComboBox.Location = new System.Drawing.Point(488, 78);
+            this.speciesComboBox.Location = new System.Drawing.Point(325, 75);
+            this.speciesComboBox.Margin = new System.Windows.Forms.Padding(2);
             this.speciesComboBox.Name = "speciesComboBox";
-            this.speciesComboBox.Size = new System.Drawing.Size(127, 28);
+            this.speciesComboBox.Size = new System.Drawing.Size(86, 21);
             this.speciesComboBox.TabIndex = 2;
             // 
             // textNickname
             // 
-            this.textNickname.Location = new System.Drawing.Point(337, 17);
+            this.textNickname.Location = new System.Drawing.Point(225, 11);
+            this.textNickname.Margin = new System.Windows.Forms.Padding(2);
             this.textNickname.MaxLength = 12;
             this.textNickname.Name = "textNickname";
-            this.textNickname.Size = new System.Drawing.Size(145, 26);
+            this.textNickname.Size = new System.Drawing.Size(98, 20);
             this.textNickname.TabIndex = 0;
             // 
             // checkNicknamed
             // 
             this.checkNicknamed.AutoSize = true;
-            this.checkNicknamed.Location = new System.Drawing.Point(369, 48);
+            this.checkNicknamed.Location = new System.Drawing.Point(243, 35);
+            this.checkNicknamed.Margin = new System.Windows.Forms.Padding(2);
             this.checkNicknamed.Name = "checkNicknamed";
-            this.checkNicknamed.Size = new System.Drawing.Size(114, 24);
+            this.checkNicknamed.Size = new System.Drawing.Size(80, 17);
             this.checkNicknamed.TabIndex = 1;
             this.checkNicknamed.Text = "Nicknamed";
             this.checkNicknamed.UseVisualStyleBackColor = true;
@@ -136,22 +144,24 @@
             this.itemComboBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.itemComboBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.itemComboBox.FormattingEnabled = true;
-            this.itemComboBox.Location = new System.Drawing.Point(431, 158);
+            this.itemComboBox.Location = new System.Drawing.Point(286, 100);
+            this.itemComboBox.Margin = new System.Windows.Forms.Padding(2);
             this.itemComboBox.Name = "itemComboBox";
-            this.itemComboBox.Size = new System.Drawing.Size(186, 28);
+            this.itemComboBox.Size = new System.Drawing.Size(125, 21);
             this.itemComboBox.TabIndex = 3;
             // 
             // Pokemon_Editor_Form
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(633, 494);
+            this.ClientSize = new System.Drawing.Size(422, 321);
             this.Controls.Add(this.itemComboBox);
             this.Controls.Add(this.checkNicknamed);
             this.Controls.Add(this.textNickname);
             this.Controls.Add(this.speciesComboBox);
             this.Controls.Add(this.pbSprite);
             this.Controls.Add(this.tablelayoutButtons);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Pokemon_Editor_Form";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Pokemon_Editor";

@@ -2,6 +2,8 @@
 
 using PKMDS_CS;
 using System;
+using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.Linq;
 using System.Windows.Forms;
 
@@ -67,6 +69,17 @@ namespace PKMDS_Save_Editor
         private void buttonCancel_Click(object sender, System.EventArgs e)
         {
             this.Close();
+        }
+
+        private void pbSprite_Paint(object sender, PaintEventArgs e)
+        {
+            Graphics g = e.Graphics;
+            PictureBox picbox = (PictureBox)sender;
+            g.Clear(picbox.BackColor);
+
+            g.InterpolationMode = InterpolationMode.NearestNeighbor;
+            // Draw the image using g.DrawImage()
+            g.DrawImage(picbox.Image, new Rectangle(new Point(0, 0), picbox.Size));
         }
     }
 }
