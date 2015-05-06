@@ -42,6 +42,5 @@ namespace PKMDS_CS
             get { return pcstorageboxnames; }
             set { pcstorageboxnames = value; }
         }
-
     }
 }

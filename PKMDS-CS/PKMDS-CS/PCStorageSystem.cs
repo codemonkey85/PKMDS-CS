@@ -698,104 +698,104 @@ namespace PKMDS_CS
     [Serializable]
     public class PCStorageBoxNames
     {
-        [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 17)]
-        private string box01;
+        [MarshalAs(UnmanagedType.Struct)]
+        private BoxName box01;
 
-        [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 17)]
-        private string box02;
+        [MarshalAs(UnmanagedType.Struct)]
+        private BoxName box02;
 
-        [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 17)]
-        private string box03;
+        [MarshalAs(UnmanagedType.Struct)]
+        private BoxName box03;
 
-        [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 17)]
-        private string box04;
+        [MarshalAs(UnmanagedType.Struct)]
+        private BoxName box04;
 
-        [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 17)]
-        private string box05;
+        [MarshalAs(UnmanagedType.Struct)]
+        private BoxName box05;
 
-        [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 17)]
-        private string box06;
+        [MarshalAs(UnmanagedType.Struct)]
+        private BoxName box06;
 
-        [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 17)]
-        private string box07;
+        [MarshalAs(UnmanagedType.Struct)]
+        private BoxName box07;
 
-        [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 17)]
-        private string box08;
+        [MarshalAs(UnmanagedType.Struct)]
+        private BoxName box08;
 
-        [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 17)]
-        private string box09;
+        [MarshalAs(UnmanagedType.Struct)]
+        private BoxName box09;
 
-        [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 17)]
-        private string box10;
+        [MarshalAs(UnmanagedType.Struct)]
+        private BoxName box10;
 
-        [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 17)]
-        private string box11;
+        [MarshalAs(UnmanagedType.Struct)]
+        private BoxName box11;
 
-        [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 17)]
-        private string box12;
+        [MarshalAs(UnmanagedType.Struct)]
+        private BoxName box12;
 
-        [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 17)]
-        private string box13;
+        [MarshalAs(UnmanagedType.Struct)]
+        private BoxName box13;
 
-        [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 17)]
-        private string box14;
+        [MarshalAs(UnmanagedType.Struct)]
+        private BoxName box14;
 
-        [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 17)]
-        private string box15;
+        [MarshalAs(UnmanagedType.Struct)]
+        private BoxName box15;
 
-        [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 17)]
-        private string box16;
+        [MarshalAs(UnmanagedType.Struct)]
+        private BoxName box16;
 
-        [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 17)]
-        private string box17;
+        [MarshalAs(UnmanagedType.Struct)]
+        private BoxName box17;
 
-        [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 17)]
-        private string box18;
+        [MarshalAs(UnmanagedType.Struct)]
+        private BoxName box18;
 
-        [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 17)]
-        private string box19;
+        [MarshalAs(UnmanagedType.Struct)]
+        private BoxName box19;
 
-        [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 17)]
-        private string box20;
+        [MarshalAs(UnmanagedType.Struct)]
+        private BoxName box20;
 
-        [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 17)]
-        private string box21;
+        [MarshalAs(UnmanagedType.Struct)]
+        private BoxName box21;
 
-        [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 17)]
-        private string box22;
+        [MarshalAs(UnmanagedType.Struct)]
+        private BoxName box22;
 
-        [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 17)]
-        private string box23;
+        [MarshalAs(UnmanagedType.Struct)]
+        private BoxName box23;
 
-        [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 17)]
-        private string box24;
+        [MarshalAs(UnmanagedType.Struct)]
+        private BoxName box24;
 
-        [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 17)]
-        private string box25;
+        [MarshalAs(UnmanagedType.Struct)]
+        private BoxName box25;
 
-        [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 17)]
-        private string box26;
+        [MarshalAs(UnmanagedType.Struct)]
+        private BoxName box26;
 
-        [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 17)]
-        private string box27;
+        [MarshalAs(UnmanagedType.Struct)]
+        private BoxName box27;
 
-        [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 17)]
-        private string box28;
+        [MarshalAs(UnmanagedType.Struct)]
+        private BoxName box28;
 
-        [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 17)]
-        private string box29;
+        [MarshalAs(UnmanagedType.Struct)]
+        private BoxName box29;
 
-        [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 17)]
-        private string box30;
+        [MarshalAs(UnmanagedType.Struct)]
+        private BoxName box30;
 
-        [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 17)]
-        private string box31;
+        [MarshalAs(UnmanagedType.Struct)]
+        private BoxName box31;
 
-        public List<string> Boxes
+        public List<BoxName> Boxes
         {
             get
             {
-                List<string> boxes = new List<string>();
+                List<BoxName> boxes = new List<BoxName>();
                 for (int i = 0; i < 31; i++)
                 {
                     boxes.Add(this[i]);
@@ -804,7 +804,7 @@ namespace PKMDS_CS
             }
         }
 
-        public string this[int i]
+        public BoxName this[int i]
         {
             get
             {
@@ -1039,6 +1039,22 @@ namespace PKMDS_CS
                         return;
                 }
             }
+        }
+    }
+    [StructLayout(LayoutKind.Sequential, Pack = 1, CharSet = CharSet.Unicode)]
+    [Serializable]
+    public class BoxName
+    {
+        [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 17)]
+        private string name;
+        public string Name
+        {
+            get { return name; }
+            set { if (value.Length > 17) value = value.Substring(0, 17); name = value; }
+        }
+        public override string ToString()
+        {
+            return Name;
         }
     }
 }

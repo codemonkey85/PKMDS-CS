@@ -67,7 +67,9 @@ namespace PKMDS_Save_Editor
                 flpMain.Controls.Add(pbSlots[slot]);
             }
             panelBoxedPokemon.Controls.Add(flpMain);
+            comboBoxes.DataSource = _boxenamesBindingSource;
             comboBoxes.DataBindings.Add("SelectedIndex", _sav, "CurrentBox", false, DataSourceUpdateMode.OnPropertyChanged, 0);
+            textBoxName.DataBindings.Add("Text", _boxenamesBindingSource, "Name", false, DataSourceUpdateMode.OnValidation, "");
         }
 
         private void slot_MouseLeave(object sender, EventArgs e)
@@ -105,9 +107,7 @@ namespace PKMDS_Save_Editor
             }
             comboBoxes.Items.Clear();
             comboBoxes.DataBindings.Clear();
-            comboBoxes.DataSource = _boxenamesBindingSource;
             textBoxName.DataBindings.Clear();
-            textBoxName.DataBindings.Add("Text", _boxenamesBindingSource, null, false, DataSourceUpdateMode.OnValidation, "");
         }
 
         private void WriteSave(string saveFileName)
@@ -124,6 +124,7 @@ namespace PKMDS_Save_Editor
         {
             try
             {
+                WriteSave(xysavfile);
                 DBTools.CloseDB();
             }
             catch (Exception)
