@@ -9,14 +9,14 @@ using System.Runtime.InteropServices;
 
 namespace PKMDS_CS
 {
-    enum Offsets
+    internal enum Offsets
     {
         NicknameOffset = 0x40,
         LastTrainerNameOffset = 0x78,
         OTNameOffset = 0xB0
     }
 
-    enum Consts
+    internal enum Consts
     {
         NameMaxLength = 24
     }
@@ -34,7 +34,7 @@ namespace PKMDS_CS
             this.data = new byte[232];
         }
 
-        static void Swap(Pokemon a, Pokemon b)
+        private static void Swap(Pokemon a, Pokemon b)
         {
             Pokemon c = new Pokemon();
             c.CloneFrom(a);

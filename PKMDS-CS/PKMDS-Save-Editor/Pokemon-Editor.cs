@@ -16,7 +16,7 @@ namespace PKMDS_Save_Editor
             InitializeComponent();
         }
 
-        bool FormSet = false;
+        private bool FormSet = false;
         private bool FormPopulated = false;
         private Pokemon _pokemon;
         private Pokemon tempPokemon = new Pokemon();
@@ -68,6 +68,5 @@ namespace PKMDS_Save_Editor
         {
             this.Close();
         }
-
     }
 }

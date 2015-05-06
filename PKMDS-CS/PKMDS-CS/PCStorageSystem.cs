@@ -693,4 +693,352 @@ namespace PKMDS_CS
             }
         }
     }
+
+    [StructLayout(LayoutKind.Sequential, Pack = 1, CharSet = CharSet.Unicode)]
+    [Serializable]
+    public class PCStorageBoxNames
+    {
+        [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 17)]
+        private string box01;
+
+        [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 17)]
+        private string box02;
+
+        [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 17)]
+        private string box03;
+
+        [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 17)]
+        private string box04;
+
+        [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 17)]
+        private string box05;
+
+        [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 17)]
+        private string box06;
+
+        [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 17)]
+        private string box07;
+
+        [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 17)]
+        private string box08;
+
+        [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 17)]
+        private string box09;
+
+        [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 17)]
+        private string box10;
+
+        [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 17)]
+        private string box11;
+
+        [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 17)]
+        private string box12;
+
+        [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 17)]
+        private string box13;
+
+        [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 17)]
+        private string box14;
+
+        [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 17)]
+        private string box15;
+
+        [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 17)]
+        private string box16;
+
+        [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 17)]
+        private string box17;
+
+        [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 17)]
+        private string box18;
+
+        [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 17)]
+        private string box19;
+
+        [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 17)]
+        private string box20;
+
+        [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 17)]
+        private string box21;
+
+        [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 17)]
+        private string box22;
+
+        [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 17)]
+        private string box23;
+
+        [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 17)]
+        private string box24;
+
+        [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 17)]
+        private string box25;
+
+        [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 17)]
+        private string box26;
+
+        [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 17)]
+        private string box27;
+
+        [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 17)]
+        private string box28;
+
+        [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 17)]
+        private string box29;
+
+        [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 17)]
+        private string box30;
+
+        [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 17)]
+        private string box31;
+
+        public List<string> Boxes
+        {
+            get
+            {
+                List<string> boxes = new List<string>();
+                for (int i = 0; i < 31; i++)
+                {
+                    boxes.Add(this[i]);
+                }
+                return boxes;
+            }
+        }
+
+        public string this[int i]
+        {
+            get
+            {
+                switch (i)
+                {
+                    case 0:
+                        return box01;
+
+                    case 1:
+                        return box02;
+
+                    case 2:
+                        return box03;
+
+                    case 3:
+                        return box04;
+
+                    case 4:
+                        return box05;
+
+                    case 5:
+                        return box06;
+
+                    case 6:
+                        return box07;
+
+                    case 7:
+                        return box08;
+
+                    case 8:
+                        return box09;
+
+                    case 9:
+                        return box10;
+
+                    case 10:
+                        return box11;
+
+                    case 11:
+                        return box12;
+
+                    case 12:
+                        return box13;
+
+                    case 13:
+                        return box14;
+
+                    case 14:
+                        return box15;
+
+                    case 15:
+                        return box16;
+
+                    case 16:
+                        return box17;
+
+                    case 17:
+                        return box18;
+
+                    case 18:
+                        return box19;
+
+                    case 19:
+                        return box20;
+
+                    case 20:
+                        return box21;
+
+                    case 21:
+                        return box22;
+
+                    case 22:
+                        return box23;
+
+                    case 23:
+                        return box24;
+
+                    case 24:
+                        return box25;
+
+                    case 25:
+                        return box26;
+
+                    case 26:
+                        return box27;
+
+                    case 27:
+                        return box28;
+
+                    case 28:
+                        return box29;
+
+                    case 29:
+                        return box30;
+
+                    case 30:
+                        return box31;
+
+                    default:
+                        return null;
+                }
+            }
+            set
+            {
+                switch (i)
+                {
+                    case 0:
+                        box01 = value;
+                        break;
+
+                    case 1:
+                        box02 = value;
+                        break;
+
+                    case 2:
+                        box03 = value;
+                        break;
+
+                    case 3:
+                        box04 = value;
+                        break;
+
+                    case 4:
+                        box05 = value;
+                        break;
+
+                    case 5:
+                        box06 = value;
+                        break;
+
+                    case 6:
+                        box07 = value;
+                        break;
+
+                    case 7:
+                        box08 = value;
+                        break;
+
+                    case 8:
+                        box09 = value;
+                        break;
+
+                    case 9:
+                        box10 = value;
+                        break;
+
+                    case 10:
+                        box11 = value;
+                        break;
+
+                    case 11:
+                        box12 = value;
+                        break;
+
+                    case 12:
+                        box13 = value;
+                        break;
+
+                    case 13:
+                        box14 = value;
+                        break;
+
+                    case 14:
+                        box15 = value;
+                        break;
+
+                    case 15:
+                        box16 = value;
+                        break;
+
+                    case 16:
+                        box17 = value;
+                        break;
+
+                    case 17:
+                        box18 = value;
+                        break;
+
+                    case 18:
+                        box19 = value;
+                        break;
+
+                    case 19:
+                        box20 = value;
+                        break;
+
+                    case 20:
+                        box21 = value;
+                        break;
+
+                    case 21:
+                        box22 = value;
+                        break;
+
+                    case 22:
+                        box23 = value;
+                        break;
+
+                    case 23:
+                        box24 = value;
+                        break;
+
+                    case 24:
+                        box25 = value;
+                        break;
+
+                    case 25:
+                        box26 = value;
+                        break;
+
+                    case 26:
+                        box27 = value;
+                        break;
+
+                    case 27:
+                        box28 = value;
+                        break;
+
+                    case 28:
+                        box29 = value;
+                        break;
+
+                    case 29:
+                        box30 = value;
+                        break;
+
+                    case 30:
+                        box31 = value;
+                        break;
+
+                    default:
+                        return;
+                }
+            }
+        }
+    }
 }
