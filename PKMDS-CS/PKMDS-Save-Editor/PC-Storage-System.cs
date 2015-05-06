@@ -20,10 +20,8 @@ namespace PKMDS_Save_Editor
         private readonly BindingSource _boxesBindingSource = new BindingSource();
         private readonly BindingSource _pokemonBindingSource = new BindingSource();
         private CurrencyManager _boxesCurrencyManager;
-
         private readonly BindingSource _boxenamesBindingSource = new BindingSource();
         private CurrencyManager _boxenamesCurrencyManager;
-
         private XYSav _sav;
         //private ORASSav _sav;
 
