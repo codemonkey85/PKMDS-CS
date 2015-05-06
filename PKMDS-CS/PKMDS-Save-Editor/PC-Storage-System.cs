@@ -20,6 +20,10 @@ namespace PKMDS_Save_Editor
         private readonly BindingSource _boxesBindingSource = new BindingSource();
         private readonly BindingSource _pokemonBindingSource = new BindingSource();
         private CurrencyManager _boxesCurrencyManager;
+
+        private readonly BindingSource _boxenamesBindingSource = new BindingSource();
+        private CurrencyManager _boxenamesCurrencyManager;
+
         private XYSav _sav;
         //private ORASSav _sav;
 
@@ -34,8 +38,12 @@ namespace PKMDS_Save_Editor
         {
             DBTools.OpenDB(veekundb);
             LoadSave(xysavfile);
+            _boxenamesCurrencyManager = _boxenamesBindingSource.CurrencyManager;
+            _boxenamesBindingSource.DataSource = _sav.PCStorageBoxNames.Boxes;
+
             _boxesCurrencyManager = _boxesBindingSource.CurrencyManager;
             _boxesBindingSource.DataSource = _sav.PCStorageSystem.Boxes;
+
             _pokemonBindingSource.DataSource = _boxesCurrencyManager.Current;
             _pokemonBindingSource.DataMember = "Pokemon";
             FlowLayoutPanel flpMain = new FlowLayoutPanel();
@@ -59,9 +67,9 @@ namespace PKMDS_Save_Editor
                 pbSlots[slot].MouseEnter += slot_MouseEnter;
                 pbSlots[slot].MouseLeave += slot_MouseLeave;
                 flpMain.Controls.Add(pbSlots[slot]);
-                comboBoxes.Items.Add(string.Format("Box {0}", slot + 1));
+                //comboBoxes.Items.Add(string.Format("Box {0}", slot + 1));
             }
-            comboBoxes.Items.Add(string.Format("Box {0}", 31));
+            //comboBoxes.Items.Add(string.Format("Box {0}", 31));
             panelBoxedPokemon.Controls.Add(flpMain);
             comboBoxes.SelectedIndex = 0;
         }
@@ -98,6 +106,10 @@ namespace PKMDS_Save_Editor
                 //pokemon.Decrypt();
                 PokePRNG.DecryptPokemon(pokemon);
             }
+            comboBoxes.Items.Clear();
+            comboBoxes.DataSource = _boxenamesBindingSource;
+            textBoxName.DataBindings.Clear();
+            textBoxName.DataBindings.Add("Text", _boxenamesBindingSource, null, false, DataSourceUpdateMode.OnValidation, "");
         }
 
         private void WriteSave(string saveFileName)
@@ -121,6 +133,7 @@ namespace PKMDS_Save_Editor
             try
             {
                 _boxesCurrencyManager.Position = comboBoxes.SelectedIndex;
+                _boxenamesCurrencyManager.Position = comboBoxes.SelectedIndex;
                 _pokemonBindingSource.DataSource = _boxesCurrencyManager.Current;
                 RefreshBoxSlots();
             }

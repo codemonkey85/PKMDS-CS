@@ -39,7 +39,7 @@
             this.comboBoxes.FormattingEnabled = true;
             this.comboBoxes.Location = new System.Drawing.Point(103, 262);
             this.comboBoxes.Name = "comboBoxes";
-            this.comboBoxes.Size = new System.Drawing.Size(240, 28);
+            this.comboBoxes.Size = new System.Drawing.Size(240, 21);
             this.comboBoxes.TabIndex = 2;
             this.comboBoxes.SelectedIndexChanged += new System.EventHandler(this.comboBoxes_SelectedIndexChanged);
             // 
@@ -54,11 +54,12 @@
             // textBoxName
             // 
             this.textBoxName.Location = new System.Drawing.Point(103, 230);
+            this.textBoxName.MaxLength = 17;
             this.textBoxName.Name = "textBoxName";
-            this.textBoxName.Size = new System.Drawing.Size(240, 26);
+            this.textBoxName.Size = new System.Drawing.Size(240, 20);
             this.textBoxName.TabIndex = 1;
             // 
-            // PKMDS_Save_Editor
+            // PC_Storage_System_Form
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(464, 343);
@@ -67,7 +68,7 @@
             this.Controls.Add(this.comboBoxes);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
-            this.Name = "PKMDS_Save_Editor";
+            this.Name = "PC_Storage_System_Form";
             this.Text = "PKMDS Save Editor";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.PKMDS_Save_Editor_FormClosing);
             this.Load += new System.EventHandler(this.PKMDS_Save_Editor_Load);
