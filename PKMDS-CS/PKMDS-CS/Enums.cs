@@ -3,6 +3,7 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Drawing;
 using System.Reflection;
 
 #endregion Using
@@ -8306,7 +8307,9 @@ namespace PKMDS_CS
         {
             Value = item;
         }
+
         private Items value;
+
         public Items Value
         {
             get
@@ -8320,10 +8323,17 @@ namespace PKMDS_CS
                     : Items.NoItem;
             }
         }
+
+        public Image Image
+        {
+            get { return Images.GetItemImage((ushort)Value); }
+        }
+
         public string Name
         {
             get { return value.EnumToString(); }
         }
+
         public override string ToString()
         {
             return value.EnumToString();
@@ -8336,7 +8346,9 @@ namespace PKMDS_CS
         {
             Value = species;
         }
+
         private Species value;
+
         public Species Value
         {
             get
@@ -8350,10 +8362,148 @@ namespace PKMDS_CS
                     : Species.NoSpecies;
             }
         }
+
         public string Name
         {
             get { return value.EnumToString(); }
         }
+
+        public override string ToString()
+        {
+            return value.EnumToString();
+        }
+    }
+
+    public class LocationObject
+    {
+        public LocationObject(Locations location)
+        {
+            Value = location;
+        }
+
+        private Locations value;
+
+        public Locations Value
+        {
+            get
+            {
+                return value;
+            }
+            set
+            {
+                this.value = Enum.IsDefined(typeof(Locations), value)
+                    ? (Locations)value
+                    : Locations.Mystery_Zone;
+            }
+        }
+
+        public string Name
+        {
+            get { return value.EnumToString(); }
+        }
+
+        public override string ToString()
+        {
+            return value.EnumToString();
+        }
+    }
+
+    public class MovesObject
+    {
+        public MovesObject(Moves move)
+        {
+            Value = move;
+        }
+
+        private Moves value;
+
+        public Moves Value
+        {
+            get
+            {
+                return value;
+            }
+            set
+            {
+                this.value = Enum.IsDefined(typeof(Moves), value)
+                    ? (Moves)value
+                    : Moves.NoMove;
+            }
+        }
+
+        public string Name
+        {
+            get { return value.EnumToString(); }
+        }
+
+        public override string ToString()
+        {
+            return value.EnumToString();
+        }
+    }
+
+    public class AbilityObject
+    {
+        public AbilityObject(Abilities abilities)
+        {
+            Value = abilities;
+        }
+
+        private Abilities value;
+
+        public Abilities Value
+        {
+            get
+            {
+                return value;
+            }
+            set
+            {
+                this.value = Enum.IsDefined(typeof(Abilities), value)
+                    ? (Abilities)value
+                    : Abilities.NoAbility;
+            }
+        }
+
+        public string Name
+        {
+            get { return value.EnumToString(); }
+        }
+
+        public override string ToString()
+        {
+            return value.EnumToString();
+        }
+    }
+
+    public class NatureObject
+    {
+        public NatureObject(Natures nature)
+        {
+            Value = nature;
+        }
+
+        private Natures value;
+
+        public Natures Value
+        {
+            get
+            {
+                return value;
+            }
+            set
+            {
+                this.value = Enum.IsDefined(typeof(Natures), value)
+                    ? (Natures)value
+                    : Natures.Hardy;
+            }
+        }
+
+        public string Name
+        {
+            get { return value.EnumToString(); }
+        }
+
         public override string ToString()
         {
             return value.EnumToString();

@@ -97,7 +97,6 @@ namespace PKMDS_Save_Editor
 
         private void LoadSave(string saveFileName)
         {
-
             _sav = StructUtils.RawDeserialize<XYSav>(saveFileName);
             //_sav = StructUtils.RawDeserialize<ORASSav>(saveFileName);
             foreach (var pokemon in _sav.PCStorageSystem.Boxes.SelectMany(box => box.Pokemon))

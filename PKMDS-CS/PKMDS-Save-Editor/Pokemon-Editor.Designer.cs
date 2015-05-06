@@ -37,8 +37,10 @@
             this.textNickname = new System.Windows.Forms.TextBox();
             this.checkNicknamed = new System.Windows.Forms.CheckBox();
             this.itemComboBox = new System.Windows.Forms.ComboBox();
+            this.pbItemImage = new System.Windows.Forms.PictureBox();
             this.tablelayoutButtons.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbSprite)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbItemImage)).BeginInit();
             this.SuspendLayout();
             // 
             // buttonOk
@@ -149,12 +151,24 @@
             this.itemComboBox.Name = "itemComboBox";
             this.itemComboBox.Size = new System.Drawing.Size(125, 21);
             this.itemComboBox.TabIndex = 3;
+            this.itemComboBox.SelectedIndexChanged += new System.EventHandler(this.itemComboBox_SelectedIndexChanged);
+            // 
+            // pbItemImage
+            // 
+            this.pbItemImage.Location = new System.Drawing.Point(261, 100);
+            this.pbItemImage.Margin = new System.Windows.Forms.Padding(2);
+            this.pbItemImage.Name = "pbItemImage";
+            this.pbItemImage.Size = new System.Drawing.Size(21, 21);
+            this.pbItemImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pbItemImage.TabIndex = 5;
+            this.pbItemImage.TabStop = false;
             // 
             // Pokemon_Editor_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(422, 321);
+            this.Controls.Add(this.pbItemImage);
             this.Controls.Add(this.itemComboBox);
             this.Controls.Add(this.checkNicknamed);
             this.Controls.Add(this.textNickname);
@@ -168,6 +182,7 @@
             this.tablelayoutButtons.ResumeLayout(false);
             this.tablelayoutButtons.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbSprite)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbItemImage)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -184,5 +199,6 @@
         private System.Windows.Forms.TextBox textNickname;
         private System.Windows.Forms.CheckBox checkNicknamed;
         private System.Windows.Forms.ComboBox itemComboBox;
+        private System.Windows.Forms.PictureBox pbItemImage;
     }
 }
