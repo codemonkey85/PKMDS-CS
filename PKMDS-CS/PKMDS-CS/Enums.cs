@@ -8338,6 +8338,53 @@ namespace PKMDS_CS
         {
             return value.EnumToString();
         }
+
+        public override bool Equals(System.Object obj)
+        {
+            if (obj == null)
+            {
+                return false;
+            }
+
+            ItemObject i = obj as ItemObject;
+            if ((System.Object)i == null)
+            {
+                return false;
+            }
+
+            return Value == i.Value;
+        }
+
+        public bool Equals(Items i)
+        {
+            if ((object)i == null)
+            {
+                return false;
+            }
+
+            return Value == i;
+        }
+
+        public static bool operator ==(ItemObject a, Items b)
+        {
+            if (System.Object.ReferenceEquals(a, b))
+            {
+                return true;
+            }
+
+            if (((object)a == null) || ((object)b == null))
+            {
+                return false;
+            }
+
+            return a.Value == b;
+        }
+
+        public static bool operator !=(ItemObject a, Items b)
+        {
+            return !(a == b);
+        }
+
     }
 
     public class SpeciesObject

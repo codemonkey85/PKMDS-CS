@@ -40,6 +40,7 @@ namespace PKMDS_CS
         public enum ItemDataTableColumns
         {
             id,
+            game_index,
             identifier,
             name
         }
@@ -279,7 +280,7 @@ namespace PKMDS_CS
                 if (ItemDataTable != null) return ItemDataTable;
                 using (var cmd = con.CreateCommand())
                 {
-                    cmd.CommandText = "select id, identifier, name from items join item_names on item_names.item_id = items.id where item_names.local_language_id = 9";
+                    cmd.CommandText = "select id, game_index, identifier, name from items join item_names on item_names.item_id = items.id join item_game_indices on item_game_indices.item_id = items.id where item_names.local_language_id = 9 and item_game_indices.generation_id = 6 order by game_index asc";
                     ItemDataTable = new DataTable();
                     ItemDataTable.Load(cmd.ExecuteReader());
                 }

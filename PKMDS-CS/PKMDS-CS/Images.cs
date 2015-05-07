@@ -21,7 +21,11 @@ namespace PKMDS_CS
         public static Image GetItemImage(ushort item)
         {
             if (item == 0) return null;
-            return GetImageFromResource(DBTools.GetItemDataTable.Select(string.Format("id = {0}", item))[0].ItemArray[(int)DBTools.ItemDataTableColumns.identifier].ToString().Replace("-", "_"));
+            try
+            {
+                return GetImageFromResource(DBTools.GetItemDataTable.Select(string.Format("game_index = {0}", item))[0].ItemArray[(int)DBTools.ItemDataTableColumns.identifier].ToString().Replace("-", "_"));
+            }
+            catch (Exception) { return null; }
         }
 
         public static Image GetPokemonImage(ushort species, byte formid = 0, Genders gender = Genders.Male)

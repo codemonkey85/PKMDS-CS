@@ -105,7 +105,8 @@ namespace PKMDS_Save_Editor
             if (itemComboBox.SelectedIndex == -1) return;
             try
             {
-                _itemCurrencyManger.Position = itemComboBox.SelectedIndex;
+                var item = new ItemObject((Items)itemComboBox.SelectedValue);
+                _itemCurrencyManger.Position = _itemCurrencyManger.List.IndexOf(item);
             }
             catch (Exception) { }
         }
