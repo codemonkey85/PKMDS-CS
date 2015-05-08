@@ -5,6 +5,7 @@
 PKMDS-CS/files/secret/*
 *veekun-pokedex.sqlite
 *.bak
+*thumbs.db
 
 # User-specific files
 *.suo
