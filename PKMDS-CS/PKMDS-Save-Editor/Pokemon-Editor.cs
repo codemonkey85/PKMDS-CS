@@ -12,6 +12,58 @@ using System.Windows.Forms;
 
 namespace PKMDS_Save_Editor
 {
+    /*
+
+    Stats
+    Moves
+    History
+    Ribbons
+
+    Common:
+
+    Species
+    Nickname
+    Gender
+    Level
+    Sprite
+    Held Item
+    Markings
+
+    Page 1
+
+    Type
+    OT
+    ID No.
+    Exp. Points
+    To Next Lv.
+
+    HP
+    Attack
+    Defense
+    Sp. Atk
+    Sp. Def
+    Speed
+
+    Abilty Name
+    Ability Flavor
+
+    Page 2
+
+    Moves
+
+    Page 3
+
+    Nature:
+    Egg Received:
+    From:
+    Egg Hatched:
+    Where:
+
+    Page 4
+
+    Ribbons
+     */
+
     public partial class Pokemon_Editor_Form : Form
     {
         public Pokemon_Editor_Form()

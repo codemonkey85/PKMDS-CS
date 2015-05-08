@@ -8384,7 +8384,6 @@ namespace PKMDS_CS
         {
             return !(a == b);
         }
-
     }
 
     public class SpeciesObject
