@@ -1041,17 +1041,20 @@ namespace PKMDS_CS
             }
         }
     }
+
     [StructLayout(LayoutKind.Sequential, Pack = 1, CharSet = CharSet.Unicode)]
     [Serializable]
     public class BoxName
     {
         [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 17)]
         private string name;
+
         public string Name
         {
             get { return name; }
             set { if (value.Length > 17) value = value.Substring(0, 17); name = value; }
         }
+
         public override string ToString()
         {
             return Name;
