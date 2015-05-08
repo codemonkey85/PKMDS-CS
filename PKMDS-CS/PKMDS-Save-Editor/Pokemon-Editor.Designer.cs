@@ -42,22 +42,24 @@
             this.statsTabPage = new System.Windows.Forms.TabPage();
             this.movesTabPage = new System.Windows.Forms.TabPage();
             this.historyTabPage = new System.Windows.Forms.TabPage();
-            this.ribbonsTabPage = new System.Windows.Forms.TabPage();
             this.contestTabPage = new System.Windows.Forms.TabPage();
+            this.ribbonsTabPage = new System.Windows.Forms.TabPage();
+            this.genderPictureBox = new System.Windows.Forms.PictureBox();
+            this.markingsPanel = new System.Windows.Forms.Panel();
             this.tablelayoutButtons.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbSprite)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbItemImage)).BeginInit();
             this.pokemonTabControl.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.genderPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // buttonOk
             // 
             this.buttonOk.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.buttonOk.AutoSize = true;
-            this.buttonOk.Location = new System.Drawing.Point(212, 2);
-            this.buttonOk.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonOk.Location = new System.Drawing.Point(496, 3);
             this.buttonOk.Name = "buttonOk";
-            this.buttonOk.Size = new System.Drawing.Size(40, 27);
+            this.buttonOk.Size = new System.Drawing.Size(60, 42);
             this.buttonOk.TabIndex = 1;
             this.buttonOk.Text = "Ok";
             this.buttonOk.UseVisualStyleBackColor = true;
@@ -67,10 +69,9 @@
             // 
             this.buttonApply.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.buttonApply.AutoSize = true;
-            this.buttonApply.Location = new System.Drawing.Point(48, 2);
-            this.buttonApply.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonApply.Location = new System.Drawing.Point(132, 3);
             this.buttonApply.Name = "buttonApply";
-            this.buttonApply.Size = new System.Drawing.Size(58, 27);
+            this.buttonApply.Size = new System.Drawing.Size(87, 42);
             this.buttonApply.TabIndex = 0;
             this.buttonApply.Text = "Apply";
             this.buttonApply.UseVisualStyleBackColor = true;
@@ -80,10 +81,9 @@
             // 
             this.buttonCancel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.buttonCancel.AutoSize = true;
-            this.buttonCancel.Location = new System.Drawing.Point(354, 2);
-            this.buttonCancel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonCancel.Location = new System.Drawing.Point(826, 3);
             this.buttonCancel.Name = "buttonCancel";
-            this.buttonCancel.Size = new System.Drawing.Size(68, 27);
+            this.buttonCancel.Size = new System.Drawing.Size(102, 42);
             this.buttonCancel.TabIndex = 2;
             this.buttonCancel.Text = "Cancel";
             this.buttonCancel.UseVisualStyleBackColor = true;
@@ -99,24 +99,22 @@
             this.tablelayoutButtons.Controls.Add(this.buttonCancel, 2, 0);
             this.tablelayoutButtons.Controls.Add(this.buttonOk, 1, 0);
             this.tablelayoutButtons.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.tablelayoutButtons.Location = new System.Drawing.Point(0, 353);
-            this.tablelayoutButtons.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tablelayoutButtons.Location = new System.Drawing.Point(0, 758);
             this.tablelayoutButtons.Name = "tablelayoutButtons";
             this.tablelayoutButtons.RowCount = 1;
             this.tablelayoutButtons.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tablelayoutButtons.Size = new System.Drawing.Size(467, 31);
+            this.tablelayoutButtons.Size = new System.Drawing.Size(1053, 48);
             this.tablelayoutButtons.TabIndex = 4;
             // 
             // pbSprite
             // 
             this.pbSprite.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbSprite.Location = new System.Drawing.Point(376, 11);
-            this.pbSprite.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pbSprite.Location = new System.Drawing.Point(917, 17);
             this.pbSprite.Name = "pbSprite";
-            this.pbSprite.Size = new System.Drawing.Size(80, 60);
+            this.pbSprite.Size = new System.Drawing.Size(120, 92);
             this.pbSprite.TabIndex = 4;
             this.pbSprite.TabStop = false;
-            this.pbSprite.Paint += new System.Windows.Forms.PaintEventHandler(this.pbSprite_Paint);
+            this.pbSprite.Paint += new System.Windows.Forms.PaintEventHandler(this.PictureBox_Paint_and_Resize);
             // 
             // speciesComboBox
             // 
@@ -124,30 +122,27 @@
             this.speciesComboBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.speciesComboBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.speciesComboBox.FormattingEnabled = true;
-            this.speciesComboBox.Location = new System.Drawing.Point(370, 75);
-            this.speciesComboBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.speciesComboBox.Location = new System.Drawing.Point(908, 115);
             this.speciesComboBox.Name = "speciesComboBox";
-            this.speciesComboBox.Size = new System.Drawing.Size(86, 21);
+            this.speciesComboBox.Size = new System.Drawing.Size(127, 28);
             this.speciesComboBox.TabIndex = 2;
             // 
             // textNickname
             // 
             this.textNickname.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textNickname.Location = new System.Drawing.Point(270, 11);
-            this.textNickname.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textNickname.Location = new System.Drawing.Point(758, 17);
             this.textNickname.MaxLength = 12;
             this.textNickname.Name = "textNickname";
-            this.textNickname.Size = new System.Drawing.Size(98, 20);
+            this.textNickname.Size = new System.Drawing.Size(145, 26);
             this.textNickname.TabIndex = 0;
             // 
             // checkNicknamed
             // 
             this.checkNicknamed.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.checkNicknamed.AutoSize = true;
-            this.checkNicknamed.Location = new System.Drawing.Point(288, 35);
-            this.checkNicknamed.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkNicknamed.Location = new System.Drawing.Point(791, 54);
             this.checkNicknamed.Name = "checkNicknamed";
-            this.checkNicknamed.Size = new System.Drawing.Size(80, 17);
+            this.checkNicknamed.Size = new System.Drawing.Size(114, 24);
             this.checkNicknamed.TabIndex = 1;
             this.checkNicknamed.Text = "Nicknamed";
             this.checkNicknamed.UseVisualStyleBackColor = true;
@@ -158,20 +153,18 @@
             this.itemComboBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.itemComboBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.itemComboBox.FormattingEnabled = true;
-            this.itemComboBox.Location = new System.Drawing.Point(331, 100);
-            this.itemComboBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.itemComboBox.Location = new System.Drawing.Point(849, 154);
             this.itemComboBox.Name = "itemComboBox";
-            this.itemComboBox.Size = new System.Drawing.Size(125, 21);
+            this.itemComboBox.Size = new System.Drawing.Size(186, 28);
             this.itemComboBox.TabIndex = 3;
             this.itemComboBox.SelectedIndexChanged += new System.EventHandler(this.itemComboBox_SelectedIndexChanged);
             // 
             // pbItemImage
             // 
             this.pbItemImage.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbItemImage.Location = new System.Drawing.Point(331, 64);
-            this.pbItemImage.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pbItemImage.Location = new System.Drawing.Point(849, 98);
             this.pbItemImage.Name = "pbItemImage";
-            this.pbItemImage.Size = new System.Drawing.Size(33, 32);
+            this.pbItemImage.Size = new System.Drawing.Size(50, 49);
             this.pbItemImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pbItemImage.TabIndex = 5;
             this.pbItemImage.TabStop = false;
@@ -186,64 +179,90 @@
             this.pokemonTabControl.Controls.Add(this.historyTabPage);
             this.pokemonTabControl.Controls.Add(this.contestTabPage);
             this.pokemonTabControl.Controls.Add(this.ribbonsTabPage);
-            this.pokemonTabControl.Location = new System.Drawing.Point(12, 12);
+            this.pokemonTabControl.Location = new System.Drawing.Point(0, 0);
+            this.pokemonTabControl.Margin = new System.Windows.Forms.Padding(0);
             this.pokemonTabControl.Name = "pokemonTabControl";
             this.pokemonTabControl.SelectedIndex = 0;
-            this.pokemonTabControl.Size = new System.Drawing.Size(253, 336);
+            this.pokemonTabControl.Size = new System.Drawing.Size(755, 755);
             this.pokemonTabControl.TabIndex = 6;
             // 
             // statsTabPage
             // 
-            this.statsTabPage.Location = new System.Drawing.Point(4, 22);
+            this.statsTabPage.Location = new System.Drawing.Point(4, 29);
+            this.statsTabPage.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.statsTabPage.Name = "statsTabPage";
-            this.statsTabPage.Padding = new System.Windows.Forms.Padding(3);
-            this.statsTabPage.Size = new System.Drawing.Size(245, 310);
+            this.statsTabPage.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.statsTabPage.Size = new System.Drawing.Size(747, 722);
             this.statsTabPage.TabIndex = 0;
             this.statsTabPage.Text = "Stats";
             this.statsTabPage.UseVisualStyleBackColor = true;
             // 
             // movesTabPage
             // 
-            this.movesTabPage.Location = new System.Drawing.Point(4, 22);
+            this.movesTabPage.Location = new System.Drawing.Point(4, 29);
+            this.movesTabPage.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.movesTabPage.Name = "movesTabPage";
-            this.movesTabPage.Padding = new System.Windows.Forms.Padding(3);
-            this.movesTabPage.Size = new System.Drawing.Size(200, 247);
+            this.movesTabPage.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.movesTabPage.Size = new System.Drawing.Size(747, 722);
             this.movesTabPage.TabIndex = 1;
             this.movesTabPage.Text = "Moves";
             this.movesTabPage.UseVisualStyleBackColor = true;
             // 
             // historyTabPage
             // 
-            this.historyTabPage.Location = new System.Drawing.Point(4, 22);
+            this.historyTabPage.Location = new System.Drawing.Point(4, 29);
+            this.historyTabPage.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.historyTabPage.Name = "historyTabPage";
-            this.historyTabPage.Size = new System.Drawing.Size(200, 247);
+            this.historyTabPage.Size = new System.Drawing.Size(747, 722);
             this.historyTabPage.TabIndex = 2;
             this.historyTabPage.Text = "History";
             this.historyTabPage.UseVisualStyleBackColor = true;
             // 
-            // ribbonsTabPage
-            // 
-            this.ribbonsTabPage.Location = new System.Drawing.Point(4, 22);
-            this.ribbonsTabPage.Name = "ribbonsTabPage";
-            this.ribbonsTabPage.Size = new System.Drawing.Size(200, 247);
-            this.ribbonsTabPage.TabIndex = 3;
-            this.ribbonsTabPage.Text = "Ribbons";
-            this.ribbonsTabPage.UseVisualStyleBackColor = true;
-            // 
             // contestTabPage
             // 
-            this.contestTabPage.Location = new System.Drawing.Point(4, 22);
+            this.contestTabPage.Location = new System.Drawing.Point(4, 29);
+            this.contestTabPage.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.contestTabPage.Name = "contestTabPage";
-            this.contestTabPage.Size = new System.Drawing.Size(200, 247);
+            this.contestTabPage.Size = new System.Drawing.Size(747, 722);
             this.contestTabPage.TabIndex = 4;
             this.contestTabPage.Text = "Contest";
             this.contestTabPage.UseVisualStyleBackColor = true;
             // 
+            // ribbonsTabPage
+            // 
+            this.ribbonsTabPage.Location = new System.Drawing.Point(4, 29);
+            this.ribbonsTabPage.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ribbonsTabPage.Name = "ribbonsTabPage";
+            this.ribbonsTabPage.Size = new System.Drawing.Size(747, 722);
+            this.ribbonsTabPage.TabIndex = 3;
+            this.ribbonsTabPage.Text = "Ribbons";
+            this.ribbonsTabPage.UseVisualStyleBackColor = true;
+            // 
+            // genderPictureBox
+            // 
+            this.genderPictureBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.genderPictureBox.Location = new System.Drawing.Point(1022, 17);
+            this.genderPictureBox.Name = "genderPictureBox";
+            this.genderPictureBox.Size = new System.Drawing.Size(15, 15);
+            this.genderPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.genderPictureBox.TabIndex = 7;
+            this.genderPictureBox.TabStop = false;
+            // 
+            // markingsPanel
+            // 
+            this.markingsPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.markingsPanel.Location = new System.Drawing.Point(849, 188);
+            this.markingsPanel.Name = "markingsPanel";
+            this.markingsPanel.Size = new System.Drawing.Size(186, 32);
+            this.markingsPanel.TabIndex = 8;
+            // 
             // Pokemon_Editor_Form
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(467, 384);
+            this.ClientSize = new System.Drawing.Size(1053, 806);
+            this.Controls.Add(this.markingsPanel);
+            this.Controls.Add(this.genderPictureBox);
             this.Controls.Add(this.pokemonTabControl);
             this.Controls.Add(this.pbItemImage);
             this.Controls.Add(this.itemComboBox);
@@ -253,17 +272,18 @@
             this.Controls.Add(this.pbSprite);
             this.Controls.Add(this.tablelayoutButtons);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MaximizeBox = false;
-            this.MinimumSize = new System.Drawing.Size(483, 422);
+            this.MinimumSize = new System.Drawing.Size(714, 619);
             this.Name = "Pokemon_Editor_Form";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Pokemon_Editor";
+            this.Load += new System.EventHandler(this.Pokemon_Editor_Form_Load);
             this.tablelayoutButtons.ResumeLayout(false);
             this.tablelayoutButtons.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbSprite)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbItemImage)).EndInit();
             this.pokemonTabControl.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.genderPictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -287,5 +307,7 @@
         private System.Windows.Forms.TabPage historyTabPage;
         private System.Windows.Forms.TabPage contestTabPage;
         private System.Windows.Forms.TabPage ribbonsTabPage;
+        private System.Windows.Forms.PictureBox genderPictureBox;
+        private System.Windows.Forms.Panel markingsPanel;
     }
 }

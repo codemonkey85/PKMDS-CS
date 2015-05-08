@@ -18,6 +18,25 @@ namespace PKMDS_CS
             }
         }
 
+        public static Image GetMarkingImage(Markings mark, bool marked)
+        {
+            string identifier = string.Format("m_{0}{1}", (int)mark, Convert.ToInt16(marked));
+            return GetImageFromResource(identifier);
+        }
+
+        public static Image GetGenderIcon(Genders gender)
+        {
+            switch (gender)
+            {
+                case Genders.Male:
+                    return GetImageFromResource("male");
+                case Genders.Female:
+                    return GetImageFromResource("female");
+                default:
+                    return null;
+            }
+        }
+
         public static Image GetItemImage(ushort item)
         {
             if (item == 0) return null;

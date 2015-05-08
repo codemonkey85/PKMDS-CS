@@ -1210,6 +1210,15 @@ namespace PKMDS_CS
             }
         }
 
+        [DisplayName("Gender Icon")]
+        public Image GenderIcon
+        {
+            get
+            {
+                return Images.GetGenderIcon(Gender);
+            }
+        }
+
         [DisplayName("Box Icon")]
         public Image BoxIcon
         {
