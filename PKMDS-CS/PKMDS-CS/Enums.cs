@@ -8020,6 +8020,46 @@ namespace PKMDS_CS
         Speed
     }
 
+    public enum Types
+    {
+        [Description("Normal")]
+        Normal,
+        [Description("Fighting")]
+        Fighting,
+        [Description("Flying")]
+        Flying,
+        [Description("Poison")]
+        Poison,
+        [Description("Ground")]
+        Ground,
+        [Description("Rock")]
+        Rock,
+        [Description("Bug")]
+        Bug,
+        [Description("Ghost")]
+        Ghost,
+        [Description("Steel")]
+        Steel,
+        [Description("Fire")]
+        Fire,
+        [Description("Water")]
+        Water,
+        [Description("Grass")]
+        Grass,
+        [Description("Electric")]
+        Electric,
+        [Description("Psychic")]
+        Psychic,
+        [Description("Ice")]
+        Ice,
+        [Description("Dragon")]
+        Dragon,
+        [Description("Dark")]
+        Dark,
+        [Description("Fairy")]
+        Fairy
+    }
+
     public enum NatureEffect
     {
         Increase,
@@ -8548,6 +8588,48 @@ namespace PKMDS_CS
         public string Name
         {
             get { return value.EnumToString(); }
+        }
+
+        public override string ToString()
+        {
+            return value.EnumToString();
+        }
+    }
+
+    public class TypeObject
+    {
+        public TypeObject(Types Type)
+        {
+            Value = Type;
+        }
+
+        private Types value;
+
+        public Types Value
+        {
+            get
+            {
+                return value;
+            }
+            set
+            {
+                this.value = Enum.IsDefined(typeof(Types), value)
+                    ? (Types)value
+                    : Types.Normal;
+            }
+        }
+
+        public string Name
+        {
+            get { return value.EnumToString(); }
+        }
+
+        public Image Image 
+        {
+            get 
+            {
+                return Images.GetTypeImage(Value);
+            }
         }
 
         public override string ToString()

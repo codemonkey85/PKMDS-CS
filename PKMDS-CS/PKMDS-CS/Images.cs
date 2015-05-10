@@ -18,6 +18,11 @@ namespace PKMDS_CS
             }
         }
 
+        public static Image GetTypeImage(Types type) 
+        {
+            return GetImageFromResource(string.Format("type_{0}",(int)type));
+        }
+
         public static Image GetMarkingImage(Markings mark, bool marked)
         {
             string identifier = string.Format("m_{0}{1}", (int)mark, Convert.ToInt16(marked));

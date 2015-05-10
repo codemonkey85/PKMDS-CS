@@ -115,8 +115,21 @@ namespace PKMDS_Save_Editor
             itemComboBox.DataBindings.Add("SelectedValue", tempPokemon, "HeldItem", false, DataSourceUpdateMode.OnPropertyChanged, Items.NoItem);
             textNickname.DataBindings.Add("Text", _pokemonBindingSource, "Nickname", false, DataSourceUpdateMode.OnValidation, "");
             checkNicknamed.DataBindings.Add("Checked", _pokemonBindingSource, "IsNicknamed", false, DataSourceUpdateMode.OnPropertyChanged, false);
+            numericLevel.DataBindings.Add("Value", _pokemonBindingSource, "Level", true, DataSourceUpdateMode.OnPropertyChanged, 1);
+            picType1.DataBindings.Add("Image", _pokemonBindingSource, "Type1.Image", true, DataSourceUpdateMode.Never, null);
+            picType2.DataBindings.Add("Image", _pokemonBindingSource, "Type2.Image", true, DataSourceUpdateMode.Never, null);
+            picType2.DataBindings[0].Format += Type_2_Image_Format;
+
+            DBTools.GetPokemonForms();
 
             FormPopulated = true;
+        }
+
+        void Type_2_Image_Format(object sender, ConvertEventArgs e)
+        {
+            var pb = (PictureBox)((System.Windows.Forms.Binding)sender).Control;
+            if (tempPokemon.Type1.Value == tempPokemon.Type2.Value)
+                e.Value = null;
         }
 
         public void SetForm()
@@ -229,6 +242,29 @@ namespace PKMDS_Save_Editor
                     break;
             }
             pb.DataBindings[0].ReadValue();
+        }
+
+        private void speciesComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                picType1.DataBindings[0].ReadValue();
+                picType2.DataBindings[0].ReadValue();
+                if (DBTools.GetPokemonForms().Keys.Contains(tempPokemon.Species))
+                {
+                    formsComboBox.DataSource = DBTools.GetPokemonForms()[tempPokemon.Species];
+                    formsComboBox.DataBindings.Add("SelectedIndex", _pokemonBindingSource, "FormID", false, DataSourceUpdateMode.OnPropertyChanged, -1);
+                    formsComboBox.Enabled = true;
+                }
+                else
+                {
+                    formsComboBox.Enabled = false;
+                    if (formsComboBox.DataBindings.Count == 0) return;
+                    formsComboBox.DataBindings.RemoveAt(0);
+                    formsComboBox.DataSource = null;
+                }
+            }
+            catch (Exception) { }
         }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Data;
 using System.Data.Common;
 using System.Text;
@@ -101,6 +102,19 @@ namespace PKMDS_CS
             return table;
         }
 
+        public enum TypeSlots { Slot1 = 1, Slot2 = 2 }
+
+        public static Types GetPokemonType(ushort Species, byte FormID, TypeSlots TypeSlot)
+        {
+            PokemonDataTableColumns slot = PokemonDataTableColumns.type_1_id;
+            if (TypeSlot == TypeSlots.Slot2) slot = PokemonDataTableColumns.type_2_id;
+            int typeint = 0;
+            DataRow[] row = DBTools.GetPokemonDataTable.Select(string.Format("{0} = {1} and {2} = {3}", DBTools.PokemonDataTableColumns.species_id,
+                Species, DBTools.PokemonDataTableColumns.form_id, FormID));
+            int.TryParse(row[0].ItemArray[(int)slot].ToString(), out typeint);
+            return (Types)typeint;
+        }
+
         private static int GetGrowthRateID(ushort species)
         {
             int growthrateid = 0;
@@ -148,6 +162,46 @@ namespace PKMDS_CS
                 }
             }
             return exp;
+        }
+
+        private static Dictionary<Species, List<string>> PokemonForms;
+
+        public static Dictionary<Species, List<string>> GetPokemonForms()
+        {
+            if (PokemonForms != null) return PokemonForms;
+            PokemonForms = new Dictionary<Species, List<string>>();
+            if (con == null) return null;
+            if (con.State != ConnectionState.Open) return null;
+            List<Species> SpeciesWithForms = new List<Species>();
+            using (System.Data.Common.DbCommand cmd = con.CreateCommand())
+            {
+                cmd.CommandText =
+                    "select distinct pokemon.species_id from pokemon join pokemon_forms on pokemon.id = pokemon_forms.pokemon_id join pokemon_form_generations on pokemon_form_generations.pokemon_form_id = pokemon_forms.id join pokemon_form_names on pokemon_form_names.pokemon_form_id = pokemon_forms.id where local_language_id = 9 and generation_id = 6 and is_mega = 0 order by species_id asc, game_index asc, form_order asc";
+                var reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    SpeciesWithForms.Add((Species)reader.GetInt16(0));
+                }
+            }
+            DataTable results = new DataTable();
+            using (System.Data.Common.DbCommand cmd = con.CreateCommand())
+            {
+                cmd.CommandText =
+                    "select pokemon.species_id, pokemon_form_generations.game_index, form_order, form_name from pokemon join pokemon_forms on pokemon.id = pokemon_forms.pokemon_id join pokemon_form_generations on pokemon_form_generations.pokemon_form_id = pokemon_forms.id join pokemon_form_names on pokemon_form_names.pokemon_form_id = pokemon_forms.id where local_language_id = 9 and generation_id = 6 and is_mega = 0 order by species_id asc, game_index asc, form_order asc";
+                results.Load(cmd.ExecuteReader());
+            }
+            DataView view = new DataView(results);
+            foreach (var species in SpeciesWithForms)
+            {
+                List<string> thisspecies = new List<string>();
+                view.RowFilter = string.Format("species_id = {0}", (ushort)species);
+                foreach (var row in view.ToTable().Rows)
+                {
+                    thisspecies.Add(((System.Data.DataRow)row)[3].ToString());
+                }
+                PokemonForms.Add(species, thisspecies);
+            }
+            return PokemonForms;
         }
 
         public static string GetFormName(ushort Species, byte FormID, int langid = 9)

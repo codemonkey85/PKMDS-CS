@@ -46,11 +46,21 @@
             this.ribbonsTabPage = new System.Windows.Forms.TabPage();
             this.genderPictureBox = new System.Windows.Forms.PictureBox();
             this.markingsPanel = new System.Windows.Forms.Panel();
+            this.numericLevel = new System.Windows.Forms.NumericUpDown();
+            this.labelHeldItem = new System.Windows.Forms.Label();
+            this.labelSpecies = new System.Windows.Forms.Label();
+            this.labelLevel = new System.Windows.Forms.Label();
+            this.picType1 = new System.Windows.Forms.PictureBox();
+            this.picType2 = new System.Windows.Forms.PictureBox();
+            this.formsComboBox = new System.Windows.Forms.ComboBox();
             this.tablelayoutButtons.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbSprite)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbItemImage)).BeginInit();
             this.pokemonTabControl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.genderPictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericLevel)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picType1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picType2)).BeginInit();
             this.SuspendLayout();
             // 
             // buttonOk
@@ -81,6 +91,7 @@
             // 
             this.buttonCancel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.buttonCancel.AutoSize = true;
+            this.buttonCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.buttonCancel.Location = new System.Drawing.Point(826, 3);
             this.buttonCancel.Name = "buttonCancel";
             this.buttonCancel.Size = new System.Drawing.Size(102, 42);
@@ -104,12 +115,11 @@
             this.tablelayoutButtons.RowCount = 1;
             this.tablelayoutButtons.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tablelayoutButtons.Size = new System.Drawing.Size(1053, 48);
-            this.tablelayoutButtons.TabIndex = 4;
+            this.tablelayoutButtons.TabIndex = 10;
             // 
             // pbSprite
             // 
-            this.pbSprite.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbSprite.Location = new System.Drawing.Point(917, 17);
+            this.pbSprite.Location = new System.Drawing.Point(171, 12);
             this.pbSprite.Name = "pbSprite";
             this.pbSprite.Size = new System.Drawing.Size(120, 92);
             this.pbSprite.TabIndex = 4;
@@ -118,19 +128,18 @@
             // 
             // speciesComboBox
             // 
-            this.speciesComboBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.speciesComboBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.speciesComboBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.speciesComboBox.FormattingEnabled = true;
-            this.speciesComboBox.Location = new System.Drawing.Point(908, 115);
+            this.speciesComboBox.Location = new System.Drawing.Point(162, 110);
             this.speciesComboBox.Name = "speciesComboBox";
             this.speciesComboBox.Size = new System.Drawing.Size(127, 28);
-            this.speciesComboBox.TabIndex = 2;
+            this.speciesComboBox.TabIndex = 3;
+            this.speciesComboBox.SelectedIndexChanged += new System.EventHandler(this.speciesComboBox_SelectedIndexChanged);
             // 
             // textNickname
             // 
-            this.textNickname.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textNickname.Location = new System.Drawing.Point(758, 17);
+            this.textNickname.Location = new System.Drawing.Point(12, 12);
             this.textNickname.MaxLength = 12;
             this.textNickname.Name = "textNickname";
             this.textNickname.Size = new System.Drawing.Size(145, 26);
@@ -138,9 +147,8 @@
             // 
             // checkNicknamed
             // 
-            this.checkNicknamed.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.checkNicknamed.AutoSize = true;
-            this.checkNicknamed.Location = new System.Drawing.Point(791, 54);
+            this.checkNicknamed.Location = new System.Drawing.Point(45, 49);
             this.checkNicknamed.Name = "checkNicknamed";
             this.checkNicknamed.Size = new System.Drawing.Size(114, 24);
             this.checkNicknamed.TabIndex = 1;
@@ -149,22 +157,20 @@
             // 
             // itemComboBox
             // 
-            this.itemComboBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.itemComboBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.itemComboBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.itemComboBox.FormattingEnabled = true;
-            this.itemComboBox.Location = new System.Drawing.Point(849, 154);
+            this.itemComboBox.Location = new System.Drawing.Point(105, 250);
             this.itemComboBox.Name = "itemComboBox";
             this.itemComboBox.Size = new System.Drawing.Size(186, 28);
-            this.itemComboBox.TabIndex = 3;
+            this.itemComboBox.TabIndex = 8;
             this.itemComboBox.SelectedIndexChanged += new System.EventHandler(this.itemComboBox_SelectedIndexChanged);
             // 
             // pbItemImage
             // 
-            this.pbItemImage.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbItemImage.Location = new System.Drawing.Point(849, 98);
+            this.pbItemImage.Location = new System.Drawing.Point(25, 276);
             this.pbItemImage.Name = "pbItemImage";
-            this.pbItemImage.Size = new System.Drawing.Size(50, 49);
+            this.pbItemImage.Size = new System.Drawing.Size(74, 49);
             this.pbItemImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pbItemImage.TabIndex = 5;
             this.pbItemImage.TabStop = false;
@@ -179,12 +185,14 @@
             this.pokemonTabControl.Controls.Add(this.historyTabPage);
             this.pokemonTabControl.Controls.Add(this.contestTabPage);
             this.pokemonTabControl.Controls.Add(this.ribbonsTabPage);
-            this.pokemonTabControl.Location = new System.Drawing.Point(0, 0);
+            this.pokemonTabControl.HotTrack = true;
+            this.pokemonTabControl.Location = new System.Drawing.Point(300, 0);
             this.pokemonTabControl.Margin = new System.Windows.Forms.Padding(0);
+            this.pokemonTabControl.Multiline = true;
             this.pokemonTabControl.Name = "pokemonTabControl";
             this.pokemonTabControl.SelectedIndex = 0;
-            this.pokemonTabControl.Size = new System.Drawing.Size(755, 755);
-            this.pokemonTabControl.TabIndex = 6;
+            this.pokemonTabControl.Size = new System.Drawing.Size(755, 758);
+            this.pokemonTabControl.TabIndex = 9;
             // 
             // statsTabPage
             // 
@@ -192,7 +200,7 @@
             this.statsTabPage.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.statsTabPage.Name = "statsTabPage";
             this.statsTabPage.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.statsTabPage.Size = new System.Drawing.Size(747, 722);
+            this.statsTabPage.Size = new System.Drawing.Size(747, 725);
             this.statsTabPage.TabIndex = 0;
             this.statsTabPage.Text = "Stats";
             this.statsTabPage.UseVisualStyleBackColor = true;
@@ -203,7 +211,7 @@
             this.movesTabPage.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.movesTabPage.Name = "movesTabPage";
             this.movesTabPage.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.movesTabPage.Size = new System.Drawing.Size(747, 722);
+            this.movesTabPage.Size = new System.Drawing.Size(747, 725);
             this.movesTabPage.TabIndex = 1;
             this.movesTabPage.Text = "Moves";
             this.movesTabPage.UseVisualStyleBackColor = true;
@@ -213,7 +221,7 @@
             this.historyTabPage.Location = new System.Drawing.Point(4, 29);
             this.historyTabPage.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.historyTabPage.Name = "historyTabPage";
-            this.historyTabPage.Size = new System.Drawing.Size(747, 722);
+            this.historyTabPage.Size = new System.Drawing.Size(747, 725);
             this.historyTabPage.TabIndex = 2;
             this.historyTabPage.Text = "History";
             this.historyTabPage.UseVisualStyleBackColor = true;
@@ -223,7 +231,7 @@
             this.contestTabPage.Location = new System.Drawing.Point(4, 29);
             this.contestTabPage.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.contestTabPage.Name = "contestTabPage";
-            this.contestTabPage.Size = new System.Drawing.Size(747, 722);
+            this.contestTabPage.Size = new System.Drawing.Size(747, 725);
             this.contestTabPage.TabIndex = 4;
             this.contestTabPage.Text = "Contest";
             this.contestTabPage.UseVisualStyleBackColor = true;
@@ -233,15 +241,14 @@
             this.ribbonsTabPage.Location = new System.Drawing.Point(4, 29);
             this.ribbonsTabPage.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.ribbonsTabPage.Name = "ribbonsTabPage";
-            this.ribbonsTabPage.Size = new System.Drawing.Size(747, 722);
+            this.ribbonsTabPage.Size = new System.Drawing.Size(747, 725);
             this.ribbonsTabPage.TabIndex = 3;
             this.ribbonsTabPage.Text = "Ribbons";
             this.ribbonsTabPage.UseVisualStyleBackColor = true;
             // 
             // genderPictureBox
             // 
-            this.genderPictureBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.genderPictureBox.Location = new System.Drawing.Point(1022, 17);
+            this.genderPictureBox.Location = new System.Drawing.Point(276, 12);
             this.genderPictureBox.Name = "genderPictureBox";
             this.genderPictureBox.Size = new System.Drawing.Size(15, 15);
             this.genderPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -250,27 +257,104 @@
             // 
             // markingsPanel
             // 
-            this.markingsPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.markingsPanel.Location = new System.Drawing.Point(849, 188);
+            this.markingsPanel.Location = new System.Drawing.Point(105, 180);
             this.markingsPanel.Name = "markingsPanel";
             this.markingsPanel.Size = new System.Drawing.Size(186, 32);
-            this.markingsPanel.TabIndex = 8;
+            this.markingsPanel.TabIndex = 4;
+            // 
+            // numericLevel
+            // 
+            this.numericLevel.Location = new System.Drawing.Point(171, 218);
+            this.numericLevel.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numericLevel.Name = "numericLevel";
+            this.numericLevel.Size = new System.Drawing.Size(120, 26);
+            this.numericLevel.TabIndex = 6;
+            this.numericLevel.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // labelHeldItem
+            // 
+            this.labelHeldItem.Location = new System.Drawing.Point(21, 253);
+            this.labelHeldItem.Name = "labelHeldItem";
+            this.labelHeldItem.Size = new System.Drawing.Size(78, 20);
+            this.labelHeldItem.TabIndex = 7;
+            this.labelHeldItem.Text = "Held Item";
+            this.labelHeldItem.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelSpecies
+            // 
+            this.labelSpecies.Location = new System.Drawing.Point(85, 110);
+            this.labelSpecies.Name = "labelSpecies";
+            this.labelSpecies.Size = new System.Drawing.Size(71, 28);
+            this.labelSpecies.TabIndex = 2;
+            this.labelSpecies.Text = "Species";
+            this.labelSpecies.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelLevel
+            // 
+            this.labelLevel.Location = new System.Drawing.Point(114, 218);
+            this.labelLevel.Name = "labelLevel";
+            this.labelLevel.Size = new System.Drawing.Size(51, 26);
+            this.labelLevel.TabIndex = 5;
+            this.labelLevel.Text = "Level";
+            this.labelLevel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // picType1
+            // 
+            this.picType1.Location = new System.Drawing.Point(85, 144);
+            this.picType1.Name = "picType1";
+            this.picType1.Size = new System.Drawing.Size(100, 30);
+            this.picType1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.picType1.TabIndex = 11;
+            this.picType1.TabStop = false;
+            // 
+            // picType2
+            // 
+            this.picType2.Location = new System.Drawing.Point(191, 144);
+            this.picType2.Name = "picType2";
+            this.picType2.Size = new System.Drawing.Size(100, 30);
+            this.picType2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.picType2.TabIndex = 12;
+            this.picType2.TabStop = false;
+            // 
+            // formsComboBox
+            // 
+            this.formsComboBox.FormattingEnabled = true;
+            this.formsComboBox.Location = new System.Drawing.Point(35, 412);
+            this.formsComboBox.Name = "formsComboBox";
+            this.formsComboBox.Size = new System.Drawing.Size(121, 28);
+            this.formsComboBox.TabIndex = 13;
             // 
             // Pokemon_Editor_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this.buttonCancel;
             this.ClientSize = new System.Drawing.Size(1053, 806);
-            this.Controls.Add(this.markingsPanel);
-            this.Controls.Add(this.genderPictureBox);
+            this.Controls.Add(this.formsComboBox);
+            this.Controls.Add(this.picType2);
+            this.Controls.Add(this.picType1);
+            this.Controls.Add(this.labelLevel);
             this.Controls.Add(this.pokemonTabControl);
-            this.Controls.Add(this.pbItemImage);
-            this.Controls.Add(this.itemComboBox);
-            this.Controls.Add(this.checkNicknamed);
-            this.Controls.Add(this.textNickname);
-            this.Controls.Add(this.speciesComboBox);
             this.Controls.Add(this.pbSprite);
             this.Controls.Add(this.tablelayoutButtons);
+            this.Controls.Add(this.labelSpecies);
+            this.Controls.Add(this.textNickname);
+            this.Controls.Add(this.speciesComboBox);
+            this.Controls.Add(this.pbItemImage);
+            this.Controls.Add(this.labelHeldItem);
+            this.Controls.Add(this.genderPictureBox);
+            this.Controls.Add(this.itemComboBox);
+            this.Controls.Add(this.numericLevel);
+            this.Controls.Add(this.markingsPanel);
+            this.Controls.Add(this.checkNicknamed);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimumSize = new System.Drawing.Size(714, 619);
@@ -284,6 +368,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbItemImage)).EndInit();
             this.pokemonTabControl.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.genderPictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericLevel)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picType1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picType2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -309,5 +396,12 @@
         private System.Windows.Forms.TabPage ribbonsTabPage;
         private System.Windows.Forms.PictureBox genderPictureBox;
         private System.Windows.Forms.Panel markingsPanel;
+        private System.Windows.Forms.NumericUpDown numericLevel;
+        private System.Windows.Forms.Label labelHeldItem;
+        private System.Windows.Forms.Label labelSpecies;
+        private System.Windows.Forms.Label labelLevel;
+        private System.Windows.Forms.PictureBox picType1;
+        private System.Windows.Forms.PictureBox picType2;
+        private System.Windows.Forms.ComboBox formsComboBox;
     }
 }

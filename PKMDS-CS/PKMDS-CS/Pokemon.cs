@@ -1026,6 +1026,24 @@ namespace PKMDS_CS
             set { metlocation = (ushort)value; }
         }
 
+        [DisplayName("Type 1")]
+        public TypeObject Type1
+        {
+            get
+            {
+                return new TypeObject(DBTools.GetPokemonType(species, FormID, DBTools.TypeSlots.Slot1));
+            }
+        }
+
+        [DisplayName("Type 2")]
+        public TypeObject Type2
+        {
+            get
+            {
+                return new TypeObject(DBTools.GetPokemonType(species, FormID, DBTools.TypeSlots.Slot2));
+            }
+        }
+
         [DisplayName("Egg Date")]
         public DateTime EggDate
         {
