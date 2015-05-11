@@ -338,6 +338,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.buttonCancel;
             this.ClientSize = new System.Drawing.Size(1053, 806);
+            this.Controls.Add(this.genderPictureBox);
             this.Controls.Add(this.formsComboBox);
             this.Controls.Add(this.picType2);
             this.Controls.Add(this.picType1);
@@ -350,7 +351,6 @@
             this.Controls.Add(this.speciesComboBox);
             this.Controls.Add(this.pbItemImage);
             this.Controls.Add(this.labelHeldItem);
-            this.Controls.Add(this.genderPictureBox);
             this.Controls.Add(this.itemComboBox);
             this.Controls.Add(this.numericLevel);
             this.Controls.Add(this.markingsPanel);

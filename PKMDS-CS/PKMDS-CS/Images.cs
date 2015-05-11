@@ -18,9 +18,9 @@ namespace PKMDS_CS
             }
         }
 
-        public static Image GetTypeImage(Types type) 
+        public static Image GetTypeImage(Types type)
         {
-            return GetImageFromResource(string.Format("type_{0}",(int)type));
+            return GetImageFromResource(string.Format("type_{0}", (int)type));
         }
 
         public static Image GetMarkingImage(Markings mark, bool marked)
@@ -54,6 +54,10 @@ namespace PKMDS_CS
 
         public static Image GetPokemonImage(ushort species, byte formid = 0, Genders gender = Genders.Male)
         {
+            if (species == (ushort)Species.Arceus)
+            {
+                return GetImageFromResource(string.Format("_{0}", species));
+            }
             string formidstr = string.Empty;
             if (formid != 0)
             {

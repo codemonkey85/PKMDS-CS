@@ -128,8 +128,14 @@ namespace PKMDS_Save_Editor
         void Type_2_Image_Format(object sender, ConvertEventArgs e)
         {
             var pb = (PictureBox)((System.Windows.Forms.Binding)sender).Control;
-            if (tempPokemon.Type1.Value == tempPokemon.Type2.Value)
-                e.Value = null;
+            if (!tempPokemon.Type2.HasValue) e.Value = null;
+            if (tempPokemon.Type1.HasValue && tempPokemon.Type2.HasValue)
+            {
+                if (tempPokemon.Type1.Value.Value == tempPokemon.Type2.Value.Value)
+                {
+                    e.Value = null;
+                }
+            }
         }
 
         public void SetForm()
@@ -248,8 +254,7 @@ namespace PKMDS_Save_Editor
         {
             try
             {
-                picType1.DataBindings[0].ReadValue();
-                picType2.DataBindings[0].ReadValue();
+                tempPokemon.FormID = 0;
                 if (DBTools.GetPokemonForms().Keys.Contains(tempPokemon.Species))
                 {
                     formsComboBox.DataSource = DBTools.GetPokemonForms()[tempPokemon.Species];
@@ -263,6 +268,8 @@ namespace PKMDS_Save_Editor
                     formsComboBox.DataBindings.RemoveAt(0);
                     formsComboBox.DataSource = null;
                 }
+                picType1.DataBindings[0].ReadValue();
+                picType2.DataBindings[0].ReadValue();
             }
             catch (Exception) { }
         }

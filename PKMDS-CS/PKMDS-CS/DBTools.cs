@@ -106,12 +106,73 @@ namespace PKMDS_CS
 
         public static Types GetPokemonType(ushort Species, byte FormID, TypeSlots TypeSlot)
         {
-            PokemonDataTableColumns slot = PokemonDataTableColumns.type_1_id;
-            if (TypeSlot == TypeSlots.Slot2) slot = PokemonDataTableColumns.type_2_id;
+            if (Species == (ushort)PKMDS_CS.Species.Unown)
+            {
+                return Types.Psychic;
+            }
+            if (Species == (ushort)PKMDS_CS.Species.Arceus)
+            {
+                switch (FormID)
+                {
+                    case 0:
+                        return Types.Normal;
+                    case 1:
+                        return Types.Fighting;
+                    case 2:
+                        return Types.Flying;
+                    case 3:
+                        return Types.Poison;
+                    case 4:
+                        return Types.Ground;
+                    case 5:
+                        return Types.Rock;
+                    case 6:
+                        return Types.Bug;
+                    case 7:
+                        return Types.Ghost;
+                    case 8:
+                        return Types.Steel;
+                    case 9:
+                        return Types.Fire;
+                    case 10:
+                        return Types.Water;
+                    case 11:
+                        return Types.Grass;
+                    case 12:
+                        return Types.Electric;
+                    case 13:
+                        return Types.Psychic;
+                    case 14:
+                        return Types.Ice;
+                    case 15:
+                        return Types.Dragon;
+                    case 16:
+                        return Types.Dark;
+                    case 17:
+                        return Types.Fairy;
+                }
+            }
             int typeint = 0;
-            DataRow[] row = DBTools.GetPokemonDataTable.Select(string.Format("{0} = {1} and {2} = {3}", DBTools.PokemonDataTableColumns.species_id,
-                Species, DBTools.PokemonDataTableColumns.form_id, FormID));
-            int.TryParse(row[0].ItemArray[(int)slot].ToString(), out typeint);
+            try
+            {
+                PokemonDataTableColumns slot = PokemonDataTableColumns.type_1_id;
+                if (TypeSlot == TypeSlots.Slot2) slot = PokemonDataTableColumns.type_2_id;
+                if (Species == (ushort)PKMDS_CS.Species.Tornadus || Species == (ushort)PKMDS_CS.Species.Thundurus || Species == (ushort)PKMDS_CS.Species.Landorus)
+                {
+                    if (FormID != 0)
+                        FormID--;
+                }
+                DataRow[] row = DBTools.GetPokemonDataTable.Select(string.Format("{0} = {1} and {2} = {3}", DBTools.PokemonDataTableColumns.species_id,
+                    Species, DBTools.PokemonDataTableColumns.form_id, FormID));
+                if (!(int.TryParse(row[0].ItemArray[(int)slot].ToString(), out typeint))) 
+                {
+
+                }
+            }
+            catch (Exception ex)
+            {
+                return GetPokemonType(Species, 0, TypeSlot);
+            }
             return (Types)typeint;
         }
 
@@ -195,6 +256,21 @@ namespace PKMDS_CS
             {
                 List<string> thisspecies = new List<string>();
                 view.RowFilter = string.Format("species_id = {0}", (ushort)species);
+                switch (species)
+                {
+                    case Species.Castform:
+                        thisspecies.Add(string.Format("Ordinary {0}", species.EnumToString()));
+                        break;
+                    case Species.Rotom:
+                        thisspecies.Add(string.Format("Ordinary {0}", species.EnumToString()));
+                        break;
+                    case Species.Kyurem:
+                        thisspecies.Add(string.Format("Ordinary {0}", species.EnumToString()));
+                        break;
+                    case Species.Genesect:
+                        thisspecies.Add(string.Format("Ordinary {0}", species.EnumToString()));
+                        break;
+                }
                 foreach (var row in view.ToTable().Rows)
                 {
                     thisspecies.Add(((System.Data.DataRow)row)[3].ToString());

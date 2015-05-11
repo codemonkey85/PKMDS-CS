@@ -8596,11 +8596,13 @@ namespace PKMDS_CS
         }
     }
 
-    public class TypeObject
+    public struct TypeObject
     {
         public TypeObject(Types Type)
         {
-            Value = Type;
+            this.value = Enum.IsDefined(typeof(Types), Type)
+                ? (Types)Type
+                : Types.Normal;
         }
 
         private Types value;
@@ -8624,9 +8626,9 @@ namespace PKMDS_CS
             get { return value.EnumToString(); }
         }
 
-        public Image Image 
+        public Image Image
         {
-            get 
+            get
             {
                 return Images.GetTypeImage(Value);
             }

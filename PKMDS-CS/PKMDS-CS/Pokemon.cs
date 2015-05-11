@@ -1027,7 +1027,7 @@ namespace PKMDS_CS
         }
 
         [DisplayName("Type 1")]
-        public TypeObject Type1
+        public TypeObject? Type1
         {
             get
             {
@@ -1036,7 +1036,7 @@ namespace PKMDS_CS
         }
 
         [DisplayName("Type 2")]
-        public TypeObject Type2
+        public TypeObject? Type2
         {
             get
             {
