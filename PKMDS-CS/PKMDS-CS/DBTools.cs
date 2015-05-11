@@ -116,38 +116,55 @@ namespace PKMDS_CS
                 {
                     case 0:
                         return Types.Normal;
+
                     case 1:
                         return Types.Fighting;
+
                     case 2:
                         return Types.Flying;
+
                     case 3:
                         return Types.Poison;
+
                     case 4:
                         return Types.Ground;
+
                     case 5:
                         return Types.Rock;
+
                     case 6:
                         return Types.Bug;
+
                     case 7:
                         return Types.Ghost;
+
                     case 8:
                         return Types.Steel;
+
                     case 9:
                         return Types.Fire;
+
                     case 10:
                         return Types.Water;
+
                     case 11:
                         return Types.Grass;
+
                     case 12:
                         return Types.Electric;
+
                     case 13:
                         return Types.Psychic;
+
                     case 14:
                         return Types.Ice;
+
                     case 15:
                         return Types.Dragon;
+
                     case 16:
                         return Types.Dark;
+
                     case 17:
                         return Types.Fairy;
                 }
@@ -164,9 +181,8 @@ namespace PKMDS_CS
                 }
                 DataRow[] row = DBTools.GetPokemonDataTable.Select(string.Format("{0} = {1} and {2} = {3}", DBTools.PokemonDataTableColumns.species_id,
                     Species, DBTools.PokemonDataTableColumns.form_id, FormID));
-                if (!(int.TryParse(row[0].ItemArray[(int)slot].ToString(), out typeint))) 
+                if (!(int.TryParse(row[0].ItemArray[(int)slot].ToString(), out typeint)))
                 {
-
                 }
             }
             catch (Exception ex)
@@ -261,12 +277,15 @@ namespace PKMDS_CS
                     case Species.Castform:
                         thisspecies.Add(string.Format("Ordinary {0}", species.EnumToString()));
                         break;
+
                     case Species.Rotom:
                         thisspecies.Add(string.Format("Ordinary {0}", species.EnumToString()));
                         break;
+
                     case Species.Kyurem:
                         thisspecies.Add(string.Format("Ordinary {0}", species.EnumToString()));
                         break;
+
                     case Species.Genesect:
                         thisspecies.Add(string.Format("Ordinary {0}", species.EnumToString()));
                         break;

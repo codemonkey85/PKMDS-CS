@@ -125,7 +125,7 @@ namespace PKMDS_Save_Editor
             FormPopulated = true;
         }
 
-        void Type_2_Image_Format(object sender, ConvertEventArgs e)
+        private void Type_2_Image_Format(object sender, ConvertEventArgs e)
         {
             var pb = (PictureBox)((System.Windows.Forms.Binding)sender).Control;
             if (!tempPokemon.Type2.HasValue) e.Value = null;
@@ -183,7 +183,7 @@ namespace PKMDS_Save_Editor
             catch (Exception) { }
         }
 
-        List<PictureBox> MarkingsBoxes = new List<PictureBox>();
+        private List<PictureBox> MarkingsBoxes = new List<PictureBox>();
 
         private void Pokemon_Editor_Form_Load(object sender, EventArgs e)
         {
@@ -215,7 +215,7 @@ namespace PKMDS_Save_Editor
             markingsPanel.Controls.Add(flp);
         }
 
-        void MarkingsImageFormat(object sender, ConvertEventArgs e)
+        private void MarkingsImageFormat(object sender, ConvertEventArgs e)
         {
             var pb = (PictureBox)((System.Windows.Forms.Binding)sender).Control;
             Markings mark = new Markings();
@@ -223,7 +223,7 @@ namespace PKMDS_Save_Editor
             e.Value = Images.GetMarkingImage(mark, (bool)e.Value);
         }
 
-        void pbMarkings_Click(object sender, EventArgs e)
+        private void pbMarkings_Click(object sender, EventArgs e)
         {
             var pb = (PictureBox)sender;
             switch ((Markings)((pb).Tag))
@@ -231,18 +231,23 @@ namespace PKMDS_Save_Editor
                 case Markings.Circle:
                     tempPokemon.Circle = !tempPokemon.Circle;
                     break;
+
                 case Markings.Triangle:
                     tempPokemon.Triangle = !tempPokemon.Triangle;
                     break;
+
                 case Markings.Square:
                     tempPokemon.Square = !tempPokemon.Square;
                     break;
+
                 case Markings.Heart:
                     tempPokemon.Heart = !tempPokemon.Heart;
                     break;
+
                 case Markings.Star:
                     tempPokemon.Star = !tempPokemon.Star;
                     break;
+
                 case Markings.Diamond:
                     tempPokemon.Diamond = !tempPokemon.Diamond;
                     break;

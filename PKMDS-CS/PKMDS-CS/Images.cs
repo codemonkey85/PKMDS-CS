@@ -35,8 +35,10 @@ namespace PKMDS_CS
             {
                 case Genders.Male:
                     return GetImageFromResource("male");
+
                 case Genders.Female:
                     return GetImageFromResource("female");
+
                 default:
                     return null;
             }
