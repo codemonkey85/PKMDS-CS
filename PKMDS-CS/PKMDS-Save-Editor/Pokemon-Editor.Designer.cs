@@ -53,6 +53,7 @@
             this.picType1 = new System.Windows.Forms.PictureBox();
             this.picType2 = new System.Windows.Forms.PictureBox();
             this.formsComboBox = new System.Windows.Forms.ComboBox();
+            this.labelForm = new System.Windows.Forms.Label();
             this.tablelayoutButtons.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbSprite)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbItemImage)).BeginInit();
@@ -115,7 +116,7 @@
             this.tablelayoutButtons.RowCount = 1;
             this.tablelayoutButtons.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tablelayoutButtons.Size = new System.Drawing.Size(1053, 48);
-            this.tablelayoutButtons.TabIndex = 10;
+            this.tablelayoutButtons.TabIndex = 12;
             // 
             // pbSprite
             // 
@@ -133,7 +134,7 @@
             this.speciesComboBox.FormattingEnabled = true;
             this.speciesComboBox.Location = new System.Drawing.Point(162, 110);
             this.speciesComboBox.Name = "speciesComboBox";
-            this.speciesComboBox.Size = new System.Drawing.Size(127, 28);
+            this.speciesComboBox.Size = new System.Drawing.Size(129, 28);
             this.speciesComboBox.TabIndex = 3;
             this.speciesComboBox.SelectedIndexChanged += new System.EventHandler(this.speciesComboBox_SelectedIndexChanged);
             // 
@@ -160,15 +161,15 @@
             this.itemComboBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.itemComboBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.itemComboBox.FormattingEnabled = true;
-            this.itemComboBox.Location = new System.Drawing.Point(105, 250);
+            this.itemComboBox.Location = new System.Drawing.Point(105, 284);
             this.itemComboBox.Name = "itemComboBox";
             this.itemComboBox.Size = new System.Drawing.Size(186, 28);
-            this.itemComboBox.TabIndex = 8;
+            this.itemComboBox.TabIndex = 10;
             this.itemComboBox.SelectedIndexChanged += new System.EventHandler(this.itemComboBox_SelectedIndexChanged);
             // 
             // pbItemImage
             // 
-            this.pbItemImage.Location = new System.Drawing.Point(25, 276);
+            this.pbItemImage.Location = new System.Drawing.Point(25, 310);
             this.pbItemImage.Name = "pbItemImage";
             this.pbItemImage.Size = new System.Drawing.Size(74, 49);
             this.pbItemImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -192,7 +193,7 @@
             this.pokemonTabControl.Name = "pokemonTabControl";
             this.pokemonTabControl.SelectedIndex = 0;
             this.pokemonTabControl.Size = new System.Drawing.Size(755, 758);
-            this.pokemonTabControl.TabIndex = 9;
+            this.pokemonTabControl.TabIndex = 11;
             // 
             // statsTabPage
             // 
@@ -257,14 +258,14 @@
             // 
             // markingsPanel
             // 
-            this.markingsPanel.Location = new System.Drawing.Point(105, 180);
+            this.markingsPanel.Location = new System.Drawing.Point(105, 214);
             this.markingsPanel.Name = "markingsPanel";
             this.markingsPanel.Size = new System.Drawing.Size(186, 32);
-            this.markingsPanel.TabIndex = 4;
+            this.markingsPanel.TabIndex = 6;
             // 
             // numericLevel
             // 
-            this.numericLevel.Location = new System.Drawing.Point(171, 218);
+            this.numericLevel.Location = new System.Drawing.Point(171, 252);
             this.numericLevel.Minimum = new decimal(new int[] {
             1,
             0,
@@ -272,7 +273,7 @@
             0});
             this.numericLevel.Name = "numericLevel";
             this.numericLevel.Size = new System.Drawing.Size(120, 26);
-            this.numericLevel.TabIndex = 6;
+            this.numericLevel.TabIndex = 8;
             this.numericLevel.Value = new decimal(new int[] {
             1,
             0,
@@ -281,10 +282,10 @@
             // 
             // labelHeldItem
             // 
-            this.labelHeldItem.Location = new System.Drawing.Point(21, 253);
+            this.labelHeldItem.Location = new System.Drawing.Point(21, 287);
             this.labelHeldItem.Name = "labelHeldItem";
             this.labelHeldItem.Size = new System.Drawing.Size(78, 20);
-            this.labelHeldItem.TabIndex = 7;
+            this.labelHeldItem.TabIndex = 9;
             this.labelHeldItem.Text = "Held Item";
             this.labelHeldItem.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -299,16 +300,16 @@
             // 
             // labelLevel
             // 
-            this.labelLevel.Location = new System.Drawing.Point(114, 218);
+            this.labelLevel.Location = new System.Drawing.Point(114, 252);
             this.labelLevel.Name = "labelLevel";
             this.labelLevel.Size = new System.Drawing.Size(51, 26);
-            this.labelLevel.TabIndex = 5;
+            this.labelLevel.TabIndex = 7;
             this.labelLevel.Text = "Level";
             this.labelLevel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // picType1
             // 
-            this.picType1.Location = new System.Drawing.Point(85, 144);
+            this.picType1.Location = new System.Drawing.Point(85, 178);
             this.picType1.Name = "picType1";
             this.picType1.Size = new System.Drawing.Size(100, 30);
             this.picType1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -317,7 +318,7 @@
             // 
             // picType2
             // 
-            this.picType2.Location = new System.Drawing.Point(191, 144);
+            this.picType2.Location = new System.Drawing.Point(191, 178);
             this.picType2.Name = "picType2";
             this.picType2.Size = new System.Drawing.Size(100, 30);
             this.picType2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -327,10 +328,19 @@
             // formsComboBox
             // 
             this.formsComboBox.FormattingEnabled = true;
-            this.formsComboBox.Location = new System.Drawing.Point(35, 412);
+            this.formsComboBox.Location = new System.Drawing.Point(70, 144);
             this.formsComboBox.Name = "formsComboBox";
-            this.formsComboBox.Size = new System.Drawing.Size(121, 28);
-            this.formsComboBox.TabIndex = 13;
+            this.formsComboBox.Size = new System.Drawing.Size(221, 28);
+            this.formsComboBox.TabIndex = 5;
+            // 
+            // labelForm
+            // 
+            this.labelForm.Location = new System.Drawing.Point(8, 143);
+            this.labelForm.Name = "labelForm";
+            this.labelForm.Size = new System.Drawing.Size(56, 28);
+            this.labelForm.TabIndex = 4;
+            this.labelForm.Text = "Form";
+            this.labelForm.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Pokemon_Editor_Form
             // 
@@ -338,6 +348,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.buttonCancel;
             this.ClientSize = new System.Drawing.Size(1053, 806);
+            this.Controls.Add(this.labelForm);
             this.Controls.Add(this.genderPictureBox);
             this.Controls.Add(this.formsComboBox);
             this.Controls.Add(this.picType2);
@@ -403,5 +414,6 @@
         private System.Windows.Forms.PictureBox picType1;
         private System.Windows.Forms.PictureBox picType2;
         private System.Windows.Forms.ComboBox formsComboBox;
+        private System.Windows.Forms.Label labelForm;
     }
 }
