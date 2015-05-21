@@ -10,14 +10,6 @@ using System.Reflection;
 
 namespace PKMDS_CS
 {
-    //public static class Methods
-    //{
-    //    public static T ParseEnum<T>(object o)
-    //    {
-    //        T enumVal = (T)Enum.Parse(typeof(T), o.ToString());
-    //        return enumVal;
-    //    }
-    //}
 
     public static class Extensions
     {

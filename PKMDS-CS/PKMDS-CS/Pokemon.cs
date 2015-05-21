@@ -1136,6 +1136,20 @@ namespace PKMDS_CS
             }
         }
 
+        [DisplayName("OT Gender Is Male")]
+        public bool OTGenderIsMale
+        {
+            get { return OTGender == Genders.Male; }
+            set { if (value) { OTGender = Genders.Male; } else { OTGender = Genders.Female; } }
+        }
+
+        [DisplayName("OT Gender Is Female")]
+        public bool OTGenderIsFemale
+        {
+            get { return OTGender == Genders.Female; }
+            set { if (value) { OTGender = Genders.Female; } else { OTGender = Genders.Male; } }
+        }
+
         [DisplayName("Level")]
         public int Level
         {
