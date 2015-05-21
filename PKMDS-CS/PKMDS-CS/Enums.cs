@@ -10,6 +10,15 @@ using System.Reflection;
 
 namespace PKMDS_CS
 {
+    //public static class Methods
+    //{
+    //    public static T ParseEnum<T>(object o)
+    //    {
+    //        T enumVal = (T)Enum.Parse(typeof(T), o.ToString());
+    //        return enumVal;
+    //    }
+    //}
+
     public static class Extensions
     {
         internal static List<ushort> BallsToItems = new List<ushort>
@@ -8383,7 +8392,7 @@ namespace PKMDS_CS
 
         public Image Image
         {
-            get { return Images.GetItemImage((ushort)Value); }
+            get { return Value == null ? null : Images.GetItemImage((ushort)Value); }
         }
 
         public string Name
@@ -8393,7 +8402,7 @@ namespace PKMDS_CS
 
         public override string ToString()
         {
-            return value.EnumToString();
+            return Name;
         }
 
         public override bool Equals(System.Object obj)

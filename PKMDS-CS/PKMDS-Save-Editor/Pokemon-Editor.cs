@@ -175,12 +175,9 @@ namespace PKMDS_Save_Editor
         private void itemComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (itemComboBox.SelectedIndex == -1) return;
-            try
-            {
-                var item = new ItemObject((Items)itemComboBox.SelectedValue);
-                _itemCurrencyManger.Position = _itemCurrencyManger.List.IndexOf(item);
-            }
-            catch (Exception) { }
+            if (itemComboBox.SelectedValue as ItemObject == Items.NoItem) return;
+            var item = new ItemObject((Items)itemComboBox.SelectedValue);
+            _itemCurrencyManger.Position = _itemCurrencyManger.List.IndexOf(item);
         }
 
         private List<PictureBox> MarkingsBoxes = new List<PictureBox>();
@@ -257,26 +254,24 @@ namespace PKMDS_Save_Editor
 
         private void speciesComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            try
+            tempPokemon.FormID = 0;
+            if (formsComboBox.DataBindings.Count != 0)
+                formsComboBox.DataBindings.RemoveAt(0);
+            formsComboBox.DataSource = null;
+            if (DBTools.GetPokemonForms().Keys.Contains(tempPokemon.Species))
             {
-                tempPokemon.FormID = 0;
-                if (DBTools.GetPokemonForms().Keys.Contains(tempPokemon.Species))
-                {
-                    formsComboBox.DataSource = DBTools.GetPokemonForms()[tempPokemon.Species];
-                    formsComboBox.DataBindings.Add("SelectedIndex", _pokemonBindingSource, "FormID", false, DataSourceUpdateMode.OnPropertyChanged, -1);
-                    formsComboBox.Enabled = true;
-                }
-                else
-                {
-                    formsComboBox.Enabled = false;
-                    if (formsComboBox.DataBindings.Count == 0) return;
-                    formsComboBox.DataBindings.RemoveAt(0);
-                    formsComboBox.DataSource = null;
-                }
-                picType1.DataBindings[0].ReadValue();
-                picType2.DataBindings[0].ReadValue();
+                formsComboBox.DataSource = DBTools.GetPokemonForms()[tempPokemon.Species];
+                formsComboBox.DataBindings.Add("SelectedIndex", _pokemonBindingSource, "FormID", false, DataSourceUpdateMode.OnPropertyChanged, -1);
+                formsComboBox.Enabled = true;
             }
-            catch (Exception) { }
+            else
+            {
+                formsComboBox.Enabled = false;
+            }
+            if (picType1.DataBindings.Count != 0)
+                picType1.DataBindings[0].ReadValue();
+            if (picType2.DataBindings.Count != 0)
+                picType2.DataBindings[0].ReadValue();
         }
     }
 }
