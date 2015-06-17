@@ -1,6 +1,7 @@
 ﻿#region Using
 
 using System;
+using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
 using System.Runtime.InteropServices;
@@ -349,6 +350,28 @@ namespace PKMDS_CS
             get { return BitConverter.ToUInt16(data, 0x70); }
             set { Array.Copy(BitConverter.GetBytes(value), 0, data, 0x70, 2); }
         }
+
+
+        public List<MovesObject> Moves
+        {
+            get
+            {
+                List<MovesObject> pokemonMoves = new List<MovesObject>();
+                pokemonMoves.Add(new MovesObject(Move1));
+                pokemonMoves.Add(new MovesObject(Move2));
+                pokemonMoves.Add(new MovesObject(Move3));
+                pokemonMoves.Add(new MovesObject(Move4));
+                return pokemonMoves;
+            }
+            set 
+            {
+                if (value.Count >= 1) Move1 = value[0].Value;
+                if (value.Count >= 1) Move2 = value[1].Value;
+                if (value.Count >= 1) Move3 = value[2].Value;
+                if (value.Count >= 1) Move4 = value[3].Value;
+            }
+        }
+
 
         [DisplayName("Secret Super Training Flag")]
         public byte SecretSuperTrainingFlag
@@ -858,7 +881,7 @@ namespace PKMDS_CS
             {
                 return Enum.IsDefined(typeof(Moves), move1id)
                     ? (Moves)move1id
-                    : Moves.NoMove;
+                    : PKMDS_CS.Moves.NoMove;
             }
             set { move1id = (ushort)value; }
         }
@@ -870,7 +893,7 @@ namespace PKMDS_CS
             {
                 return Enum.IsDefined(typeof(Moves), move2id)
                     ? (Moves)move2id
-                    : Moves.NoMove;
+                    : PKMDS_CS.Moves.NoMove;
             }
             set { move2id = (ushort)value; }
         }
@@ -882,7 +905,7 @@ namespace PKMDS_CS
             {
                 return Enum.IsDefined(typeof(Moves), move3id)
                     ? (Moves)move3id
-                    : Moves.NoMove;
+                    : PKMDS_CS.Moves.NoMove;
             }
             set { move3id = (ushort)value; }
         }
@@ -894,7 +917,7 @@ namespace PKMDS_CS
             {
                 return Enum.IsDefined(typeof(Moves), move4id)
                     ? (Moves)move4id
-                    : Moves.NoMove;
+                    : PKMDS_CS.Moves.NoMove;
             }
             set { move4id = (ushort)value; }
         }
@@ -906,7 +929,7 @@ namespace PKMDS_CS
             {
                 return Enum.IsDefined(typeof(Moves), relearnmove1id)
                     ? (Moves)relearnmove1id
-                    : Moves.NoMove;
+                    : PKMDS_CS.Moves.NoMove;
             }
             set { relearnmove1id = (ushort)value; }
         }
@@ -918,7 +941,7 @@ namespace PKMDS_CS
             {
                 return Enum.IsDefined(typeof(Moves), relearnmove2id)
                     ? (Moves)relearnmove2id
-                    : Moves.NoMove;
+                    : PKMDS_CS.Moves.NoMove;
             }
             set { relearnmove2id = (ushort)value; }
         }
@@ -930,7 +953,7 @@ namespace PKMDS_CS
             {
                 return Enum.IsDefined(typeof(Moves), relearnmove3id)
                     ? (Moves)relearnmove3id
-                    : Moves.NoMove;
+                    : PKMDS_CS.Moves.NoMove;
             }
             set { relearnmove3id = (ushort)value; }
         }
@@ -942,7 +965,7 @@ namespace PKMDS_CS
             {
                 return Enum.IsDefined(typeof(Moves), relearnmove4id)
                     ? (Moves)relearnmove4id
-                    : Moves.NoMove;
+                    : PKMDS_CS.Moves.NoMove;
             }
             set { relearnmove4id = (ushort)value; }
         }

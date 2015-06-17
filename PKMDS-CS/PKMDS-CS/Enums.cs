@@ -8540,6 +8540,55 @@ namespace PKMDS_CS
             get { return value.EnumToString(); }
         }
 
+        public TypeObject Type 
+        {
+            get 
+            {
+                string typeidstr = DBTools.GetMoveDataTable.Select(string.Format("id = {0}", (int)value))[0].ItemArray[(int)DBTools.MoveDataTableColumns.type_id].ToString();
+                int typeid = 0;
+                if (!int.TryParse(typeidstr, out typeid)) return new TypeObject();
+                if (!Enum.IsDefined(typeof(Types), typeid)) return new TypeObject();
+                return new TypeObject((Types)typeid);
+            }
+        }
+
+        public Image TypeImage
+        {
+            get
+            {
+                return Type.Image;
+            }
+        }
+
+        public Image CategoryImage
+        {
+            get
+            {
+                var damageclassidstr = DBTools.GetMoveDataTable.Select(string.Format("id = {0}", (int)value))[0].ItemArray[(int)DBTools.MoveDataTableColumns.damage_class_id].ToString();
+                int damageclassid = -1;
+                int.TryParse(damageclassidstr, out damageclassid);
+                switch (damageclassid) 
+                {
+                    case 1:
+                        return Images.GetImageFromResource("physical");
+                    case 2:
+                        return Images.GetImageFromResource("special");
+                    case 3:
+                        return Images.GetImageFromResource("other");
+                    default:
+                        return null;
+                }
+            }
+        }
+
+        public string FlavorText 
+        {
+            get 
+            {
+                return DBTools.GetMoveDataTable.Select(string.Format("id = {0}", (int)value))[0].ItemArray[(int)DBTools.MoveDataTableColumns.flavor_text].ToString();
+            } 
+        }
+
         public override string ToString()
         {
             return value.EnumToString();

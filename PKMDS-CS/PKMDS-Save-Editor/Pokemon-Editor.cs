@@ -71,6 +71,9 @@ namespace PKMDS_Save_Editor
             InitializeComponent();
         }
 
+        private List<NumericUpDown> numIVs = new List<NumericUpDown>();
+        private List<NumericUpDown> numEVs = new List<NumericUpDown>();
+
         private bool FormSet = false;
         private bool FormPopulated = false;
         private Pokemon _pokemon;
@@ -80,7 +83,9 @@ namespace PKMDS_Save_Editor
 
         private readonly BindingSource _pokemonBindingSource = new BindingSource();
         private readonly BindingSource _itemBindingSource = new BindingSource();
+        private readonly BindingSource _moveBindingSource = new BindingSource();
         private CurrencyManager _itemCurrencyManger;
+        private CurrencyManager _moveCurrencyManger;
 
         public void PopulateForm()
         {
@@ -125,6 +130,63 @@ namespace PKMDS_Save_Editor
             picType2.DataBindings[0].Format += Type_2_Image_Format;
 
             DBTools.GetPokemonForms();
+
+            numHPIV.DataBindings.Add("Value", _pokemonBindingSource, "HP_IV", true, DataSourceUpdateMode.OnPropertyChanged, 0.0);
+            numAttackIV.DataBindings.Add("Value", _pokemonBindingSource, "Attack_IV", true, DataSourceUpdateMode.OnPropertyChanged, 0.0);
+            numDefenseIV.DataBindings.Add("Value", _pokemonBindingSource, "Defense_IV", true, DataSourceUpdateMode.OnPropertyChanged, 0.0);
+            numSpAtkIV.DataBindings.Add("Value", _pokemonBindingSource, "SpecialAttack_IV", true, DataSourceUpdateMode.OnPropertyChanged, 0.0);
+            numSpDefIV.DataBindings.Add("Value", _pokemonBindingSource, "SpecialDefense_IV", true, DataSourceUpdateMode.OnPropertyChanged, 0.0);
+            numSpeedIV.DataBindings.Add("Value", _pokemonBindingSource, "Speed_IV", true, DataSourceUpdateMode.OnPropertyChanged, 0.0);
+
+            numHPEV.DataBindings.Add("Value", _pokemonBindingSource, "HPEffortValue", true, DataSourceUpdateMode.OnPropertyChanged, 0.0);
+            numAttackEV.DataBindings.Add("Value", _pokemonBindingSource, "AttackEffortValue", true, DataSourceUpdateMode.OnPropertyChanged, 0.0);
+            numDefenseEV.DataBindings.Add("Value", _pokemonBindingSource, "DefenseEffortValue", true, DataSourceUpdateMode.OnPropertyChanged, 0.0);
+            numSpAtkEV.DataBindings.Add("Value", _pokemonBindingSource, "SpAttackEffortValue", true, DataSourceUpdateMode.OnPropertyChanged, 0.0);
+            numSpDefEV.DataBindings.Add("Value", _pokemonBindingSource, "SpDefenseEffortValue", true, DataSourceUpdateMode.OnPropertyChanged, 0.0);
+            numSpeedEV.DataBindings.Add("Value", _pokemonBindingSource, "SpeedEffortValue", true, DataSourceUpdateMode.OnPropertyChanged, 0.0);
+
+            textHP.DataBindings.Add("Text", _pokemonBindingSource, "HP", true, DataSourceUpdateMode.Never, string.Empty);
+            textAttack.DataBindings.Add("Text", _pokemonBindingSource, "Attack", true, DataSourceUpdateMode.Never, string.Empty);
+            textDefense.DataBindings.Add("Text", _pokemonBindingSource, "Defense", true, DataSourceUpdateMode.Never, string.Empty);
+            textSpAtk.DataBindings.Add("Text", _pokemonBindingSource, "SpecialAttack", true, DataSourceUpdateMode.Never, string.Empty);
+            textSpDef.DataBindings.Add("Text", _pokemonBindingSource, "SpecialDefense", true, DataSourceUpdateMode.Never, string.Empty);
+            textSpeed.DataBindings.Add("Text", _pokemonBindingSource, "Speed", true, DataSourceUpdateMode.Never, string.Empty);
+
+            _moveBindingSource.DataSource = tempPokemon.Moves;
+            _moveCurrencyManger = _moveBindingSource.CurrencyManager;
+            _moveCurrencyManger.Position = 0;
+
+            labelMoveFlavorText.DataBindings.Add("Text", _moveBindingSource, "FlavorText", false, DataSourceUpdateMode.Never, string.Empty);
+
+            dataGridMoves.DataSource = _moveBindingSource;
+
+            //for (int m = 0; m < 4; m++)
+            //{
+            //    if (dataGridMoves.Rows.Count > m)
+            //    {
+            //        dataGridMoves.Rows[m].HeaderCell.ValueType = typeof(string);
+            //        dataGridMoves.Rows[m].HeaderCell.Value = string.Format("Move {0}", m + 1);
+            //    }
+            //}
+
+            if (dataGridMoves.Columns.Contains("Value"))
+                //dataGridMoves.Columns["Value"].Visible = false;
+                if (dataGridMoves.Columns.Contains("Name"))
+                    dataGridMoves.Columns["Name"].Visible = false;
+                    if (dataGridMoves.Columns.Contains("Type"))
+                dataGridMoves.Columns["Type"].Visible = false;
+            if (dataGridMoves.Columns.Contains("TypeImage"))
+                dataGridMoves.Columns["TypeImage"].HeaderText = "Type";
+            if (dataGridMoves.Columns.Contains("CategoryImage"))
+                dataGridMoves.Columns["CategoryImage"].HeaderText = "Category";
+            if (dataGridMoves.Columns.Contains("FlavorText"))
+            {
+                dataGridMoves.Columns["FlavorText"].Visible = false;
+                //dataGridMoves.Columns["FlavorText"].HeaderText = "Flavor Text";
+                //dataGridMoves.Columns["FlavorText"].DefaultCellStyle.WrapMode = DataGridViewTriState.True;
+            }
+
+            dataGridMoves.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
 
             FormPopulated = true;
         }
@@ -276,6 +338,13 @@ namespace PKMDS_Save_Editor
                 picType1.DataBindings[0].ReadValue();
             if (picType2.DataBindings.Count != 0)
                 picType2.DataBindings[0].ReadValue();
+        }
+
+        private void dataGridMoves_SelectionChanged(object sender, EventArgs e)
+        {
+            if (dataGridMoves.Columns.Count == 0 || dataGridMoves.Rows.Count == 0 || dataGridMoves.SelectedRows.Count == 0) return;
+            //MessageBox.Show(string.Format("{0}", dataGridMoves.SelectedRows[0].Index));
+            _moveCurrencyManger.Position = dataGridMoves.SelectedRows[0].Index;
         }
     }
 }

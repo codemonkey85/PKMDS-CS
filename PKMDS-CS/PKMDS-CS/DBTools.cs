@@ -13,6 +13,7 @@ namespace PKMDS_CS
         private static DataTable PokemonDataTable;
         private static DataTable ItemDataTable;
         private static DataTable NatureDataTable;
+        private static DataTable MoveDataTable;
 
         public enum PokemonDataTableColumns
         {
@@ -52,6 +53,18 @@ namespace PKMDS_CS
             name,
             decreased_stat_id,
             increased_stat_id
+        }
+
+        public enum MoveDataTableColumns 
+        {
+            id,
+            name,
+            type_id,
+            power,
+            pp,
+            accuracy,
+            damage_class_id,
+            flavor_text
         }
 
         public static void OpenDB(string DBFile)
@@ -451,6 +464,23 @@ namespace PKMDS_CS
                     NatureDataTable.Load(cmd.ExecuteReader());
                 }
                 return NatureDataTable;
+            }
+        }
+
+        public static DataTable GetMoveDataTable
+        {
+            get
+            {
+                if (con == null) return null;
+                if (con.State != ConnectionState.Open) return null;
+                if (MoveDataTable != null) return MoveDataTable;
+                using (var cmd = con.CreateCommand())
+                {
+                    cmd.CommandText = string.Format(@"select moves.id, move_names.name, moves.type_id - 1, moves.power, moves.pp, moves.accuracy, moves.damage_class_id - 1, move_flavor_text.flavor_text from moves join move_names on moves.id = move_names.move_id join move_flavor_text on moves.id = move_flavor_text.move_id where move_names.local_language_id = 9 and move_flavor_text.language_id = 9 and move_flavor_text.version_group_id = 15 and moves.id < 1000");
+                    MoveDataTable = new DataTable();
+                    MoveDataTable.Load(cmd.ExecuteReader());
+                }
+                return MoveDataTable;
             }
         }
 
