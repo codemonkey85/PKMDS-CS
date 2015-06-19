@@ -113,6 +113,8 @@ namespace PKMDS_Save_Editor
                 dataGridMoves.Columns["Name"].Visible = false;
             if (dataGridMoves.Columns.Contains("Type"))
                 dataGridMoves.Columns["Type"].Visible = false;
+            if (dataGridMoves.Columns.Contains("BasePP"))
+                dataGridMoves.Columns["BasePP"].Visible = false;
             if (dataGridMoves.Columns.Contains("TypeImage"))
                 dataGridMoves.Columns["TypeImage"].HeaderText = "Type";
             if (dataGridMoves.Columns.Contains("CategoryImage"))
@@ -126,6 +128,8 @@ namespace PKMDS_Save_Editor
                 dataGridRelearnableMoves.Columns["Name"].Visible = false;
             if (dataGridRelearnableMoves.Columns.Contains("Type"))
                 dataGridRelearnableMoves.Columns["Type"].Visible = false;
+            if (dataGridRelearnableMoves.Columns.Contains("BasePP"))
+                dataGridRelearnableMoves.Columns["BasePP"].Visible = false;
             if (dataGridRelearnableMoves.Columns.Contains("TypeImage"))
                 dataGridRelearnableMoves.Columns["TypeImage"].HeaderText = "Type";
             if (dataGridRelearnableMoves.Columns.Contains("CategoryImage"))
@@ -168,6 +172,12 @@ namespace PKMDS_Save_Editor
             dataGridRelearnableMoves.Columns.Add(rclmn);
 
             dataGridRelearnableMoves.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+
+            numericPID.DataBindings.Add("Value", _pokemonBindingSource, "PID", true, DataSourceUpdateMode.OnPropertyChanged, 0);
+            numericPID.DataBindings.Add("Hexadecimal", checkPIDHex, "Checked", false, DataSourceUpdateMode.OnPropertyChanged, false);
+
+            //numericEncryptionConstant.DataBindings.Add("Value", _pokemonBindingSource, "EncryptionKey", true, DataSourceUpdateMode.OnPropertyChanged, 0);
+            numericEncryptionConstant.DataBindings.Add("Hexadecimal", checkEncryptionConstantHex, "Checked", false, DataSourceUpdateMode.OnPropertyChanged, false);
 
             FormPopulated = true;
         }

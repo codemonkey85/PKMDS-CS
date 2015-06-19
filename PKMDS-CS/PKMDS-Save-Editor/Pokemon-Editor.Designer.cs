@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.buttonOk = new System.Windows.Forms.Button();
             this.buttonApply = new System.Windows.Forms.Button();
             this.buttonCancel = new System.Windows.Forms.Button();
@@ -71,6 +71,10 @@
             this.textSpDef = new System.Windows.Forms.TextBox();
             this.textSpeed = new System.Windows.Forms.TextBox();
             this.movesTabPage = new System.Windows.Forms.TabPage();
+            this.groupRelearnableMoves = new System.Windows.Forms.GroupBox();
+            this.labelRelearnableMoveFlavorText = new System.Windows.Forms.Label();
+            this.dataGridRelearnableMoves = new System.Windows.Forms.DataGridView();
+            this.groupCurrentMoves = new System.Windows.Forms.GroupBox();
             this.labelMoveFlavorText = new System.Windows.Forms.Label();
             this.dataGridMoves = new System.Windows.Forms.DataGridView();
             this.historyTabPage = new System.Windows.Forms.TabPage();
@@ -91,10 +95,12 @@
             this.radioOTMale = new System.Windows.Forms.RadioButton();
             this.radioOTFemale = new System.Windows.Forms.RadioButton();
             this.grouOT = new System.Windows.Forms.GroupBox();
-            this.groupCurrentMoves = new System.Windows.Forms.GroupBox();
-            this.groupRelearnableMoves = new System.Windows.Forms.GroupBox();
-            this.labelRelearnableMoveFlavorText = new System.Windows.Forms.Label();
-            this.dataGridRelearnableMoves = new System.Windows.Forms.DataGridView();
+            this.numericPID = new System.Windows.Forms.NumericUpDown();
+            this.checkPIDHex = new System.Windows.Forms.CheckBox();
+            this.groupPID = new System.Windows.Forms.GroupBox();
+            this.groupEncryptionConstant = new System.Windows.Forms.GroupBox();
+            this.numericEncryptionConstant = new System.Windows.Forms.NumericUpDown();
+            this.checkEncryptionConstantHex = new System.Windows.Forms.CheckBox();
             this.tablelayoutButtons.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbSprite)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbItemImage)).BeginInit();
@@ -114,6 +120,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.numSpDefEV)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numSpeedEV)).BeginInit();
             this.movesTabPage.SuspendLayout();
+            this.groupRelearnableMoves.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridRelearnableMoves)).BeginInit();
+            this.groupCurrentMoves.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridMoves)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.genderPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericLevel)).BeginInit();
@@ -121,9 +130,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.picType2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbPentagon)).BeginInit();
             this.grouOT.SuspendLayout();
-            this.groupCurrentMoves.SuspendLayout();
-            this.groupRelearnableMoves.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridRelearnableMoves)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericPID)).BeginInit();
+            this.groupPID.SuspendLayout();
+            this.groupEncryptionConstant.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericEncryptionConstant)).BeginInit();
             this.SuspendLayout();
             // 
             // buttonOk
@@ -269,11 +279,13 @@
             // 
             // statsTabPage
             // 
+            this.statsTabPage.Controls.Add(this.groupEncryptionConstant);
+            this.statsTabPage.Controls.Add(this.groupPID);
             this.statsTabPage.Controls.Add(this.tableLayoutStats);
             this.statsTabPage.Location = new System.Drawing.Point(4, 22);
             this.statsTabPage.Name = "statsTabPage";
             this.statsTabPage.Padding = new System.Windows.Forms.Padding(3);
-            this.statsTabPage.Size = new System.Drawing.Size(495, 467);
+            this.statsTabPage.Size = new System.Drawing.Size(495, 468);
             this.statsTabPage.TabIndex = 0;
             this.statsTabPage.Text = "Stats";
             this.statsTabPage.UseVisualStyleBackColor = true;
@@ -655,6 +667,58 @@
             this.movesTabPage.Text = "Moves";
             this.movesTabPage.UseVisualStyleBackColor = true;
             // 
+            // groupRelearnableMoves
+            // 
+            this.groupRelearnableMoves.Controls.Add(this.labelRelearnableMoveFlavorText);
+            this.groupRelearnableMoves.Controls.Add(this.dataGridRelearnableMoves);
+            this.groupRelearnableMoves.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.groupRelearnableMoves.Location = new System.Drawing.Point(3, 236);
+            this.groupRelearnableMoves.Name = "groupRelearnableMoves";
+            this.groupRelearnableMoves.Size = new System.Drawing.Size(489, 229);
+            this.groupRelearnableMoves.TabIndex = 3;
+            this.groupRelearnableMoves.TabStop = false;
+            this.groupRelearnableMoves.Text = "Relearnable Moves";
+            // 
+            // labelRelearnableMoveFlavorText
+            // 
+            this.labelRelearnableMoveFlavorText.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.labelRelearnableMoveFlavorText.Location = new System.Drawing.Point(3, 131);
+            this.labelRelearnableMoveFlavorText.Name = "labelRelearnableMoveFlavorText";
+            this.labelRelearnableMoveFlavorText.Size = new System.Drawing.Size(483, 95);
+            this.labelRelearnableMoveFlavorText.TabIndex = 1;
+            this.labelRelearnableMoveFlavorText.Text = "Flavor Text";
+            // 
+            // dataGridRelearnableMoves
+            // 
+            this.dataGridRelearnableMoves.AllowUserToAddRows = false;
+            this.dataGridRelearnableMoves.AllowUserToDeleteRows = false;
+            this.dataGridRelearnableMoves.AllowUserToResizeColumns = false;
+            this.dataGridRelearnableMoves.AllowUserToResizeRows = false;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dataGridRelearnableMoves.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
+            this.dataGridRelearnableMoves.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dataGridRelearnableMoves.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridRelearnableMoves.Dock = System.Windows.Forms.DockStyle.Top;
+            this.dataGridRelearnableMoves.Location = new System.Drawing.Point(3, 16);
+            this.dataGridRelearnableMoves.MultiSelect = false;
+            this.dataGridRelearnableMoves.Name = "dataGridRelearnableMoves";
+            this.dataGridRelearnableMoves.RowHeadersVisible = false;
+            this.dataGridRelearnableMoves.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridRelearnableMoves.Size = new System.Drawing.Size(483, 115);
+            this.dataGridRelearnableMoves.TabIndex = 0;
+            // 
+            // groupCurrentMoves
+            // 
+            this.groupCurrentMoves.Controls.Add(this.labelMoveFlavorText);
+            this.groupCurrentMoves.Controls.Add(this.dataGridMoves);
+            this.groupCurrentMoves.Dock = System.Windows.Forms.DockStyle.Top;
+            this.groupCurrentMoves.Location = new System.Drawing.Point(3, 3);
+            this.groupCurrentMoves.Name = "groupCurrentMoves";
+            this.groupCurrentMoves.Size = new System.Drawing.Size(489, 229);
+            this.groupCurrentMoves.TabIndex = 2;
+            this.groupCurrentMoves.TabStop = false;
+            this.groupCurrentMoves.Text = "Current Moves";
+            // 
             // labelMoveFlavorText
             // 
             this.labelMoveFlavorText.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -670,8 +734,8 @@
             this.dataGridMoves.AllowUserToDeleteRows = false;
             this.dataGridMoves.AllowUserToResizeColumns = false;
             this.dataGridMoves.AllowUserToResizeRows = false;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.dataGridMoves.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dataGridMoves.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle6;
             this.dataGridMoves.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dataGridMoves.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridMoves.Dock = System.Windows.Forms.DockStyle.Top;
@@ -687,7 +751,7 @@
             // 
             this.historyTabPage.Location = new System.Drawing.Point(4, 22);
             this.historyTabPage.Name = "historyTabPage";
-            this.historyTabPage.Size = new System.Drawing.Size(495, 467);
+            this.historyTabPage.Size = new System.Drawing.Size(495, 468);
             this.historyTabPage.TabIndex = 2;
             this.historyTabPage.Text = "History";
             this.historyTabPage.UseVisualStyleBackColor = true;
@@ -696,7 +760,7 @@
             // 
             this.contestTabPage.Location = new System.Drawing.Point(4, 22);
             this.contestTabPage.Name = "contestTabPage";
-            this.contestTabPage.Size = new System.Drawing.Size(495, 467);
+            this.contestTabPage.Size = new System.Drawing.Size(495, 468);
             this.contestTabPage.TabIndex = 4;
             this.contestTabPage.Text = "Contest";
             this.contestTabPage.UseVisualStyleBackColor = true;
@@ -705,7 +769,7 @@
             // 
             this.ribbonsTabPage.Location = new System.Drawing.Point(4, 22);
             this.ribbonsTabPage.Name = "ribbonsTabPage";
-            this.ribbonsTabPage.Size = new System.Drawing.Size(495, 467);
+            this.ribbonsTabPage.Size = new System.Drawing.Size(495, 468);
             this.ribbonsTabPage.TabIndex = 3;
             this.ribbonsTabPage.Text = "Ribbons";
             this.ribbonsTabPage.UseVisualStyleBackColor = true;
@@ -866,57 +930,78 @@
             this.grouOT.TabStop = false;
             this.grouOT.Text = "Original Trainer";
             // 
-            // groupCurrentMoves
+            // numericPID
             // 
-            this.groupCurrentMoves.Controls.Add(this.labelMoveFlavorText);
-            this.groupCurrentMoves.Controls.Add(this.dataGridMoves);
-            this.groupCurrentMoves.Dock = System.Windows.Forms.DockStyle.Top;
-            this.groupCurrentMoves.Location = new System.Drawing.Point(3, 3);
-            this.groupCurrentMoves.Name = "groupCurrentMoves";
-            this.groupCurrentMoves.Size = new System.Drawing.Size(489, 229);
-            this.groupCurrentMoves.TabIndex = 2;
-            this.groupCurrentMoves.TabStop = false;
-            this.groupCurrentMoves.Text = "Current Moves";
+            this.numericPID.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.numericPID.Location = new System.Drawing.Point(6, 19);
+            this.numericPID.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
+            this.numericPID.Name = "numericPID";
+            this.numericPID.Size = new System.Drawing.Size(125, 20);
+            this.numericPID.TabIndex = 1;
             // 
-            // groupRelearnableMoves
+            // checkPIDHex
             // 
-            this.groupRelearnableMoves.Controls.Add(this.labelRelearnableMoveFlavorText);
-            this.groupRelearnableMoves.Controls.Add(this.dataGridRelearnableMoves);
-            this.groupRelearnableMoves.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.groupRelearnableMoves.Location = new System.Drawing.Point(3, 236);
-            this.groupRelearnableMoves.Name = "groupRelearnableMoves";
-            this.groupRelearnableMoves.Size = new System.Drawing.Size(489, 229);
-            this.groupRelearnableMoves.TabIndex = 3;
-            this.groupRelearnableMoves.TabStop = false;
-            this.groupRelearnableMoves.Text = "Relearnable Moves";
+            this.checkPIDHex.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.checkPIDHex.AutoSize = true;
+            this.checkPIDHex.Location = new System.Drawing.Point(137, 22);
+            this.checkPIDHex.Name = "checkPIDHex";
+            this.checkPIDHex.Size = new System.Drawing.Size(45, 17);
+            this.checkPIDHex.TabIndex = 2;
+            this.checkPIDHex.Text = "Hex";
+            this.checkPIDHex.UseVisualStyleBackColor = true;
             // 
-            // labelRelearnableMoveFlavorText
+            // groupPID
             // 
-            this.labelRelearnableMoveFlavorText.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.labelRelearnableMoveFlavorText.Location = new System.Drawing.Point(3, 131);
-            this.labelRelearnableMoveFlavorText.Name = "labelRelearnableMoveFlavorText";
-            this.labelRelearnableMoveFlavorText.Size = new System.Drawing.Size(483, 95);
-            this.labelRelearnableMoveFlavorText.TabIndex = 1;
-            this.labelRelearnableMoveFlavorText.Text = "Flavor Text";
+            this.groupPID.Controls.Add(this.numericPID);
+            this.groupPID.Controls.Add(this.checkPIDHex);
+            this.groupPID.Location = new System.Drawing.Point(6, 295);
+            this.groupPID.Name = "groupPID";
+            this.groupPID.Size = new System.Drawing.Size(188, 45);
+            this.groupPID.TabIndex = 3;
+            this.groupPID.TabStop = false;
+            this.groupPID.Text = "Personality Value";
             // 
-            // dataGridRelearnableMoves
+            // groupEncryptionConstant
             // 
-            this.dataGridRelearnableMoves.AllowUserToAddRows = false;
-            this.dataGridRelearnableMoves.AllowUserToDeleteRows = false;
-            this.dataGridRelearnableMoves.AllowUserToResizeColumns = false;
-            this.dataGridRelearnableMoves.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.dataGridRelearnableMoves.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dataGridRelearnableMoves.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
-            this.dataGridRelearnableMoves.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridRelearnableMoves.Dock = System.Windows.Forms.DockStyle.Top;
-            this.dataGridRelearnableMoves.Location = new System.Drawing.Point(3, 16);
-            this.dataGridRelearnableMoves.MultiSelect = false;
-            this.dataGridRelearnableMoves.Name = "dataGridRelearnableMoves";
-            this.dataGridRelearnableMoves.RowHeadersVisible = false;
-            this.dataGridRelearnableMoves.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridRelearnableMoves.Size = new System.Drawing.Size(483, 115);
-            this.dataGridRelearnableMoves.TabIndex = 0;
+            this.groupEncryptionConstant.Controls.Add(this.numericEncryptionConstant);
+            this.groupEncryptionConstant.Controls.Add(this.checkEncryptionConstantHex);
+            this.groupEncryptionConstant.Location = new System.Drawing.Point(200, 295);
+            this.groupEncryptionConstant.Name = "groupEncryptionConstant";
+            this.groupEncryptionConstant.Size = new System.Drawing.Size(188, 45);
+            this.groupEncryptionConstant.TabIndex = 4;
+            this.groupEncryptionConstant.TabStop = false;
+            this.groupEncryptionConstant.Text = "Encryption Constant";
+            this.groupEncryptionConstant.Visible = false;
+            // 
+            // numericEncryptionConstant
+            // 
+            this.numericEncryptionConstant.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.numericEncryptionConstant.Location = new System.Drawing.Point(6, 19);
+            this.numericEncryptionConstant.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
+            this.numericEncryptionConstant.Name = "numericEncryptionConstant";
+            this.numericEncryptionConstant.Size = new System.Drawing.Size(125, 20);
+            this.numericEncryptionConstant.TabIndex = 1;
+            // 
+            // checkEncryptionConstantHex
+            // 
+            this.checkEncryptionConstantHex.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.checkEncryptionConstantHex.AutoSize = true;
+            this.checkEncryptionConstantHex.Location = new System.Drawing.Point(137, 22);
+            this.checkEncryptionConstantHex.Name = "checkEncryptionConstantHex";
+            this.checkEncryptionConstantHex.Size = new System.Drawing.Size(45, 17);
+            this.checkEncryptionConstantHex.TabIndex = 2;
+            this.checkEncryptionConstantHex.Text = "Hex";
+            this.checkEncryptionConstantHex.UseVisualStyleBackColor = true;
             // 
             // Pokemon_Editor_Form
             // 
@@ -973,6 +1058,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.numSpDefEV)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numSpeedEV)).EndInit();
             this.movesTabPage.ResumeLayout(false);
+            this.groupRelearnableMoves.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridRelearnableMoves)).EndInit();
+            this.groupCurrentMoves.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridMoves)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.genderPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericLevel)).EndInit();
@@ -981,9 +1069,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbPentagon)).EndInit();
             this.grouOT.ResumeLayout(false);
             this.grouOT.PerformLayout();
-            this.groupCurrentMoves.ResumeLayout(false);
-            this.groupRelearnableMoves.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridRelearnableMoves)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericPID)).EndInit();
+            this.groupPID.ResumeLayout(false);
+            this.groupPID.PerformLayout();
+            this.groupEncryptionConstant.ResumeLayout(false);
+            this.groupEncryptionConstant.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericEncryptionConstant)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1056,5 +1147,11 @@
         private System.Windows.Forms.Label labelRelearnableMoveFlavorText;
         private System.Windows.Forms.DataGridView dataGridRelearnableMoves;
         private System.Windows.Forms.GroupBox groupCurrentMoves;
+        private System.Windows.Forms.CheckBox checkPIDHex;
+        private System.Windows.Forms.NumericUpDown numericPID;
+        private System.Windows.Forms.GroupBox groupPID;
+        private System.Windows.Forms.GroupBox groupEncryptionConstant;
+        private System.Windows.Forms.NumericUpDown numericEncryptionConstant;
+        private System.Windows.Forms.CheckBox checkEncryptionConstantHex;
     }
 }

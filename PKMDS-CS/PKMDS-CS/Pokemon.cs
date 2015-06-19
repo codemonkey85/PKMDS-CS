@@ -356,18 +356,58 @@ namespace PKMDS_CS
             get
             {
                 List<MovesObject> pokemonMoves = new List<MovesObject>();
-                pokemonMoves.Add(new MovesObject(Move1));
-                pokemonMoves.Add(new MovesObject(Move2));
-                pokemonMoves.Add(new MovesObject(Move3));
-                pokemonMoves.Add(new MovesObject(Move4));
+                pokemonMoves.Add(new MovesObject(Move1)
+                {
+                    CurrentPP = Move1CurrentPP,
+                    PPUps = Move1PPUps
+                }
+                );
+                pokemonMoves.Add(new MovesObject(Move2)
+                {
+                    CurrentPP = Move2CurrentPP,
+                    PPUps = Move2PPUps
+                }
+                );
+                pokemonMoves.Add(new MovesObject(Move3)
+                {
+                    CurrentPP = Move3CurrentPP,
+                    PPUps = Move3PPUps
+                }
+                );
+                pokemonMoves.Add(new MovesObject(Move4)
+                {
+                    CurrentPP = Move4CurrentPP,
+                    PPUps = Move4PPUps
+                }
+                );
                 return pokemonMoves;
             }
             set
             {
-                if (value.Count >= 1) Move1 = value[0].Value;
-                if (value.Count >= 2) Move2 = value[1].Value;
-                if (value.Count >= 3) Move3 = value[2].Value;
-                if (value.Count >= 4) Move4 = value[3].Value;
+                if (value.Count >= 1)
+                {
+                    Move1 = value[0].Value;
+                    Move1CurrentPP = value[0].CurrentPP;
+                    Move1PPUps = value[0].PPUps;
+                }
+                if (value.Count >= 2)
+                {
+                    Move2 = value[1].Value;
+                    Move2CurrentPP = value[1].CurrentPP;
+                    Move2PPUps = value[1].PPUps;
+                }
+                if (value.Count >= 3)
+                {
+                    Move3 = value[2].Value;
+                    Move3CurrentPP = value[2].CurrentPP;
+                    Move3PPUps = value[2].PPUps;
+                }
+                if (value.Count >= 4)
+                {
+                    Move4 = value[3].Value;
+                    Move4CurrentPP = value[3].CurrentPP;
+                    Move4PPUps = value[3].PPUps;
+                }
             }
         }
 

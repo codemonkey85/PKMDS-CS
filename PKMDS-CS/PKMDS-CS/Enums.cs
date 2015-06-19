@@ -8580,6 +8580,31 @@ namespace PKMDS_CS
             }
         }
 
+        public byte BasePP
+        {
+            get
+            {
+                byte basepp = 0;
+                var baseppquery = DBTools.GetMoveDataTable.Select(string.Format("id = {0}", (int)value));
+                if (baseppquery.Length != 0)
+                {
+                    string baseppstr = baseppquery[0].ItemArray[(int)DBTools.MoveDataTableColumns.pp].ToString();
+                    byte.TryParse(baseppstr, out basepp);
+                }
+                return basepp;
+            }
+        }
+
+        public byte CurrentPP { get; set; }
+        public byte PPUps { get; set; }
+        public byte MaxPP
+        {
+            get
+            {
+                return (byte)(BasePP + (BasePP * 0.2 * PPUps));
+            }
+        }
+
         public Image CategoryImage
         {
             get
