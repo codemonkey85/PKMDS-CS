@@ -682,7 +682,6 @@
             this.dataGridMoves.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridMoves.Size = new System.Drawing.Size(483, 115);
             this.dataGridMoves.TabIndex = 0;
-            this.dataGridMoves.SelectionChanged += new System.EventHandler(this.dataGridMoves_SelectionChanged);
             // 
             // historyTabPage
             // 

@@ -34,8 +34,6 @@ namespace PKMDS_Save_Editor
         private readonly BindingSource _moveBindingSource = new BindingSource();
         private readonly BindingSource _relearnableMoveBindingSource = new BindingSource();
         private CurrencyManager _itemCurrencyManger;
-        private CurrencyManager _moveCurrencyManger;
-        private CurrencyManager _relearnableMoveCurrencyManger;
 
         public void PopulateForm()
         {
@@ -103,11 +101,7 @@ namespace PKMDS_Save_Editor
             textSpeed.DataBindings.Add("Text", _pokemonBindingSource, "Speed", true, DataSourceUpdateMode.Never, string.Empty);
 
             _moveBindingSource.DataSource = tempPokemon.Moves;
-            _moveCurrencyManger = _moveBindingSource.CurrencyManager;
-            _moveCurrencyManger.Position = 0;
             _relearnableMoveBindingSource.DataSource = tempPokemon.RelearnableMoves;
-            _relearnableMoveCurrencyManger = _moveBindingSource.CurrencyManager;
-            _relearnableMoveCurrencyManger.Position = 0;
 
             labelMoveFlavorText.DataBindings.Add("Text", _moveBindingSource, "FlavorText", false, DataSourceUpdateMode.Never, string.Empty);
             labelRelearnableMoveFlavorText.DataBindings.Add("Text", _relearnableMoveBindingSource, "FlavorText", false, DataSourceUpdateMode.Never, string.Empty);
@@ -196,6 +190,8 @@ namespace PKMDS_Save_Editor
             FormSet = false;
             PopulateForm();
             _pokemonBindingSource.DataSource = tempPokemon;
+            _moveBindingSource.DataSource = tempPokemon.Moves;
+            _relearnableMoveBindingSource.DataSource = tempPokemon.RelearnableMoves;
             FormSet = true;
         }
 
@@ -237,6 +233,10 @@ namespace PKMDS_Save_Editor
 
         private void Pokemon_Editor_Form_Load(object sender, EventArgs e)
         {
+            _pokemonBindingSource.ResetBindings(false);
+            _itemBindingSource.ResetBindings(false);
+            _moveBindingSource.ResetBindings(false);
+            _relearnableMoveBindingSource.ResetBindings(false);
             if (markingsPanel.Controls.Count != 0) return;
             FlowLayoutPanel flp = new FlowLayoutPanel();
             for (int i = 0; i < 6; i++)
@@ -325,12 +325,6 @@ namespace PKMDS_Save_Editor
                 picType1.DataBindings[0].ReadValue();
             if (picType2.DataBindings.Count != 0)
                 picType2.DataBindings[0].ReadValue();
-        }
-
-        private void dataGridMoves_SelectionChanged(object sender, EventArgs e)
-        {
-            if (dataGridMoves.Columns.Count == 0 || dataGridMoves.Rows.Count == 0 || dataGridMoves.SelectedRows.Count == 0) return;
-            _moveCurrencyManger.Position = dataGridMoves.SelectedRows[0].Index;
         }
     }
 }
