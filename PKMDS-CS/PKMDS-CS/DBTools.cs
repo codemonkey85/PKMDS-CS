@@ -55,7 +55,7 @@ namespace PKMDS_CS
             increased_stat_id
         }
 
-        public enum MoveDataTableColumns 
+        public enum MoveDataTableColumns
         {
             id,
             name,

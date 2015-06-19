@@ -12,58 +12,6 @@ using System.Windows.Forms;
 
 namespace PKMDS_Save_Editor
 {
-    /*
-
-    Stats
-    Moves
-    History
-    Ribbons
-
-    Common:
-
-    Species
-    Nickname
-    Gender
-    Level
-    Sprite
-    Held Item
-    Markings
-
-    Page 1
-
-    Type
-    OT
-    ID No.
-    Exp. Points
-    To Next Lv.
-
-    HP
-    Attack
-    Defense
-    Sp. Atk
-    Sp. Def
-    Speed
-
-    Abilty Name
-    Ability Flavor
-
-    Page 2
-
-    Moves
-
-    Page 3
-
-    Nature:
-    Egg Received:
-    From:
-    Egg Hatched:
-    Where:
-
-    Page 4
-
-    Ribbons
-     */
-
     public partial class Pokemon_Editor_Form : Form
     {
         public Pokemon_Editor_Form()
@@ -160,20 +108,10 @@ namespace PKMDS_Save_Editor
 
             dataGridMoves.DataSource = _moveBindingSource;
 
-            //for (int m = 0; m < 4; m++)
-            //{
-            //    if (dataGridMoves.Rows.Count > m)
-            //    {
-            //        dataGridMoves.Rows[m].HeaderCell.ValueType = typeof(string);
-            //        dataGridMoves.Rows[m].HeaderCell.Value = string.Format("Move {0}", m + 1);
-            //    }
-            //}
-
             if (dataGridMoves.Columns.Contains("Value"))
-                //dataGridMoves.Columns["Value"].Visible = false;
                 if (dataGridMoves.Columns.Contains("Name"))
                     dataGridMoves.Columns["Name"].Visible = false;
-                    if (dataGridMoves.Columns.Contains("Type"))
+            if (dataGridMoves.Columns.Contains("Type"))
                 dataGridMoves.Columns["Type"].Visible = false;
             if (dataGridMoves.Columns.Contains("TypeImage"))
                 dataGridMoves.Columns["TypeImage"].HeaderText = "Type";
@@ -182,8 +120,6 @@ namespace PKMDS_Save_Editor
             if (dataGridMoves.Columns.Contains("FlavorText"))
             {
                 dataGridMoves.Columns["FlavorText"].Visible = false;
-                //dataGridMoves.Columns["FlavorText"].HeaderText = "Flavor Text";
-                //dataGridMoves.Columns["FlavorText"].DefaultCellStyle.WrapMode = DataGridViewTriState.True;
             }
 
             List<MovesObject> MoveList = new List<MovesObject>();
@@ -196,7 +132,7 @@ namespace PKMDS_Save_Editor
             DataGridViewComboBoxColumn clmn = new DataGridViewComboBoxColumn();
             clmn.Name = "Value";
             clmn.HeaderText = "Move";
-            clmn.DataSource = MoveList; // Enum.GetValues(typeof(Moves));
+            clmn.DataSource = MoveList;
             clmn.DataPropertyName = "Value";
             clmn.ValueMember = "Value";
             clmn.DisplayMember = "Name";
@@ -361,7 +297,6 @@ namespace PKMDS_Save_Editor
         private void dataGridMoves_SelectionChanged(object sender, EventArgs e)
         {
             if (dataGridMoves.Columns.Count == 0 || dataGridMoves.Rows.Count == 0 || dataGridMoves.SelectedRows.Count == 0) return;
-            //MessageBox.Show(string.Format("{0}", dataGridMoves.SelectedRows[0].Index));
             _moveCurrencyManger.Position = dataGridMoves.SelectedRows[0].Index;
         }
     }

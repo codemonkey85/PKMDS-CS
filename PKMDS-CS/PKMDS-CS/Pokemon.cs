@@ -351,7 +351,6 @@ namespace PKMDS_CS
             set { Array.Copy(BitConverter.GetBytes(value), 0, data, 0x70, 2); }
         }
 
-
         public List<MovesObject> Moves
         {
             get
@@ -363,7 +362,7 @@ namespace PKMDS_CS
                 pokemonMoves.Add(new MovesObject(Move4));
                 return pokemonMoves;
             }
-            set 
+            set
             {
                 if (value.Count >= 1) Move1 = value[0].Value;
                 if (value.Count >= 1) Move2 = value[1].Value;
@@ -371,7 +370,6 @@ namespace PKMDS_CS
                 if (value.Count >= 1) Move4 = value[3].Value;
             }
         }
-
 
         [DisplayName("Secret Super Training Flag")]
         public byte SecretSuperTrainingFlag
@@ -1341,10 +1339,6 @@ namespace PKMDS_CS
         public override string ToString()
         {
             return Species.EnumToString();
-            //string pokemonname = PokemonName;
-            //if (pokemonname == "")
-            //{ return string.Format("{0}", Species.EnumToString()); }
-            //else { return pokemonname; }
         }
 
         #endregion Other Properties

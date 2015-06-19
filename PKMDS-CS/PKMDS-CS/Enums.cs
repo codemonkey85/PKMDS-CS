@@ -10,7 +10,6 @@ using System.Reflection;
 
 namespace PKMDS_CS
 {
-
     public static class Extensions
     {
         internal static List<ushort> BallsToItems = new List<ushort>
@@ -8215,12 +8214,6 @@ namespace PKMDS_CS
         [Description("World Champion Ribbon")]
         World_Champion_Ribbon = 0x10,
 
-        //[Description("None")]
-        //None = 0x20,
-
-        //[Description("None")]
-        //None = 0x40,
-
         [Description("Hoenn Champion Ribbon")]
         Hoenn_Champion_Ribbon = 0x80,
     }
@@ -8250,12 +8243,6 @@ namespace PKMDS_CS
     [Flags]
     public enum Medals_0x2C
     {
-        //[Description("Unused")]
-        //Unused = 0x01,
-
-        //[Description("Unused")]
-        //Unused = 0x02,
-
         [Description("Sp. Atk Level 1")]
         Sp_Atk_Level_1 = 0x04,
 
@@ -8606,10 +8593,13 @@ namespace PKMDS_CS
                 {
                     case 1:
                         return Images.GetImageFromResource("physical");
+
                     case 2:
                         return Images.GetImageFromResource("special");
+
                     case 0:
                         return Images.GetImageFromResource("other");
+
                     default:
                         return null;
                 }
@@ -8625,7 +8615,7 @@ namespace PKMDS_CS
                 {
                     return flavor[0].ItemArray[(int)DBTools.MoveDataTableColumns.flavor_text].ToString();
                 }
-                else 
+                else
                 {
                     return string.Empty;
                 }

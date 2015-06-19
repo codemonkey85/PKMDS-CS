@@ -101,7 +101,6 @@ namespace PKMDS_Save_Editor
             //_sav = StructUtils.RawDeserialize<ORASSav>(saveFileName);
             foreach (var pokemon in _sav.PCStorageSystem.Boxes.SelectMany(box => box.Pokemon))
             {
-                //pokemon.Decrypt();
                 PokePRNG.DecryptPokemon(pokemon);
             }
             comboBoxes.Items.Clear();
@@ -113,7 +112,6 @@ namespace PKMDS_Save_Editor
         {
             foreach (var pokemon in _sav.PCStorageSystem.Boxes.SelectMany(box => box.Pokemon))
             {
-                //pokemon.Encrypt();
                 PokePRNG.EncryptPokemon(pokemon);
             }
             StructUtils.RawSerialize(_sav, saveFileName);
