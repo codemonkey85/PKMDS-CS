@@ -8540,9 +8540,9 @@ namespace PKMDS_CS
             get { return value.EnumToString(); }
         }
 
-        public TypeObject Type 
+        public TypeObject Type
         {
-            get 
+            get
             {
                 string typeidstr = DBTools.GetMoveDataTable.Select(string.Format("id = {0}", (int)value))[0].ItemArray[(int)DBTools.MoveDataTableColumns.type_id].ToString();
                 int typeid = 0;
@@ -8560,6 +8560,28 @@ namespace PKMDS_CS
             }
         }
 
+        public int Power
+        {
+            get
+            {
+                string powerstr = DBTools.GetMoveDataTable.Select(string.Format("id = {0}", (int)value))[0].ItemArray[(int)DBTools.MoveDataTableColumns.power].ToString();
+                int power = 0;
+                int.TryParse(powerstr, out power);
+                return power;
+            }
+        }
+
+        public decimal Accuracy
+        {
+            get
+            {
+                string accuracystr = DBTools.GetMoveDataTable.Select(string.Format("id = {0}", (int)value))[0].ItemArray[(int)DBTools.MoveDataTableColumns.accuracy].ToString();
+                decimal accuracy = 0M;
+                decimal.TryParse(accuracystr, out accuracy);
+                return accuracy;
+            }
+        }
+
         public Image CategoryImage
         {
             get
@@ -8567,13 +8589,13 @@ namespace PKMDS_CS
                 var damageclassidstr = DBTools.GetMoveDataTable.Select(string.Format("id = {0}", (int)value))[0].ItemArray[(int)DBTools.MoveDataTableColumns.damage_class_id].ToString();
                 int damageclassid = -1;
                 int.TryParse(damageclassidstr, out damageclassid);
-                switch (damageclassid) 
+                switch (damageclassid)
                 {
                     case 1:
                         return Images.GetImageFromResource("physical");
                     case 2:
                         return Images.GetImageFromResource("special");
-                    case 3:
+                    case 0:
                         return Images.GetImageFromResource("other");
                     default:
                         return null;
@@ -8581,12 +8603,12 @@ namespace PKMDS_CS
             }
         }
 
-        public string FlavorText 
+        public string FlavorText
         {
-            get 
+            get
             {
                 return DBTools.GetMoveDataTable.Select(string.Format("id = {0}", (int)value))[0].ItemArray[(int)DBTools.MoveDataTableColumns.flavor_text].ToString();
-            } 
+            }
         }
 
         public override string ToString()

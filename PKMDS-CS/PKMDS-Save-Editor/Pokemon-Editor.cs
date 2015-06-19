@@ -186,6 +186,28 @@ namespace PKMDS_Save_Editor
                 //dataGridMoves.Columns["FlavorText"].DefaultCellStyle.WrapMode = DataGridViewTriState.True;
             }
 
+
+            List<MovesObject> MoveList = new List<MovesObject>();
+            foreach (var move in Enum.GetValues(typeof(Moves)).Cast<Moves>().ToArray<Moves>())
+            {
+                MoveList.Add(new MovesObject(move));
+            }
+
+
+
+            dataGridMoves.Columns.Remove("Value");
+            DataGridViewComboBoxColumn clmn = new DataGridViewComboBoxColumn();
+            clmn.Name = "Value";
+            clmn.HeaderText = "Move";
+            clmn.DataSource = MoveList; // Enum.GetValues(typeof(Moves));
+            clmn.DataPropertyName = "Value";
+            clmn.ValueMember = "Value";
+            clmn.DisplayMember = "Name";
+            clmn.DisplayIndex = 0;
+            clmn.DisplayStyle = DataGridViewComboBoxDisplayStyle.Nothing;
+            dataGridMoves.Columns.Add(clmn);
+
+
             dataGridMoves.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
 
             FormPopulated = true;
