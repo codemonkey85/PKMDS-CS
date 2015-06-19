@@ -8506,6 +8506,11 @@ namespace PKMDS_CS
             Value = move;
         }
 
+        public static implicit operator MovesObject(Moves move)
+        {
+            return new MovesObject(move);
+        }
+
         private Moves value;
 
         public Moves Value

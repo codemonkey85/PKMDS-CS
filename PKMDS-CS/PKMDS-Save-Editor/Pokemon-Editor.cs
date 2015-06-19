@@ -100,9 +100,6 @@ namespace PKMDS_Save_Editor
             textSpDef.DataBindings.Add("Text", _pokemonBindingSource, "SpecialDefense", true, DataSourceUpdateMode.Never, string.Empty);
             textSpeed.DataBindings.Add("Text", _pokemonBindingSource, "Speed", true, DataSourceUpdateMode.Never, string.Empty);
 
-            _moveBindingSource.DataSource = tempPokemon.Moves;
-            _relearnableMoveBindingSource.DataSource = tempPokemon.RelearnableMoves;
-
             labelMoveFlavorText.DataBindings.Add("Text", _moveBindingSource, "FlavorText", false, DataSourceUpdateMode.Never, string.Empty);
             labelRelearnableMoveFlavorText.DataBindings.Add("Text", _relearnableMoveBindingSource, "FlavorText", false, DataSourceUpdateMode.Never, string.Empty);
 
@@ -198,21 +195,44 @@ namespace PKMDS_Save_Editor
         public void SetForm()
         {
             FormSet = false;
-            PopulateForm();
             _pokemonBindingSource.DataSource = tempPokemon;
-            _moveBindingSource.DataSource = tempPokemon.Moves;
-            _relearnableMoveBindingSource.DataSource = tempPokemon.RelearnableMoves;
+            _moveBindingSource.DataSource = (_pokemonBindingSource.Current as Pokemon).Moves;
+            _relearnableMoveBindingSource.DataSource = (_pokemonBindingSource.Current as Pokemon).RelearnableMoves;
+            PopulateForm();
             FormSet = true;
+        }
+
+        private void SavePokemon()
+        {
+            tempPokemon.Moves = _moveBindingSource.DataSource as List<MovesObject>;
+            tempPokemon.RelearnableMoves = _relearnableMoveBindingSource.DataSource as List<MovesObject>;
+
+            _pokemon.CloneFrom(tempPokemon);
         }
 
         private void buttonApply_Click(object sender, System.EventArgs e)
         {
-            _pokemon.CloneFrom(tempPokemon);
+            try
+            {
+                SavePokemon();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void buttonOk_Click(object sender, System.EventArgs e)
         {
-            _pokemon.CloneFrom(tempPokemon);
+            try
+            {
+                SavePokemon();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
             this.Close();
         }
 

@@ -384,6 +384,7 @@ namespace PKMDS_CS
             }
             set
             {
+                if (value.Count == 0) throw new System.Exception(string.Format("The Pokémon {0} must have at least one move!", ToString()));
                 if (value.Count >= 1)
                 {
                     Move1 = value[0].Value;
@@ -941,7 +942,11 @@ namespace PKMDS_CS
                     ? (Moves)move1id
                     : PKMDS_CS.Moves.NoMove;
             }
-            set { move1id = (ushort)value; }
+            set
+            {
+                if(value == PKMDS_CS.Moves.NoMove) throw new System.Exception(string.Format("The Pokémon {0}'s first move cannot be 'No Move'!", ToString()));
+                move1id = (ushort)value; 
+            }
         }
 
         [DisplayName("Move 2")]

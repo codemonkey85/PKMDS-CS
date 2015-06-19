@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.buttonOk = new System.Windows.Forms.Button();
             this.buttonApply = new System.Windows.Forms.Button();
             this.buttonCancel = new System.Windows.Forms.Button();
@@ -42,6 +42,12 @@
             this.pbItemImage = new System.Windows.Forms.PictureBox();
             this.pokemonTabControl = new System.Windows.Forms.TabControl();
             this.statsTabPage = new System.Windows.Forms.TabPage();
+            this.groupEncryptionConstant = new System.Windows.Forms.GroupBox();
+            this.numericEncryptionConstant = new System.Windows.Forms.NumericUpDown();
+            this.checkEncryptionConstantHex = new System.Windows.Forms.CheckBox();
+            this.groupPID = new System.Windows.Forms.GroupBox();
+            this.numericPID = new System.Windows.Forms.NumericUpDown();
+            this.checkPIDHex = new System.Windows.Forms.CheckBox();
             this.tableLayoutStats = new System.Windows.Forms.TableLayoutPanel();
             this.labelIVs = new System.Windows.Forms.Label();
             this.labelEVs = new System.Windows.Forms.Label();
@@ -95,17 +101,15 @@
             this.radioOTMale = new System.Windows.Forms.RadioButton();
             this.radioOTFemale = new System.Windows.Forms.RadioButton();
             this.grouOT = new System.Windows.Forms.GroupBox();
-            this.numericPID = new System.Windows.Forms.NumericUpDown();
-            this.checkPIDHex = new System.Windows.Forms.CheckBox();
-            this.groupPID = new System.Windows.Forms.GroupBox();
-            this.groupEncryptionConstant = new System.Windows.Forms.GroupBox();
-            this.numericEncryptionConstant = new System.Windows.Forms.NumericUpDown();
-            this.checkEncryptionConstantHex = new System.Windows.Forms.CheckBox();
             this.tablelayoutButtons.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbSprite)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbItemImage)).BeginInit();
             this.pokemonTabControl.SuspendLayout();
             this.statsTabPage.SuspendLayout();
+            this.groupEncryptionConstant.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericEncryptionConstant)).BeginInit();
+            this.groupPID.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericPID)).BeginInit();
             this.tableLayoutStats.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numHPIV)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numAttackIV)).BeginInit();
@@ -130,17 +134,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.picType2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbPentagon)).BeginInit();
             this.grouOT.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericPID)).BeginInit();
-            this.groupPID.SuspendLayout();
-            this.groupEncryptionConstant.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericEncryptionConstant)).BeginInit();
             this.SuspendLayout();
             // 
             // buttonOk
             // 
             this.buttonOk.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.buttonOk.AutoSize = true;
-            this.buttonOk.Location = new System.Drawing.Point(331, 2);
+            this.buttonOk.Location = new System.Drawing.Point(377, 2);
             this.buttonOk.Margin = new System.Windows.Forms.Padding(2);
             this.buttonOk.Name = "buttonOk";
             this.buttonOk.Size = new System.Drawing.Size(40, 27);
@@ -153,7 +153,7 @@
             // 
             this.buttonApply.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.buttonApply.AutoSize = true;
-            this.buttonApply.Location = new System.Drawing.Point(88, 2);
+            this.buttonApply.Location = new System.Drawing.Point(103, 2);
             this.buttonApply.Margin = new System.Windows.Forms.Padding(2);
             this.buttonApply.Name = "buttonApply";
             this.buttonApply.Size = new System.Drawing.Size(58, 27);
@@ -167,7 +167,7 @@
             this.buttonCancel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.buttonCancel.AutoSize = true;
             this.buttonCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.buttonCancel.Location = new System.Drawing.Point(551, 2);
+            this.buttonCancel.Location = new System.Drawing.Point(628, 2);
             this.buttonCancel.Margin = new System.Windows.Forms.Padding(2);
             this.buttonCancel.Name = "buttonCancel";
             this.buttonCancel.Size = new System.Drawing.Size(68, 27);
@@ -191,7 +191,7 @@
             this.tablelayoutButtons.Name = "tablelayoutButtons";
             this.tablelayoutButtons.RowCount = 1;
             this.tablelayoutButtons.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tablelayoutButtons.Size = new System.Drawing.Size(702, 31);
+            this.tablelayoutButtons.Size = new System.Drawing.Size(795, 31);
             this.tablelayoutButtons.TabIndex = 13;
             // 
             // pbSprite
@@ -274,7 +274,7 @@
             this.pokemonTabControl.Multiline = true;
             this.pokemonTabControl.Name = "pokemonTabControl";
             this.pokemonTabControl.SelectedIndex = 0;
-            this.pokemonTabControl.Size = new System.Drawing.Size(503, 494);
+            this.pokemonTabControl.Size = new System.Drawing.Size(596, 494);
             this.pokemonTabControl.TabIndex = 12;
             // 
             // statsTabPage
@@ -289,6 +289,79 @@
             this.statsTabPage.TabIndex = 0;
             this.statsTabPage.Text = "Stats";
             this.statsTabPage.UseVisualStyleBackColor = true;
+            // 
+            // groupEncryptionConstant
+            // 
+            this.groupEncryptionConstant.Controls.Add(this.numericEncryptionConstant);
+            this.groupEncryptionConstant.Controls.Add(this.checkEncryptionConstantHex);
+            this.groupEncryptionConstant.Location = new System.Drawing.Point(200, 295);
+            this.groupEncryptionConstant.Name = "groupEncryptionConstant";
+            this.groupEncryptionConstant.Size = new System.Drawing.Size(188, 45);
+            this.groupEncryptionConstant.TabIndex = 4;
+            this.groupEncryptionConstant.TabStop = false;
+            this.groupEncryptionConstant.Text = "Encryption Constant";
+            this.groupEncryptionConstant.Visible = false;
+            // 
+            // numericEncryptionConstant
+            // 
+            this.numericEncryptionConstant.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.numericEncryptionConstant.Location = new System.Drawing.Point(6, 19);
+            this.numericEncryptionConstant.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
+            this.numericEncryptionConstant.Name = "numericEncryptionConstant";
+            this.numericEncryptionConstant.Size = new System.Drawing.Size(125, 20);
+            this.numericEncryptionConstant.TabIndex = 1;
+            // 
+            // checkEncryptionConstantHex
+            // 
+            this.checkEncryptionConstantHex.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.checkEncryptionConstantHex.AutoSize = true;
+            this.checkEncryptionConstantHex.Location = new System.Drawing.Point(137, 22);
+            this.checkEncryptionConstantHex.Name = "checkEncryptionConstantHex";
+            this.checkEncryptionConstantHex.Size = new System.Drawing.Size(45, 17);
+            this.checkEncryptionConstantHex.TabIndex = 2;
+            this.checkEncryptionConstantHex.Text = "Hex";
+            this.checkEncryptionConstantHex.UseVisualStyleBackColor = true;
+            // 
+            // groupPID
+            // 
+            this.groupPID.Controls.Add(this.numericPID);
+            this.groupPID.Controls.Add(this.checkPIDHex);
+            this.groupPID.Location = new System.Drawing.Point(6, 295);
+            this.groupPID.Name = "groupPID";
+            this.groupPID.Size = new System.Drawing.Size(188, 45);
+            this.groupPID.TabIndex = 3;
+            this.groupPID.TabStop = false;
+            this.groupPID.Text = "Personality Value";
+            // 
+            // numericPID
+            // 
+            this.numericPID.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.numericPID.Location = new System.Drawing.Point(6, 19);
+            this.numericPID.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
+            this.numericPID.Name = "numericPID";
+            this.numericPID.Size = new System.Drawing.Size(125, 20);
+            this.numericPID.TabIndex = 1;
+            // 
+            // checkPIDHex
+            // 
+            this.checkPIDHex.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.checkPIDHex.AutoSize = true;
+            this.checkPIDHex.Location = new System.Drawing.Point(137, 22);
+            this.checkPIDHex.Name = "checkPIDHex";
+            this.checkPIDHex.Size = new System.Drawing.Size(45, 17);
+            this.checkPIDHex.TabIndex = 2;
+            this.checkPIDHex.Text = "Hex";
+            this.checkPIDHex.UseVisualStyleBackColor = true;
             // 
             // tableLayoutStats
             // 
@@ -662,7 +735,7 @@
             this.movesTabPage.Location = new System.Drawing.Point(4, 22);
             this.movesTabPage.Name = "movesTabPage";
             this.movesTabPage.Padding = new System.Windows.Forms.Padding(3);
-            this.movesTabPage.Size = new System.Drawing.Size(495, 468);
+            this.movesTabPage.Size = new System.Drawing.Size(588, 468);
             this.movesTabPage.TabIndex = 1;
             this.movesTabPage.Text = "Moves";
             this.movesTabPage.UseVisualStyleBackColor = true;
@@ -674,7 +747,7 @@
             this.groupRelearnableMoves.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.groupRelearnableMoves.Location = new System.Drawing.Point(3, 236);
             this.groupRelearnableMoves.Name = "groupRelearnableMoves";
-            this.groupRelearnableMoves.Size = new System.Drawing.Size(489, 229);
+            this.groupRelearnableMoves.Size = new System.Drawing.Size(582, 229);
             this.groupRelearnableMoves.TabIndex = 3;
             this.groupRelearnableMoves.TabStop = false;
             this.groupRelearnableMoves.Text = "Relearnable Moves";
@@ -682,9 +755,9 @@
             // labelRelearnableMoveFlavorText
             // 
             this.labelRelearnableMoveFlavorText.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.labelRelearnableMoveFlavorText.Location = new System.Drawing.Point(3, 131);
+            this.labelRelearnableMoveFlavorText.Location = new System.Drawing.Point(3, 151);
             this.labelRelearnableMoveFlavorText.Name = "labelRelearnableMoveFlavorText";
-            this.labelRelearnableMoveFlavorText.Size = new System.Drawing.Size(483, 95);
+            this.labelRelearnableMoveFlavorText.Size = new System.Drawing.Size(576, 75);
             this.labelRelearnableMoveFlavorText.TabIndex = 1;
             this.labelRelearnableMoveFlavorText.Text = "Flavor Text";
             // 
@@ -694,8 +767,8 @@
             this.dataGridRelearnableMoves.AllowUserToDeleteRows = false;
             this.dataGridRelearnableMoves.AllowUserToResizeColumns = false;
             this.dataGridRelearnableMoves.AllowUserToResizeRows = false;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.dataGridRelearnableMoves.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dataGridRelearnableMoves.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridRelearnableMoves.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dataGridRelearnableMoves.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridRelearnableMoves.Dock = System.Windows.Forms.DockStyle.Top;
@@ -704,7 +777,7 @@
             this.dataGridRelearnableMoves.Name = "dataGridRelearnableMoves";
             this.dataGridRelearnableMoves.RowHeadersVisible = false;
             this.dataGridRelearnableMoves.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridRelearnableMoves.Size = new System.Drawing.Size(483, 115);
+            this.dataGridRelearnableMoves.Size = new System.Drawing.Size(576, 130);
             this.dataGridRelearnableMoves.TabIndex = 0;
             // 
             // groupCurrentMoves
@@ -714,7 +787,7 @@
             this.groupCurrentMoves.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupCurrentMoves.Location = new System.Drawing.Point(3, 3);
             this.groupCurrentMoves.Name = "groupCurrentMoves";
-            this.groupCurrentMoves.Size = new System.Drawing.Size(489, 229);
+            this.groupCurrentMoves.Size = new System.Drawing.Size(582, 229);
             this.groupCurrentMoves.TabIndex = 2;
             this.groupCurrentMoves.TabStop = false;
             this.groupCurrentMoves.Text = "Current Moves";
@@ -722,9 +795,9 @@
             // labelMoveFlavorText
             // 
             this.labelMoveFlavorText.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.labelMoveFlavorText.Location = new System.Drawing.Point(3, 131);
+            this.labelMoveFlavorText.Location = new System.Drawing.Point(3, 151);
             this.labelMoveFlavorText.Name = "labelMoveFlavorText";
-            this.labelMoveFlavorText.Size = new System.Drawing.Size(483, 95);
+            this.labelMoveFlavorText.Size = new System.Drawing.Size(576, 75);
             this.labelMoveFlavorText.TabIndex = 1;
             this.labelMoveFlavorText.Text = "Flavor Text";
             // 
@@ -734,8 +807,8 @@
             this.dataGridMoves.AllowUserToDeleteRows = false;
             this.dataGridMoves.AllowUserToResizeColumns = false;
             this.dataGridMoves.AllowUserToResizeRows = false;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.dataGridMoves.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dataGridMoves.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridMoves.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dataGridMoves.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridMoves.Dock = System.Windows.Forms.DockStyle.Top;
@@ -744,7 +817,7 @@
             this.dataGridMoves.Name = "dataGridMoves";
             this.dataGridMoves.RowHeadersVisible = false;
             this.dataGridMoves.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridMoves.Size = new System.Drawing.Size(483, 115);
+            this.dataGridMoves.Size = new System.Drawing.Size(576, 130);
             this.dataGridMoves.TabIndex = 0;
             // 
             // historyTabPage
@@ -930,85 +1003,12 @@
             this.grouOT.TabStop = false;
             this.grouOT.Text = "Original Trainer";
             // 
-            // numericPID
-            // 
-            this.numericPID.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.numericPID.Location = new System.Drawing.Point(6, 19);
-            this.numericPID.Maximum = new decimal(new int[] {
-            -1,
-            0,
-            0,
-            0});
-            this.numericPID.Name = "numericPID";
-            this.numericPID.Size = new System.Drawing.Size(125, 20);
-            this.numericPID.TabIndex = 1;
-            // 
-            // checkPIDHex
-            // 
-            this.checkPIDHex.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.checkPIDHex.AutoSize = true;
-            this.checkPIDHex.Location = new System.Drawing.Point(137, 22);
-            this.checkPIDHex.Name = "checkPIDHex";
-            this.checkPIDHex.Size = new System.Drawing.Size(45, 17);
-            this.checkPIDHex.TabIndex = 2;
-            this.checkPIDHex.Text = "Hex";
-            this.checkPIDHex.UseVisualStyleBackColor = true;
-            // 
-            // groupPID
-            // 
-            this.groupPID.Controls.Add(this.numericPID);
-            this.groupPID.Controls.Add(this.checkPIDHex);
-            this.groupPID.Location = new System.Drawing.Point(6, 295);
-            this.groupPID.Name = "groupPID";
-            this.groupPID.Size = new System.Drawing.Size(188, 45);
-            this.groupPID.TabIndex = 3;
-            this.groupPID.TabStop = false;
-            this.groupPID.Text = "Personality Value";
-            // 
-            // groupEncryptionConstant
-            // 
-            this.groupEncryptionConstant.Controls.Add(this.numericEncryptionConstant);
-            this.groupEncryptionConstant.Controls.Add(this.checkEncryptionConstantHex);
-            this.groupEncryptionConstant.Location = new System.Drawing.Point(200, 295);
-            this.groupEncryptionConstant.Name = "groupEncryptionConstant";
-            this.groupEncryptionConstant.Size = new System.Drawing.Size(188, 45);
-            this.groupEncryptionConstant.TabIndex = 4;
-            this.groupEncryptionConstant.TabStop = false;
-            this.groupEncryptionConstant.Text = "Encryption Constant";
-            this.groupEncryptionConstant.Visible = false;
-            // 
-            // numericEncryptionConstant
-            // 
-            this.numericEncryptionConstant.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.numericEncryptionConstant.Location = new System.Drawing.Point(6, 19);
-            this.numericEncryptionConstant.Maximum = new decimal(new int[] {
-            -1,
-            0,
-            0,
-            0});
-            this.numericEncryptionConstant.Name = "numericEncryptionConstant";
-            this.numericEncryptionConstant.Size = new System.Drawing.Size(125, 20);
-            this.numericEncryptionConstant.TabIndex = 1;
-            // 
-            // checkEncryptionConstantHex
-            // 
-            this.checkEncryptionConstantHex.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.checkEncryptionConstantHex.AutoSize = true;
-            this.checkEncryptionConstantHex.Location = new System.Drawing.Point(137, 22);
-            this.checkEncryptionConstantHex.Name = "checkEncryptionConstantHex";
-            this.checkEncryptionConstantHex.Size = new System.Drawing.Size(45, 17);
-            this.checkEncryptionConstantHex.TabIndex = 2;
-            this.checkEncryptionConstantHex.Text = "Hex";
-            this.checkEncryptionConstantHex.UseVisualStyleBackColor = true;
-            // 
             // Pokemon_Editor_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.buttonCancel;
-            this.ClientSize = new System.Drawing.Size(702, 525);
+            this.ClientSize = new System.Drawing.Size(795, 525);
             this.Controls.Add(this.grouOT);
             this.Controls.Add(this.pbPentagon);
             this.Controls.Add(this.labelForm);
@@ -1043,6 +1043,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbItemImage)).EndInit();
             this.pokemonTabControl.ResumeLayout(false);
             this.statsTabPage.ResumeLayout(false);
+            this.groupEncryptionConstant.ResumeLayout(false);
+            this.groupEncryptionConstant.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericEncryptionConstant)).EndInit();
+            this.groupPID.ResumeLayout(false);
+            this.groupPID.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericPID)).EndInit();
             this.tableLayoutStats.ResumeLayout(false);
             this.tableLayoutStats.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numHPIV)).EndInit();
@@ -1069,12 +1075,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbPentagon)).EndInit();
             this.grouOT.ResumeLayout(false);
             this.grouOT.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericPID)).EndInit();
-            this.groupPID.ResumeLayout(false);
-            this.groupPID.PerformLayout();
-            this.groupEncryptionConstant.ResumeLayout(false);
-            this.groupEncryptionConstant.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericEncryptionConstant)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
