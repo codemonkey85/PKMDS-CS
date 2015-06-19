@@ -775,6 +775,7 @@
             this.dataGridRelearnableMoves.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridRelearnableMoves.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dataGridRelearnableMoves.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dataGridRelearnableMoves.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.EnableAlwaysIncludeHeaderText;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -794,7 +795,6 @@
             this.dataGridRelearnableMoves.DefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridRelearnableMoves.Dock = System.Windows.Forms.DockStyle.Top;
             this.dataGridRelearnableMoves.Location = new System.Drawing.Point(3, 16);
-            this.dataGridRelearnableMoves.MultiSelect = false;
             this.dataGridRelearnableMoves.Name = "dataGridRelearnableMoves";
             this.dataGridRelearnableMoves.RowHeadersVisible = false;
             this.dataGridRelearnableMoves.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -833,6 +833,7 @@
             this.dataGridMoves.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridMoves.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dataGridMoves.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dataGridMoves.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.EnableAlwaysIncludeHeaderText;
             dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -852,7 +853,6 @@
             this.dataGridMoves.DefaultCellStyle = dataGridViewCellStyle6;
             this.dataGridMoves.Dock = System.Windows.Forms.DockStyle.Top;
             this.dataGridMoves.Location = new System.Drawing.Point(3, 16);
-            this.dataGridMoves.MultiSelect = false;
             this.dataGridMoves.Name = "dataGridMoves";
             this.dataGridMoves.RowHeadersVisible = false;
             this.dataGridMoves.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
