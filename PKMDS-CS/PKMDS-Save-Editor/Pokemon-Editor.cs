@@ -100,9 +100,6 @@ namespace PKMDS_Save_Editor
             textSpDef.DataBindings.Add("Text", _pokemonBindingSource, "SpecialDefense", true, DataSourceUpdateMode.Never, string.Empty);
             textSpeed.DataBindings.Add("Text", _pokemonBindingSource, "Speed", true, DataSourceUpdateMode.Never, string.Empty);
 
-            _moveBindingSource.DataSource = tempPokemon.Moves;
-            _relearnableMoveBindingSource.DataSource = tempPokemon.RelearnableMoves;
-
             labelMoveFlavorText.DataBindings.Add("Text", _moveBindingSource, "FlavorText", false, DataSourceUpdateMode.Never, string.Empty);
             labelRelearnableMoveFlavorText.DataBindings.Add("Text", _relearnableMoveBindingSource, "FlavorText", false, DataSourceUpdateMode.Never, string.Empty);
 
@@ -113,6 +110,8 @@ namespace PKMDS_Save_Editor
                 dataGridMoves.Columns["Name"].Visible = false;
             if (dataGridMoves.Columns.Contains("Type"))
                 dataGridMoves.Columns["Type"].Visible = false;
+            if (dataGridMoves.Columns.Contains("BasePP"))
+                dataGridMoves.Columns["BasePP"].Visible = false;
             if (dataGridMoves.Columns.Contains("TypeImage"))
                 dataGridMoves.Columns["TypeImage"].HeaderText = "Type";
             if (dataGridMoves.Columns.Contains("CategoryImage"))
@@ -126,6 +125,8 @@ namespace PKMDS_Save_Editor
                 dataGridRelearnableMoves.Columns["Name"].Visible = false;
             if (dataGridRelearnableMoves.Columns.Contains("Type"))
                 dataGridRelearnableMoves.Columns["Type"].Visible = false;
+            if (dataGridRelearnableMoves.Columns.Contains("BasePP"))
+                dataGridRelearnableMoves.Columns["BasePP"].Visible = false;
             if (dataGridRelearnableMoves.Columns.Contains("TypeImage"))
                 dataGridRelearnableMoves.Columns["TypeImage"].HeaderText = "Type";
             if (dataGridRelearnableMoves.Columns.Contains("CategoryImage"))
@@ -169,6 +170,12 @@ namespace PKMDS_Save_Editor
 
             dataGridRelearnableMoves.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
 
+            numericPID.DataBindings.Add("Value", _pokemonBindingSource, "PID", true, DataSourceUpdateMode.OnPropertyChanged, 0);
+            numericPID.DataBindings.Add("Hexadecimal", checkPIDHex, "Checked", false, DataSourceUpdateMode.OnPropertyChanged, false);
+
+            //numericEncryptionConstant.DataBindings.Add("Value", _pokemonBindingSource, "EncryptionKey", true, DataSourceUpdateMode.OnPropertyChanged, 0);
+            numericEncryptionConstant.DataBindings.Add("Hexadecimal", checkEncryptionConstantHex, "Checked", false, DataSourceUpdateMode.OnPropertyChanged, false);
+
             FormPopulated = true;
         }
 
@@ -188,21 +195,44 @@ namespace PKMDS_Save_Editor
         public void SetForm()
         {
             FormSet = false;
-            PopulateForm();
             _pokemonBindingSource.DataSource = tempPokemon;
-            _moveBindingSource.DataSource = tempPokemon.Moves;
-            _relearnableMoveBindingSource.DataSource = tempPokemon.RelearnableMoves;
+            _moveBindingSource.DataSource = (_pokemonBindingSource.Current as Pokemon).Moves;
+            _relearnableMoveBindingSource.DataSource = (_pokemonBindingSource.Current as Pokemon).RelearnableMoves;
+            PopulateForm();
             FormSet = true;
+        }
+
+        private void SavePokemon()
+        {
+            tempPokemon.Moves = _moveBindingSource.DataSource as List<MovesObject>;
+            tempPokemon.RelearnableMoves = _relearnableMoveBindingSource.DataSource as List<MovesObject>;
+
+            _pokemon.CloneFrom(tempPokemon);
         }
 
         private void buttonApply_Click(object sender, System.EventArgs e)
         {
-            _pokemon.CloneFrom(tempPokemon);
+            try
+            {
+                SavePokemon();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void buttonOk_Click(object sender, System.EventArgs e)
         {
-            _pokemon.CloneFrom(tempPokemon);
+            try
+            {
+                SavePokemon();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
             this.Close();
         }
 

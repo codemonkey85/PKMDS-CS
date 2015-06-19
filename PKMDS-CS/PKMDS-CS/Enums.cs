@@ -8506,6 +8506,11 @@ namespace PKMDS_CS
             Value = move;
         }
 
+        public static implicit operator MovesObject(Moves move)
+        {
+            return new MovesObject(move);
+        }
+
         private Moves value;
 
         public Moves Value
@@ -8577,6 +8582,31 @@ namespace PKMDS_CS
                     decimal.TryParse(accuracystr, out accuracy);
                 }
                 return accuracy;
+            }
+        }
+
+        public byte BasePP
+        {
+            get
+            {
+                byte basepp = 0;
+                var baseppquery = DBTools.GetMoveDataTable.Select(string.Format("id = {0}", (int)value));
+                if (baseppquery.Length != 0)
+                {
+                    string baseppstr = baseppquery[0].ItemArray[(int)DBTools.MoveDataTableColumns.pp].ToString();
+                    byte.TryParse(baseppstr, out basepp);
+                }
+                return basepp;
+            }
+        }
+
+        public byte CurrentPP { get; set; }
+        public byte PPUps { get; set; }
+        public byte MaxPP
+        {
+            get
+            {
+                return (byte)(BasePP + (BasePP * 0.2 * PPUps));
             }
         }
 
