@@ -186,14 +186,11 @@ namespace PKMDS_Save_Editor
                 //dataGridMoves.Columns["FlavorText"].DefaultCellStyle.WrapMode = DataGridViewTriState.True;
             }
 
-
             List<MovesObject> MoveList = new List<MovesObject>();
             foreach (var move in Enum.GetValues(typeof(Moves)).Cast<Moves>().ToArray<Moves>())
             {
                 MoveList.Add(new MovesObject(move));
             }
-
-
 
             dataGridMoves.Columns.Remove("Value");
             DataGridViewComboBoxColumn clmn = new DataGridViewComboBoxColumn();
@@ -206,7 +203,6 @@ namespace PKMDS_Save_Editor
             clmn.DisplayIndex = 0;
             clmn.DisplayStyle = DataGridViewComboBoxDisplayStyle.Nothing;
             dataGridMoves.Columns.Add(clmn);
-
 
             dataGridMoves.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
 

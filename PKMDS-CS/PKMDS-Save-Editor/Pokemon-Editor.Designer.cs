@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.buttonOk = new System.Windows.Forms.Button();
             this.buttonApply = new System.Windows.Forms.Button();
@@ -51,25 +52,6 @@
             this.labelSpAtk = new System.Windows.Forms.Label();
             this.labelSpDef = new System.Windows.Forms.Label();
             this.labelSpeed = new System.Windows.Forms.Label();
-            this.movesTabPage = new System.Windows.Forms.TabPage();
-            this.historyTabPage = new System.Windows.Forms.TabPage();
-            this.contestTabPage = new System.Windows.Forms.TabPage();
-            this.ribbonsTabPage = new System.Windows.Forms.TabPage();
-            this.genderPictureBox = new System.Windows.Forms.PictureBox();
-            this.markingsPanel = new System.Windows.Forms.Panel();
-            this.numericLevel = new System.Windows.Forms.NumericUpDown();
-            this.labelHeldItem = new System.Windows.Forms.Label();
-            this.labelSpecies = new System.Windows.Forms.Label();
-            this.labelLevel = new System.Windows.Forms.Label();
-            this.picType1 = new System.Windows.Forms.PictureBox();
-            this.picType2 = new System.Windows.Forms.PictureBox();
-            this.formsComboBox = new System.Windows.Forms.ComboBox();
-            this.labelForm = new System.Windows.Forms.Label();
-            this.pbPentagon = new System.Windows.Forms.PictureBox();
-            this.textOTName = new System.Windows.Forms.TextBox();
-            this.radioOTMale = new System.Windows.Forms.RadioButton();
-            this.radioOTFemale = new System.Windows.Forms.RadioButton();
-            this.grouOT = new System.Windows.Forms.GroupBox();
             this.numHPIV = new System.Windows.Forms.NumericUpDown();
             this.numAttackIV = new System.Windows.Forms.NumericUpDown();
             this.numDefenseIV = new System.Windows.Forms.NumericUpDown();
@@ -88,21 +70,37 @@
             this.textSpAtk = new System.Windows.Forms.TextBox();
             this.textSpDef = new System.Windows.Forms.TextBox();
             this.textSpeed = new System.Windows.Forms.TextBox();
-            this.dataGridMoves = new System.Windows.Forms.DataGridView();
+            this.movesTabPage = new System.Windows.Forms.TabPage();
             this.labelMoveFlavorText = new System.Windows.Forms.Label();
+            this.dataGridMoves = new System.Windows.Forms.DataGridView();
+            this.historyTabPage = new System.Windows.Forms.TabPage();
+            this.contestTabPage = new System.Windows.Forms.TabPage();
+            this.ribbonsTabPage = new System.Windows.Forms.TabPage();
+            this.genderPictureBox = new System.Windows.Forms.PictureBox();
+            this.markingsPanel = new System.Windows.Forms.Panel();
+            this.numericLevel = new System.Windows.Forms.NumericUpDown();
+            this.labelHeldItem = new System.Windows.Forms.Label();
+            this.labelSpecies = new System.Windows.Forms.Label();
+            this.labelLevel = new System.Windows.Forms.Label();
+            this.picType1 = new System.Windows.Forms.PictureBox();
+            this.picType2 = new System.Windows.Forms.PictureBox();
+            this.formsComboBox = new System.Windows.Forms.ComboBox();
+            this.labelForm = new System.Windows.Forms.Label();
+            this.pbPentagon = new System.Windows.Forms.PictureBox();
+            this.textOTName = new System.Windows.Forms.TextBox();
+            this.radioOTMale = new System.Windows.Forms.RadioButton();
+            this.radioOTFemale = new System.Windows.Forms.RadioButton();
+            this.grouOT = new System.Windows.Forms.GroupBox();
+            this.groupCurrentMoves = new System.Windows.Forms.GroupBox();
+            this.groupRelearnableMoves = new System.Windows.Forms.GroupBox();
+            this.labelRelearnableMoveFlavorText = new System.Windows.Forms.Label();
+            this.dataGridRelearnableMoves = new System.Windows.Forms.DataGridView();
             this.tablelayoutButtons.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbSprite)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbItemImage)).BeginInit();
             this.pokemonTabControl.SuspendLayout();
             this.statsTabPage.SuspendLayout();
             this.tableLayoutStats.SuspendLayout();
-            this.movesTabPage.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.genderPictureBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericLevel)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picType1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picType2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbPentagon)).BeginInit();
-            this.grouOT.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numHPIV)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numAttackIV)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numDefenseIV)).BeginInit();
@@ -115,7 +113,17 @@
             ((System.ComponentModel.ISupportInitialize)(this.numSpAtkEV)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numSpDefEV)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numSpeedEV)).BeginInit();
+            this.movesTabPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridMoves)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.genderPictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericLevel)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picType1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picType2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPentagon)).BeginInit();
+            this.grouOT.SuspendLayout();
+            this.groupCurrentMoves.SuspendLayout();
+            this.groupRelearnableMoves.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridRelearnableMoves)).BeginInit();
             this.SuspendLayout();
             // 
             // buttonOk
@@ -168,7 +176,7 @@
             this.tablelayoutButtons.Controls.Add(this.buttonCancel, 2, 0);
             this.tablelayoutButtons.Controls.Add(this.buttonOk, 1, 0);
             this.tablelayoutButtons.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.tablelayoutButtons.Location = new System.Drawing.Point(0, 493);
+            this.tablelayoutButtons.Location = new System.Drawing.Point(0, 494);
             this.tablelayoutButtons.Margin = new System.Windows.Forms.Padding(2);
             this.tablelayoutButtons.Name = "tablelayoutButtons";
             this.tablelayoutButtons.RowCount = 1;
@@ -256,7 +264,7 @@
             this.pokemonTabControl.Multiline = true;
             this.pokemonTabControl.Name = "pokemonTabControl";
             this.pokemonTabControl.SelectedIndex = 0;
-            this.pokemonTabControl.Size = new System.Drawing.Size(503, 493);
+            this.pokemonTabControl.Size = new System.Drawing.Size(503, 494);
             this.pokemonTabControl.TabIndex = 12;
             // 
             // statsTabPage
@@ -406,201 +414,6 @@
             this.labelSpeed.Size = new System.Drawing.Size(38, 13);
             this.labelSpeed.TabIndex = 8;
             this.labelSpeed.Text = "Speed";
-            // 
-            // movesTabPage
-            // 
-            this.movesTabPage.Controls.Add(this.labelMoveFlavorText);
-            this.movesTabPage.Controls.Add(this.dataGridMoves);
-            this.movesTabPage.Location = new System.Drawing.Point(4, 22);
-            this.movesTabPage.Name = "movesTabPage";
-            this.movesTabPage.Padding = new System.Windows.Forms.Padding(3);
-            this.movesTabPage.Size = new System.Drawing.Size(495, 467);
-            this.movesTabPage.TabIndex = 1;
-            this.movesTabPage.Text = "Moves";
-            this.movesTabPage.UseVisualStyleBackColor = true;
-            // 
-            // historyTabPage
-            // 
-            this.historyTabPage.Location = new System.Drawing.Point(4, 22);
-            this.historyTabPage.Name = "historyTabPage";
-            this.historyTabPage.Size = new System.Drawing.Size(495, 467);
-            this.historyTabPage.TabIndex = 2;
-            this.historyTabPage.Text = "History";
-            this.historyTabPage.UseVisualStyleBackColor = true;
-            // 
-            // contestTabPage
-            // 
-            this.contestTabPage.Location = new System.Drawing.Point(4, 22);
-            this.contestTabPage.Name = "contestTabPage";
-            this.contestTabPage.Size = new System.Drawing.Size(495, 467);
-            this.contestTabPage.TabIndex = 4;
-            this.contestTabPage.Text = "Contest";
-            this.contestTabPage.UseVisualStyleBackColor = true;
-            // 
-            // ribbonsTabPage
-            // 
-            this.ribbonsTabPage.Location = new System.Drawing.Point(4, 22);
-            this.ribbonsTabPage.Name = "ribbonsTabPage";
-            this.ribbonsTabPage.Size = new System.Drawing.Size(495, 467);
-            this.ribbonsTabPage.TabIndex = 3;
-            this.ribbonsTabPage.Text = "Ribbons";
-            this.ribbonsTabPage.UseVisualStyleBackColor = true;
-            // 
-            // genderPictureBox
-            // 
-            this.genderPictureBox.Location = new System.Drawing.Point(184, 8);
-            this.genderPictureBox.Margin = new System.Windows.Forms.Padding(2);
-            this.genderPictureBox.Name = "genderPictureBox";
-            this.genderPictureBox.Size = new System.Drawing.Size(10, 10);
-            this.genderPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.genderPictureBox.TabIndex = 7;
-            this.genderPictureBox.TabStop = false;
-            // 
-            // markingsPanel
-            // 
-            this.markingsPanel.Location = new System.Drawing.Point(70, 139);
-            this.markingsPanel.Margin = new System.Windows.Forms.Padding(2);
-            this.markingsPanel.Name = "markingsPanel";
-            this.markingsPanel.Size = new System.Drawing.Size(124, 21);
-            this.markingsPanel.TabIndex = 6;
-            // 
-            // numericLevel
-            // 
-            this.numericLevel.Location = new System.Drawing.Point(114, 164);
-            this.numericLevel.Margin = new System.Windows.Forms.Padding(2);
-            this.numericLevel.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numericLevel.Name = "numericLevel";
-            this.numericLevel.Size = new System.Drawing.Size(80, 20);
-            this.numericLevel.TabIndex = 8;
-            this.numericLevel.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
-            // labelHeldItem
-            // 
-            this.labelHeldItem.Location = new System.Drawing.Point(14, 187);
-            this.labelHeldItem.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelHeldItem.Name = "labelHeldItem";
-            this.labelHeldItem.Size = new System.Drawing.Size(52, 13);
-            this.labelHeldItem.TabIndex = 9;
-            this.labelHeldItem.Text = "Held Item";
-            this.labelHeldItem.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // labelSpecies
-            // 
-            this.labelSpecies.Location = new System.Drawing.Point(57, 71);
-            this.labelSpecies.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelSpecies.Name = "labelSpecies";
-            this.labelSpecies.Size = new System.Drawing.Size(47, 18);
-            this.labelSpecies.TabIndex = 2;
-            this.labelSpecies.Text = "Species";
-            this.labelSpecies.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // labelLevel
-            // 
-            this.labelLevel.Location = new System.Drawing.Point(76, 164);
-            this.labelLevel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelLevel.Name = "labelLevel";
-            this.labelLevel.Size = new System.Drawing.Size(34, 17);
-            this.labelLevel.TabIndex = 7;
-            this.labelLevel.Text = "Level";
-            this.labelLevel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // picType1
-            // 
-            this.picType1.Location = new System.Drawing.Point(57, 116);
-            this.picType1.Margin = new System.Windows.Forms.Padding(2);
-            this.picType1.Name = "picType1";
-            this.picType1.Size = new System.Drawing.Size(67, 19);
-            this.picType1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.picType1.TabIndex = 11;
-            this.picType1.TabStop = false;
-            // 
-            // picType2
-            // 
-            this.picType2.Location = new System.Drawing.Point(127, 116);
-            this.picType2.Margin = new System.Windows.Forms.Padding(2);
-            this.picType2.Name = "picType2";
-            this.picType2.Size = new System.Drawing.Size(67, 19);
-            this.picType2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.picType2.TabIndex = 12;
-            this.picType2.TabStop = false;
-            // 
-            // formsComboBox
-            // 
-            this.formsComboBox.FormattingEnabled = true;
-            this.formsComboBox.Location = new System.Drawing.Point(47, 94);
-            this.formsComboBox.Margin = new System.Windows.Forms.Padding(2);
-            this.formsComboBox.Name = "formsComboBox";
-            this.formsComboBox.Size = new System.Drawing.Size(149, 21);
-            this.formsComboBox.TabIndex = 5;
-            // 
-            // labelForm
-            // 
-            this.labelForm.Location = new System.Drawing.Point(5, 93);
-            this.labelForm.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelForm.Name = "labelForm";
-            this.labelForm.Size = new System.Drawing.Size(37, 18);
-            this.labelForm.TabIndex = 4;
-            this.labelForm.Text = "Form";
-            this.labelForm.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // pbPentagon
-            // 
-            this.pbPentagon.Location = new System.Drawing.Point(45, 140);
-            this.pbPentagon.Name = "pbPentagon";
-            this.pbPentagon.Size = new System.Drawing.Size(20, 20);
-            this.pbPentagon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pbPentagon.TabIndex = 13;
-            this.pbPentagon.TabStop = false;
-            // 
-            // textOTName
-            // 
-            this.textOTName.Location = new System.Drawing.Point(6, 19);
-            this.textOTName.MaxLength = 12;
-            this.textOTName.Name = "textOTName";
-            this.textOTName.Size = new System.Drawing.Size(170, 20);
-            this.textOTName.TabIndex = 0;
-            // 
-            // radioOTMale
-            // 
-            this.radioOTMale.AutoSize = true;
-            this.radioOTMale.Location = new System.Drawing.Point(6, 45);
-            this.radioOTMale.Name = "radioOTMale";
-            this.radioOTMale.Size = new System.Drawing.Size(48, 17);
-            this.radioOTMale.TabIndex = 1;
-            this.radioOTMale.TabStop = true;
-            this.radioOTMale.Text = "Male";
-            this.radioOTMale.UseVisualStyleBackColor = true;
-            // 
-            // radioOTFemale
-            // 
-            this.radioOTFemale.AutoSize = true;
-            this.radioOTFemale.Location = new System.Drawing.Point(60, 45);
-            this.radioOTFemale.Name = "radioOTFemale";
-            this.radioOTFemale.Size = new System.Drawing.Size(59, 17);
-            this.radioOTFemale.TabIndex = 2;
-            this.radioOTFemale.TabStop = true;
-            this.radioOTFemale.Text = "Female";
-            this.radioOTFemale.UseVisualStyleBackColor = true;
-            // 
-            // grouOT
-            // 
-            this.grouOT.Controls.Add(this.radioOTFemale);
-            this.grouOT.Controls.Add(this.textOTName);
-            this.grouOT.Controls.Add(this.radioOTMale);
-            this.grouOT.Location = new System.Drawing.Point(12, 238);
-            this.grouOT.Name = "grouOT";
-            this.grouOT.Size = new System.Drawing.Size(182, 70);
-            this.grouOT.TabIndex = 11;
-            this.grouOT.TabStop = false;
-            this.grouOT.Text = "Original Trainer";
             // 
             // numHPIV
             // 
@@ -830,33 +643,288 @@
             this.textSpeed.TabIndex = 26;
             this.textSpeed.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // dataGridMoves
+            // movesTabPage
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.dataGridMoves.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dataGridMoves.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridMoves.Location = new System.Drawing.Point(6, 6);
-            this.dataGridMoves.MultiSelect = false;
-            this.dataGridMoves.Name = "dataGridMoves";
-            this.dataGridMoves.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridMoves.Size = new System.Drawing.Size(480, 224);
-            this.dataGridMoves.TabIndex = 0;
-            this.dataGridMoves.SelectionChanged += new System.EventHandler(this.dataGridMoves_SelectionChanged);
+            this.movesTabPage.Controls.Add(this.groupRelearnableMoves);
+            this.movesTabPage.Controls.Add(this.groupCurrentMoves);
+            this.movesTabPage.Location = new System.Drawing.Point(4, 22);
+            this.movesTabPage.Name = "movesTabPage";
+            this.movesTabPage.Padding = new System.Windows.Forms.Padding(3);
+            this.movesTabPage.Size = new System.Drawing.Size(495, 468);
+            this.movesTabPage.TabIndex = 1;
+            this.movesTabPage.Text = "Moves";
+            this.movesTabPage.UseVisualStyleBackColor = true;
             // 
             // labelMoveFlavorText
             // 
-            this.labelMoveFlavorText.Location = new System.Drawing.Point(6, 233);
+            this.labelMoveFlavorText.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.labelMoveFlavorText.Location = new System.Drawing.Point(3, 131);
             this.labelMoveFlavorText.Name = "labelMoveFlavorText";
-            this.labelMoveFlavorText.Size = new System.Drawing.Size(480, 231);
+            this.labelMoveFlavorText.Size = new System.Drawing.Size(483, 95);
             this.labelMoveFlavorText.TabIndex = 1;
             this.labelMoveFlavorText.Text = "Flavor Text";
+            // 
+            // dataGridMoves
+            // 
+            this.dataGridMoves.AllowUserToAddRows = false;
+            this.dataGridMoves.AllowUserToDeleteRows = false;
+            this.dataGridMoves.AllowUserToResizeColumns = false;
+            this.dataGridMoves.AllowUserToResizeRows = false;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dataGridMoves.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGridMoves.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dataGridMoves.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridMoves.Dock = System.Windows.Forms.DockStyle.Top;
+            this.dataGridMoves.Location = new System.Drawing.Point(3, 16);
+            this.dataGridMoves.MultiSelect = false;
+            this.dataGridMoves.Name = "dataGridMoves";
+            this.dataGridMoves.RowHeadersVisible = false;
+            this.dataGridMoves.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridMoves.Size = new System.Drawing.Size(483, 115);
+            this.dataGridMoves.TabIndex = 0;
+            this.dataGridMoves.SelectionChanged += new System.EventHandler(this.dataGridMoves_SelectionChanged);
+            // 
+            // historyTabPage
+            // 
+            this.historyTabPage.Location = new System.Drawing.Point(4, 22);
+            this.historyTabPage.Name = "historyTabPage";
+            this.historyTabPage.Size = new System.Drawing.Size(495, 467);
+            this.historyTabPage.TabIndex = 2;
+            this.historyTabPage.Text = "History";
+            this.historyTabPage.UseVisualStyleBackColor = true;
+            // 
+            // contestTabPage
+            // 
+            this.contestTabPage.Location = new System.Drawing.Point(4, 22);
+            this.contestTabPage.Name = "contestTabPage";
+            this.contestTabPage.Size = new System.Drawing.Size(495, 467);
+            this.contestTabPage.TabIndex = 4;
+            this.contestTabPage.Text = "Contest";
+            this.contestTabPage.UseVisualStyleBackColor = true;
+            // 
+            // ribbonsTabPage
+            // 
+            this.ribbonsTabPage.Location = new System.Drawing.Point(4, 22);
+            this.ribbonsTabPage.Name = "ribbonsTabPage";
+            this.ribbonsTabPage.Size = new System.Drawing.Size(495, 467);
+            this.ribbonsTabPage.TabIndex = 3;
+            this.ribbonsTabPage.Text = "Ribbons";
+            this.ribbonsTabPage.UseVisualStyleBackColor = true;
+            // 
+            // genderPictureBox
+            // 
+            this.genderPictureBox.Location = new System.Drawing.Point(184, 8);
+            this.genderPictureBox.Margin = new System.Windows.Forms.Padding(2);
+            this.genderPictureBox.Name = "genderPictureBox";
+            this.genderPictureBox.Size = new System.Drawing.Size(10, 10);
+            this.genderPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.genderPictureBox.TabIndex = 7;
+            this.genderPictureBox.TabStop = false;
+            // 
+            // markingsPanel
+            // 
+            this.markingsPanel.Location = new System.Drawing.Point(70, 139);
+            this.markingsPanel.Margin = new System.Windows.Forms.Padding(2);
+            this.markingsPanel.Name = "markingsPanel";
+            this.markingsPanel.Size = new System.Drawing.Size(124, 21);
+            this.markingsPanel.TabIndex = 6;
+            // 
+            // numericLevel
+            // 
+            this.numericLevel.Location = new System.Drawing.Point(114, 164);
+            this.numericLevel.Margin = new System.Windows.Forms.Padding(2);
+            this.numericLevel.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numericLevel.Name = "numericLevel";
+            this.numericLevel.Size = new System.Drawing.Size(80, 20);
+            this.numericLevel.TabIndex = 8;
+            this.numericLevel.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // labelHeldItem
+            // 
+            this.labelHeldItem.Location = new System.Drawing.Point(14, 187);
+            this.labelHeldItem.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelHeldItem.Name = "labelHeldItem";
+            this.labelHeldItem.Size = new System.Drawing.Size(52, 13);
+            this.labelHeldItem.TabIndex = 9;
+            this.labelHeldItem.Text = "Held Item";
+            this.labelHeldItem.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelSpecies
+            // 
+            this.labelSpecies.Location = new System.Drawing.Point(57, 71);
+            this.labelSpecies.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelSpecies.Name = "labelSpecies";
+            this.labelSpecies.Size = new System.Drawing.Size(47, 18);
+            this.labelSpecies.TabIndex = 2;
+            this.labelSpecies.Text = "Species";
+            this.labelSpecies.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelLevel
+            // 
+            this.labelLevel.Location = new System.Drawing.Point(76, 164);
+            this.labelLevel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelLevel.Name = "labelLevel";
+            this.labelLevel.Size = new System.Drawing.Size(34, 17);
+            this.labelLevel.TabIndex = 7;
+            this.labelLevel.Text = "Level";
+            this.labelLevel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // picType1
+            // 
+            this.picType1.Location = new System.Drawing.Point(57, 116);
+            this.picType1.Margin = new System.Windows.Forms.Padding(2);
+            this.picType1.Name = "picType1";
+            this.picType1.Size = new System.Drawing.Size(67, 19);
+            this.picType1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.picType1.TabIndex = 11;
+            this.picType1.TabStop = false;
+            // 
+            // picType2
+            // 
+            this.picType2.Location = new System.Drawing.Point(127, 116);
+            this.picType2.Margin = new System.Windows.Forms.Padding(2);
+            this.picType2.Name = "picType2";
+            this.picType2.Size = new System.Drawing.Size(67, 19);
+            this.picType2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.picType2.TabIndex = 12;
+            this.picType2.TabStop = false;
+            // 
+            // formsComboBox
+            // 
+            this.formsComboBox.FormattingEnabled = true;
+            this.formsComboBox.Location = new System.Drawing.Point(47, 94);
+            this.formsComboBox.Margin = new System.Windows.Forms.Padding(2);
+            this.formsComboBox.Name = "formsComboBox";
+            this.formsComboBox.Size = new System.Drawing.Size(149, 21);
+            this.formsComboBox.TabIndex = 5;
+            // 
+            // labelForm
+            // 
+            this.labelForm.Location = new System.Drawing.Point(5, 93);
+            this.labelForm.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelForm.Name = "labelForm";
+            this.labelForm.Size = new System.Drawing.Size(37, 18);
+            this.labelForm.TabIndex = 4;
+            this.labelForm.Text = "Form";
+            this.labelForm.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pbPentagon
+            // 
+            this.pbPentagon.Location = new System.Drawing.Point(45, 140);
+            this.pbPentagon.Name = "pbPentagon";
+            this.pbPentagon.Size = new System.Drawing.Size(20, 20);
+            this.pbPentagon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pbPentagon.TabIndex = 13;
+            this.pbPentagon.TabStop = false;
+            // 
+            // textOTName
+            // 
+            this.textOTName.Location = new System.Drawing.Point(6, 19);
+            this.textOTName.MaxLength = 12;
+            this.textOTName.Name = "textOTName";
+            this.textOTName.Size = new System.Drawing.Size(170, 20);
+            this.textOTName.TabIndex = 0;
+            // 
+            // radioOTMale
+            // 
+            this.radioOTMale.AutoSize = true;
+            this.radioOTMale.Location = new System.Drawing.Point(6, 45);
+            this.radioOTMale.Name = "radioOTMale";
+            this.radioOTMale.Size = new System.Drawing.Size(48, 17);
+            this.radioOTMale.TabIndex = 1;
+            this.radioOTMale.TabStop = true;
+            this.radioOTMale.Text = "Male";
+            this.radioOTMale.UseVisualStyleBackColor = true;
+            // 
+            // radioOTFemale
+            // 
+            this.radioOTFemale.AutoSize = true;
+            this.radioOTFemale.Location = new System.Drawing.Point(60, 45);
+            this.radioOTFemale.Name = "radioOTFemale";
+            this.radioOTFemale.Size = new System.Drawing.Size(59, 17);
+            this.radioOTFemale.TabIndex = 2;
+            this.radioOTFemale.TabStop = true;
+            this.radioOTFemale.Text = "Female";
+            this.radioOTFemale.UseVisualStyleBackColor = true;
+            // 
+            // grouOT
+            // 
+            this.grouOT.Controls.Add(this.radioOTFemale);
+            this.grouOT.Controls.Add(this.textOTName);
+            this.grouOT.Controls.Add(this.radioOTMale);
+            this.grouOT.Location = new System.Drawing.Point(12, 238);
+            this.grouOT.Name = "grouOT";
+            this.grouOT.Size = new System.Drawing.Size(182, 70);
+            this.grouOT.TabIndex = 11;
+            this.grouOT.TabStop = false;
+            this.grouOT.Text = "Original Trainer";
+            // 
+            // groupCurrentMoves
+            // 
+            this.groupCurrentMoves.Controls.Add(this.labelMoveFlavorText);
+            this.groupCurrentMoves.Controls.Add(this.dataGridMoves);
+            this.groupCurrentMoves.Dock = System.Windows.Forms.DockStyle.Top;
+            this.groupCurrentMoves.Location = new System.Drawing.Point(3, 3);
+            this.groupCurrentMoves.Name = "groupCurrentMoves";
+            this.groupCurrentMoves.Size = new System.Drawing.Size(489, 229);
+            this.groupCurrentMoves.TabIndex = 2;
+            this.groupCurrentMoves.TabStop = false;
+            this.groupCurrentMoves.Text = "Current Moves";
+            // 
+            // groupRelearnableMoves
+            // 
+            this.groupRelearnableMoves.Controls.Add(this.labelRelearnableMoveFlavorText);
+            this.groupRelearnableMoves.Controls.Add(this.dataGridRelearnableMoves);
+            this.groupRelearnableMoves.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.groupRelearnableMoves.Location = new System.Drawing.Point(3, 236);
+            this.groupRelearnableMoves.Name = "groupRelearnableMoves";
+            this.groupRelearnableMoves.Size = new System.Drawing.Size(489, 229);
+            this.groupRelearnableMoves.TabIndex = 3;
+            this.groupRelearnableMoves.TabStop = false;
+            this.groupRelearnableMoves.Text = "Relearnable Moves";
+            // 
+            // labelRelearnableMoveFlavorText
+            // 
+            this.labelRelearnableMoveFlavorText.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.labelRelearnableMoveFlavorText.Location = new System.Drawing.Point(3, 131);
+            this.labelRelearnableMoveFlavorText.Name = "labelRelearnableMoveFlavorText";
+            this.labelRelearnableMoveFlavorText.Size = new System.Drawing.Size(483, 95);
+            this.labelRelearnableMoveFlavorText.TabIndex = 1;
+            this.labelRelearnableMoveFlavorText.Text = "Flavor Text";
+            // 
+            // dataGridRelearnableMoves
+            // 
+            this.dataGridRelearnableMoves.AllowUserToAddRows = false;
+            this.dataGridRelearnableMoves.AllowUserToDeleteRows = false;
+            this.dataGridRelearnableMoves.AllowUserToResizeColumns = false;
+            this.dataGridRelearnableMoves.AllowUserToResizeRows = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dataGridRelearnableMoves.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridRelearnableMoves.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dataGridRelearnableMoves.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridRelearnableMoves.Dock = System.Windows.Forms.DockStyle.Top;
+            this.dataGridRelearnableMoves.Location = new System.Drawing.Point(3, 16);
+            this.dataGridRelearnableMoves.MultiSelect = false;
+            this.dataGridRelearnableMoves.Name = "dataGridRelearnableMoves";
+            this.dataGridRelearnableMoves.RowHeadersVisible = false;
+            this.dataGridRelearnableMoves.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridRelearnableMoves.Size = new System.Drawing.Size(483, 115);
+            this.dataGridRelearnableMoves.TabIndex = 0;
             // 
             // Pokemon_Editor_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.buttonCancel;
-            this.ClientSize = new System.Drawing.Size(702, 524);
+            this.ClientSize = new System.Drawing.Size(702, 525);
             this.Controls.Add(this.grouOT);
             this.Controls.Add(this.pbPentagon);
             this.Controls.Add(this.labelForm);
@@ -893,14 +961,6 @@
             this.statsTabPage.ResumeLayout(false);
             this.tableLayoutStats.ResumeLayout(false);
             this.tableLayoutStats.PerformLayout();
-            this.movesTabPage.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.genderPictureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericLevel)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picType1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picType2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbPentagon)).EndInit();
-            this.grouOT.ResumeLayout(false);
-            this.grouOT.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numHPIV)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numAttackIV)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numDefenseIV)).EndInit();
@@ -913,7 +973,18 @@
             ((System.ComponentModel.ISupportInitialize)(this.numSpAtkEV)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numSpDefEV)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numSpeedEV)).EndInit();
+            this.movesTabPage.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridMoves)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.genderPictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericLevel)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picType1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picType2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPentagon)).EndInit();
+            this.grouOT.ResumeLayout(false);
+            this.grouOT.PerformLayout();
+            this.groupCurrentMoves.ResumeLayout(false);
+            this.groupRelearnableMoves.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridRelearnableMoves)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -982,5 +1053,9 @@
         private System.Windows.Forms.TextBox textSpeed;
         private System.Windows.Forms.DataGridView dataGridMoves;
         private System.Windows.Forms.Label labelMoveFlavorText;
+        private System.Windows.Forms.GroupBox groupRelearnableMoves;
+        private System.Windows.Forms.Label labelRelearnableMoveFlavorText;
+        private System.Windows.Forms.DataGridView dataGridRelearnableMoves;
+        private System.Windows.Forms.GroupBox groupCurrentMoves;
     }
 }

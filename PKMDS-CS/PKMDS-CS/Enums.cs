@@ -8540,12 +8540,14 @@ namespace PKMDS_CS
             get { return value.EnumToString(); }
         }
 
-        public TypeObject Type
+        public TypeObject? Type
         {
             get
             {
-                string typeidstr = DBTools.GetMoveDataTable.Select(string.Format("id = {0}", (int)value))[0].ItemArray[(int)DBTools.MoveDataTableColumns.type_id].ToString();
                 int typeid = 0;
+                var typequery = DBTools.GetMoveDataTable.Select(string.Format("id = {0}", (int)value));
+                if (typequery.Length == 0) return null;
+                string typeidstr = typequery[0].ItemArray[(int)DBTools.MoveDataTableColumns.type_id].ToString();
                 if (!int.TryParse(typeidstr, out typeid)) return new TypeObject();
                 if (!Enum.IsDefined(typeof(Types), typeid)) return new TypeObject();
                 return new TypeObject((Types)typeid);
@@ -8556,7 +8558,8 @@ namespace PKMDS_CS
         {
             get
             {
-                return Type.Image;
+                if (!Type.HasValue) return null;
+                return Type.Value.Image;
             }
         }
 
@@ -8564,9 +8567,13 @@ namespace PKMDS_CS
         {
             get
             {
-                string powerstr = DBTools.GetMoveDataTable.Select(string.Format("id = {0}", (int)value))[0].ItemArray[(int)DBTools.MoveDataTableColumns.power].ToString();
                 int power = 0;
-                int.TryParse(powerstr, out power);
+                var powerquery = DBTools.GetMoveDataTable.Select(string.Format("id = {0}", (int)value));
+                if (powerquery.Length != 0)
+                {
+                    string powerstr = powerquery[0].ItemArray[(int)DBTools.MoveDataTableColumns.power].ToString();
+                    int.TryParse(powerstr, out power);
+                }
                 return power;
             }
         }
@@ -8575,9 +8582,13 @@ namespace PKMDS_CS
         {
             get
             {
-                string accuracystr = DBTools.GetMoveDataTable.Select(string.Format("id = {0}", (int)value))[0].ItemArray[(int)DBTools.MoveDataTableColumns.accuracy].ToString();
                 decimal accuracy = 0M;
-                decimal.TryParse(accuracystr, out accuracy);
+                var accuracyquery = DBTools.GetMoveDataTable.Select(string.Format("id = {0}", (int)value));
+                if (accuracyquery.Length != 0)
+                {
+                    string accuracystr = accuracyquery[0].ItemArray[(int)DBTools.MoveDataTableColumns.accuracy].ToString();
+                    decimal.TryParse(accuracystr, out accuracy);
+                }
                 return accuracy;
             }
         }
@@ -8586,7 +8597,9 @@ namespace PKMDS_CS
         {
             get
             {
-                var damageclassidstr = DBTools.GetMoveDataTable.Select(string.Format("id = {0}", (int)value))[0].ItemArray[(int)DBTools.MoveDataTableColumns.damage_class_id].ToString();
+                var damageclassquery = DBTools.GetMoveDataTable.Select(string.Format("id = {0}", (int)value));
+                if (damageclassquery.Length == 0) return null;
+                var damageclassidstr = damageclassquery[0].ItemArray[(int)DBTools.MoveDataTableColumns.damage_class_id].ToString();
                 int damageclassid = -1;
                 int.TryParse(damageclassidstr, out damageclassid);
                 switch (damageclassid)
@@ -8607,7 +8620,15 @@ namespace PKMDS_CS
         {
             get
             {
-                return DBTools.GetMoveDataTable.Select(string.Format("id = {0}", (int)value))[0].ItemArray[(int)DBTools.MoveDataTableColumns.flavor_text].ToString();
+                var flavor = DBTools.GetMoveDataTable.Select(string.Format("id = {0}", (int)value));
+                if (flavor.Length != 0)
+                {
+                    return flavor[0].ItemArray[(int)DBTools.MoveDataTableColumns.flavor_text].ToString();
+                }
+                else 
+                {
+                    return string.Empty;
+                }
             }
         }
 
