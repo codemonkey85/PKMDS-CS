@@ -8513,6 +8513,7 @@ namespace PKMDS_CS
 
         private Moves value;
 
+        [DisplayName("Move")]
         public Moves Value
         {
             get
@@ -8527,11 +8528,13 @@ namespace PKMDS_CS
             }
         }
 
+        [DisplayName("Name")]
         public string Name
         {
             get { return value.EnumToString(); }
         }
 
+        [DisplayName("Type")]
         public TypeObject? Type
         {
             get
@@ -8546,6 +8549,7 @@ namespace PKMDS_CS
             }
         }
 
+        [DisplayName("Type")]
         public Image TypeImage
         {
             get
@@ -8555,61 +8559,7 @@ namespace PKMDS_CS
             }
         }
 
-        public int Power
-        {
-            get
-            {
-                int power = 0;
-                var powerquery = DBTools.GetMoveDataTable.Select(string.Format("id = {0}", (int)value));
-                if (powerquery.Length != 0)
-                {
-                    string powerstr = powerquery[0].ItemArray[(int)DBTools.MoveDataTableColumns.power].ToString();
-                    int.TryParse(powerstr, out power);
-                }
-                return power;
-            }
-        }
-
-        public decimal Accuracy
-        {
-            get
-            {
-                decimal accuracy = 0M;
-                var accuracyquery = DBTools.GetMoveDataTable.Select(string.Format("id = {0}", (int)value));
-                if (accuracyquery.Length != 0)
-                {
-                    string accuracystr = accuracyquery[0].ItemArray[(int)DBTools.MoveDataTableColumns.accuracy].ToString();
-                    decimal.TryParse(accuracystr, out accuracy);
-                }
-                return accuracy;
-            }
-        }
-
-        public byte BasePP
-        {
-            get
-            {
-                byte basepp = 0;
-                var baseppquery = DBTools.GetMoveDataTable.Select(string.Format("id = {0}", (int)value));
-                if (baseppquery.Length != 0)
-                {
-                    string baseppstr = baseppquery[0].ItemArray[(int)DBTools.MoveDataTableColumns.pp].ToString();
-                    byte.TryParse(baseppstr, out basepp);
-                }
-                return basepp;
-            }
-        }
-
-        public byte CurrentPP { get; set; }
-        public byte PPUps { get; set; }
-        public byte MaxPP
-        {
-            get
-            {
-                return (byte)(BasePP + (BasePP * 0.2 * PPUps));
-            }
-        }
-
+        [DisplayName("Category")]
         public Image CategoryImage
         {
             get
@@ -8636,6 +8586,70 @@ namespace PKMDS_CS
             }
         }
 
+        [DisplayName("Power")]
+        public int Power
+        {
+            get
+            {
+                int power = 0;
+                var powerquery = DBTools.GetMoveDataTable.Select(string.Format("id = {0}", (int)value));
+                if (powerquery.Length != 0)
+                {
+                    string powerstr = powerquery[0].ItemArray[(int)DBTools.MoveDataTableColumns.power].ToString();
+                    int.TryParse(powerstr, out power);
+                }
+                return power;
+            }
+        }
+
+        [DisplayName("Accuracy")]
+        public decimal Accuracy
+        {
+            get
+            {
+                decimal accuracy = 0M;
+                var accuracyquery = DBTools.GetMoveDataTable.Select(string.Format("id = {0}", (int)value));
+                if (accuracyquery.Length != 0)
+                {
+                    string accuracystr = accuracyquery[0].ItemArray[(int)DBTools.MoveDataTableColumns.accuracy].ToString();
+                    decimal.TryParse(accuracystr, out accuracy);
+                }
+                return accuracy;
+            }
+        }
+
+        [DisplayName("Base PP")]
+        public byte BasePP
+        {
+            get
+            {
+                byte basepp = 0;
+                var baseppquery = DBTools.GetMoveDataTable.Select(string.Format("id = {0}", (int)value));
+                if (baseppquery.Length != 0)
+                {
+                    string baseppstr = baseppquery[0].ItemArray[(int)DBTools.MoveDataTableColumns.pp].ToString();
+                    byte.TryParse(baseppstr, out basepp);
+                }
+                return basepp;
+            }
+        }
+
+        [DisplayName("Current PP")]
+        public byte CurrentPP { get; set; }
+
+        [DisplayName("PP Ups")]
+        public byte PPUps { get; set; }
+
+        [DisplayName("Max PP")]
+        public byte MaxPP
+        {
+            get
+            {
+                return (byte)(BasePP + (BasePP * 0.2 * PPUps));
+            }
+        }
+
+        [DisplayName("Flavor Text")]
         public string FlavorText
         {
             get

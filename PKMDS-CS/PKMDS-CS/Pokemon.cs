@@ -944,8 +944,8 @@ namespace PKMDS_CS
             }
             set
             {
-                if(value == PKMDS_CS.Moves.NoMove) throw new System.Exception(string.Format("The Pokémon {0}'s first move cannot be 'No Move'!", ToString()));
-                move1id = (ushort)value; 
+                if (value == PKMDS_CS.Moves.NoMove) throw new System.Exception(string.Format("The Pokémon {0}'s first move cannot be 'No Move'!", ToString()));
+                move1id = (ushort)value;
             }
         }
 

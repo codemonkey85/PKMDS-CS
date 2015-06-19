@@ -30,6 +30,10 @@
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.buttonOk = new System.Windows.Forms.Button();
             this.buttonApply = new System.Windows.Forms.Button();
             this.buttonCancel = new System.Windows.Forms.Button();
@@ -140,7 +144,7 @@
             // 
             this.buttonOk.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.buttonOk.AutoSize = true;
-            this.buttonOk.Location = new System.Drawing.Point(377, 2);
+            this.buttonOk.Location = new System.Drawing.Point(332, 2);
             this.buttonOk.Margin = new System.Windows.Forms.Padding(2);
             this.buttonOk.Name = "buttonOk";
             this.buttonOk.Size = new System.Drawing.Size(40, 27);
@@ -153,7 +157,7 @@
             // 
             this.buttonApply.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.buttonApply.AutoSize = true;
-            this.buttonApply.Location = new System.Drawing.Point(103, 2);
+            this.buttonApply.Location = new System.Drawing.Point(88, 2);
             this.buttonApply.Margin = new System.Windows.Forms.Padding(2);
             this.buttonApply.Name = "buttonApply";
             this.buttonApply.Size = new System.Drawing.Size(58, 27);
@@ -167,7 +171,7 @@
             this.buttonCancel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.buttonCancel.AutoSize = true;
             this.buttonCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.buttonCancel.Location = new System.Drawing.Point(628, 2);
+            this.buttonCancel.Location = new System.Drawing.Point(554, 2);
             this.buttonCancel.Margin = new System.Windows.Forms.Padding(2);
             this.buttonCancel.Name = "buttonCancel";
             this.buttonCancel.Size = new System.Drawing.Size(68, 27);
@@ -191,7 +195,7 @@
             this.tablelayoutButtons.Name = "tablelayoutButtons";
             this.tablelayoutButtons.RowCount = 1;
             this.tablelayoutButtons.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tablelayoutButtons.Size = new System.Drawing.Size(795, 31);
+            this.tablelayoutButtons.Size = new System.Drawing.Size(706, 31);
             this.tablelayoutButtons.TabIndex = 13;
             // 
             // pbSprite
@@ -274,7 +278,7 @@
             this.pokemonTabControl.Multiline = true;
             this.pokemonTabControl.Name = "pokemonTabControl";
             this.pokemonTabControl.SelectedIndex = 0;
-            this.pokemonTabControl.Size = new System.Drawing.Size(596, 494);
+            this.pokemonTabControl.Size = new System.Drawing.Size(507, 494);
             this.pokemonTabControl.TabIndex = 12;
             // 
             // statsTabPage
@@ -285,7 +289,7 @@
             this.statsTabPage.Location = new System.Drawing.Point(4, 22);
             this.statsTabPage.Name = "statsTabPage";
             this.statsTabPage.Padding = new System.Windows.Forms.Padding(3);
-            this.statsTabPage.Size = new System.Drawing.Size(495, 468);
+            this.statsTabPage.Size = new System.Drawing.Size(595, 468);
             this.statsTabPage.TabIndex = 0;
             this.statsTabPage.Text = "Stats";
             this.statsTabPage.UseVisualStyleBackColor = true;
@@ -735,7 +739,7 @@
             this.movesTabPage.Location = new System.Drawing.Point(4, 22);
             this.movesTabPage.Name = "movesTabPage";
             this.movesTabPage.Padding = new System.Windows.Forms.Padding(3);
-            this.movesTabPage.Size = new System.Drawing.Size(588, 468);
+            this.movesTabPage.Size = new System.Drawing.Size(499, 468);
             this.movesTabPage.TabIndex = 1;
             this.movesTabPage.Text = "Moves";
             this.movesTabPage.UseVisualStyleBackColor = true;
@@ -747,7 +751,7 @@
             this.groupRelearnableMoves.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.groupRelearnableMoves.Location = new System.Drawing.Point(3, 236);
             this.groupRelearnableMoves.Name = "groupRelearnableMoves";
-            this.groupRelearnableMoves.Size = new System.Drawing.Size(582, 229);
+            this.groupRelearnableMoves.Size = new System.Drawing.Size(493, 229);
             this.groupRelearnableMoves.TabIndex = 3;
             this.groupRelearnableMoves.TabStop = false;
             this.groupRelearnableMoves.Text = "Relearnable Moves";
@@ -757,7 +761,7 @@
             this.labelRelearnableMoveFlavorText.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.labelRelearnableMoveFlavorText.Location = new System.Drawing.Point(3, 151);
             this.labelRelearnableMoveFlavorText.Name = "labelRelearnableMoveFlavorText";
-            this.labelRelearnableMoveFlavorText.Size = new System.Drawing.Size(576, 75);
+            this.labelRelearnableMoveFlavorText.Size = new System.Drawing.Size(487, 75);
             this.labelRelearnableMoveFlavorText.TabIndex = 1;
             this.labelRelearnableMoveFlavorText.Text = "Flavor Text";
             // 
@@ -770,15 +774,33 @@
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.dataGridRelearnableMoves.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridRelearnableMoves.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dataGridRelearnableMoves.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridRelearnableMoves.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridRelearnableMoves.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Wheat;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridRelearnableMoves.DefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridRelearnableMoves.Dock = System.Windows.Forms.DockStyle.Top;
             this.dataGridRelearnableMoves.Location = new System.Drawing.Point(3, 16);
             this.dataGridRelearnableMoves.MultiSelect = false;
             this.dataGridRelearnableMoves.Name = "dataGridRelearnableMoves";
             this.dataGridRelearnableMoves.RowHeadersVisible = false;
             this.dataGridRelearnableMoves.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridRelearnableMoves.Size = new System.Drawing.Size(576, 130);
+            this.dataGridRelearnableMoves.Size = new System.Drawing.Size(487, 130);
             this.dataGridRelearnableMoves.TabIndex = 0;
+            this.dataGridRelearnableMoves.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.dataGridMoves_DataError);
             // 
             // groupCurrentMoves
             // 
@@ -787,7 +809,7 @@
             this.groupCurrentMoves.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupCurrentMoves.Location = new System.Drawing.Point(3, 3);
             this.groupCurrentMoves.Name = "groupCurrentMoves";
-            this.groupCurrentMoves.Size = new System.Drawing.Size(582, 229);
+            this.groupCurrentMoves.Size = new System.Drawing.Size(493, 229);
             this.groupCurrentMoves.TabIndex = 2;
             this.groupCurrentMoves.TabStop = false;
             this.groupCurrentMoves.Text = "Current Moves";
@@ -797,7 +819,7 @@
             this.labelMoveFlavorText.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.labelMoveFlavorText.Location = new System.Drawing.Point(3, 151);
             this.labelMoveFlavorText.Name = "labelMoveFlavorText";
-            this.labelMoveFlavorText.Size = new System.Drawing.Size(576, 75);
+            this.labelMoveFlavorText.Size = new System.Drawing.Size(487, 75);
             this.labelMoveFlavorText.TabIndex = 1;
             this.labelMoveFlavorText.Text = "Flavor Text";
             // 
@@ -807,24 +829,42 @@
             this.dataGridMoves.AllowUserToDeleteRows = false;
             this.dataGridMoves.AllowUserToResizeColumns = false;
             this.dataGridMoves.AllowUserToResizeRows = false;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.dataGridMoves.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dataGridMoves.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridMoves.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dataGridMoves.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridMoves.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dataGridMoves.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.Wheat;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridMoves.DefaultCellStyle = dataGridViewCellStyle6;
             this.dataGridMoves.Dock = System.Windows.Forms.DockStyle.Top;
             this.dataGridMoves.Location = new System.Drawing.Point(3, 16);
             this.dataGridMoves.MultiSelect = false;
             this.dataGridMoves.Name = "dataGridMoves";
             this.dataGridMoves.RowHeadersVisible = false;
             this.dataGridMoves.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridMoves.Size = new System.Drawing.Size(576, 130);
+            this.dataGridMoves.Size = new System.Drawing.Size(487, 130);
             this.dataGridMoves.TabIndex = 0;
+            this.dataGridMoves.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.dataGridMoves_DataError);
             // 
             // historyTabPage
             // 
             this.historyTabPage.Location = new System.Drawing.Point(4, 22);
             this.historyTabPage.Name = "historyTabPage";
-            this.historyTabPage.Size = new System.Drawing.Size(495, 468);
+            this.historyTabPage.Size = new System.Drawing.Size(610, 468);
             this.historyTabPage.TabIndex = 2;
             this.historyTabPage.Text = "History";
             this.historyTabPage.UseVisualStyleBackColor = true;
@@ -833,7 +873,7 @@
             // 
             this.contestTabPage.Location = new System.Drawing.Point(4, 22);
             this.contestTabPage.Name = "contestTabPage";
-            this.contestTabPage.Size = new System.Drawing.Size(495, 468);
+            this.contestTabPage.Size = new System.Drawing.Size(610, 468);
             this.contestTabPage.TabIndex = 4;
             this.contestTabPage.Text = "Contest";
             this.contestTabPage.UseVisualStyleBackColor = true;
@@ -842,7 +882,7 @@
             // 
             this.ribbonsTabPage.Location = new System.Drawing.Point(4, 22);
             this.ribbonsTabPage.Name = "ribbonsTabPage";
-            this.ribbonsTabPage.Size = new System.Drawing.Size(495, 468);
+            this.ribbonsTabPage.Size = new System.Drawing.Size(610, 468);
             this.ribbonsTabPage.TabIndex = 3;
             this.ribbonsTabPage.Text = "Ribbons";
             this.ribbonsTabPage.UseVisualStyleBackColor = true;
@@ -1008,7 +1048,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.buttonCancel;
-            this.ClientSize = new System.Drawing.Size(795, 525);
+            this.ClientSize = new System.Drawing.Size(706, 525);
             this.Controls.Add(this.grouOT);
             this.Controls.Add(this.pbPentagon);
             this.Controls.Add(this.labelForm);

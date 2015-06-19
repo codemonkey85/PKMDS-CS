@@ -112,29 +112,40 @@ namespace PKMDS_Save_Editor
                 dataGridMoves.Columns["Type"].Visible = false;
             if (dataGridMoves.Columns.Contains("BasePP"))
                 dataGridMoves.Columns["BasePP"].Visible = false;
-            if (dataGridMoves.Columns.Contains("TypeImage"))
-                dataGridMoves.Columns["TypeImage"].HeaderText = "Type";
-            if (dataGridMoves.Columns.Contains("CategoryImage"))
-                dataGridMoves.Columns["CategoryImage"].HeaderText = "Category";
             if (dataGridMoves.Columns.Contains("FlavorText"))
-            {
                 dataGridMoves.Columns["FlavorText"].Visible = false;
+
+            if (dataGridMoves.Columns.Contains("CurrentPP"))
+            {
+                dataGridMoves.Columns["CurrentPP"].ValueType = typeof(byte);
             }
+            if (dataGridMoves.Columns.Contains("PPUps"))
+            {
+                dataGridMoves.Columns["PPUps"].ValueType = typeof(byte);
+            }
+
+            DataGridViewComboBoxColumn clmnppup = new DataGridViewComboBoxColumn();
+            clmnppup.Name = "PPUps";
+            clmnppup.HeaderText = "PP Ups";
+            clmnppup.DataSource = new byte[] { 0, 1, 2, 3 };
+            clmnppup.DataPropertyName = "PPUps";
+            clmnppup.DisplayIndex = dataGridMoves.Columns["PPUps"].DisplayIndex;
+            clmnppup.DisplayStyle = DataGridViewComboBoxDisplayStyle.Nothing;
+            dataGridMoves.Columns.Remove("PPUps");
+            dataGridMoves.Columns.Add(clmnppup);
 
             if (dataGridRelearnableMoves.Columns.Contains("Name"))
                 dataGridRelearnableMoves.Columns["Name"].Visible = false;
             if (dataGridRelearnableMoves.Columns.Contains("Type"))
                 dataGridRelearnableMoves.Columns["Type"].Visible = false;
-            if (dataGridRelearnableMoves.Columns.Contains("BasePP"))
-                dataGridRelearnableMoves.Columns["BasePP"].Visible = false;
-            if (dataGridRelearnableMoves.Columns.Contains("TypeImage"))
-                dataGridRelearnableMoves.Columns["TypeImage"].HeaderText = "Type";
-            if (dataGridRelearnableMoves.Columns.Contains("CategoryImage"))
-                dataGridRelearnableMoves.Columns["CategoryImage"].HeaderText = "Category";
             if (dataGridRelearnableMoves.Columns.Contains("FlavorText"))
-            {
                 dataGridRelearnableMoves.Columns["FlavorText"].Visible = false;
-            }
+            if (dataGridRelearnableMoves.Columns.Contains("CurrentPP"))
+                dataGridRelearnableMoves.Columns["CurrentPP"].Visible = false;
+            if (dataGridRelearnableMoves.Columns.Contains("PPUps"))
+                dataGridRelearnableMoves.Columns["PPUps"].Visible = false;
+            if (dataGridRelearnableMoves.Columns.Contains("MaxPP"))
+                dataGridRelearnableMoves.Columns["MaxPP"].Visible = false;
 
             List<MovesObject> MoveList = new List<MovesObject>();
             foreach (var move in Enum.GetValues(typeof(Moves)).Cast<Moves>().ToArray<Moves>())
@@ -154,8 +165,6 @@ namespace PKMDS_Save_Editor
             clmn.DisplayStyle = DataGridViewComboBoxDisplayStyle.Nothing;
             dataGridMoves.Columns.Add(clmn);
 
-            dataGridMoves.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
-
             dataGridRelearnableMoves.Columns.Remove("Value");
             DataGridViewComboBoxColumn rclmn = new DataGridViewComboBoxColumn();
             rclmn.Name = "Value";
@@ -168,7 +177,20 @@ namespace PKMDS_Save_Editor
             rclmn.DisplayStyle = DataGridViewComboBoxDisplayStyle.Nothing;
             dataGridRelearnableMoves.Columns.Add(rclmn);
 
-            dataGridRelearnableMoves.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            foreach (DataGridViewColumn col in dataGridMoves.Columns)
+            {
+                if (col is DataGridViewImageColumn)
+                    (col as DataGridViewImageColumn).DefaultCellStyle.NullValue = null;
+                col.SortMode = DataGridViewColumnSortMode.NotSortable;
+                col.HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            }
+            foreach (DataGridViewColumn col in dataGridRelearnableMoves.Columns)
+            {
+                if (col is DataGridViewImageColumn)
+                    (col as DataGridViewImageColumn).DefaultCellStyle.NullValue = null;
+                col.SortMode = DataGridViewColumnSortMode.NotSortable;
+                col.HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            }
 
             numericPID.DataBindings.Add("Value", _pokemonBindingSource, "PID", true, DataSourceUpdateMode.OnPropertyChanged, 0);
             numericPID.DataBindings.Add("Hexadecimal", checkPIDHex, "Checked", false, DataSourceUpdateMode.OnPropertyChanged, false);
@@ -355,6 +377,11 @@ namespace PKMDS_Save_Editor
                 picType1.DataBindings[0].ReadValue();
             if (picType2.DataBindings.Count != 0)
                 picType2.DataBindings[0].ReadValue();
+        }
+
+        private void dataGridMoves_DataError(object sender, DataGridViewDataErrorEventArgs e)
+        {
+            e.Cancel = !(MessageBox.Show(e.Exception.Message, "Data Error", MessageBoxButtons.RetryCancel, MessageBoxIcon.Error) == System.Windows.Forms.DialogResult.Cancel);
         }
     }
 }
