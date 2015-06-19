@@ -365,9 +365,29 @@ namespace PKMDS_CS
             set
             {
                 if (value.Count >= 1) Move1 = value[0].Value;
-                if (value.Count >= 1) Move2 = value[1].Value;
-                if (value.Count >= 1) Move3 = value[2].Value;
-                if (value.Count >= 1) Move4 = value[3].Value;
+                if (value.Count >= 2) Move2 = value[1].Value;
+                if (value.Count >= 3) Move3 = value[2].Value;
+                if (value.Count >= 4) Move4 = value[3].Value;
+            }
+        }
+
+        public List<MovesObject> RelearnableMoves
+        {
+            get
+            {
+                List<MovesObject> pokemonRelearnableMoves = new List<MovesObject>();
+                pokemonRelearnableMoves.Add(new MovesObject(RelearnMove1));
+                pokemonRelearnableMoves.Add(new MovesObject(RelearnMove2));
+                pokemonRelearnableMoves.Add(new MovesObject(RelearnMove3));
+                pokemonRelearnableMoves.Add(new MovesObject(RelearnMove4));
+                return pokemonRelearnableMoves;
+            }
+            set
+            {
+                if (value.Count >= 1) RelearnMove1 = value[0].Value;
+                if (value.Count >= 2) RelearnMove2 = value[1].Value;
+                if (value.Count >= 3) RelearnMove3 = value[2].Value;
+                if (value.Count >= 4) RelearnMove4 = value[3].Value;
             }
         }
 

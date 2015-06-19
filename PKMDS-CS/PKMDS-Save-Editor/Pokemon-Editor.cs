@@ -32,8 +32,10 @@ namespace PKMDS_Save_Editor
         private readonly BindingSource _pokemonBindingSource = new BindingSource();
         private readonly BindingSource _itemBindingSource = new BindingSource();
         private readonly BindingSource _moveBindingSource = new BindingSource();
+        private readonly BindingSource _relearnableMoveBindingSource = new BindingSource();
         private CurrencyManager _itemCurrencyManger;
         private CurrencyManager _moveCurrencyManger;
+        private CurrencyManager _relearnableMoveCurrencyManger;
 
         public void PopulateForm()
         {
@@ -103,14 +105,18 @@ namespace PKMDS_Save_Editor
             _moveBindingSource.DataSource = tempPokemon.Moves;
             _moveCurrencyManger = _moveBindingSource.CurrencyManager;
             _moveCurrencyManger.Position = 0;
+            _relearnableMoveBindingSource.DataSource = tempPokemon.RelearnableMoves;
+            _relearnableMoveCurrencyManger = _moveBindingSource.CurrencyManager;
+            _relearnableMoveCurrencyManger.Position = 0;
 
             labelMoveFlavorText.DataBindings.Add("Text", _moveBindingSource, "FlavorText", false, DataSourceUpdateMode.Never, string.Empty);
+            labelRelearnableMoveFlavorText.DataBindings.Add("Text", _relearnableMoveBindingSource, "FlavorText", false, DataSourceUpdateMode.Never, string.Empty);
 
             dataGridMoves.DataSource = _moveBindingSource;
+            dataGridRelearnableMoves.DataSource = _relearnableMoveBindingSource;
 
-            if (dataGridMoves.Columns.Contains("Value"))
-                if (dataGridMoves.Columns.Contains("Name"))
-                    dataGridMoves.Columns["Name"].Visible = false;
+            if (dataGridMoves.Columns.Contains("Name"))
+                dataGridMoves.Columns["Name"].Visible = false;
             if (dataGridMoves.Columns.Contains("Type"))
                 dataGridMoves.Columns["Type"].Visible = false;
             if (dataGridMoves.Columns.Contains("TypeImage"))
@@ -120,6 +126,19 @@ namespace PKMDS_Save_Editor
             if (dataGridMoves.Columns.Contains("FlavorText"))
             {
                 dataGridMoves.Columns["FlavorText"].Visible = false;
+            }
+
+            if (dataGridRelearnableMoves.Columns.Contains("Name"))
+                dataGridRelearnableMoves.Columns["Name"].Visible = false;
+            if (dataGridRelearnableMoves.Columns.Contains("Type"))
+                dataGridRelearnableMoves.Columns["Type"].Visible = false;
+            if (dataGridRelearnableMoves.Columns.Contains("TypeImage"))
+                dataGridRelearnableMoves.Columns["TypeImage"].HeaderText = "Type";
+            if (dataGridRelearnableMoves.Columns.Contains("CategoryImage"))
+                dataGridRelearnableMoves.Columns["CategoryImage"].HeaderText = "Category";
+            if (dataGridRelearnableMoves.Columns.Contains("FlavorText"))
+            {
+                dataGridRelearnableMoves.Columns["FlavorText"].Visible = false;
             }
 
             List<MovesObject> MoveList = new List<MovesObject>();
@@ -141,6 +160,20 @@ namespace PKMDS_Save_Editor
             dataGridMoves.Columns.Add(clmn);
 
             dataGridMoves.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+
+            dataGridRelearnableMoves.Columns.Remove("Value");
+            DataGridViewComboBoxColumn rclmn = new DataGridViewComboBoxColumn();
+            rclmn.Name = "Value";
+            rclmn.HeaderText = "Move";
+            rclmn.DataSource = MoveList;
+            rclmn.DataPropertyName = "Value";
+            rclmn.ValueMember = "Value";
+            rclmn.DisplayMember = "Name";
+            rclmn.DisplayIndex = 0;
+            rclmn.DisplayStyle = DataGridViewComboBoxDisplayStyle.Nothing;
+            dataGridRelearnableMoves.Columns.Add(rclmn);
+
+            dataGridRelearnableMoves.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
 
             FormPopulated = true;
         }
