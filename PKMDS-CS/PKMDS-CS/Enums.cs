@@ -5,11 +5,59 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
 using System.Reflection;
+using System.Linq;
 
 #endregion Using
 
 namespace PKMDS_CS
 {
+
+    public static class Lists
+    {
+        private static List<MovesObject> _moveList = new List<MovesObject>();
+        private static List<SpeciesObject> _speciesList = new List<SpeciesObject>();
+        private static List<ItemObject> _itemList = new List<ItemObject>();
+
+        public static List<MovesObject> MoveList
+        {
+            get
+            {
+                if (!_moveList.Any())
+                    foreach (var move in Enum.GetValues(typeof(Moves)).Cast<Moves>().ToArray<Moves>())
+                    {
+                        _moveList.Add(new MovesObject(move));
+                    }
+                return _moveList;
+            }
+        }
+
+        public static List<SpeciesObject> SpeciesList
+        {
+            get
+            {
+                if (!_speciesList.Any())
+                    foreach (var species in Enum.GetValues(typeof(Species)).Cast<Species>().Where(s => s != Species.NoSpecies).ToArray<Species>())
+                    {
+                        _speciesList.Add(new SpeciesObject(species));
+                    }
+                return _speciesList;
+            }
+        }
+
+        public static List<ItemObject> ItemList
+        {
+            get
+            {
+                if (!_itemList.Any())
+                    foreach (var item in Enum.GetValues(typeof(Items)).Cast<Items>().ToArray<Items>())
+                    {
+                        _itemList.Add(new ItemObject(item));
+                    }
+                return _itemList;
+            }
+        }
+    }
+
     public static class Extensions
     {
         internal static List<ushort> BallsToItems = new List<ushort>

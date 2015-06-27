@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
+using System.Reflection;
 using System.Windows.Forms;
 
 #endregion Using
@@ -16,6 +17,8 @@ namespace PKMDS_Save_Editor
         private const string veekundb = @"..\..\..\..\PKMDS-DB\veekun-pokedex.sqlite";
         private const string xysavfile = @"..\..\..\files\sav\PokemonXYDecrypted.sav";
         private static Pokemon_Editor_Form PokemonEditorForm = new Pokemon_Editor_Form();
+        private static Form reportForm = new Form();
+        private static DataGridView dgPokemon = new DataGridView();
         private static readonly Color SelectionColor = System.Drawing.Color.FromArgb(127, 255, 165, 0);
         private readonly BindingSource _boxesBindingSource = new BindingSource();
         private readonly BindingSource _pokemonBindingSource = new BindingSource();
@@ -70,6 +73,7 @@ namespace PKMDS_Save_Editor
             comboBoxes.DataSource = _boxenamesBindingSource;
             comboBoxes.DataBindings.Add("SelectedIndex", _sav, "CurrentBox", false, DataSourceUpdateMode.OnPropertyChanged, 0);
             textBoxName.DataBindings.Add("Text", _boxenamesBindingSource, "Name", false, DataSourceUpdateMode.OnValidation, "");
+            SetReportForm();
         }
 
         private void slot_MouseLeave(object sender, EventArgs e)
@@ -99,21 +103,205 @@ namespace PKMDS_Save_Editor
         {
             _sav = StructUtils.RawDeserialize<XYSav>(saveFileName);
             //_sav = StructUtils.RawDeserialize<ORASSav>(saveFileName);
-            foreach (var pokemon in _sav.PCStorageSystem.Boxes.SelectMany(box => box.Pokemon))
-            {
-                PokePRNG.DecryptPokemon(pokemon);
-            }
+            _sav.PCStorageSystem.Boxes.SelectMany(box => box.Pokemon).ToList().ForEach(pokemon => PokePRNG.DecryptPokemon(pokemon));
             comboBoxes.Items.Clear();
             comboBoxes.DataBindings.Clear();
             textBoxName.DataBindings.Clear();
+            dgPokemon.DataSource = _sav.PCStorageSystem.Boxes.SelectMany(box => box.Pokemon).Where(pokemon => pokemon.Species != Species.NoSpecies).ToArray();
+        }
+
+        private void SetReportForm()
+        {
+            dgPokemon.Dock = DockStyle.Fill;
+            dgPokemon.AutoGenerateColumns = false;
+
+            dgPokemon.Columns.Add(new DataGridViewComboBoxColumn()
+            {
+                Name = "Species",
+                HeaderText = "Species",
+                DataSource = Lists.SpeciesList,
+                DataPropertyName = "Species",
+                ValueMember = "Value",
+                DisplayMember = "Name",
+                DisplayStyle = DataGridViewComboBoxDisplayStyle.Nothing
+            });
+
+            dgPokemon.Columns.Add(new DataGridViewTextBoxColumn()
+            {
+                Name = "Level",
+                HeaderText = "Level",
+                DataPropertyName = "Level",
+                ValueType = typeof(int),
+                Tag = "numeric"
+            });
+
+            dgPokemon.Columns.Add(new DataGridViewComboBoxColumn()
+            {
+                Name = "HeldItem",
+                HeaderText = "Held Item",
+                DataSource = Lists.ItemList,
+                DataPropertyName = "HeldItem",
+                ValueMember = "Value",
+                DisplayMember = "Name",
+                DisplayStyle = DataGridViewComboBoxDisplayStyle.Nothing
+            });
+
+            dgPokemon.Columns.Add(new DataGridViewComboBoxColumn()
+            {
+                Name = "Move1",
+                HeaderText = "Move 1",
+                DataSource = Lists.MoveList,
+                DataPropertyName = "Move1",
+                ValueMember = "Value",
+                DisplayMember = "Name",
+                DisplayStyle = DataGridViewComboBoxDisplayStyle.Nothing
+            });
+
+            dgPokemon.Columns.Add(new DataGridViewComboBoxColumn()
+            {
+                Name = "Move2",
+                HeaderText = "Move 2",
+                DataSource = Lists.MoveList,
+                DataPropertyName = "Move2",
+                ValueMember = "Value",
+                DisplayMember = "Name",
+                DisplayStyle = DataGridViewComboBoxDisplayStyle.Nothing
+            });
+
+            dgPokemon.Columns.Add(new DataGridViewComboBoxColumn()
+            {
+                Name = "Move3",
+                HeaderText = "Move 3",
+                DataSource = Lists.MoveList,
+                DataPropertyName = "Move3",
+                ValueMember = "Value",
+                DisplayMember = "Name",
+                DisplayStyle = DataGridViewComboBoxDisplayStyle.Nothing
+            });
+
+            dgPokemon.Columns.Add(new DataGridViewComboBoxColumn()
+            {
+                Name = "Move4",
+                HeaderText = "Move 4",
+                DataSource = Lists.MoveList,
+                DataPropertyName = "Move4",
+                ValueMember = "Value",
+                DisplayMember = "Name",
+                DisplayStyle = DataGridViewComboBoxDisplayStyle.Nothing,
+            });
+
+            dgPokemon.Columns.Add(new DataGridViewTextBoxColumn()
+            {
+                Name = "HP",
+                HeaderText = "HP",
+                DataPropertyName = "HP",
+                ReadOnly = true
+            });
+
+            dgPokemon.Columns.Add(new DataGridViewTextBoxColumn()
+            {
+                Name = "Attack",
+                HeaderText = "Attack",
+                DataPropertyName = "Attack",
+                ReadOnly = true
+            });
+
+            dgPokemon.Columns.Add(new DataGridViewTextBoxColumn()
+            {
+                Name = "Defense",
+                HeaderText = "Defense",
+                DataPropertyName = "Defense",
+                ReadOnly = true
+            });
+
+            dgPokemon.Columns.Add(new DataGridViewTextBoxColumn()
+            {
+                Name = "SpAttack",
+                HeaderText = "Special Attack",
+                DataPropertyName = "SpecialAttack",
+                ReadOnly = true
+            });
+
+            dgPokemon.Columns.Add(new DataGridViewTextBoxColumn()
+            {
+                Name = "SpDefense",
+                HeaderText = "Special Defense",
+                DataPropertyName = "SpecialDefense",
+                ReadOnly = true
+            });
+
+            dgPokemon.Columns.Add(new DataGridViewTextBoxColumn()
+            {
+                Name = "Speed",
+                HeaderText = "Speed",
+                DataPropertyName = "Speed",
+                ReadOnly = true
+            });
+
+            foreach (DataGridViewColumn col in dgPokemon.Columns)
+            {
+                col.SortMode = DataGridViewColumnSortMode.NotSortable;
+            }
+            dgPokemon.RowHeadersVisible = false;
+            reportForm.StartPosition = FormStartPosition.CenterParent;
+            reportForm.Size = new Size(800, 600);
+            typeof(DataGridView).InvokeMember("DoubleBuffered", BindingFlags.NonPublic |
+            BindingFlags.Instance | BindingFlags.SetProperty, null,
+            dgPokemon, new object[] { true });
+            dgPokemon.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dgPokemon.ClipboardCopyMode = DataGridViewClipboardCopyMode.EnableAlwaysIncludeHeaderText;
+            dgPokemon.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(224, 224, 224);
+            dgPokemon.DefaultCellStyle.SelectionBackColor = Color.Wheat;
+            dgPokemon.DefaultCellStyle.SelectionForeColor = SystemColors.ControlText;
+            dgPokemon.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            reportForm.Controls.Add(dgPokemon);
+            reportForm.FormClosing += ReportForm_FormClosing;
+            dgPokemon.DataError += DgPokemon_DataError;
+            reportForm.Load += ReportForm_Load;
+            dgPokemon.EditingControlShowing += DgPokemon_EditingControlShowing;
+        }
+
+        private void DgPokemon_EditingControlShowing(object sender, DataGridViewEditingControlShowingEventArgs e)
+        {
+            e.Control.KeyPress -= new KeyPressEventHandler(NumericColumn_KeyPress);
+            if (dgPokemon.Columns[dgPokemon.CurrentCell.ColumnIndex].Tag != null &&
+                dgPokemon.Columns[dgPokemon.CurrentCell.ColumnIndex].Tag.ToString() == "numeric") //Desired Column
+            {
+                TextBox tb = e.Control as TextBox;
+                if (tb != null)
+                {
+                    tb.KeyPress += new KeyPressEventHandler(NumericColumn_KeyPress);
+                }
+            }
+        }
+
+        private void NumericColumn_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void ReportForm_Load(object sender, EventArgs e)
+        {
+            dgPokemon.AutoResizeColumns(DataGridViewAutoSizeColumnsMode.DisplayedCells);
+        }
+
+        private void DgPokemon_DataError(object sender, DataGridViewDataErrorEventArgs e)
+        {
+            if (e.Exception != null)
+                e.Cancel = !(MessageBox.Show(e.Exception.Message, "Data Error", MessageBoxButtons.RetryCancel, MessageBoxIcon.Error) == System.Windows.Forms.DialogResult.Cancel);
+        }
+
+        private void ReportForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            dgPokemon.EndEdit();
         }
 
         private void WriteSave(string saveFileName)
         {
-            foreach (var pokemon in _sav.PCStorageSystem.Boxes.SelectMany(box => box.Pokemon))
-            {
-                PokePRNG.EncryptPokemon(pokemon);
-            }
+            _sav.PCStorageSystem.Boxes.SelectMany(box => box.Pokemon).ToList().ForEach(pokemon => PokePRNG.EncryptPokemon(pokemon));
             StructUtils.RawSerialize(_sav, saveFileName);
         }
 
@@ -161,6 +349,11 @@ namespace PKMDS_Save_Editor
                     pbSlots[slot].DataBindings.Add("Image", _pokemonBindingSource[slot], "BoxIcon", true, DataSourceUpdateMode.Never, null);
                 }
             }
+        }
+
+        private void viewAllPokemonToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            reportForm.ShowDialog();
         }
     }
 }

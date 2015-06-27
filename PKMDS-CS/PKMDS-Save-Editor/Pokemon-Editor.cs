@@ -39,25 +39,15 @@ namespace PKMDS_Save_Editor
         {
             if (FormPopulated) return;
 
-            List<SpeciesObject> SpeciesList = new List<SpeciesObject>();
-            foreach (var species in Enum.GetValues(typeof(Species)).Cast<Species>().Where(s => s != Species.NoSpecies).ToArray<Species>())
-            {
-                SpeciesList.Add(new SpeciesObject(species));
-            }
-            speciesComboBox.DataSource = SpeciesList;
+            speciesComboBox.DataSource = Lists.SpeciesList;
             speciesComboBox.ValueMember = "Value";
             speciesComboBox.DisplayMember = "Name";
 
-            List<ItemObject> ItemList = new List<ItemObject>();
-            foreach (var item in Enum.GetValues(typeof(Items)).Cast<Items>().ToArray<Items>())
-            {
-                ItemList.Add(new ItemObject(item));
-            }
-            _itemBindingSource.DataSource = ItemList;
+            _itemBindingSource.DataSource = Lists.ItemList;
             _itemCurrencyManger = _itemBindingSource.CurrencyManager;
             _itemCurrencyManger.Position = 0;
 
-            itemComboBox.DataSource = ItemList;
+            itemComboBox.DataSource = Lists.ItemList;
             itemComboBox.ValueMember = "Value";
             itemComboBox.DisplayMember = "Name";
 
@@ -147,17 +137,12 @@ namespace PKMDS_Save_Editor
             if (dataGridRelearnableMoves.Columns.Contains("MaxPP"))
                 dataGridRelearnableMoves.Columns["MaxPP"].Visible = false;
 
-            List<MovesObject> MoveList = new List<MovesObject>();
-            foreach (var move in Enum.GetValues(typeof(Moves)).Cast<Moves>().ToArray<Moves>())
-            {
-                MoveList.Add(new MovesObject(move));
-            }
 
             dataGridMoves.Columns.Remove("Value");
             DataGridViewComboBoxColumn clmn = new DataGridViewComboBoxColumn();
             clmn.Name = "Value";
             clmn.HeaderText = "Move";
-            clmn.DataSource = MoveList;
+            clmn.DataSource = Lists.MoveList;
             clmn.DataPropertyName = "Value";
             clmn.ValueMember = "Value";
             clmn.DisplayMember = "Name";
@@ -169,7 +154,7 @@ namespace PKMDS_Save_Editor
             DataGridViewComboBoxColumn rclmn = new DataGridViewComboBoxColumn();
             rclmn.Name = "Value";
             rclmn.HeaderText = "Move";
-            rclmn.DataSource = MoveList;
+            rclmn.DataSource = Lists.MoveList;
             rclmn.DataPropertyName = "Value";
             rclmn.ValueMember = "Value";
             rclmn.DisplayMember = "Name";

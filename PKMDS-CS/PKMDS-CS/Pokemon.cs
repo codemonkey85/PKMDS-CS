@@ -1240,7 +1240,11 @@ namespace PKMDS_CS
         public int Level
         {
             get { return DBTools.GetLevel(species, exp); }
-            set { exp = DBTools.GetEXPAtLevel(species, value); }
+            set
+            {
+                if (value < 1 || value > 100) throw new Exception(string.Format("{0}'s level must be between 1 and 100.", this));
+                exp = DBTools.GetEXPAtLevel(species, value);
+            }
         }
 
         [DisplayName("Form Name")]
