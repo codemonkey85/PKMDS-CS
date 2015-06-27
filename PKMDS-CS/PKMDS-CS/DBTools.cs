@@ -198,7 +198,7 @@ namespace PKMDS_CS
                 {
                 }
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 return GetPokemonType(Species, 0, TypeSlot);
             }

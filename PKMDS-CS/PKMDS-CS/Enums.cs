@@ -5419,8 +5419,8 @@ namespace PKMDS_CS
         [Description("Bicycle")]
         Bicycle = 0x01C2,
 
-        [Description("Bike")]
-        Bike = 0x01C2,
+        //[Description("Bike")]
+        //Bike = 0x01C2,
 
         [Description("Suite Key")]
         Suite_Key = 0x01C3,
@@ -8371,7 +8371,7 @@ namespace PKMDS_CS
 
         public Image Image
         {
-            get { return Value == null ? null : Images.GetItemImage((ushort)Value); }
+            get { return Images.GetItemImage((ushort)Value); }
         }
 
         public string Name
@@ -8408,6 +8408,11 @@ namespace PKMDS_CS
             }
 
             return Value == i;
+        }
+
+        public override int GetHashCode()
+        {
+            return (int)value;
         }
 
         public static bool operator ==(ItemObject a, Items b)
