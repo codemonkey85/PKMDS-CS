@@ -28,12 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             this.buttonOk = new System.Windows.Forms.Button();
             this.buttonApply = new System.Windows.Forms.Button();
             this.buttonCancel = new System.Windows.Forms.Button();
@@ -105,6 +105,8 @@
             this.radioOTMale = new System.Windows.Forms.RadioButton();
             this.radioOTFemale = new System.Windows.Forms.RadioButton();
             this.grouOT = new System.Windows.Forms.GroupBox();
+            this.comboNature = new System.Windows.Forms.ComboBox();
+            this.groupNature = new System.Windows.Forms.GroupBox();
             this.tablelayoutButtons.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbSprite)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbItemImage)).BeginInit();
@@ -138,6 +140,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.picType2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbPentagon)).BeginInit();
             this.grouOT.SuspendLayout();
+            this.groupNature.SuspendLayout();
             this.SuspendLayout();
             // 
             // buttonOk
@@ -283,13 +286,14 @@
             // 
             // statsTabPage
             // 
+            this.statsTabPage.Controls.Add(this.groupNature);
             this.statsTabPage.Controls.Add(this.groupEncryptionConstant);
             this.statsTabPage.Controls.Add(this.groupPID);
             this.statsTabPage.Controls.Add(this.tableLayoutStats);
             this.statsTabPage.Location = new System.Drawing.Point(4, 22);
             this.statsTabPage.Name = "statsTabPage";
             this.statsTabPage.Padding = new System.Windows.Forms.Padding(3);
-            this.statsTabPage.Size = new System.Drawing.Size(595, 468);
+            this.statsTabPage.Size = new System.Drawing.Size(499, 468);
             this.statsTabPage.TabIndex = 0;
             this.statsTabPage.Text = "Stats";
             this.statsTabPage.UseVisualStyleBackColor = true;
@@ -298,10 +302,10 @@
             // 
             this.groupEncryptionConstant.Controls.Add(this.numericEncryptionConstant);
             this.groupEncryptionConstant.Controls.Add(this.checkEncryptionConstantHex);
-            this.groupEncryptionConstant.Location = new System.Drawing.Point(200, 295);
+            this.groupEncryptionConstant.Location = new System.Drawing.Point(200, 343);
             this.groupEncryptionConstant.Name = "groupEncryptionConstant";
             this.groupEncryptionConstant.Size = new System.Drawing.Size(188, 45);
-            this.groupEncryptionConstant.TabIndex = 4;
+            this.groupEncryptionConstant.TabIndex = 3;
             this.groupEncryptionConstant.TabStop = false;
             this.groupEncryptionConstant.Text = "Encryption Constant";
             this.groupEncryptionConstant.Visible = false;
@@ -318,7 +322,7 @@
             0});
             this.numericEncryptionConstant.Name = "numericEncryptionConstant";
             this.numericEncryptionConstant.Size = new System.Drawing.Size(125, 20);
-            this.numericEncryptionConstant.TabIndex = 1;
+            this.numericEncryptionConstant.TabIndex = 0;
             // 
             // checkEncryptionConstantHex
             // 
@@ -327,7 +331,7 @@
             this.checkEncryptionConstantHex.Location = new System.Drawing.Point(137, 22);
             this.checkEncryptionConstantHex.Name = "checkEncryptionConstantHex";
             this.checkEncryptionConstantHex.Size = new System.Drawing.Size(45, 17);
-            this.checkEncryptionConstantHex.TabIndex = 2;
+            this.checkEncryptionConstantHex.TabIndex = 1;
             this.checkEncryptionConstantHex.Text = "Hex";
             this.checkEncryptionConstantHex.UseVisualStyleBackColor = true;
             // 
@@ -335,10 +339,10 @@
             // 
             this.groupPID.Controls.Add(this.numericPID);
             this.groupPID.Controls.Add(this.checkPIDHex);
-            this.groupPID.Location = new System.Drawing.Point(6, 295);
+            this.groupPID.Location = new System.Drawing.Point(6, 343);
             this.groupPID.Name = "groupPID";
             this.groupPID.Size = new System.Drawing.Size(188, 45);
-            this.groupPID.TabIndex = 3;
+            this.groupPID.TabIndex = 2;
             this.groupPID.TabStop = false;
             this.groupPID.Text = "Personality Value";
             // 
@@ -354,7 +358,7 @@
             0});
             this.numericPID.Name = "numericPID";
             this.numericPID.Size = new System.Drawing.Size(125, 20);
-            this.numericPID.TabIndex = 1;
+            this.numericPID.TabIndex = 0;
             // 
             // checkPIDHex
             // 
@@ -363,7 +367,7 @@
             this.checkPIDHex.Location = new System.Drawing.Point(137, 22);
             this.checkPIDHex.Name = "checkPIDHex";
             this.checkPIDHex.Size = new System.Drawing.Size(45, 17);
-            this.checkPIDHex.TabIndex = 2;
+            this.checkPIDHex.TabIndex = 1;
             this.checkPIDHex.Text = "Hex";
             this.checkPIDHex.UseVisualStyleBackColor = true;
             // 
@@ -461,7 +465,7 @@
             this.labelAttack.Location = new System.Drawing.Point(11, 93);
             this.labelAttack.Name = "labelAttack";
             this.labelAttack.Size = new System.Drawing.Size(38, 13);
-            this.labelAttack.TabIndex = 4;
+            this.labelAttack.TabIndex = 7;
             this.labelAttack.Text = "Attack";
             // 
             // labelDefense
@@ -471,7 +475,7 @@
             this.labelDefense.Location = new System.Drawing.Point(6, 133);
             this.labelDefense.Name = "labelDefense";
             this.labelDefense.Size = new System.Drawing.Size(47, 13);
-            this.labelDefense.TabIndex = 5;
+            this.labelDefense.TabIndex = 11;
             this.labelDefense.Text = "Defense";
             // 
             // labelSpAtk
@@ -481,7 +485,7 @@
             this.labelSpAtk.Location = new System.Drawing.Point(10, 173);
             this.labelSpAtk.Name = "labelSpAtk";
             this.labelSpAtk.Size = new System.Drawing.Size(39, 13);
-            this.labelSpAtk.TabIndex = 6;
+            this.labelSpAtk.TabIndex = 15;
             this.labelSpAtk.Text = "Sp Atk";
             // 
             // labelSpDef
@@ -491,7 +495,7 @@
             this.labelSpDef.Location = new System.Drawing.Point(10, 213);
             this.labelSpDef.Name = "labelSpDef";
             this.labelSpDef.Size = new System.Drawing.Size(40, 13);
-            this.labelSpDef.TabIndex = 7;
+            this.labelSpDef.TabIndex = 19;
             this.labelSpDef.Text = "Sp Def";
             // 
             // labelSpeed
@@ -501,7 +505,7 @@
             this.labelSpeed.Location = new System.Drawing.Point(11, 255);
             this.labelSpeed.Name = "labelSpeed";
             this.labelSpeed.Size = new System.Drawing.Size(38, 13);
-            this.labelSpeed.TabIndex = 8;
+            this.labelSpeed.TabIndex = 23;
             this.labelSpeed.Text = "Speed";
             // 
             // numHPIV
@@ -515,7 +519,7 @@
             0});
             this.numHPIV.Name = "numHPIV";
             this.numHPIV.Size = new System.Drawing.Size(60, 20);
-            this.numHPIV.TabIndex = 9;
+            this.numHPIV.TabIndex = 4;
             this.numHPIV.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // numAttackIV
@@ -529,7 +533,7 @@
             0});
             this.numAttackIV.Name = "numAttackIV";
             this.numAttackIV.Size = new System.Drawing.Size(60, 20);
-            this.numAttackIV.TabIndex = 10;
+            this.numAttackIV.TabIndex = 8;
             this.numAttackIV.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // numDefenseIV
@@ -543,7 +547,7 @@
             0});
             this.numDefenseIV.Name = "numDefenseIV";
             this.numDefenseIV.Size = new System.Drawing.Size(60, 20);
-            this.numDefenseIV.TabIndex = 11;
+            this.numDefenseIV.TabIndex = 12;
             this.numDefenseIV.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // numSpAtkIV
@@ -557,7 +561,7 @@
             0});
             this.numSpAtkIV.Name = "numSpAtkIV";
             this.numSpAtkIV.Size = new System.Drawing.Size(60, 20);
-            this.numSpAtkIV.TabIndex = 12;
+            this.numSpAtkIV.TabIndex = 16;
             this.numSpAtkIV.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // numSpDefIV
@@ -571,7 +575,7 @@
             0});
             this.numSpDefIV.Name = "numSpDefIV";
             this.numSpDefIV.Size = new System.Drawing.Size(60, 20);
-            this.numSpDefIV.TabIndex = 13;
+            this.numSpDefIV.TabIndex = 20;
             this.numSpDefIV.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // numSpeedIV
@@ -585,7 +589,7 @@
             0});
             this.numSpeedIV.Name = "numSpeedIV";
             this.numSpeedIV.Size = new System.Drawing.Size(60, 20);
-            this.numSpeedIV.TabIndex = 14;
+            this.numSpeedIV.TabIndex = 24;
             this.numSpeedIV.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // numHPEV
@@ -599,7 +603,7 @@
             0});
             this.numHPEV.Name = "numHPEV";
             this.numHPEV.Size = new System.Drawing.Size(60, 20);
-            this.numHPEV.TabIndex = 15;
+            this.numHPEV.TabIndex = 5;
             this.numHPEV.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // numAttackEV
@@ -613,7 +617,7 @@
             0});
             this.numAttackEV.Name = "numAttackEV";
             this.numAttackEV.Size = new System.Drawing.Size(60, 20);
-            this.numAttackEV.TabIndex = 16;
+            this.numAttackEV.TabIndex = 9;
             this.numAttackEV.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // numDefenseEV
@@ -627,7 +631,7 @@
             0});
             this.numDefenseEV.Name = "numDefenseEV";
             this.numDefenseEV.Size = new System.Drawing.Size(60, 20);
-            this.numDefenseEV.TabIndex = 17;
+            this.numDefenseEV.TabIndex = 13;
             this.numDefenseEV.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // numSpAtkEV
@@ -641,7 +645,7 @@
             0});
             this.numSpAtkEV.Name = "numSpAtkEV";
             this.numSpAtkEV.Size = new System.Drawing.Size(60, 20);
-            this.numSpAtkEV.TabIndex = 18;
+            this.numSpAtkEV.TabIndex = 17;
             this.numSpAtkEV.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // numSpDefEV
@@ -655,7 +659,7 @@
             0});
             this.numSpDefEV.Name = "numSpDefEV";
             this.numSpDefEV.Size = new System.Drawing.Size(60, 20);
-            this.numSpDefEV.TabIndex = 19;
+            this.numSpDefEV.TabIndex = 21;
             this.numSpDefEV.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // numSpeedEV
@@ -669,7 +673,7 @@
             0});
             this.numSpeedEV.Name = "numSpeedEV";
             this.numSpeedEV.Size = new System.Drawing.Size(60, 20);
-            this.numSpeedEV.TabIndex = 20;
+            this.numSpeedEV.TabIndex = 25;
             this.numSpeedEV.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textHP
@@ -679,7 +683,7 @@
             this.textHP.Name = "textHP";
             this.textHP.ReadOnly = true;
             this.textHP.Size = new System.Drawing.Size(60, 20);
-            this.textHP.TabIndex = 21;
+            this.textHP.TabIndex = 6;
             this.textHP.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textAttack
@@ -689,7 +693,7 @@
             this.textAttack.Name = "textAttack";
             this.textAttack.ReadOnly = true;
             this.textAttack.Size = new System.Drawing.Size(60, 20);
-            this.textAttack.TabIndex = 22;
+            this.textAttack.TabIndex = 10;
             this.textAttack.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textDefense
@@ -699,7 +703,7 @@
             this.textDefense.Name = "textDefense";
             this.textDefense.ReadOnly = true;
             this.textDefense.Size = new System.Drawing.Size(60, 20);
-            this.textDefense.TabIndex = 23;
+            this.textDefense.TabIndex = 14;
             this.textDefense.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textSpAtk
@@ -709,7 +713,7 @@
             this.textSpAtk.Name = "textSpAtk";
             this.textSpAtk.ReadOnly = true;
             this.textSpAtk.Size = new System.Drawing.Size(60, 20);
-            this.textSpAtk.TabIndex = 24;
+            this.textSpAtk.TabIndex = 18;
             this.textSpAtk.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textSpDef
@@ -719,7 +723,7 @@
             this.textSpDef.Name = "textSpDef";
             this.textSpDef.ReadOnly = true;
             this.textSpDef.Size = new System.Drawing.Size(60, 20);
-            this.textSpDef.TabIndex = 25;
+            this.textSpDef.TabIndex = 22;
             this.textSpDef.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textSpeed
@@ -771,28 +775,28 @@
             this.dataGridRelearnableMoves.AllowUserToDeleteRows = false;
             this.dataGridRelearnableMoves.AllowUserToResizeColumns = false;
             this.dataGridRelearnableMoves.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.dataGridRelearnableMoves.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dataGridRelearnableMoves.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
             this.dataGridRelearnableMoves.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dataGridRelearnableMoves.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dataGridRelearnableMoves.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.EnableAlwaysIncludeHeaderText;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridRelearnableMoves.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridRelearnableMoves.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.dataGridRelearnableMoves.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Wheat;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridRelearnableMoves.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.Wheat;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridRelearnableMoves.DefaultCellStyle = dataGridViewCellStyle9;
             this.dataGridRelearnableMoves.Dock = System.Windows.Forms.DockStyle.Top;
             this.dataGridRelearnableMoves.Location = new System.Drawing.Point(3, 16);
             this.dataGridRelearnableMoves.Name = "dataGridRelearnableMoves";
@@ -829,28 +833,28 @@
             this.dataGridMoves.AllowUserToDeleteRows = false;
             this.dataGridMoves.AllowUserToResizeColumns = false;
             this.dataGridMoves.AllowUserToResizeRows = false;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.dataGridMoves.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dataGridMoves.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
             this.dataGridMoves.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dataGridMoves.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dataGridMoves.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.EnableAlwaysIncludeHeaderText;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridMoves.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridMoves.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
             this.dataGridMoves.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.Wheat;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridMoves.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.Wheat;
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridMoves.DefaultCellStyle = dataGridViewCellStyle12;
             this.dataGridMoves.Dock = System.Windows.Forms.DockStyle.Top;
             this.dataGridMoves.Location = new System.Drawing.Point(3, 16);
             this.dataGridMoves.Name = "dataGridMoves";
@@ -864,7 +868,7 @@
             // 
             this.historyTabPage.Location = new System.Drawing.Point(4, 22);
             this.historyTabPage.Name = "historyTabPage";
-            this.historyTabPage.Size = new System.Drawing.Size(610, 468);
+            this.historyTabPage.Size = new System.Drawing.Size(499, 468);
             this.historyTabPage.TabIndex = 2;
             this.historyTabPage.Text = "History";
             this.historyTabPage.UseVisualStyleBackColor = true;
@@ -873,7 +877,7 @@
             // 
             this.contestTabPage.Location = new System.Drawing.Point(4, 22);
             this.contestTabPage.Name = "contestTabPage";
-            this.contestTabPage.Size = new System.Drawing.Size(610, 468);
+            this.contestTabPage.Size = new System.Drawing.Size(499, 468);
             this.contestTabPage.TabIndex = 4;
             this.contestTabPage.Text = "Contest";
             this.contestTabPage.UseVisualStyleBackColor = true;
@@ -882,7 +886,7 @@
             // 
             this.ribbonsTabPage.Location = new System.Drawing.Point(4, 22);
             this.ribbonsTabPage.Name = "ribbonsTabPage";
-            this.ribbonsTabPage.Size = new System.Drawing.Size(610, 468);
+            this.ribbonsTabPage.Size = new System.Drawing.Size(499, 468);
             this.ribbonsTabPage.TabIndex = 3;
             this.ribbonsTabPage.Text = "Ribbons";
             this.ribbonsTabPage.UseVisualStyleBackColor = true;
@@ -1043,6 +1047,25 @@
             this.grouOT.TabStop = false;
             this.grouOT.Text = "Original Trainer";
             // 
+            // comboNature
+            // 
+            this.comboNature.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.comboNature.FormattingEnabled = true;
+            this.comboNature.Location = new System.Drawing.Point(3, 16);
+            this.comboNature.Name = "comboNature";
+            this.comboNature.Size = new System.Drawing.Size(182, 21);
+            this.comboNature.TabIndex = 0;
+            // 
+            // groupNature
+            // 
+            this.groupNature.Controls.Add(this.comboNature);
+            this.groupNature.Location = new System.Drawing.Point(6, 295);
+            this.groupNature.Name = "groupNature";
+            this.groupNature.Size = new System.Drawing.Size(188, 42);
+            this.groupNature.TabIndex = 1;
+            this.groupNature.TabStop = false;
+            this.groupNature.Text = "Nature";
+            // 
             // Pokemon_Editor_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1115,6 +1138,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbPentagon)).EndInit();
             this.grouOT.ResumeLayout(false);
             this.grouOT.PerformLayout();
+            this.groupNature.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1193,5 +1217,7 @@
         private System.Windows.Forms.GroupBox groupEncryptionConstant;
         private System.Windows.Forms.NumericUpDown numericEncryptionConstant;
         private System.Windows.Forms.CheckBox checkEncryptionConstantHex;
+        private System.Windows.Forms.GroupBox groupNature;
+        private System.Windows.Forms.ComboBox comboNature;
     }
 }

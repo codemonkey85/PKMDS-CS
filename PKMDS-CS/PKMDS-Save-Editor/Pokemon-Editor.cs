@@ -66,6 +66,8 @@ namespace PKMDS_Save_Editor
             picType1.DataBindings.Add("Image", _pokemonBindingSource, "Type1.Image", true, DataSourceUpdateMode.Never, null);
             picType2.DataBindings.Add("Image", _pokemonBindingSource, "Type2.Image", true, DataSourceUpdateMode.Never, null);
             picType2.DataBindings[0].Format += Type_2_Image_Format;
+            comboNature.DataSource = Enum.GetValues(typeof(Natures)).Cast<Natures>().ToArray<Natures>();
+            comboNature.DataBindings.Add("SelectedItem", _pokemonBindingSource, "Nature", true, DataSourceUpdateMode.OnPropertyChanged, -1);
 
             DBTools.GetPokemonForms();
 
@@ -136,7 +138,6 @@ namespace PKMDS_Save_Editor
                 dataGridRelearnableMoves.Columns["PPUps"].Visible = false;
             if (dataGridRelearnableMoves.Columns.Contains("MaxPP"))
                 dataGridRelearnableMoves.Columns["MaxPP"].Visible = false;
-
 
             dataGridMoves.Columns.Remove("Value");
             DataGridViewComboBoxColumn clmn = new DataGridViewComboBoxColumn();

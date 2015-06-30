@@ -112,8 +112,26 @@ namespace PKMDS_Save_Editor
 
         private void SetReportForm()
         {
+            // Is Egg?
+            // Pokerus
+            // Kalos marker
+            // Markings
+            // Gender
+            // Ability
+            // Types
+            // Ribbon count
+
             dgPokemon.Dock = DockStyle.Fill;
             dgPokemon.AutoGenerateColumns = false;
+
+            dgPokemon.Columns.Add(new DataGridViewTextBoxColumn()
+            {
+                Name = "Nickname",
+                HeaderText = "Nickname",
+                DataPropertyName = "Nickname",
+                MaxInputLength = (int)Consts.NameMaxLength,
+                ValueType = typeof(string)
+            });
 
             dgPokemon.Columns.Add(new DataGridViewComboBoxColumn()
             {
@@ -145,6 +163,35 @@ namespace PKMDS_Save_Editor
                 DisplayMember = "Name",
                 DisplayStyle = DataGridViewComboBoxDisplayStyle.Nothing
             });
+
+            dgPokemon.Columns.Add(new DataGridViewComboBoxColumn()
+            {
+                Name = "Nature",
+                HeaderText = "Nature",
+                DataSource = Enum.GetValues(typeof(Natures)).Cast<Natures>().ToArray<Natures>(),
+                DataPropertyName = "Nature",
+                DisplayStyle = DataGridViewComboBoxDisplayStyle.Nothing
+            });
+
+            dgPokemon.Columns.Add(new DataGridViewTextBoxColumn()
+            {
+                Name = "OTName",
+                HeaderText = "Original Trainer",
+                DataPropertyName = "OTName",
+                MaxInputLength = (int)Consts.NameMaxLength,
+                ValueType = typeof(string)
+            });
+
+            dgPokemon.Columns.Add(new DataGridViewTextBoxColumn()
+            {
+                Name = "OTID",
+                HeaderText = "Trainer ID",
+                DataPropertyName = "OTID",
+                ValueType = typeof(int),
+                MaxInputLength = 5,
+                Tag = "numeric"
+            });
+            dgPokemon.Columns["OTID"].DefaultCellStyle.Format = "00000";
 
             dgPokemon.Columns.Add(new DataGridViewComboBoxColumn()
             {
@@ -195,6 +242,7 @@ namespace PKMDS_Save_Editor
                 Name = "HP",
                 HeaderText = "HP",
                 DataPropertyName = "HP",
+                ValueType = typeof(int),
                 ReadOnly = true
             });
 
@@ -203,6 +251,7 @@ namespace PKMDS_Save_Editor
                 Name = "Attack",
                 HeaderText = "Attack",
                 DataPropertyName = "Attack",
+                ValueType = typeof(int),
                 ReadOnly = true
             });
 
@@ -211,6 +260,7 @@ namespace PKMDS_Save_Editor
                 Name = "Defense",
                 HeaderText = "Defense",
                 DataPropertyName = "Defense",
+                ValueType = typeof(int),
                 ReadOnly = true
             });
 
@@ -219,6 +269,7 @@ namespace PKMDS_Save_Editor
                 Name = "SpAttack",
                 HeaderText = "Special Attack",
                 DataPropertyName = "SpecialAttack",
+                ValueType = typeof(int),
                 ReadOnly = true
             });
 
@@ -227,6 +278,7 @@ namespace PKMDS_Save_Editor
                 Name = "SpDefense",
                 HeaderText = "Special Defense",
                 DataPropertyName = "SpecialDefense",
+                ValueType = typeof(int),
                 ReadOnly = true
             });
 
@@ -235,6 +287,7 @@ namespace PKMDS_Save_Editor
                 Name = "Speed",
                 HeaderText = "Speed",
                 DataPropertyName = "Speed",
+                ValueType = typeof(int),
                 ReadOnly = true
             });
 
@@ -257,8 +310,17 @@ namespace PKMDS_Save_Editor
             reportForm.Controls.Add(dgPokemon);
             reportForm.FormClosing += ReportForm_FormClosing;
             dgPokemon.DataError += DgPokemon_DataError;
+            dgPokemon.CellMouseDoubleClick += dgPokemon_CellMouseDoubleClick;
             reportForm.Load += ReportForm_Load;
             dgPokemon.EditingControlShowing += DgPokemon_EditingControlShowing;
+        }
+
+        private void dgPokemon_CellMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            Pokemon pokemon = ((dgPokemon.DataSource as Pokemon[])[e.RowIndex] as Pokemon);
+            PokemonEditorForm.Pokemon = pokemon;
+            PokemonEditorForm.SetForm();
+            PokemonEditorForm.ShowDialog();
         }
 
         private void DgPokemon_EditingControlShowing(object sender, DataGridViewEditingControlShowingEventArgs e)
@@ -297,6 +359,7 @@ namespace PKMDS_Save_Editor
         private void ReportForm_FormClosing(object sender, FormClosingEventArgs e)
         {
             dgPokemon.EndEdit();
+            RefreshBoxSlots();
         }
 
         private void WriteSave(string saveFileName)

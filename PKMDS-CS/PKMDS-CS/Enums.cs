@@ -4,19 +4,19 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
-using System.Reflection;
 using System.Linq;
+using System.Reflection;
 
 #endregion Using
 
 namespace PKMDS_CS
 {
-
     public static class Lists
     {
         private static List<MovesObject> _moveList = new List<MovesObject>();
         private static List<SpeciesObject> _speciesList = new List<SpeciesObject>();
         private static List<ItemObject> _itemList = new List<ItemObject>();
+        private static List<AbilityObject> _abilityList = new List<AbilityObject>();
 
         public static List<MovesObject> MoveList
         {
@@ -54,6 +54,19 @@ namespace PKMDS_CS
                         _itemList.Add(new ItemObject(item));
                     }
                 return _itemList;
+            }
+        }
+
+        public static List<AbilityObject> AbilityList
+        {
+            get
+            {
+                if (!_abilityList.Any())
+                    foreach (var ability in Enum.GetValues(typeof(Abilities)).Cast<Abilities>().ToArray<Abilities>())
+                    {
+                        _abilityList.Add(new AbilityObject(ability));
+                    }
+                return _abilityList;
             }
         }
     }

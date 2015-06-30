@@ -17,7 +17,7 @@ namespace PKMDS_CS
         OTNameOffset = 0xB0
     }
 
-    internal enum Consts
+    public enum Consts
     {
         NameMaxLength = 24
     }
