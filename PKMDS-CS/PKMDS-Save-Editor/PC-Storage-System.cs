@@ -19,7 +19,7 @@ namespace PKMDS_Save_Editor
         private static Pokemon_Editor_Form PokemonEditorForm = new Pokemon_Editor_Form();
         private static Form reportForm = new Form();
         private static DataGridView dgPokemon = new DataGridView();
-        private static readonly Color SelectionColor = System.Drawing.Color.FromArgb(127, 255, 165, 0);
+        private static readonly Color SelectionColor = Color.Wheat;
         private readonly BindingSource _boxesBindingSource = new BindingSource();
         private readonly BindingSource _pokemonBindingSource = new BindingSource();
         private CurrencyManager _boxesCurrencyManager;
@@ -112,17 +112,17 @@ namespace PKMDS_Save_Editor
 
         private void SetReportForm()
         {
+            // Types
+            // Gender
             // Is Egg?
             // Pokerus
             // Kalos marker
             // Markings
-            // Gender
-            // Ability
-            // Types
             // Ribbon count
 
             dgPokemon.Dock = DockStyle.Fill;
             dgPokemon.AutoGenerateColumns = false;
+            dgPokemon.EditMode = DataGridViewEditMode.EditOnKeystrokeOrF2;
 
             dgPokemon.Columns.Add(new DataGridViewTextBoxColumn()
             {
@@ -170,6 +170,17 @@ namespace PKMDS_Save_Editor
                 HeaderText = "Nature",
                 DataSource = Enum.GetValues(typeof(Natures)).Cast<Natures>().ToArray<Natures>(),
                 DataPropertyName = "Nature",
+                DisplayStyle = DataGridViewComboBoxDisplayStyle.Nothing
+            });
+
+            dgPokemon.Columns.Add(new DataGridViewComboBoxColumn()
+            {
+                Name = "Ability",
+                HeaderText = "Ability",
+                DataSource = Lists.AbilityList,
+                DataPropertyName = "Ability",
+                ValueMember = "Value",
+                DisplayMember = "Name",
                 DisplayStyle = DataGridViewComboBoxDisplayStyle.Nothing
             });
 
@@ -304,7 +315,7 @@ namespace PKMDS_Save_Editor
             dgPokemon.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dgPokemon.ClipboardCopyMode = DataGridViewClipboardCopyMode.EnableAlwaysIncludeHeaderText;
             dgPokemon.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(224, 224, 224);
-            dgPokemon.DefaultCellStyle.SelectionBackColor = Color.Wheat;
+            dgPokemon.DefaultCellStyle.SelectionBackColor = SelectionColor;
             dgPokemon.DefaultCellStyle.SelectionForeColor = SystemColors.ControlText;
             dgPokemon.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
             reportForm.Controls.Add(dgPokemon);
