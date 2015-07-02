@@ -57,7 +57,7 @@ namespace PKMDS_Save_Editor
             textOTName.DataBindings.Add("Text", _pokemonBindingSource, "OTName", false, DataSourceUpdateMode.OnValidation, string.Empty);
             genderPictureBox.DataBindings.Add("Image", _pokemonBindingSource, "GenderIcon", true, DataSourceUpdateMode.Never, null);
             pbItemImage.DataBindings.Add("Image", _itemBindingSource, "Image", true, DataSourceUpdateMode.Never, null);
-            pbSprite.DataBindings.Add("Image", _pokemonBindingSource, "BoxIcon", true, DataSourceUpdateMode.Never, null);
+            pbSprite.DataBindings.Add("Image", _pokemonBindingSource, "BoxIconEgg", true, DataSourceUpdateMode.Never, null);
             speciesComboBox.DataBindings.Add("SelectedValue", tempPokemon, "Species", false, DataSourceUpdateMode.OnPropertyChanged, Species.NoSpecies);
             itemComboBox.DataBindings.Add("SelectedValue", tempPokemon, "HeldItem", false, DataSourceUpdateMode.OnPropertyChanged, Items.NoItem);
             textNickname.DataBindings.Add("Text", _pokemonBindingSource, "Nickname", false, DataSourceUpdateMode.OnValidation, "");

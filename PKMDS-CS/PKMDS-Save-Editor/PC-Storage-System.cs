@@ -63,7 +63,7 @@ namespace PKMDS_Save_Editor
                     SizeMode = PictureBoxSizeMode.CenterImage,
                     BorderStyle = BorderStyle.None
                 });
-                pbSlots[slot].DataBindings.Add("Image", _pokemonBindingSource[slot], "BoxIcon", true, DataSourceUpdateMode.Never, null);
+                pbSlots[slot].DataBindings.Add("Image", _pokemonBindingSource[slot], "BoxIconEgg", true, DataSourceUpdateMode.Never, null);
                 pbSlots[slot].DoubleClick += slot_DoubleClick;
                 pbSlots[slot].MouseEnter += slot_MouseEnter;
                 pbSlots[slot].MouseLeave += slot_MouseLeave;
@@ -114,7 +114,6 @@ namespace PKMDS_Save_Editor
         {
             // Types
             // Gender
-            // Is Egg?
             // Pokerus
             // Kalos marker
             // Markings
@@ -123,6 +122,13 @@ namespace PKMDS_Save_Editor
             dgPokemon.Dock = DockStyle.Fill;
             dgPokemon.AutoGenerateColumns = false;
             dgPokemon.EditMode = DataGridViewEditMode.EditOnKeystrokeOrF2;
+
+            dgPokemon.Columns.Add(new DataGridViewCheckBoxColumn()
+            {
+                Name = "IsEgg",
+                HeaderText = "Is Egg",
+                DataPropertyName = "IsEgg"
+            });
 
             dgPokemon.Columns.Add(new DataGridViewTextBoxColumn()
             {
@@ -418,7 +424,7 @@ namespace PKMDS_Save_Editor
             if (Slot != 0)
             {
                 pbSlots[Slot].DataBindings.Clear();
-                pbSlots[Slot].DataBindings.Add("Image", _pokemonBindingSource[Slot], "BoxIcon", true, DataSourceUpdateMode.Never, null);
+                pbSlots[Slot].DataBindings.Add("Image", _pokemonBindingSource[Slot], "BoxIconEgg", true, DataSourceUpdateMode.Never, null);
             }
             else
             {
@@ -428,7 +434,7 @@ namespace PKMDS_Save_Editor
                 }
                 for (int slot = 0; slot < 30; slot++)
                 {
-                    pbSlots[slot].DataBindings.Add("Image", _pokemonBindingSource[slot], "BoxIcon", true, DataSourceUpdateMode.Never, null);
+                    pbSlots[slot].DataBindings.Add("Image", _pokemonBindingSource[slot], "BoxIconEgg", true, DataSourceUpdateMode.Never, null);
                 }
             }
         }

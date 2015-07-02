@@ -1347,6 +1347,12 @@ namespace PKMDS_CS
             get { return Images.GetPokemonImage(species, FormID, Gender); }
         }
 
+        [DisplayName("Box Icon")]
+        public Image BoxIconEgg
+        {
+            get { return IsEgg ? Images.GetImageFromResource("egg") : BoxIcon; }
+        }
+
         [DisplayName("HP")]
         public int HP
         {
