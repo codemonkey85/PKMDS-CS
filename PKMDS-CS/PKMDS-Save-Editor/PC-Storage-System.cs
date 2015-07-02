@@ -92,6 +92,7 @@ namespace PKMDS_Save_Editor
             if (int.TryParse(((PictureBox)sender).Tag.ToString(), out slot))
             {
                 Pokemon pokemon = (Pokemon)_pokemonBindingSource[slot];
+                if (pokemon.Species == Species.NoSpecies) return;
                 PokemonEditorForm.Pokemon = pokemon;
                 PokemonEditorForm.SetForm();
                 PokemonEditorForm.ShowDialog();
@@ -442,6 +443,25 @@ namespace PKMDS_Save_Editor
         private void viewAllPokemonToolStripMenuItem_Click(object sender, EventArgs e)
         {
             reportForm.ShowDialog();
+        }
+
+        private void sortPokémonToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var allpokemon = _sav.PCStorageSystem.Boxes.SelectMany(box => box.Pokemon).ToList().Where(pokemon => pokemon.Species != PKMDS_CS.Species.NoSpecies).ToList();
+            allpokemon.Sort();
+            int p = 0;
+            foreach (var pokemon in _sav.PCStorageSystem.Boxes.SelectMany(box => box.Pokemon).ToList())
+            {
+                if (p < allpokemon.Count)
+                {
+                    pokemon.CloneFrom(allpokemon[p]);
+                    p++;
+                }
+                else
+                {
+                }
+            }
+            RefreshBoxSlots();
         }
     }
 }

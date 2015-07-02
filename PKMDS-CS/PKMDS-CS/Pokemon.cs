@@ -24,7 +24,7 @@ namespace PKMDS_CS
 
     [StructLayout(LayoutKind.Explicit, Pack = 1, CharSet = CharSet.Unicode)]
     [Serializable]
-    public class Pokemon
+    public class Pokemon : /*IEquatable<Pokemon>,*/ IComparable<Pokemon>
     {
         [FieldOffset(0x00)]
         [MarshalAs(UnmanagedType.ByValArray, SizeConst = 232)]
@@ -35,7 +35,40 @@ namespace PKMDS_CS
             this.data = new byte[232];
         }
 
-        private static void Swap(Pokemon a, Pokemon b)
+        public int SortBySpeciesAscending(string name1, string name2)
+        {
+            return name1.CompareTo(name2);
+        }
+
+        public override bool Equals(object obj)
+        {
+            if (obj == null) return false;
+            Pokemon objAsPart = obj as Pokemon;
+            if (objAsPart == null) return false;
+            else return Equals(objAsPart);
+        }
+
+        public int CompareTo(Pokemon comparePokemon)
+        {
+            if (comparePokemon == null)
+                return 1;
+            if (comparePokemon.Species == PKMDS_CS.Species.NoSpecies)
+                return 0;
+            return this.Species.CompareTo(comparePokemon.Species);
+        }
+
+        public override int GetHashCode()
+        {
+            return Checksum;
+        }
+
+        public bool Equals(Pokemon other)
+        {
+            if (other == null) return false;
+            return (this.Checksum.Equals(other.Checksum));
+        }
+
+        public static void Swap(Pokemon a, Pokemon b)
         {
             Pokemon c = new Pokemon();
             c.CloneFrom(a);
