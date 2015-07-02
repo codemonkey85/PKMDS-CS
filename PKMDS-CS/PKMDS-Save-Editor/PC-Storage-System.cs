@@ -141,6 +141,7 @@ namespace PKMDS_Save_Editor
                 DataPropertyName = "Species",
                 ValueMember = "Value",
                 DisplayMember = "Name",
+                DropDownWidth = 100,
                 DisplayStyle = DataGridViewComboBoxDisplayStyle.Nothing
             });
 
@@ -161,6 +162,7 @@ namespace PKMDS_Save_Editor
                 DataPropertyName = "HeldItem",
                 ValueMember = "Value",
                 DisplayMember = "Name",
+                DropDownWidth = 120,
                 DisplayStyle = DataGridViewComboBoxDisplayStyle.Nothing
             });
 
@@ -170,6 +172,7 @@ namespace PKMDS_Save_Editor
                 HeaderText = "Nature",
                 DataSource = Enum.GetValues(typeof(Natures)).Cast<Natures>().ToArray<Natures>(),
                 DataPropertyName = "Nature",
+                DropDownWidth = 70,
                 DisplayStyle = DataGridViewComboBoxDisplayStyle.Nothing
             });
 
@@ -181,6 +184,7 @@ namespace PKMDS_Save_Editor
                 DataPropertyName = "Ability",
                 ValueMember = "Value",
                 DisplayMember = "Name",
+                DropDownWidth = 120,
                 DisplayStyle = DataGridViewComboBoxDisplayStyle.Nothing
             });
 
@@ -212,6 +216,7 @@ namespace PKMDS_Save_Editor
                 DataPropertyName = "Move1",
                 ValueMember = "Value",
                 DisplayMember = "Name",
+                DropDownWidth = 120,
                 DisplayStyle = DataGridViewComboBoxDisplayStyle.Nothing
             });
 
@@ -223,6 +228,7 @@ namespace PKMDS_Save_Editor
                 DataPropertyName = "Move2",
                 ValueMember = "Value",
                 DisplayMember = "Name",
+                DropDownWidth = 120,
                 DisplayStyle = DataGridViewComboBoxDisplayStyle.Nothing
             });
 
@@ -234,6 +240,7 @@ namespace PKMDS_Save_Editor
                 DataPropertyName = "Move3",
                 ValueMember = "Value",
                 DisplayMember = "Name",
+                DropDownWidth = 120,
                 DisplayStyle = DataGridViewComboBoxDisplayStyle.Nothing
             });
 
@@ -245,6 +252,7 @@ namespace PKMDS_Save_Editor
                 DataPropertyName = "Move4",
                 ValueMember = "Value",
                 DisplayMember = "Name",
+                DropDownWidth = 120,
                 DisplayStyle = DataGridViewComboBoxDisplayStyle.Nothing,
             });
 
