@@ -35,6 +35,9 @@ namespace PKMDS_Save_Editor
         private readonly BindingSource _relearnableMoveBindingSource = new BindingSource();
         private CurrencyManager _itemCurrencyManger;
 
+        LocationObject[] metList = new LocationObject[Lists.LocationList.Count];
+        LocationObject[] eggList = new LocationObject[Lists.LocationList.Count];
+
         public void PopulateForm()
         {
             if (FormPopulated) return;
@@ -51,6 +54,26 @@ namespace PKMDS_Save_Editor
             itemComboBox.ValueMember = "Value";
             itemComboBox.DisplayMember = "Name";
 
+            Lists.LocationList.CopyTo(metList);
+            Lists.LocationList.CopyTo(eggList);
+
+            comboMetLocation.DataSource = metList;
+            comboMetLocation.ValueMember = "Value";
+            comboMetLocation.DisplayMember = "Name";
+
+            comboEggLocation.DataSource = eggList;
+            comboEggLocation.ValueMember = "Value";
+            comboEggLocation.DisplayMember = "Name";
+
+            comboMetLocation.SelectedValue = tempPokemon.MetLocation;
+            comboEggLocation.SelectedValue = tempPokemon.EggLocation;
+
+            dateTimeMetDate.DataBindings.Add("Value", _pokemonBindingSource, "MetDate", true, DataSourceUpdateMode.OnValidation, DateTime.MinValue);
+            dateTimeEggDate.DataBindings.Add("Value", _pokemonBindingSource, "EggDate", true, DataSourceUpdateMode.OnValidation, DateTime.MinValue);
+
+            comboEggLocation.DataBindings.Add("Enabled", checkBoxEggMet, "Checked", false, DataSourceUpdateMode.OnPropertyChanged, false);
+            dateTimeEggDate.DataBindings.Add("Enabled", checkBoxEggMet, "Checked", false, DataSourceUpdateMode.OnPropertyChanged, false);
+
             radioOTMale.DataBindings.Add("Checked", _pokemonBindingSource, "OTGenderIsMale", false, DataSourceUpdateMode.OnPropertyChanged, false);
             radioOTFemale.DataBindings.Add("Checked", _pokemonBindingSource, "OTGenderIsFemale", false, DataSourceUpdateMode.OnPropertyChanged, false);
 
@@ -58,8 +81,8 @@ namespace PKMDS_Save_Editor
             genderPictureBox.DataBindings.Add("Image", _pokemonBindingSource, "GenderIcon", true, DataSourceUpdateMode.Never, null);
             pbItemImage.DataBindings.Add("Image", _itemBindingSource, "Image", true, DataSourceUpdateMode.Never, null);
             pbSprite.DataBindings.Add("Image", _pokemonBindingSource, "BoxIconEgg", true, DataSourceUpdateMode.Never, null);
-            speciesComboBox.DataBindings.Add("SelectedValue", tempPokemon, "Species", false, DataSourceUpdateMode.OnPropertyChanged, Species.NoSpecies);
-            itemComboBox.DataBindings.Add("SelectedValue", tempPokemon, "HeldItem", false, DataSourceUpdateMode.OnPropertyChanged, Items.NoItem);
+            speciesComboBox.DataBindings.Add("SelectedValue", _pokemonBindingSource, "Species", false, DataSourceUpdateMode.OnPropertyChanged, Species.NoSpecies);
+            itemComboBox.DataBindings.Add("SelectedValue", _pokemonBindingSource, "HeldItem", false, DataSourceUpdateMode.OnPropertyChanged, Items.NoItem);
             textNickname.DataBindings.Add("Text", _pokemonBindingSource, "Nickname", false, DataSourceUpdateMode.OnValidation, "");
             checkNicknamed.DataBindings.Add("Checked", _pokemonBindingSource, "IsNicknamed", false, DataSourceUpdateMode.OnPropertyChanged, false);
             numericLevel.DataBindings.Add("Value", _pokemonBindingSource, "Level", true, DataSourceUpdateMode.OnPropertyChanged, 1);
@@ -199,10 +222,17 @@ namespace PKMDS_Save_Editor
             _relearnableMoveBindingSource.DataSource = (_pokemonBindingSource.Current as Pokemon).RelearnableMoves;
             PopulateForm();
             FormSet = true;
+            checkBoxEggMet.Checked = (tempPokemon.IsEgg || tempPokemon.EggDate.HasValue || tempPokemon.EggLocation != Locations.Mystery_Zone);
         }
 
         private void SavePokemon()
         {
+            if (!checkBoxEggMet.Checked)
+            {
+                tempPokemon.EggLocation = Locations.Mystery_Zone;
+                tempPokemon.EggDate = null;
+            }
+
             tempPokemon.Moves = _moveBindingSource.DataSource as List<MovesObject>;
             tempPokemon.RelearnableMoves = _relearnableMoveBindingSource.DataSource as List<MovesObject>;
 
@@ -279,7 +309,7 @@ namespace PKMDS_Save_Editor
                 flp.Controls.Add(pb);
                 MarkingsBoxes.Add(pb);
             }
-            MarkingsBoxes[(int)Markings.Circle].DataBindings.Add("Image", _pokemonBindingSource, "Circle", true, DataSourceUpdateMode.Never, Images.GetMarkingImage(Markings.Circle,false));
+            MarkingsBoxes[(int)Markings.Circle].DataBindings.Add("Image", _pokemonBindingSource, "Circle", true, DataSourceUpdateMode.Never, Images.GetMarkingImage(Markings.Circle, false));
             MarkingsBoxes[(int)Markings.Triangle].DataBindings.Add("Image", _pokemonBindingSource, "Triangle", true, DataSourceUpdateMode.Never, Images.GetMarkingImage(Markings.Triangle, false));
             MarkingsBoxes[(int)Markings.Square].DataBindings.Add("Image", _pokemonBindingSource, "Square", true, DataSourceUpdateMode.Never, Images.GetMarkingImage(Markings.Square, false));
             MarkingsBoxes[(int)Markings.Heart].DataBindings.Add("Image", _pokemonBindingSource, "Heart", true, DataSourceUpdateMode.Never, Images.GetMarkingImage(Markings.Heart, false));
@@ -365,5 +395,18 @@ namespace PKMDS_Save_Editor
             }
             e.Cancel = !(MessageBox.Show(e.Exception.Message, "Data Error", MessageBoxButtons.RetryCancel, MessageBoxIcon.Error) == DialogResult.Cancel);
         }
+
+        private void comboEggLocation_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (!FormSet) return;
+            tempPokemon.EggLocation = (Locations)comboEggLocation.SelectedValue;
+        }
+
+        private void comboMetLocation_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (!FormSet) return;
+            tempPokemon.MetLocation = (Locations)comboMetLocation.SelectedValue;
+        }
+
     }
 }

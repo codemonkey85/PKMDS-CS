@@ -1127,8 +1127,8 @@ namespace PKMDS_CS
             get
             {
                 return Enum.IsDefined(typeof(Locations), egglocation)
-                    ? (Locations)egglocation
-                    : Locations.Mystery_Zone;
+                    ? ((Locations)egglocation)
+                    : (Locations.Mystery_Zone);
             }
             set { egglocation = (ushort)value; }
         }
@@ -1139,8 +1139,8 @@ namespace PKMDS_CS
             get
             {
                 return Enum.IsDefined(typeof(Locations), metlocation)
-                    ? (Locations)metlocation
-                    : Locations.Mystery_Zone;
+                    ? ((Locations)metlocation)
+                    : (Locations.Mystery_Zone);
             }
             set { metlocation = (ushort)value; }
         }
@@ -1164,10 +1164,11 @@ namespace PKMDS_CS
         }
 
         [DisplayName("Egg Date")]
-        public DateTime EggDate
+        public DateTime? EggDate
         {
             get
             {
+                if (eggmetyear == 0 && eggmetmonth == 0 && eggmetday == 0) return null;
                 try
                 {
                     return new DateTime(eggmetyear + 2000, eggmetmonth, eggmetday);
@@ -1179,7 +1180,7 @@ namespace PKMDS_CS
             }
             set
             {
-                if (value == null)
+                if (value == null || !value.HasValue)
                 {
                     eggmetyear = 0;
                     eggmetmonth = 0;
@@ -1187,9 +1188,9 @@ namespace PKMDS_CS
                 }
                 else
                 {
-                    eggmetyear = (byte)(value.Year - 2000);
-                    eggmetmonth = (byte)value.Month;
-                    eggmetday = (byte)value.Day;
+                    eggmetyear = (byte)(value.Value.Year - 2000);
+                    eggmetmonth = (byte)value.Value.Month;
+                    eggmetday = (byte)value.Value.Day;
                 }
             }
         }

@@ -17,6 +17,7 @@ namespace PKMDS_CS
         private static List<SpeciesObject> _speciesList = new List<SpeciesObject>();
         private static List<ItemObject> _itemList = new List<ItemObject>();
         private static List<AbilityObject> _abilityList = new List<AbilityObject>();
+        private static List<LocationObject> _locationList = new List<LocationObject>();
 
         public static List<MovesObject> MoveList
         {
@@ -67,6 +68,19 @@ namespace PKMDS_CS
                         _abilityList.Add(new AbilityObject(ability));
                     }
                 return _abilityList;
+            }
+        }
+
+        public static List<LocationObject> LocationList
+        {
+            get
+            {
+                if (!_locationList.Any())
+                    foreach (var location in Enum.GetValues(typeof(Locations)).Cast<Locations>().ToArray<Locations>())
+                    {
+                        _locationList.Add(new LocationObject(location));
+                    }
+                return _locationList;
             }
         }
     }
@@ -8545,7 +8559,9 @@ namespace PKMDS_CS
         {
             get
             {
-                return value;
+                return Enum.IsDefined(typeof(Locations), value)
+                    ? (Locations)value
+                    : Locations.Mystery_Zone;
             }
             set
             {
