@@ -8044,6 +8044,7 @@ namespace PKMDS_CS
         ShinyShaded = 0xff7b9c00
     }
 
+    [Flags]
     public enum Markings
     {
         Circle,
