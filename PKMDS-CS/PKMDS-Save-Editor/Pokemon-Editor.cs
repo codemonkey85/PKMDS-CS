@@ -107,15 +107,6 @@ namespace PKMDS_Save_Editor
             if (dataGridMoves.Columns.Contains("FlavorText"))
                 dataGridMoves.Columns["FlavorText"].Visible = false;
 
-            if (dataGridMoves.Columns.Contains("CurrentPP"))
-            {
-                dataGridMoves.Columns["CurrentPP"].ValueType = typeof(byte);
-            }
-            if (dataGridMoves.Columns.Contains("PPUps"))
-            {
-                dataGridMoves.Columns["PPUps"].ValueType = typeof(byte);
-            }
-
             DataGridViewComboBoxColumn clmnppup = new DataGridViewComboBoxColumn();
             clmnppup.Name = "PPUps";
             clmnppup.HeaderText = "PP Ups";
@@ -288,12 +279,12 @@ namespace PKMDS_Save_Editor
                 flp.Controls.Add(pb);
                 MarkingsBoxes.Add(pb);
             }
-            MarkingsBoxes[(int)Markings.Circle].DataBindings.Add("Image", _pokemonBindingSource, "Circle", true, DataSourceUpdateMode.Never, Images.GetImageFromResource("m_00"));
-            MarkingsBoxes[(int)Markings.Triangle].DataBindings.Add("Image", _pokemonBindingSource, "Triangle", true, DataSourceUpdateMode.Never, Images.GetImageFromResource("m_10"));
-            MarkingsBoxes[(int)Markings.Square].DataBindings.Add("Image", _pokemonBindingSource, "Square", true, DataSourceUpdateMode.Never, Images.GetImageFromResource("m_20"));
-            MarkingsBoxes[(int)Markings.Heart].DataBindings.Add("Image", _pokemonBindingSource, "Heart", true, DataSourceUpdateMode.Never, Images.GetImageFromResource("m_30"));
-            MarkingsBoxes[(int)Markings.Star].DataBindings.Add("Image", _pokemonBindingSource, "Star", true, DataSourceUpdateMode.Never, Images.GetImageFromResource("m_40"));
-            MarkingsBoxes[(int)Markings.Diamond].DataBindings.Add("Image", _pokemonBindingSource, "Diamond", true, DataSourceUpdateMode.Never, Images.GetImageFromResource("m_50"));
+            MarkingsBoxes[(int)Markings.Circle].DataBindings.Add("Image", _pokemonBindingSource, "Circle", true, DataSourceUpdateMode.Never, Images.GetMarkingImage(Markings.Circle,false));
+            MarkingsBoxes[(int)Markings.Triangle].DataBindings.Add("Image", _pokemonBindingSource, "Triangle", true, DataSourceUpdateMode.Never, Images.GetMarkingImage(Markings.Triangle, false));
+            MarkingsBoxes[(int)Markings.Square].DataBindings.Add("Image", _pokemonBindingSource, "Square", true, DataSourceUpdateMode.Never, Images.GetMarkingImage(Markings.Square, false));
+            MarkingsBoxes[(int)Markings.Heart].DataBindings.Add("Image", _pokemonBindingSource, "Heart", true, DataSourceUpdateMode.Never, Images.GetMarkingImage(Markings.Heart, false));
+            MarkingsBoxes[(int)Markings.Star].DataBindings.Add("Image", _pokemonBindingSource, "Star", true, DataSourceUpdateMode.Never, Images.GetMarkingImage(Markings.Star, false));
+            MarkingsBoxes[(int)Markings.Diamond].DataBindings.Add("Image", _pokemonBindingSource, "Diamond", true, DataSourceUpdateMode.Never, Images.GetMarkingImage(Markings.Diamond, false));
 
             foreach (PictureBox pb in MarkingsBoxes)
             {
@@ -367,7 +358,12 @@ namespace PKMDS_Save_Editor
 
         private void dataGridMoves_DataError(object sender, DataGridViewDataErrorEventArgs e)
         {
-            e.Cancel = !(MessageBox.Show(e.Exception.Message, "Data Error", MessageBoxButtons.RetryCancel, MessageBoxIcon.Error) == System.Windows.Forms.DialogResult.Cancel);
+            if (e.ColumnIndex == dataGridMoves.Columns["CurrentPP"].Index && (e.Exception.TargetSite.DeclaringType.FullName) == "System.Windows.Forms.Formatter")
+            {
+                e.Cancel = !(MessageBox.Show("Current PP must be between 0 and 255.", "Invalid PP", MessageBoxButtons.RetryCancel, MessageBoxIcon.Error) == DialogResult.Cancel);
+                return;
+            }
+            e.Cancel = !(MessageBox.Show(e.Exception.Message, "Data Error", MessageBoxButtons.RetryCancel, MessageBoxIcon.Error) == DialogResult.Cancel);
         }
     }
 }
