@@ -449,16 +449,24 @@ namespace PKMDS_Save_Editor
         {
             var allpokemon = _sav.PCStorageSystem.Boxes.SelectMany(box => box.Pokemon).ToList().Where(pokemon => pokemon.Species != PKMDS_CS.Species.NoSpecies).ToList();
             allpokemon.Sort();
+            List<Pokemon> sortedList = new List<Pokemon>();
+            for (int i = 0; i < allpokemon.Count; i++)
+            {
+                sortedList.Add(new Pokemon());
+                sortedList[i].CloneFrom(allpokemon[i]);
+            }
             int p = 0;
+            Pokemon blank = new Pokemon();
             foreach (var pokemon in _sav.PCStorageSystem.Boxes.SelectMany(box => box.Pokemon).ToList())
             {
                 if (p < allpokemon.Count)
                 {
-                    pokemon.CloneFrom(allpokemon[p]);
+                    pokemon.CloneFrom(sortedList[p]);
                     p++;
                 }
                 else
                 {
+                    pokemon.CloneFrom(blank);
                 }
             }
             RefreshBoxSlots();
