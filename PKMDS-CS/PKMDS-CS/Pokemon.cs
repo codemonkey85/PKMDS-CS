@@ -324,28 +324,28 @@ namespace PKMDS_CS
         public byte Move1CurrentPP
         {
             get { return data[0x62]; }
-            set { Array.Copy(BitConverter.GetBytes(value), 0, data, 0x62, 1); }
+            set { Array.Copy(BitConverter.GetBytes(value > 255u ? 255u : value < 0u ? 0u : value), 0, data, 0x62, 1); }
         }
 
         [DisplayName("Move 2 Current PP")]
         public byte Move2CurrentPP
         {
             get { return data[0x63]; }
-            set { Array.Copy(BitConverter.GetBytes(value), 0, data, 0x63, 1); }
+            set { Array.Copy(BitConverter.GetBytes(value > 255u ? 255u : value < 0u ? 0u : value), 0, data, 0x63, 1); }
         }
 
         [DisplayName("Move 3 Current PP")]
         public byte Move3CurrentPP
         {
             get { return data[0x64]; }
-            set { Array.Copy(BitConverter.GetBytes(value), 0, data, 0x64, 1); }
+            set { Array.Copy(BitConverter.GetBytes(value > 255u ? 255u : value < 0u ? 0u : value), 0, data, 0x64, 1); }
         }
 
         [DisplayName("Move 4 Current PP")]
         public byte Move4CurrentPP
         {
             get { return data[0x65]; }
-            set { Array.Copy(BitConverter.GetBytes(value), 0, data, 0x65, 1); }
+            set { Array.Copy(BitConverter.GetBytes(value > 255u ? 255u : value < 0u ? 0u : value), 0, data, 0x65, 1); }
         }
 
         private byte move1ppups { get { return data[0x66]; } set { data[0x66] = value; } }
