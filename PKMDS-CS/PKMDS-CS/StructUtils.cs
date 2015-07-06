@@ -2,6 +2,7 @@
 
 using System;
 using System.IO;
+using System.Linq;
 using System.Runtime.InteropServices;
 
 #endregion Using
@@ -41,7 +42,7 @@ namespace PKMDS_CS
             return default(TType);
         }
 
-        public static void RawSerialize(object anything, string fileName)
+        private static void RawSerialize(object anything, string fileName)
         {
             if (anything == null || string.IsNullOrEmpty(fileName))
             {
@@ -62,7 +63,7 @@ namespace PKMDS_CS
             }
         }
 
-        public static byte[] RawSerialize(object anything)
+        private static byte[] RawSerialize(object anything)
         {
             int rawSize = Marshal.SizeOf(anything);
             IntPtr buffer = Marshal.AllocHGlobal(rawSize);
@@ -71,6 +72,28 @@ namespace PKMDS_CS
             Marshal.Copy(buffer, rawDatas, 0, rawSize);
             Marshal.FreeHGlobal(buffer);
             return rawDatas;
+        }
+
+        public static FileInfo GetTempFileInfo()
+        {
+            return new FileInfo(Path.GetTempFileName());
+        }
+
+        public static FileStream GetTempFileStream(FileMode fileMode, FileAccess fileAccess)
+        {
+            return new FileStream(Path.GetTempFileName(), fileMode, fileAccess);
+        }
+
+        public static void WriteObject<T>(T _object, string fileName)
+        {
+            if (_object == null) return;
+            if (_object is ISave)
+            {
+                var sav = ( _object as ISave);
+                if (sav == null) return;
+                sav.PCStorageSystem.Boxes.SelectMany(box => box.Pokemon).ToList().ForEach(pokemon => PokePRNG.EncryptPokemon(pokemon));
+            }
+            RawSerialize(_object, fileName);
         }
     }
 }

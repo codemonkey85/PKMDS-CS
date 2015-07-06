@@ -24,7 +24,7 @@ namespace PKMDS_CS
 
     [StructLayout(LayoutKind.Explicit, Pack = 1, CharSet = CharSet.Unicode)]
     [Serializable]
-    public class Pokemon : /*IEquatable<Pokemon>,*/ IComparable<Pokemon>
+    public class Pokemon : IComparable<Pokemon>
     {
         [FieldOffset(0x00)]
         [MarshalAs(UnmanagedType.ByValArray, SizeConst = 232)]

@@ -59,7 +59,6 @@
     <Compile Include="DBTools.cs" />
     <Compile Include="Enums.cs" />
     <Compile Include="Images.cs" />
-    <Compile Include="ORASSav.cs" />
     <Compile Include="PCStorageSystem.cs" />
     <Compile Include="Pokemon.cs" />
     <Compile Include="PokePRNG.cs" />
@@ -69,8 +68,8 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="Save.cs" />
     <Compile Include="StructUtils.cs" />
-    <Compile Include="XYSav.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />

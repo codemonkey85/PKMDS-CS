@@ -25,8 +25,7 @@ namespace PKMDS_Save_Editor
         private CurrencyManager _boxesCurrencyManager;
         private readonly BindingSource _boxenamesBindingSource = new BindingSource();
         private CurrencyManager _boxenamesCurrencyManager;
-        private XYSav _sav;
-        //private ORASSav _sav;
+        private ISave _sav;
 
         public PC_Storage_System_Form()
         {
@@ -391,7 +390,7 @@ namespace PKMDS_Save_Editor
         private void WriteSave(string saveFileName)
         {
             _sav.PCStorageSystem.Boxes.SelectMany(box => box.Pokemon).ToList().ForEach(pokemon => PokePRNG.EncryptPokemon(pokemon));
-            StructUtils.RawSerialize(_sav, saveFileName);
+            StructUtils.WriteObject<ISave>(_sav, saveFileName);
         }
 
         private void PKMDS_Save_Editor_FormClosing(object sender, FormClosingEventArgs e)
