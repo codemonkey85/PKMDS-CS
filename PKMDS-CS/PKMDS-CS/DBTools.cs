@@ -213,12 +213,12 @@ namespace PKMDS_CS
             return growthrateid;
         }
 
-        public static int GetLevel(ushort species, uint EXP)
+        public static int GetLevel(ushort Species, uint EXP)
         {
             if (con == null) return 0;
             if (con.State != ConnectionState.Open) return 0;
             int level = 0;
-            int GrowthRateID = GetGrowthRateID(species);
+            int GrowthRateID = GetGrowthRateID(Species);
             using (System.Data.Common.DbCommand cmd = con.CreateCommand())
             {
                 cmd.CommandText = string.Format(
@@ -240,9 +240,12 @@ namespace PKMDS_CS
             if (con == null) return 0u;
             if (con.State != ConnectionState.Open) return 0u;
             uint exp = 0;
+            int GrowthRateID = GetGrowthRateID(Species);
             using (System.Data.Common.DbCommand cmd = con.CreateCommand())
             {
-                cmd.CommandText = string.Format(@"select experience.experience from experience where experience.growth_rate_id = {0} and experience.level = {1} order by experience.level desc limit 1", GetGrowthRateID(Species), Level);
+                cmd.CommandText = string.Format(
+                                @"select experience.experience from experience where experience.growth_rate_id = {0} and experience.level = {1} order by experience.level desc limit 1",
+                                GrowthRateID, Level);
                 DataTable dtout = new DataTable();
                 dtout.Load(cmd.ExecuteReader());
                 if (dtout != null)
@@ -320,8 +323,12 @@ namespace PKMDS_CS
             string formname = string.Empty;
             using (System.Data.Common.DbCommand cmd = con.CreateCommand())
             {
-                cmd.CommandText = string.Format(@"select form_name from pokemon join pokemon_forms on pokemon.id = pokemon_forms.pokemon_id join pokemon_form_generations on pokemon_form_generations.pokemon_form_id = pokemon_forms.id join pokemon_form_names on pokemon_form_names.pokemon_form_id = pokemon_forms.id
-                    where pokemon.species_id = {0} and pokemon_form_generations.game_index = {1} and local_language_id = {2}", Species, FormID, langid);
+                cmd.CommandText = string.Format(
+                    @"select form_name from pokemon join pokemon_forms on pokemon.id = pokemon_forms.pokemon_id
+                    join pokemon_form_generations on pokemon_form_generations.pokemon_form_id = pokemon_forms.id
+                    join pokemon_form_names on pokemon_form_names.pokemon_form_id = pokemon_forms.id
+                    where pokemon.species_id = {0} and pokemon_form_generations.game_index = {1} and local_language_id = {2}",
+                    Species, FormID, langid);
                 DataTable dtout = new DataTable();
                 dtout.Load(cmd.ExecuteReader());
                 if (dtout != null)
