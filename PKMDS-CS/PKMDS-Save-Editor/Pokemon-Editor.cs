@@ -35,8 +35,8 @@ namespace PKMDS_Save_Editor
         private readonly BindingSource _relearnableMoveBindingSource = new BindingSource();
         private CurrencyManager _itemCurrencyManger;
 
-        LocationObject[] metList = new LocationObject[Lists.LocationList.Count];
-        LocationObject[] eggList = new LocationObject[Lists.LocationList.Count];
+        private LocationObject[] metList = new LocationObject[Lists.LocationList.Count];
+        private LocationObject[] eggList = new LocationObject[Lists.LocationList.Count];
 
         public void PopulateForm()
         {
@@ -407,6 +407,5 @@ namespace PKMDS_Save_Editor
             if (!FormSet) return;
             tempPokemon.MetLocation = (Locations)comboMetLocation.SelectedValue;
         }
-
     }
 }
