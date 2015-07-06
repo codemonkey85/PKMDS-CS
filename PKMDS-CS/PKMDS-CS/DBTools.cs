@@ -347,7 +347,11 @@ namespace PKMDS_CS
             string pokemonname = string.Empty;
             using (System.Data.Common.DbCommand cmd = con.CreateCommand())
             {
-                cmd.CommandText = string.Format(@"select pokemon_name from pokemon join pokemon_forms on pokemon.id = pokemon_forms.pokemon_id join pokemon_form_names on pokemon_form_names.pokemon_form_id = pokemon_forms.id where pokemon.species_id = {0} and pokemon_forms.form_order -1 = {1} and local_language_id = {2} order by form_order", Species, FormID, langid);
+                cmd.CommandText = string.Format(@"select pokemon_name from pokemon
+                join pokemon_forms on pokemon.id = pokemon_forms.pokemon_id
+                join pokemon_form_names on pokemon_form_names.pokemon_form_id = pokemon_forms.id
+                where pokemon.species_id = {0} and pokemon_forms.form_order -1 = {1} and local_language_id = {2} order by form_order",
+                Species, FormID, langid);
                 DataTable dtout = new DataTable();
                 dtout.Load(cmd.ExecuteReader());
                 if (dtout != null)
@@ -378,8 +382,6 @@ namespace PKMDS_CS
                 if (con.State != ConnectionState.Open) return null;
                 if (PokemonDataTable != null) return PokemonDataTable;
                 var sbSQL = new StringBuilder();
-                sbSQL.Append("--select pokemon_forms.identifier from pokemon join pokemon_forms on pokemon.id = pokemon_forms.pokemon_id join pokemon_form_names on pokemon_form_names.pokemon_form_id = pokemon_forms.id where pokemon.species_id = 666 and local_language_id = 9 and pokemon_forms.form_order -1 = 18 order by form_order \n");
-                sbSQL.Append(" \n");
                 sbSQL.Append("select \n");
                 sbSQL.Append("pokemon_species_names.name as [name], \n");
                 sbSQL.Append("pokemon_forms.form_identifier as [form_identifier], \n");
