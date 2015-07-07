@@ -1,18 +1,16 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel;
-using System.Linq;
 using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace PKMDS_CS
 {
     public interface ISave
     {
-        byte CurrentBox{get;set;}
-        PCStorageSystem PCStorageSystem{get;set;}
-        PCStorageBoxNames PCStorageBoxNames{get;set;}
+        byte CurrentBox { get; set; }
+
+        PCStorageSystem PCStorageSystem { get; set; }
+
+        PCStorageBoxNames PCStorageBoxNames { get; set; }
     }
 
     [StructLayout(LayoutKind.Explicit, Size = 0x100000, Pack = 1, CharSet = CharSet.Unicode)]
@@ -86,5 +84,4 @@ namespace PKMDS_CS
             set { pcstorageboxnames = value; }
         }
     }
-
 }

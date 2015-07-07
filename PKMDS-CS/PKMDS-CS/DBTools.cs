@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Data.Common;
+using System.Diagnostics;
 using System.Text;
 
 namespace PKMDS_CS
@@ -80,7 +81,7 @@ namespace PKMDS_CS
             }
             catch (Exception ex)
             {
-                System.Diagnostics.Debug.WriteLine("Error opening database: {0}", ex.Message);
+                Debug.WriteLine("Error opening database: {0}", ex.Message);
             }
         }
 
@@ -88,12 +89,12 @@ namespace PKMDS_CS
         {
             try
             {
-                if (con.State == System.Data.ConnectionState.Open)
+                if (con.State == ConnectionState.Open)
                     con.Close();
             }
             catch (Exception ex)
             {
-                System.Diagnostics.Debug.WriteLine("Error closing database: {0}", ex.Message);
+                Debug.WriteLine("Error closing database: {0}", ex.Message);
             }
         }
 
@@ -102,7 +103,7 @@ namespace PKMDS_CS
             DataTable table = new DataTable();
             try
             {
-                using (System.Data.Common.DbCommand cmd = con.CreateCommand())
+                using (DbCommand cmd = con.CreateCommand())
                 {
                     cmd.CommandText = SQL;
                     table.Load(cmd.ExecuteReader());
@@ -219,7 +220,7 @@ namespace PKMDS_CS
             if (con.State != ConnectionState.Open) return 0;
             int level = 0;
             int GrowthRateID = GetGrowthRateID(Species);
-            using (System.Data.Common.DbCommand cmd = con.CreateCommand())
+            using (DbCommand cmd = con.CreateCommand())
             {
                 cmd.CommandText = string.Format(
                                 @"select experience.level from experience where experience.growth_rate_id = {0} and experience.experience <= {1} order by experience.level desc limit 1",
@@ -241,7 +242,7 @@ namespace PKMDS_CS
             if (con.State != ConnectionState.Open) return 0u;
             uint exp = 0;
             int GrowthRateID = GetGrowthRateID(Species);
-            using (System.Data.Common.DbCommand cmd = con.CreateCommand())
+            using (DbCommand cmd = con.CreateCommand())
             {
                 cmd.CommandText = string.Format(
                                 @"select experience.experience from experience where experience.growth_rate_id = {0} and experience.level = {1} order by experience.level desc limit 1",
@@ -266,7 +267,7 @@ namespace PKMDS_CS
             if (con == null) return null;
             if (con.State != ConnectionState.Open) return null;
             List<Species> SpeciesWithForms = new List<Species>();
-            using (System.Data.Common.DbCommand cmd = con.CreateCommand())
+            using (DbCommand cmd = con.CreateCommand())
             {
                 cmd.CommandText =
                     "select distinct pokemon.species_id from pokemon join pokemon_forms on pokemon.id = pokemon_forms.pokemon_id join pokemon_form_generations on pokemon_form_generations.pokemon_form_id = pokemon_forms.id join pokemon_form_names on pokemon_form_names.pokemon_form_id = pokemon_forms.id where local_language_id = 9 and generation_id = 6 and is_mega = 0 order by species_id asc, game_index asc, form_order asc";
@@ -277,7 +278,7 @@ namespace PKMDS_CS
                 }
             }
             DataTable results = new DataTable();
-            using (System.Data.Common.DbCommand cmd = con.CreateCommand())
+            using (DbCommand cmd = con.CreateCommand())
             {
                 cmd.CommandText =
                     "select pokemon.species_id, pokemon_form_generations.game_index, form_order, form_name from pokemon join pokemon_forms on pokemon.id = pokemon_forms.pokemon_id join pokemon_form_generations on pokemon_form_generations.pokemon_form_id = pokemon_forms.id join pokemon_form_names on pokemon_form_names.pokemon_form_id = pokemon_forms.id where local_language_id = 9 and generation_id = 6 and is_mega = 0 order by species_id asc, game_index asc, form_order asc";
@@ -308,7 +309,7 @@ namespace PKMDS_CS
                 }
                 foreach (var row in view.ToTable().Rows)
                 {
-                    thisspecies.Add(((System.Data.DataRow)row)[3].ToString());
+                    thisspecies.Add(((DataRow)row)[3].ToString());
                 }
                 PokemonForms.Add(species, thisspecies);
             }
@@ -321,7 +322,7 @@ namespace PKMDS_CS
             if (con == null) return string.Empty;
             if (con.State != ConnectionState.Open) return string.Empty;
             string formname = string.Empty;
-            using (System.Data.Common.DbCommand cmd = con.CreateCommand())
+            using (DbCommand cmd = con.CreateCommand())
             {
                 cmd.CommandText = string.Format(
                     @"select form_name from pokemon join pokemon_forms on pokemon.id = pokemon_forms.pokemon_id
@@ -345,7 +346,7 @@ namespace PKMDS_CS
             if (con == null) return string.Empty;
             if (con.State != ConnectionState.Open) return string.Empty;
             string pokemonname = string.Empty;
-            using (System.Data.Common.DbCommand cmd = con.CreateCommand())
+            using (DbCommand cmd = con.CreateCommand())
             {
                 cmd.CommandText = string.Format(@"select pokemon_name from pokemon
                 join pokemon_forms on pokemon.id = pokemon_forms.pokemon_id

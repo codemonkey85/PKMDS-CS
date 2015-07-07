@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using System.Drawing;
 
 namespace PKMDS_CS
@@ -13,7 +14,7 @@ namespace PKMDS_CS
             }
             catch (Exception ex)
             {
-                System.Diagnostics.Debug.WriteLine("There was an issue in GetImageFromResource: {0}", ex.Message);
+                Debug.WriteLine("There was an issue in GetImageFromResource: {0}", ex.Message);
                 return null;
             }
         }

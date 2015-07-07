@@ -8460,7 +8460,7 @@ namespace PKMDS_CS
             return Name;
         }
 
-        public override bool Equals(System.Object obj)
+        public override bool Equals(Object obj)
         {
             if (obj == null)
             {
@@ -8468,7 +8468,7 @@ namespace PKMDS_CS
             }
 
             ItemObject i = obj as ItemObject;
-            if ((System.Object)i == null)
+            if ((Object)i == null)
             {
                 return false;
             }
@@ -8493,7 +8493,7 @@ namespace PKMDS_CS
 
         public static bool operator ==(ItemObject a, Items b)
         {
-            if (System.Object.ReferenceEquals(a, b))
+            if (Object.ReferenceEquals(a, b))
             {
                 return true;
             }

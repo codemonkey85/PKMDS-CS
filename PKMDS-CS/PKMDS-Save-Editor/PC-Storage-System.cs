@@ -77,7 +77,7 @@ namespace PKMDS_Save_Editor
 
         private void slot_MouseLeave(object sender, EventArgs e)
         {
-            ((PictureBox)sender).BackColor = System.Drawing.SystemColors.Control;
+            ((PictureBox)sender).BackColor = SystemColors.Control;
         }
 
         private void slot_MouseEnter(object sender, EventArgs e)
@@ -378,7 +378,7 @@ namespace PKMDS_Save_Editor
         private void DgPokemon_DataError(object sender, DataGridViewDataErrorEventArgs e)
         {
             if (e.Exception != null)
-                e.Cancel = !(MessageBox.Show(e.Exception.Message, "Data Error", MessageBoxButtons.RetryCancel, MessageBoxIcon.Error) == System.Windows.Forms.DialogResult.Cancel);
+                e.Cancel = !(MessageBox.Show(e.Exception.Message, "Data Error", MessageBoxButtons.RetryCancel, MessageBoxIcon.Error) == DialogResult.Cancel);
         }
 
         private void ReportForm_FormClosing(object sender, FormClosingEventArgs e)

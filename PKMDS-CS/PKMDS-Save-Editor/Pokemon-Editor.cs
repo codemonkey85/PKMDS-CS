@@ -203,7 +203,7 @@ namespace PKMDS_Save_Editor
 
         private void Type_2_Image_Format(object sender, ConvertEventArgs e)
         {
-            var pb = (PictureBox)((System.Windows.Forms.Binding)sender).Control;
+            var pb = (PictureBox)((Binding)sender).Control;
             if (!tempPokemon.Type2.HasValue) e.Value = null;
             if (tempPokemon.Type1.HasValue && tempPokemon.Type2.HasValue)
             {
@@ -326,7 +326,7 @@ namespace PKMDS_Save_Editor
 
         private void MarkingsImageFormat(object sender, ConvertEventArgs e)
         {
-            var pb = (PictureBox)((System.Windows.Forms.Binding)sender).Control;
+            var pb = (PictureBox)((Binding)sender).Control;
             Markings mark = new Markings();
             Enum.TryParse<Markings>(pb.Tag.ToString(), out mark);
             e.Value = Images.GetMarkingImage(mark, (bool)e.Value);

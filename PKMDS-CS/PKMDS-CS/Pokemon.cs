@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
 using System.Runtime.InteropServices;
+using System.Text;
 
 #endregion Using
 
@@ -1071,11 +1072,11 @@ namespace PKMDS_CS
         {
             get
             {
-                return System.Text.Encoding.Unicode.GetString(data, (int)Offsets.NicknameOffset, (int)Consts.NameMaxLength);
+                return Encoding.Unicode.GetString(data, (int)Offsets.NicknameOffset, (int)Consts.NameMaxLength);
             }
             set
             {
-                byte[] sdata = System.Text.Encoding.Unicode.GetBytes(value);
+                byte[] sdata = Encoding.Unicode.GetBytes(value);
                 int length = sdata.Length > (int)Consts.NameMaxLength ? (int)Consts.NameMaxLength : sdata.Length;
                 Array.Clear(data, (int)Offsets.NicknameOffset, (int)Consts.NameMaxLength);
                 Array.Copy(sdata, 0, data, (int)Offsets.NicknameOffset, length);
@@ -1087,11 +1088,11 @@ namespace PKMDS_CS
         {
             get
             {
-                return System.Text.Encoding.Unicode.GetString(data, (int)Offsets.LastTrainerNameOffset, (int)Consts.NameMaxLength);
+                return Encoding.Unicode.GetString(data, (int)Offsets.LastTrainerNameOffset, (int)Consts.NameMaxLength);
             }
             set
             {
-                byte[] sdata = System.Text.Encoding.Unicode.GetBytes(value);
+                byte[] sdata = Encoding.Unicode.GetBytes(value);
                 int length = sdata.Length > (int)Consts.NameMaxLength ? (int)Consts.NameMaxLength : sdata.Length;
                 Array.Clear(data, (int)Offsets.LastTrainerNameOffset, (int)Consts.NameMaxLength);
                 Array.Copy(sdata, 0, data, (int)Offsets.LastTrainerNameOffset, length);
@@ -1103,11 +1104,11 @@ namespace PKMDS_CS
         {
             get
             {
-                return System.Text.Encoding.Unicode.GetString(data, (int)Offsets.OTNameOffset, (int)Consts.NameMaxLength);
+                return Encoding.Unicode.GetString(data, (int)Offsets.OTNameOffset, (int)Consts.NameMaxLength);
             }
             set
             {
-                byte[] sdata = System.Text.Encoding.Unicode.GetBytes(value);
+                byte[] sdata = Encoding.Unicode.GetBytes(value);
                 int length = sdata.Length > (int)Consts.NameMaxLength ? (int)Consts.NameMaxLength : sdata.Length;
                 Array.Clear(data, (int)Offsets.OTNameOffset, (int)Consts.NameMaxLength);
                 Array.Copy(sdata, 0, data, (int)Offsets.OTNameOffset, length);

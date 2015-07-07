@@ -89,7 +89,7 @@ namespace PKMDS_CS
             if (_object == null) return;
             if (_object is ISave)
             {
-                var sav = ( _object as ISave);
+                var sav = (_object as ISave);
                 if (sav == null) return;
                 sav.PCStorageSystem.Boxes.SelectMany(box => box.Pokemon).ToList().ForEach(pokemon => PokePRNG.EncryptPokemon(pokemon));
             }
