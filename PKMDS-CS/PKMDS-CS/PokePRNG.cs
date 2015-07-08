@@ -6,7 +6,7 @@ using System;
 
 namespace PKMDS_CS
 {
-    public static class PokePRNG
+    internal static class PokePRNG
     {
         internal static uint LCRNG(uint seed)
         {
@@ -44,7 +44,7 @@ namespace PKMDS_CS
             return ekx;
         }
 
-        public static byte[] decryptArray(byte[] ekx)
+        internal static byte[] decryptArray(byte[] ekx)
         {
             byte[] pkx = (byte[])ekx.Clone();
 
@@ -61,7 +61,7 @@ namespace PKMDS_CS
             return pkx;
         }
 
-        public static byte[] encryptArray(byte[] pkx)
+        internal static byte[] encryptArray(byte[] pkx)
         {
             uint pv = BitConverter.ToUInt32(pkx, 0);
             uint sv = (((pv & 0x3E000) >> 0xD) % 24);
@@ -122,12 +122,12 @@ namespace PKMDS_CS
             return ((TID ^ SID) >> 4);
         }
 
-        public static void EncryptPokemon(Pokemon pokemon)
+        internal static void EncryptPokemon(Pokemon pokemon)
         {
             Array.Copy(PokePRNG.encryptArray(pokemon.data), 0, pokemon.data, 0, 232);
         }
 
-        public static void DecryptPokemon(Pokemon pokemon)
+        internal static void DecryptPokemon(Pokemon pokemon)
         {
             Array.Copy(PokePRNG.decryptArray(pokemon.data), 0, pokemon.data, 0, 232);
         }

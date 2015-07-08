@@ -103,7 +103,7 @@ namespace PKMDS_Save_Editor
         {
             _sav = StructUtils.RawDeserialize<XYSav>(saveFileName);
             //_sav = StructUtils.RawDeserialize<ORASSav>(saveFileName);
-            _sav.PCStorageSystem.Boxes.SelectMany(box => box.Pokemon).ToList().ForEach(pokemon => PokePRNG.DecryptPokemon(pokemon));
+            _sav.PCStorageSystem.Boxes.SelectMany(box => box.Pokemon).ToList().ForEach(pokemon => pokemon.Decrypt());
             comboBoxes.Items.Clear();
             comboBoxes.DataBindings.Clear();
             textBoxName.DataBindings.Clear();
@@ -389,7 +389,7 @@ namespace PKMDS_Save_Editor
 
         private void WriteSave(string saveFileName)
         {
-            _sav.PCStorageSystem.Boxes.SelectMany(box => box.Pokemon).ToList().ForEach(pokemon => PokePRNG.EncryptPokemon(pokemon));
+            _sav.PCStorageSystem.Boxes.SelectMany(box => box.Pokemon).ToList().ForEach(pokemon => pokemon.Encrypt());
             StructUtils.WriteObject<ISave>(_sav, saveFileName);
         }
 
