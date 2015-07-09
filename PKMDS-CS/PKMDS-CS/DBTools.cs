@@ -73,7 +73,7 @@ namespace PKMDS_CS
             if (con != null) return;
             try
             {
-                var connString = string.Format(@"Data Source={0}; Pooling=false; FailIfMissing=true;", DBFile);
+                var connString = string.Format(@"Data Source={0}; Pooling=false; FailIfMissing=false;", DBFile);
                 using (var factory = new System.Data.SQLite.SQLiteFactory())
                     con = factory.CreateConnection();
                 con.ConnectionString = connString;

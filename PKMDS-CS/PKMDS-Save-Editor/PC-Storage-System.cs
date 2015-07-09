@@ -81,11 +81,16 @@ namespace PKMDS_Save_Editor
             {
                 Pokemon pokemon = (Pokemon)_pokemonBindingSource[slot];
                 if (pokemon.Species == Species.NoSpecies) return;
-                PokemonEditorForm.Pokemon = pokemon;
-                PokemonEditorForm.SetForm();
-                PokemonEditorForm.ShowDialog();
+                OpenPokemonEditor(pokemon);
                 RefreshBoxSlots(slot);
             }
+        }
+
+        private static void OpenPokemonEditor(Pokemon pokemon)
+        {
+            PokemonEditorForm.Pokemon = pokemon;
+            PokemonEditorForm.SetForm();
+            PokemonEditorForm.ShowDialog();
         }
 
         private void LoadSave(string saveFileName)
@@ -345,9 +350,7 @@ namespace PKMDS_Save_Editor
         private void dgPokemon_CellMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
         {
             Pokemon pokemon = ((dgPokemon.DataSource as Pokemon[])[e.RowIndex] as Pokemon);
-            PokemonEditorForm.Pokemon = pokemon;
-            PokemonEditorForm.SetForm();
-            PokemonEditorForm.ShowDialog();
+            OpenPokemonEditor(pokemon);
         }
 
         private void DgPokemon_EditingControlShowing(object sender, DataGridViewEditingControlShowingEventArgs e)
