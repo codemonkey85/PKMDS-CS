@@ -1052,7 +1052,14 @@ namespace PKMDS_CS
         public string Name
         {
             get { return name; }
-            set { if (value.Length > 17) value = value.Substring(0, 17); name = value; }
+            set
+            {
+                if (value == string.Empty)
+                    throw new Exception("Cannot have an empty box name.");
+                if (value.Length > 17)
+                    value = value.Substring(0, 17);
+                name = value;
+            }
         }
 
         public override string ToString()

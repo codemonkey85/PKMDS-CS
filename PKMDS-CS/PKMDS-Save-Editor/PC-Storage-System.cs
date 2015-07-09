@@ -470,5 +470,16 @@ namespace PKMDS_Save_Editor
             }
             RefreshBoxSlots();
         }
+
+        private void textBoxName_Validating(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            if (textBoxName.Text == string.Empty)
+            {
+                MessageBox.Show("Cannot have an empty box name.", "Box Name", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                textBoxName.Text = "Box";
+                textBoxName.SelectAll();
+                textBoxName.Focus();
+            }
+        }
     }
 }
