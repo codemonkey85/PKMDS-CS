@@ -89,7 +89,6 @@ namespace PKMDS_CS
         {
             try
             {
-                if (con == null) return;
                 if (con.State == ConnectionState.Open)
                     con.Close();
             }
