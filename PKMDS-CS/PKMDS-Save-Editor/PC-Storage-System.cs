@@ -37,14 +37,6 @@ namespace PKMDS_Save_Editor
         private void PKMDS_Save_Editor_Load(object sender, EventArgs e)
         {
             DBTools.OpenDB(veekundb);
-            LoadSave(xysavfile);
-            _boxenamesCurrencyManager = _boxenamesBindingSource.CurrencyManager;
-            _boxenamesBindingSource.DataSource = _sav.PCStorageBoxNames.Boxes;
-
-            _boxesCurrencyManager = _boxesBindingSource.CurrencyManager;
-            _boxesBindingSource.DataSource = _sav.PCStorageSystem.Boxes;
-
-            _pokemonBindingSource.DataSource = _boxesCurrencyManager.Current;
             _pokemonBindingSource.DataMember = "Pokemon";
             FlowLayoutPanel flpMain = new FlowLayoutPanel();
             flpMain.Name = "flpMain";
@@ -62,17 +54,14 @@ namespace PKMDS_Save_Editor
                     SizeMode = PictureBoxSizeMode.CenterImage,
                     BorderStyle = BorderStyle.None
                 });
-                pbSlots[slot].DataBindings.Add("Image", _pokemonBindingSource[slot], "BoxIconEgg", true, DataSourceUpdateMode.Never, null);
                 pbSlots[slot].DoubleClick += slot_DoubleClick;
                 pbSlots[slot].MouseEnter += slot_MouseEnter;
                 pbSlots[slot].MouseLeave += slot_MouseLeave;
                 flpMain.Controls.Add(pbSlots[slot]);
             }
             panelBoxedPokemon.Controls.Add(flpMain);
-            comboBoxes.DataSource = _boxenamesBindingSource;
-            comboBoxes.DataBindings.Add("SelectedIndex", _sav, "CurrentBox", false, DataSourceUpdateMode.OnPropertyChanged, 0);
-            textBoxName.DataBindings.Add("Text", _boxenamesBindingSource, "Name", false, DataSourceUpdateMode.OnValidation, "");
             SetReportForm();
+            LoadSave(xysavfile);
         }
 
         private void slot_MouseLeave(object sender, EventArgs e)
@@ -104,9 +93,22 @@ namespace PKMDS_Save_Editor
             _sav = StructUtils.RawDeserialize<XYSav>(saveFileName);
             //_sav = StructUtils.RawDeserialize<ORASSav>(saveFileName);
             _sav.PCStorageSystem.Boxes.SelectMany(box => box.Pokemon).ToList().ForEach(pokemon => pokemon.Decrypt());
-            comboBoxes.Items.Clear();
+            _boxenamesBindingSource.DataSource = _sav.PCStorageBoxNames.Boxes;
+            _boxenamesBindingSource.DataSource = _sav.PCStorageBoxNames.Boxes;
+            _boxesBindingSource.DataSource = _sav.PCStorageSystem.Boxes;
+            _boxenamesCurrencyManager = _boxenamesBindingSource.CurrencyManager;
+            _boxesCurrencyManager = _boxesBindingSource.CurrencyManager;
+            _pokemonBindingSource.DataSource = _boxesCurrencyManager.Current;
+            for (int slot = 0; slot < 30; slot++)
+            {
+                pbSlots[slot].DataBindings.Clear();
+                pbSlots[slot].DataBindings.Add("Image", _pokemonBindingSource[slot], "BoxIconEgg", true, DataSourceUpdateMode.Never, null);
+            }
             comboBoxes.DataBindings.Clear();
             textBoxName.DataBindings.Clear();
+            comboBoxes.DataSource = _boxenamesBindingSource;
+            comboBoxes.DataBindings.Add("SelectedIndex", _sav, "CurrentBox", false, DataSourceUpdateMode.OnPropertyChanged, -1);
+            textBoxName.DataBindings.Add("Text", _boxenamesBindingSource, "Name", false, DataSourceUpdateMode.OnValidation, "");
             dgPokemon.DataSource = _sav.PCStorageSystem.Boxes.SelectMany(box => box.Pokemon).Where(pokemon => pokemon.Species != Species.NoSpecies).ToArray();
         }
 
