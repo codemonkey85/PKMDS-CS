@@ -406,6 +406,7 @@ namespace PKMDS_Save_Editor
                 DBTools.CloseDB();
             }
             catch (Exception) { }
+            finally { Properties.Settings.Default.Save(); }
         }
 
         private void comboBoxes_SelectedIndexChanged(object sender, EventArgs e)
