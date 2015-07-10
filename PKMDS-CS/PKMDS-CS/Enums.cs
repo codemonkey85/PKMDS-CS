@@ -8556,6 +8556,7 @@ namespace PKMDS_CS
         {
             return value.EnumToString();
         }
+
         public override bool Equals(Object obj)
         {
             if (obj == null)
@@ -8653,6 +8654,7 @@ namespace PKMDS_CS
         {
             return value.EnumToString();
         }
+
         public override bool Equals(Object obj)
         {
             if (obj == null)
@@ -8882,6 +8884,7 @@ namespace PKMDS_CS
         {
             return value.EnumToString();
         }
+
         public override bool Equals(Object obj)
         {
             if (obj == null)
@@ -8977,6 +8980,7 @@ namespace PKMDS_CS
         {
             return value.EnumToString();
         }
+
         public override bool Equals(Object obj)
         {
             if (obj == null)
@@ -9072,6 +9076,7 @@ namespace PKMDS_CS
         {
             return value.EnumToString();
         }
+
         public override bool Equals(Object obj)
         {
             if (obj == null)
@@ -9176,6 +9181,7 @@ namespace PKMDS_CS
         {
             return value.EnumToString();
         }
+
         public override bool Equals(Object obj)
         {
             if (obj == null)
