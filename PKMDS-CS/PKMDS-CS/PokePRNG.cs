@@ -26,55 +26,46 @@ namespace PKMDS_CS
             return seed;
         }
 
-        internal static byte[] shuffleArray(byte[] pkx, uint sv)
+        internal static void shuffleArray(ref byte[] pkx)
         {
+            uint pv = BitConverter.ToUInt32(pkx, 0);
+            uint sv = (((pv & 0x3E000) >> 0xD) % 24);
             byte[] ekx = new byte[232];
             Array.Copy(pkx, ekx, 8);
-
             byte[] aloc = { 0, 0, 0, 0, 0, 0, 1, 1, 2, 3, 2, 3, 1, 1, 2, 3, 2, 3, 1, 1, 2, 3, 2, 3 };
             byte[] bloc = { 1, 1, 2, 3, 2, 3, 0, 0, 0, 0, 0, 0, 2, 3, 1, 1, 3, 2, 2, 3, 1, 1, 3, 2 };
             byte[] cloc = { 2, 3, 1, 1, 3, 2, 2, 3, 1, 1, 3, 2, 0, 0, 0, 0, 0, 0, 3, 2, 3, 2, 1, 1 };
             byte[] dloc = { 3, 2, 3, 2, 1, 1, 3, 2, 3, 2, 1, 1, 3, 2, 3, 2, 1, 1, 0, 0, 0, 0, 0, 0 };
-
             byte[] shlog = { aloc[sv], bloc[sv], cloc[sv], dloc[sv] };
-
             for (int b = 0; b < 4; b++)
                 Array.Copy(pkx, 8 + 56 * shlog[b], ekx, 8 + 56 * b, 56);
+            Array.Copy(ekx, pkx, pkx.Length);
+        }
 
-            return ekx;
+        internal static void cryptArray(ref byte[] data)
+        {
+            byte[] dataout = (byte[])data.Clone();
+            uint pv = BitConverter.ToUInt32(dataout, 0);
+            uint seed = pv;
+            for (int i = 8; i < 232; i += 2)
+                Array.Copy(BitConverter.GetBytes((ushort)(BitConverter.ToUInt16(dataout, i) ^ (LCRNG(ref seed) >> 16))), 0, dataout, i, 2);
+            Array.Copy(dataout, data, data.Length);
         }
 
         internal static byte[] decryptArray(byte[] ekx)
         {
             byte[] pkx = (byte[])ekx.Clone();
-
-            uint pv = BitConverter.ToUInt32(pkx, 0);
-            uint sv = (((pv & 0x3E000) >> 0xD) % 24);
-
-            uint seed = pv;
-
-            for (int i = 8; i < 232; i += 2)
-                Array.Copy(BitConverter.GetBytes((ushort)(BitConverter.ToUInt16(pkx, i) ^ (LCRNG(ref seed) >> 16))), 0, pkx, i, 2);
-
-            pkx = shuffleArray(pkx, sv);
-
+            cryptArray(ref pkx);
+            shuffleArray(ref pkx);
             return pkx;
         }
 
         internal static byte[] encryptArray(byte[] pkx)
         {
-            uint pv = BitConverter.ToUInt32(pkx, 0);
-            uint sv = (((pv & 0x3E000) >> 0xD) % 24);
-
             byte[] ekx = (byte[])pkx.Clone();
-
             for (int i = 0; i < 11; i++)
-                ekx = shuffleArray(ekx, sv);
-
-            uint seed = pv;
-            for (int i = 8; i < 232; i += 2)
-                Array.Copy(BitConverter.GetBytes((ushort)(BitConverter.ToUInt16(ekx, i) ^ (LCRNG(ref seed) >> 16))), 0, ekx, i, 2);
-
+                shuffleArray(ref ekx);
+            cryptArray(ref ekx);
             return ekx;
         }
 

@@ -500,7 +500,7 @@ namespace PKMDS_Save_Editor
                 textBoxName.Enabled = true;
                 savLoaded = true;
             }
-            catch (Exception ex)
+            catch (Exception)
             {
             }
         }
