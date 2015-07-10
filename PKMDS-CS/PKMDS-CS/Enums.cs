@@ -8422,9 +8422,10 @@ namespace PKMDS_CS
         The_Battle_for_the_Best_Version_X_Y = 0x80,
     }
 
-    public class ItemObject
+    public struct ItemObject
     {
         public ItemObject(Items item)
+            : this()
         {
             Value = item;
         }
@@ -8467,7 +8468,7 @@ namespace PKMDS_CS
                 return false;
             }
 
-            ItemObject i = obj as ItemObject;
+            ItemObject i = (ItemObject)obj;
             if ((Object)i == null)
             {
                 return false;
@@ -8512,9 +8513,10 @@ namespace PKMDS_CS
         }
     }
 
-    public class SpeciesObject
+    public struct SpeciesObject
     {
         public SpeciesObject(Species species)
+            : this()
         {
             Value = species;
         }
@@ -8546,9 +8548,10 @@ namespace PKMDS_CS
         }
     }
 
-    public class LocationObject
+    public struct LocationObject
     {
         public LocationObject(Locations location)
+            : this()
         {
             Value = location;
         }
@@ -8582,9 +8585,10 @@ namespace PKMDS_CS
         }
     }
 
-    public class MovesObject
+    public struct MovesObject
     {
         public MovesObject(Moves move)
+            : this()
         {
             Value = move;
         }
@@ -8755,9 +8759,10 @@ namespace PKMDS_CS
         }
     }
 
-    public class AbilityObject
+    public struct AbilityObject
     {
         public AbilityObject(Abilities abilities)
+            : this()
         {
             Value = abilities;
         }
@@ -8789,9 +8794,10 @@ namespace PKMDS_CS
         }
     }
 
-    public class NatureObject
+    public struct NatureObject
     {
         public NatureObject(Natures nature)
+            : this()
         {
             Value = nature;
         }

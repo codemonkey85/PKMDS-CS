@@ -91,7 +91,6 @@ namespace PKMDS_CS
 
         public bool Equals(Species other)
         {
-            if (other == null) return false;
             if (this == null) return false;
             return (this.Species == other);
         }
