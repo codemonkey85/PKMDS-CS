@@ -14,7 +14,7 @@ namespace PKMDS_Save_Editor
 {
     public partial class PC_Storage_System_Form : Form
     {
-        private const string veekundb = @"..\..\..\..\PKMDS-DB\veekun-pokedex.sqlite";
+        private const string veekundb = @"veekun-pokedex.sqlite";
         private const string xysavfile = @"..\..\..\files\sav\PokemonXYDecrypted.sav";
         private static Pokemon_Editor_Form PokemonEditorForm = new Pokemon_Editor_Form();
         private static Form reportForm = new Form();
@@ -26,6 +26,7 @@ namespace PKMDS_Save_Editor
         private readonly BindingSource _boxenamesBindingSource = new BindingSource();
         private CurrencyManager _boxenamesCurrencyManager;
         private ISave _sav;
+        private bool savLoaded = false;
 
         public PC_Storage_System_Form()
         {
@@ -61,7 +62,6 @@ namespace PKMDS_Save_Editor
             }
             panelBoxedPokemon.Controls.Add(flpMain);
             SetReportForm();
-            LoadSave(xysavfile);
         }
 
         private void slot_MouseLeave(object sender, EventArgs e)
@@ -71,7 +71,8 @@ namespace PKMDS_Save_Editor
 
         private void slot_MouseEnter(object sender, EventArgs e)
         {
-            ((PictureBox)sender).BackColor = SelectionColor;
+            if (savLoaded)
+                ((PictureBox)sender).BackColor = SelectionColor;
         }
 
         private void slot_DoubleClick(object sender, EventArgs e)
@@ -402,7 +403,6 @@ namespace PKMDS_Save_Editor
         {
             try
             {
-                WriteSave(xysavfile);
                 DBTools.CloseDB();
             }
             catch (Exception) { }
@@ -486,6 +486,28 @@ namespace PKMDS_Save_Editor
                 textBoxName.SelectAll();
                 textBoxName.Focus();
             }
+        }
+
+        private void loadSaveFileToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            savLoaded = false;
+            comboBoxes.Enabled = false;
+            textBoxName.Enabled = false;
+            try
+            {
+                LoadSave(xysavfile);
+                comboBoxes.Enabled = true;
+                textBoxName.Enabled = true;
+                savLoaded = true;
+            }
+            catch (Exception ex)
+            {
+            }
+        }
+
+        private void writeSaveFileToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            WriteSave(xysavfile);
         }
     }
 }

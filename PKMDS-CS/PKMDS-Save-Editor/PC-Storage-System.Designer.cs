@@ -45,6 +45,7 @@
             // comboBoxes
             // 
             this.comboBoxes.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxes.Enabled = false;
             this.comboBoxes.FormattingEnabled = true;
             this.comboBoxes.Location = new System.Drawing.Point(103, 262);
             this.comboBoxes.Name = "comboBoxes";
@@ -62,6 +63,7 @@
             // 
             // textBoxName
             // 
+            this.textBoxName.Enabled = false;
             this.textBoxName.Location = new System.Drawing.Point(103, 230);
             this.textBoxName.MaxLength = 17;
             this.textBoxName.Name = "textBoxName";
@@ -96,12 +98,14 @@
             this.loadSaveFileToolStripMenuItem.Name = "loadSaveFileToolStripMenuItem";
             this.loadSaveFileToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
             this.loadSaveFileToolStripMenuItem.Text = "Load Save File";
+            this.loadSaveFileToolStripMenuItem.Click += new System.EventHandler(this.loadSaveFileToolStripMenuItem_Click);
             // 
             // writeSaveFileToolStripMenuItem
             // 
             this.writeSaveFileToolStripMenuItem.Name = "writeSaveFileToolStripMenuItem";
             this.writeSaveFileToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
             this.writeSaveFileToolStripMenuItem.Text = "Write Save File";
+            this.writeSaveFileToolStripMenuItem.Click += new System.EventHandler(this.writeSaveFileToolStripMenuItem_Click);
             // 
             // reportToolStripMenuItem
             // 

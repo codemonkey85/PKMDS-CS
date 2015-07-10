@@ -72,6 +72,10 @@
     <Compile Include="StructUtils.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="..\..\PKMDS-DB\veekun-pokedex.sqlite">
+      <Link>veekun-pokedex.sqlite</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Include="app.config" />
     <None Include="packages.config" />
   </ItemGroup>
