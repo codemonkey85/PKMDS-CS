@@ -153,7 +153,7 @@
             this.Name = "PC_Storage_System_Form";
             this.Text = "PKMDS Save Editor";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.PKMDS_Save_Editor_FormClosing);
-            this.Load += new System.EventHandler(this.PKMDS_Save_Editor_Load);
+            this.Load += new System.EventHandler(this.PC_Storage_System_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

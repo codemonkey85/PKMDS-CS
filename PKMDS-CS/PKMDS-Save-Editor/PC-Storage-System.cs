@@ -35,7 +35,7 @@ namespace PKMDS_Save_Editor
 
         private List<PictureBox> pbSlots = new List<PictureBox>();
 
-        private void PKMDS_Save_Editor_Load(object sender, EventArgs e)
+        private void PC_Storage_System_Load(object sender, EventArgs e)
         {
             DBTools.OpenDB(veekundb);
             _pokemonBindingSource.DataMember = "Pokemon";

@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
+using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
 
@@ -25,7 +26,7 @@ namespace PKMDS_CS
 
     [StructLayout(LayoutKind.Explicit, Pack = 1, CharSet = CharSet.Unicode)]
     [Serializable]
-    public class Pokemon : IComparable<Pokemon>
+    public class Pokemon : IEquatable<Pokemon>, IComparable<Pokemon>
     {
         [FieldOffset(0x00)]
         [MarshalAs(UnmanagedType.ByValArray, SizeConst = 232)]
@@ -66,7 +67,51 @@ namespace PKMDS_CS
         public bool Equals(Pokemon other)
         {
             if (other == null) return false;
-            return (this.Checksum.Equals(other.Checksum));
+            if (this == null) return false;
+            return (this.data.SequenceEqual(other.data));
+        }
+
+        public static bool operator ==(Pokemon a, Pokemon b)
+        {
+            if (System.Object.ReferenceEquals(a, b))
+            {
+                return true;
+            }
+            if (((object)a == null) || ((object)b == null))
+            {
+                return false;
+            }
+            return (a.data.SequenceEqual(b.data));
+        }
+
+        public static bool operator !=(Pokemon a, Pokemon b)
+        {
+            return !(a == b);
+        }
+
+        public bool Equals(Species other)
+        {
+            if (other == null) return false;
+            if (this == null) return false;
+            return (this.Species == other);
+        }
+
+        public static bool operator ==(Pokemon a, Species b)
+        {
+            if (System.Object.ReferenceEquals(a, b))
+            {
+                return true;
+            }
+            if (((object)a == null) || ((object)b == null))
+            {
+                return false;
+            }
+            return (a.Species == b);
+        }
+
+        public static bool operator !=(Pokemon a, Species b)
+        {
+            return !(a == b);
         }
 
         public static void Swap(Pokemon a, Pokemon b)
