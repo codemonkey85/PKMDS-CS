@@ -283,7 +283,8 @@ namespace PKMDS_Save_Editor
         private void itemComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (itemComboBox.SelectedIndex == -1) return;
-            if ((ItemObject)itemComboBox.SelectedValue == Items.NoItem) return;
+            //if ((ItemObject)itemComboBox.SelectedValue == Items.NoItem) return;
+            if (itemComboBox.SelectedValue as ItemObject == Items.NoItem) return;
             var item = new ItemObject((Items)itemComboBox.SelectedValue);
             _itemCurrencyManger.Position = _itemCurrencyManger.List.IndexOf(item);
         }
