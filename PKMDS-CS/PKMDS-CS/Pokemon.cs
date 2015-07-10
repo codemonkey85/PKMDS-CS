@@ -61,7 +61,7 @@ namespace PKMDS_CS
 
         public override int GetHashCode()
         {
-            return Checksum;
+            return string.Format("{0}-{1}-{2}-{3}", Checksum, PID, EncryptionKey, species).GetHashCode();
         }
 
         public bool Equals(Pokemon other)

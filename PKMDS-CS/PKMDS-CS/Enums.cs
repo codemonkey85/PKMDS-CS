@@ -8463,18 +8463,26 @@ namespace PKMDS_CS
 
         public override bool Equals(Object obj)
         {
-            if (obj == null)
+            try
+            {
+                if (obj == null)
+                {
+                    return false;
+                }
+
+                ItemObject i = (ItemObject)obj;
+                if ((Object)i == null)
+                {
+                    return false;
+                }
+
+                return Value == i.Value;
+
+            }
+            catch (Exception)
             {
                 return false;
             }
-
-            ItemObject i = (ItemObject)obj;
-            if ((Object)i == null)
-            {
-                return false;
-            }
-
-            return Value == i.Value;
         }
 
         public bool Equals(Items i)
@@ -8559,18 +8567,26 @@ namespace PKMDS_CS
 
         public override bool Equals(Object obj)
         {
-            if (obj == null)
+            try
+            {
+                if (obj == null)
+                {
+                    return false;
+                }
+
+                SpeciesObject i = (SpeciesObject)obj;
+                if ((Object)i == null)
+                {
+                    return false;
+                }
+
+                return Value == i.Value;
+
+            }
+            catch (Exception)
             {
                 return false;
             }
-
-            SpeciesObject i = (SpeciesObject)obj;
-            if ((Object)i == null)
-            {
-                return false;
-            }
-
-            return Value == i.Value;
         }
 
         public bool Equals(Species i)
@@ -8657,18 +8673,26 @@ namespace PKMDS_CS
 
         public override bool Equals(Object obj)
         {
-            if (obj == null)
+            try
+            {
+                if (obj == null)
+                {
+                    return false;
+                }
+
+                LocationObject i = (LocationObject)obj;
+                if ((Object)i == null)
+                {
+                    return false;
+                }
+
+                return Value == i.Value;
+
+            }
+            catch (Exception)
             {
                 return false;
             }
-
-            LocationObject i = (LocationObject)obj;
-            if ((Object)i == null)
-            {
-                return false;
-            }
-
-            return Value == i.Value;
         }
 
         public bool Equals(Locations i)
@@ -8887,18 +8911,26 @@ namespace PKMDS_CS
 
         public override bool Equals(Object obj)
         {
-            if (obj == null)
+            try
+            {
+                if (obj == null)
+                {
+                    return false;
+                }
+
+                MovesObject i = (MovesObject)obj;
+                if ((Object)i == null)
+                {
+                    return false;
+                }
+
+                return Value == i.Value;
+
+            }
+            catch (Exception)
             {
                 return false;
             }
-
-            MovesObject i = (MovesObject)obj;
-            if ((Object)i == null)
-            {
-                return false;
-            }
-
-            return Value == i.Value;
         }
 
         public bool Equals(Moves i)
@@ -8983,18 +9015,26 @@ namespace PKMDS_CS
 
         public override bool Equals(Object obj)
         {
-            if (obj == null)
+            try
+            {
+                if (obj == null)
+                {
+                    return false;
+                }
+
+                AbilityObject i = (AbilityObject)obj;
+                if ((Object)i == null)
+                {
+                    return false;
+                }
+
+                return Value == i.Value;
+
+            }
+            catch (Exception)
             {
                 return false;
             }
-
-            AbilityObject i = (AbilityObject)obj;
-            if ((Object)i == null)
-            {
-                return false;
-            }
-
-            return Value == i.Value;
         }
 
         public bool Equals(Abilities i)
@@ -9079,18 +9119,26 @@ namespace PKMDS_CS
 
         public override bool Equals(Object obj)
         {
-            if (obj == null)
+            try
+            {
+                if (obj == null)
+                {
+                    return false;
+                }
+
+                NatureObject i = (NatureObject)obj;
+                if ((Object)i == null)
+                {
+                    return false;
+                }
+
+                return Value == i.Value;
+
+            }
+            catch (Exception)
             {
                 return false;
             }
-
-            NatureObject i = (NatureObject)obj;
-            if ((Object)i == null)
-            {
-                return false;
-            }
-
-            return Value == i.Value;
         }
 
         public bool Equals(Natures i)
@@ -9184,18 +9232,26 @@ namespace PKMDS_CS
 
         public override bool Equals(Object obj)
         {
-            if (obj == null)
+            try
+            {
+                if (obj == null)
+                {
+                    return false;
+                }
+
+                TypeObject i = (TypeObject)obj;
+                if ((Object)i == null)
+                {
+                    return false;
+                }
+
+                return Value == i.Value;
+
+            }
+            catch (Exception)
             {
                 return false;
             }
-
-            TypeObject i = (TypeObject)obj;
-            if ((Object)i == null)
-            {
-                return false;
-            }
-
-            return Value == i.Value;
         }
 
         public bool Equals(Types i)
