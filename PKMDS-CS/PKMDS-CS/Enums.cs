@@ -8470,6 +8470,8 @@ namespace PKMDS_CS
                     return false;
                 }
 
+                if (obj is Items) return Value == (Items)obj;
+
                 ItemObject i = (ItemObject)obj;
                 if ((Object)i == null)
                 {
