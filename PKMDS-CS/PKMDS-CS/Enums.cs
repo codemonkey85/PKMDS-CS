@@ -8511,6 +8511,16 @@ namespace PKMDS_CS
         {
             return !(a == b);
         }
+
+        public static implicit operator Items(ItemObject i)
+        {
+            return i.Value;
+        }
+
+        public static implicit operator ItemObject(Items i)
+        {
+            return new ItemObject(i);
+        }
     }
 
     public struct SpeciesObject
