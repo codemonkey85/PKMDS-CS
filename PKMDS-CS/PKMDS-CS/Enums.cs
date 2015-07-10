@@ -8556,6 +8556,66 @@ namespace PKMDS_CS
         {
             return value.EnumToString();
         }
+        public override bool Equals(Object obj)
+        {
+            if (obj == null)
+            {
+                return false;
+            }
+
+            SpeciesObject i = (SpeciesObject)obj;
+            if ((Object)i == null)
+            {
+                return false;
+            }
+
+            return Value == i.Value;
+        }
+
+        public bool Equals(Species i)
+        {
+            if ((object)i == null)
+            {
+                return false;
+            }
+
+            return Value == i;
+        }
+
+        public override int GetHashCode()
+        {
+            return (int)value;
+        }
+
+        public static bool operator ==(SpeciesObject a, Species b)
+        {
+            if (Object.ReferenceEquals(a, b))
+            {
+                return true;
+            }
+
+            if (((object)a == null) || ((object)b == null))
+            {
+                return false;
+            }
+
+            return a.Value == b;
+        }
+
+        public static bool operator !=(SpeciesObject a, Species b)
+        {
+            return !(a == b);
+        }
+
+        public static implicit operator Species(SpeciesObject i)
+        {
+            return i.Value;
+        }
+
+        public static implicit operator SpeciesObject(Species i)
+        {
+            return new SpeciesObject(i);
+        }
     }
 
     public struct LocationObject
@@ -8593,6 +8653,66 @@ namespace PKMDS_CS
         {
             return value.EnumToString();
         }
+        public override bool Equals(Object obj)
+        {
+            if (obj == null)
+            {
+                return false;
+            }
+
+            LocationObject i = (LocationObject)obj;
+            if ((Object)i == null)
+            {
+                return false;
+            }
+
+            return Value == i.Value;
+        }
+
+        public bool Equals(Locations i)
+        {
+            if ((object)i == null)
+            {
+                return false;
+            }
+
+            return Value == i;
+        }
+
+        public override int GetHashCode()
+        {
+            return (int)value;
+        }
+
+        public static bool operator ==(LocationObject a, Locations b)
+        {
+            if (Object.ReferenceEquals(a, b))
+            {
+                return true;
+            }
+
+            if (((object)a == null) || ((object)b == null))
+            {
+                return false;
+            }
+
+            return a.Value == b;
+        }
+
+        public static bool operator !=(LocationObject a, Locations b)
+        {
+            return !(a == b);
+        }
+
+        public static implicit operator Locations(LocationObject i)
+        {
+            return i.Value;
+        }
+
+        public static implicit operator LocationObject(Locations i)
+        {
+            return new LocationObject(i);
+        }
     }
 
     public struct MovesObject
@@ -8601,11 +8721,6 @@ namespace PKMDS_CS
             : this()
         {
             Value = move;
-        }
-
-        public static implicit operator MovesObject(Moves move)
-        {
-            return new MovesObject(move);
         }
 
         private Moves value;
@@ -8767,6 +8882,66 @@ namespace PKMDS_CS
         {
             return value.EnumToString();
         }
+        public override bool Equals(Object obj)
+        {
+            if (obj == null)
+            {
+                return false;
+            }
+
+            MovesObject i = (MovesObject)obj;
+            if ((Object)i == null)
+            {
+                return false;
+            }
+
+            return Value == i.Value;
+        }
+
+        public bool Equals(Moves i)
+        {
+            if ((object)i == null)
+            {
+                return false;
+            }
+
+            return Value == i;
+        }
+
+        public override int GetHashCode()
+        {
+            return (int)value;
+        }
+
+        public static bool operator ==(MovesObject a, Moves b)
+        {
+            if (Object.ReferenceEquals(a, b))
+            {
+                return true;
+            }
+
+            if (((object)a == null) || ((object)b == null))
+            {
+                return false;
+            }
+
+            return a.Value == b;
+        }
+
+        public static bool operator !=(MovesObject a, Moves b)
+        {
+            return !(a == b);
+        }
+
+        public static implicit operator Moves(MovesObject i)
+        {
+            return i.Value;
+        }
+
+        public static implicit operator MovesObject(Moves i)
+        {
+            return new MovesObject(i);
+        }
     }
 
     public struct AbilityObject
@@ -8802,6 +8977,66 @@ namespace PKMDS_CS
         {
             return value.EnumToString();
         }
+        public override bool Equals(Object obj)
+        {
+            if (obj == null)
+            {
+                return false;
+            }
+
+            AbilityObject i = (AbilityObject)obj;
+            if ((Object)i == null)
+            {
+                return false;
+            }
+
+            return Value == i.Value;
+        }
+
+        public bool Equals(Abilities i)
+        {
+            if ((object)i == null)
+            {
+                return false;
+            }
+
+            return Value == i;
+        }
+
+        public override int GetHashCode()
+        {
+            return (int)value;
+        }
+
+        public static bool operator ==(AbilityObject a, Abilities b)
+        {
+            if (Object.ReferenceEquals(a, b))
+            {
+                return true;
+            }
+
+            if (((object)a == null) || ((object)b == null))
+            {
+                return false;
+            }
+
+            return a.Value == b;
+        }
+
+        public static bool operator !=(AbilityObject a, Abilities b)
+        {
+            return !(a == b);
+        }
+
+        public static implicit operator Abilities(AbilityObject i)
+        {
+            return i.Value;
+        }
+
+        public static implicit operator AbilityObject(Abilities i)
+        {
+            return new AbilityObject(i);
+        }
     }
 
     public struct NatureObject
@@ -8836,6 +9071,66 @@ namespace PKMDS_CS
         public override string ToString()
         {
             return value.EnumToString();
+        }
+        public override bool Equals(Object obj)
+        {
+            if (obj == null)
+            {
+                return false;
+            }
+
+            NatureObject i = (NatureObject)obj;
+            if ((Object)i == null)
+            {
+                return false;
+            }
+
+            return Value == i.Value;
+        }
+
+        public bool Equals(Natures i)
+        {
+            if ((object)i == null)
+            {
+                return false;
+            }
+
+            return Value == i;
+        }
+
+        public override int GetHashCode()
+        {
+            return (int)value;
+        }
+
+        public static bool operator ==(NatureObject a, Natures b)
+        {
+            if (Object.ReferenceEquals(a, b))
+            {
+                return true;
+            }
+
+            if (((object)a == null) || ((object)b == null))
+            {
+                return false;
+            }
+
+            return a.Value == b;
+        }
+
+        public static bool operator !=(NatureObject a, Natures b)
+        {
+            return !(a == b);
+        }
+
+        public static implicit operator Natures(NatureObject i)
+        {
+            return i.Value;
+        }
+
+        public static implicit operator NatureObject(Natures i)
+        {
+            return new NatureObject(i);
         }
     }
 
@@ -8880,6 +9175,66 @@ namespace PKMDS_CS
         public override string ToString()
         {
             return value.EnumToString();
+        }
+        public override bool Equals(Object obj)
+        {
+            if (obj == null)
+            {
+                return false;
+            }
+
+            TypeObject i = (TypeObject)obj;
+            if ((Object)i == null)
+            {
+                return false;
+            }
+
+            return Value == i.Value;
+        }
+
+        public bool Equals(Types i)
+        {
+            if ((object)i == null)
+            {
+                return false;
+            }
+
+            return Value == i;
+        }
+
+        public override int GetHashCode()
+        {
+            return (int)value;
+        }
+
+        public static bool operator ==(TypeObject a, Types b)
+        {
+            if (Object.ReferenceEquals(a, b))
+            {
+                return true;
+            }
+
+            if (((object)a == null) || ((object)b == null))
+            {
+                return false;
+            }
+
+            return a.Value == b;
+        }
+
+        public static bool operator !=(TypeObject a, Types b)
+        {
+            return !(a == b);
+        }
+
+        public static implicit operator Types(TypeObject i)
+        {
+            return i.Value;
+        }
+
+        public static implicit operator TypeObject(Types i)
+        {
+            return new TypeObject(i);
         }
     }
 
