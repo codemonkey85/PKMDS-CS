@@ -8465,7 +8465,7 @@ namespace PKMDS_CS
         {
             try
             {
-                if (obj == null)
+                if (obj == null || obj == DBNull.Value)
                 {
                     return false;
                 }
@@ -8571,7 +8571,7 @@ namespace PKMDS_CS
         {
             try
             {
-                if (obj == null)
+                if (obj == null || obj == DBNull.Value)
                 {
                     return false;
                 }
@@ -8677,7 +8677,7 @@ namespace PKMDS_CS
         {
             try
             {
-                if (obj == null)
+                if (obj == null || obj == DBNull.Value)
                 {
                     return false;
                 }
@@ -8915,7 +8915,7 @@ namespace PKMDS_CS
         {
             try
             {
-                if (obj == null)
+                if (obj == null || obj == DBNull.Value)
                 {
                     return false;
                 }
@@ -9019,7 +9019,7 @@ namespace PKMDS_CS
         {
             try
             {
-                if (obj == null)
+                if (obj == null || obj == DBNull.Value)
                 {
                     return false;
                 }
@@ -9123,7 +9123,7 @@ namespace PKMDS_CS
         {
             try
             {
-                if (obj == null)
+                if (obj == null || obj == DBNull.Value)
                 {
                     return false;
                 }
@@ -9236,7 +9236,7 @@ namespace PKMDS_CS
         {
             try
             {
-                if (obj == null)
+                if (obj == null || obj == DBNull.Value)
                 {
                     return false;
                 }

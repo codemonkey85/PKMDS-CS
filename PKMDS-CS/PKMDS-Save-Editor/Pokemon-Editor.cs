@@ -30,10 +30,8 @@ namespace PKMDS_Save_Editor
         public Pokemon Pokemon { get { return _pokemon; } set { _pokemon = value; tempPokemon.CloneFrom(_pokemon); } }
 
         private readonly BindingSource _pokemonBindingSource = new BindingSource();
-        private readonly BindingSource _itemBindingSource = new BindingSource();
         private readonly BindingSource _moveBindingSource = new BindingSource();
         private readonly BindingSource _relearnableMoveBindingSource = new BindingSource();
-        private CurrencyManager _itemCurrencyManger;
 
         private LocationObject[] metList = new LocationObject[Lists.LocationList.Count];
         private LocationObject[] eggList = new LocationObject[Lists.LocationList.Count];
@@ -45,10 +43,6 @@ namespace PKMDS_Save_Editor
             speciesComboBox.DataSource = Lists.SpeciesList;
             speciesComboBox.ValueMember = "Value";
             speciesComboBox.DisplayMember = "Name";
-
-            _itemBindingSource.DataSource = Lists.ItemList;
-            _itemCurrencyManger = _itemBindingSource.CurrencyManager;
-            _itemCurrencyManger.Position = 0;
 
             itemComboBox.DataSource = Lists.ItemList;
             itemComboBox.ValueMember = "Value";
@@ -79,10 +73,10 @@ namespace PKMDS_Save_Editor
 
             textOTName.DataBindings.Add("Text", _pokemonBindingSource, "OTName", false, DataSourceUpdateMode.OnValidation, string.Empty);
             genderPictureBox.DataBindings.Add("Image", _pokemonBindingSource, "GenderIcon", true, DataSourceUpdateMode.Never, null);
-            pbItemImage.DataBindings.Add("Image", _itemBindingSource, "Image", true, DataSourceUpdateMode.Never, null);
+            pbItemImage.DataBindings.Add("Image", itemComboBox, "SelectedItem.Image", true, DataSourceUpdateMode.Never, null);
             pbSprite.DataBindings.Add("Image", _pokemonBindingSource, "BoxIconEgg", true, DataSourceUpdateMode.Never, null);
             speciesComboBox.DataBindings.Add("SelectedValue", _pokemonBindingSource, "Species", false, DataSourceUpdateMode.OnPropertyChanged, Species.NoSpecies);
-            itemComboBox.DataBindings.Add("SelectedItem", _pokemonBindingSource, "HeldItem", false, DataSourceUpdateMode.OnPropertyChanged, Items.NoItem);
+            itemComboBox.DataBindings.Add("SelectedValue", _pokemonBindingSource, "HeldItem", false, DataSourceUpdateMode.OnPropertyChanged, Items.NoItem);
             textNickname.DataBindings.Add("Text", _pokemonBindingSource, "Nickname", false, DataSourceUpdateMode.OnValidation, "");
             checkNicknamed.DataBindings.Add("Checked", _pokemonBindingSource, "IsNicknamed", false, DataSourceUpdateMode.OnPropertyChanged, false);
             numericLevel.DataBindings.Add("Value", _pokemonBindingSource, "Level", true, DataSourceUpdateMode.OnPropertyChanged, 1);
@@ -282,10 +276,9 @@ namespace PKMDS_Save_Editor
 
         private void itemComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (pbItemImage.DataBindings.Count == 0) return;
             if (itemComboBox.SelectedIndex == -1) return;
-            if ((ItemObject)itemComboBox.SelectedValue == Items.NoItem) return;
-            var item = new ItemObject((Items)itemComboBox.SelectedValue);
-            _itemCurrencyManger.Position = _itemCurrencyManger.List.IndexOf(item);
+            pbItemImage.DataBindings[0].ReadValue();
         }
 
         private List<PictureBox> MarkingsBoxes = new List<PictureBox>();
@@ -293,7 +286,6 @@ namespace PKMDS_Save_Editor
         private void Pokemon_Editor_Form_Load(object sender, EventArgs e)
         {
             _pokemonBindingSource.ResetBindings(false);
-            _itemBindingSource.ResetBindings(false);
             _moveBindingSource.ResetBindings(false);
             _relearnableMoveBindingSource.ResetBindings(false);
             if (markingsPanel.Controls.Count != 0) return;
