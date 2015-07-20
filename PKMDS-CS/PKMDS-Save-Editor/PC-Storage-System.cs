@@ -105,11 +105,7 @@ namespace PKMDS_Save_Editor
             _boxenamesCurrencyManager = _boxenamesBindingSource.CurrencyManager;
             _boxesCurrencyManager = _boxesBindingSource.CurrencyManager;
             _pokemonBindingSource.DataSource = _boxesCurrencyManager.Current;
-            for (int slot = 0; slot < 30; slot++)
-            {
-                pbSlots[slot].DataBindings.Clear();
-                pbSlots[slot].DataBindings.Add("Image", _pokemonBindingSource[slot], "BoxIconEgg", true, DataSourceUpdateMode.Never, null);
-            }
+            RefreshBoxSlots();
             comboBoxes.DataBindings.Clear();
             textBoxName.DataBindings.Clear();
             comboBoxes.DataSource = _boxenamesBindingSource;
@@ -434,12 +430,9 @@ namespace PKMDS_Save_Editor
             }
             else
             {
-                foreach (PictureBox pbSlot in pbSlots)
-                {
-                    pbSlot.DataBindings.Clear();
-                }
                 for (int slot = 0; slot < 30; slot++)
                 {
+                    pbSlots[slot].DataBindings.Clear();
                     pbSlots[slot].DataBindings.Add("Image", _pokemonBindingSource[slot], "BoxIconEgg", true, DataSourceUpdateMode.Never, null);
                 }
             }
