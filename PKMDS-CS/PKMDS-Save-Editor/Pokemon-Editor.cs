@@ -360,7 +360,7 @@ namespace PKMDS_Save_Editor
         {
             tempPokemon.FormID = 0;
             if (formsComboBox.DataBindings.Count != 0)
-                formsComboBox.DataBindings.RemoveAt(0);
+                formsComboBox.DataBindings.Clear();
             formsComboBox.DataSource = null;
             if (DBTools.GetPokemonForms().Keys.Contains(tempPokemon.Species))
             {
@@ -376,6 +376,8 @@ namespace PKMDS_Save_Editor
                 picType1.DataBindings[0].ReadValue();
             if (picType2.DataBindings.Count != 0)
                 picType2.DataBindings[0].ReadValue();
+            if (pbSprite.DataBindings.Count != 0)
+                pbSprite.DataBindings[0].ReadValue();
         }
 
         private void dataGridMoves_DataError(object sender, DataGridViewDataErrorEventArgs e)
@@ -398,6 +400,13 @@ namespace PKMDS_Save_Editor
         {
             if (!FormSet) return;
             tempPokemon.MetLocation = (Locations)comboMetLocation.SelectedValue;
+        }
+
+        private void formsComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (formsComboBox.Items.Count == 0 || formsComboBox.SelectedIndex == -1) return;
+            if (pbSprite.DataBindings.Count != 0)
+                pbSprite.DataBindings[0].ReadValue();
         }
     }
 }
