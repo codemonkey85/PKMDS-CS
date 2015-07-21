@@ -4,15 +4,6 @@ using System.Runtime.InteropServices;
 
 namespace PKMDS_CS
 {
-    public interface ISave
-    {
-        byte CurrentBox { get; set; }
-
-        PCStorageSystem PCStorageSystem { get; set; }
-
-        PCStorageBoxNames PCStorageBoxNames { get; set; }
-    }
-
     [StructLayout(LayoutKind.Explicit, Size = 0x100000, Pack = 1, CharSet = CharSet.Unicode)]
     [Serializable]
     public class XYSav : ISave

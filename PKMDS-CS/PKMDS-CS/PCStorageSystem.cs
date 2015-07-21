@@ -10,7 +10,7 @@ namespace PKMDS_CS
 {
     [StructLayout(LayoutKind.Sequential, Pack = 1, CharSet = CharSet.Unicode)]
     [Serializable]
-    public class PCBox
+    public class PCBox : PKMDS_CS.IPCBox
     {
         [MarshalAs(UnmanagedType.Struct)]
         private Pokemon pokemon01;
@@ -348,7 +348,7 @@ namespace PKMDS_CS
 
     [StructLayout(LayoutKind.Sequential, Pack = 1, CharSet = CharSet.Unicode)]
     [Serializable]
-    public class PCStorageSystem
+    public class PCStorageSystem : PKMDS_CS.IPCStorageSystem
     {
         [MarshalAs(UnmanagedType.Struct)]
         private PCBox box01;
@@ -696,7 +696,7 @@ namespace PKMDS_CS
 
     [StructLayout(LayoutKind.Sequential, Pack = 1, CharSet = CharSet.Unicode)]
     [Serializable]
-    public class PCStorageBoxNames
+    public class PCStorageBoxNames : PKMDS_CS.IPCStorageBoxNames
     {
         [MarshalAs(UnmanagedType.Struct)]
         private BoxName box01;
@@ -1044,7 +1044,7 @@ namespace PKMDS_CS
 
     [StructLayout(LayoutKind.Sequential, Pack = 1, CharSet = CharSet.Unicode)]
     [Serializable]
-    public class BoxName
+    public class BoxName : PKMDS_CS.IBoxName
     {
         [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 17)]
         private string name;

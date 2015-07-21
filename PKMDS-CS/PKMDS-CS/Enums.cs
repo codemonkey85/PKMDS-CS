@@ -8422,6 +8422,18 @@ namespace PKMDS_CS
         The_Battle_for_the_Best_Version_X_Y = 0x80,
     }
 
+    internal enum Offsets
+    {
+        NicknameOffset = 0x40,
+        LastTrainerNameOffset = 0x78,
+        OTNameOffset = 0xB0
+    }
+
+    public enum Consts
+    {
+        NameMaxLength = 24
+    }
+
     public struct ItemObject
     {
         public ItemObject(Items item)
@@ -8479,7 +8491,6 @@ namespace PKMDS_CS
                 }
 
                 return Value == i.Value;
-
             }
             catch (Exception)
             {
@@ -8583,7 +8594,6 @@ namespace PKMDS_CS
                 }
 
                 return Value == i.Value;
-
             }
             catch (Exception)
             {
@@ -8689,7 +8699,6 @@ namespace PKMDS_CS
                 }
 
                 return Value == i.Value;
-
             }
             catch (Exception)
             {
@@ -8927,7 +8936,6 @@ namespace PKMDS_CS
                 }
 
                 return Value == i.Value;
-
             }
             catch (Exception)
             {
@@ -9031,7 +9039,6 @@ namespace PKMDS_CS
                 }
 
                 return Value == i.Value;
-
             }
             catch (Exception)
             {
@@ -9135,7 +9142,6 @@ namespace PKMDS_CS
                 }
 
                 return Value == i.Value;
-
             }
             catch (Exception)
             {
@@ -9248,7 +9254,6 @@ namespace PKMDS_CS
                 }
 
                 return Value == i.Value;
-
             }
             catch (Exception)
             {

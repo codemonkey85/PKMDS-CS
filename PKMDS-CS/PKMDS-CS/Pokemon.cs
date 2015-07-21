@@ -12,21 +12,9 @@ using System.Text;
 
 namespace PKMDS_CS
 {
-    internal enum Offsets
-    {
-        NicknameOffset = 0x40,
-        LastTrainerNameOffset = 0x78,
-        OTNameOffset = 0xB0
-    }
-
-    public enum Consts
-    {
-        NameMaxLength = 24
-    }
-
     [StructLayout(LayoutKind.Explicit, Pack = 1, CharSet = CharSet.Unicode)]
     [Serializable]
-    public class Pokemon : IEquatable<Pokemon>, IComparable<Pokemon>
+    public class Pokemon : IPokemon, IEquatable<Pokemon>, IComparable<Pokemon>
     {
         [FieldOffset(0x00)]
         [MarshalAs(UnmanagedType.ByValArray, SizeConst = 232)]
@@ -35,91 +23,6 @@ namespace PKMDS_CS
         public Pokemon()
         {
             this.data = new byte[232];
-        }
-
-        public int SortBySpeciesAscending(string name1, string name2)
-        {
-            return name1.CompareTo(name2);
-        }
-
-        public override bool Equals(object obj)
-        {
-            if (obj == null) return false;
-            Pokemon objAsPart = obj as Pokemon;
-            if (objAsPart == null) return false;
-            else return Equals(objAsPart);
-        }
-
-        public int CompareTo(Pokemon comparePokemon)
-        {
-            if (comparePokemon == null)
-                return 1;
-            if (comparePokemon.Species == PKMDS_CS.Species.NoSpecies)
-                return 0;
-            return this.Species.CompareTo(comparePokemon.Species);
-        }
-
-        public override int GetHashCode()
-        {
-            return string.Format("{0}-{1}-{2}-{3}", Checksum, PID, EncryptionKey, species).GetHashCode();
-        }
-
-        public bool Equals(Pokemon other)
-        {
-            if (other == null) return false;
-            if (this == null) return false;
-            return (this.data.SequenceEqual(other.data));
-        }
-
-        public static bool operator ==(Pokemon a, Pokemon b)
-        {
-            if (System.Object.ReferenceEquals(a, b))
-            {
-                return true;
-            }
-            if (((object)a == null) || ((object)b == null))
-            {
-                return false;
-            }
-            return (a.data.SequenceEqual(b.data));
-        }
-
-        public static bool operator !=(Pokemon a, Pokemon b)
-        {
-            return !(a == b);
-        }
-
-        public bool Equals(Species other)
-        {
-            if (this == null) return false;
-            return (this.Species == other);
-        }
-
-        public static bool operator ==(Pokemon a, Species b)
-        {
-            if (System.Object.ReferenceEquals(a, b))
-            {
-                return true;
-            }
-            if (((object)a == null) || ((object)b == null))
-            {
-                return false;
-            }
-            return (a.Species == b);
-        }
-
-        public static bool operator !=(Pokemon a, Species b)
-        {
-            return !(a == b);
-        }
-
-        public static void Swap(Pokemon a, Pokemon b)
-        {
-            Pokemon c = new Pokemon();
-            c.CloneFrom(a);
-            a.CloneFrom(b);
-            b.CloneFrom(c);
-            c = null;
         }
 
         internal uint EncryptionKey
@@ -1488,16 +1391,97 @@ namespace PKMDS_CS
 
         #endregion Pokemon Properties
 
-        #region Other Properties
+        #region Methods
 
         public override string ToString()
         {
             return Species.EnumToString();
         }
 
-        #endregion Other Properties
+        public int SortBySpeciesAscending(string name1, string name2)
+        {
+            return name1.CompareTo(name2);
+        }
 
-        #region Methods
+        public override bool Equals(object obj)
+        {
+            if (obj == null) return false;
+            Pokemon objAsPart = obj as Pokemon;
+            if (objAsPart == null) return false;
+            else return Equals(objAsPart);
+        }
+
+        public int CompareTo(Pokemon comparePokemon)
+        {
+            if (comparePokemon == null)
+                return 1;
+            if (comparePokemon.Species == PKMDS_CS.Species.NoSpecies)
+                return 0;
+            return this.Species.CompareTo(comparePokemon.Species);
+        }
+
+        public override int GetHashCode()
+        {
+            return string.Format("{0}-{1}-{2}-{3}", Checksum, PID, EncryptionKey, species).GetHashCode();
+        }
+
+        public bool Equals(Pokemon other)
+        {
+            if (other == null) return false;
+            if (this == null) return false;
+            return (this.data.SequenceEqual(other.data));
+        }
+
+        public static bool operator ==(Pokemon a, Pokemon b)
+        {
+            if (System.Object.ReferenceEquals(a, b))
+            {
+                return true;
+            }
+            if (((object)a == null) || ((object)b == null))
+            {
+                return false;
+            }
+            return (a.data.SequenceEqual(b.data));
+        }
+
+        public static bool operator !=(Pokemon a, Pokemon b)
+        {
+            return !(a == b);
+        }
+
+        public bool Equals(Species other)
+        {
+            if (this == null) return false;
+            return (this.Species == other);
+        }
+
+        public static bool operator ==(Pokemon a, Species b)
+        {
+            if (System.Object.ReferenceEquals(a, b))
+            {
+                return true;
+            }
+            if (((object)a == null) || ((object)b == null))
+            {
+                return false;
+            }
+            return (a.Species == b);
+        }
+
+        public static bool operator !=(Pokemon a, Species b)
+        {
+            return !(a == b);
+        }
+
+        public static void Swap(Pokemon a, Pokemon b)
+        {
+            Pokemon c = new Pokemon();
+            c.CloneFrom(a);
+            a.CloneFrom(b);
+            b.CloneFrom(c);
+            c = null;
+        }
 
         public void Encrypt()
         {
