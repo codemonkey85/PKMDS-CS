@@ -22,6 +22,7 @@ namespace PKMDS_Save_Editor
         private static readonly Color SelectionColor = Color.Wheat;
         private readonly BindingSource _boxesBindingSource = new BindingSource();
         private readonly BindingSource _pokemonBindingSource = new BindingSource();
+        private readonly BindingSource _pokemonReportBindingSource = new BindingSource();
         private CurrencyManager _boxesCurrencyManager;
         private readonly BindingSource _boxenamesBindingSource = new BindingSource();
         private CurrencyManager _boxenamesCurrencyManager;
@@ -111,7 +112,8 @@ namespace PKMDS_Save_Editor
             comboBoxes.DataSource = _boxenamesBindingSource;
             comboBoxes.DataBindings.Add("SelectedIndex", _sav, "CurrentBox", false, DataSourceUpdateMode.OnPropertyChanged, -1);
             textBoxName.DataBindings.Add("Text", _boxenamesBindingSource, "Name", false, DataSourceUpdateMode.OnValidation, "");
-            dgPokemon.DataSource = _sav.PCStorageSystem.Boxes.SelectMany(box => box.Pokemon).Where(pokemon => pokemon.Species != Species.NoSpecies).ToArray();
+            _pokemonReportBindingSource.DataSource = _sav.PCStorageSystem.Boxes.SelectMany(box => box.Pokemon).Where(pokemon => pokemon.Species != Species.NoSpecies).ToArray();
+            dgPokemon.DataSource = _pokemonReportBindingSource;
         }
 
         private void SetReportForm()
