@@ -1,17 +1,14 @@
 ﻿using System.Reflection;
-using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
-
-[assembly: InternalsVisibleTo("PKMDS-Tests")]
 
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("PKMDS-CS")]
+[assembly: AssemblyTitle("PKMDS-Tests")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("PKMDS-CS")]
+[assembly: AssemblyProduct("PKMDS-Tests")]
 [assembly: AssemblyCopyright("Copyright ©  2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -22,7 +19,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("bd593ebb-b5cc-4ca4-946a-dbf97176bba8")]
+[assembly: Guid("2967f428-81c2-45f6-9f2b-8e821c5a6ee0")]
 
 // Version information for an assembly consists of the following four values:
 //

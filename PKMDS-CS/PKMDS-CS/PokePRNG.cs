@@ -103,6 +103,11 @@ namespace PKMDS_CS
             }
         }
 
+        public static bool ValidatePokemonChecksum(Pokemon Pokemon)
+        {
+            return verifychk(Pokemon.data);
+        }
+
         internal static uint getPSV(uint PID)
         {
             return Convert.ToUInt16(((PID >> 16) ^ (PID & 0xFFFF)) >> 4);

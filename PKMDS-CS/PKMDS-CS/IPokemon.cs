@@ -24,6 +24,8 @@ namespace PKMDS_CS
 
         System.Drawing.Image BoxIconEgg { get; }
 
+        //ushort Checksum { get; set; }
+
         bool Circle { get; set; }
 
         void CloneFrom(Pokemon pokemon);

@@ -1,11 +1,16 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.30501.0
+VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PKMDS-CS", "PKMDS-CS\PKMDS-CS.csproj", "{74501498-CD72-45D0-88BC-DA5AE7813726}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PKMDS-Save-Editor", "PKMDS-Save-Editor\PKMDS-Save-Editor.csproj", "{603A47B4-638F-4B34-9F4F-5C1AFBC454C9}"
+	ProjectSection(ProjectDependencies) = postProject
+		{74501498-CD72-45D0-88BC-DA5AE7813726} = {74501498-CD72-45D0-88BC-DA5AE7813726}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PKMDS-Tests", "PKMDS-Tests\PKMDS-Tests.csproj", "{4D7A63B5-808D-4A5B-853B-27E1F840338F}"
 	ProjectSection(ProjectDependencies) = postProject
 		{74501498-CD72-45D0-88BC-DA5AE7813726} = {74501498-CD72-45D0-88BC-DA5AE7813726}
 	EndProjectSection
@@ -24,6 +29,10 @@ Global
 		{603A47B4-638F-4B34-9F4F-5C1AFBC454C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{603A47B4-638F-4B34-9F4F-5C1AFBC454C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{603A47B4-638F-4B34-9F4F-5C1AFBC454C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D7A63B5-808D-4A5B-853B-27E1F840338F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D7A63B5-808D-4A5B-853B-27E1F840338F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D7A63B5-808D-4A5B-853B-27E1F840338F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D7A63B5-808D-4A5B-853B-27E1F840338F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
