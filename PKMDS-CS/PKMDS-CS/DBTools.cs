@@ -495,6 +495,42 @@ namespace PKMDS_CS
             }
         }
 
+        internal static ushort CalcStat(Species Species, byte FormId, Natures Nature, int Level, PKMDS_CS.Stats Stat, uint IV, byte EV)
+        {
+            ushort calcStat = 0;
+            int BaseStat = 0;
+            var results = GetPokemonDataTable.Select(string.Format("species_id = {0} and form_id = {1}", (int)Species, FormId));
+            DataRow PokemonDataRow;
+            if (results.Length > 0)
+            {
+                PokemonDataRow = (DataRow)results[0];
+            }
+            else
+            {
+                return calcStat;
+            }
+
+            int.TryParse(PokemonDataRow[(int)Stat].ToString(), out BaseStat);
+
+            if (Stat == Stats.HP)
+            {
+                calcStat = (BaseStat == 1) ? (ushort)1 : (ushort)((((IV + (2 * BaseStat) + (EV / 4) + 100) * Level) / 100) + 10);
+            }
+            else
+            {
+                calcStat = (ushort)((((IV + (2 * BaseStat) + (EV / 4)) * Level) / 100) + 5);
+            }
+
+            int incr = (int)Nature / 5 + 1;
+            int decr = (int)Nature % 5 + 1;
+            if (incr == decr) return calcStat;
+
+            if (incr == (int)Stat) { calcStat *= 11; calcStat /= 10; }
+            if (decr == (int)Stat) { calcStat *= 9; calcStat /= 10; }
+
+            return calcStat;
+        }
+
         internal static ushort[] CalcStats(
             ushort species, byte formid, byte nature, int level,
             uint HP_IV, uint ATK_IV, uint DEF_IV, uint SPE_IV, uint SPA_IV, uint SPD_IV,
