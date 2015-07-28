@@ -80,9 +80,6 @@ namespace PKMDS_Save_Editor
             textNickname.DataBindings.Add("Text", _pokemonBindingSource, "Nickname", false, DataSourceUpdateMode.OnValidation, "");
             checkNicknamed.DataBindings.Add("Checked", _pokemonBindingSource, "IsNicknamed", false, DataSourceUpdateMode.OnPropertyChanged, false);
             numericLevel.DataBindings.Add("Value", _pokemonBindingSource, "Level", true, DataSourceUpdateMode.OnPropertyChanged, 1);
-            picType1.DataBindings.Add("Image", _pokemonBindingSource, "Type1.Image", true, DataSourceUpdateMode.Never, null);
-            picType2.DataBindings.Add("Image", _pokemonBindingSource, "Type2.Image", true, DataSourceUpdateMode.Never, null);
-            picType2.DataBindings[0].Format += Type_2_Image_Format;
             comboNature.DataSource = Enum.GetValues(typeof(Natures)).Cast<Natures>().ToArray<Natures>();
             comboNature.DataBindings.Add("SelectedItem", _pokemonBindingSource, "Nature", true, DataSourceUpdateMode.OnPropertyChanged, -1);
 
@@ -193,19 +190,6 @@ namespace PKMDS_Save_Editor
             numericEncryptionConstant.DataBindings.Add("Hexadecimal", checkEncryptionConstantHex, "Checked", false, DataSourceUpdateMode.OnPropertyChanged, false);
 
             FormPopulated = true;
-        }
-
-        private void Type_2_Image_Format(object sender, ConvertEventArgs e)
-        {
-            var pb = (PictureBox)((Binding)sender).Control;
-            if (!tempPokemon.Type2.HasValue) e.Value = null;
-            if (tempPokemon.Type1.HasValue && tempPokemon.Type2.HasValue)
-            {
-                if (tempPokemon.Type1.Value.Value == tempPokemon.Type2.Value.Value)
-                {
-                    e.Value = null;
-                }
-            }
         }
 
         public void SetForm()
@@ -372,12 +356,32 @@ namespace PKMDS_Save_Editor
             {
                 formsComboBox.Enabled = false;
             }
-            if (picType1.DataBindings.Count != 0)
-                picType1.DataBindings[0].ReadValue();
-            if (picType2.DataBindings.Count != 0)
-                picType2.DataBindings[0].ReadValue();
+
+            RefreshTypes();
+
             if (pbSprite.DataBindings.Count != 0)
                 pbSprite.DataBindings[0].ReadValue();
+        }
+
+        private void RefreshTypes()
+        {
+            picType1.Image = tempPokemon.Type1.Value.Image;
+
+            if (!tempPokemon.Type2.HasValue)
+            {
+                picType2.Image = null;
+            }
+            else if (tempPokemon.Type1.HasValue && tempPokemon.Type2.HasValue)
+            {
+                if (tempPokemon.Type1.Value.Value == tempPokemon.Type2.Value.Value)
+                {
+                    picType2.Image = null;
+                }
+                else
+                {
+                    picType2.Image = tempPokemon.Type2.Value.Image;
+                }
+            }
         }
 
         private void dataGridMoves_DataError(object sender, DataGridViewDataErrorEventArgs e)
