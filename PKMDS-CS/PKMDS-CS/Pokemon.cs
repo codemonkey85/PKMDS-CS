@@ -857,29 +857,29 @@ namespace PKMDS_CS
         }
 
         [DisplayName("Species")]
-        public Species Species
+        public SpeciesObject Species
         {
             get
             {
                 return Enum.IsDefined(typeof(Species), species)
-                    ? (Species)species
-                    : Species.NoSpecies;
+                    ? new SpeciesObject((Species)species)
+                    : new SpeciesObject((Species)PKMDS_CS.Species.NoSpecies);
             }
-            set { species = (ushort)value; }
+            set { species = (ushort)value.Value; }
         }
 
         [DisplayName("Held Item")]
-        public Items HeldItem
+        public ItemObject HeldItem
         {
             get
             {
                 return Enum.IsDefined(typeof(Items), helditem)
-                    ? (Items)helditem
-                    : Items.NoItem;
+                    ? new ItemObject((Items)helditem)
+                    : new ItemObject(Items.NoItem);
             }
             set
             {
-                helditem = (ushort)value;
+                helditem = (ushort)value.Value;
             }
         }
 
@@ -891,127 +891,127 @@ namespace PKMDS_CS
         }
 
         [DisplayName("Ability")]
-        public Abilities Ability
+        public AbilityObject Ability
         {
             get
             {
                 return Enum.IsDefined(typeof(Abilities), ability)
-                    ? (Abilities)ability
-                    : Abilities.NoAbility;
+                    ? new AbilityObject((Abilities)ability)
+                    : new AbilityObject(Abilities.NoAbility);
             }
-            set { ability = (byte)value; }
+            set { ability = (byte)value.Value; }
         }
 
         [DisplayName("Nature")]
-        public Natures Nature
+        public NatureObject Nature
         {
             get
             {
                 return Enum.IsDefined(typeof(Natures), nature)
-                    ? (Natures)nature
-                    : Natures.Hardy;
+                    ? new NatureObject((Natures)nature)
+                    : new NatureObject(Natures.Hardy);
             }
-            set { nature = (byte)value; }
+            set { nature = (byte)value.Value; }
         }
 
         [DisplayName("Move 1")]
-        public Moves Move1
+        public MovesObject Move1
         {
             get
             {
                 return Enum.IsDefined(typeof(Moves), move1id)
-                    ? (Moves)move1id
-                    : PKMDS_CS.Moves.NoMove;
+                    ? new MovesObject((Moves)move1id)
+                    : new MovesObject(PKMDS_CS.Moves.NoMove);
             }
             set
             {
                 if (value == PKMDS_CS.Moves.NoMove) throw new System.Exception(string.Format("The Pokémon {0}'s first move cannot be 'No Move'!", ToString()));
-                move1id = (ushort)value;
+                move1id = (ushort)value.Value;
             }
         }
 
         [DisplayName("Move 2")]
-        public Moves Move2
+        public MovesObject Move2
         {
             get
             {
                 return Enum.IsDefined(typeof(Moves), move2id)
-                    ? (Moves)move2id
-                    : PKMDS_CS.Moves.NoMove;
+                    ? new MovesObject((Moves)move2id)
+                    : new MovesObject(PKMDS_CS.Moves.NoMove);
             }
-            set { move2id = (ushort)value; }
+            set { move2id = (ushort)value.Value; }
         }
 
         [DisplayName("Move 3")]
-        public Moves Move3
+        public MovesObject Move3
         {
             get
             {
                 return Enum.IsDefined(typeof(Moves), move3id)
-                    ? (Moves)move3id
-                    : PKMDS_CS.Moves.NoMove;
+                    ? new MovesObject((Moves)move3id)
+                    : new MovesObject(PKMDS_CS.Moves.NoMove);
             }
-            set { move3id = (ushort)value; }
+            set { move3id = (ushort)value.Value; }
         }
 
         [DisplayName("Move 4")]
-        public Moves Move4
+        public MovesObject Move4
         {
             get
             {
                 return Enum.IsDefined(typeof(Moves), move4id)
-                    ? (Moves)move4id
-                    : PKMDS_CS.Moves.NoMove;
+                    ? new MovesObject((Moves)move4id)
+                    : new MovesObject(PKMDS_CS.Moves.NoMove);
             }
-            set { move4id = (ushort)value; }
+            set { move4id = (ushort)value.Value; }
         }
 
         [DisplayName("Relearn Move 1")]
-        public Moves RelearnMove1
+        public MovesObject RelearnMove1
         {
             get
             {
                 return Enum.IsDefined(typeof(Moves), relearnmove1id)
-                    ? (Moves)relearnmove1id
-                    : PKMDS_CS.Moves.NoMove;
+                    ? new MovesObject((Moves)relearnmove1id)
+                    : new MovesObject(PKMDS_CS.Moves.NoMove);
             }
-            set { relearnmove1id = (ushort)value; }
+            set { relearnmove1id = (ushort)value.Value; }
         }
 
         [DisplayName("Relearn Move 2")]
-        public Moves RelearnMove2
+        public MovesObject RelearnMove2
         {
             get
             {
                 return Enum.IsDefined(typeof(Moves), relearnmove2id)
-                    ? (Moves)relearnmove2id
-                    : PKMDS_CS.Moves.NoMove;
+                    ? new MovesObject((Moves)relearnmove2id)
+                    : new MovesObject(PKMDS_CS.Moves.NoMove);
             }
-            set { relearnmove2id = (ushort)value; }
+            set { relearnmove2id = (ushort)value.Value; }
         }
 
         [DisplayName("Relearn Move 3")]
-        public Moves RelearnMove3
+        public MovesObject RelearnMove3
         {
             get
             {
                 return Enum.IsDefined(typeof(Moves), relearnmove3id)
-                    ? (Moves)relearnmove3id
-                    : PKMDS_CS.Moves.NoMove;
+                    ? new MovesObject((Moves)relearnmove3id)
+                    : new MovesObject(PKMDS_CS.Moves.NoMove);
             }
-            set { relearnmove3id = (ushort)value; }
+            set { relearnmove3id = (ushort)value.Value; }
         }
 
         [DisplayName("Relearn Move 4")]
-        public Moves RelearnMove4
+        public MovesObject RelearnMove4
         {
             get
             {
                 return Enum.IsDefined(typeof(Moves), relearnmove4id)
-                    ? (Moves)relearnmove4id
-                    : PKMDS_CS.Moves.NoMove;
+                    ? new MovesObject((Moves)relearnmove4id)
+                    : new MovesObject(PKMDS_CS.Moves.NoMove);
             }
-            set { relearnmove4id = (ushort)value; }
+            set { relearnmove4id = (ushort)value.Value; }
         }
 
         [DisplayName("Nickname")]
@@ -1063,34 +1063,34 @@ namespace PKMDS_CS
         }
 
         [DisplayName("Ball")]
-        public Items Ball
+        public ItemObject Ball
         {
             get { return Extensions.BallToItem(pokeball); }
             set { pokeball = Extensions.ItemToBall(value); }
         }
 
         [DisplayName("Egg Location")]
-        public Locations EggLocation
+        public LocationObject EggLocation
         {
             get
             {
                 return Enum.IsDefined(typeof(Locations), egglocation)
-                    ? ((Locations)egglocation)
-                    : (Locations.Mystery_Zone);
+                    ? new LocationObject(((Locations)egglocation))
+                    : new LocationObject((Locations.Mystery_Zone));
             }
-            set { egglocation = (ushort)value; }
+            set { egglocation = (ushort)value.Value; }
         }
 
         [DisplayName("Met Location")]
-        public Locations MetLocation
+        public LocationObject MetLocation
         {
             get
             {
                 return Enum.IsDefined(typeof(Locations), metlocation)
-                    ? ((Locations)metlocation)
-                    : (Locations.Mystery_Zone);
+                    ? new LocationObject(((Locations)metlocation))
+                    : new LocationObject((Locations.Mystery_Zone));
             }
-            set { metlocation = (ushort)value; }
+            set { metlocation = (ushort)value.Value; }
         }
 
         [DisplayName("Type 1")]
@@ -1340,7 +1340,7 @@ namespace PKMDS_CS
         {
             get
             {
-                return DBTools.CalcStats(species, FormID, nature, Level, HP_IV, Attack_IV, Defense_IV, Speed_IV, SpecialAttack_IV, SpecialDefense_IV, HPEffortValue, AttackEffortValue, DefenseEffortValue, SpeedEffortValue, SpAttackEffortValue, SpDefenseEffortValue)[0];
+                return DBTools.CalcStat(Species.Value, FormID, Nature.Value, Level, Stats.HP, HP_IV, HPEffortValue);
             }
         }
 
@@ -1349,7 +1349,7 @@ namespace PKMDS_CS
         {
             get
             {
-                return DBTools.CalcStats(species, FormID, nature, Level, HP_IV, Attack_IV, Defense_IV, Speed_IV, SpecialAttack_IV, SpecialDefense_IV, HPEffortValue, AttackEffortValue, DefenseEffortValue, SpeedEffortValue, SpAttackEffortValue, SpDefenseEffortValue)[1];
+                return DBTools.CalcStat(Species.Value, FormID, Nature.Value, Level, Stats.Attack, Attack_IV, AttackEffortValue);
             }
         }
 
@@ -1358,7 +1358,7 @@ namespace PKMDS_CS
         {
             get
             {
-                return DBTools.CalcStats(species, FormID, nature, Level, HP_IV, Attack_IV, Defense_IV, Speed_IV, SpecialAttack_IV, SpecialDefense_IV, HPEffortValue, AttackEffortValue, DefenseEffortValue, SpeedEffortValue, SpAttackEffortValue, SpDefenseEffortValue)[2];
+                return DBTools.CalcStat(Species.Value, FormID, Nature.Value, Level, Stats.Defense, Defense_IV, DefenseEffortValue);
             }
         }
 
@@ -1367,7 +1367,7 @@ namespace PKMDS_CS
         {
             get
             {
-                return DBTools.CalcStats(species, FormID, nature, Level, HP_IV, Attack_IV, Defense_IV, Speed_IV, SpecialAttack_IV, SpecialDefense_IV, HPEffortValue, AttackEffortValue, DefenseEffortValue, SpeedEffortValue, SpAttackEffortValue, SpDefenseEffortValue)[3];
+                return DBTools.CalcStat(Species.Value, FormID, Nature.Value, Level, Stats.Speed, Speed_IV, SpeedEffortValue);
             }
         }
 
@@ -1376,7 +1376,7 @@ namespace PKMDS_CS
         {
             get
             {
-                return DBTools.CalcStats(species, FormID, nature, Level, HP_IV, Attack_IV, Defense_IV, Speed_IV, SpecialAttack_IV, SpecialDefense_IV, HPEffortValue, AttackEffortValue, DefenseEffortValue, SpeedEffortValue, SpAttackEffortValue, SpDefenseEffortValue)[4];
+                return DBTools.CalcStat(Species.Value, FormID, Nature.Value, Level, Stats.SpecialAttack, SpecialAttack_IV, SpAttackEffortValue);
             }
         }
 
@@ -1385,7 +1385,7 @@ namespace PKMDS_CS
         {
             get
             {
-                return DBTools.CalcStats(species, FormID, nature, Level, HP_IV, Attack_IV, Defense_IV, Speed_IV, SpecialAttack_IV, SpecialDefense_IV, HPEffortValue, AttackEffortValue, DefenseEffortValue, SpeedEffortValue, SpAttackEffortValue, SpDefenseEffortValue)[5];
+                return DBTools.CalcStat(Species.Value, FormID, Nature.Value, Level, Stats.SpecialDefense, SpecialDefense_IV, SpDefenseEffortValue);
             }
         }
 
@@ -1395,7 +1395,7 @@ namespace PKMDS_CS
 
         public override string ToString()
         {
-            return Species.EnumToString();
+            return Species.Value.EnumToString();
         }
 
         public int SortBySpeciesAscending(string name1, string name2)
@@ -1417,7 +1417,7 @@ namespace PKMDS_CS
                 return 1;
             if (comparePokemon.Species == PKMDS_CS.Species.NoSpecies)
                 return 0;
-            return this.Species.CompareTo(comparePokemon.Species);
+            return this.Species.Value.CompareTo(comparePokemon.Species.Value);
         }
 
         public override int GetHashCode()

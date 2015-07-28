@@ -6,7 +6,7 @@ namespace PKMDS_CS
     {
         byte _3DSRegionID { get; set; }
 
-        Abilities Ability { get; set; }
+        AbilityObject Ability { get; set; }
 
         byte AbilityNumber { get; set; }
 
@@ -16,7 +16,7 @@ namespace PKMDS_CS
 
         byte AttackEffortValue { get; set; }
 
-        Items Ball { get; set; }
+        ItemObject Ball { get; set; }
 
         byte BattleMemoryRibbonCount { get; set; }
 
@@ -68,7 +68,7 @@ namespace PKMDS_CS
 
         ushort egglocation { get; set; }
 
-        Locations EggLocation { get; set; }
+        LocationObject EggLocation { get; set; }
 
         byte EncounterTypeGen4 { get; set; }
 
@@ -114,7 +114,7 @@ namespace PKMDS_CS
 
         bool Heart { get; set; }
 
-        Items HeldItem { get; set; }
+        ItemObject HeldItem { get; set; }
 
         ushort HitsRemainingonTrainingBag { get; set; }
 
@@ -142,9 +142,9 @@ namespace PKMDS_CS
 
         ushort metlocation { get; set; }
 
-        Locations MetLocation { get; set; }
+        LocationObject MetLocation { get; set; }
 
-        Moves Move1 { get; set; }
+        MovesObject Move1 { get; set; }
 
         byte Move1CurrentPP { get; set; }
 
@@ -152,7 +152,7 @@ namespace PKMDS_CS
 
         byte Move1PPUps { get; set; }
 
-        Moves Move2 { get; set; }
+        MovesObject Move2 { get; set; }
 
         byte Move2CurrentPP { get; set; }
 
@@ -160,7 +160,7 @@ namespace PKMDS_CS
 
         byte Move2PPUps { get; set; }
 
-        Moves Move3 { get; set; }
+        MovesObject Move3 { get; set; }
 
         byte Move3CurrentPP { get; set; }
 
@@ -168,7 +168,7 @@ namespace PKMDS_CS
 
         byte Move3PPUps { get; set; }
 
-        Moves Move4 { get; set; }
+        MovesObject Move4 { get; set; }
 
         byte Move4CurrentPP { get; set; }
 
@@ -178,7 +178,7 @@ namespace PKMDS_CS
 
         System.Collections.Generic.List<MovesObject> Moves { get; set; }
 
-        Natures Nature { get; set; }
+        NatureObject Nature { get; set; }
 
         string Nickname { get; set; }
 
@@ -236,19 +236,19 @@ namespace PKMDS_CS
 
         System.Collections.Generic.List<MovesObject> RelearnableMoves { get; set; }
 
-        Moves RelearnMove1 { get; set; }
+        MovesObject RelearnMove1 { get; set; }
 
         ushort relearnmove1id { get; set; }
 
-        Moves RelearnMove2 { get; set; }
+        MovesObject RelearnMove2 { get; set; }
 
         ushort relearnmove2id { get; set; }
 
-        Moves RelearnMove3 { get; set; }
+        MovesObject RelearnMove3 { get; set; }
 
         ushort relearnmove3id { get; set; }
 
-        Moves RelearnMove4 { get; set; }
+        MovesObject RelearnMove4 { get; set; }
 
         ushort relearnmove4id { get; set; }
 
@@ -270,7 +270,7 @@ namespace PKMDS_CS
 
         uint SpecialDefense_IV { get; set; }
 
-        Species Species { get; set; }
+        SpeciesObject Species { get; set; }
 
         int Speed { get; }
 
