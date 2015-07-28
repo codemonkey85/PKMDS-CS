@@ -13,31 +13,38 @@ namespace PKMDS_Save_Editor
 {
     public partial class Pokemon_Editor_Form : Form
     {
+        private Pokemon _pokemon;
+        private Pokemon _tempPokemon = new Pokemon();
+        private List<PictureBox> _markingsBoxes = new List<PictureBox>();
+        private readonly BindingSource _pokemonBindingSource = new BindingSource();
+        private bool _dataBindingsSet = false;
+
+        public Pokemon Pokemon { get { return _pokemon; } set { _pokemon = value; _tempPokemon.CloneFrom(_pokemon); } }
+
         public Pokemon_Editor_Form()
         {
             InitializeComponent();
         }
 
-        private Pokemon _pokemon;
-        private Pokemon tempPokemon = new Pokemon();
-
-        public Pokemon Pokemon { get { return _pokemon; } set { _pokemon = value; tempPokemon.CloneFrom(_pokemon); } }
-
-        private BindingSource _pokemonBindingSource;
-
         public void SetForm()
         {
+            if (_dataBindingsSet) return;
+            speciesComboBox.DataSource = Lists.SpeciesList;
+            speciesComboBox.DataBindings.Add("SelectedItem", _pokemonBindingSource, "Species", false, DataSourceUpdateMode.OnPropertyChanged);
+            pbSprite.DataBindings.Add("Image", _pokemonBindingSource, "BoxIconEgg", true, DataSourceUpdateMode.Never, null);
+            _pokemonBindingSource.DataSource = _tempPokemon;
+            _dataBindingsSet = true;
         }
 
         private void SavePokemon()
         {
             if (!checkBoxEggMet.Checked)
             {
-                tempPokemon.EggLocation = Locations.Mystery_Zone;
-                tempPokemon.EggDate = null;
+                _tempPokemon.EggLocation = Locations.Mystery_Zone;
+                _tempPokemon.EggDate = null;
             }
 
-            _pokemon.CloneFrom(tempPokemon);
+            _pokemon.CloneFrom(_tempPokemon);
         }
 
         private void buttonApply_Click(object sender, System.EventArgs e)
@@ -81,8 +88,6 @@ namespace PKMDS_Save_Editor
             g.DrawImage(picbox.Image, new Rectangle(new Point(0, 0), picbox.Size));
         }
 
-        private List<PictureBox> MarkingsBoxes = new List<PictureBox>();
-
         private void Pokemon_Editor_Form_Load(object sender, EventArgs e)
         {
             _pokemonBindingSource.ResetBindings(false);
@@ -97,16 +102,16 @@ namespace PKMDS_Save_Editor
                 pb.Size = new Size(10, 10);
                 pb.Click += pbMarkings_Click;
                 flp.Controls.Add(pb);
-                MarkingsBoxes.Add(pb);
+                _markingsBoxes.Add(pb);
             }
-            MarkingsBoxes[(int)Markings.Circle].DataBindings.Add("Image", _pokemonBindingSource, "Circle", true, DataSourceUpdateMode.Never, Images.GetMarkingImage(Markings.Circle, false));
-            MarkingsBoxes[(int)Markings.Triangle].DataBindings.Add("Image", _pokemonBindingSource, "Triangle", true, DataSourceUpdateMode.Never, Images.GetMarkingImage(Markings.Triangle, false));
-            MarkingsBoxes[(int)Markings.Square].DataBindings.Add("Image", _pokemonBindingSource, "Square", true, DataSourceUpdateMode.Never, Images.GetMarkingImage(Markings.Square, false));
-            MarkingsBoxes[(int)Markings.Heart].DataBindings.Add("Image", _pokemonBindingSource, "Heart", true, DataSourceUpdateMode.Never, Images.GetMarkingImage(Markings.Heart, false));
-            MarkingsBoxes[(int)Markings.Star].DataBindings.Add("Image", _pokemonBindingSource, "Star", true, DataSourceUpdateMode.Never, Images.GetMarkingImage(Markings.Star, false));
-            MarkingsBoxes[(int)Markings.Diamond].DataBindings.Add("Image", _pokemonBindingSource, "Diamond", true, DataSourceUpdateMode.Never, Images.GetMarkingImage(Markings.Diamond, false));
+            _markingsBoxes[(int)Markings.Circle].DataBindings.Add("Image", _pokemonBindingSource, "Circle", true, DataSourceUpdateMode.Never, Images.GetMarkingImage(Markings.Circle, false));
+            _markingsBoxes[(int)Markings.Triangle].DataBindings.Add("Image", _pokemonBindingSource, "Triangle", true, DataSourceUpdateMode.Never, Images.GetMarkingImage(Markings.Triangle, false));
+            _markingsBoxes[(int)Markings.Square].DataBindings.Add("Image", _pokemonBindingSource, "Square", true, DataSourceUpdateMode.Never, Images.GetMarkingImage(Markings.Square, false));
+            _markingsBoxes[(int)Markings.Heart].DataBindings.Add("Image", _pokemonBindingSource, "Heart", true, DataSourceUpdateMode.Never, Images.GetMarkingImage(Markings.Heart, false));
+            _markingsBoxes[(int)Markings.Star].DataBindings.Add("Image", _pokemonBindingSource, "Star", true, DataSourceUpdateMode.Never, Images.GetMarkingImage(Markings.Star, false));
+            _markingsBoxes[(int)Markings.Diamond].DataBindings.Add("Image", _pokemonBindingSource, "Diamond", true, DataSourceUpdateMode.Never, Images.GetMarkingImage(Markings.Diamond, false));
 
-            foreach (PictureBox pb in MarkingsBoxes)
+            foreach (PictureBox pb in _markingsBoxes)
             {
                 pb.DataBindings[0].Format += MarkingsImageFormat;
             }
@@ -128,27 +133,27 @@ namespace PKMDS_Save_Editor
             switch ((Markings)((pb).Tag))
             {
                 case Markings.Circle:
-                    tempPokemon.Circle = !tempPokemon.Circle;
+                    _tempPokemon.Circle = !_tempPokemon.Circle;
                     break;
 
                 case Markings.Triangle:
-                    tempPokemon.Triangle = !tempPokemon.Triangle;
+                    _tempPokemon.Triangle = !_tempPokemon.Triangle;
                     break;
 
                 case Markings.Square:
-                    tempPokemon.Square = !tempPokemon.Square;
+                    _tempPokemon.Square = !_tempPokemon.Square;
                     break;
 
                 case Markings.Heart:
-                    tempPokemon.Heart = !tempPokemon.Heart;
+                    _tempPokemon.Heart = !_tempPokemon.Heart;
                     break;
 
                 case Markings.Star:
-                    tempPokemon.Star = !tempPokemon.Star;
+                    _tempPokemon.Star = !_tempPokemon.Star;
                     break;
 
                 case Markings.Diamond:
-                    tempPokemon.Diamond = !tempPokemon.Diamond;
+                    _tempPokemon.Diamond = !_tempPokemon.Diamond;
                     break;
             }
             pb.DataBindings[0].ReadValue();
