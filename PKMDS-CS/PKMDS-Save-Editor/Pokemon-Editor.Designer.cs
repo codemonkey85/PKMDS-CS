@@ -231,7 +231,6 @@
             this.speciesComboBox.Name = "speciesComboBox";
             this.speciesComboBox.Size = new System.Drawing.Size(87, 21);
             this.speciesComboBox.TabIndex = 3;
-            this.speciesComboBox.SelectedIndexChanged += new System.EventHandler(this.speciesComboBox_SelectedIndexChanged);
             // 
             // textNickname
             // 
@@ -263,7 +262,6 @@
             this.itemComboBox.Name = "itemComboBox";
             this.itemComboBox.Size = new System.Drawing.Size(125, 21);
             this.itemComboBox.TabIndex = 10;
-            this.itemComboBox.SelectedIndexChanged += new System.EventHandler(this.itemComboBox_SelectedIndexChanged);
             // 
             // pbItemImage
             // 
@@ -833,7 +831,6 @@
             this.dataGridRelearnableMoves.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridRelearnableMoves.Size = new System.Drawing.Size(487, 130);
             this.dataGridRelearnableMoves.TabIndex = 0;
-            this.dataGridRelearnableMoves.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.dataGridMoves_DataError);
             // 
             // groupCurrentMoves
             // 
@@ -891,7 +888,6 @@
             this.dataGridMoves.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridMoves.Size = new System.Drawing.Size(487, 130);
             this.dataGridMoves.TabIndex = 0;
-            this.dataGridMoves.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.dataGridMoves_DataError);
             // 
             // historyTabPage
             // 
@@ -930,7 +926,6 @@
             this.comboMetLocation.Name = "comboMetLocation";
             this.comboMetLocation.Size = new System.Drawing.Size(148, 21);
             this.comboMetLocation.TabIndex = 7;
-            this.comboMetLocation.SelectedIndexChanged += new System.EventHandler(this.comboMetLocation_SelectedIndexChanged);
             // 
             // comboEggLocation
             // 
@@ -940,7 +935,6 @@
             this.comboEggLocation.Name = "comboEggLocation";
             this.comboEggLocation.Size = new System.Drawing.Size(148, 21);
             this.comboEggLocation.TabIndex = 6;
-            this.comboEggLocation.SelectedIndexChanged += new System.EventHandler(this.comboEggLocation_SelectedIndexChanged);
             // 
             // labelMetLocation
             // 
@@ -1116,7 +1110,6 @@
             this.formsComboBox.Name = "formsComboBox";
             this.formsComboBox.Size = new System.Drawing.Size(149, 21);
             this.formsComboBox.TabIndex = 5;
-            this.formsComboBox.SelectedIndexChanged += new System.EventHandler(this.formsComboBox_SelectedIndexChanged);
             // 
             // labelForm
             // 
