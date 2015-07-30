@@ -12,7 +12,17 @@ namespace PKMDS_CS
             : this()
         {
             Value = item;
-            Quantity = 0;
+            Quantity = 1;
+        }
+
+        public ItemObject(uint data)
+            : this()
+        {
+            var dataBytes = BitConverter.GetBytes(data);
+            Value = Enum.IsDefined(typeof(Items), BitConverter.ToUInt16(dataBytes, 0))
+                    ? (Items)(BitConverter.ToUInt16(dataBytes, 0))
+                    : Items.NoItem;
+            Quantity = BitConverter.ToUInt16(dataBytes, 2);
         }
 
         private Items value;
@@ -22,6 +32,8 @@ namespace PKMDS_CS
         {
             get
             {
+                //if (quantity == 0)
+                //    Value = Items.NoItem;
                 return value;
             }
             set
@@ -40,7 +52,11 @@ namespace PKMDS_CS
             }
             set
             {
-                quantity = value;
+                if (quantity < 0)
+                    quantity = 0;
+                else
+                    quantity = value;
+                //if (Quantity == 0) Value = Items.NoItem;
             }
         }
 

@@ -20,6 +20,22 @@ namespace PKMDS_CS
         [MarshalAs(UnmanagedType.U1)]
         private byte currentbox;
 
+        [FieldOffset(0x05800)]
+        [MarshalAs(UnmanagedType.Struct)]
+        private XYBag _bag;
+
+        public IBag Bag
+        {
+            get
+            {
+                return _bag;
+            }
+            set
+            {
+                /*_bag = value;*/
+            }
+        }
+
         [DisplayName("Current Box")]
         public byte CurrentBox
         {
@@ -55,6 +71,22 @@ namespace PKMDS_CS
         [FieldOffset(0x483F)]
         [MarshalAs(UnmanagedType.U1)]
         private byte currentbox;
+
+        [FieldOffset(0x05800)]
+        [MarshalAs(UnmanagedType.Struct)]
+        private ORASBag _bag;
+
+        public IBag Bag
+        {
+            get
+            {
+                return _bag;
+            }
+            set
+            {
+                /*_bag = value;*/
+            }
+        }
 
         [DisplayName("Current Box")]
         public byte CurrentBox

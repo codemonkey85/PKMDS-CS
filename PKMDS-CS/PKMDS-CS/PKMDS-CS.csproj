@@ -61,17 +61,21 @@
     <Reference Include="System.XML" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bag.cs" />
     <Compile Include="DBTools.cs" />
     <Compile Include="Enums.cs" />
+    <Compile Include="IBag.cs" />
     <Compile Include="IBoxName.cs" />
     <Compile Include="Images.cs" />
     <Compile Include="IPCBox.cs" />
     <Compile Include="IPCStorageBoxNames.cs" />
     <Compile Include="IPCStorageSystem.cs" />
+    <Compile Include="IPocket.cs" />
     <Compile Include="IPokemon.cs" />
     <Compile Include="ISave.cs" />
     <Compile Include="Objects.cs" />
     <Compile Include="PCStorageSystem.cs" />
+    <Compile Include="Pocket.cs" />
     <Compile Include="Pokemon.cs" />
     <Compile Include="PokePRNG.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

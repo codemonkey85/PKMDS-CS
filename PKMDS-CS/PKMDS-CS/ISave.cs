@@ -7,5 +7,7 @@
         PCStorageSystem PCStorageSystem { get; set; }
 
         PCStorageBoxNames PCStorageBoxNames { get; set; }
+
+        IBag Bag { get; set; }
     }
 }

@@ -53,7 +53,7 @@ namespace PKMDS_Tests
         [TestMethod]
         public void TestItemQuantity()
         {
-            ItemObject item = new ItemObject(Items.Protector) { Quantity = 2 };
+            ItemObject item = new ItemObject() { Value = Items.Protector, Quantity = 2 };
             item += 1;
             Assert.AreEqual(item.Quantity, 3);
             item -= 2;
@@ -62,6 +62,15 @@ namespace PKMDS_Tests
             Assert.AreEqual(item.Quantity, 2);
             item--;
             Assert.AreEqual(item.Quantity, 1);
+        }
+
+        [TestMethod]
+        public void TestItemInitializerUInt32()
+        {
+            ItemObject item1 = new ItemObject() { Value = Items.Poke_Ball, Quantity = 2 };
+            ItemObject item2 = new ItemObject(131076);
+            Assert.AreEqual(item1.Value, item2.Value);
+            Assert.AreEqual(item1.Quantity, item2.Quantity);
         }
 
         [TestMethod]
