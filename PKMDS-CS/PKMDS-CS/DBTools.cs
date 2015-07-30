@@ -215,6 +215,26 @@ namespace PKMDS_CS
             return growthrateid;
         }
 
+        private static Dictionary<int, byte> GenderRatios = new Dictionary<int, byte>()
+        {
+            {-1,255},
+            {0,0},
+            {1,31},
+            {2,63},
+            {4,127},
+            {6,191},
+            {7,223},
+            {8,254}
+        };
+
+        public static byte GetGenderThreshold(ushort species)
+        {
+            int intgenderrate = 0;
+            int.TryParse(DBTools.GetPokemonDataTable.Select(string.Format("{0} = {1}", DBTools.PokemonDataTableColumns.species_id,
+                species))[0].ItemArray[(int)DBTools.PokemonDataTableColumns.gender_rate].ToString(), out intgenderrate);
+            return GenderRatios[intgenderrate];
+        }
+
         public static int GetLevel(ushort Species, uint EXP)
         {
             if (con == null) return 0;

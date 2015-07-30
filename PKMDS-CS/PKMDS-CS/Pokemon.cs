@@ -1304,13 +1304,47 @@ namespace PKMDS_CS
         }
 
         [DisplayName("Gender")]
+        internal Genders InternalGender
+        {
+            get
+            {
+                if (this.Genderless) return Genders.Genderless;
+                if (this.Female) return Genders.Female;
+                return Genders.Male;
+            }
+        }
+
+        [DisplayName("Gender")]
         public Genders Gender
         {
             get
             {
-                if (this.Female) return Genders.Female;
-                if (this.Genderless) return Genders.Genderless;
-                return Genders.Male;
+                try
+                {
+                    byte genderThreshold = DBTools.GetGenderThreshold(this.species);
+
+                    switch (genderThreshold)
+                    {
+                        case 255:
+                            return Genders.Genderless;
+
+                        case 254:
+                            return Genders.Female;
+
+                        case 0:
+                            return Genders.Male;
+
+                        default:
+                            if (Convert.ToByte(PID % 256) >= genderThreshold)
+                                return Genders.Male;
+                            else
+                                return Genders.Female;
+                    }
+                }
+                catch (Exception)
+                {
+                    return InternalGender;
+                }
             }
         }
 

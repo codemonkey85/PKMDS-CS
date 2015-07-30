@@ -1,5 +1,6 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using PKMDS_CS;
+using System;
 using System.Linq;
 
 namespace PKMDS_Tests
@@ -9,6 +10,59 @@ namespace PKMDS_Tests
     {
         private const string veekundb = @"veekun-pokedex.sqlite";
         private const string xysavfile = @"..\..\..\files\sav\PokemonXYDecrypted.sav";
+
+        private IPokemon testPokemon;
+
+        [TestInitialize]
+        public void TestInit()
+        {
+            testPokemon = new Pokemon()
+            {
+                Species = Species.Pikachu,
+                EncryptionKey = 0,
+                OTGameID = 28,
+                OTName = "Mike",
+                OTGender = Genders.Male,
+                OTID = 12345,
+                OTSecretID = 54321,
+                PID = 0x44444444,
+                ivs = 0x55555555,
+                EXP = 50000,
+                Ability = Abilities.Static,
+                HeldItem = Items.NoItem,
+                Ball = Items.Poke_Ball,
+                MetDate = new DateTime(2015, 07, 31),
+                MetLocation = Locations.Route_1
+            };
+        }
+
+        [TestMethod]
+        public void TestAbility()
+        {
+            Assert.AreEqual(testPokemon.Ability.Name, Lists.AbilityList.FirstOrDefault(ability => ability.Value == Abilities.Static).Name);
+        }
+
+        [TestMethod]
+        public void TestGender()
+        {
+            DBTools.OpenDB(veekundb);
+            var gender = testPokemon.Gender;
+            DBTools.CloseDB();
+        }
+
+        [TestMethod]
+        public void TestItemQuantity()
+        {
+            ItemObject item = new ItemObject(Items.Protector) { Quantity = 2 };
+            item += 1;
+            Assert.AreEqual(item.Quantity, 3);
+            item -= 2;
+            Assert.AreEqual(item.Quantity, 1);
+            item++;
+            Assert.AreEqual(item.Quantity, 2);
+            item--;
+            Assert.AreEqual(item.Quantity, 1);
+        }
 
         [TestMethod]
         public void TestEncryption()

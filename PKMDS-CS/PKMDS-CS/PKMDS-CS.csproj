@@ -70,6 +70,7 @@
     <Compile Include="IPCStorageSystem.cs" />
     <Compile Include="IPokemon.cs" />
     <Compile Include="ISave.cs" />
+    <Compile Include="Objects.cs" />
     <Compile Include="PCStorageSystem.cs" />
     <Compile Include="Pokemon.cs" />
     <Compile Include="PokePRNG.cs" />
