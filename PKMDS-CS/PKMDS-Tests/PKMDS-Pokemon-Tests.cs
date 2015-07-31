@@ -80,6 +80,8 @@ namespace PKMDS_Tests
             _sav = StructUtils.RawDeserialize<XYSav>(xysavfile);
             _sav.Bag.ItemsPocket[0] = new ItemObject() { Value = Items.Rare_Candy, Quantity = 50 };
             var test = _sav.Bag.ItemsPocket[0];
+            Assert.AreEqual(test.Value, Items.Rare_Candy);
+            Assert.AreEqual(test.Quantity, 50);
         }
 
         [TestMethod]

@@ -32,10 +32,12 @@
             // 
             // ItemForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(591, 452);
+            this.ClientSize = new System.Drawing.Size(394, 294);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "ItemForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "ItemForm";
             this.Load += new System.EventHandler(this.ItemForm_Load);
             this.ResumeLayout(false);

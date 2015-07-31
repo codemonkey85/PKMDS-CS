@@ -22,7 +22,7 @@ namespace PKMDS_Save_Editor
         private Form BagForm;
         private DataGridView dgItems;
         private BindingSource _dgItemBinding = new BindingSource();
-        private ItemForm ItemForm = new ItemForm();
+        private ItemForm ItemForm = new ItemForm() { StartPosition = FormStartPosition.CenterParent };
         private static readonly Color SelectionColor = Color.Wheat;
         private readonly BindingSource _boxesBindingSource = new BindingSource();
         private readonly BindingSource _pokemonBindingSource = new BindingSource();
@@ -105,7 +105,7 @@ namespace PKMDS_Save_Editor
             ItemForm.SetItem(item);
             ItemForm.ShowDialog();
             _sav.Bag.ItemsPocket[itempos] = ItemForm.Item;
-            _dgItemBinding.ResetBindings(false);
+            _dgItemBinding.DataSource = _sav.Bag.ItemsPocket.Items;
         }
 
         private void slot_MouseLeave(object sender, EventArgs e)
@@ -475,14 +475,14 @@ namespace PKMDS_Save_Editor
             if (Slot != 0)
             {
                 pbSlots[Slot].DataBindings.Clear();
-                pbSlots[Slot].DataBindings.Add("Image", _pokemonBindingSource[Slot], "BoxIconEgg", true, DataSourceUpdateMode.Never, null);
+                //pbSlots[Slot].DataBindings.Add("Image", _pokemonBindingSource[Slot], "BoxIconEgg", true, DataSourceUpdateMode.Never, null);
             }
             else
             {
                 for (int slot = 0; slot < 30; slot++)
                 {
                     pbSlots[slot].DataBindings.Clear();
-                    pbSlots[slot].DataBindings.Add("Image", _pokemonBindingSource[slot], "BoxIconEgg", true, DataSourceUpdateMode.Never, null);
+                    //pbSlots[slot].DataBindings.Add("Image", _pokemonBindingSource[slot], "BoxIconEgg", true, DataSourceUpdateMode.Never, null);
                 }
             }
         }
