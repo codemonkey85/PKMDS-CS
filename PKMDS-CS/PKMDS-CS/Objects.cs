@@ -12,7 +12,7 @@ namespace PKMDS_CS
             : this()
         {
             Value = item;
-            Quantity = 1;
+            Quantity = 0;
         }
 
         public ItemObject(uint data)

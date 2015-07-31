@@ -39,6 +39,7 @@
             this.viewAllPokemonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sortPokémonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.bagManagerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -49,7 +50,7 @@
             this.comboBoxes.FormattingEnabled = true;
             this.comboBoxes.Location = new System.Drawing.Point(103, 262);
             this.comboBoxes.Name = "comboBoxes";
-            this.comboBoxes.Size = new System.Drawing.Size(240, 21);
+            this.comboBoxes.Size = new System.Drawing.Size(240, 28);
             this.comboBoxes.TabIndex = 2;
             this.comboBoxes.SelectedIndexChanged += new System.EventHandler(this.comboBoxes_SelectedIndexChanged);
             // 
@@ -67,7 +68,7 @@
             this.textBoxName.Location = new System.Drawing.Point(103, 230);
             this.textBoxName.MaxLength = 17;
             this.textBoxName.Name = "textBoxName";
-            this.textBoxName.Size = new System.Drawing.Size(240, 20);
+            this.textBoxName.Size = new System.Drawing.Size(240, 26);
             this.textBoxName.TabIndex = 1;
             this.textBoxName.Validating += new System.ComponentModel.CancelEventHandler(this.textBoxName_Validating);
             // 
@@ -80,7 +81,7 @@
             this.toolsToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(464, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(464, 33);
             this.menuStrip1.TabIndex = 3;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -90,20 +91,20 @@
             this.loadSaveFileToolStripMenuItem,
             this.writeSaveFileToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(50, 29);
             this.fileToolStripMenuItem.Text = "File";
             // 
             // loadSaveFileToolStripMenuItem
             // 
             this.loadSaveFileToolStripMenuItem.Name = "loadSaveFileToolStripMenuItem";
-            this.loadSaveFileToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
+            this.loadSaveFileToolStripMenuItem.Size = new System.Drawing.Size(212, 30);
             this.loadSaveFileToolStripMenuItem.Text = "Load Save File";
             this.loadSaveFileToolStripMenuItem.Click += new System.EventHandler(this.loadSaveFileToolStripMenuItem_Click);
             // 
             // writeSaveFileToolStripMenuItem
             // 
             this.writeSaveFileToolStripMenuItem.Name = "writeSaveFileToolStripMenuItem";
-            this.writeSaveFileToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
+            this.writeSaveFileToolStripMenuItem.Size = new System.Drawing.Size(212, 30);
             this.writeSaveFileToolStripMenuItem.Text = "Write Save File";
             this.writeSaveFileToolStripMenuItem.Click += new System.EventHandler(this.writeSaveFileToolStripMenuItem_Click);
             // 
@@ -112,30 +113,38 @@
             this.reportToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.viewAllPokemonToolStripMenuItem});
             this.reportToolStripMenuItem.Name = "reportToolStripMenuItem";
-            this.reportToolStripMenuItem.Size = new System.Drawing.Size(54, 20);
+            this.reportToolStripMenuItem.Size = new System.Drawing.Size(77, 29);
             this.reportToolStripMenuItem.Text = "Report";
             // 
             // viewAllPokemonToolStripMenuItem
             // 
             this.viewAllPokemonToolStripMenuItem.Name = "viewAllPokemonToolStripMenuItem";
-            this.viewAllPokemonToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
+            this.viewAllPokemonToolStripMenuItem.Size = new System.Drawing.Size(236, 30);
             this.viewAllPokemonToolStripMenuItem.Text = "View all Pokémon";
             this.viewAllPokemonToolStripMenuItem.Click += new System.EventHandler(this.viewAllPokemonToolStripMenuItem_Click);
             // 
             // toolsToolStripMenuItem
             // 
             this.toolsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.sortPokémonToolStripMenuItem});
+            this.sortPokémonToolStripMenuItem,
+            this.bagManagerToolStripMenuItem});
             this.toolsToolStripMenuItem.Name = "toolsToolStripMenuItem";
-            this.toolsToolStripMenuItem.Size = new System.Drawing.Size(48, 20);
+            this.toolsToolStripMenuItem.Size = new System.Drawing.Size(65, 29);
             this.toolsToolStripMenuItem.Text = "Tools";
             // 
             // sortPokémonToolStripMenuItem
             // 
             this.sortPokémonToolStripMenuItem.Name = "sortPokémonToolStripMenuItem";
-            this.sortPokémonToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
+            this.sortPokémonToolStripMenuItem.Size = new System.Drawing.Size(211, 30);
             this.sortPokémonToolStripMenuItem.Text = "Sort Pokémon";
             this.sortPokémonToolStripMenuItem.Click += new System.EventHandler(this.sortPokémonToolStripMenuItem_Click);
+            // 
+            // bagManagerToolStripMenuItem
+            // 
+            this.bagManagerToolStripMenuItem.Name = "bagManagerToolStripMenuItem";
+            this.bagManagerToolStripMenuItem.Size = new System.Drawing.Size(211, 30);
+            this.bagManagerToolStripMenuItem.Text = "Bag Manager";
+            this.bagManagerToolStripMenuItem.Click += new System.EventHandler(this.bagManagerToolStripMenuItem_Click);
             // 
             // PC_Storage_System_Form
             // 
@@ -174,6 +183,7 @@
         private System.Windows.Forms.ToolStripMenuItem viewAllPokemonToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem toolsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem sortPokémonToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem bagManagerToolStripMenuItem;
     }
 }
 

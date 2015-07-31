@@ -19,6 +19,10 @@ namespace PKMDS_Save_Editor
         private static Pokemon_Editor_Form PokemonEditorForm = new Pokemon_Editor_Form();
         private static Form reportForm = new Form();
         private static DataGridView dgPokemon = new DataGridView();
+        private Form BagForm;
+        private DataGridView dgItems;
+        private BindingSource _dgItemBinding = new BindingSource();
+        private ItemForm ItemForm = new ItemForm();
         private static readonly Color SelectionColor = Color.Wheat;
         private readonly BindingSource _boxesBindingSource = new BindingSource();
         private readonly BindingSource _pokemonBindingSource = new BindingSource();
@@ -63,6 +67,46 @@ namespace PKMDS_Save_Editor
             }
             panelBoxedPokemon.Controls.Add(flpMain);
             SetReportForm();
+            SetBagManagerForm();
+        }
+
+        private void SetBagManagerForm()
+        {
+            BagForm = new Form();
+            BagForm.Load += BagForm_Load;
+            BagForm.Shown += BagForm_Shown;
+            BagForm.FormClosing += BagForm_FormClosing;
+            dgItems = new DataGridView()
+            {
+                Dock = DockStyle.Fill,
+                AllowUserToAddRows = false,
+                SelectionMode = DataGridViewSelectionMode.FullRowSelect,
+                MultiSelect = false
+            };
+            dgItems.CellDoubleClick += DgItems_CellDoubleClick;
+            BagForm.Controls.Add(dgItems);
+
+        }
+
+        private void BagForm_Shown(object sender, EventArgs e)
+        {
+            SetItemsDataGrid();
+        }
+
+        private void BagForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            dgItems.EndEdit();
+            dgItems.ClearSelection();
+        }
+
+        private void DgItems_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int itempos = e.RowIndex;
+            ItemObject item = (_dgItemBinding.DataSource as List<ItemObject>)[itempos];
+            ItemForm.SetItem(item);
+            ItemForm.ShowDialog();
+            _sav.Bag.ItemsPocket[itempos] = ItemForm.Item;
+            _dgItemBinding.ResetBindings(false);
         }
 
         private void slot_MouseLeave(object sender, EventArgs e)
@@ -114,6 +158,11 @@ namespace PKMDS_Save_Editor
             textBoxName.DataBindings.Add("Text", _boxenamesBindingSource, "Name", false, DataSourceUpdateMode.OnValidation, "");
             _pokemonReportBindingSource.DataSource = _sav.PCStorageSystem.Boxes.SelectMany(box => box.Pokemon).Where(pokemon => pokemon.Species != Species.NoSpecies).ToArray();
             dgPokemon.DataSource = _pokemonReportBindingSource;
+
+            _sav.Bag.ItemsPocket[0] = new ItemObject() { Value = Items.TM01, Quantity = 5 };
+            _dgItemBinding.DataSource = _sav.Bag.ItemsPocket.Items;
+            dgItems.DataSource = _dgItemBinding;
+
         }
 
         private void SetReportForm()
@@ -503,6 +552,43 @@ namespace PKMDS_Save_Editor
         private void writeSaveFileToolStripMenuItem_Click(object sender, EventArgs e)
         {
             WriteSave(xysavfile);
+        }
+
+
+        private void bagManagerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            BagForm.ShowDialog();
+        }
+
+        private void BagForm_Load(object sender, EventArgs e)
+        {
+            SetItemsDataGrid();
+
+        }
+
+        private void SetItemsDataGrid()
+        {
+            if (dgItems.Columns.Contains("Value"))
+                dgItems.Columns.Remove("Value");
+
+            if (dgItems.Columns.Contains("Name"))
+            {
+                dgItems.Columns["Name"].DisplayIndex = 0;
+                dgItems.Columns["Name"].HeaderText = "Item";
+                dgItems.Columns["Name"].ReadOnly = true;
+            }
+
+            if (dgItems.Columns.Contains("Quantity"))
+            {
+                dgItems.Columns["Quantity"].DisplayIndex = 1;
+                dgItems.Columns["Quantity"].ReadOnly = true;
+            }
+            if (dgItems.Columns.Contains("Image"))
+            {
+                dgItems.Columns["Image"].DisplayIndex = 2;
+                dgItems.Columns["Image"].ReadOnly = true;
+                ((DataGridViewImageColumn)dgItems.Columns["Image"]).DefaultCellStyle.NullValue = null;
+            }
         }
     }
 }

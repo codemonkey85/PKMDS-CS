@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Runtime.InteropServices;
 
 namespace PKMDS_CS
@@ -15,6 +16,19 @@ namespace PKMDS_CS
         {
             get { return _items; }
             set { _items = value; }
+        }
+
+        public List<ItemObject> Items
+        {
+            get
+            {
+                List<ItemObject> retItems = new List<ItemObject>();
+                for (int i = 0; i < _items.Length; i++)
+                {
+                    retItems.Add(new ItemObject(this[i]));
+                }
+                return retItems;
+            }
         }
 
         public ItemObject this[int i]
@@ -44,6 +58,19 @@ namespace PKMDS_CS
             get { return _items; }
             set { _items = value; }
         }
+        public List<ItemObject> Items
+        {
+            get
+            {
+                List<ItemObject> retItems = new List<ItemObject>();
+                for (int i = 0; i < _items.Length; i++)
+                {
+                    retItems.Add(new ItemObject(this[i]));
+                }
+                return retItems;
+            }
+        }
+
         public ItemObject this[int i]
         {
             get
@@ -70,6 +97,19 @@ namespace PKMDS_CS
         {
             get { return _items; }
             set { _items = value; }
+        }
+
+        public List<ItemObject> Items
+        {
+            get
+            {
+                List<ItemObject> retItems = new List<ItemObject>();
+                for (int i = 0; i < _items.Length; i++)
+                {
+                    retItems.Add(new ItemObject(this[i]));
+                }
+                return retItems;
+            }
         }
 
         public ItemObject this[int i]
@@ -100,6 +140,19 @@ namespace PKMDS_CS
             set { _items = value; }
         }
 
+        public List<ItemObject> Items
+        {
+            get
+            {
+                List<ItemObject> retItems = new List<ItemObject>();
+                for (int i = 0; i < _items.Length; i++)
+                {
+                    retItems.Add(new ItemObject(this[i]));
+                }
+                return retItems;
+            }
+        }
+
         public ItemObject this[int i]
         {
             get
@@ -126,6 +179,19 @@ namespace PKMDS_CS
         {
             get { return _items; }
             set { _items = value; }
+        }
+
+        public List<ItemObject> Items
+        {
+            get
+            {
+                List<ItemObject> retItems = new List<ItemObject>();
+                for (int i = 0; i < _items.Length; i++)
+                {
+                    retItems.Add(new ItemObject(this[i]));
+                }
+                return retItems;
+            }
         }
 
         public ItemObject this[int i]
@@ -156,6 +222,19 @@ namespace PKMDS_CS
             set { _items = value; }
         }
 
+        public List<ItemObject> Items
+        {
+            get
+            {
+                List<ItemObject> retItems = new List<ItemObject>();
+                for (int i = 0; i < _items.Length; i++)
+                {
+                    retItems.Add(new ItemObject(this[i]));
+                }
+                return retItems;
+            }
+        }
+
         public ItemObject this[int i]
         {
             get
@@ -182,6 +261,19 @@ namespace PKMDS_CS
         {
             get { return _items; }
             set { _items = value; }
+        }
+
+        public List<ItemObject> Items
+        {
+            get
+            {
+                List<ItemObject> retItems = new List<ItemObject>();
+                for (int i = 0; i < _items.Length; i++)
+                {
+                    retItems.Add(new ItemObject(this[i]));
+                }
+                return retItems;
+            }
         }
 
         public ItemObject this[int i]
@@ -212,6 +304,19 @@ namespace PKMDS_CS
             set { _items = value; }
         }
 
+        public List<ItemObject> Items
+        {
+            get
+            {
+                List<ItemObject> retItems = new List<ItemObject>();
+                for (int i = 0; i < _items.Length; i++)
+                {
+                    retItems.Add(new ItemObject(this[i]));
+                }
+                return retItems;
+            }
+        }
+
         public ItemObject this[int i]
         {
             get
@@ -240,6 +345,19 @@ namespace PKMDS_CS
             set { _items = value; }
         }
 
+        public List<ItemObject> Items
+        {
+            get
+            {
+                List<ItemObject> retItems = new List<ItemObject>();
+                for (int i = 0; i < _items.Length; i++)
+                {
+                    retItems.Add(new ItemObject(this[i]));
+                }
+                return retItems;
+            }
+        }
+
         public ItemObject this[int i]
         {
             get
@@ -266,6 +384,19 @@ namespace PKMDS_CS
         {
             get { return _items; }
             set { _items = value; }
+        }
+
+        public List<ItemObject> Items
+        {
+            get
+            {
+                List<ItemObject> retItems = new List<ItemObject>();
+                for (int i = 0; i < _items.Length; i++)
+                {
+                    retItems.Add(new ItemObject(this[i]));
+                }
+                return retItems;
+            }
         }
 
         public ItemObject this[int i]
