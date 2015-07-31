@@ -8,6 +8,11 @@ namespace PKMDS_CS
     [Serializable]
     public class XYSav : ISave
     {
+        public XYSav()
+        {
+            //Bag = new XYBag();
+        }
+
         [FieldOffset(0x27A00)]
         [MarshalAs(UnmanagedType.Struct)]
         private PCStorageSystem pcstoragesystem;
@@ -32,7 +37,11 @@ namespace PKMDS_CS
             }
             set
             {
-                /*_bag = value;*/
+                _bag.ItemsPocket.ItemRawValues = value.ItemsPocket.ItemRawValues;
+                _bag.KeyItemsPocket.ItemRawValues = value.KeyItemsPocket.ItemRawValues;
+                _bag.TMPocket.ItemRawValues = value.TMPocket.ItemRawValues;
+                _bag.MedicinePocket.ItemRawValues = value.MedicinePocket.ItemRawValues;
+                _bag.BerryPocket.ItemRawValues = value.BerryPocket.ItemRawValues;
             }
         }
 
@@ -84,9 +93,14 @@ namespace PKMDS_CS
             }
             set
             {
-                /*_bag = value;*/
+                _bag.ItemsPocket.ItemRawValues = value.ItemsPocket.ItemRawValues;
+                _bag.KeyItemsPocket.ItemRawValues = value.KeyItemsPocket.ItemRawValues;
+                _bag.TMPocket.ItemRawValues = value.TMPocket.ItemRawValues;
+                _bag.MedicinePocket.ItemRawValues = value.MedicinePocket.ItemRawValues;
+                _bag.BerryPocket.ItemRawValues = value.BerryPocket.ItemRawValues;
             }
         }
+
 
         [DisplayName("Current Box")]
         public byte CurrentBox

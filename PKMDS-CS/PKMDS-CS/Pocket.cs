@@ -5,61 +5,280 @@ namespace PKMDS_CS
 {
     [StructLayout(LayoutKind.Explicit, Size = 0x640, Pack = 1, CharSet = CharSet.Unicode)]
     [Serializable]
-    internal class XYItemsPocket : IPocket
+    public class XYItemsPocket : IPocket
     {
+        [FieldOffset(0x00)]
+        [MarshalAs(UnmanagedType.ByValArray, SizeConst = 400)]
+        private uint[] _items;
+
+        public uint[] ItemRawValues
+        {
+            get { return _items; }
+            set { _items = value; }
+        }
+
+        public ItemObject this[int i]
+        {
+            get
+            {
+                return new ItemObject(_items[i]);
+            }
+            set
+            {
+                _items[i] = value.ToUint();
+            }
+        }
+
     }
 
     [StructLayout(LayoutKind.Explicit, Size = 0x180, Pack = 1, CharSet = CharSet.Unicode)]
     [Serializable]
-    internal class XYKeyItemsPocket : IPocket
+    public class XYKeyItemsPocket : IPocket
     {
+        [FieldOffset(0x00)]
+        [MarshalAs(UnmanagedType.ByValArray, SizeConst = 96)]
+        private uint[] _items;
+
+        public uint[] ItemRawValues
+        {
+            get { return _items; }
+            set { _items = value; }
+        }
+        public ItemObject this[int i]
+        {
+            get
+            {
+                return new ItemObject(_items[i]);
+            }
+            set
+            {
+                _items[i] = value.ToUint();
+            }
+        }
+
     }
 
     [StructLayout(LayoutKind.Explicit, Size = 0x1A8, Pack = 1, CharSet = CharSet.Unicode)]
     [Serializable]
-    internal class XYTMPocket : IPocket
+    public class XYTMPocket : IPocket
     {
+        [FieldOffset(0x00)]
+        [MarshalAs(UnmanagedType.ByValArray, SizeConst = 106)]
+        private uint[] _items;
+
+        public uint[] ItemRawValues
+        {
+            get { return _items; }
+            set { _items = value; }
+        }
+
+        public ItemObject this[int i]
+        {
+            get
+            {
+                return new ItemObject(_items[i]);
+            }
+            set
+            {
+                _items[i] = value.ToUint();
+            }
+        }
+
     }
 
     [StructLayout(LayoutKind.Explicit, Size = 0x100, Pack = 1, CharSet = CharSet.Unicode)]
     [Serializable]
-    internal class XYMedicinePocket : IPocket
+    public class XYMedicinePocket : IPocket
     {
+        [FieldOffset(0x00)]
+        [MarshalAs(UnmanagedType.ByValArray, SizeConst = 64)]
+        private uint[] _items;
+
+        public uint[] ItemRawValues
+        {
+            get { return _items; }
+            set { _items = value; }
+        }
+
+        public ItemObject this[int i]
+        {
+            get
+            {
+                return new ItemObject(_items[i]);
+            }
+            set
+            {
+                _items[i] = value.ToUint();
+            }
+        }
+
     }
 
     [StructLayout(LayoutKind.Explicit, Size = 0x120, Pack = 1, CharSet = CharSet.Unicode)]
     [Serializable]
-    internal class XYBerryPocket : IPocket
+    public class XYBerryPocket : IPocket
     {
+        [FieldOffset(0x00)]
+        [MarshalAs(UnmanagedType.ByValArray, SizeConst = 72)]
+        private uint[] _items;
+
+        public uint[] ItemRawValues
+        {
+            get { return _items; }
+            set { _items = value; }
+        }
+
+        public ItemObject this[int i]
+        {
+            get
+            {
+                return new ItemObject(_items[i]);
+            }
+            set
+            {
+                _items[i] = value.ToUint();
+            }
+        }
+
     }
 
     [StructLayout(LayoutKind.Explicit, Size = 0x640, Pack = 1, CharSet = CharSet.Unicode)]
     [Serializable]
-    internal class ORASItemsPocket : IPocket
+    public class ORASItemsPocket : IPocket
     {
+        [FieldOffset(0x00)]
+        [MarshalAs(UnmanagedType.ByValArray, SizeConst = 400)]
+        private uint[] _items;
+
+        public uint[] ItemRawValues
+        {
+            get { return _items; }
+            set { _items = value; }
+        }
+
+        public ItemObject this[int i]
+        {
+            get
+            {
+                return new ItemObject(_items[i]);
+            }
+            set
+            {
+                _items[i] = value.ToUint();
+            }
+        }
+
     }
 
     [StructLayout(LayoutKind.Explicit, Size = 0x180, Pack = 1, CharSet = CharSet.Unicode)]
     [Serializable]
-    internal class ORASKeyItemsPocket : IPocket
+    public class ORASKeyItemsPocket : IPocket
     {
+        [FieldOffset(0x00)]
+        [MarshalAs(UnmanagedType.ByValArray, SizeConst = 96)]
+        private uint[] _items;
+
+        public uint[] ItemRawValues
+        {
+            get { return _items; }
+            set { _items = value; }
+        }
+
+        public ItemObject this[int i]
+        {
+            get
+            {
+                return new ItemObject(_items[i]);
+            }
+            set
+            {
+                _items[i] = value.ToUint();
+            }
+        }
+
     }
 
-    [StructLayout(LayoutKind.Explicit, Size = 0x1AA, Pack = 1, CharSet = CharSet.Unicode)]
+    [StructLayout(LayoutKind.Explicit, Size = 0x1B0, Pack = 1, CharSet = CharSet.Unicode)]
     [Serializable]
-    internal class ORASTMPocket : IPocket
+    public class ORASTMPocket : IPocket
     {
+        [FieldOffset(0x00)]
+        [MarshalAs(UnmanagedType.ByValArray, SizeConst = 108)]
+        private uint[] _items;
+
+        public uint[] ItemRawValues
+        {
+            get { return _items; }
+            set { _items = value; }
+        }
+
+        public ItemObject this[int i]
+        {
+            get
+            {
+                return new ItemObject(_items[i]);
+            }
+            set
+            {
+                _items[i] = value.ToUint();
+            }
+        }
+
     }
 
     [StructLayout(LayoutKind.Explicit, Size = 0x100, Pack = 1, CharSet = CharSet.Unicode)]
     [Serializable]
-    internal class ORASMedicinePocket : IPocket
+    public class ORASMedicinePocket : IPocket
     {
+        [FieldOffset(0x00)]
+        [MarshalAs(UnmanagedType.ByValArray, SizeConst = 64)]
+        private uint[] _items;
+
+        public uint[] ItemRawValues
+        {
+            get { return _items; }
+            set { _items = value; }
+        }
+
+        public ItemObject this[int i]
+        {
+            get
+            {
+                return new ItemObject(_items[i]);
+            }
+            set
+            {
+                _items[i] = value.ToUint();
+            }
+        }
+
     }
 
     [StructLayout(LayoutKind.Explicit, Size = 0x120, Pack = 1, CharSet = CharSet.Unicode)]
     [Serializable]
-    internal class ORASBerryPocket : IPocket
+    public class ORASBerryPocket : IPocket
     {
+        [FieldOffset(0x00)]
+        [MarshalAs(UnmanagedType.ByValArray, SizeConst = 72)]
+        private uint[] _items;
+
+        public uint[] ItemRawValues
+        {
+            get { return _items; }
+            set { _items = value; }
+        }
+
+        public ItemObject this[int i]
+        {
+            get
+            {
+                return new ItemObject(_items[i]);
+            }
+            set
+            {
+                _items[i] = value.ToUint();
+            }
+        }
+
     }
 }

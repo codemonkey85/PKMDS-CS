@@ -74,6 +74,15 @@ namespace PKMDS_Tests
         }
 
         [TestMethod]
+        public void TestBags()
+        {
+            ISave _sav;
+            _sav = StructUtils.RawDeserialize<XYSav>(xysavfile);
+            _sav.Bag.ItemsPocket[0] = new ItemObject() { Value = Items.Rare_Candy, Quantity = 50 };
+            var test = _sav.Bag.ItemsPocket[0];
+        }
+
+        [TestMethod]
         public void TestEncryption()
         {
             ISave _sav;

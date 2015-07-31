@@ -25,6 +25,18 @@ namespace PKMDS_CS
             Quantity = BitConverter.ToUInt16(dataBytes, 2);
         }
 
+        internal uint ToUint()
+        {
+            uint u = 0;
+            var item = BitConverter.GetBytes((ushort)Value);
+            var quantity = BitConverter.GetBytes(Quantity);
+            byte[] data = new byte[4];
+            Array.Copy(item, 0, data, 0, 2);
+            Array.Copy(quantity, 0, data, 2, 2);
+            u = BitConverter.ToUInt32(data, 0);
+            return u;
+        }
+
         private Items value;
         private ushort quantity;
 
