@@ -101,7 +101,6 @@ namespace PKMDS_CS
             }
         }
 
-
         [DisplayName("Current Box")]
         public byte CurrentBox
         {

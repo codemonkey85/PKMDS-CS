@@ -111,7 +111,6 @@ namespace PKMDS_CS
             get { return _itemsPocket; }
             set { _itemsPocket.ItemRawValues = value.ItemRawValues; }
         }
-
     }
 }
 

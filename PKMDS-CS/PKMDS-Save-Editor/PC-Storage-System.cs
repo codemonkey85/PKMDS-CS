@@ -85,7 +85,6 @@ namespace PKMDS_Save_Editor
             };
             dgItems.CellDoubleClick += DgItems_CellDoubleClick;
             BagForm.Controls.Add(dgItems);
-
         }
 
         private void BagForm_Shown(object sender, EventArgs e)
@@ -162,7 +161,6 @@ namespace PKMDS_Save_Editor
             _sav.Bag.ItemsPocket[0] = new ItemObject() { Value = Items.TM01, Quantity = 5 };
             _dgItemBinding.DataSource = _sav.Bag.ItemsPocket.Items;
             dgItems.DataSource = _dgItemBinding;
-
         }
 
         private void SetReportForm()
@@ -554,7 +552,6 @@ namespace PKMDS_Save_Editor
             WriteSave(xysavfile);
         }
 
-
         private void bagManagerToolStripMenuItem_Click(object sender, EventArgs e)
         {
             BagForm.ShowDialog();
@@ -563,7 +560,6 @@ namespace PKMDS_Save_Editor
         private void BagForm_Load(object sender, EventArgs e)
         {
             SetItemsDataGrid();
-
         }
 
         private void SetItemsDataGrid()

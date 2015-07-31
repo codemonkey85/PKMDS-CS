@@ -42,7 +42,6 @@ namespace PKMDS_CS
                 _items[i] = value.ToUint();
             }
         }
-
     }
 
     [StructLayout(LayoutKind.Explicit, Size = 0x180, Pack = 1, CharSet = CharSet.Unicode)]
@@ -58,6 +57,7 @@ namespace PKMDS_CS
             get { return _items; }
             set { _items = value; }
         }
+
         public List<ItemObject> Items
         {
             get
@@ -82,7 +82,6 @@ namespace PKMDS_CS
                 _items[i] = value.ToUint();
             }
         }
-
     }
 
     [StructLayout(LayoutKind.Explicit, Size = 0x1A8, Pack = 1, CharSet = CharSet.Unicode)]
@@ -123,7 +122,6 @@ namespace PKMDS_CS
                 _items[i] = value.ToUint();
             }
         }
-
     }
 
     [StructLayout(LayoutKind.Explicit, Size = 0x100, Pack = 1, CharSet = CharSet.Unicode)]
@@ -164,7 +162,6 @@ namespace PKMDS_CS
                 _items[i] = value.ToUint();
             }
         }
-
     }
 
     [StructLayout(LayoutKind.Explicit, Size = 0x120, Pack = 1, CharSet = CharSet.Unicode)]
@@ -205,7 +202,6 @@ namespace PKMDS_CS
                 _items[i] = value.ToUint();
             }
         }
-
     }
 
     [StructLayout(LayoutKind.Explicit, Size = 0x640, Pack = 1, CharSet = CharSet.Unicode)]
@@ -246,7 +242,6 @@ namespace PKMDS_CS
                 _items[i] = value.ToUint();
             }
         }
-
     }
 
     [StructLayout(LayoutKind.Explicit, Size = 0x180, Pack = 1, CharSet = CharSet.Unicode)]
@@ -287,7 +282,6 @@ namespace PKMDS_CS
                 _items[i] = value.ToUint();
             }
         }
-
     }
 
     [StructLayout(LayoutKind.Explicit, Size = 0x1B0, Pack = 1, CharSet = CharSet.Unicode)]
@@ -328,7 +322,6 @@ namespace PKMDS_CS
                 _items[i] = value.ToUint();
             }
         }
-
     }
 
     [StructLayout(LayoutKind.Explicit, Size = 0x100, Pack = 1, CharSet = CharSet.Unicode)]
@@ -369,7 +362,6 @@ namespace PKMDS_CS
                 _items[i] = value.ToUint();
             }
         }
-
     }
 
     [StructLayout(LayoutKind.Explicit, Size = 0x120, Pack = 1, CharSet = CharSet.Unicode)]
@@ -410,6 +402,5 @@ namespace PKMDS_CS
                 _items[i] = value.ToUint();
             }
         }
-
     }
 }
