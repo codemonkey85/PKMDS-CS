@@ -72,7 +72,7 @@ namespace PKMDS_Save_Editor
 
         private void SetBagManagerForm()
         {
-            BagForm = new Form();
+            BagForm = new Form() { StartPosition = FormStartPosition.CenterParent };
             BagForm.Load += BagForm_Load;
             BagForm.Shown += BagForm_Shown;
             BagForm.FormClosing += BagForm_FormClosing;
@@ -475,14 +475,14 @@ namespace PKMDS_Save_Editor
             if (Slot != 0)
             {
                 pbSlots[Slot].DataBindings.Clear();
-                //pbSlots[Slot].DataBindings.Add("Image", _pokemonBindingSource[Slot], "BoxIconEgg", true, DataSourceUpdateMode.Never, null);
+                pbSlots[Slot].DataBindings.Add("Image", _pokemonBindingSource[Slot], "BoxIconEgg", true, DataSourceUpdateMode.Never, null);
             }
             else
             {
                 for (int slot = 0; slot < 30; slot++)
                 {
                     pbSlots[slot].DataBindings.Clear();
-                    //pbSlots[slot].DataBindings.Add("Image", _pokemonBindingSource[slot], "BoxIconEgg", true, DataSourceUpdateMode.Never, null);
+                    pbSlots[slot].DataBindings.Add("Image", _pokemonBindingSource[slot], "BoxIconEgg", true, DataSourceUpdateMode.Never, null);
                 }
             }
         }
