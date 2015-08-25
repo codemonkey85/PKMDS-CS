@@ -1,2 +1,5 @@
 language: csharp
 solution: PKMDS-CS/PKMDS-CS.sln
+
+before_install:
+  - git submodule update --init --recursive
