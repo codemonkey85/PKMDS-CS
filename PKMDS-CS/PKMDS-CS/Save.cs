@@ -6,11 +6,23 @@ namespace PKMDS_CS
 {
     public interface ISave
     {
-        byte CurrentBox { get; set; }
+        byte CurrentBox
+        {
+            get;
+            set;
+        }
 
-        PCStorageSystem PCStorageSystem { get; set; }
+        PCStorageSystem PCStorageSystem
+        {
+            get;
+            set;
+        }
 
-        PCStorageBoxNames PCStorageBoxNames { get; set; }
+        PCStorageBoxNames PCStorageBoxNames
+        {
+            get;
+            set;
+        }
     }
 
     [StructLayout(LayoutKind.Explicit, Size = 0x100000, Pack = 1, CharSet = CharSet.Unicode)]
@@ -32,20 +44,38 @@ namespace PKMDS_CS
         [DisplayName("Current Box")]
         public byte CurrentBox
         {
-            get { return currentbox; }
-            set { currentbox = value; }
+            get
+            {
+                return currentbox;
+            }
+            set
+            {
+                currentbox = value;
+            }
         }
 
         public PCStorageSystem PCStorageSystem
         {
-            get { return pcstoragesystem; }
-            set { pcstoragesystem = value; }
+            get
+            {
+                return pcstoragesystem;
+            }
+            set
+            {
+                pcstoragesystem = value;
+            }
         }
 
         public PCStorageBoxNames PCStorageBoxNames
         {
-            get { return pcstorageboxnames; }
-            set { pcstorageboxnames = value; }
+            get
+            {
+                return pcstorageboxnames;
+            }
+            set
+            {
+                pcstorageboxnames = value;
+            }
         }
     }
 
@@ -68,20 +98,38 @@ namespace PKMDS_CS
         [DisplayName("Current Box")]
         public byte CurrentBox
         {
-            get { return currentbox; }
-            set { currentbox = value; }
+            get
+            {
+                return currentbox;
+            }
+            set
+            {
+                currentbox = value;
+            }
         }
 
         public PCStorageSystem PCStorageSystem
         {
-            get { return pcstoragesystem; }
-            set { pcstoragesystem = value; }
+            get
+            {
+                return pcstoragesystem;
+            }
+            set
+            {
+                pcstoragesystem = value;
+            }
         }
 
         public PCStorageBoxNames PCStorageBoxNames
         {
-            get { return pcstorageboxnames; }
-            set { pcstorageboxnames = value; }
+            get
+            {
+                return pcstorageboxnames;
+            }
+            set
+            {
+                pcstorageboxnames = value;
+            }
         }
     }
 }

@@ -28,12 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            var dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            var dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            var dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            var dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            var dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            var dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
             this.buttonOk = new System.Windows.Forms.Button();
             this.buttonApply = new System.Windows.Forms.Button();
             this.buttonCancel = new System.Windows.Forms.Button();

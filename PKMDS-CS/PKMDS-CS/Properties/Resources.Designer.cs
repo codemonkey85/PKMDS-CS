@@ -39,7 +39,7 @@ namespace PKMDS_CS.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("PKMDS_CS.Properties.Resources", typeof(Resources).Assembly);
+                    var temp = new global::System.Resources.ResourceManager("PKMDS_CS.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -65,7 +65,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _1 {
             get {
-                object obj = ResourceManager.GetObject("_1", resourceCulture);
+                var obj = ResourceManager.GetObject("_1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -75,7 +75,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _10 {
             get {
-                object obj = ResourceManager.GetObject("_10", resourceCulture);
+                var obj = ResourceManager.GetObject("_10", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -85,7 +85,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _100 {
             get {
-                object obj = ResourceManager.GetObject("_100", resourceCulture);
+                var obj = ResourceManager.GetObject("_100", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -95,7 +95,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _101 {
             get {
-                object obj = ResourceManager.GetObject("_101", resourceCulture);
+                var obj = ResourceManager.GetObject("_101", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -105,7 +105,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _102 {
             get {
-                object obj = ResourceManager.GetObject("_102", resourceCulture);
+                var obj = ResourceManager.GetObject("_102", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -115,7 +115,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _103 {
             get {
-                object obj = ResourceManager.GetObject("_103", resourceCulture);
+                var obj = ResourceManager.GetObject("_103", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -125,7 +125,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _104 {
             get {
-                object obj = ResourceManager.GetObject("_104", resourceCulture);
+                var obj = ResourceManager.GetObject("_104", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -135,7 +135,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _105 {
             get {
-                object obj = ResourceManager.GetObject("_105", resourceCulture);
+                var obj = ResourceManager.GetObject("_105", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -145,7 +145,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _106 {
             get {
-                object obj = ResourceManager.GetObject("_106", resourceCulture);
+                var obj = ResourceManager.GetObject("_106", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -155,7 +155,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _107 {
             get {
-                object obj = ResourceManager.GetObject("_107", resourceCulture);
+                var obj = ResourceManager.GetObject("_107", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -165,7 +165,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _108 {
             get {
-                object obj = ResourceManager.GetObject("_108", resourceCulture);
+                var obj = ResourceManager.GetObject("_108", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -175,7 +175,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _109 {
             get {
-                object obj = ResourceManager.GetObject("_109", resourceCulture);
+                var obj = ResourceManager.GetObject("_109", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -185,7 +185,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _11 {
             get {
-                object obj = ResourceManager.GetObject("_11", resourceCulture);
+                var obj = ResourceManager.GetObject("_11", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -195,7 +195,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _110 {
             get {
-                object obj = ResourceManager.GetObject("_110", resourceCulture);
+                var obj = ResourceManager.GetObject("_110", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -205,7 +205,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _111 {
             get {
-                object obj = ResourceManager.GetObject("_111", resourceCulture);
+                var obj = ResourceManager.GetObject("_111", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -215,7 +215,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _112 {
             get {
-                object obj = ResourceManager.GetObject("_112", resourceCulture);
+                var obj = ResourceManager.GetObject("_112", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -225,7 +225,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _113 {
             get {
-                object obj = ResourceManager.GetObject("_113", resourceCulture);
+                var obj = ResourceManager.GetObject("_113", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -235,7 +235,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _114 {
             get {
-                object obj = ResourceManager.GetObject("_114", resourceCulture);
+                var obj = ResourceManager.GetObject("_114", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -245,7 +245,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _115 {
             get {
-                object obj = ResourceManager.GetObject("_115", resourceCulture);
+                var obj = ResourceManager.GetObject("_115", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -255,7 +255,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _115_mega {
             get {
-                object obj = ResourceManager.GetObject("_115_mega", resourceCulture);
+                var obj = ResourceManager.GetObject("_115_mega", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -265,7 +265,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _116 {
             get {
-                object obj = ResourceManager.GetObject("_116", resourceCulture);
+                var obj = ResourceManager.GetObject("_116", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -275,7 +275,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _117 {
             get {
-                object obj = ResourceManager.GetObject("_117", resourceCulture);
+                var obj = ResourceManager.GetObject("_117", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -285,7 +285,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _118 {
             get {
-                object obj = ResourceManager.GetObject("_118", resourceCulture);
+                var obj = ResourceManager.GetObject("_118", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -295,7 +295,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _119 {
             get {
-                object obj = ResourceManager.GetObject("_119", resourceCulture);
+                var obj = ResourceManager.GetObject("_119", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -305,7 +305,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _12 {
             get {
-                object obj = ResourceManager.GetObject("_12", resourceCulture);
+                var obj = ResourceManager.GetObject("_12", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -315,7 +315,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _120 {
             get {
-                object obj = ResourceManager.GetObject("_120", resourceCulture);
+                var obj = ResourceManager.GetObject("_120", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -325,7 +325,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _121 {
             get {
-                object obj = ResourceManager.GetObject("_121", resourceCulture);
+                var obj = ResourceManager.GetObject("_121", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -335,7 +335,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _122 {
             get {
-                object obj = ResourceManager.GetObject("_122", resourceCulture);
+                var obj = ResourceManager.GetObject("_122", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -345,7 +345,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _123 {
             get {
-                object obj = ResourceManager.GetObject("_123", resourceCulture);
+                var obj = ResourceManager.GetObject("_123", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -355,7 +355,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _124 {
             get {
-                object obj = ResourceManager.GetObject("_124", resourceCulture);
+                var obj = ResourceManager.GetObject("_124", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -365,7 +365,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _125 {
             get {
-                object obj = ResourceManager.GetObject("_125", resourceCulture);
+                var obj = ResourceManager.GetObject("_125", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -375,7 +375,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _126 {
             get {
-                object obj = ResourceManager.GetObject("_126", resourceCulture);
+                var obj = ResourceManager.GetObject("_126", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -385,7 +385,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _127 {
             get {
-                object obj = ResourceManager.GetObject("_127", resourceCulture);
+                var obj = ResourceManager.GetObject("_127", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -395,7 +395,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _127_mega {
             get {
-                object obj = ResourceManager.GetObject("_127_mega", resourceCulture);
+                var obj = ResourceManager.GetObject("_127_mega", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -405,7 +405,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _128 {
             get {
-                object obj = ResourceManager.GetObject("_128", resourceCulture);
+                var obj = ResourceManager.GetObject("_128", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -415,7 +415,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _129 {
             get {
-                object obj = ResourceManager.GetObject("_129", resourceCulture);
+                var obj = ResourceManager.GetObject("_129", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -425,7 +425,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _13 {
             get {
-                object obj = ResourceManager.GetObject("_13", resourceCulture);
+                var obj = ResourceManager.GetObject("_13", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -435,7 +435,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _130 {
             get {
-                object obj = ResourceManager.GetObject("_130", resourceCulture);
+                var obj = ResourceManager.GetObject("_130", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -445,7 +445,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _130_mega {
             get {
-                object obj = ResourceManager.GetObject("_130_mega", resourceCulture);
+                var obj = ResourceManager.GetObject("_130_mega", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -455,7 +455,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _131 {
             get {
-                object obj = ResourceManager.GetObject("_131", resourceCulture);
+                var obj = ResourceManager.GetObject("_131", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -465,7 +465,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _132 {
             get {
-                object obj = ResourceManager.GetObject("_132", resourceCulture);
+                var obj = ResourceManager.GetObject("_132", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -475,7 +475,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _133 {
             get {
-                object obj = ResourceManager.GetObject("_133", resourceCulture);
+                var obj = ResourceManager.GetObject("_133", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -485,7 +485,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _134 {
             get {
-                object obj = ResourceManager.GetObject("_134", resourceCulture);
+                var obj = ResourceManager.GetObject("_134", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -495,7 +495,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _135 {
             get {
-                object obj = ResourceManager.GetObject("_135", resourceCulture);
+                var obj = ResourceManager.GetObject("_135", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -505,7 +505,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _136 {
             get {
-                object obj = ResourceManager.GetObject("_136", resourceCulture);
+                var obj = ResourceManager.GetObject("_136", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -515,7 +515,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _137 {
             get {
-                object obj = ResourceManager.GetObject("_137", resourceCulture);
+                var obj = ResourceManager.GetObject("_137", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -525,7 +525,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _138 {
             get {
-                object obj = ResourceManager.GetObject("_138", resourceCulture);
+                var obj = ResourceManager.GetObject("_138", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -535,7 +535,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _139 {
             get {
-                object obj = ResourceManager.GetObject("_139", resourceCulture);
+                var obj = ResourceManager.GetObject("_139", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -545,7 +545,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _14 {
             get {
-                object obj = ResourceManager.GetObject("_14", resourceCulture);
+                var obj = ResourceManager.GetObject("_14", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -555,7 +555,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _140 {
             get {
-                object obj = ResourceManager.GetObject("_140", resourceCulture);
+                var obj = ResourceManager.GetObject("_140", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -565,7 +565,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _141 {
             get {
-                object obj = ResourceManager.GetObject("_141", resourceCulture);
+                var obj = ResourceManager.GetObject("_141", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -575,7 +575,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _142 {
             get {
-                object obj = ResourceManager.GetObject("_142", resourceCulture);
+                var obj = ResourceManager.GetObject("_142", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -585,7 +585,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _142_mega {
             get {
-                object obj = ResourceManager.GetObject("_142_mega", resourceCulture);
+                var obj = ResourceManager.GetObject("_142_mega", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -595,7 +595,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _143 {
             get {
-                object obj = ResourceManager.GetObject("_143", resourceCulture);
+                var obj = ResourceManager.GetObject("_143", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -605,7 +605,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _144 {
             get {
-                object obj = ResourceManager.GetObject("_144", resourceCulture);
+                var obj = ResourceManager.GetObject("_144", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -615,7 +615,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _145 {
             get {
-                object obj = ResourceManager.GetObject("_145", resourceCulture);
+                var obj = ResourceManager.GetObject("_145", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -625,7 +625,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _146 {
             get {
-                object obj = ResourceManager.GetObject("_146", resourceCulture);
+                var obj = ResourceManager.GetObject("_146", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -635,7 +635,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _147 {
             get {
-                object obj = ResourceManager.GetObject("_147", resourceCulture);
+                var obj = ResourceManager.GetObject("_147", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -645,7 +645,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _148 {
             get {
-                object obj = ResourceManager.GetObject("_148", resourceCulture);
+                var obj = ResourceManager.GetObject("_148", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -655,7 +655,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _149 {
             get {
-                object obj = ResourceManager.GetObject("_149", resourceCulture);
+                var obj = ResourceManager.GetObject("_149", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -665,7 +665,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _15 {
             get {
-                object obj = ResourceManager.GetObject("_15", resourceCulture);
+                var obj = ResourceManager.GetObject("_15", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -675,7 +675,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _150 {
             get {
-                object obj = ResourceManager.GetObject("_150", resourceCulture);
+                var obj = ResourceManager.GetObject("_150", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -685,7 +685,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _150_mega_x {
             get {
-                object obj = ResourceManager.GetObject("_150_mega_x", resourceCulture);
+                var obj = ResourceManager.GetObject("_150_mega_x", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -695,7 +695,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _150_mega_y {
             get {
-                object obj = ResourceManager.GetObject("_150_mega_y", resourceCulture);
+                var obj = ResourceManager.GetObject("_150_mega_y", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -705,7 +705,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _151 {
             get {
-                object obj = ResourceManager.GetObject("_151", resourceCulture);
+                var obj = ResourceManager.GetObject("_151", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -715,7 +715,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _152 {
             get {
-                object obj = ResourceManager.GetObject("_152", resourceCulture);
+                var obj = ResourceManager.GetObject("_152", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -725,7 +725,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _153 {
             get {
-                object obj = ResourceManager.GetObject("_153", resourceCulture);
+                var obj = ResourceManager.GetObject("_153", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -735,7 +735,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _154 {
             get {
-                object obj = ResourceManager.GetObject("_154", resourceCulture);
+                var obj = ResourceManager.GetObject("_154", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -745,7 +745,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _155 {
             get {
-                object obj = ResourceManager.GetObject("_155", resourceCulture);
+                var obj = ResourceManager.GetObject("_155", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -755,7 +755,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _156 {
             get {
-                object obj = ResourceManager.GetObject("_156", resourceCulture);
+                var obj = ResourceManager.GetObject("_156", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -765,7 +765,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _157 {
             get {
-                object obj = ResourceManager.GetObject("_157", resourceCulture);
+                var obj = ResourceManager.GetObject("_157", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -775,7 +775,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _158 {
             get {
-                object obj = ResourceManager.GetObject("_158", resourceCulture);
+                var obj = ResourceManager.GetObject("_158", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -785,7 +785,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _159 {
             get {
-                object obj = ResourceManager.GetObject("_159", resourceCulture);
+                var obj = ResourceManager.GetObject("_159", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -795,7 +795,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _16 {
             get {
-                object obj = ResourceManager.GetObject("_16", resourceCulture);
+                var obj = ResourceManager.GetObject("_16", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -805,7 +805,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _160 {
             get {
-                object obj = ResourceManager.GetObject("_160", resourceCulture);
+                var obj = ResourceManager.GetObject("_160", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -815,7 +815,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _161 {
             get {
-                object obj = ResourceManager.GetObject("_161", resourceCulture);
+                var obj = ResourceManager.GetObject("_161", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -825,7 +825,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _162 {
             get {
-                object obj = ResourceManager.GetObject("_162", resourceCulture);
+                var obj = ResourceManager.GetObject("_162", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -835,7 +835,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _163 {
             get {
-                object obj = ResourceManager.GetObject("_163", resourceCulture);
+                var obj = ResourceManager.GetObject("_163", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -845,7 +845,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _164 {
             get {
-                object obj = ResourceManager.GetObject("_164", resourceCulture);
+                var obj = ResourceManager.GetObject("_164", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -855,7 +855,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _165 {
             get {
-                object obj = ResourceManager.GetObject("_165", resourceCulture);
+                var obj = ResourceManager.GetObject("_165", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -865,7 +865,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _166 {
             get {
-                object obj = ResourceManager.GetObject("_166", resourceCulture);
+                var obj = ResourceManager.GetObject("_166", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -875,7 +875,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _167 {
             get {
-                object obj = ResourceManager.GetObject("_167", resourceCulture);
+                var obj = ResourceManager.GetObject("_167", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -885,7 +885,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _168 {
             get {
-                object obj = ResourceManager.GetObject("_168", resourceCulture);
+                var obj = ResourceManager.GetObject("_168", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -895,7 +895,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _169 {
             get {
-                object obj = ResourceManager.GetObject("_169", resourceCulture);
+                var obj = ResourceManager.GetObject("_169", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -905,7 +905,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _17 {
             get {
-                object obj = ResourceManager.GetObject("_17", resourceCulture);
+                var obj = ResourceManager.GetObject("_17", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -915,7 +915,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _170 {
             get {
-                object obj = ResourceManager.GetObject("_170", resourceCulture);
+                var obj = ResourceManager.GetObject("_170", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -925,7 +925,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _171 {
             get {
-                object obj = ResourceManager.GetObject("_171", resourceCulture);
+                var obj = ResourceManager.GetObject("_171", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -935,7 +935,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _172 {
             get {
-                object obj = ResourceManager.GetObject("_172", resourceCulture);
+                var obj = ResourceManager.GetObject("_172", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -945,7 +945,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _173 {
             get {
-                object obj = ResourceManager.GetObject("_173", resourceCulture);
+                var obj = ResourceManager.GetObject("_173", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -955,7 +955,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _174 {
             get {
-                object obj = ResourceManager.GetObject("_174", resourceCulture);
+                var obj = ResourceManager.GetObject("_174", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -965,7 +965,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _175 {
             get {
-                object obj = ResourceManager.GetObject("_175", resourceCulture);
+                var obj = ResourceManager.GetObject("_175", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -975,7 +975,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _176 {
             get {
-                object obj = ResourceManager.GetObject("_176", resourceCulture);
+                var obj = ResourceManager.GetObject("_176", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -985,7 +985,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _177 {
             get {
-                object obj = ResourceManager.GetObject("_177", resourceCulture);
+                var obj = ResourceManager.GetObject("_177", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -995,7 +995,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _178 {
             get {
-                object obj = ResourceManager.GetObject("_178", resourceCulture);
+                var obj = ResourceManager.GetObject("_178", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1005,7 +1005,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _179 {
             get {
-                object obj = ResourceManager.GetObject("_179", resourceCulture);
+                var obj = ResourceManager.GetObject("_179", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1015,7 +1015,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _18 {
             get {
-                object obj = ResourceManager.GetObject("_18", resourceCulture);
+                var obj = ResourceManager.GetObject("_18", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1025,7 +1025,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _180 {
             get {
-                object obj = ResourceManager.GetObject("_180", resourceCulture);
+                var obj = ResourceManager.GetObject("_180", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1035,7 +1035,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _181 {
             get {
-                object obj = ResourceManager.GetObject("_181", resourceCulture);
+                var obj = ResourceManager.GetObject("_181", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1045,7 +1045,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _181_mega {
             get {
-                object obj = ResourceManager.GetObject("_181_mega", resourceCulture);
+                var obj = ResourceManager.GetObject("_181_mega", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1055,7 +1055,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _182 {
             get {
-                object obj = ResourceManager.GetObject("_182", resourceCulture);
+                var obj = ResourceManager.GetObject("_182", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1065,7 +1065,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _183 {
             get {
-                object obj = ResourceManager.GetObject("_183", resourceCulture);
+                var obj = ResourceManager.GetObject("_183", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1075,7 +1075,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _184 {
             get {
-                object obj = ResourceManager.GetObject("_184", resourceCulture);
+                var obj = ResourceManager.GetObject("_184", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1085,7 +1085,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _185 {
             get {
-                object obj = ResourceManager.GetObject("_185", resourceCulture);
+                var obj = ResourceManager.GetObject("_185", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1095,7 +1095,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _186 {
             get {
-                object obj = ResourceManager.GetObject("_186", resourceCulture);
+                var obj = ResourceManager.GetObject("_186", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1105,7 +1105,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _187 {
             get {
-                object obj = ResourceManager.GetObject("_187", resourceCulture);
+                var obj = ResourceManager.GetObject("_187", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1115,7 +1115,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _188 {
             get {
-                object obj = ResourceManager.GetObject("_188", resourceCulture);
+                var obj = ResourceManager.GetObject("_188", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1125,7 +1125,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _189 {
             get {
-                object obj = ResourceManager.GetObject("_189", resourceCulture);
+                var obj = ResourceManager.GetObject("_189", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1135,7 +1135,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _19 {
             get {
-                object obj = ResourceManager.GetObject("_19", resourceCulture);
+                var obj = ResourceManager.GetObject("_19", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1145,7 +1145,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _190 {
             get {
-                object obj = ResourceManager.GetObject("_190", resourceCulture);
+                var obj = ResourceManager.GetObject("_190", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1155,7 +1155,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _191 {
             get {
-                object obj = ResourceManager.GetObject("_191", resourceCulture);
+                var obj = ResourceManager.GetObject("_191", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1165,7 +1165,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _192 {
             get {
-                object obj = ResourceManager.GetObject("_192", resourceCulture);
+                var obj = ResourceManager.GetObject("_192", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1175,7 +1175,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _193 {
             get {
-                object obj = ResourceManager.GetObject("_193", resourceCulture);
+                var obj = ResourceManager.GetObject("_193", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1185,7 +1185,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _194 {
             get {
-                object obj = ResourceManager.GetObject("_194", resourceCulture);
+                var obj = ResourceManager.GetObject("_194", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1195,7 +1195,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _195 {
             get {
-                object obj = ResourceManager.GetObject("_195", resourceCulture);
+                var obj = ResourceManager.GetObject("_195", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1205,7 +1205,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _196 {
             get {
-                object obj = ResourceManager.GetObject("_196", resourceCulture);
+                var obj = ResourceManager.GetObject("_196", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1215,7 +1215,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _197 {
             get {
-                object obj = ResourceManager.GetObject("_197", resourceCulture);
+                var obj = ResourceManager.GetObject("_197", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1225,7 +1225,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _198 {
             get {
-                object obj = ResourceManager.GetObject("_198", resourceCulture);
+                var obj = ResourceManager.GetObject("_198", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1235,7 +1235,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _199 {
             get {
-                object obj = ResourceManager.GetObject("_199", resourceCulture);
+                var obj = ResourceManager.GetObject("_199", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1245,7 +1245,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _2 {
             get {
-                object obj = ResourceManager.GetObject("_2", resourceCulture);
+                var obj = ResourceManager.GetObject("_2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1255,7 +1255,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _20 {
             get {
-                object obj = ResourceManager.GetObject("_20", resourceCulture);
+                var obj = ResourceManager.GetObject("_20", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1265,7 +1265,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _200 {
             get {
-                object obj = ResourceManager.GetObject("_200", resourceCulture);
+                var obj = ResourceManager.GetObject("_200", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1275,7 +1275,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _201 {
             get {
-                object obj = ResourceManager.GetObject("_201", resourceCulture);
+                var obj = ResourceManager.GetObject("_201", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1285,7 +1285,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _201_a {
             get {
-                object obj = ResourceManager.GetObject("_201_a", resourceCulture);
+                var obj = ResourceManager.GetObject("_201_a", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1295,7 +1295,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _201_b {
             get {
-                object obj = ResourceManager.GetObject("_201_b", resourceCulture);
+                var obj = ResourceManager.GetObject("_201_b", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1305,7 +1305,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _201_c {
             get {
-                object obj = ResourceManager.GetObject("_201_c", resourceCulture);
+                var obj = ResourceManager.GetObject("_201_c", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1315,7 +1315,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _201_d {
             get {
-                object obj = ResourceManager.GetObject("_201_d", resourceCulture);
+                var obj = ResourceManager.GetObject("_201_d", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1325,7 +1325,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _201_e {
             get {
-                object obj = ResourceManager.GetObject("_201_e", resourceCulture);
+                var obj = ResourceManager.GetObject("_201_e", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1335,7 +1335,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _201_exclamation {
             get {
-                object obj = ResourceManager.GetObject("_201_exclamation", resourceCulture);
+                var obj = ResourceManager.GetObject("_201_exclamation", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1345,7 +1345,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _201_f {
             get {
-                object obj = ResourceManager.GetObject("_201_f", resourceCulture);
+                var obj = ResourceManager.GetObject("_201_f", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1355,7 +1355,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _201_g {
             get {
-                object obj = ResourceManager.GetObject("_201_g", resourceCulture);
+                var obj = ResourceManager.GetObject("_201_g", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1365,7 +1365,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _201_h {
             get {
-                object obj = ResourceManager.GetObject("_201_h", resourceCulture);
+                var obj = ResourceManager.GetObject("_201_h", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1375,7 +1375,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _201_i {
             get {
-                object obj = ResourceManager.GetObject("_201_i", resourceCulture);
+                var obj = ResourceManager.GetObject("_201_i", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1385,7 +1385,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _201_j {
             get {
-                object obj = ResourceManager.GetObject("_201_j", resourceCulture);
+                var obj = ResourceManager.GetObject("_201_j", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1395,7 +1395,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _201_k {
             get {
-                object obj = ResourceManager.GetObject("_201_k", resourceCulture);
+                var obj = ResourceManager.GetObject("_201_k", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1405,7 +1405,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _201_l {
             get {
-                object obj = ResourceManager.GetObject("_201_l", resourceCulture);
+                var obj = ResourceManager.GetObject("_201_l", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1415,7 +1415,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _201_m {
             get {
-                object obj = ResourceManager.GetObject("_201_m", resourceCulture);
+                var obj = ResourceManager.GetObject("_201_m", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1425,7 +1425,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _201_n {
             get {
-                object obj = ResourceManager.GetObject("_201_n", resourceCulture);
+                var obj = ResourceManager.GetObject("_201_n", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1435,7 +1435,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _201_o {
             get {
-                object obj = ResourceManager.GetObject("_201_o", resourceCulture);
+                var obj = ResourceManager.GetObject("_201_o", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1445,7 +1445,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _201_p {
             get {
-                object obj = ResourceManager.GetObject("_201_p", resourceCulture);
+                var obj = ResourceManager.GetObject("_201_p", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1455,7 +1455,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _201_q {
             get {
-                object obj = ResourceManager.GetObject("_201_q", resourceCulture);
+                var obj = ResourceManager.GetObject("_201_q", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1465,7 +1465,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _201_question {
             get {
-                object obj = ResourceManager.GetObject("_201_question", resourceCulture);
+                var obj = ResourceManager.GetObject("_201_question", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1475,7 +1475,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _201_r {
             get {
-                object obj = ResourceManager.GetObject("_201_r", resourceCulture);
+                var obj = ResourceManager.GetObject("_201_r", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1485,7 +1485,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _201_s {
             get {
-                object obj = ResourceManager.GetObject("_201_s", resourceCulture);
+                var obj = ResourceManager.GetObject("_201_s", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1495,7 +1495,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _201_t {
             get {
-                object obj = ResourceManager.GetObject("_201_t", resourceCulture);
+                var obj = ResourceManager.GetObject("_201_t", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1505,7 +1505,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _201_u {
             get {
-                object obj = ResourceManager.GetObject("_201_u", resourceCulture);
+                var obj = ResourceManager.GetObject("_201_u", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1515,7 +1515,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _201_v {
             get {
-                object obj = ResourceManager.GetObject("_201_v", resourceCulture);
+                var obj = ResourceManager.GetObject("_201_v", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1525,7 +1525,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _201_w {
             get {
-                object obj = ResourceManager.GetObject("_201_w", resourceCulture);
+                var obj = ResourceManager.GetObject("_201_w", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1535,7 +1535,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _201_x {
             get {
-                object obj = ResourceManager.GetObject("_201_x", resourceCulture);
+                var obj = ResourceManager.GetObject("_201_x", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1545,7 +1545,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _201_y {
             get {
-                object obj = ResourceManager.GetObject("_201_y", resourceCulture);
+                var obj = ResourceManager.GetObject("_201_y", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1555,7 +1555,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _201_z {
             get {
-                object obj = ResourceManager.GetObject("_201_z", resourceCulture);
+                var obj = ResourceManager.GetObject("_201_z", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1565,7 +1565,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _202 {
             get {
-                object obj = ResourceManager.GetObject("_202", resourceCulture);
+                var obj = ResourceManager.GetObject("_202", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1575,7 +1575,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _203 {
             get {
-                object obj = ResourceManager.GetObject("_203", resourceCulture);
+                var obj = ResourceManager.GetObject("_203", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1585,7 +1585,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _204 {
             get {
-                object obj = ResourceManager.GetObject("_204", resourceCulture);
+                var obj = ResourceManager.GetObject("_204", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1595,7 +1595,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _205 {
             get {
-                object obj = ResourceManager.GetObject("_205", resourceCulture);
+                var obj = ResourceManager.GetObject("_205", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1605,7 +1605,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _206 {
             get {
-                object obj = ResourceManager.GetObject("_206", resourceCulture);
+                var obj = ResourceManager.GetObject("_206", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1615,7 +1615,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _207 {
             get {
-                object obj = ResourceManager.GetObject("_207", resourceCulture);
+                var obj = ResourceManager.GetObject("_207", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1625,7 +1625,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _208 {
             get {
-                object obj = ResourceManager.GetObject("_208", resourceCulture);
+                var obj = ResourceManager.GetObject("_208", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1635,7 +1635,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _209 {
             get {
-                object obj = ResourceManager.GetObject("_209", resourceCulture);
+                var obj = ResourceManager.GetObject("_209", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1645,7 +1645,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _21 {
             get {
-                object obj = ResourceManager.GetObject("_21", resourceCulture);
+                var obj = ResourceManager.GetObject("_21", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1655,7 +1655,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _210 {
             get {
-                object obj = ResourceManager.GetObject("_210", resourceCulture);
+                var obj = ResourceManager.GetObject("_210", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1665,7 +1665,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _211 {
             get {
-                object obj = ResourceManager.GetObject("_211", resourceCulture);
+                var obj = ResourceManager.GetObject("_211", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1675,7 +1675,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _212 {
             get {
-                object obj = ResourceManager.GetObject("_212", resourceCulture);
+                var obj = ResourceManager.GetObject("_212", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1685,7 +1685,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _212_mega {
             get {
-                object obj = ResourceManager.GetObject("_212_mega", resourceCulture);
+                var obj = ResourceManager.GetObject("_212_mega", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1695,7 +1695,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _213 {
             get {
-                object obj = ResourceManager.GetObject("_213", resourceCulture);
+                var obj = ResourceManager.GetObject("_213", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1705,7 +1705,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _214 {
             get {
-                object obj = ResourceManager.GetObject("_214", resourceCulture);
+                var obj = ResourceManager.GetObject("_214", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1715,7 +1715,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _214_mega {
             get {
-                object obj = ResourceManager.GetObject("_214_mega", resourceCulture);
+                var obj = ResourceManager.GetObject("_214_mega", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1725,7 +1725,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _215 {
             get {
-                object obj = ResourceManager.GetObject("_215", resourceCulture);
+                var obj = ResourceManager.GetObject("_215", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1735,7 +1735,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _216 {
             get {
-                object obj = ResourceManager.GetObject("_216", resourceCulture);
+                var obj = ResourceManager.GetObject("_216", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1745,7 +1745,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _217 {
             get {
-                object obj = ResourceManager.GetObject("_217", resourceCulture);
+                var obj = ResourceManager.GetObject("_217", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1755,7 +1755,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _218 {
             get {
-                object obj = ResourceManager.GetObject("_218", resourceCulture);
+                var obj = ResourceManager.GetObject("_218", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1765,7 +1765,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _219 {
             get {
-                object obj = ResourceManager.GetObject("_219", resourceCulture);
+                var obj = ResourceManager.GetObject("_219", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1775,7 +1775,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _22 {
             get {
-                object obj = ResourceManager.GetObject("_22", resourceCulture);
+                var obj = ResourceManager.GetObject("_22", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1785,7 +1785,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _220 {
             get {
-                object obj = ResourceManager.GetObject("_220", resourceCulture);
+                var obj = ResourceManager.GetObject("_220", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1795,7 +1795,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _221 {
             get {
-                object obj = ResourceManager.GetObject("_221", resourceCulture);
+                var obj = ResourceManager.GetObject("_221", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1805,7 +1805,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _222 {
             get {
-                object obj = ResourceManager.GetObject("_222", resourceCulture);
+                var obj = ResourceManager.GetObject("_222", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1815,7 +1815,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _223 {
             get {
-                object obj = ResourceManager.GetObject("_223", resourceCulture);
+                var obj = ResourceManager.GetObject("_223", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1825,7 +1825,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _224 {
             get {
-                object obj = ResourceManager.GetObject("_224", resourceCulture);
+                var obj = ResourceManager.GetObject("_224", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1835,7 +1835,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _225 {
             get {
-                object obj = ResourceManager.GetObject("_225", resourceCulture);
+                var obj = ResourceManager.GetObject("_225", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1845,7 +1845,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _226 {
             get {
-                object obj = ResourceManager.GetObject("_226", resourceCulture);
+                var obj = ResourceManager.GetObject("_226", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1855,7 +1855,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _227 {
             get {
-                object obj = ResourceManager.GetObject("_227", resourceCulture);
+                var obj = ResourceManager.GetObject("_227", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1865,7 +1865,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _228 {
             get {
-                object obj = ResourceManager.GetObject("_228", resourceCulture);
+                var obj = ResourceManager.GetObject("_228", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1875,7 +1875,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _229 {
             get {
-                object obj = ResourceManager.GetObject("_229", resourceCulture);
+                var obj = ResourceManager.GetObject("_229", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1885,7 +1885,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _229_mega {
             get {
-                object obj = ResourceManager.GetObject("_229_mega", resourceCulture);
+                var obj = ResourceManager.GetObject("_229_mega", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1895,7 +1895,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _23 {
             get {
-                object obj = ResourceManager.GetObject("_23", resourceCulture);
+                var obj = ResourceManager.GetObject("_23", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1905,7 +1905,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _230 {
             get {
-                object obj = ResourceManager.GetObject("_230", resourceCulture);
+                var obj = ResourceManager.GetObject("_230", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1915,7 +1915,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _231 {
             get {
-                object obj = ResourceManager.GetObject("_231", resourceCulture);
+                var obj = ResourceManager.GetObject("_231", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1925,7 +1925,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _232 {
             get {
-                object obj = ResourceManager.GetObject("_232", resourceCulture);
+                var obj = ResourceManager.GetObject("_232", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1935,7 +1935,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _233 {
             get {
-                object obj = ResourceManager.GetObject("_233", resourceCulture);
+                var obj = ResourceManager.GetObject("_233", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1945,7 +1945,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _234 {
             get {
-                object obj = ResourceManager.GetObject("_234", resourceCulture);
+                var obj = ResourceManager.GetObject("_234", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1955,7 +1955,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _235 {
             get {
-                object obj = ResourceManager.GetObject("_235", resourceCulture);
+                var obj = ResourceManager.GetObject("_235", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1965,7 +1965,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _236 {
             get {
-                object obj = ResourceManager.GetObject("_236", resourceCulture);
+                var obj = ResourceManager.GetObject("_236", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1975,7 +1975,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _237 {
             get {
-                object obj = ResourceManager.GetObject("_237", resourceCulture);
+                var obj = ResourceManager.GetObject("_237", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1985,7 +1985,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _238 {
             get {
-                object obj = ResourceManager.GetObject("_238", resourceCulture);
+                var obj = ResourceManager.GetObject("_238", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1995,7 +1995,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _239 {
             get {
-                object obj = ResourceManager.GetObject("_239", resourceCulture);
+                var obj = ResourceManager.GetObject("_239", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2005,7 +2005,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _24 {
             get {
-                object obj = ResourceManager.GetObject("_24", resourceCulture);
+                var obj = ResourceManager.GetObject("_24", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2015,7 +2015,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _240 {
             get {
-                object obj = ResourceManager.GetObject("_240", resourceCulture);
+                var obj = ResourceManager.GetObject("_240", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2025,7 +2025,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _241 {
             get {
-                object obj = ResourceManager.GetObject("_241", resourceCulture);
+                var obj = ResourceManager.GetObject("_241", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2035,7 +2035,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _242 {
             get {
-                object obj = ResourceManager.GetObject("_242", resourceCulture);
+                var obj = ResourceManager.GetObject("_242", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2045,7 +2045,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _243 {
             get {
-                object obj = ResourceManager.GetObject("_243", resourceCulture);
+                var obj = ResourceManager.GetObject("_243", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2055,7 +2055,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _244 {
             get {
-                object obj = ResourceManager.GetObject("_244", resourceCulture);
+                var obj = ResourceManager.GetObject("_244", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2065,7 +2065,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _245 {
             get {
-                object obj = ResourceManager.GetObject("_245", resourceCulture);
+                var obj = ResourceManager.GetObject("_245", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2075,7 +2075,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _246 {
             get {
-                object obj = ResourceManager.GetObject("_246", resourceCulture);
+                var obj = ResourceManager.GetObject("_246", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2085,7 +2085,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _247 {
             get {
-                object obj = ResourceManager.GetObject("_247", resourceCulture);
+                var obj = ResourceManager.GetObject("_247", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2095,7 +2095,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _248 {
             get {
-                object obj = ResourceManager.GetObject("_248", resourceCulture);
+                var obj = ResourceManager.GetObject("_248", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2105,7 +2105,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _248_mega {
             get {
-                object obj = ResourceManager.GetObject("_248_mega", resourceCulture);
+                var obj = ResourceManager.GetObject("_248_mega", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2115,7 +2115,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _249 {
             get {
-                object obj = ResourceManager.GetObject("_249", resourceCulture);
+                var obj = ResourceManager.GetObject("_249", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2125,7 +2125,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _25 {
             get {
-                object obj = ResourceManager.GetObject("_25", resourceCulture);
+                var obj = ResourceManager.GetObject("_25", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2135,7 +2135,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _250 {
             get {
-                object obj = ResourceManager.GetObject("_250", resourceCulture);
+                var obj = ResourceManager.GetObject("_250", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2145,7 +2145,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _251 {
             get {
-                object obj = ResourceManager.GetObject("_251", resourceCulture);
+                var obj = ResourceManager.GetObject("_251", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2155,7 +2155,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _252 {
             get {
-                object obj = ResourceManager.GetObject("_252", resourceCulture);
+                var obj = ResourceManager.GetObject("_252", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2165,7 +2165,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _253 {
             get {
-                object obj = ResourceManager.GetObject("_253", resourceCulture);
+                var obj = ResourceManager.GetObject("_253", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2175,7 +2175,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _254 {
             get {
-                object obj = ResourceManager.GetObject("_254", resourceCulture);
+                var obj = ResourceManager.GetObject("_254", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2185,7 +2185,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _255 {
             get {
-                object obj = ResourceManager.GetObject("_255", resourceCulture);
+                var obj = ResourceManager.GetObject("_255", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2195,7 +2195,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _256 {
             get {
-                object obj = ResourceManager.GetObject("_256", resourceCulture);
+                var obj = ResourceManager.GetObject("_256", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2205,7 +2205,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _257 {
             get {
-                object obj = ResourceManager.GetObject("_257", resourceCulture);
+                var obj = ResourceManager.GetObject("_257", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2215,7 +2215,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _257_mega {
             get {
-                object obj = ResourceManager.GetObject("_257_mega", resourceCulture);
+                var obj = ResourceManager.GetObject("_257_mega", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2225,7 +2225,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _258 {
             get {
-                object obj = ResourceManager.GetObject("_258", resourceCulture);
+                var obj = ResourceManager.GetObject("_258", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2235,7 +2235,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _259 {
             get {
-                object obj = ResourceManager.GetObject("_259", resourceCulture);
+                var obj = ResourceManager.GetObject("_259", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2245,7 +2245,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _26 {
             get {
-                object obj = ResourceManager.GetObject("_26", resourceCulture);
+                var obj = ResourceManager.GetObject("_26", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2255,7 +2255,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _260 {
             get {
-                object obj = ResourceManager.GetObject("_260", resourceCulture);
+                var obj = ResourceManager.GetObject("_260", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2265,7 +2265,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _261 {
             get {
-                object obj = ResourceManager.GetObject("_261", resourceCulture);
+                var obj = ResourceManager.GetObject("_261", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2275,7 +2275,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _262 {
             get {
-                object obj = ResourceManager.GetObject("_262", resourceCulture);
+                var obj = ResourceManager.GetObject("_262", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2285,7 +2285,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _263 {
             get {
-                object obj = ResourceManager.GetObject("_263", resourceCulture);
+                var obj = ResourceManager.GetObject("_263", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2295,7 +2295,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _264 {
             get {
-                object obj = ResourceManager.GetObject("_264", resourceCulture);
+                var obj = ResourceManager.GetObject("_264", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2305,7 +2305,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _265 {
             get {
-                object obj = ResourceManager.GetObject("_265", resourceCulture);
+                var obj = ResourceManager.GetObject("_265", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2315,7 +2315,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _266 {
             get {
-                object obj = ResourceManager.GetObject("_266", resourceCulture);
+                var obj = ResourceManager.GetObject("_266", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2325,7 +2325,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _267 {
             get {
-                object obj = ResourceManager.GetObject("_267", resourceCulture);
+                var obj = ResourceManager.GetObject("_267", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2335,7 +2335,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _268 {
             get {
-                object obj = ResourceManager.GetObject("_268", resourceCulture);
+                var obj = ResourceManager.GetObject("_268", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2345,7 +2345,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _269 {
             get {
-                object obj = ResourceManager.GetObject("_269", resourceCulture);
+                var obj = ResourceManager.GetObject("_269", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2355,7 +2355,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _27 {
             get {
-                object obj = ResourceManager.GetObject("_27", resourceCulture);
+                var obj = ResourceManager.GetObject("_27", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2365,7 +2365,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _270 {
             get {
-                object obj = ResourceManager.GetObject("_270", resourceCulture);
+                var obj = ResourceManager.GetObject("_270", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2375,7 +2375,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _271 {
             get {
-                object obj = ResourceManager.GetObject("_271", resourceCulture);
+                var obj = ResourceManager.GetObject("_271", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2385,7 +2385,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _272 {
             get {
-                object obj = ResourceManager.GetObject("_272", resourceCulture);
+                var obj = ResourceManager.GetObject("_272", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2395,7 +2395,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _273 {
             get {
-                object obj = ResourceManager.GetObject("_273", resourceCulture);
+                var obj = ResourceManager.GetObject("_273", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2405,7 +2405,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _274 {
             get {
-                object obj = ResourceManager.GetObject("_274", resourceCulture);
+                var obj = ResourceManager.GetObject("_274", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2415,7 +2415,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _275 {
             get {
-                object obj = ResourceManager.GetObject("_275", resourceCulture);
+                var obj = ResourceManager.GetObject("_275", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2425,7 +2425,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _276 {
             get {
-                object obj = ResourceManager.GetObject("_276", resourceCulture);
+                var obj = ResourceManager.GetObject("_276", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2435,7 +2435,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _277 {
             get {
-                object obj = ResourceManager.GetObject("_277", resourceCulture);
+                var obj = ResourceManager.GetObject("_277", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2445,7 +2445,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _278 {
             get {
-                object obj = ResourceManager.GetObject("_278", resourceCulture);
+                var obj = ResourceManager.GetObject("_278", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2455,7 +2455,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _279 {
             get {
-                object obj = ResourceManager.GetObject("_279", resourceCulture);
+                var obj = ResourceManager.GetObject("_279", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2465,7 +2465,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _28 {
             get {
-                object obj = ResourceManager.GetObject("_28", resourceCulture);
+                var obj = ResourceManager.GetObject("_28", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2475,7 +2475,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _280 {
             get {
-                object obj = ResourceManager.GetObject("_280", resourceCulture);
+                var obj = ResourceManager.GetObject("_280", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2485,7 +2485,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _281 {
             get {
-                object obj = ResourceManager.GetObject("_281", resourceCulture);
+                var obj = ResourceManager.GetObject("_281", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2495,7 +2495,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _282 {
             get {
-                object obj = ResourceManager.GetObject("_282", resourceCulture);
+                var obj = ResourceManager.GetObject("_282", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2505,7 +2505,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _282_mega {
             get {
-                object obj = ResourceManager.GetObject("_282_mega", resourceCulture);
+                var obj = ResourceManager.GetObject("_282_mega", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2515,7 +2515,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _283 {
             get {
-                object obj = ResourceManager.GetObject("_283", resourceCulture);
+                var obj = ResourceManager.GetObject("_283", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2525,7 +2525,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _284 {
             get {
-                object obj = ResourceManager.GetObject("_284", resourceCulture);
+                var obj = ResourceManager.GetObject("_284", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2535,7 +2535,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _285 {
             get {
-                object obj = ResourceManager.GetObject("_285", resourceCulture);
+                var obj = ResourceManager.GetObject("_285", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2545,7 +2545,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _286 {
             get {
-                object obj = ResourceManager.GetObject("_286", resourceCulture);
+                var obj = ResourceManager.GetObject("_286", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2555,7 +2555,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _287 {
             get {
-                object obj = ResourceManager.GetObject("_287", resourceCulture);
+                var obj = ResourceManager.GetObject("_287", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2565,7 +2565,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _288 {
             get {
-                object obj = ResourceManager.GetObject("_288", resourceCulture);
+                var obj = ResourceManager.GetObject("_288", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2575,7 +2575,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _289 {
             get {
-                object obj = ResourceManager.GetObject("_289", resourceCulture);
+                var obj = ResourceManager.GetObject("_289", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2585,7 +2585,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _29 {
             get {
-                object obj = ResourceManager.GetObject("_29", resourceCulture);
+                var obj = ResourceManager.GetObject("_29", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2595,7 +2595,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _290 {
             get {
-                object obj = ResourceManager.GetObject("_290", resourceCulture);
+                var obj = ResourceManager.GetObject("_290", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2605,7 +2605,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _291 {
             get {
-                object obj = ResourceManager.GetObject("_291", resourceCulture);
+                var obj = ResourceManager.GetObject("_291", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2615,7 +2615,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _292 {
             get {
-                object obj = ResourceManager.GetObject("_292", resourceCulture);
+                var obj = ResourceManager.GetObject("_292", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2625,7 +2625,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _293 {
             get {
-                object obj = ResourceManager.GetObject("_293", resourceCulture);
+                var obj = ResourceManager.GetObject("_293", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2635,7 +2635,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _294 {
             get {
-                object obj = ResourceManager.GetObject("_294", resourceCulture);
+                var obj = ResourceManager.GetObject("_294", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2645,7 +2645,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _295 {
             get {
-                object obj = ResourceManager.GetObject("_295", resourceCulture);
+                var obj = ResourceManager.GetObject("_295", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2655,7 +2655,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _296 {
             get {
-                object obj = ResourceManager.GetObject("_296", resourceCulture);
+                var obj = ResourceManager.GetObject("_296", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2665,7 +2665,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _297 {
             get {
-                object obj = ResourceManager.GetObject("_297", resourceCulture);
+                var obj = ResourceManager.GetObject("_297", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2675,7 +2675,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _298 {
             get {
-                object obj = ResourceManager.GetObject("_298", resourceCulture);
+                var obj = ResourceManager.GetObject("_298", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2685,7 +2685,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _299 {
             get {
-                object obj = ResourceManager.GetObject("_299", resourceCulture);
+                var obj = ResourceManager.GetObject("_299", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2695,7 +2695,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _3 {
             get {
-                object obj = ResourceManager.GetObject("_3", resourceCulture);
+                var obj = ResourceManager.GetObject("_3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2705,7 +2705,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _3_mega {
             get {
-                object obj = ResourceManager.GetObject("_3_mega", resourceCulture);
+                var obj = ResourceManager.GetObject("_3_mega", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2715,7 +2715,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _30 {
             get {
-                object obj = ResourceManager.GetObject("_30", resourceCulture);
+                var obj = ResourceManager.GetObject("_30", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2725,7 +2725,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _300 {
             get {
-                object obj = ResourceManager.GetObject("_300", resourceCulture);
+                var obj = ResourceManager.GetObject("_300", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2735,7 +2735,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _301 {
             get {
-                object obj = ResourceManager.GetObject("_301", resourceCulture);
+                var obj = ResourceManager.GetObject("_301", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2745,7 +2745,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _302 {
             get {
-                object obj = ResourceManager.GetObject("_302", resourceCulture);
+                var obj = ResourceManager.GetObject("_302", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2755,7 +2755,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _303 {
             get {
-                object obj = ResourceManager.GetObject("_303", resourceCulture);
+                var obj = ResourceManager.GetObject("_303", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2765,7 +2765,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _303_mega {
             get {
-                object obj = ResourceManager.GetObject("_303_mega", resourceCulture);
+                var obj = ResourceManager.GetObject("_303_mega", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2775,7 +2775,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _304 {
             get {
-                object obj = ResourceManager.GetObject("_304", resourceCulture);
+                var obj = ResourceManager.GetObject("_304", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2785,7 +2785,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _305 {
             get {
-                object obj = ResourceManager.GetObject("_305", resourceCulture);
+                var obj = ResourceManager.GetObject("_305", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2795,7 +2795,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _306 {
             get {
-                object obj = ResourceManager.GetObject("_306", resourceCulture);
+                var obj = ResourceManager.GetObject("_306", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2805,7 +2805,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _306_mega {
             get {
-                object obj = ResourceManager.GetObject("_306_mega", resourceCulture);
+                var obj = ResourceManager.GetObject("_306_mega", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2815,7 +2815,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _307 {
             get {
-                object obj = ResourceManager.GetObject("_307", resourceCulture);
+                var obj = ResourceManager.GetObject("_307", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2825,7 +2825,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _308 {
             get {
-                object obj = ResourceManager.GetObject("_308", resourceCulture);
+                var obj = ResourceManager.GetObject("_308", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2835,7 +2835,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _308_mega {
             get {
-                object obj = ResourceManager.GetObject("_308_mega", resourceCulture);
+                var obj = ResourceManager.GetObject("_308_mega", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2845,7 +2845,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _309 {
             get {
-                object obj = ResourceManager.GetObject("_309", resourceCulture);
+                var obj = ResourceManager.GetObject("_309", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2855,7 +2855,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _31 {
             get {
-                object obj = ResourceManager.GetObject("_31", resourceCulture);
+                var obj = ResourceManager.GetObject("_31", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2865,7 +2865,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _310 {
             get {
-                object obj = ResourceManager.GetObject("_310", resourceCulture);
+                var obj = ResourceManager.GetObject("_310", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2875,7 +2875,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _310_mega {
             get {
-                object obj = ResourceManager.GetObject("_310_mega", resourceCulture);
+                var obj = ResourceManager.GetObject("_310_mega", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2885,7 +2885,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _311 {
             get {
-                object obj = ResourceManager.GetObject("_311", resourceCulture);
+                var obj = ResourceManager.GetObject("_311", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2895,7 +2895,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _312 {
             get {
-                object obj = ResourceManager.GetObject("_312", resourceCulture);
+                var obj = ResourceManager.GetObject("_312", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2905,7 +2905,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _313 {
             get {
-                object obj = ResourceManager.GetObject("_313", resourceCulture);
+                var obj = ResourceManager.GetObject("_313", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2915,7 +2915,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _314 {
             get {
-                object obj = ResourceManager.GetObject("_314", resourceCulture);
+                var obj = ResourceManager.GetObject("_314", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2925,7 +2925,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _315 {
             get {
-                object obj = ResourceManager.GetObject("_315", resourceCulture);
+                var obj = ResourceManager.GetObject("_315", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2935,7 +2935,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _316 {
             get {
-                object obj = ResourceManager.GetObject("_316", resourceCulture);
+                var obj = ResourceManager.GetObject("_316", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2945,7 +2945,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _317 {
             get {
-                object obj = ResourceManager.GetObject("_317", resourceCulture);
+                var obj = ResourceManager.GetObject("_317", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2955,7 +2955,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _318 {
             get {
-                object obj = ResourceManager.GetObject("_318", resourceCulture);
+                var obj = ResourceManager.GetObject("_318", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2965,7 +2965,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _319 {
             get {
-                object obj = ResourceManager.GetObject("_319", resourceCulture);
+                var obj = ResourceManager.GetObject("_319", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2975,7 +2975,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _32 {
             get {
-                object obj = ResourceManager.GetObject("_32", resourceCulture);
+                var obj = ResourceManager.GetObject("_32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2985,7 +2985,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _320 {
             get {
-                object obj = ResourceManager.GetObject("_320", resourceCulture);
+                var obj = ResourceManager.GetObject("_320", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2995,7 +2995,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _321 {
             get {
-                object obj = ResourceManager.GetObject("_321", resourceCulture);
+                var obj = ResourceManager.GetObject("_321", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3005,7 +3005,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _322 {
             get {
-                object obj = ResourceManager.GetObject("_322", resourceCulture);
+                var obj = ResourceManager.GetObject("_322", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3015,7 +3015,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _323 {
             get {
-                object obj = ResourceManager.GetObject("_323", resourceCulture);
+                var obj = ResourceManager.GetObject("_323", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3025,7 +3025,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _324 {
             get {
-                object obj = ResourceManager.GetObject("_324", resourceCulture);
+                var obj = ResourceManager.GetObject("_324", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3035,7 +3035,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _325 {
             get {
-                object obj = ResourceManager.GetObject("_325", resourceCulture);
+                var obj = ResourceManager.GetObject("_325", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3045,7 +3045,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _326 {
             get {
-                object obj = ResourceManager.GetObject("_326", resourceCulture);
+                var obj = ResourceManager.GetObject("_326", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3055,7 +3055,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _327 {
             get {
-                object obj = ResourceManager.GetObject("_327", resourceCulture);
+                var obj = ResourceManager.GetObject("_327", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3065,7 +3065,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _328 {
             get {
-                object obj = ResourceManager.GetObject("_328", resourceCulture);
+                var obj = ResourceManager.GetObject("_328", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3075,7 +3075,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _329 {
             get {
-                object obj = ResourceManager.GetObject("_329", resourceCulture);
+                var obj = ResourceManager.GetObject("_329", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3085,7 +3085,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _33 {
             get {
-                object obj = ResourceManager.GetObject("_33", resourceCulture);
+                var obj = ResourceManager.GetObject("_33", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3095,7 +3095,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _330 {
             get {
-                object obj = ResourceManager.GetObject("_330", resourceCulture);
+                var obj = ResourceManager.GetObject("_330", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3105,7 +3105,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _331 {
             get {
-                object obj = ResourceManager.GetObject("_331", resourceCulture);
+                var obj = ResourceManager.GetObject("_331", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3115,7 +3115,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _332 {
             get {
-                object obj = ResourceManager.GetObject("_332", resourceCulture);
+                var obj = ResourceManager.GetObject("_332", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3125,7 +3125,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _333 {
             get {
-                object obj = ResourceManager.GetObject("_333", resourceCulture);
+                var obj = ResourceManager.GetObject("_333", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3135,7 +3135,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _334 {
             get {
-                object obj = ResourceManager.GetObject("_334", resourceCulture);
+                var obj = ResourceManager.GetObject("_334", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3145,7 +3145,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _335 {
             get {
-                object obj = ResourceManager.GetObject("_335", resourceCulture);
+                var obj = ResourceManager.GetObject("_335", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3155,7 +3155,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _336 {
             get {
-                object obj = ResourceManager.GetObject("_336", resourceCulture);
+                var obj = ResourceManager.GetObject("_336", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3165,7 +3165,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _337 {
             get {
-                object obj = ResourceManager.GetObject("_337", resourceCulture);
+                var obj = ResourceManager.GetObject("_337", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3175,7 +3175,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _338 {
             get {
-                object obj = ResourceManager.GetObject("_338", resourceCulture);
+                var obj = ResourceManager.GetObject("_338", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3185,7 +3185,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _339 {
             get {
-                object obj = ResourceManager.GetObject("_339", resourceCulture);
+                var obj = ResourceManager.GetObject("_339", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3195,7 +3195,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _34 {
             get {
-                object obj = ResourceManager.GetObject("_34", resourceCulture);
+                var obj = ResourceManager.GetObject("_34", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3205,7 +3205,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _340 {
             get {
-                object obj = ResourceManager.GetObject("_340", resourceCulture);
+                var obj = ResourceManager.GetObject("_340", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3215,7 +3215,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _341 {
             get {
-                object obj = ResourceManager.GetObject("_341", resourceCulture);
+                var obj = ResourceManager.GetObject("_341", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3225,7 +3225,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _342 {
             get {
-                object obj = ResourceManager.GetObject("_342", resourceCulture);
+                var obj = ResourceManager.GetObject("_342", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3235,7 +3235,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _343 {
             get {
-                object obj = ResourceManager.GetObject("_343", resourceCulture);
+                var obj = ResourceManager.GetObject("_343", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3245,7 +3245,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _344 {
             get {
-                object obj = ResourceManager.GetObject("_344", resourceCulture);
+                var obj = ResourceManager.GetObject("_344", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3255,7 +3255,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _345 {
             get {
-                object obj = ResourceManager.GetObject("_345", resourceCulture);
+                var obj = ResourceManager.GetObject("_345", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3265,7 +3265,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _346 {
             get {
-                object obj = ResourceManager.GetObject("_346", resourceCulture);
+                var obj = ResourceManager.GetObject("_346", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3275,7 +3275,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _347 {
             get {
-                object obj = ResourceManager.GetObject("_347", resourceCulture);
+                var obj = ResourceManager.GetObject("_347", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3285,7 +3285,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _348 {
             get {
-                object obj = ResourceManager.GetObject("_348", resourceCulture);
+                var obj = ResourceManager.GetObject("_348", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3295,7 +3295,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _349 {
             get {
-                object obj = ResourceManager.GetObject("_349", resourceCulture);
+                var obj = ResourceManager.GetObject("_349", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3305,7 +3305,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _35 {
             get {
-                object obj = ResourceManager.GetObject("_35", resourceCulture);
+                var obj = ResourceManager.GetObject("_35", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3315,7 +3315,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _350 {
             get {
-                object obj = ResourceManager.GetObject("_350", resourceCulture);
+                var obj = ResourceManager.GetObject("_350", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3325,7 +3325,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _351 {
             get {
-                object obj = ResourceManager.GetObject("_351", resourceCulture);
+                var obj = ResourceManager.GetObject("_351", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3335,7 +3335,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _351_rainy {
             get {
-                object obj = ResourceManager.GetObject("_351_rainy", resourceCulture);
+                var obj = ResourceManager.GetObject("_351_rainy", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3345,7 +3345,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _351_snowy {
             get {
-                object obj = ResourceManager.GetObject("_351_snowy", resourceCulture);
+                var obj = ResourceManager.GetObject("_351_snowy", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3355,7 +3355,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _351_sunny {
             get {
-                object obj = ResourceManager.GetObject("_351_sunny", resourceCulture);
+                var obj = ResourceManager.GetObject("_351_sunny", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3365,7 +3365,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _352 {
             get {
-                object obj = ResourceManager.GetObject("_352", resourceCulture);
+                var obj = ResourceManager.GetObject("_352", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3375,7 +3375,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _353 {
             get {
-                object obj = ResourceManager.GetObject("_353", resourceCulture);
+                var obj = ResourceManager.GetObject("_353", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3385,7 +3385,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _354 {
             get {
-                object obj = ResourceManager.GetObject("_354", resourceCulture);
+                var obj = ResourceManager.GetObject("_354", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3395,7 +3395,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _354_mega {
             get {
-                object obj = ResourceManager.GetObject("_354_mega", resourceCulture);
+                var obj = ResourceManager.GetObject("_354_mega", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3405,7 +3405,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _355 {
             get {
-                object obj = ResourceManager.GetObject("_355", resourceCulture);
+                var obj = ResourceManager.GetObject("_355", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3415,7 +3415,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _356 {
             get {
-                object obj = ResourceManager.GetObject("_356", resourceCulture);
+                var obj = ResourceManager.GetObject("_356", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3425,7 +3425,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _357 {
             get {
-                object obj = ResourceManager.GetObject("_357", resourceCulture);
+                var obj = ResourceManager.GetObject("_357", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3435,7 +3435,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _358 {
             get {
-                object obj = ResourceManager.GetObject("_358", resourceCulture);
+                var obj = ResourceManager.GetObject("_358", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3445,7 +3445,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _359 {
             get {
-                object obj = ResourceManager.GetObject("_359", resourceCulture);
+                var obj = ResourceManager.GetObject("_359", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3455,7 +3455,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _359_mega {
             get {
-                object obj = ResourceManager.GetObject("_359_mega", resourceCulture);
+                var obj = ResourceManager.GetObject("_359_mega", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3465,7 +3465,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _36 {
             get {
-                object obj = ResourceManager.GetObject("_36", resourceCulture);
+                var obj = ResourceManager.GetObject("_36", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3475,7 +3475,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _360 {
             get {
-                object obj = ResourceManager.GetObject("_360", resourceCulture);
+                var obj = ResourceManager.GetObject("_360", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3485,7 +3485,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _361 {
             get {
-                object obj = ResourceManager.GetObject("_361", resourceCulture);
+                var obj = ResourceManager.GetObject("_361", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3495,7 +3495,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _362 {
             get {
-                object obj = ResourceManager.GetObject("_362", resourceCulture);
+                var obj = ResourceManager.GetObject("_362", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3505,7 +3505,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _363 {
             get {
-                object obj = ResourceManager.GetObject("_363", resourceCulture);
+                var obj = ResourceManager.GetObject("_363", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3515,7 +3515,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _364 {
             get {
-                object obj = ResourceManager.GetObject("_364", resourceCulture);
+                var obj = ResourceManager.GetObject("_364", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3525,7 +3525,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _365 {
             get {
-                object obj = ResourceManager.GetObject("_365", resourceCulture);
+                var obj = ResourceManager.GetObject("_365", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3535,7 +3535,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _366 {
             get {
-                object obj = ResourceManager.GetObject("_366", resourceCulture);
+                var obj = ResourceManager.GetObject("_366", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3545,7 +3545,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _367 {
             get {
-                object obj = ResourceManager.GetObject("_367", resourceCulture);
+                var obj = ResourceManager.GetObject("_367", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3555,7 +3555,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _368 {
             get {
-                object obj = ResourceManager.GetObject("_368", resourceCulture);
+                var obj = ResourceManager.GetObject("_368", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3565,7 +3565,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _369 {
             get {
-                object obj = ResourceManager.GetObject("_369", resourceCulture);
+                var obj = ResourceManager.GetObject("_369", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3575,7 +3575,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _37 {
             get {
-                object obj = ResourceManager.GetObject("_37", resourceCulture);
+                var obj = ResourceManager.GetObject("_37", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3585,7 +3585,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _370 {
             get {
-                object obj = ResourceManager.GetObject("_370", resourceCulture);
+                var obj = ResourceManager.GetObject("_370", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3595,7 +3595,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _371 {
             get {
-                object obj = ResourceManager.GetObject("_371", resourceCulture);
+                var obj = ResourceManager.GetObject("_371", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3605,7 +3605,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _372 {
             get {
-                object obj = ResourceManager.GetObject("_372", resourceCulture);
+                var obj = ResourceManager.GetObject("_372", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3615,7 +3615,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _373 {
             get {
-                object obj = ResourceManager.GetObject("_373", resourceCulture);
+                var obj = ResourceManager.GetObject("_373", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3625,7 +3625,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _374 {
             get {
-                object obj = ResourceManager.GetObject("_374", resourceCulture);
+                var obj = ResourceManager.GetObject("_374", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3635,7 +3635,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _375 {
             get {
-                object obj = ResourceManager.GetObject("_375", resourceCulture);
+                var obj = ResourceManager.GetObject("_375", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3645,7 +3645,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _376 {
             get {
-                object obj = ResourceManager.GetObject("_376", resourceCulture);
+                var obj = ResourceManager.GetObject("_376", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3655,7 +3655,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _377 {
             get {
-                object obj = ResourceManager.GetObject("_377", resourceCulture);
+                var obj = ResourceManager.GetObject("_377", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3665,7 +3665,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _378 {
             get {
-                object obj = ResourceManager.GetObject("_378", resourceCulture);
+                var obj = ResourceManager.GetObject("_378", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3675,7 +3675,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _379 {
             get {
-                object obj = ResourceManager.GetObject("_379", resourceCulture);
+                var obj = ResourceManager.GetObject("_379", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3685,7 +3685,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _38 {
             get {
-                object obj = ResourceManager.GetObject("_38", resourceCulture);
+                var obj = ResourceManager.GetObject("_38", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3695,7 +3695,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _380 {
             get {
-                object obj = ResourceManager.GetObject("_380", resourceCulture);
+                var obj = ResourceManager.GetObject("_380", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3705,7 +3705,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _380_mega {
             get {
-                object obj = ResourceManager.GetObject("_380_mega", resourceCulture);
+                var obj = ResourceManager.GetObject("_380_mega", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3715,7 +3715,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _381 {
             get {
-                object obj = ResourceManager.GetObject("_381", resourceCulture);
+                var obj = ResourceManager.GetObject("_381", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3725,7 +3725,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _381_mega {
             get {
-                object obj = ResourceManager.GetObject("_381_mega", resourceCulture);
+                var obj = ResourceManager.GetObject("_381_mega", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3735,7 +3735,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _382 {
             get {
-                object obj = ResourceManager.GetObject("_382", resourceCulture);
+                var obj = ResourceManager.GetObject("_382", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3745,7 +3745,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _383 {
             get {
-                object obj = ResourceManager.GetObject("_383", resourceCulture);
+                var obj = ResourceManager.GetObject("_383", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3755,7 +3755,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _384 {
             get {
-                object obj = ResourceManager.GetObject("_384", resourceCulture);
+                var obj = ResourceManager.GetObject("_384", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3765,7 +3765,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _385 {
             get {
-                object obj = ResourceManager.GetObject("_385", resourceCulture);
+                var obj = ResourceManager.GetObject("_385", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3775,7 +3775,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _386 {
             get {
-                object obj = ResourceManager.GetObject("_386", resourceCulture);
+                var obj = ResourceManager.GetObject("_386", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3785,7 +3785,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _386_attack {
             get {
-                object obj = ResourceManager.GetObject("_386_attack", resourceCulture);
+                var obj = ResourceManager.GetObject("_386_attack", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3795,7 +3795,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _386_defense {
             get {
-                object obj = ResourceManager.GetObject("_386_defense", resourceCulture);
+                var obj = ResourceManager.GetObject("_386_defense", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3805,7 +3805,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _386_normal {
             get {
-                object obj = ResourceManager.GetObject("_386_normal", resourceCulture);
+                var obj = ResourceManager.GetObject("_386_normal", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3815,7 +3815,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _386_speed {
             get {
-                object obj = ResourceManager.GetObject("_386_speed", resourceCulture);
+                var obj = ResourceManager.GetObject("_386_speed", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3825,7 +3825,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _387 {
             get {
-                object obj = ResourceManager.GetObject("_387", resourceCulture);
+                var obj = ResourceManager.GetObject("_387", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3835,7 +3835,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _388 {
             get {
-                object obj = ResourceManager.GetObject("_388", resourceCulture);
+                var obj = ResourceManager.GetObject("_388", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3845,7 +3845,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _389 {
             get {
-                object obj = ResourceManager.GetObject("_389", resourceCulture);
+                var obj = ResourceManager.GetObject("_389", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3855,7 +3855,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _39 {
             get {
-                object obj = ResourceManager.GetObject("_39", resourceCulture);
+                var obj = ResourceManager.GetObject("_39", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3865,7 +3865,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _390 {
             get {
-                object obj = ResourceManager.GetObject("_390", resourceCulture);
+                var obj = ResourceManager.GetObject("_390", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3875,7 +3875,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _391 {
             get {
-                object obj = ResourceManager.GetObject("_391", resourceCulture);
+                var obj = ResourceManager.GetObject("_391", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3885,7 +3885,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _392 {
             get {
-                object obj = ResourceManager.GetObject("_392", resourceCulture);
+                var obj = ResourceManager.GetObject("_392", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3895,7 +3895,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _393 {
             get {
-                object obj = ResourceManager.GetObject("_393", resourceCulture);
+                var obj = ResourceManager.GetObject("_393", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3905,7 +3905,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _394 {
             get {
-                object obj = ResourceManager.GetObject("_394", resourceCulture);
+                var obj = ResourceManager.GetObject("_394", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3915,7 +3915,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _395 {
             get {
-                object obj = ResourceManager.GetObject("_395", resourceCulture);
+                var obj = ResourceManager.GetObject("_395", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3925,7 +3925,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _396 {
             get {
-                object obj = ResourceManager.GetObject("_396", resourceCulture);
+                var obj = ResourceManager.GetObject("_396", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3935,7 +3935,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _397 {
             get {
-                object obj = ResourceManager.GetObject("_397", resourceCulture);
+                var obj = ResourceManager.GetObject("_397", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3945,7 +3945,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _398 {
             get {
-                object obj = ResourceManager.GetObject("_398", resourceCulture);
+                var obj = ResourceManager.GetObject("_398", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3955,7 +3955,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _399 {
             get {
-                object obj = ResourceManager.GetObject("_399", resourceCulture);
+                var obj = ResourceManager.GetObject("_399", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3965,7 +3965,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _4 {
             get {
-                object obj = ResourceManager.GetObject("_4", resourceCulture);
+                var obj = ResourceManager.GetObject("_4", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3975,7 +3975,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _40 {
             get {
-                object obj = ResourceManager.GetObject("_40", resourceCulture);
+                var obj = ResourceManager.GetObject("_40", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3985,7 +3985,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _400 {
             get {
-                object obj = ResourceManager.GetObject("_400", resourceCulture);
+                var obj = ResourceManager.GetObject("_400", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3995,7 +3995,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _401 {
             get {
-                object obj = ResourceManager.GetObject("_401", resourceCulture);
+                var obj = ResourceManager.GetObject("_401", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4005,7 +4005,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _402 {
             get {
-                object obj = ResourceManager.GetObject("_402", resourceCulture);
+                var obj = ResourceManager.GetObject("_402", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4015,7 +4015,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _403 {
             get {
-                object obj = ResourceManager.GetObject("_403", resourceCulture);
+                var obj = ResourceManager.GetObject("_403", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4025,7 +4025,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _404 {
             get {
-                object obj = ResourceManager.GetObject("_404", resourceCulture);
+                var obj = ResourceManager.GetObject("_404", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4035,7 +4035,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _405 {
             get {
-                object obj = ResourceManager.GetObject("_405", resourceCulture);
+                var obj = ResourceManager.GetObject("_405", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4045,7 +4045,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _406 {
             get {
-                object obj = ResourceManager.GetObject("_406", resourceCulture);
+                var obj = ResourceManager.GetObject("_406", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4055,7 +4055,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _407 {
             get {
-                object obj = ResourceManager.GetObject("_407", resourceCulture);
+                var obj = ResourceManager.GetObject("_407", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4065,7 +4065,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _408 {
             get {
-                object obj = ResourceManager.GetObject("_408", resourceCulture);
+                var obj = ResourceManager.GetObject("_408", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4075,7 +4075,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _409 {
             get {
-                object obj = ResourceManager.GetObject("_409", resourceCulture);
+                var obj = ResourceManager.GetObject("_409", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4085,7 +4085,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _41 {
             get {
-                object obj = ResourceManager.GetObject("_41", resourceCulture);
+                var obj = ResourceManager.GetObject("_41", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4095,7 +4095,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _410 {
             get {
-                object obj = ResourceManager.GetObject("_410", resourceCulture);
+                var obj = ResourceManager.GetObject("_410", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4105,7 +4105,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _411 {
             get {
-                object obj = ResourceManager.GetObject("_411", resourceCulture);
+                var obj = ResourceManager.GetObject("_411", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4115,7 +4115,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _412 {
             get {
-                object obj = ResourceManager.GetObject("_412", resourceCulture);
+                var obj = ResourceManager.GetObject("_412", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4125,7 +4125,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _412_plant {
             get {
-                object obj = ResourceManager.GetObject("_412_plant", resourceCulture);
+                var obj = ResourceManager.GetObject("_412_plant", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4135,7 +4135,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _412_sandy {
             get {
-                object obj = ResourceManager.GetObject("_412_sandy", resourceCulture);
+                var obj = ResourceManager.GetObject("_412_sandy", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4145,7 +4145,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _412_trash {
             get {
-                object obj = ResourceManager.GetObject("_412_trash", resourceCulture);
+                var obj = ResourceManager.GetObject("_412_trash", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4155,7 +4155,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _413 {
             get {
-                object obj = ResourceManager.GetObject("_413", resourceCulture);
+                var obj = ResourceManager.GetObject("_413", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4165,7 +4165,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _413_plant {
             get {
-                object obj = ResourceManager.GetObject("_413_plant", resourceCulture);
+                var obj = ResourceManager.GetObject("_413_plant", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4175,7 +4175,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _413_sandy {
             get {
-                object obj = ResourceManager.GetObject("_413_sandy", resourceCulture);
+                var obj = ResourceManager.GetObject("_413_sandy", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4185,7 +4185,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _413_trash {
             get {
-                object obj = ResourceManager.GetObject("_413_trash", resourceCulture);
+                var obj = ResourceManager.GetObject("_413_trash", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4195,7 +4195,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _414 {
             get {
-                object obj = ResourceManager.GetObject("_414", resourceCulture);
+                var obj = ResourceManager.GetObject("_414", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4205,7 +4205,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _415 {
             get {
-                object obj = ResourceManager.GetObject("_415", resourceCulture);
+                var obj = ResourceManager.GetObject("_415", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4215,7 +4215,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _416 {
             get {
-                object obj = ResourceManager.GetObject("_416", resourceCulture);
+                var obj = ResourceManager.GetObject("_416", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4225,7 +4225,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _417 {
             get {
-                object obj = ResourceManager.GetObject("_417", resourceCulture);
+                var obj = ResourceManager.GetObject("_417", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4235,7 +4235,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _418 {
             get {
-                object obj = ResourceManager.GetObject("_418", resourceCulture);
+                var obj = ResourceManager.GetObject("_418", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4245,7 +4245,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _419 {
             get {
-                object obj = ResourceManager.GetObject("_419", resourceCulture);
+                var obj = ResourceManager.GetObject("_419", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4255,7 +4255,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _42 {
             get {
-                object obj = ResourceManager.GetObject("_42", resourceCulture);
+                var obj = ResourceManager.GetObject("_42", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4265,7 +4265,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _420 {
             get {
-                object obj = ResourceManager.GetObject("_420", resourceCulture);
+                var obj = ResourceManager.GetObject("_420", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4275,7 +4275,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _421 {
             get {
-                object obj = ResourceManager.GetObject("_421", resourceCulture);
+                var obj = ResourceManager.GetObject("_421", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4285,7 +4285,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _421_overcast {
             get {
-                object obj = ResourceManager.GetObject("_421_overcast", resourceCulture);
+                var obj = ResourceManager.GetObject("_421_overcast", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4295,7 +4295,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _421_sunshine {
             get {
-                object obj = ResourceManager.GetObject("_421_sunshine", resourceCulture);
+                var obj = ResourceManager.GetObject("_421_sunshine", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4305,7 +4305,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _422 {
             get {
-                object obj = ResourceManager.GetObject("_422", resourceCulture);
+                var obj = ResourceManager.GetObject("_422", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4315,7 +4315,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _422_east {
             get {
-                object obj = ResourceManager.GetObject("_422_east", resourceCulture);
+                var obj = ResourceManager.GetObject("_422_east", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4325,7 +4325,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _422_west {
             get {
-                object obj = ResourceManager.GetObject("_422_west", resourceCulture);
+                var obj = ResourceManager.GetObject("_422_west", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4335,7 +4335,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _423 {
             get {
-                object obj = ResourceManager.GetObject("_423", resourceCulture);
+                var obj = ResourceManager.GetObject("_423", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4345,7 +4345,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _423_east {
             get {
-                object obj = ResourceManager.GetObject("_423_east", resourceCulture);
+                var obj = ResourceManager.GetObject("_423_east", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4355,7 +4355,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _423_west {
             get {
-                object obj = ResourceManager.GetObject("_423_west", resourceCulture);
+                var obj = ResourceManager.GetObject("_423_west", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4365,7 +4365,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _424 {
             get {
-                object obj = ResourceManager.GetObject("_424", resourceCulture);
+                var obj = ResourceManager.GetObject("_424", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4375,7 +4375,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _425 {
             get {
-                object obj = ResourceManager.GetObject("_425", resourceCulture);
+                var obj = ResourceManager.GetObject("_425", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4385,7 +4385,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _426 {
             get {
-                object obj = ResourceManager.GetObject("_426", resourceCulture);
+                var obj = ResourceManager.GetObject("_426", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4395,7 +4395,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _427 {
             get {
-                object obj = ResourceManager.GetObject("_427", resourceCulture);
+                var obj = ResourceManager.GetObject("_427", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4405,7 +4405,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _428 {
             get {
-                object obj = ResourceManager.GetObject("_428", resourceCulture);
+                var obj = ResourceManager.GetObject("_428", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4415,7 +4415,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _429 {
             get {
-                object obj = ResourceManager.GetObject("_429", resourceCulture);
+                var obj = ResourceManager.GetObject("_429", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4425,7 +4425,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _43 {
             get {
-                object obj = ResourceManager.GetObject("_43", resourceCulture);
+                var obj = ResourceManager.GetObject("_43", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4435,7 +4435,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _430 {
             get {
-                object obj = ResourceManager.GetObject("_430", resourceCulture);
+                var obj = ResourceManager.GetObject("_430", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4445,7 +4445,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _431 {
             get {
-                object obj = ResourceManager.GetObject("_431", resourceCulture);
+                var obj = ResourceManager.GetObject("_431", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4455,7 +4455,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _432 {
             get {
-                object obj = ResourceManager.GetObject("_432", resourceCulture);
+                var obj = ResourceManager.GetObject("_432", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4465,7 +4465,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _433 {
             get {
-                object obj = ResourceManager.GetObject("_433", resourceCulture);
+                var obj = ResourceManager.GetObject("_433", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4475,7 +4475,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _434 {
             get {
-                object obj = ResourceManager.GetObject("_434", resourceCulture);
+                var obj = ResourceManager.GetObject("_434", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4485,7 +4485,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _435 {
             get {
-                object obj = ResourceManager.GetObject("_435", resourceCulture);
+                var obj = ResourceManager.GetObject("_435", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4495,7 +4495,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _436 {
             get {
-                object obj = ResourceManager.GetObject("_436", resourceCulture);
+                var obj = ResourceManager.GetObject("_436", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4505,7 +4505,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _437 {
             get {
-                object obj = ResourceManager.GetObject("_437", resourceCulture);
+                var obj = ResourceManager.GetObject("_437", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4515,7 +4515,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _438 {
             get {
-                object obj = ResourceManager.GetObject("_438", resourceCulture);
+                var obj = ResourceManager.GetObject("_438", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4525,7 +4525,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _439 {
             get {
-                object obj = ResourceManager.GetObject("_439", resourceCulture);
+                var obj = ResourceManager.GetObject("_439", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4535,7 +4535,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _44 {
             get {
-                object obj = ResourceManager.GetObject("_44", resourceCulture);
+                var obj = ResourceManager.GetObject("_44", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4545,7 +4545,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _440 {
             get {
-                object obj = ResourceManager.GetObject("_440", resourceCulture);
+                var obj = ResourceManager.GetObject("_440", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4555,7 +4555,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _441 {
             get {
-                object obj = ResourceManager.GetObject("_441", resourceCulture);
+                var obj = ResourceManager.GetObject("_441", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4565,7 +4565,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _442 {
             get {
-                object obj = ResourceManager.GetObject("_442", resourceCulture);
+                var obj = ResourceManager.GetObject("_442", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4575,7 +4575,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _443 {
             get {
-                object obj = ResourceManager.GetObject("_443", resourceCulture);
+                var obj = ResourceManager.GetObject("_443", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4585,7 +4585,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _444 {
             get {
-                object obj = ResourceManager.GetObject("_444", resourceCulture);
+                var obj = ResourceManager.GetObject("_444", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4595,7 +4595,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _445 {
             get {
-                object obj = ResourceManager.GetObject("_445", resourceCulture);
+                var obj = ResourceManager.GetObject("_445", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4605,7 +4605,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _445_mega {
             get {
-                object obj = ResourceManager.GetObject("_445_mega", resourceCulture);
+                var obj = ResourceManager.GetObject("_445_mega", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4615,7 +4615,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _446 {
             get {
-                object obj = ResourceManager.GetObject("_446", resourceCulture);
+                var obj = ResourceManager.GetObject("_446", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4625,7 +4625,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _447 {
             get {
-                object obj = ResourceManager.GetObject("_447", resourceCulture);
+                var obj = ResourceManager.GetObject("_447", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4635,7 +4635,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _448 {
             get {
-                object obj = ResourceManager.GetObject("_448", resourceCulture);
+                var obj = ResourceManager.GetObject("_448", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4645,7 +4645,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _448_mega {
             get {
-                object obj = ResourceManager.GetObject("_448_mega", resourceCulture);
+                var obj = ResourceManager.GetObject("_448_mega", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4655,7 +4655,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _449 {
             get {
-                object obj = ResourceManager.GetObject("_449", resourceCulture);
+                var obj = ResourceManager.GetObject("_449", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4665,7 +4665,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _45 {
             get {
-                object obj = ResourceManager.GetObject("_45", resourceCulture);
+                var obj = ResourceManager.GetObject("_45", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4675,7 +4675,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _450 {
             get {
-                object obj = ResourceManager.GetObject("_450", resourceCulture);
+                var obj = ResourceManager.GetObject("_450", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4685,7 +4685,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _451 {
             get {
-                object obj = ResourceManager.GetObject("_451", resourceCulture);
+                var obj = ResourceManager.GetObject("_451", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4695,7 +4695,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _452 {
             get {
-                object obj = ResourceManager.GetObject("_452", resourceCulture);
+                var obj = ResourceManager.GetObject("_452", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4705,7 +4705,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _453 {
             get {
-                object obj = ResourceManager.GetObject("_453", resourceCulture);
+                var obj = ResourceManager.GetObject("_453", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4715,7 +4715,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _454 {
             get {
-                object obj = ResourceManager.GetObject("_454", resourceCulture);
+                var obj = ResourceManager.GetObject("_454", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4725,7 +4725,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _455 {
             get {
-                object obj = ResourceManager.GetObject("_455", resourceCulture);
+                var obj = ResourceManager.GetObject("_455", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4735,7 +4735,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _456 {
             get {
-                object obj = ResourceManager.GetObject("_456", resourceCulture);
+                var obj = ResourceManager.GetObject("_456", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4745,7 +4745,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _457 {
             get {
-                object obj = ResourceManager.GetObject("_457", resourceCulture);
+                var obj = ResourceManager.GetObject("_457", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4755,7 +4755,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _458 {
             get {
-                object obj = ResourceManager.GetObject("_458", resourceCulture);
+                var obj = ResourceManager.GetObject("_458", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4765,7 +4765,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _459 {
             get {
-                object obj = ResourceManager.GetObject("_459", resourceCulture);
+                var obj = ResourceManager.GetObject("_459", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4775,7 +4775,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _46 {
             get {
-                object obj = ResourceManager.GetObject("_46", resourceCulture);
+                var obj = ResourceManager.GetObject("_46", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4785,7 +4785,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _460 {
             get {
-                object obj = ResourceManager.GetObject("_460", resourceCulture);
+                var obj = ResourceManager.GetObject("_460", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4795,7 +4795,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _460_mega {
             get {
-                object obj = ResourceManager.GetObject("_460_mega", resourceCulture);
+                var obj = ResourceManager.GetObject("_460_mega", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4805,7 +4805,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _461 {
             get {
-                object obj = ResourceManager.GetObject("_461", resourceCulture);
+                var obj = ResourceManager.GetObject("_461", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4815,7 +4815,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _462 {
             get {
-                object obj = ResourceManager.GetObject("_462", resourceCulture);
+                var obj = ResourceManager.GetObject("_462", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4825,7 +4825,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _463 {
             get {
-                object obj = ResourceManager.GetObject("_463", resourceCulture);
+                var obj = ResourceManager.GetObject("_463", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4835,7 +4835,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _464 {
             get {
-                object obj = ResourceManager.GetObject("_464", resourceCulture);
+                var obj = ResourceManager.GetObject("_464", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4845,7 +4845,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _465 {
             get {
-                object obj = ResourceManager.GetObject("_465", resourceCulture);
+                var obj = ResourceManager.GetObject("_465", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4855,7 +4855,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _466 {
             get {
-                object obj = ResourceManager.GetObject("_466", resourceCulture);
+                var obj = ResourceManager.GetObject("_466", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4865,7 +4865,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _467 {
             get {
-                object obj = ResourceManager.GetObject("_467", resourceCulture);
+                var obj = ResourceManager.GetObject("_467", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4875,7 +4875,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _468 {
             get {
-                object obj = ResourceManager.GetObject("_468", resourceCulture);
+                var obj = ResourceManager.GetObject("_468", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4885,7 +4885,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _469 {
             get {
-                object obj = ResourceManager.GetObject("_469", resourceCulture);
+                var obj = ResourceManager.GetObject("_469", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4895,7 +4895,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _47 {
             get {
-                object obj = ResourceManager.GetObject("_47", resourceCulture);
+                var obj = ResourceManager.GetObject("_47", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4905,7 +4905,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _470 {
             get {
-                object obj = ResourceManager.GetObject("_470", resourceCulture);
+                var obj = ResourceManager.GetObject("_470", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4915,7 +4915,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _471 {
             get {
-                object obj = ResourceManager.GetObject("_471", resourceCulture);
+                var obj = ResourceManager.GetObject("_471", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4925,7 +4925,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _472 {
             get {
-                object obj = ResourceManager.GetObject("_472", resourceCulture);
+                var obj = ResourceManager.GetObject("_472", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4935,7 +4935,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _473 {
             get {
-                object obj = ResourceManager.GetObject("_473", resourceCulture);
+                var obj = ResourceManager.GetObject("_473", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4945,7 +4945,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _474 {
             get {
-                object obj = ResourceManager.GetObject("_474", resourceCulture);
+                var obj = ResourceManager.GetObject("_474", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4955,7 +4955,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _475 {
             get {
-                object obj = ResourceManager.GetObject("_475", resourceCulture);
+                var obj = ResourceManager.GetObject("_475", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4965,7 +4965,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _476 {
             get {
-                object obj = ResourceManager.GetObject("_476", resourceCulture);
+                var obj = ResourceManager.GetObject("_476", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4975,7 +4975,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _477 {
             get {
-                object obj = ResourceManager.GetObject("_477", resourceCulture);
+                var obj = ResourceManager.GetObject("_477", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4985,7 +4985,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _478 {
             get {
-                object obj = ResourceManager.GetObject("_478", resourceCulture);
+                var obj = ResourceManager.GetObject("_478", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4995,7 +4995,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _479 {
             get {
-                object obj = ResourceManager.GetObject("_479", resourceCulture);
+                var obj = ResourceManager.GetObject("_479", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5005,7 +5005,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _479_fan {
             get {
-                object obj = ResourceManager.GetObject("_479_fan", resourceCulture);
+                var obj = ResourceManager.GetObject("_479_fan", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5015,7 +5015,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _479_frost {
             get {
-                object obj = ResourceManager.GetObject("_479_frost", resourceCulture);
+                var obj = ResourceManager.GetObject("_479_frost", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5025,7 +5025,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _479_heat {
             get {
-                object obj = ResourceManager.GetObject("_479_heat", resourceCulture);
+                var obj = ResourceManager.GetObject("_479_heat", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5035,7 +5035,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _479_mow {
             get {
-                object obj = ResourceManager.GetObject("_479_mow", resourceCulture);
+                var obj = ResourceManager.GetObject("_479_mow", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5045,7 +5045,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _479_wash {
             get {
-                object obj = ResourceManager.GetObject("_479_wash", resourceCulture);
+                var obj = ResourceManager.GetObject("_479_wash", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5055,7 +5055,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _48 {
             get {
-                object obj = ResourceManager.GetObject("_48", resourceCulture);
+                var obj = ResourceManager.GetObject("_48", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5065,7 +5065,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _480 {
             get {
-                object obj = ResourceManager.GetObject("_480", resourceCulture);
+                var obj = ResourceManager.GetObject("_480", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5075,7 +5075,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _481 {
             get {
-                object obj = ResourceManager.GetObject("_481", resourceCulture);
+                var obj = ResourceManager.GetObject("_481", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5085,7 +5085,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _482 {
             get {
-                object obj = ResourceManager.GetObject("_482", resourceCulture);
+                var obj = ResourceManager.GetObject("_482", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5095,7 +5095,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _483 {
             get {
-                object obj = ResourceManager.GetObject("_483", resourceCulture);
+                var obj = ResourceManager.GetObject("_483", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5105,7 +5105,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _484 {
             get {
-                object obj = ResourceManager.GetObject("_484", resourceCulture);
+                var obj = ResourceManager.GetObject("_484", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5115,7 +5115,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _485 {
             get {
-                object obj = ResourceManager.GetObject("_485", resourceCulture);
+                var obj = ResourceManager.GetObject("_485", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5125,7 +5125,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _486 {
             get {
-                object obj = ResourceManager.GetObject("_486", resourceCulture);
+                var obj = ResourceManager.GetObject("_486", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5135,7 +5135,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _487 {
             get {
-                object obj = ResourceManager.GetObject("_487", resourceCulture);
+                var obj = ResourceManager.GetObject("_487", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5145,7 +5145,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _487_altered {
             get {
-                object obj = ResourceManager.GetObject("_487_altered", resourceCulture);
+                var obj = ResourceManager.GetObject("_487_altered", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5155,7 +5155,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _487_origin {
             get {
-                object obj = ResourceManager.GetObject("_487_origin", resourceCulture);
+                var obj = ResourceManager.GetObject("_487_origin", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5165,7 +5165,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _488 {
             get {
-                object obj = ResourceManager.GetObject("_488", resourceCulture);
+                var obj = ResourceManager.GetObject("_488", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5175,7 +5175,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _489 {
             get {
-                object obj = ResourceManager.GetObject("_489", resourceCulture);
+                var obj = ResourceManager.GetObject("_489", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5185,7 +5185,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _49 {
             get {
-                object obj = ResourceManager.GetObject("_49", resourceCulture);
+                var obj = ResourceManager.GetObject("_49", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5195,7 +5195,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _490 {
             get {
-                object obj = ResourceManager.GetObject("_490", resourceCulture);
+                var obj = ResourceManager.GetObject("_490", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5205,7 +5205,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _491 {
             get {
-                object obj = ResourceManager.GetObject("_491", resourceCulture);
+                var obj = ResourceManager.GetObject("_491", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5215,7 +5215,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _492 {
             get {
-                object obj = ResourceManager.GetObject("_492", resourceCulture);
+                var obj = ResourceManager.GetObject("_492", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5225,7 +5225,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _492_land {
             get {
-                object obj = ResourceManager.GetObject("_492_land", resourceCulture);
+                var obj = ResourceManager.GetObject("_492_land", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5235,7 +5235,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _492_sky {
             get {
-                object obj = ResourceManager.GetObject("_492_sky", resourceCulture);
+                var obj = ResourceManager.GetObject("_492_sky", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5245,7 +5245,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _493 {
             get {
-                object obj = ResourceManager.GetObject("_493", resourceCulture);
+                var obj = ResourceManager.GetObject("_493", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5255,7 +5255,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _494 {
             get {
-                object obj = ResourceManager.GetObject("_494", resourceCulture);
+                var obj = ResourceManager.GetObject("_494", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5265,7 +5265,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _495 {
             get {
-                object obj = ResourceManager.GetObject("_495", resourceCulture);
+                var obj = ResourceManager.GetObject("_495", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5275,7 +5275,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _496 {
             get {
-                object obj = ResourceManager.GetObject("_496", resourceCulture);
+                var obj = ResourceManager.GetObject("_496", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5285,7 +5285,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _497 {
             get {
-                object obj = ResourceManager.GetObject("_497", resourceCulture);
+                var obj = ResourceManager.GetObject("_497", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5295,7 +5295,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _498 {
             get {
-                object obj = ResourceManager.GetObject("_498", resourceCulture);
+                var obj = ResourceManager.GetObject("_498", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5305,7 +5305,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _499 {
             get {
-                object obj = ResourceManager.GetObject("_499", resourceCulture);
+                var obj = ResourceManager.GetObject("_499", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5315,7 +5315,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _5 {
             get {
-                object obj = ResourceManager.GetObject("_5", resourceCulture);
+                var obj = ResourceManager.GetObject("_5", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5325,7 +5325,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _50 {
             get {
-                object obj = ResourceManager.GetObject("_50", resourceCulture);
+                var obj = ResourceManager.GetObject("_50", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5335,7 +5335,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _500 {
             get {
-                object obj = ResourceManager.GetObject("_500", resourceCulture);
+                var obj = ResourceManager.GetObject("_500", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5345,7 +5345,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _501 {
             get {
-                object obj = ResourceManager.GetObject("_501", resourceCulture);
+                var obj = ResourceManager.GetObject("_501", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5355,7 +5355,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _502 {
             get {
-                object obj = ResourceManager.GetObject("_502", resourceCulture);
+                var obj = ResourceManager.GetObject("_502", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5365,7 +5365,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _503 {
             get {
-                object obj = ResourceManager.GetObject("_503", resourceCulture);
+                var obj = ResourceManager.GetObject("_503", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5375,7 +5375,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _504 {
             get {
-                object obj = ResourceManager.GetObject("_504", resourceCulture);
+                var obj = ResourceManager.GetObject("_504", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5385,7 +5385,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _505 {
             get {
-                object obj = ResourceManager.GetObject("_505", resourceCulture);
+                var obj = ResourceManager.GetObject("_505", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5395,7 +5395,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _506 {
             get {
-                object obj = ResourceManager.GetObject("_506", resourceCulture);
+                var obj = ResourceManager.GetObject("_506", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5405,7 +5405,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _507 {
             get {
-                object obj = ResourceManager.GetObject("_507", resourceCulture);
+                var obj = ResourceManager.GetObject("_507", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5415,7 +5415,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _508 {
             get {
-                object obj = ResourceManager.GetObject("_508", resourceCulture);
+                var obj = ResourceManager.GetObject("_508", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5425,7 +5425,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _509 {
             get {
-                object obj = ResourceManager.GetObject("_509", resourceCulture);
+                var obj = ResourceManager.GetObject("_509", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5435,7 +5435,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _51 {
             get {
-                object obj = ResourceManager.GetObject("_51", resourceCulture);
+                var obj = ResourceManager.GetObject("_51", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5445,7 +5445,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _510 {
             get {
-                object obj = ResourceManager.GetObject("_510", resourceCulture);
+                var obj = ResourceManager.GetObject("_510", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5455,7 +5455,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _511 {
             get {
-                object obj = ResourceManager.GetObject("_511", resourceCulture);
+                var obj = ResourceManager.GetObject("_511", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5465,7 +5465,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _512 {
             get {
-                object obj = ResourceManager.GetObject("_512", resourceCulture);
+                var obj = ResourceManager.GetObject("_512", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5475,7 +5475,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _513 {
             get {
-                object obj = ResourceManager.GetObject("_513", resourceCulture);
+                var obj = ResourceManager.GetObject("_513", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5485,7 +5485,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _514 {
             get {
-                object obj = ResourceManager.GetObject("_514", resourceCulture);
+                var obj = ResourceManager.GetObject("_514", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5495,7 +5495,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _515 {
             get {
-                object obj = ResourceManager.GetObject("_515", resourceCulture);
+                var obj = ResourceManager.GetObject("_515", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5505,7 +5505,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _516 {
             get {
-                object obj = ResourceManager.GetObject("_516", resourceCulture);
+                var obj = ResourceManager.GetObject("_516", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5515,7 +5515,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _517 {
             get {
-                object obj = ResourceManager.GetObject("_517", resourceCulture);
+                var obj = ResourceManager.GetObject("_517", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5525,7 +5525,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _518 {
             get {
-                object obj = ResourceManager.GetObject("_518", resourceCulture);
+                var obj = ResourceManager.GetObject("_518", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5535,7 +5535,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _519 {
             get {
-                object obj = ResourceManager.GetObject("_519", resourceCulture);
+                var obj = ResourceManager.GetObject("_519", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5545,7 +5545,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _52 {
             get {
-                object obj = ResourceManager.GetObject("_52", resourceCulture);
+                var obj = ResourceManager.GetObject("_52", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5555,7 +5555,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _520 {
             get {
-                object obj = ResourceManager.GetObject("_520", resourceCulture);
+                var obj = ResourceManager.GetObject("_520", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5565,7 +5565,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _521 {
             get {
-                object obj = ResourceManager.GetObject("_521", resourceCulture);
+                var obj = ResourceManager.GetObject("_521", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5575,7 +5575,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _521_f {
             get {
-                object obj = ResourceManager.GetObject("_521_f", resourceCulture);
+                var obj = ResourceManager.GetObject("_521_f", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5585,7 +5585,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _522 {
             get {
-                object obj = ResourceManager.GetObject("_522", resourceCulture);
+                var obj = ResourceManager.GetObject("_522", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5595,7 +5595,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _523 {
             get {
-                object obj = ResourceManager.GetObject("_523", resourceCulture);
+                var obj = ResourceManager.GetObject("_523", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5605,7 +5605,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _524 {
             get {
-                object obj = ResourceManager.GetObject("_524", resourceCulture);
+                var obj = ResourceManager.GetObject("_524", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5615,7 +5615,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _525 {
             get {
-                object obj = ResourceManager.GetObject("_525", resourceCulture);
+                var obj = ResourceManager.GetObject("_525", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5625,7 +5625,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _526 {
             get {
-                object obj = ResourceManager.GetObject("_526", resourceCulture);
+                var obj = ResourceManager.GetObject("_526", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5635,7 +5635,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _527 {
             get {
-                object obj = ResourceManager.GetObject("_527", resourceCulture);
+                var obj = ResourceManager.GetObject("_527", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5645,7 +5645,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _528 {
             get {
-                object obj = ResourceManager.GetObject("_528", resourceCulture);
+                var obj = ResourceManager.GetObject("_528", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5655,7 +5655,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _529 {
             get {
-                object obj = ResourceManager.GetObject("_529", resourceCulture);
+                var obj = ResourceManager.GetObject("_529", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5665,7 +5665,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _53 {
             get {
-                object obj = ResourceManager.GetObject("_53", resourceCulture);
+                var obj = ResourceManager.GetObject("_53", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5675,7 +5675,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _530 {
             get {
-                object obj = ResourceManager.GetObject("_530", resourceCulture);
+                var obj = ResourceManager.GetObject("_530", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5685,7 +5685,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _531 {
             get {
-                object obj = ResourceManager.GetObject("_531", resourceCulture);
+                var obj = ResourceManager.GetObject("_531", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5695,7 +5695,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _532 {
             get {
-                object obj = ResourceManager.GetObject("_532", resourceCulture);
+                var obj = ResourceManager.GetObject("_532", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5705,7 +5705,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _533 {
             get {
-                object obj = ResourceManager.GetObject("_533", resourceCulture);
+                var obj = ResourceManager.GetObject("_533", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5715,7 +5715,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _534 {
             get {
-                object obj = ResourceManager.GetObject("_534", resourceCulture);
+                var obj = ResourceManager.GetObject("_534", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5725,7 +5725,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _535 {
             get {
-                object obj = ResourceManager.GetObject("_535", resourceCulture);
+                var obj = ResourceManager.GetObject("_535", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5735,7 +5735,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _536 {
             get {
-                object obj = ResourceManager.GetObject("_536", resourceCulture);
+                var obj = ResourceManager.GetObject("_536", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5745,7 +5745,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _537 {
             get {
-                object obj = ResourceManager.GetObject("_537", resourceCulture);
+                var obj = ResourceManager.GetObject("_537", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5755,7 +5755,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _538 {
             get {
-                object obj = ResourceManager.GetObject("_538", resourceCulture);
+                var obj = ResourceManager.GetObject("_538", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5765,7 +5765,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _539 {
             get {
-                object obj = ResourceManager.GetObject("_539", resourceCulture);
+                var obj = ResourceManager.GetObject("_539", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5775,7 +5775,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _54 {
             get {
-                object obj = ResourceManager.GetObject("_54", resourceCulture);
+                var obj = ResourceManager.GetObject("_54", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5785,7 +5785,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _540 {
             get {
-                object obj = ResourceManager.GetObject("_540", resourceCulture);
+                var obj = ResourceManager.GetObject("_540", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5795,7 +5795,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _541 {
             get {
-                object obj = ResourceManager.GetObject("_541", resourceCulture);
+                var obj = ResourceManager.GetObject("_541", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5805,7 +5805,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _542 {
             get {
-                object obj = ResourceManager.GetObject("_542", resourceCulture);
+                var obj = ResourceManager.GetObject("_542", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5815,7 +5815,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _543 {
             get {
-                object obj = ResourceManager.GetObject("_543", resourceCulture);
+                var obj = ResourceManager.GetObject("_543", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5825,7 +5825,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _544 {
             get {
-                object obj = ResourceManager.GetObject("_544", resourceCulture);
+                var obj = ResourceManager.GetObject("_544", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5835,7 +5835,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _545 {
             get {
-                object obj = ResourceManager.GetObject("_545", resourceCulture);
+                var obj = ResourceManager.GetObject("_545", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5845,7 +5845,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _546 {
             get {
-                object obj = ResourceManager.GetObject("_546", resourceCulture);
+                var obj = ResourceManager.GetObject("_546", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5855,7 +5855,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _547 {
             get {
-                object obj = ResourceManager.GetObject("_547", resourceCulture);
+                var obj = ResourceManager.GetObject("_547", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5865,7 +5865,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _548 {
             get {
-                object obj = ResourceManager.GetObject("_548", resourceCulture);
+                var obj = ResourceManager.GetObject("_548", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5875,7 +5875,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _549 {
             get {
-                object obj = ResourceManager.GetObject("_549", resourceCulture);
+                var obj = ResourceManager.GetObject("_549", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5885,7 +5885,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _55 {
             get {
-                object obj = ResourceManager.GetObject("_55", resourceCulture);
+                var obj = ResourceManager.GetObject("_55", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5895,7 +5895,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _550 {
             get {
-                object obj = ResourceManager.GetObject("_550", resourceCulture);
+                var obj = ResourceManager.GetObject("_550", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5905,7 +5905,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _550_blue_striped {
             get {
-                object obj = ResourceManager.GetObject("_550_blue_striped", resourceCulture);
+                var obj = ResourceManager.GetObject("_550_blue_striped", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5915,7 +5915,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _550_red_striped {
             get {
-                object obj = ResourceManager.GetObject("_550_red_striped", resourceCulture);
+                var obj = ResourceManager.GetObject("_550_red_striped", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5925,7 +5925,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _551 {
             get {
-                object obj = ResourceManager.GetObject("_551", resourceCulture);
+                var obj = ResourceManager.GetObject("_551", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5935,7 +5935,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _552 {
             get {
-                object obj = ResourceManager.GetObject("_552", resourceCulture);
+                var obj = ResourceManager.GetObject("_552", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5945,7 +5945,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _553 {
             get {
-                object obj = ResourceManager.GetObject("_553", resourceCulture);
+                var obj = ResourceManager.GetObject("_553", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5955,7 +5955,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _554 {
             get {
-                object obj = ResourceManager.GetObject("_554", resourceCulture);
+                var obj = ResourceManager.GetObject("_554", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5965,7 +5965,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _555 {
             get {
-                object obj = ResourceManager.GetObject("_555", resourceCulture);
+                var obj = ResourceManager.GetObject("_555", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5975,7 +5975,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _555_standard {
             get {
-                object obj = ResourceManager.GetObject("_555_standard", resourceCulture);
+                var obj = ResourceManager.GetObject("_555_standard", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5985,7 +5985,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _555_zen {
             get {
-                object obj = ResourceManager.GetObject("_555_zen", resourceCulture);
+                var obj = ResourceManager.GetObject("_555_zen", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5995,7 +5995,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _556 {
             get {
-                object obj = ResourceManager.GetObject("_556", resourceCulture);
+                var obj = ResourceManager.GetObject("_556", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6005,7 +6005,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _557 {
             get {
-                object obj = ResourceManager.GetObject("_557", resourceCulture);
+                var obj = ResourceManager.GetObject("_557", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6015,7 +6015,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _558 {
             get {
-                object obj = ResourceManager.GetObject("_558", resourceCulture);
+                var obj = ResourceManager.GetObject("_558", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6025,7 +6025,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _559 {
             get {
-                object obj = ResourceManager.GetObject("_559", resourceCulture);
+                var obj = ResourceManager.GetObject("_559", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6035,7 +6035,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _56 {
             get {
-                object obj = ResourceManager.GetObject("_56", resourceCulture);
+                var obj = ResourceManager.GetObject("_56", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6045,7 +6045,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _560 {
             get {
-                object obj = ResourceManager.GetObject("_560", resourceCulture);
+                var obj = ResourceManager.GetObject("_560", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6055,7 +6055,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _561 {
             get {
-                object obj = ResourceManager.GetObject("_561", resourceCulture);
+                var obj = ResourceManager.GetObject("_561", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6065,7 +6065,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _562 {
             get {
-                object obj = ResourceManager.GetObject("_562", resourceCulture);
+                var obj = ResourceManager.GetObject("_562", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6075,7 +6075,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _563 {
             get {
-                object obj = ResourceManager.GetObject("_563", resourceCulture);
+                var obj = ResourceManager.GetObject("_563", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6085,7 +6085,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _564 {
             get {
-                object obj = ResourceManager.GetObject("_564", resourceCulture);
+                var obj = ResourceManager.GetObject("_564", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6095,7 +6095,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _565 {
             get {
-                object obj = ResourceManager.GetObject("_565", resourceCulture);
+                var obj = ResourceManager.GetObject("_565", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6105,7 +6105,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _566 {
             get {
-                object obj = ResourceManager.GetObject("_566", resourceCulture);
+                var obj = ResourceManager.GetObject("_566", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6115,7 +6115,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _567 {
             get {
-                object obj = ResourceManager.GetObject("_567", resourceCulture);
+                var obj = ResourceManager.GetObject("_567", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6125,7 +6125,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _568 {
             get {
-                object obj = ResourceManager.GetObject("_568", resourceCulture);
+                var obj = ResourceManager.GetObject("_568", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6135,7 +6135,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _569 {
             get {
-                object obj = ResourceManager.GetObject("_569", resourceCulture);
+                var obj = ResourceManager.GetObject("_569", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6145,7 +6145,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _57 {
             get {
-                object obj = ResourceManager.GetObject("_57", resourceCulture);
+                var obj = ResourceManager.GetObject("_57", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6155,7 +6155,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _570 {
             get {
-                object obj = ResourceManager.GetObject("_570", resourceCulture);
+                var obj = ResourceManager.GetObject("_570", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6165,7 +6165,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _571 {
             get {
-                object obj = ResourceManager.GetObject("_571", resourceCulture);
+                var obj = ResourceManager.GetObject("_571", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6175,7 +6175,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _572 {
             get {
-                object obj = ResourceManager.GetObject("_572", resourceCulture);
+                var obj = ResourceManager.GetObject("_572", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6185,7 +6185,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _573 {
             get {
-                object obj = ResourceManager.GetObject("_573", resourceCulture);
+                var obj = ResourceManager.GetObject("_573", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6195,7 +6195,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _574 {
             get {
-                object obj = ResourceManager.GetObject("_574", resourceCulture);
+                var obj = ResourceManager.GetObject("_574", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6205,7 +6205,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _575 {
             get {
-                object obj = ResourceManager.GetObject("_575", resourceCulture);
+                var obj = ResourceManager.GetObject("_575", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6215,7 +6215,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _576 {
             get {
-                object obj = ResourceManager.GetObject("_576", resourceCulture);
+                var obj = ResourceManager.GetObject("_576", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6225,7 +6225,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _577 {
             get {
-                object obj = ResourceManager.GetObject("_577", resourceCulture);
+                var obj = ResourceManager.GetObject("_577", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6235,7 +6235,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _578 {
             get {
-                object obj = ResourceManager.GetObject("_578", resourceCulture);
+                var obj = ResourceManager.GetObject("_578", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6245,7 +6245,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _579 {
             get {
-                object obj = ResourceManager.GetObject("_579", resourceCulture);
+                var obj = ResourceManager.GetObject("_579", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6255,7 +6255,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _58 {
             get {
-                object obj = ResourceManager.GetObject("_58", resourceCulture);
+                var obj = ResourceManager.GetObject("_58", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6265,7 +6265,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _580 {
             get {
-                object obj = ResourceManager.GetObject("_580", resourceCulture);
+                var obj = ResourceManager.GetObject("_580", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6275,7 +6275,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _581 {
             get {
-                object obj = ResourceManager.GetObject("_581", resourceCulture);
+                var obj = ResourceManager.GetObject("_581", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6285,7 +6285,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _582 {
             get {
-                object obj = ResourceManager.GetObject("_582", resourceCulture);
+                var obj = ResourceManager.GetObject("_582", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6295,7 +6295,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _583 {
             get {
-                object obj = ResourceManager.GetObject("_583", resourceCulture);
+                var obj = ResourceManager.GetObject("_583", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6305,7 +6305,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _584 {
             get {
-                object obj = ResourceManager.GetObject("_584", resourceCulture);
+                var obj = ResourceManager.GetObject("_584", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6315,7 +6315,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _585 {
             get {
-                object obj = ResourceManager.GetObject("_585", resourceCulture);
+                var obj = ResourceManager.GetObject("_585", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6325,7 +6325,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _585_autumn {
             get {
-                object obj = ResourceManager.GetObject("_585_autumn", resourceCulture);
+                var obj = ResourceManager.GetObject("_585_autumn", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6335,7 +6335,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _585_spring {
             get {
-                object obj = ResourceManager.GetObject("_585_spring", resourceCulture);
+                var obj = ResourceManager.GetObject("_585_spring", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6345,7 +6345,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _585_summer {
             get {
-                object obj = ResourceManager.GetObject("_585_summer", resourceCulture);
+                var obj = ResourceManager.GetObject("_585_summer", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6355,7 +6355,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _585_winter {
             get {
-                object obj = ResourceManager.GetObject("_585_winter", resourceCulture);
+                var obj = ResourceManager.GetObject("_585_winter", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6365,7 +6365,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _586 {
             get {
-                object obj = ResourceManager.GetObject("_586", resourceCulture);
+                var obj = ResourceManager.GetObject("_586", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6375,7 +6375,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _586_autumn {
             get {
-                object obj = ResourceManager.GetObject("_586_autumn", resourceCulture);
+                var obj = ResourceManager.GetObject("_586_autumn", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6385,7 +6385,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _586_spring {
             get {
-                object obj = ResourceManager.GetObject("_586_spring", resourceCulture);
+                var obj = ResourceManager.GetObject("_586_spring", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6395,7 +6395,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _586_summer {
             get {
-                object obj = ResourceManager.GetObject("_586_summer", resourceCulture);
+                var obj = ResourceManager.GetObject("_586_summer", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6405,7 +6405,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _586_winter {
             get {
-                object obj = ResourceManager.GetObject("_586_winter", resourceCulture);
+                var obj = ResourceManager.GetObject("_586_winter", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6415,7 +6415,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _587 {
             get {
-                object obj = ResourceManager.GetObject("_587", resourceCulture);
+                var obj = ResourceManager.GetObject("_587", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6425,7 +6425,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _588 {
             get {
-                object obj = ResourceManager.GetObject("_588", resourceCulture);
+                var obj = ResourceManager.GetObject("_588", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6435,7 +6435,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _589 {
             get {
-                object obj = ResourceManager.GetObject("_589", resourceCulture);
+                var obj = ResourceManager.GetObject("_589", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6445,7 +6445,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _59 {
             get {
-                object obj = ResourceManager.GetObject("_59", resourceCulture);
+                var obj = ResourceManager.GetObject("_59", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6455,7 +6455,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _590 {
             get {
-                object obj = ResourceManager.GetObject("_590", resourceCulture);
+                var obj = ResourceManager.GetObject("_590", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6465,7 +6465,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _591 {
             get {
-                object obj = ResourceManager.GetObject("_591", resourceCulture);
+                var obj = ResourceManager.GetObject("_591", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6475,7 +6475,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _592 {
             get {
-                object obj = ResourceManager.GetObject("_592", resourceCulture);
+                var obj = ResourceManager.GetObject("_592", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6485,7 +6485,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _592_f {
             get {
-                object obj = ResourceManager.GetObject("_592_f", resourceCulture);
+                var obj = ResourceManager.GetObject("_592_f", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6495,7 +6495,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _593 {
             get {
-                object obj = ResourceManager.GetObject("_593", resourceCulture);
+                var obj = ResourceManager.GetObject("_593", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6505,7 +6505,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _593_f {
             get {
-                object obj = ResourceManager.GetObject("_593_f", resourceCulture);
+                var obj = ResourceManager.GetObject("_593_f", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6515,7 +6515,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _594 {
             get {
-                object obj = ResourceManager.GetObject("_594", resourceCulture);
+                var obj = ResourceManager.GetObject("_594", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6525,7 +6525,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _595 {
             get {
-                object obj = ResourceManager.GetObject("_595", resourceCulture);
+                var obj = ResourceManager.GetObject("_595", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6535,7 +6535,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _596 {
             get {
-                object obj = ResourceManager.GetObject("_596", resourceCulture);
+                var obj = ResourceManager.GetObject("_596", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6545,7 +6545,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _597 {
             get {
-                object obj = ResourceManager.GetObject("_597", resourceCulture);
+                var obj = ResourceManager.GetObject("_597", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6555,7 +6555,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _598 {
             get {
-                object obj = ResourceManager.GetObject("_598", resourceCulture);
+                var obj = ResourceManager.GetObject("_598", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6565,7 +6565,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _599 {
             get {
-                object obj = ResourceManager.GetObject("_599", resourceCulture);
+                var obj = ResourceManager.GetObject("_599", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6575,7 +6575,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _6 {
             get {
-                object obj = ResourceManager.GetObject("_6", resourceCulture);
+                var obj = ResourceManager.GetObject("_6", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6585,7 +6585,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _6_mega_x {
             get {
-                object obj = ResourceManager.GetObject("_6_mega_x", resourceCulture);
+                var obj = ResourceManager.GetObject("_6_mega_x", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6595,7 +6595,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _6_mega_y {
             get {
-                object obj = ResourceManager.GetObject("_6_mega_y", resourceCulture);
+                var obj = ResourceManager.GetObject("_6_mega_y", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6605,7 +6605,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _60 {
             get {
-                object obj = ResourceManager.GetObject("_60", resourceCulture);
+                var obj = ResourceManager.GetObject("_60", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6615,7 +6615,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _600 {
             get {
-                object obj = ResourceManager.GetObject("_600", resourceCulture);
+                var obj = ResourceManager.GetObject("_600", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6625,7 +6625,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _601 {
             get {
-                object obj = ResourceManager.GetObject("_601", resourceCulture);
+                var obj = ResourceManager.GetObject("_601", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6635,7 +6635,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _602 {
             get {
-                object obj = ResourceManager.GetObject("_602", resourceCulture);
+                var obj = ResourceManager.GetObject("_602", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6645,7 +6645,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _603 {
             get {
-                object obj = ResourceManager.GetObject("_603", resourceCulture);
+                var obj = ResourceManager.GetObject("_603", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6655,7 +6655,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _604 {
             get {
-                object obj = ResourceManager.GetObject("_604", resourceCulture);
+                var obj = ResourceManager.GetObject("_604", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6665,7 +6665,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _605 {
             get {
-                object obj = ResourceManager.GetObject("_605", resourceCulture);
+                var obj = ResourceManager.GetObject("_605", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6675,7 +6675,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _606 {
             get {
-                object obj = ResourceManager.GetObject("_606", resourceCulture);
+                var obj = ResourceManager.GetObject("_606", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6685,7 +6685,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _607 {
             get {
-                object obj = ResourceManager.GetObject("_607", resourceCulture);
+                var obj = ResourceManager.GetObject("_607", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6695,7 +6695,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _608 {
             get {
-                object obj = ResourceManager.GetObject("_608", resourceCulture);
+                var obj = ResourceManager.GetObject("_608", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6705,7 +6705,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _609 {
             get {
-                object obj = ResourceManager.GetObject("_609", resourceCulture);
+                var obj = ResourceManager.GetObject("_609", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6715,7 +6715,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _61 {
             get {
-                object obj = ResourceManager.GetObject("_61", resourceCulture);
+                var obj = ResourceManager.GetObject("_61", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6725,7 +6725,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _610 {
             get {
-                object obj = ResourceManager.GetObject("_610", resourceCulture);
+                var obj = ResourceManager.GetObject("_610", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6735,7 +6735,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _611 {
             get {
-                object obj = ResourceManager.GetObject("_611", resourceCulture);
+                var obj = ResourceManager.GetObject("_611", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6745,7 +6745,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _612 {
             get {
-                object obj = ResourceManager.GetObject("_612", resourceCulture);
+                var obj = ResourceManager.GetObject("_612", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6755,7 +6755,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _613 {
             get {
-                object obj = ResourceManager.GetObject("_613", resourceCulture);
+                var obj = ResourceManager.GetObject("_613", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6765,7 +6765,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _614 {
             get {
-                object obj = ResourceManager.GetObject("_614", resourceCulture);
+                var obj = ResourceManager.GetObject("_614", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6775,7 +6775,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _615 {
             get {
-                object obj = ResourceManager.GetObject("_615", resourceCulture);
+                var obj = ResourceManager.GetObject("_615", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6785,7 +6785,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _616 {
             get {
-                object obj = ResourceManager.GetObject("_616", resourceCulture);
+                var obj = ResourceManager.GetObject("_616", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6795,7 +6795,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _617 {
             get {
-                object obj = ResourceManager.GetObject("_617", resourceCulture);
+                var obj = ResourceManager.GetObject("_617", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6805,7 +6805,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _618 {
             get {
-                object obj = ResourceManager.GetObject("_618", resourceCulture);
+                var obj = ResourceManager.GetObject("_618", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6815,7 +6815,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _619 {
             get {
-                object obj = ResourceManager.GetObject("_619", resourceCulture);
+                var obj = ResourceManager.GetObject("_619", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6825,7 +6825,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _62 {
             get {
-                object obj = ResourceManager.GetObject("_62", resourceCulture);
+                var obj = ResourceManager.GetObject("_62", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6835,7 +6835,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _620 {
             get {
-                object obj = ResourceManager.GetObject("_620", resourceCulture);
+                var obj = ResourceManager.GetObject("_620", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6845,7 +6845,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _621 {
             get {
-                object obj = ResourceManager.GetObject("_621", resourceCulture);
+                var obj = ResourceManager.GetObject("_621", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6855,7 +6855,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _622 {
             get {
-                object obj = ResourceManager.GetObject("_622", resourceCulture);
+                var obj = ResourceManager.GetObject("_622", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6865,7 +6865,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _623 {
             get {
-                object obj = ResourceManager.GetObject("_623", resourceCulture);
+                var obj = ResourceManager.GetObject("_623", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6875,7 +6875,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _624 {
             get {
-                object obj = ResourceManager.GetObject("_624", resourceCulture);
+                var obj = ResourceManager.GetObject("_624", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6885,7 +6885,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _625 {
             get {
-                object obj = ResourceManager.GetObject("_625", resourceCulture);
+                var obj = ResourceManager.GetObject("_625", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6895,7 +6895,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _626 {
             get {
-                object obj = ResourceManager.GetObject("_626", resourceCulture);
+                var obj = ResourceManager.GetObject("_626", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6905,7 +6905,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _627 {
             get {
-                object obj = ResourceManager.GetObject("_627", resourceCulture);
+                var obj = ResourceManager.GetObject("_627", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6915,7 +6915,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _628 {
             get {
-                object obj = ResourceManager.GetObject("_628", resourceCulture);
+                var obj = ResourceManager.GetObject("_628", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6925,7 +6925,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _629 {
             get {
-                object obj = ResourceManager.GetObject("_629", resourceCulture);
+                var obj = ResourceManager.GetObject("_629", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6935,7 +6935,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _63 {
             get {
-                object obj = ResourceManager.GetObject("_63", resourceCulture);
+                var obj = ResourceManager.GetObject("_63", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6945,7 +6945,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _630 {
             get {
-                object obj = ResourceManager.GetObject("_630", resourceCulture);
+                var obj = ResourceManager.GetObject("_630", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6955,7 +6955,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _631 {
             get {
-                object obj = ResourceManager.GetObject("_631", resourceCulture);
+                var obj = ResourceManager.GetObject("_631", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6965,7 +6965,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _632 {
             get {
-                object obj = ResourceManager.GetObject("_632", resourceCulture);
+                var obj = ResourceManager.GetObject("_632", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6975,7 +6975,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _633 {
             get {
-                object obj = ResourceManager.GetObject("_633", resourceCulture);
+                var obj = ResourceManager.GetObject("_633", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6985,7 +6985,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _634 {
             get {
-                object obj = ResourceManager.GetObject("_634", resourceCulture);
+                var obj = ResourceManager.GetObject("_634", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6995,7 +6995,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _635 {
             get {
-                object obj = ResourceManager.GetObject("_635", resourceCulture);
+                var obj = ResourceManager.GetObject("_635", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -7005,7 +7005,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _636 {
             get {
-                object obj = ResourceManager.GetObject("_636", resourceCulture);
+                var obj = ResourceManager.GetObject("_636", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -7015,7 +7015,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _637 {
             get {
-                object obj = ResourceManager.GetObject("_637", resourceCulture);
+                var obj = ResourceManager.GetObject("_637", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -7025,7 +7025,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _638 {
             get {
-                object obj = ResourceManager.GetObject("_638", resourceCulture);
+                var obj = ResourceManager.GetObject("_638", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -7035,7 +7035,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _639 {
             get {
-                object obj = ResourceManager.GetObject("_639", resourceCulture);
+                var obj = ResourceManager.GetObject("_639", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -7045,7 +7045,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _64 {
             get {
-                object obj = ResourceManager.GetObject("_64", resourceCulture);
+                var obj = ResourceManager.GetObject("_64", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -7055,7 +7055,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _640 {
             get {
-                object obj = ResourceManager.GetObject("_640", resourceCulture);
+                var obj = ResourceManager.GetObject("_640", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -7065,7 +7065,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _641 {
             get {
-                object obj = ResourceManager.GetObject("_641", resourceCulture);
+                var obj = ResourceManager.GetObject("_641", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -7075,7 +7075,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _641_incarnate {
             get {
-                object obj = ResourceManager.GetObject("_641_incarnate", resourceCulture);
+                var obj = ResourceManager.GetObject("_641_incarnate", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -7085,7 +7085,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _641_therian {
             get {
-                object obj = ResourceManager.GetObject("_641_therian", resourceCulture);
+                var obj = ResourceManager.GetObject("_641_therian", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -7095,7 +7095,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _642 {
             get {
-                object obj = ResourceManager.GetObject("_642", resourceCulture);
+                var obj = ResourceManager.GetObject("_642", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -7105,7 +7105,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _642_incarnate {
             get {
-                object obj = ResourceManager.GetObject("_642_incarnate", resourceCulture);
+                var obj = ResourceManager.GetObject("_642_incarnate", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -7115,7 +7115,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _642_therian {
             get {
-                object obj = ResourceManager.GetObject("_642_therian", resourceCulture);
+                var obj = ResourceManager.GetObject("_642_therian", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -7125,7 +7125,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _643 {
             get {
-                object obj = ResourceManager.GetObject("_643", resourceCulture);
+                var obj = ResourceManager.GetObject("_643", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -7135,7 +7135,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _644 {
             get {
-                object obj = ResourceManager.GetObject("_644", resourceCulture);
+                var obj = ResourceManager.GetObject("_644", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -7145,7 +7145,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _645 {
             get {
-                object obj = ResourceManager.GetObject("_645", resourceCulture);
+                var obj = ResourceManager.GetObject("_645", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -7155,7 +7155,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _645_incarnate {
             get {
-                object obj = ResourceManager.GetObject("_645_incarnate", resourceCulture);
+                var obj = ResourceManager.GetObject("_645_incarnate", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -7165,7 +7165,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _645_therian {
             get {
-                object obj = ResourceManager.GetObject("_645_therian", resourceCulture);
+                var obj = ResourceManager.GetObject("_645_therian", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -7175,7 +7175,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _646 {
             get {
-                object obj = ResourceManager.GetObject("_646", resourceCulture);
+                var obj = ResourceManager.GetObject("_646", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -7185,7 +7185,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _646_black {
             get {
-                object obj = ResourceManager.GetObject("_646_black", resourceCulture);
+                var obj = ResourceManager.GetObject("_646_black", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -7195,7 +7195,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _646_white {
             get {
-                object obj = ResourceManager.GetObject("_646_white", resourceCulture);
+                var obj = ResourceManager.GetObject("_646_white", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -7205,7 +7205,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _647 {
             get {
-                object obj = ResourceManager.GetObject("_647", resourceCulture);
+                var obj = ResourceManager.GetObject("_647", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -7215,7 +7215,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _647_ordinary {
             get {
-                object obj = ResourceManager.GetObject("_647_ordinary", resourceCulture);
+                var obj = ResourceManager.GetObject("_647_ordinary", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -7225,7 +7225,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _647_resolute {
             get {
-                object obj = ResourceManager.GetObject("_647_resolute", resourceCulture);
+                var obj = ResourceManager.GetObject("_647_resolute", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -7235,7 +7235,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _648 {
             get {
-                object obj = ResourceManager.GetObject("_648", resourceCulture);
+                var obj = ResourceManager.GetObject("_648", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -7245,7 +7245,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _648_aria {
             get {
-                object obj = ResourceManager.GetObject("_648_aria", resourceCulture);
+                var obj = ResourceManager.GetObject("_648_aria", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -7255,7 +7255,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _648_pirouette {
             get {
-                object obj = ResourceManager.GetObject("_648_pirouette", resourceCulture);
+                var obj = ResourceManager.GetObject("_648_pirouette", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -7265,7 +7265,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _649 {
             get {
-                object obj = ResourceManager.GetObject("_649", resourceCulture);
+                var obj = ResourceManager.GetObject("_649", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -7275,7 +7275,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _649_burn {
             get {
-                object obj = ResourceManager.GetObject("_649_burn", resourceCulture);
+                var obj = ResourceManager.GetObject("_649_burn", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -7285,7 +7285,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _649_chill {
             get {
-                object obj = ResourceManager.GetObject("_649_chill", resourceCulture);
+                var obj = ResourceManager.GetObject("_649_chill", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -7295,7 +7295,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _649_douse {
             get {
-                object obj = ResourceManager.GetObject("_649_douse", resourceCulture);
+                var obj = ResourceManager.GetObject("_649_douse", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -7305,7 +7305,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _649_shock {
             get {
-                object obj = ResourceManager.GetObject("_649_shock", resourceCulture);
+                var obj = ResourceManager.GetObject("_649_shock", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -7315,7 +7315,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _65 {
             get {
-                object obj = ResourceManager.GetObject("_65", resourceCulture);
+                var obj = ResourceManager.GetObject("_65", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -7325,7 +7325,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _65_mega {
             get {
-                object obj = ResourceManager.GetObject("_65_mega", resourceCulture);
+                var obj = ResourceManager.GetObject("_65_mega", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -7335,7 +7335,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _650 {
             get {
-                object obj = ResourceManager.GetObject("_650", resourceCulture);
+                var obj = ResourceManager.GetObject("_650", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -7345,7 +7345,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _651 {
             get {
-                object obj = ResourceManager.GetObject("_651", resourceCulture);
+                var obj = ResourceManager.GetObject("_651", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -7355,7 +7355,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _652 {
             get {
-                object obj = ResourceManager.GetObject("_652", resourceCulture);
+                var obj = ResourceManager.GetObject("_652", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -7365,7 +7365,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _653 {
             get {
-                object obj = ResourceManager.GetObject("_653", resourceCulture);
+                var obj = ResourceManager.GetObject("_653", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -7375,7 +7375,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _654 {
             get {
-                object obj = ResourceManager.GetObject("_654", resourceCulture);
+                var obj = ResourceManager.GetObject("_654", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -7385,7 +7385,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _655 {
             get {
-                object obj = ResourceManager.GetObject("_655", resourceCulture);
+                var obj = ResourceManager.GetObject("_655", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -7395,7 +7395,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _656 {
             get {
-                object obj = ResourceManager.GetObject("_656", resourceCulture);
+                var obj = ResourceManager.GetObject("_656", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -7405,7 +7405,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _657 {
             get {
-                object obj = ResourceManager.GetObject("_657", resourceCulture);
+                var obj = ResourceManager.GetObject("_657", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -7415,7 +7415,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _658 {
             get {
-                object obj = ResourceManager.GetObject("_658", resourceCulture);
+                var obj = ResourceManager.GetObject("_658", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -7425,7 +7425,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _659 {
             get {
-                object obj = ResourceManager.GetObject("_659", resourceCulture);
+                var obj = ResourceManager.GetObject("_659", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -7435,7 +7435,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _66 {
             get {
-                object obj = ResourceManager.GetObject("_66", resourceCulture);
+                var obj = ResourceManager.GetObject("_66", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -7445,7 +7445,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _660 {
             get {
-                object obj = ResourceManager.GetObject("_660", resourceCulture);
+                var obj = ResourceManager.GetObject("_660", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -7455,7 +7455,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _661 {
             get {
-                object obj = ResourceManager.GetObject("_661", resourceCulture);
+                var obj = ResourceManager.GetObject("_661", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -7465,7 +7465,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _662 {
             get {
-                object obj = ResourceManager.GetObject("_662", resourceCulture);
+                var obj = ResourceManager.GetObject("_662", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -7475,7 +7475,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _663 {
             get {
-                object obj = ResourceManager.GetObject("_663", resourceCulture);
+                var obj = ResourceManager.GetObject("_663", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -7485,7 +7485,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _664 {
             get {
-                object obj = ResourceManager.GetObject("_664", resourceCulture);
+                var obj = ResourceManager.GetObject("_664", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -7495,7 +7495,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _665 {
             get {
-                object obj = ResourceManager.GetObject("_665", resourceCulture);
+                var obj = ResourceManager.GetObject("_665", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -7505,7 +7505,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _666 {
             get {
-                object obj = ResourceManager.GetObject("_666", resourceCulture);
+                var obj = ResourceManager.GetObject("_666", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -7515,7 +7515,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _666_archipelago {
             get {
-                object obj = ResourceManager.GetObject("_666_archipelago", resourceCulture);
+                var obj = ResourceManager.GetObject("_666_archipelago", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -7525,7 +7525,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _666_continental {
             get {
-                object obj = ResourceManager.GetObject("_666_continental", resourceCulture);
+                var obj = ResourceManager.GetObject("_666_continental", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -7535,7 +7535,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _666_elegant {
             get {
-                object obj = ResourceManager.GetObject("_666_elegant", resourceCulture);
+                var obj = ResourceManager.GetObject("_666_elegant", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -7545,7 +7545,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _666_fancy {
             get {
-                object obj = ResourceManager.GetObject("_666_fancy", resourceCulture);
+                var obj = ResourceManager.GetObject("_666_fancy", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -7555,7 +7555,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _666_garden {
             get {
-                object obj = ResourceManager.GetObject("_666_garden", resourceCulture);
+                var obj = ResourceManager.GetObject("_666_garden", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -7565,7 +7565,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _666_high_plains {
             get {
-                object obj = ResourceManager.GetObject("_666_high_plains", resourceCulture);
+                var obj = ResourceManager.GetObject("_666_high_plains", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -7575,7 +7575,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _666_icy_snow {
             get {
-                object obj = ResourceManager.GetObject("_666_icy_snow", resourceCulture);
+                var obj = ResourceManager.GetObject("_666_icy_snow", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -7585,7 +7585,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _666_jungle {
             get {
-                object obj = ResourceManager.GetObject("_666_jungle", resourceCulture);
+                var obj = ResourceManager.GetObject("_666_jungle", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -7595,7 +7595,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _666_marine {
             get {
-                object obj = ResourceManager.GetObject("_666_marine", resourceCulture);
+                var obj = ResourceManager.GetObject("_666_marine", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -7605,7 +7605,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _666_meadow {
             get {
-                object obj = ResourceManager.GetObject("_666_meadow", resourceCulture);
+                var obj = ResourceManager.GetObject("_666_meadow", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -7615,7 +7615,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _666_modern {
             get {
-                object obj = ResourceManager.GetObject("_666_modern", resourceCulture);
+                var obj = ResourceManager.GetObject("_666_modern", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -7625,7 +7625,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _666_monsoon {
             get {
-                object obj = ResourceManager.GetObject("_666_monsoon", resourceCulture);
+                var obj = ResourceManager.GetObject("_666_monsoon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -7635,7 +7635,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _666_ocean {
             get {
-                object obj = ResourceManager.GetObject("_666_ocean", resourceCulture);
+                var obj = ResourceManager.GetObject("_666_ocean", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -7645,7 +7645,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _666_poke_ball {
             get {
-                object obj = ResourceManager.GetObject("_666_poke_ball", resourceCulture);
+                var obj = ResourceManager.GetObject("_666_poke_ball", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -7655,7 +7655,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _666_polar {
             get {
-                object obj = ResourceManager.GetObject("_666_polar", resourceCulture);
+                var obj = ResourceManager.GetObject("_666_polar", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -7665,7 +7665,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _666_river {
             get {
-                object obj = ResourceManager.GetObject("_666_river", resourceCulture);
+                var obj = ResourceManager.GetObject("_666_river", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -7675,7 +7675,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _666_sandstorm {
             get {
-                object obj = ResourceManager.GetObject("_666_sandstorm", resourceCulture);
+                var obj = ResourceManager.GetObject("_666_sandstorm", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -7685,7 +7685,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _666_savanna {
             get {
-                object obj = ResourceManager.GetObject("_666_savanna", resourceCulture);
+                var obj = ResourceManager.GetObject("_666_savanna", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -7695,7 +7695,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _666_sun {
             get {
-                object obj = ResourceManager.GetObject("_666_sun", resourceCulture);
+                var obj = ResourceManager.GetObject("_666_sun", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -7705,7 +7705,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _666_tundra {
             get {
-                object obj = ResourceManager.GetObject("_666_tundra", resourceCulture);
+                var obj = ResourceManager.GetObject("_666_tundra", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -7715,7 +7715,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _667 {
             get {
-                object obj = ResourceManager.GetObject("_667", resourceCulture);
+                var obj = ResourceManager.GetObject("_667", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -7725,7 +7725,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _668 {
             get {
-                object obj = ResourceManager.GetObject("_668", resourceCulture);
+                var obj = ResourceManager.GetObject("_668", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -7735,7 +7735,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _668_f {
             get {
-                object obj = ResourceManager.GetObject("_668_f", resourceCulture);
+                var obj = ResourceManager.GetObject("_668_f", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -7745,7 +7745,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _669 {
             get {
-                object obj = ResourceManager.GetObject("_669", resourceCulture);
+                var obj = ResourceManager.GetObject("_669", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -7755,7 +7755,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _669_blue {
             get {
-                object obj = ResourceManager.GetObject("_669_blue", resourceCulture);
+                var obj = ResourceManager.GetObject("_669_blue", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -7765,7 +7765,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _669_orange {
             get {
-                object obj = ResourceManager.GetObject("_669_orange", resourceCulture);
+                var obj = ResourceManager.GetObject("_669_orange", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -7775,7 +7775,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _669_red {
             get {
-                object obj = ResourceManager.GetObject("_669_red", resourceCulture);
+                var obj = ResourceManager.GetObject("_669_red", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -7785,7 +7785,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _669_white {
             get {
-                object obj = ResourceManager.GetObject("_669_white", resourceCulture);
+                var obj = ResourceManager.GetObject("_669_white", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -7795,7 +7795,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _669_yellow {
             get {
-                object obj = ResourceManager.GetObject("_669_yellow", resourceCulture);
+                var obj = ResourceManager.GetObject("_669_yellow", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -7805,7 +7805,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _67 {
             get {
-                object obj = ResourceManager.GetObject("_67", resourceCulture);
+                var obj = ResourceManager.GetObject("_67", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -7815,7 +7815,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _670 {
             get {
-                object obj = ResourceManager.GetObject("_670", resourceCulture);
+                var obj = ResourceManager.GetObject("_670", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -7825,7 +7825,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _670_blue {
             get {
-                object obj = ResourceManager.GetObject("_670_blue", resourceCulture);
+                var obj = ResourceManager.GetObject("_670_blue", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -7835,7 +7835,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _670_eternal {
             get {
-                object obj = ResourceManager.GetObject("_670_eternal", resourceCulture);
+                var obj = ResourceManager.GetObject("_670_eternal", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -7845,7 +7845,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _670_orange {
             get {
-                object obj = ResourceManager.GetObject("_670_orange", resourceCulture);
+                var obj = ResourceManager.GetObject("_670_orange", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -7855,7 +7855,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _670_red {
             get {
-                object obj = ResourceManager.GetObject("_670_red", resourceCulture);
+                var obj = ResourceManager.GetObject("_670_red", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -7865,7 +7865,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _670_white {
             get {
-                object obj = ResourceManager.GetObject("_670_white", resourceCulture);
+                var obj = ResourceManager.GetObject("_670_white", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -7875,7 +7875,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _670_yellow {
             get {
-                object obj = ResourceManager.GetObject("_670_yellow", resourceCulture);
+                var obj = ResourceManager.GetObject("_670_yellow", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -7885,7 +7885,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _671 {
             get {
-                object obj = ResourceManager.GetObject("_671", resourceCulture);
+                var obj = ResourceManager.GetObject("_671", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -7895,7 +7895,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _671_blue {
             get {
-                object obj = ResourceManager.GetObject("_671_blue", resourceCulture);
+                var obj = ResourceManager.GetObject("_671_blue", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -7905,7 +7905,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _671_orange {
             get {
-                object obj = ResourceManager.GetObject("_671_orange", resourceCulture);
+                var obj = ResourceManager.GetObject("_671_orange", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -7915,7 +7915,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _671_red {
             get {
-                object obj = ResourceManager.GetObject("_671_red", resourceCulture);
+                var obj = ResourceManager.GetObject("_671_red", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -7925,7 +7925,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _671_white {
             get {
-                object obj = ResourceManager.GetObject("_671_white", resourceCulture);
+                var obj = ResourceManager.GetObject("_671_white", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -7935,7 +7935,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _671_yellow {
             get {
-                object obj = ResourceManager.GetObject("_671_yellow", resourceCulture);
+                var obj = ResourceManager.GetObject("_671_yellow", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -7945,7 +7945,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _672 {
             get {
-                object obj = ResourceManager.GetObject("_672", resourceCulture);
+                var obj = ResourceManager.GetObject("_672", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -7955,7 +7955,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _673 {
             get {
-                object obj = ResourceManager.GetObject("_673", resourceCulture);
+                var obj = ResourceManager.GetObject("_673", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -7965,7 +7965,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _674 {
             get {
-                object obj = ResourceManager.GetObject("_674", resourceCulture);
+                var obj = ResourceManager.GetObject("_674", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -7975,7 +7975,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _675 {
             get {
-                object obj = ResourceManager.GetObject("_675", resourceCulture);
+                var obj = ResourceManager.GetObject("_675", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -7985,7 +7985,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _676 {
             get {
-                object obj = ResourceManager.GetObject("_676", resourceCulture);
+                var obj = ResourceManager.GetObject("_676", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -7995,7 +7995,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _676_dandy {
             get {
-                object obj = ResourceManager.GetObject("_676_dandy", resourceCulture);
+                var obj = ResourceManager.GetObject("_676_dandy", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -8005,7 +8005,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _676_debutante {
             get {
-                object obj = ResourceManager.GetObject("_676_debutante", resourceCulture);
+                var obj = ResourceManager.GetObject("_676_debutante", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -8015,7 +8015,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _676_diamond {
             get {
-                object obj = ResourceManager.GetObject("_676_diamond", resourceCulture);
+                var obj = ResourceManager.GetObject("_676_diamond", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -8025,7 +8025,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _676_heart {
             get {
-                object obj = ResourceManager.GetObject("_676_heart", resourceCulture);
+                var obj = ResourceManager.GetObject("_676_heart", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -8035,7 +8035,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _676_kabuki {
             get {
-                object obj = ResourceManager.GetObject("_676_kabuki", resourceCulture);
+                var obj = ResourceManager.GetObject("_676_kabuki", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -8045,7 +8045,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _676_la_reine {
             get {
-                object obj = ResourceManager.GetObject("_676_la_reine", resourceCulture);
+                var obj = ResourceManager.GetObject("_676_la_reine", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -8055,7 +8055,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _676_matron {
             get {
-                object obj = ResourceManager.GetObject("_676_matron", resourceCulture);
+                var obj = ResourceManager.GetObject("_676_matron", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -8065,7 +8065,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _676_natural {
             get {
-                object obj = ResourceManager.GetObject("_676_natural", resourceCulture);
+                var obj = ResourceManager.GetObject("_676_natural", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -8075,7 +8075,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _676_pharaoh {
             get {
-                object obj = ResourceManager.GetObject("_676_pharaoh", resourceCulture);
+                var obj = ResourceManager.GetObject("_676_pharaoh", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -8085,7 +8085,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _676_star {
             get {
-                object obj = ResourceManager.GetObject("_676_star", resourceCulture);
+                var obj = ResourceManager.GetObject("_676_star", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -8095,7 +8095,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _677 {
             get {
-                object obj = ResourceManager.GetObject("_677", resourceCulture);
+                var obj = ResourceManager.GetObject("_677", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -8105,7 +8105,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _678 {
             get {
-                object obj = ResourceManager.GetObject("_678", resourceCulture);
+                var obj = ResourceManager.GetObject("_678", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -8115,7 +8115,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _678_f {
             get {
-                object obj = ResourceManager.GetObject("_678_f", resourceCulture);
+                var obj = ResourceManager.GetObject("_678_f", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -8125,7 +8125,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _678_female {
             get {
-                object obj = ResourceManager.GetObject("_678_female", resourceCulture);
+                var obj = ResourceManager.GetObject("_678_female", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -8135,7 +8135,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _678_male {
             get {
-                object obj = ResourceManager.GetObject("_678_male", resourceCulture);
+                var obj = ResourceManager.GetObject("_678_male", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -8145,7 +8145,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _679 {
             get {
-                object obj = ResourceManager.GetObject("_679", resourceCulture);
+                var obj = ResourceManager.GetObject("_679", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -8155,7 +8155,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _68 {
             get {
-                object obj = ResourceManager.GetObject("_68", resourceCulture);
+                var obj = ResourceManager.GetObject("_68", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -8165,7 +8165,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _680 {
             get {
-                object obj = ResourceManager.GetObject("_680", resourceCulture);
+                var obj = ResourceManager.GetObject("_680", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -8175,7 +8175,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _681 {
             get {
-                object obj = ResourceManager.GetObject("_681", resourceCulture);
+                var obj = ResourceManager.GetObject("_681", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -8185,7 +8185,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _681_blade {
             get {
-                object obj = ResourceManager.GetObject("_681_blade", resourceCulture);
+                var obj = ResourceManager.GetObject("_681_blade", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -8195,7 +8195,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _681_shield {
             get {
-                object obj = ResourceManager.GetObject("_681_shield", resourceCulture);
+                var obj = ResourceManager.GetObject("_681_shield", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -8205,7 +8205,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _682 {
             get {
-                object obj = ResourceManager.GetObject("_682", resourceCulture);
+                var obj = ResourceManager.GetObject("_682", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -8215,7 +8215,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _683 {
             get {
-                object obj = ResourceManager.GetObject("_683", resourceCulture);
+                var obj = ResourceManager.GetObject("_683", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -8225,7 +8225,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _684 {
             get {
-                object obj = ResourceManager.GetObject("_684", resourceCulture);
+                var obj = ResourceManager.GetObject("_684", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -8235,7 +8235,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _685 {
             get {
-                object obj = ResourceManager.GetObject("_685", resourceCulture);
+                var obj = ResourceManager.GetObject("_685", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -8245,7 +8245,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _686 {
             get {
-                object obj = ResourceManager.GetObject("_686", resourceCulture);
+                var obj = ResourceManager.GetObject("_686", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -8255,7 +8255,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _687 {
             get {
-                object obj = ResourceManager.GetObject("_687", resourceCulture);
+                var obj = ResourceManager.GetObject("_687", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -8265,7 +8265,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _688 {
             get {
-                object obj = ResourceManager.GetObject("_688", resourceCulture);
+                var obj = ResourceManager.GetObject("_688", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -8275,7 +8275,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _689 {
             get {
-                object obj = ResourceManager.GetObject("_689", resourceCulture);
+                var obj = ResourceManager.GetObject("_689", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -8285,7 +8285,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _69 {
             get {
-                object obj = ResourceManager.GetObject("_69", resourceCulture);
+                var obj = ResourceManager.GetObject("_69", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -8295,7 +8295,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _690 {
             get {
-                object obj = ResourceManager.GetObject("_690", resourceCulture);
+                var obj = ResourceManager.GetObject("_690", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -8305,7 +8305,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _691 {
             get {
-                object obj = ResourceManager.GetObject("_691", resourceCulture);
+                var obj = ResourceManager.GetObject("_691", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -8315,7 +8315,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _692 {
             get {
-                object obj = ResourceManager.GetObject("_692", resourceCulture);
+                var obj = ResourceManager.GetObject("_692", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -8325,7 +8325,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _693 {
             get {
-                object obj = ResourceManager.GetObject("_693", resourceCulture);
+                var obj = ResourceManager.GetObject("_693", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -8335,7 +8335,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _694 {
             get {
-                object obj = ResourceManager.GetObject("_694", resourceCulture);
+                var obj = ResourceManager.GetObject("_694", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -8345,7 +8345,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _695 {
             get {
-                object obj = ResourceManager.GetObject("_695", resourceCulture);
+                var obj = ResourceManager.GetObject("_695", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -8355,7 +8355,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _696 {
             get {
-                object obj = ResourceManager.GetObject("_696", resourceCulture);
+                var obj = ResourceManager.GetObject("_696", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -8365,7 +8365,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _697 {
             get {
-                object obj = ResourceManager.GetObject("_697", resourceCulture);
+                var obj = ResourceManager.GetObject("_697", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -8375,7 +8375,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _698 {
             get {
-                object obj = ResourceManager.GetObject("_698", resourceCulture);
+                var obj = ResourceManager.GetObject("_698", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -8385,7 +8385,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _699 {
             get {
-                object obj = ResourceManager.GetObject("_699", resourceCulture);
+                var obj = ResourceManager.GetObject("_699", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -8395,7 +8395,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _7 {
             get {
-                object obj = ResourceManager.GetObject("_7", resourceCulture);
+                var obj = ResourceManager.GetObject("_7", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -8405,7 +8405,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _70 {
             get {
-                object obj = ResourceManager.GetObject("_70", resourceCulture);
+                var obj = ResourceManager.GetObject("_70", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -8415,7 +8415,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _700 {
             get {
-                object obj = ResourceManager.GetObject("_700", resourceCulture);
+                var obj = ResourceManager.GetObject("_700", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -8425,7 +8425,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _701 {
             get {
-                object obj = ResourceManager.GetObject("_701", resourceCulture);
+                var obj = ResourceManager.GetObject("_701", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -8435,7 +8435,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _702 {
             get {
-                object obj = ResourceManager.GetObject("_702", resourceCulture);
+                var obj = ResourceManager.GetObject("_702", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -8445,7 +8445,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _703 {
             get {
-                object obj = ResourceManager.GetObject("_703", resourceCulture);
+                var obj = ResourceManager.GetObject("_703", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -8455,7 +8455,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _704 {
             get {
-                object obj = ResourceManager.GetObject("_704", resourceCulture);
+                var obj = ResourceManager.GetObject("_704", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -8465,7 +8465,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _705 {
             get {
-                object obj = ResourceManager.GetObject("_705", resourceCulture);
+                var obj = ResourceManager.GetObject("_705", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -8475,7 +8475,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _706 {
             get {
-                object obj = ResourceManager.GetObject("_706", resourceCulture);
+                var obj = ResourceManager.GetObject("_706", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -8485,7 +8485,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _707 {
             get {
-                object obj = ResourceManager.GetObject("_707", resourceCulture);
+                var obj = ResourceManager.GetObject("_707", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -8495,7 +8495,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _708 {
             get {
-                object obj = ResourceManager.GetObject("_708", resourceCulture);
+                var obj = ResourceManager.GetObject("_708", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -8505,7 +8505,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _709 {
             get {
-                object obj = ResourceManager.GetObject("_709", resourceCulture);
+                var obj = ResourceManager.GetObject("_709", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -8515,7 +8515,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _71 {
             get {
-                object obj = ResourceManager.GetObject("_71", resourceCulture);
+                var obj = ResourceManager.GetObject("_71", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -8525,7 +8525,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _710 {
             get {
-                object obj = ResourceManager.GetObject("_710", resourceCulture);
+                var obj = ResourceManager.GetObject("_710", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -8535,7 +8535,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _710_average {
             get {
-                object obj = ResourceManager.GetObject("_710_average", resourceCulture);
+                var obj = ResourceManager.GetObject("_710_average", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -8545,7 +8545,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _710_large {
             get {
-                object obj = ResourceManager.GetObject("_710_large", resourceCulture);
+                var obj = ResourceManager.GetObject("_710_large", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -8555,7 +8555,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _710_small {
             get {
-                object obj = ResourceManager.GetObject("_710_small", resourceCulture);
+                var obj = ResourceManager.GetObject("_710_small", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -8565,7 +8565,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _710_super {
             get {
-                object obj = ResourceManager.GetObject("_710_super", resourceCulture);
+                var obj = ResourceManager.GetObject("_710_super", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -8575,7 +8575,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _711 {
             get {
-                object obj = ResourceManager.GetObject("_711", resourceCulture);
+                var obj = ResourceManager.GetObject("_711", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -8585,7 +8585,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _711_average {
             get {
-                object obj = ResourceManager.GetObject("_711_average", resourceCulture);
+                var obj = ResourceManager.GetObject("_711_average", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -8595,7 +8595,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _711_large {
             get {
-                object obj = ResourceManager.GetObject("_711_large", resourceCulture);
+                var obj = ResourceManager.GetObject("_711_large", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -8605,7 +8605,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _711_small {
             get {
-                object obj = ResourceManager.GetObject("_711_small", resourceCulture);
+                var obj = ResourceManager.GetObject("_711_small", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -8615,7 +8615,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _711_super {
             get {
-                object obj = ResourceManager.GetObject("_711_super", resourceCulture);
+                var obj = ResourceManager.GetObject("_711_super", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -8625,7 +8625,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _712 {
             get {
-                object obj = ResourceManager.GetObject("_712", resourceCulture);
+                var obj = ResourceManager.GetObject("_712", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -8635,7 +8635,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _713 {
             get {
-                object obj = ResourceManager.GetObject("_713", resourceCulture);
+                var obj = ResourceManager.GetObject("_713", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -8645,7 +8645,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _714 {
             get {
-                object obj = ResourceManager.GetObject("_714", resourceCulture);
+                var obj = ResourceManager.GetObject("_714", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -8655,7 +8655,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _715 {
             get {
-                object obj = ResourceManager.GetObject("_715", resourceCulture);
+                var obj = ResourceManager.GetObject("_715", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -8665,7 +8665,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _716 {
             get {
-                object obj = ResourceManager.GetObject("_716", resourceCulture);
+                var obj = ResourceManager.GetObject("_716", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -8675,7 +8675,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _716_active {
             get {
-                object obj = ResourceManager.GetObject("_716_active", resourceCulture);
+                var obj = ResourceManager.GetObject("_716_active", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -8685,7 +8685,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _716_neutral {
             get {
-                object obj = ResourceManager.GetObject("_716_neutral", resourceCulture);
+                var obj = ResourceManager.GetObject("_716_neutral", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -8695,7 +8695,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _717 {
             get {
-                object obj = ResourceManager.GetObject("_717", resourceCulture);
+                var obj = ResourceManager.GetObject("_717", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -8705,7 +8705,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _718 {
             get {
-                object obj = ResourceManager.GetObject("_718", resourceCulture);
+                var obj = ResourceManager.GetObject("_718", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -8715,7 +8715,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _719 {
             get {
-                object obj = ResourceManager.GetObject("_719", resourceCulture);
+                var obj = ResourceManager.GetObject("_719", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -8725,7 +8725,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _72 {
             get {
-                object obj = ResourceManager.GetObject("_72", resourceCulture);
+                var obj = ResourceManager.GetObject("_72", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -8735,7 +8735,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _720 {
             get {
-                object obj = ResourceManager.GetObject("_720", resourceCulture);
+                var obj = ResourceManager.GetObject("_720", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -8745,7 +8745,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _721 {
             get {
-                object obj = ResourceManager.GetObject("_721", resourceCulture);
+                var obj = ResourceManager.GetObject("_721", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -8755,7 +8755,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _73 {
             get {
-                object obj = ResourceManager.GetObject("_73", resourceCulture);
+                var obj = ResourceManager.GetObject("_73", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -8765,7 +8765,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _74 {
             get {
-                object obj = ResourceManager.GetObject("_74", resourceCulture);
+                var obj = ResourceManager.GetObject("_74", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -8775,7 +8775,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _75 {
             get {
-                object obj = ResourceManager.GetObject("_75", resourceCulture);
+                var obj = ResourceManager.GetObject("_75", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -8785,7 +8785,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _76 {
             get {
-                object obj = ResourceManager.GetObject("_76", resourceCulture);
+                var obj = ResourceManager.GetObject("_76", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -8795,7 +8795,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _77 {
             get {
-                object obj = ResourceManager.GetObject("_77", resourceCulture);
+                var obj = ResourceManager.GetObject("_77", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -8805,7 +8805,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _78 {
             get {
-                object obj = ResourceManager.GetObject("_78", resourceCulture);
+                var obj = ResourceManager.GetObject("_78", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -8815,7 +8815,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _79 {
             get {
-                object obj = ResourceManager.GetObject("_79", resourceCulture);
+                var obj = ResourceManager.GetObject("_79", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -8825,7 +8825,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _8 {
             get {
-                object obj = ResourceManager.GetObject("_8", resourceCulture);
+                var obj = ResourceManager.GetObject("_8", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -8835,7 +8835,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _80 {
             get {
-                object obj = ResourceManager.GetObject("_80", resourceCulture);
+                var obj = ResourceManager.GetObject("_80", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -8845,7 +8845,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _81 {
             get {
-                object obj = ResourceManager.GetObject("_81", resourceCulture);
+                var obj = ResourceManager.GetObject("_81", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -8855,7 +8855,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _82 {
             get {
-                object obj = ResourceManager.GetObject("_82", resourceCulture);
+                var obj = ResourceManager.GetObject("_82", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -8865,7 +8865,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _83 {
             get {
-                object obj = ResourceManager.GetObject("_83", resourceCulture);
+                var obj = ResourceManager.GetObject("_83", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -8875,7 +8875,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _84 {
             get {
-                object obj = ResourceManager.GetObject("_84", resourceCulture);
+                var obj = ResourceManager.GetObject("_84", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -8885,7 +8885,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _85 {
             get {
-                object obj = ResourceManager.GetObject("_85", resourceCulture);
+                var obj = ResourceManager.GetObject("_85", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -8895,7 +8895,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _86 {
             get {
-                object obj = ResourceManager.GetObject("_86", resourceCulture);
+                var obj = ResourceManager.GetObject("_86", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -8905,7 +8905,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _87 {
             get {
-                object obj = ResourceManager.GetObject("_87", resourceCulture);
+                var obj = ResourceManager.GetObject("_87", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -8915,7 +8915,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _88 {
             get {
-                object obj = ResourceManager.GetObject("_88", resourceCulture);
+                var obj = ResourceManager.GetObject("_88", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -8925,7 +8925,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _89 {
             get {
-                object obj = ResourceManager.GetObject("_89", resourceCulture);
+                var obj = ResourceManager.GetObject("_89", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -8935,7 +8935,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _9 {
             get {
-                object obj = ResourceManager.GetObject("_9", resourceCulture);
+                var obj = ResourceManager.GetObject("_9", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -8945,7 +8945,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _9_mega {
             get {
-                object obj = ResourceManager.GetObject("_9_mega", resourceCulture);
+                var obj = ResourceManager.GetObject("_9_mega", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -8955,7 +8955,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _90 {
             get {
-                object obj = ResourceManager.GetObject("_90", resourceCulture);
+                var obj = ResourceManager.GetObject("_90", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -8965,7 +8965,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _91 {
             get {
-                object obj = ResourceManager.GetObject("_91", resourceCulture);
+                var obj = ResourceManager.GetObject("_91", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -8975,7 +8975,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _92 {
             get {
-                object obj = ResourceManager.GetObject("_92", resourceCulture);
+                var obj = ResourceManager.GetObject("_92", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -8985,7 +8985,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _93 {
             get {
-                object obj = ResourceManager.GetObject("_93", resourceCulture);
+                var obj = ResourceManager.GetObject("_93", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -8995,7 +8995,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _94 {
             get {
-                object obj = ResourceManager.GetObject("_94", resourceCulture);
+                var obj = ResourceManager.GetObject("_94", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -9005,7 +9005,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _94_mega {
             get {
-                object obj = ResourceManager.GetObject("_94_mega", resourceCulture);
+                var obj = ResourceManager.GetObject("_94_mega", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -9015,7 +9015,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _95 {
             get {
-                object obj = ResourceManager.GetObject("_95", resourceCulture);
+                var obj = ResourceManager.GetObject("_95", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -9025,7 +9025,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _96 {
             get {
-                object obj = ResourceManager.GetObject("_96", resourceCulture);
+                var obj = ResourceManager.GetObject("_96", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -9035,7 +9035,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _97 {
             get {
-                object obj = ResourceManager.GetObject("_97", resourceCulture);
+                var obj = ResourceManager.GetObject("_97", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -9045,7 +9045,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _98 {
             get {
-                object obj = ResourceManager.GetObject("_98", resourceCulture);
+                var obj = ResourceManager.GetObject("_98", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -9055,7 +9055,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _99 {
             get {
-                object obj = ResourceManager.GetObject("_99", resourceCulture);
+                var obj = ResourceManager.GetObject("_99", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -9065,7 +9065,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap ability_capsule {
             get {
-                object obj = ResourceManager.GetObject("ability_capsule", resourceCulture);
+                var obj = ResourceManager.GetObject("ability_capsule", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -9075,7 +9075,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap ability_urge {
             get {
-                object obj = ResourceManager.GetObject("ability_urge", resourceCulture);
+                var obj = ResourceManager.GetObject("ability_urge", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -9085,7 +9085,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap abomasite {
             get {
-                object obj = ResourceManager.GetObject("abomasite", resourceCulture);
+                var obj = ResourceManager.GetObject("abomasite", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -9095,7 +9095,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap absolite {
             get {
-                object obj = ResourceManager.GetObject("absolite", resourceCulture);
+                var obj = ResourceManager.GetObject("absolite", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -9105,7 +9105,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap absorb_bulb {
             get {
-                object obj = ResourceManager.GetObject("absorb_bulb", resourceCulture);
+                var obj = ResourceManager.GetObject("absorb_bulb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -9115,7 +9115,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap acro_bike {
             get {
-                object obj = ResourceManager.GetObject("acro_bike", resourceCulture);
+                var obj = ResourceManager.GetObject("acro_bike", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -9125,7 +9125,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap adamant_orb {
             get {
-                object obj = ResourceManager.GetObject("adamant_orb", resourceCulture);
+                var obj = ResourceManager.GetObject("adamant_orb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -9135,7 +9135,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap adventure_rules {
             get {
-                object obj = ResourceManager.GetObject("adventure_rules", resourceCulture);
+                var obj = ResourceManager.GetObject("adventure_rules", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -9145,7 +9145,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap aerodactylite {
             get {
-                object obj = ResourceManager.GetObject("aerodactylite", resourceCulture);
+                var obj = ResourceManager.GetObject("aerodactylite", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -9155,7 +9155,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap aggronite {
             get {
-                object obj = ResourceManager.GetObject("aggronite", resourceCulture);
+                var obj = ResourceManager.GetObject("aggronite", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -9165,7 +9165,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap aguav_berry {
             get {
-                object obj = ResourceManager.GetObject("aguav_berry", resourceCulture);
+                var obj = ResourceManager.GetObject("aguav_berry", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -9175,7 +9175,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap air_balloon {
             get {
-                object obj = ResourceManager.GetObject("air_balloon", resourceCulture);
+                var obj = ResourceManager.GetObject("air_balloon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -9185,7 +9185,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap air_mail {
             get {
-                object obj = ResourceManager.GetObject("air_mail", resourceCulture);
+                var obj = ResourceManager.GetObject("air_mail", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -9195,7 +9195,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap alakazite {
             get {
-                object obj = ResourceManager.GetObject("alakazite", resourceCulture);
+                var obj = ResourceManager.GetObject("alakazite", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -9205,7 +9205,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap amaze_mulch {
             get {
-                object obj = ResourceManager.GetObject("amaze_mulch", resourceCulture);
+                var obj = ResourceManager.GetObject("amaze_mulch", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -9215,7 +9215,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap ampharosite {
             get {
-                object obj = ResourceManager.GetObject("ampharosite", resourceCulture);
+                var obj = ResourceManager.GetObject("ampharosite", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -9225,7 +9225,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap amulet_coin {
             get {
-                object obj = ResourceManager.GetObject("amulet_coin", resourceCulture);
+                var obj = ResourceManager.GetObject("amulet_coin", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -9235,7 +9235,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap antidote {
             get {
-                object obj = ResourceManager.GetObject("antidote", resourceCulture);
+                var obj = ResourceManager.GetObject("antidote", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -9245,7 +9245,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap apicot_berry {
             get {
-                object obj = ResourceManager.GetObject("apicot_berry", resourceCulture);
+                var obj = ResourceManager.GetObject("apicot_berry", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -9255,7 +9255,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap apricorn_box {
             get {
-                object obj = ResourceManager.GetObject("apricorn_box", resourceCulture);
+                var obj = ResourceManager.GetObject("apricorn_box", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -9265,7 +9265,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap armor_fossil {
             get {
-                object obj = ResourceManager.GetObject("armor_fossil", resourceCulture);
+                var obj = ResourceManager.GetObject("armor_fossil", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -9275,7 +9275,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap asleep {
             get {
-                object obj = ResourceManager.GetObject("asleep", resourceCulture);
+                var obj = ResourceManager.GetObject("asleep", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -9285,7 +9285,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap aspear_berry {
             get {
-                object obj = ResourceManager.GetObject("aspear_berry", resourceCulture);
+                var obj = ResourceManager.GetObject("aspear_berry", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -9295,7 +9295,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap assault_vest {
             get {
-                object obj = ResourceManager.GetObject("assault_vest", resourceCulture);
+                var obj = ResourceManager.GetObject("assault_vest", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -9305,7 +9305,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap auroraticket {
             get {
-                object obj = ResourceManager.GetObject("auroraticket", resourceCulture);
+                var obj = ResourceManager.GetObject("auroraticket", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -9315,7 +9315,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap awakening {
             get {
-                object obj = ResourceManager.GetObject("awakening", resourceCulture);
+                var obj = ResourceManager.GetObject("awakening", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -9325,7 +9325,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap azure_flute {
             get {
-                object obj = ResourceManager.GetObject("azure_flute", resourceCulture);
+                var obj = ResourceManager.GetObject("azure_flute", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -9335,7 +9335,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap babiri_berry {
             get {
-                object obj = ResourceManager.GetObject("babiri_berry", resourceCulture);
+                var obj = ResourceManager.GetObject("babiri_berry", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -9345,7 +9345,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap badlypoisoned {
             get {
-                object obj = ResourceManager.GetObject("badlypoisoned", resourceCulture);
+                var obj = ResourceManager.GetObject("badlypoisoned", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -9355,7 +9355,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap balm_mushroom {
             get {
-                object obj = ResourceManager.GetObject("balm_mushroom", resourceCulture);
+                var obj = ResourceManager.GetObject("balm_mushroom", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -9365,7 +9365,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap balmmushroom {
             get {
-                object obj = ResourceManager.GetObject("balmmushroom", resourceCulture);
+                var obj = ResourceManager.GetObject("balmmushroom", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -9375,7 +9375,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap banettite {
             get {
-                object obj = ResourceManager.GetObject("banettite", resourceCulture);
+                var obj = ResourceManager.GetObject("banettite", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -9385,7 +9385,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap basement_key {
             get {
-                object obj = ResourceManager.GetObject("basement_key", resourceCulture);
+                var obj = ResourceManager.GetObject("basement_key", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -9395,7 +9395,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap bead_mail {
             get {
-                object obj = ResourceManager.GetObject("bead_mail", resourceCulture);
+                var obj = ResourceManager.GetObject("bead_mail", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -9405,7 +9405,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap belue_berry {
             get {
-                object obj = ResourceManager.GetObject("belue_berry", resourceCulture);
+                var obj = ResourceManager.GetObject("belue_berry", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -9415,7 +9415,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap berry_juice {
             get {
-                object obj = ResourceManager.GetObject("berry_juice", resourceCulture);
+                var obj = ResourceManager.GetObject("berry_juice", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -9425,7 +9425,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap berry_pots {
             get {
-                object obj = ResourceManager.GetObject("berry_pots", resourceCulture);
+                var obj = ResourceManager.GetObject("berry_pots", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -9435,7 +9435,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap berry_pouch {
             get {
-                object obj = ResourceManager.GetObject("berry_pouch", resourceCulture);
+                var obj = ResourceManager.GetObject("berry_pouch", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -9445,7 +9445,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap bicycle {
             get {
-                object obj = ResourceManager.GetObject("bicycle", resourceCulture);
+                var obj = ResourceManager.GetObject("bicycle", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -9455,7 +9455,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap bicycle_turquoise {
             get {
-                object obj = ResourceManager.GetObject("bicycle_turquoise", resourceCulture);
+                var obj = ResourceManager.GetObject("bicycle_turquoise", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -9465,7 +9465,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap bicycle_yellow {
             get {
-                object obj = ResourceManager.GetObject("bicycle_yellow", resourceCulture);
+                var obj = ResourceManager.GetObject("bicycle_yellow", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -9475,7 +9475,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap big_mushroom {
             get {
-                object obj = ResourceManager.GetObject("big_mushroom", resourceCulture);
+                var obj = ResourceManager.GetObject("big_mushroom", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -9485,7 +9485,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap big_nugget {
             get {
-                object obj = ResourceManager.GetObject("big_nugget", resourceCulture);
+                var obj = ResourceManager.GetObject("big_nugget", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -9495,7 +9495,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap big_pearl {
             get {
-                object obj = ResourceManager.GetObject("big_pearl", resourceCulture);
+                var obj = ResourceManager.GetObject("big_pearl", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -9505,7 +9505,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap big_root {
             get {
-                object obj = ResourceManager.GetObject("big_root", resourceCulture);
+                var obj = ResourceManager.GetObject("big_root", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -9515,7 +9515,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap bike_voucher {
             get {
-                object obj = ResourceManager.GetObject("bike_voucher", resourceCulture);
+                var obj = ResourceManager.GetObject("bike_voucher", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -9525,7 +9525,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap binding_band {
             get {
-                object obj = ResourceManager.GetObject("binding_band", resourceCulture);
+                var obj = ResourceManager.GetObject("binding_band", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -9535,7 +9535,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap black_apricorn {
             get {
-                object obj = ResourceManager.GetObject("black_apricorn", resourceCulture);
+                var obj = ResourceManager.GetObject("black_apricorn", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -9545,7 +9545,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap black_belt {
             get {
-                object obj = ResourceManager.GetObject("black_belt", resourceCulture);
+                var obj = ResourceManager.GetObject("black_belt", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -9555,7 +9555,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap black_flute {
             get {
-                object obj = ResourceManager.GetObject("black_flute", resourceCulture);
+                var obj = ResourceManager.GetObject("black_flute", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -9565,7 +9565,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap black_glasses {
             get {
-                object obj = ResourceManager.GetObject("black_glasses", resourceCulture);
+                var obj = ResourceManager.GetObject("black_glasses", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -9575,7 +9575,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap black_sludge {
             get {
-                object obj = ResourceManager.GetObject("black_sludge", resourceCulture);
+                var obj = ResourceManager.GetObject("black_sludge", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -9585,7 +9585,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap blackglasses {
             get {
-                object obj = ResourceManager.GetObject("blackglasses", resourceCulture);
+                var obj = ResourceManager.GetObject("blackglasses", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -9595,7 +9595,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap blastoisinite {
             get {
-                object obj = ResourceManager.GetObject("blastoisinite", resourceCulture);
+                var obj = ResourceManager.GetObject("blastoisinite", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -9605,7 +9605,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap blazikenite {
             get {
-                object obj = ResourceManager.GetObject("blazikenite", resourceCulture);
+                var obj = ResourceManager.GetObject("blazikenite", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -9615,7 +9615,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap blk_apricorn {
             get {
-                object obj = ResourceManager.GetObject("blk_apricorn", resourceCulture);
+                var obj = ResourceManager.GetObject("blk_apricorn", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -9625,7 +9625,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap bloom_mail {
             get {
-                object obj = ResourceManager.GetObject("bloom_mail", resourceCulture);
+                var obj = ResourceManager.GetObject("bloom_mail", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -9635,7 +9635,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap blu_apricorn {
             get {
-                object obj = ResourceManager.GetObject("blu_apricorn", resourceCulture);
+                var obj = ResourceManager.GetObject("blu_apricorn", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -9645,7 +9645,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap blue_apricorn {
             get {
-                object obj = ResourceManager.GetObject("blue_apricorn", resourceCulture);
+                var obj = ResourceManager.GetObject("blue_apricorn", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -9655,7 +9655,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap blue_card {
             get {
-                object obj = ResourceManager.GetObject("blue_card", resourceCulture);
+                var obj = ResourceManager.GetObject("blue_card", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -9665,7 +9665,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap blue_flute {
             get {
-                object obj = ResourceManager.GetObject("blue_flute", resourceCulture);
+                var obj = ResourceManager.GetObject("blue_flute", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -9675,7 +9675,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap blue_orb {
             get {
-                object obj = ResourceManager.GetObject("blue_orb", resourceCulture);
+                var obj = ResourceManager.GetObject("blue_orb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -9685,7 +9685,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap blue_scarf {
             get {
-                object obj = ResourceManager.GetObject("blue_scarf", resourceCulture);
+                var obj = ResourceManager.GetObject("blue_scarf", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -9695,7 +9695,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap blue_shard {
             get {
-                object obj = ResourceManager.GetObject("blue_shard", resourceCulture);
+                var obj = ResourceManager.GetObject("blue_shard", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -9705,7 +9705,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap bluk_berry {
             get {
-                object obj = ResourceManager.GetObject("bluk_berry", resourceCulture);
+                var obj = ResourceManager.GetObject("bluk_berry", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -9715,7 +9715,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap boost_mulch {
             get {
-                object obj = ResourceManager.GetObject("boost_mulch", resourceCulture);
+                var obj = ResourceManager.GetObject("boost_mulch", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -9725,7 +9725,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap brick_mail {
             get {
-                object obj = ResourceManager.GetObject("brick_mail", resourceCulture);
+                var obj = ResourceManager.GetObject("brick_mail", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -9735,7 +9735,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap bridge_mail_d {
             get {
-                object obj = ResourceManager.GetObject("bridge_mail_d", resourceCulture);
+                var obj = ResourceManager.GetObject("bridge_mail_d", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -9745,7 +9745,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap bridge_mail_m {
             get {
-                object obj = ResourceManager.GetObject("bridge_mail_m", resourceCulture);
+                var obj = ResourceManager.GetObject("bridge_mail_m", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -9755,7 +9755,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap bridge_mail_s {
             get {
-                object obj = ResourceManager.GetObject("bridge_mail_s", resourceCulture);
+                var obj = ResourceManager.GetObject("bridge_mail_s", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -9765,7 +9765,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap bridge_mail_t {
             get {
-                object obj = ResourceManager.GetObject("bridge_mail_t", resourceCulture);
+                var obj = ResourceManager.GetObject("bridge_mail_t", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -9775,7 +9775,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap bridge_mail_v {
             get {
-                object obj = ResourceManager.GetObject("bridge_mail_v", resourceCulture);
+                var obj = ResourceManager.GetObject("bridge_mail_v", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -9785,7 +9785,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap bridgemail_d {
             get {
-                object obj = ResourceManager.GetObject("bridgemail_d", resourceCulture);
+                var obj = ResourceManager.GetObject("bridgemail_d", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -9795,7 +9795,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap bridgemail_m {
             get {
-                object obj = ResourceManager.GetObject("bridgemail_m", resourceCulture);
+                var obj = ResourceManager.GetObject("bridgemail_m", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -9805,7 +9805,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap bridgemail_s {
             get {
-                object obj = ResourceManager.GetObject("bridgemail_s", resourceCulture);
+                var obj = ResourceManager.GetObject("bridgemail_s", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -9815,7 +9815,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap bridgemail_t {
             get {
-                object obj = ResourceManager.GetObject("bridgemail_t", resourceCulture);
+                var obj = ResourceManager.GetObject("bridgemail_t", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -9825,7 +9825,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap bridgemail_v {
             get {
-                object obj = ResourceManager.GetObject("bridgemail_v", resourceCulture);
+                var obj = ResourceManager.GetObject("bridgemail_v", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -9835,7 +9835,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap bright_powder {
             get {
-                object obj = ResourceManager.GetObject("bright_powder", resourceCulture);
+                var obj = ResourceManager.GetObject("bright_powder", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -9845,7 +9845,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap brightpowder {
             get {
-                object obj = ResourceManager.GetObject("brightpowder", resourceCulture);
+                var obj = ResourceManager.GetObject("brightpowder", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -9855,7 +9855,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap bubble_mail {
             get {
-                object obj = ResourceManager.GetObject("bubble_mail", resourceCulture);
+                var obj = ResourceManager.GetObject("bubble_mail", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -9865,7 +9865,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap bug_gem {
             get {
-                object obj = ResourceManager.GetObject("bug_gem", resourceCulture);
+                var obj = ResourceManager.GetObject("bug_gem", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -9875,7 +9875,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap burn_drive {
             get {
-                object obj = ResourceManager.GetObject("burn_drive", resourceCulture);
+                var obj = ResourceManager.GetObject("burn_drive", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -9885,7 +9885,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap burn_heal {
             get {
-                object obj = ResourceManager.GetObject("burn_heal", resourceCulture);
+                var obj = ResourceManager.GetObject("burn_heal", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -9895,7 +9895,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap burned {
             get {
-                object obj = ResourceManager.GetObject("burned", resourceCulture);
+                var obj = ResourceManager.GetObject("burned", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -9905,7 +9905,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap calcium {
             get {
-                object obj = ResourceManager.GetObject("calcium", resourceCulture);
+                var obj = ResourceManager.GetObject("calcium", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -9915,7 +9915,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap carbos {
             get {
-                object obj = ResourceManager.GetObject("carbos", resourceCulture);
+                var obj = ResourceManager.GetObject("carbos", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -9925,7 +9925,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap card_key {
             get {
-                object obj = ResourceManager.GetObject("card_key", resourceCulture);
+                var obj = ResourceManager.GetObject("card_key", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -9935,7 +9935,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap casteliacone {
             get {
-                object obj = ResourceManager.GetObject("casteliacone", resourceCulture);
+                var obj = ResourceManager.GetObject("casteliacone", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -9945,7 +9945,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap cell_battery {
             get {
-                object obj = ResourceManager.GetObject("cell_battery", resourceCulture);
+                var obj = ResourceManager.GetObject("cell_battery", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -9955,7 +9955,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap charcoal {
             get {
-                object obj = ResourceManager.GetObject("charcoal", resourceCulture);
+                var obj = ResourceManager.GetObject("charcoal", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -9965,7 +9965,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap charizardite_x {
             get {
-                object obj = ResourceManager.GetObject("charizardite_x", resourceCulture);
+                var obj = ResourceManager.GetObject("charizardite_x", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -9975,7 +9975,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap charizardite_y {
             get {
-                object obj = ResourceManager.GetObject("charizardite_y", resourceCulture);
+                var obj = ResourceManager.GetObject("charizardite_y", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -9985,7 +9985,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap charti_berry {
             get {
-                object obj = ResourceManager.GetObject("charti_berry", resourceCulture);
+                var obj = ResourceManager.GetObject("charti_berry", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -9995,7 +9995,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap cheri_berry {
             get {
-                object obj = ResourceManager.GetObject("cheri_berry", resourceCulture);
+                var obj = ResourceManager.GetObject("cheri_berry", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -10005,7 +10005,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap cherish_ball {
             get {
-                object obj = ResourceManager.GetObject("cherish_ball", resourceCulture);
+                var obj = ResourceManager.GetObject("cherish_ball", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -10015,7 +10015,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap chesto_berry {
             get {
-                object obj = ResourceManager.GetObject("chesto_berry", resourceCulture);
+                var obj = ResourceManager.GetObject("chesto_berry", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -10025,7 +10025,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap chilan_berry {
             get {
-                object obj = ResourceManager.GetObject("chilan_berry", resourceCulture);
+                var obj = ResourceManager.GetObject("chilan_berry", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -10035,7 +10035,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap chill_drive {
             get {
-                object obj = ResourceManager.GetObject("chill_drive", resourceCulture);
+                var obj = ResourceManager.GetObject("chill_drive", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -10045,7 +10045,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap choice_band {
             get {
-                object obj = ResourceManager.GetObject("choice_band", resourceCulture);
+                var obj = ResourceManager.GetObject("choice_band", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -10055,7 +10055,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap choice_scarf {
             get {
-                object obj = ResourceManager.GetObject("choice_scarf", resourceCulture);
+                var obj = ResourceManager.GetObject("choice_scarf", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -10065,7 +10065,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap choice_specs {
             get {
-                object obj = ResourceManager.GetObject("choice_specs", resourceCulture);
+                var obj = ResourceManager.GetObject("choice_specs", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -10075,7 +10075,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap chople_berry {
             get {
-                object obj = ResourceManager.GetObject("chople_berry", resourceCulture);
+                var obj = ResourceManager.GetObject("chople_berry", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -10085,7 +10085,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap claw_fossil {
             get {
-                object obj = ResourceManager.GetObject("claw_fossil", resourceCulture);
+                var obj = ResourceManager.GetObject("claw_fossil", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -10095,7 +10095,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap cleanse_tag {
             get {
-                object obj = ResourceManager.GetObject("cleanse_tag", resourceCulture);
+                var obj = ResourceManager.GetObject("cleanse_tag", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -10105,7 +10105,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap clear_bell {
             get {
-                object obj = ResourceManager.GetObject("clear_bell", resourceCulture);
+                var obj = ResourceManager.GetObject("clear_bell", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -10115,7 +10115,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap clever_wing {
             get {
-                object obj = ResourceManager.GetObject("clever_wing", resourceCulture);
+                var obj = ResourceManager.GetObject("clever_wing", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -10125,7 +10125,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap coba_berry {
             get {
-                object obj = ResourceManager.GetObject("coba_berry", resourceCulture);
+                var obj = ResourceManager.GetObject("coba_berry", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -10135,7 +10135,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap coin_case {
             get {
-                object obj = ResourceManager.GetObject("coin_case", resourceCulture);
+                var obj = ResourceManager.GetObject("coin_case", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -10145,7 +10145,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap colbur_berry {
             get {
-                object obj = ResourceManager.GetObject("colbur_berry", resourceCulture);
+                var obj = ResourceManager.GetObject("colbur_berry", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -10155,7 +10155,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap colress_machine {
             get {
-                object obj = ResourceManager.GetObject("colress_machine", resourceCulture);
+                var obj = ResourceManager.GetObject("colress_machine", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -10165,7 +10165,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap colress_mchn {
             get {
-                object obj = ResourceManager.GetObject("colress_mchn", resourceCulture);
+                var obj = ResourceManager.GetObject("colress_mchn", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -10175,7 +10175,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap comet_shard {
             get {
-                object obj = ResourceManager.GetObject("comet_shard", resourceCulture);
+                var obj = ResourceManager.GetObject("comet_shard", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -10185,7 +10185,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap common_stone {
             get {
-                object obj = ResourceManager.GetObject("common_stone", resourceCulture);
+                var obj = ResourceManager.GetObject("common_stone", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -10195,7 +10195,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap contest_pass {
             get {
-                object obj = ResourceManager.GetObject("contest_pass", resourceCulture);
+                var obj = ResourceManager.GetObject("contest_pass", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -10205,7 +10205,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap cornn_berry {
             get {
-                object obj = ResourceManager.GetObject("cornn_berry", resourceCulture);
+                var obj = ResourceManager.GetObject("cornn_berry", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -10215,7 +10215,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap coupon_1 {
             get {
-                object obj = ResourceManager.GetObject("coupon_1", resourceCulture);
+                var obj = ResourceManager.GetObject("coupon_1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -10225,7 +10225,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap coupon_2 {
             get {
-                object obj = ResourceManager.GetObject("coupon_2", resourceCulture);
+                var obj = ResourceManager.GetObject("coupon_2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -10235,7 +10235,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap coupon_3 {
             get {
-                object obj = ResourceManager.GetObject("coupon_3", resourceCulture);
+                var obj = ResourceManager.GetObject("coupon_3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -10245,7 +10245,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap cover_fossil {
             get {
-                object obj = ResourceManager.GetObject("cover_fossil", resourceCulture);
+                var obj = ResourceManager.GetObject("cover_fossil", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -10255,7 +10255,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap custap_berry {
             get {
-                object obj = ResourceManager.GetObject("custap_berry", resourceCulture);
+                var obj = ResourceManager.GetObject("custap_berry", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -10265,7 +10265,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap damp_mulch {
             get {
-                object obj = ResourceManager.GetObject("damp_mulch", resourceCulture);
+                var obj = ResourceManager.GetObject("damp_mulch", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -10275,7 +10275,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap damp_rock {
             get {
-                object obj = ResourceManager.GetObject("damp_rock", resourceCulture);
+                var obj = ResourceManager.GetObject("damp_rock", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -10285,7 +10285,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap dark_gem {
             get {
-                object obj = ResourceManager.GetObject("dark_gem", resourceCulture);
+                var obj = ResourceManager.GetObject("dark_gem", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -10295,7 +10295,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap dark_stone {
             get {
-                object obj = ResourceManager.GetObject("dark_stone", resourceCulture);
+                var obj = ResourceManager.GetObject("dark_stone", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -10305,7 +10305,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap data_card {
             get {
-                object obj = ResourceManager.GetObject("data_card", resourceCulture);
+                var obj = ResourceManager.GetObject("data_card", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -10315,7 +10315,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap dawn_stone {
             get {
-                object obj = ResourceManager.GetObject("dawn_stone", resourceCulture);
+                var obj = ResourceManager.GetObject("dawn_stone", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -10325,7 +10325,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap deep_sea_scale {
             get {
-                object obj = ResourceManager.GetObject("deep_sea_scale", resourceCulture);
+                var obj = ResourceManager.GetObject("deep_sea_scale", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -10335,7 +10335,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap deep_sea_tooth {
             get {
-                object obj = ResourceManager.GetObject("deep_sea_tooth", resourceCulture);
+                var obj = ResourceManager.GetObject("deep_sea_tooth", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -10345,7 +10345,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap deepseascale {
             get {
-                object obj = ResourceManager.GetObject("deepseascale", resourceCulture);
+                var obj = ResourceManager.GetObject("deepseascale", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -10355,7 +10355,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap deepseatooth {
             get {
-                object obj = ResourceManager.GetObject("deepseatooth", resourceCulture);
+                var obj = ResourceManager.GetObject("deepseatooth", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -10365,7 +10365,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap destiny_knot {
             get {
-                object obj = ResourceManager.GetObject("destiny_knot", resourceCulture);
+                var obj = ResourceManager.GetObject("destiny_knot", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -10375,7 +10375,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap devon_goods {
             get {
-                object obj = ResourceManager.GetObject("devon_goods", resourceCulture);
+                var obj = ResourceManager.GetObject("devon_goods", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -10385,7 +10385,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap devon_scope {
             get {
-                object obj = ResourceManager.GetObject("devon_scope", resourceCulture);
+                var obj = ResourceManager.GetObject("devon_scope", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -10395,7 +10395,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap dire_hit {
             get {
-                object obj = ResourceManager.GetObject("dire_hit", resourceCulture);
+                var obj = ResourceManager.GetObject("dire_hit", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -10405,7 +10405,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap dire_hit_2 {
             get {
-                object obj = ResourceManager.GetObject("dire_hit_2", resourceCulture);
+                var obj = ResourceManager.GetObject("dire_hit_2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -10415,7 +10415,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap dire_hit_3 {
             get {
-                object obj = ResourceManager.GetObject("dire_hit_3", resourceCulture);
+                var obj = ResourceManager.GetObject("dire_hit_3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -10425,7 +10425,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap discount_coupon {
             get {
-                object obj = ResourceManager.GetObject("discount_coupon", resourceCulture);
+                var obj = ResourceManager.GetObject("discount_coupon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -10435,7 +10435,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap dive_ball {
             get {
-                object obj = ResourceManager.GetObject("dive_ball", resourceCulture);
+                var obj = ResourceManager.GetObject("dive_ball", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -10445,7 +10445,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap dna_splicers {
             get {
-                object obj = ResourceManager.GetObject("dna_splicers", resourceCulture);
+                var obj = ResourceManager.GetObject("dna_splicers", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -10455,7 +10455,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap dome_fossil {
             get {
-                object obj = ResourceManager.GetObject("dome_fossil", resourceCulture);
+                var obj = ResourceManager.GetObject("dome_fossil", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -10465,7 +10465,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap douse_drive {
             get {
-                object obj = ResourceManager.GetObject("douse_drive", resourceCulture);
+                var obj = ResourceManager.GetObject("douse_drive", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -10475,7 +10475,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap dowsing_machine {
             get {
-                object obj = ResourceManager.GetObject("dowsing_machine", resourceCulture);
+                var obj = ResourceManager.GetObject("dowsing_machine", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -10485,7 +10485,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap dowsing_mchn {
             get {
-                object obj = ResourceManager.GetObject("dowsing_mchn", resourceCulture);
+                var obj = ResourceManager.GetObject("dowsing_mchn", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -10495,7 +10495,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap draco_plate {
             get {
-                object obj = ResourceManager.GetObject("draco_plate", resourceCulture);
+                var obj = ResourceManager.GetObject("draco_plate", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -10505,7 +10505,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap dragon_fang {
             get {
-                object obj = ResourceManager.GetObject("dragon_fang", resourceCulture);
+                var obj = ResourceManager.GetObject("dragon_fang", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -10515,7 +10515,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap dragon_gem {
             get {
-                object obj = ResourceManager.GetObject("dragon_gem", resourceCulture);
+                var obj = ResourceManager.GetObject("dragon_gem", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -10525,7 +10525,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap dragon_scale {
             get {
-                object obj = ResourceManager.GetObject("dragon_scale", resourceCulture);
+                var obj = ResourceManager.GetObject("dragon_scale", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -10535,7 +10535,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap dragon_skull {
             get {
-                object obj = ResourceManager.GetObject("dragon_skull", resourceCulture);
+                var obj = ResourceManager.GetObject("dragon_skull", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -10545,7 +10545,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap dread_plate {
             get {
-                object obj = ResourceManager.GetObject("dread_plate", resourceCulture);
+                var obj = ResourceManager.GetObject("dread_plate", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -10555,7 +10555,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap dream_ball {
             get {
-                object obj = ResourceManager.GetObject("dream_ball", resourceCulture);
+                var obj = ResourceManager.GetObject("dream_ball", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -10565,7 +10565,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap dream_mail {
             get {
-                object obj = ResourceManager.GetObject("dream_mail", resourceCulture);
+                var obj = ResourceManager.GetObject("dream_mail", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -10575,7 +10575,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap dropped_item {
             get {
-                object obj = ResourceManager.GetObject("dropped_item", resourceCulture);
+                var obj = ResourceManager.GetObject("dropped_item", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -10585,7 +10585,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap dropped_item_red {
             get {
-                object obj = ResourceManager.GetObject("dropped_item_red", resourceCulture);
+                var obj = ResourceManager.GetObject("dropped_item_red", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -10595,7 +10595,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap dropped_item_yellow {
             get {
-                object obj = ResourceManager.GetObject("dropped_item_yellow", resourceCulture);
+                var obj = ResourceManager.GetObject("dropped_item_yellow", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -10605,7 +10605,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap dubious_disc {
             get {
-                object obj = ResourceManager.GetObject("dubious_disc", resourceCulture);
+                var obj = ResourceManager.GetObject("dubious_disc", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -10615,7 +10615,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap durin_berry {
             get {
-                object obj = ResourceManager.GetObject("durin_berry", resourceCulture);
+                var obj = ResourceManager.GetObject("durin_berry", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -10625,7 +10625,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap dusk_ball {
             get {
-                object obj = ResourceManager.GetObject("dusk_ball", resourceCulture);
+                var obj = ResourceManager.GetObject("dusk_ball", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -10635,7 +10635,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap dusk_stone {
             get {
-                object obj = ResourceManager.GetObject("dusk_stone", resourceCulture);
+                var obj = ResourceManager.GetObject("dusk_stone", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -10645,7 +10645,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap earth_plate {
             get {
-                object obj = ResourceManager.GetObject("earth_plate", resourceCulture);
+                var obj = ResourceManager.GetObject("earth_plate", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -10655,7 +10655,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap egg {
             get {
-                object obj = ResourceManager.GetObject("egg", resourceCulture);
+                var obj = ResourceManager.GetObject("egg", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -10665,7 +10665,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap eject_button {
             get {
-                object obj = ResourceManager.GetObject("eject_button", resourceCulture);
+                var obj = ResourceManager.GetObject("eject_button", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -10675,7 +10675,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap electirizer {
             get {
-                object obj = ResourceManager.GetObject("electirizer", resourceCulture);
+                var obj = ResourceManager.GetObject("electirizer", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -10685,7 +10685,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap electric_gem {
             get {
-                object obj = ResourceManager.GetObject("electric_gem", resourceCulture);
+                var obj = ResourceManager.GetObject("electric_gem", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -10695,7 +10695,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap elevator_key {
             get {
-                object obj = ResourceManager.GetObject("elevator_key", resourceCulture);
+                var obj = ResourceManager.GetObject("elevator_key", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -10705,7 +10705,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap elixir {
             get {
-                object obj = ResourceManager.GetObject("elixir", resourceCulture);
+                var obj = ResourceManager.GetObject("elixir", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -10715,7 +10715,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap energy_powder {
             get {
-                object obj = ResourceManager.GetObject("energy_powder", resourceCulture);
+                var obj = ResourceManager.GetObject("energy_powder", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -10725,7 +10725,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap energy_root {
             get {
-                object obj = ResourceManager.GetObject("energy_root", resourceCulture);
+                var obj = ResourceManager.GetObject("energy_root", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -10735,7 +10735,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap energypowder {
             get {
-                object obj = ResourceManager.GetObject("energypowder", resourceCulture);
+                var obj = ResourceManager.GetObject("energypowder", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -10745,7 +10745,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap enigma_berry {
             get {
-                object obj = ResourceManager.GetObject("enigma_berry", resourceCulture);
+                var obj = ResourceManager.GetObject("enigma_berry", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -10755,7 +10755,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap enigma_stone {
             get {
-                object obj = ResourceManager.GetObject("enigma_stone", resourceCulture);
+                var obj = ResourceManager.GetObject("enigma_stone", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -10765,7 +10765,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap eon_ticket {
             get {
-                object obj = ResourceManager.GetObject("eon_ticket", resourceCulture);
+                var obj = ResourceManager.GetObject("eon_ticket", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -10775,7 +10775,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap escape_rope {
             get {
-                object obj = ResourceManager.GetObject("escape_rope", resourceCulture);
+                var obj = ResourceManager.GetObject("escape_rope", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -10785,7 +10785,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap ether {
             get {
-                object obj = ResourceManager.GetObject("ether", resourceCulture);
+                var obj = ResourceManager.GetObject("ether", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -10795,7 +10795,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap everstone {
             get {
-                object obj = ResourceManager.GetObject("everstone", resourceCulture);
+                var obj = ResourceManager.GetObject("everstone", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -10805,7 +10805,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap eviolite {
             get {
-                object obj = ResourceManager.GetObject("eviolite", resourceCulture);
+                var obj = ResourceManager.GetObject("eviolite", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -10815,7 +10815,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap exp_share {
             get {
-                object obj = ResourceManager.GetObject("exp_share", resourceCulture);
+                var obj = ResourceManager.GetObject("exp_share", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -10825,7 +10825,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap expert_belt {
             get {
-                object obj = ResourceManager.GetObject("expert_belt", resourceCulture);
+                var obj = ResourceManager.GetObject("expert_belt", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -10835,7 +10835,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap explorer_kit {
             get {
-                object obj = ResourceManager.GetObject("explorer_kit", resourceCulture);
+                var obj = ResourceManager.GetObject("explorer_kit", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -10845,7 +10845,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap fab_mail {
             get {
-                object obj = ResourceManager.GetObject("fab_mail", resourceCulture);
+                var obj = ResourceManager.GetObject("fab_mail", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -10855,7 +10855,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap fainted {
             get {
-                object obj = ResourceManager.GetObject("fainted", resourceCulture);
+                var obj = ResourceManager.GetObject("fainted", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -10865,7 +10865,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap fairy_gem {
             get {
-                object obj = ResourceManager.GetObject("fairy_gem", resourceCulture);
+                var obj = ResourceManager.GetObject("fairy_gem", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -10875,7 +10875,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap fame_checker {
             get {
-                object obj = ResourceManager.GetObject("fame_checker", resourceCulture);
+                var obj = ResourceManager.GetObject("fame_checker", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -10885,7 +10885,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap fashion_case {
             get {
-                object obj = ResourceManager.GetObject("fashion_case", resourceCulture);
+                var obj = ResourceManager.GetObject("fashion_case", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -10895,7 +10895,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap fast_ball {
             get {
-                object obj = ResourceManager.GetObject("fast_ball", resourceCulture);
+                var obj = ResourceManager.GetObject("fast_ball", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -10905,7 +10905,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap favored_mail {
             get {
-                object obj = ResourceManager.GetObject("favored_mail", resourceCulture);
+                var obj = ResourceManager.GetObject("favored_mail", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -10915,7 +10915,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap fbi_521 {
             get {
-                object obj = ResourceManager.GetObject("fbi_521", resourceCulture);
+                var obj = ResourceManager.GetObject("fbi_521", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -10925,7 +10925,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap fbi_592 {
             get {
-                object obj = ResourceManager.GetObject("fbi_592", resourceCulture);
+                var obj = ResourceManager.GetObject("fbi_592", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -10935,7 +10935,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap fbi_593 {
             get {
-                object obj = ResourceManager.GetObject("fbi_593", resourceCulture);
+                var obj = ResourceManager.GetObject("fbi_593", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -10945,7 +10945,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap fbi_668 {
             get {
-                object obj = ResourceManager.GetObject("fbi_668", resourceCulture);
+                var obj = ResourceManager.GetObject("fbi_668", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -10955,7 +10955,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap fbi_678 {
             get {
-                object obj = ResourceManager.GetObject("fbi_678", resourceCulture);
+                var obj = ResourceManager.GetObject("fbi_678", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -10965,7 +10965,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap female {
             get {
-                object obj = ResourceManager.GetObject("female", resourceCulture);
+                var obj = ResourceManager.GetObject("female", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -10975,7 +10975,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap fighting_gem {
             get {
-                object obj = ResourceManager.GetObject("fighting_gem", resourceCulture);
+                var obj = ResourceManager.GetObject("fighting_gem", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -10985,7 +10985,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap figy_berry {
             get {
-                object obj = ResourceManager.GetObject("figy_berry", resourceCulture);
+                var obj = ResourceManager.GetObject("figy_berry", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -10995,7 +10995,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap fire_gem {
             get {
-                object obj = ResourceManager.GetObject("fire_gem", resourceCulture);
+                var obj = ResourceManager.GetObject("fire_gem", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -11005,7 +11005,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap fire_stone {
             get {
-                object obj = ResourceManager.GetObject("fire_stone", resourceCulture);
+                var obj = ResourceManager.GetObject("fire_stone", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -11015,7 +11015,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap fist_plate {
             get {
-                object obj = ResourceManager.GetObject("fist_plate", resourceCulture);
+                var obj = ResourceManager.GetObject("fist_plate", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -11025,7 +11025,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap flame_mail {
             get {
-                object obj = ResourceManager.GetObject("flame_mail", resourceCulture);
+                var obj = ResourceManager.GetObject("flame_mail", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -11035,7 +11035,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap flame_orb {
             get {
-                object obj = ResourceManager.GetObject("flame_orb", resourceCulture);
+                var obj = ResourceManager.GetObject("flame_orb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -11045,7 +11045,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap flame_plate {
             get {
-                object obj = ResourceManager.GetObject("flame_plate", resourceCulture);
+                var obj = ResourceManager.GetObject("flame_plate", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -11055,7 +11055,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap float_stone {
             get {
-                object obj = ResourceManager.GetObject("float_stone", resourceCulture);
+                var obj = ResourceManager.GetObject("float_stone", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -11065,7 +11065,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap fluffy_tail {
             get {
-                object obj = ResourceManager.GetObject("fluffy_tail", resourceCulture);
+                var obj = ResourceManager.GetObject("fluffy_tail", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -11075,7 +11075,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap flying_gem {
             get {
-                object obj = ResourceManager.GetObject("flying_gem", resourceCulture);
+                var obj = ResourceManager.GetObject("flying_gem", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -11085,7 +11085,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap focus_band {
             get {
-                object obj = ResourceManager.GetObject("focus_band", resourceCulture);
+                var obj = ResourceManager.GetObject("focus_band", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -11095,7 +11095,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap focus_sash {
             get {
-                object obj = ResourceManager.GetObject("focus_sash", resourceCulture);
+                var obj = ResourceManager.GetObject("focus_sash", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -11105,7 +11105,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap fresh_water {
             get {
-                object obj = ResourceManager.GetObject("fresh_water", resourceCulture);
+                var obj = ResourceManager.GetObject("fresh_water", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -11115,7 +11115,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap friend_ball {
             get {
-                object obj = ResourceManager.GetObject("friend_ball", resourceCulture);
+                var obj = ResourceManager.GetObject("friend_ball", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -11125,7 +11125,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap frozen {
             get {
-                object obj = ResourceManager.GetObject("frozen", resourceCulture);
+                var obj = ResourceManager.GetObject("frozen", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -11135,7 +11135,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap full_heal {
             get {
-                object obj = ResourceManager.GetObject("full_heal", resourceCulture);
+                var obj = ResourceManager.GetObject("full_heal", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -11145,7 +11145,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap full_incense {
             get {
-                object obj = ResourceManager.GetObject("full_incense", resourceCulture);
+                var obj = ResourceManager.GetObject("full_incense", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -11155,7 +11155,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap full_restore {
             get {
-                object obj = ResourceManager.GetObject("full_restore", resourceCulture);
+                var obj = ResourceManager.GetObject("full_restore", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -11165,7 +11165,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap galactic_key {
             get {
-                object obj = ResourceManager.GetObject("galactic_key", resourceCulture);
+                var obj = ResourceManager.GetObject("galactic_key", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -11175,7 +11175,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap ganlon_berry {
             get {
-                object obj = ResourceManager.GetObject("ganlon_berry", resourceCulture);
+                var obj = ResourceManager.GetObject("ganlon_berry", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -11185,7 +11185,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap garchompite {
             get {
-                object obj = ResourceManager.GetObject("garchompite", resourceCulture);
+                var obj = ResourceManager.GetObject("garchompite", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -11195,7 +11195,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap gardevoirite {
             get {
-                object obj = ResourceManager.GetObject("gardevoirite", resourceCulture);
+                var obj = ResourceManager.GetObject("gardevoirite", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -11205,7 +11205,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap gb_sounds {
             get {
-                object obj = ResourceManager.GetObject("gb_sounds", resourceCulture);
+                var obj = ResourceManager.GetObject("gb_sounds", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -11215,7 +11215,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap gengarite {
             get {
-                object obj = ResourceManager.GetObject("gengarite", resourceCulture);
+                var obj = ResourceManager.GetObject("gengarite", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -11225,7 +11225,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap genius_wing {
             get {
-                object obj = ResourceManager.GetObject("genius_wing", resourceCulture);
+                var obj = ResourceManager.GetObject("genius_wing", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -11235,7 +11235,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap ghost_gem {
             get {
-                object obj = ResourceManager.GetObject("ghost_gem", resourceCulture);
+                var obj = ResourceManager.GetObject("ghost_gem", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -11245,7 +11245,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap glitter_mail {
             get {
-                object obj = ResourceManager.GetObject("glitter_mail", resourceCulture);
+                var obj = ResourceManager.GetObject("glitter_mail", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -11255,7 +11255,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap go_goggles {
             get {
-                object obj = ResourceManager.GetObject("go_goggles", resourceCulture);
+                var obj = ResourceManager.GetObject("go_goggles", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -11265,7 +11265,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap god_stone {
             get {
-                object obj = ResourceManager.GetObject("god_stone", resourceCulture);
+                var obj = ResourceManager.GetObject("god_stone", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -11275,7 +11275,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap gold_teeth {
             get {
-                object obj = ResourceManager.GetObject("gold_teeth", resourceCulture);
+                var obj = ResourceManager.GetObject("gold_teeth", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -11285,7 +11285,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap good_rod {
             get {
-                object obj = ResourceManager.GetObject("good_rod", resourceCulture);
+                var obj = ResourceManager.GetObject("good_rod", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -11295,7 +11295,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap gooey_mulch {
             get {
-                object obj = ResourceManager.GetObject("gooey_mulch", resourceCulture);
+                var obj = ResourceManager.GetObject("gooey_mulch", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -11305,7 +11305,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap gracidea {
             get {
-                object obj = ResourceManager.GetObject("gracidea", resourceCulture);
+                var obj = ResourceManager.GetObject("gracidea", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -11315,7 +11315,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap gram_1 {
             get {
-                object obj = ResourceManager.GetObject("gram_1", resourceCulture);
+                var obj = ResourceManager.GetObject("gram_1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -11325,7 +11325,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap gram_2 {
             get {
-                object obj = ResourceManager.GetObject("gram_2", resourceCulture);
+                var obj = ResourceManager.GetObject("gram_2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -11335,7 +11335,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap gram_3 {
             get {
-                object obj = ResourceManager.GetObject("gram_3", resourceCulture);
+                var obj = ResourceManager.GetObject("gram_3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -11345,7 +11345,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap grass_gem {
             get {
-                object obj = ResourceManager.GetObject("grass_gem", resourceCulture);
+                var obj = ResourceManager.GetObject("grass_gem", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -11355,7 +11355,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap grass_mail {
             get {
-                object obj = ResourceManager.GetObject("grass_mail", resourceCulture);
+                var obj = ResourceManager.GetObject("grass_mail", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -11365,7 +11365,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap great_ball {
             get {
-                object obj = ResourceManager.GetObject("great_ball", resourceCulture);
+                var obj = ResourceManager.GetObject("great_ball", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -11375,7 +11375,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap green_apricorn {
             get {
-                object obj = ResourceManager.GetObject("green_apricorn", resourceCulture);
+                var obj = ResourceManager.GetObject("green_apricorn", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -11385,7 +11385,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap green_scarf {
             get {
-                object obj = ResourceManager.GetObject("green_scarf", resourceCulture);
+                var obj = ResourceManager.GetObject("green_scarf", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -11395,7 +11395,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap green_shard {
             get {
-                object obj = ResourceManager.GetObject("green_shard", resourceCulture);
+                var obj = ResourceManager.GetObject("green_shard", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -11405,7 +11405,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap greet_mail {
             get {
-                object obj = ResourceManager.GetObject("greet_mail", resourceCulture);
+                var obj = ResourceManager.GetObject("greet_mail", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -11415,7 +11415,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap grepa_berry {
             get {
-                object obj = ResourceManager.GetObject("grepa_berry", resourceCulture);
+                var obj = ResourceManager.GetObject("grepa_berry", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -11425,7 +11425,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap grip_claw {
             get {
-                object obj = ResourceManager.GetObject("grip_claw", resourceCulture);
+                var obj = ResourceManager.GetObject("grip_claw", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -11435,7 +11435,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap griseous_orb {
             get {
-                object obj = ResourceManager.GetObject("griseous_orb", resourceCulture);
+                var obj = ResourceManager.GetObject("griseous_orb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -11445,7 +11445,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap grn_apricorn {
             get {
-                object obj = ResourceManager.GetObject("grn_apricorn", resourceCulture);
+                var obj = ResourceManager.GetObject("grn_apricorn", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -11455,7 +11455,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap ground_gem {
             get {
-                object obj = ResourceManager.GetObject("ground_gem", resourceCulture);
+                var obj = ResourceManager.GetObject("ground_gem", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -11465,7 +11465,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap growth_mulch {
             get {
-                object obj = ResourceManager.GetObject("growth_mulch", resourceCulture);
+                var obj = ResourceManager.GetObject("growth_mulch", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -11475,7 +11475,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap grubby_hanky {
             get {
-                object obj = ResourceManager.GetObject("grubby_hanky", resourceCulture);
+                var obj = ResourceManager.GetObject("grubby_hanky", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -11485,7 +11485,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap guard_spec {
             get {
-                object obj = ResourceManager.GetObject("guard_spec", resourceCulture);
+                var obj = ResourceManager.GetObject("guard_spec", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -11495,7 +11495,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap gyaradosite {
             get {
-                object obj = ResourceManager.GetObject("gyaradosite", resourceCulture);
+                var obj = ResourceManager.GetObject("gyaradosite", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -11505,7 +11505,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap haban_berry {
             get {
-                object obj = ResourceManager.GetObject("haban_berry", resourceCulture);
+                var obj = ResourceManager.GetObject("haban_berry", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -11515,7 +11515,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap harbor_mail {
             get {
-                object obj = ResourceManager.GetObject("harbor_mail", resourceCulture);
+                var obj = ResourceManager.GetObject("harbor_mail", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -11525,7 +11525,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap hard_stone {
             get {
-                object obj = ResourceManager.GetObject("hard_stone", resourceCulture);
+                var obj = ResourceManager.GetObject("hard_stone", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -11535,7 +11535,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap heal_ball {
             get {
-                object obj = ResourceManager.GetObject("heal_ball", resourceCulture);
+                var obj = ResourceManager.GetObject("heal_ball", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -11545,7 +11545,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap heal_powder {
             get {
-                object obj = ResourceManager.GetObject("heal_powder", resourceCulture);
+                var obj = ResourceManager.GetObject("heal_powder", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -11555,7 +11555,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap health_wing {
             get {
-                object obj = ResourceManager.GetObject("health_wing", resourceCulture);
+                var obj = ResourceManager.GetObject("health_wing", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -11565,7 +11565,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap heart_mail {
             get {
-                object obj = ResourceManager.GetObject("heart_mail", resourceCulture);
+                var obj = ResourceManager.GetObject("heart_mail", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -11575,7 +11575,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap heart_scale {
             get {
-                object obj = ResourceManager.GetObject("heart_scale", resourceCulture);
+                var obj = ResourceManager.GetObject("heart_scale", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -11585,7 +11585,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap heat_rock {
             get {
-                object obj = ResourceManager.GetObject("heat_rock", resourceCulture);
+                var obj = ResourceManager.GetObject("heat_rock", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -11595,7 +11595,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap heavy_ball {
             get {
-                object obj = ResourceManager.GetObject("heavy_ball", resourceCulture);
+                var obj = ResourceManager.GetObject("heavy_ball", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -11605,7 +11605,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap helix_fossil {
             get {
-                object obj = ResourceManager.GetObject("helix_fossil", resourceCulture);
+                var obj = ResourceManager.GetObject("helix_fossil", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -11615,7 +11615,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap heracronite {
             get {
-                object obj = ResourceManager.GetObject("heracronite", resourceCulture);
+                var obj = ResourceManager.GetObject("heracronite", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -11625,7 +11625,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap hm_bug {
             get {
-                object obj = ResourceManager.GetObject("hm_bug", resourceCulture);
+                var obj = ResourceManager.GetObject("hm_bug", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -11635,7 +11635,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap hm_dark {
             get {
-                object obj = ResourceManager.GetObject("hm_dark", resourceCulture);
+                var obj = ResourceManager.GetObject("hm_dark", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -11645,7 +11645,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap hm_dragon {
             get {
-                object obj = ResourceManager.GetObject("hm_dragon", resourceCulture);
+                var obj = ResourceManager.GetObject("hm_dragon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -11655,7 +11655,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap hm_electric {
             get {
-                object obj = ResourceManager.GetObject("hm_electric", resourceCulture);
+                var obj = ResourceManager.GetObject("hm_electric", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -11665,7 +11665,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap hm_fighting {
             get {
-                object obj = ResourceManager.GetObject("hm_fighting", resourceCulture);
+                var obj = ResourceManager.GetObject("hm_fighting", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -11675,7 +11675,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap hm_fire {
             get {
-                object obj = ResourceManager.GetObject("hm_fire", resourceCulture);
+                var obj = ResourceManager.GetObject("hm_fire", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -11685,7 +11685,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap hm_flying {
             get {
-                object obj = ResourceManager.GetObject("hm_flying", resourceCulture);
+                var obj = ResourceManager.GetObject("hm_flying", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -11695,7 +11695,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap hm_ghost {
             get {
-                object obj = ResourceManager.GetObject("hm_ghost", resourceCulture);
+                var obj = ResourceManager.GetObject("hm_ghost", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -11705,7 +11705,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap hm_grass {
             get {
-                object obj = ResourceManager.GetObject("hm_grass", resourceCulture);
+                var obj = ResourceManager.GetObject("hm_grass", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -11715,7 +11715,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap hm_ground {
             get {
-                object obj = ResourceManager.GetObject("hm_ground", resourceCulture);
+                var obj = ResourceManager.GetObject("hm_ground", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -11725,7 +11725,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap hm_ice {
             get {
-                object obj = ResourceManager.GetObject("hm_ice", resourceCulture);
+                var obj = ResourceManager.GetObject("hm_ice", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -11735,7 +11735,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap hm_normal {
             get {
-                object obj = ResourceManager.GetObject("hm_normal", resourceCulture);
+                var obj = ResourceManager.GetObject("hm_normal", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -11745,7 +11745,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap hm_poison {
             get {
-                object obj = ResourceManager.GetObject("hm_poison", resourceCulture);
+                var obj = ResourceManager.GetObject("hm_poison", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -11755,7 +11755,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap hm_psychic {
             get {
-                object obj = ResourceManager.GetObject("hm_psychic", resourceCulture);
+                var obj = ResourceManager.GetObject("hm_psychic", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -11765,7 +11765,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap hm_rock {
             get {
-                object obj = ResourceManager.GetObject("hm_rock", resourceCulture);
+                var obj = ResourceManager.GetObject("hm_rock", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -11775,7 +11775,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap hm_steel {
             get {
-                object obj = ResourceManager.GetObject("hm_steel", resourceCulture);
+                var obj = ResourceManager.GetObject("hm_steel", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -11785,7 +11785,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap hm_water {
             get {
-                object obj = ResourceManager.GetObject("hm_water", resourceCulture);
+                var obj = ResourceManager.GetObject("hm_water", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -11795,7 +11795,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap holo_caster {
             get {
-                object obj = ResourceManager.GetObject("holo_caster", resourceCulture);
+                var obj = ResourceManager.GetObject("holo_caster", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -11805,7 +11805,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap holo_caster_green {
             get {
-                object obj = ResourceManager.GetObject("holo_caster_green", resourceCulture);
+                var obj = ResourceManager.GetObject("holo_caster_green", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -11815,7 +11815,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap holo_caster_red {
             get {
-                object obj = ResourceManager.GetObject("holo_caster_red", resourceCulture);
+                var obj = ResourceManager.GetObject("holo_caster_red", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -11825,7 +11825,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap hondew_berry {
             get {
-                object obj = ResourceManager.GetObject("hondew_berry", resourceCulture);
+                var obj = ResourceManager.GetObject("hondew_berry", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -11835,7 +11835,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap honey {
             get {
-                object obj = ResourceManager.GetObject("honey", resourceCulture);
+                var obj = ResourceManager.GetObject("honey", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -11845,7 +11845,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap honor_of_kalos {
             get {
-                object obj = ResourceManager.GetObject("honor_of_kalos", resourceCulture);
+                var obj = ResourceManager.GetObject("honor_of_kalos", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -11855,7 +11855,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap houndoominite {
             get {
-                object obj = ResourceManager.GetObject("houndoominite", resourceCulture);
+                var obj = ResourceManager.GetObject("houndoominite", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -11865,7 +11865,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap hp_up {
             get {
-                object obj = ResourceManager.GetObject("hp_up", resourceCulture);
+                var obj = ResourceManager.GetObject("hp_up", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -11875,7 +11875,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap hyper_potion {
             get {
-                object obj = ResourceManager.GetObject("hyper_potion", resourceCulture);
+                var obj = ResourceManager.GetObject("hyper_potion", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -11885,7 +11885,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap iapapa_berry {
             get {
-                object obj = ResourceManager.GetObject("iapapa_berry", resourceCulture);
+                var obj = ResourceManager.GetObject("iapapa_berry", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -11895,7 +11895,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap ice_gem {
             get {
-                object obj = ResourceManager.GetObject("ice_gem", resourceCulture);
+                var obj = ResourceManager.GetObject("ice_gem", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -11905,7 +11905,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap ice_heal {
             get {
-                object obj = ResourceManager.GetObject("ice_heal", resourceCulture);
+                var obj = ResourceManager.GetObject("ice_heal", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -11915,7 +11915,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap icicle_plate {
             get {
-                object obj = ResourceManager.GetObject("icicle_plate", resourceCulture);
+                var obj = ResourceManager.GetObject("icicle_plate", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -11925,7 +11925,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap icy_rock {
             get {
-                object obj = ResourceManager.GetObject("icy_rock", resourceCulture);
+                var obj = ResourceManager.GetObject("icy_rock", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -11935,7 +11935,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap inquiry_mail {
             get {
-                object obj = ResourceManager.GetObject("inquiry_mail", resourceCulture);
+                var obj = ResourceManager.GetObject("inquiry_mail", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -11945,7 +11945,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap insect_plate {
             get {
-                object obj = ResourceManager.GetObject("insect_plate", resourceCulture);
+                var obj = ResourceManager.GetObject("insect_plate", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -11955,7 +11955,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap intriguing_stone {
             get {
-                object obj = ResourceManager.GetObject("intriguing_stone", resourceCulture);
+                var obj = ResourceManager.GetObject("intriguing_stone", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -11965,7 +11965,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap iron {
             get {
-                object obj = ResourceManager.GetObject("iron", resourceCulture);
+                var obj = ResourceManager.GetObject("iron", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -11975,7 +11975,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap iron_ball {
             get {
-                object obj = ResourceManager.GetObject("iron_ball", resourceCulture);
+                var obj = ResourceManager.GetObject("iron_ball", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -11985,7 +11985,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap iron_plate {
             get {
-                object obj = ResourceManager.GetObject("iron_plate", resourceCulture);
+                var obj = ResourceManager.GetObject("iron_plate", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -11995,7 +11995,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap item_drop {
             get {
-                object obj = ResourceManager.GetObject("item_drop", resourceCulture);
+                var obj = ResourceManager.GetObject("item_drop", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -12005,7 +12005,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap item_urge {
             get {
-                object obj = ResourceManager.GetObject("item_urge", resourceCulture);
+                var obj = ResourceManager.GetObject("item_urge", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -12015,7 +12015,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap jaboca_berry {
             get {
-                object obj = ResourceManager.GetObject("jaboca_berry", resourceCulture);
+                var obj = ResourceManager.GetObject("jaboca_berry", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -12025,7 +12025,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap jade_orb {
             get {
-                object obj = ResourceManager.GetObject("jade_orb", resourceCulture);
+                var obj = ResourceManager.GetObject("jade_orb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -12035,7 +12035,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap jaw_fossil {
             get {
-                object obj = ResourceManager.GetObject("jaw_fossil", resourceCulture);
+                var obj = ResourceManager.GetObject("jaw_fossil", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -12045,7 +12045,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap journal {
             get {
-                object obj = ResourceManager.GetObject("journal", resourceCulture);
+                var obj = ResourceManager.GetObject("journal", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -12055,7 +12055,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap kangaskhanite {
             get {
-                object obj = ResourceManager.GetObject("kangaskhanite", resourceCulture);
+                var obj = ResourceManager.GetObject("kangaskhanite", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -12065,7 +12065,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap kasib_berry {
             get {
-                object obj = ResourceManager.GetObject("kasib_berry", resourceCulture);
+                var obj = ResourceManager.GetObject("kasib_berry", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -12075,7 +12075,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap kebia_berry {
             get {
-                object obj = ResourceManager.GetObject("kebia_berry", resourceCulture);
+                var obj = ResourceManager.GetObject("kebia_berry", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -12085,7 +12085,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap kee_berry {
             get {
-                object obj = ResourceManager.GetObject("kee_berry", resourceCulture);
+                var obj = ResourceManager.GetObject("kee_berry", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -12095,7 +12095,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap kelpsy_berry {
             get {
-                object obj = ResourceManager.GetObject("kelpsy_berry", resourceCulture);
+                var obj = ResourceManager.GetObject("kelpsy_berry", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -12105,7 +12105,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap kings_rock {
             get {
-                object obj = ResourceManager.GetObject("kings_rock", resourceCulture);
+                var obj = ResourceManager.GetObject("kings_rock", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -12115,7 +12115,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap lagging_tail {
             get {
-                object obj = ResourceManager.GetObject("lagging_tail", resourceCulture);
+                var obj = ResourceManager.GetObject("lagging_tail", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -12125,7 +12125,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap lansat_berry {
             get {
-                object obj = ResourceManager.GetObject("lansat_berry", resourceCulture);
+                var obj = ResourceManager.GetObject("lansat_berry", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -12135,7 +12135,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap lava_cookie {
             get {
-                object obj = ResourceManager.GetObject("lava_cookie", resourceCulture);
+                var obj = ResourceManager.GetObject("lava_cookie", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -12145,7 +12145,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap lax_incense {
             get {
-                object obj = ResourceManager.GetObject("lax_incense", resourceCulture);
+                var obj = ResourceManager.GetObject("lax_incense", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -12155,7 +12155,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap leaf_crown {
             get {
-                object obj = ResourceManager.GetObject("leaf_crown", resourceCulture);
+                var obj = ResourceManager.GetObject("leaf_crown", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -12165,7 +12165,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap leaf_stone {
             get {
-                object obj = ResourceManager.GetObject("leaf_stone", resourceCulture);
+                var obj = ResourceManager.GetObject("leaf_stone", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -12175,7 +12175,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap leftovers {
             get {
-                object obj = ResourceManager.GetObject("leftovers", resourceCulture);
+                var obj = ResourceManager.GetObject("leftovers", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -12185,7 +12185,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap lemonade {
             get {
-                object obj = ResourceManager.GetObject("lemonade", resourceCulture);
+                var obj = ResourceManager.GetObject("lemonade", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -12195,7 +12195,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap lens_case {
             get {
-                object obj = ResourceManager.GetObject("lens_case", resourceCulture);
+                var obj = ResourceManager.GetObject("lens_case", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -12205,7 +12205,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap leppa_berry {
             get {
-                object obj = ResourceManager.GetObject("leppa_berry", resourceCulture);
+                var obj = ResourceManager.GetObject("leppa_berry", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -12215,7 +12215,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap letter {
             get {
-                object obj = ResourceManager.GetObject("letter", resourceCulture);
+                var obj = ResourceManager.GetObject("letter", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -12225,7 +12225,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap level_ball {
             get {
-                object obj = ResourceManager.GetObject("level_ball", resourceCulture);
+                var obj = ResourceManager.GetObject("level_ball", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -12235,7 +12235,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap liberty_pass {
             get {
-                object obj = ResourceManager.GetObject("liberty_pass", resourceCulture);
+                var obj = ResourceManager.GetObject("liberty_pass", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -12245,7 +12245,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap liechi_berry {
             get {
-                object obj = ResourceManager.GetObject("liechi_berry", resourceCulture);
+                var obj = ResourceManager.GetObject("liechi_berry", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -12255,7 +12255,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap life_orb {
             get {
-                object obj = ResourceManager.GetObject("life_orb", resourceCulture);
+                var obj = ResourceManager.GetObject("life_orb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -12265,7 +12265,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap lift_key {
             get {
-                object obj = ResourceManager.GetObject("lift_key", resourceCulture);
+                var obj = ResourceManager.GetObject("lift_key", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -12275,7 +12275,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap light_ball {
             get {
-                object obj = ResourceManager.GetObject("light_ball", resourceCulture);
+                var obj = ResourceManager.GetObject("light_ball", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -12285,7 +12285,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap light_clay {
             get {
-                object obj = ResourceManager.GetObject("light_clay", resourceCulture);
+                var obj = ResourceManager.GetObject("light_clay", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -12295,7 +12295,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap light_stone {
             get {
-                object obj = ResourceManager.GetObject("light_stone", resourceCulture);
+                var obj = ResourceManager.GetObject("light_stone", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -12305,7 +12305,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap like_mail {
             get {
-                object obj = ResourceManager.GetObject("like_mail", resourceCulture);
+                var obj = ResourceManager.GetObject("like_mail", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -12315,7 +12315,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap lock_capsule {
             get {
-                object obj = ResourceManager.GetObject("lock_capsule", resourceCulture);
+                var obj = ResourceManager.GetObject("lock_capsule", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -12325,7 +12325,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap looker_ticket {
             get {
-                object obj = ResourceManager.GetObject("looker_ticket", resourceCulture);
+                var obj = ResourceManager.GetObject("looker_ticket", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -12335,7 +12335,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap loot_sack {
             get {
-                object obj = ResourceManager.GetObject("loot_sack", resourceCulture);
+                var obj = ResourceManager.GetObject("loot_sack", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -12345,7 +12345,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap lost_item {
             get {
-                object obj = ResourceManager.GetObject("lost_item", resourceCulture);
+                var obj = ResourceManager.GetObject("lost_item", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -12355,7 +12355,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap love_ball {
             get {
-                object obj = ResourceManager.GetObject("love_ball", resourceCulture);
+                var obj = ResourceManager.GetObject("love_ball", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -12365,7 +12365,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap lucarionite {
             get {
-                object obj = ResourceManager.GetObject("lucarionite", resourceCulture);
+                var obj = ResourceManager.GetObject("lucarionite", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -12375,7 +12375,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap luck_incense {
             get {
-                object obj = ResourceManager.GetObject("luck_incense", resourceCulture);
+                var obj = ResourceManager.GetObject("luck_incense", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -12385,7 +12385,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap lucky_egg {
             get {
-                object obj = ResourceManager.GetObject("lucky_egg", resourceCulture);
+                var obj = ResourceManager.GetObject("lucky_egg", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -12395,7 +12395,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap lucky_punch {
             get {
-                object obj = ResourceManager.GetObject("lucky_punch", resourceCulture);
+                var obj = ResourceManager.GetObject("lucky_punch", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -12405,7 +12405,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap lum_berry {
             get {
-                object obj = ResourceManager.GetObject("lum_berry", resourceCulture);
+                var obj = ResourceManager.GetObject("lum_berry", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -12415,7 +12415,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap luminous_moss {
             get {
-                object obj = ResourceManager.GetObject("luminous_moss", resourceCulture);
+                var obj = ResourceManager.GetObject("luminous_moss", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -12425,7 +12425,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap lumiose_galette {
             get {
-                object obj = ResourceManager.GetObject("lumiose_galette", resourceCulture);
+                var obj = ResourceManager.GetObject("lumiose_galette", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -12435,7 +12435,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap lunar_wing {
             get {
-                object obj = ResourceManager.GetObject("lunar_wing", resourceCulture);
+                var obj = ResourceManager.GetObject("lunar_wing", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -12445,7 +12445,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap lure_ball {
             get {
-                object obj = ResourceManager.GetObject("lure_ball", resourceCulture);
+                var obj = ResourceManager.GetObject("lure_ball", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -12455,7 +12455,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap lustrous_orb {
             get {
-                object obj = ResourceManager.GetObject("lustrous_orb", resourceCulture);
+                var obj = ResourceManager.GetObject("lustrous_orb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -12465,7 +12465,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap luxury_ball {
             get {
-                object obj = ResourceManager.GetObject("luxury_ball", resourceCulture);
+                var obj = ResourceManager.GetObject("luxury_ball", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -12475,7 +12475,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap m_00 {
             get {
-                object obj = ResourceManager.GetObject("m_00", resourceCulture);
+                var obj = ResourceManager.GetObject("m_00", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -12485,7 +12485,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap m_01 {
             get {
-                object obj = ResourceManager.GetObject("m_01", resourceCulture);
+                var obj = ResourceManager.GetObject("m_01", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -12495,7 +12495,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap m_10 {
             get {
-                object obj = ResourceManager.GetObject("m_10", resourceCulture);
+                var obj = ResourceManager.GetObject("m_10", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -12505,7 +12505,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap m_11 {
             get {
-                object obj = ResourceManager.GetObject("m_11", resourceCulture);
+                var obj = ResourceManager.GetObject("m_11", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -12515,7 +12515,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap m_20 {
             get {
-                object obj = ResourceManager.GetObject("m_20", resourceCulture);
+                var obj = ResourceManager.GetObject("m_20", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -12525,7 +12525,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap m_21 {
             get {
-                object obj = ResourceManager.GetObject("m_21", resourceCulture);
+                var obj = ResourceManager.GetObject("m_21", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -12535,7 +12535,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap m_30 {
             get {
-                object obj = ResourceManager.GetObject("m_30", resourceCulture);
+                var obj = ResourceManager.GetObject("m_30", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -12545,7 +12545,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap m_31 {
             get {
-                object obj = ResourceManager.GetObject("m_31", resourceCulture);
+                var obj = ResourceManager.GetObject("m_31", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -12555,7 +12555,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap m_40 {
             get {
-                object obj = ResourceManager.GetObject("m_40", resourceCulture);
+                var obj = ResourceManager.GetObject("m_40", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -12565,7 +12565,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap m_41 {
             get {
-                object obj = ResourceManager.GetObject("m_41", resourceCulture);
+                var obj = ResourceManager.GetObject("m_41", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -12575,7 +12575,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap m_50 {
             get {
-                object obj = ResourceManager.GetObject("m_50", resourceCulture);
+                var obj = ResourceManager.GetObject("m_50", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -12585,7 +12585,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap m_51 {
             get {
-                object obj = ResourceManager.GetObject("m_51", resourceCulture);
+                var obj = ResourceManager.GetObject("m_51", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -12595,7 +12595,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap mach_bike {
             get {
-                object obj = ResourceManager.GetObject("mach_bike", resourceCulture);
+                var obj = ResourceManager.GetObject("mach_bike", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -12605,7 +12605,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap machine_part {
             get {
-                object obj = ResourceManager.GetObject("machine_part", resourceCulture);
+                var obj = ResourceManager.GetObject("machine_part", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -12615,7 +12615,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap macho_brace {
             get {
-                object obj = ResourceManager.GetObject("macho_brace", resourceCulture);
+                var obj = ResourceManager.GetObject("macho_brace", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -12625,7 +12625,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap magma_emblem {
             get {
-                object obj = ResourceManager.GetObject("magma_emblem", resourceCulture);
+                var obj = ResourceManager.GetObject("magma_emblem", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -12635,7 +12635,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap magma_stone {
             get {
-                object obj = ResourceManager.GetObject("magma_stone", resourceCulture);
+                var obj = ResourceManager.GetObject("magma_stone", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -12645,7 +12645,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap magmarizer {
             get {
-                object obj = ResourceManager.GetObject("magmarizer", resourceCulture);
+                var obj = ResourceManager.GetObject("magmarizer", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -12655,7 +12655,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap magnet {
             get {
-                object obj = ResourceManager.GetObject("magnet", resourceCulture);
+                var obj = ResourceManager.GetObject("magnet", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -12665,7 +12665,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap mago_berry {
             get {
-                object obj = ResourceManager.GetObject("mago_berry", resourceCulture);
+                var obj = ResourceManager.GetObject("mago_berry", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -12675,7 +12675,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap magost_berry {
             get {
-                object obj = ResourceManager.GetObject("magost_berry", resourceCulture);
+                var obj = ResourceManager.GetObject("magost_berry", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -12685,7 +12685,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap male {
             get {
-                object obj = ResourceManager.GetObject("male", resourceCulture);
+                var obj = ResourceManager.GetObject("male", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -12695,7 +12695,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap manectite {
             get {
-                object obj = ResourceManager.GetObject("manectite", resourceCulture);
+                var obj = ResourceManager.GetObject("manectite", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -12705,7 +12705,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap maranga_berry {
             get {
-                object obj = ResourceManager.GetObject("maranga_berry", resourceCulture);
+                var obj = ResourceManager.GetObject("maranga_berry", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -12715,7 +12715,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap master_ball {
             get {
-                object obj = ResourceManager.GetObject("master_ball", resourceCulture);
+                var obj = ResourceManager.GetObject("master_ball", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -12725,7 +12725,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap mawilite {
             get {
-                object obj = ResourceManager.GetObject("mawilite", resourceCulture);
+                var obj = ResourceManager.GetObject("mawilite", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -12735,7 +12735,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap max_elixir {
             get {
-                object obj = ResourceManager.GetObject("max_elixir", resourceCulture);
+                var obj = ResourceManager.GetObject("max_elixir", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -12745,7 +12745,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap max_ether {
             get {
-                object obj = ResourceManager.GetObject("max_ether", resourceCulture);
+                var obj = ResourceManager.GetObject("max_ether", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -12755,7 +12755,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap max_potion {
             get {
-                object obj = ResourceManager.GetObject("max_potion", resourceCulture);
+                var obj = ResourceManager.GetObject("max_potion", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -12765,7 +12765,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap max_repel {
             get {
-                object obj = ResourceManager.GetObject("max_repel", resourceCulture);
+                var obj = ResourceManager.GetObject("max_repel", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -12775,7 +12775,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap max_revive {
             get {
-                object obj = ResourceManager.GetObject("max_revive", resourceCulture);
+                var obj = ResourceManager.GetObject("max_revive", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -12785,7 +12785,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap meadow_plate {
             get {
-                object obj = ResourceManager.GetObject("meadow_plate", resourceCulture);
+                var obj = ResourceManager.GetObject("meadow_plate", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -12795,7 +12795,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap mech_mail {
             get {
-                object obj = ResourceManager.GetObject("mech_mail", resourceCulture);
+                var obj = ResourceManager.GetObject("mech_mail", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -12805,7 +12805,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap medal_box {
             get {
-                object obj = ResourceManager.GetObject("medal_box", resourceCulture);
+                var obj = ResourceManager.GetObject("medal_box", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -12815,7 +12815,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap medichamite {
             get {
-                object obj = ResourceManager.GetObject("medichamite", resourceCulture);
+                var obj = ResourceManager.GetObject("medichamite", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -12825,7 +12825,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap mega_ring {
             get {
-                object obj = ResourceManager.GetObject("mega_ring", resourceCulture);
+                var obj = ResourceManager.GetObject("mega_ring", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -12835,7 +12835,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap member_card {
             get {
-                object obj = ResourceManager.GetObject("member_card", resourceCulture);
+                var obj = ResourceManager.GetObject("member_card", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -12845,7 +12845,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap mental_herb {
             get {
-                object obj = ResourceManager.GetObject("mental_herb", resourceCulture);
+                var obj = ResourceManager.GetObject("mental_herb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -12855,7 +12855,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap metal_coat {
             get {
-                object obj = ResourceManager.GetObject("metal_coat", resourceCulture);
+                var obj = ResourceManager.GetObject("metal_coat", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -12865,7 +12865,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap metal_powder {
             get {
-                object obj = ResourceManager.GetObject("metal_powder", resourceCulture);
+                var obj = ResourceManager.GetObject("metal_powder", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -12875,7 +12875,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap meteorite {
             get {
-                object obj = ResourceManager.GetObject("meteorite", resourceCulture);
+                var obj = ResourceManager.GetObject("meteorite", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -12885,7 +12885,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap metronome {
             get {
-                object obj = ResourceManager.GetObject("metronome", resourceCulture);
+                var obj = ResourceManager.GetObject("metronome", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -12895,7 +12895,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap mewtwonite_x {
             get {
-                object obj = ResourceManager.GetObject("mewtwonite_x", resourceCulture);
+                var obj = ResourceManager.GetObject("mewtwonite_x", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -12905,7 +12905,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap mewtwonite_y {
             get {
-                object obj = ResourceManager.GetObject("mewtwonite_y", resourceCulture);
+                var obj = ResourceManager.GetObject("mewtwonite_y", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -12915,7 +12915,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap micle_berry {
             get {
-                object obj = ResourceManager.GetObject("micle_berry", resourceCulture);
+                var obj = ResourceManager.GetObject("micle_berry", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -12925,7 +12925,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap mind_plate {
             get {
-                object obj = ResourceManager.GetObject("mind_plate", resourceCulture);
+                var obj = ResourceManager.GetObject("mind_plate", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -12935,7 +12935,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap miracle_seed {
             get {
-                object obj = ResourceManager.GetObject("miracle_seed", resourceCulture);
+                var obj = ResourceManager.GetObject("miracle_seed", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -12945,7 +12945,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap moomoo_milk {
             get {
-                object obj = ResourceManager.GetObject("moomoo_milk", resourceCulture);
+                var obj = ResourceManager.GetObject("moomoo_milk", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -12955,7 +12955,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap moon_ball {
             get {
-                object obj = ResourceManager.GetObject("moon_ball", resourceCulture);
+                var obj = ResourceManager.GetObject("moon_ball", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -12965,7 +12965,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap moon_stone {
             get {
-                object obj = ResourceManager.GetObject("moon_stone", resourceCulture);
+                var obj = ResourceManager.GetObject("moon_stone", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -12975,7 +12975,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap mosaic_mail {
             get {
-                object obj = ResourceManager.GetObject("mosaic_mail", resourceCulture);
+                var obj = ResourceManager.GetObject("mosaic_mail", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -12985,7 +12985,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap muscle_band {
             get {
-                object obj = ResourceManager.GetObject("muscle_band", resourceCulture);
+                var obj = ResourceManager.GetObject("muscle_band", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -12995,7 +12995,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap muscle_wing {
             get {
-                object obj = ResourceManager.GetObject("muscle_wing", resourceCulture);
+                var obj = ResourceManager.GetObject("muscle_wing", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -13005,7 +13005,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap mystery_egg {
             get {
-                object obj = ResourceManager.GetObject("mystery_egg", resourceCulture);
+                var obj = ResourceManager.GetObject("mystery_egg", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -13015,7 +13015,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap mystic_water {
             get {
-                object obj = ResourceManager.GetObject("mystic_water", resourceCulture);
+                var obj = ResourceManager.GetObject("mystic_water", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -13025,7 +13025,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap mysticticket {
             get {
-                object obj = ResourceManager.GetObject("mysticticket", resourceCulture);
+                var obj = ResourceManager.GetObject("mysticticket", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -13035,7 +13035,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap nanab_berry {
             get {
-                object obj = ResourceManager.GetObject("nanab_berry", resourceCulture);
+                var obj = ResourceManager.GetObject("nanab_berry", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -13045,7 +13045,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap nest_ball {
             get {
-                object obj = ResourceManager.GetObject("nest_ball", resourceCulture);
+                var obj = ResourceManager.GetObject("nest_ball", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -13055,7 +13055,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap net_ball {
             get {
-                object obj = ResourceManager.GetObject("net_ball", resourceCulture);
+                var obj = ResourceManager.GetObject("net_ball", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -13065,7 +13065,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap never_melt_ice {
             get {
-                object obj = ResourceManager.GetObject("never_melt_ice", resourceCulture);
+                var obj = ResourceManager.GetObject("never_melt_ice", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -13075,7 +13075,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap nevermeltice {
             get {
-                object obj = ResourceManager.GetObject("nevermeltice", resourceCulture);
+                var obj = ResourceManager.GetObject("nevermeltice", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -13085,7 +13085,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap nomel_berry {
             get {
-                object obj = ResourceManager.GetObject("nomel_berry", resourceCulture);
+                var obj = ResourceManager.GetObject("nomel_berry", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -13095,7 +13095,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap normal_gem {
             get {
-                object obj = ResourceManager.GetObject("normal_gem", resourceCulture);
+                var obj = ResourceManager.GetObject("normal_gem", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -13105,7 +13105,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap nugget {
             get {
-                object obj = ResourceManager.GetObject("nugget", resourceCulture);
+                var obj = ResourceManager.GetObject("nugget", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -13115,7 +13115,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap oaks_letter {
             get {
-                object obj = ResourceManager.GetObject("oaks_letter", resourceCulture);
+                var obj = ResourceManager.GetObject("oaks_letter", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -13125,7 +13125,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap oaks_parcel {
             get {
-                object obj = ResourceManager.GetObject("oaks_parcel", resourceCulture);
+                var obj = ResourceManager.GetObject("oaks_parcel", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -13135,7 +13135,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap occa_berry {
             get {
-                object obj = ResourceManager.GetObject("occa_berry", resourceCulture);
+                var obj = ResourceManager.GetObject("occa_berry", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -13145,7 +13145,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap odd_incense {
             get {
-                object obj = ResourceManager.GetObject("odd_incense", resourceCulture);
+                var obj = ResourceManager.GetObject("odd_incense", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -13155,7 +13155,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap odd_keystone {
             get {
-                object obj = ResourceManager.GetObject("odd_keystone", resourceCulture);
+                var obj = ResourceManager.GetObject("odd_keystone", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -13165,7 +13165,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap old_amber {
             get {
-                object obj = ResourceManager.GetObject("old_amber", resourceCulture);
+                var obj = ResourceManager.GetObject("old_amber", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -13175,7 +13175,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap old_charm {
             get {
-                object obj = ResourceManager.GetObject("old_charm", resourceCulture);
+                var obj = ResourceManager.GetObject("old_charm", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -13185,7 +13185,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap old_gateau {
             get {
-                object obj = ResourceManager.GetObject("old_gateau", resourceCulture);
+                var obj = ResourceManager.GetObject("old_gateau", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -13195,7 +13195,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap old_rod {
             get {
-                object obj = ResourceManager.GetObject("old_rod", resourceCulture);
+                var obj = ResourceManager.GetObject("old_rod", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -13205,7 +13205,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap old_sea_map {
             get {
-                object obj = ResourceManager.GetObject("old_sea_map", resourceCulture);
+                var obj = ResourceManager.GetObject("old_sea_map", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -13215,7 +13215,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap oran_berry {
             get {
-                object obj = ResourceManager.GetObject("oran_berry", resourceCulture);
+                var obj = ResourceManager.GetObject("oran_berry", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -13225,7 +13225,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap orange_mail {
             get {
-                object obj = ResourceManager.GetObject("orange_mail", resourceCulture);
+                var obj = ResourceManager.GetObject("orange_mail", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -13235,7 +13235,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap other {
             get {
-                object obj = ResourceManager.GetObject("other", resourceCulture);
+                var obj = ResourceManager.GetObject("other", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -13245,7 +13245,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap oval_charm {
             get {
-                object obj = ResourceManager.GetObject("oval_charm", resourceCulture);
+                var obj = ResourceManager.GetObject("oval_charm", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -13255,7 +13255,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap oval_stone {
             get {
-                object obj = ResourceManager.GetObject("oval_stone", resourceCulture);
+                var obj = ResourceManager.GetObject("oval_stone", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -13265,7 +13265,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap pal_pad {
             get {
-                object obj = ResourceManager.GetObject("pal_pad", resourceCulture);
+                var obj = ResourceManager.GetObject("pal_pad", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -13275,7 +13275,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap pamtre_berry {
             get {
-                object obj = ResourceManager.GetObject("pamtre_berry", resourceCulture);
+                var obj = ResourceManager.GetObject("pamtre_berry", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -13285,7 +13285,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap paralysis {
             get {
-                object obj = ResourceManager.GetObject("paralysis", resourceCulture);
+                var obj = ResourceManager.GetObject("paralysis", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -13295,7 +13295,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap paralyze_heal {
             get {
-                object obj = ResourceManager.GetObject("paralyze_heal", resourceCulture);
+                var obj = ResourceManager.GetObject("paralyze_heal", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -13305,7 +13305,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap parcel {
             get {
-                object obj = ResourceManager.GetObject("parcel", resourceCulture);
+                var obj = ResourceManager.GetObject("parcel", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -13315,7 +13315,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap park_ball {
             get {
-                object obj = ResourceManager.GetObject("park_ball", resourceCulture);
+                var obj = ResourceManager.GetObject("park_ball", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -13325,7 +13325,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap parlyz_heal {
             get {
-                object obj = ResourceManager.GetObject("parlyz_heal", resourceCulture);
+                var obj = ResourceManager.GetObject("parlyz_heal", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -13335,7 +13335,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap pass {
             get {
-                object obj = ResourceManager.GetObject("pass", resourceCulture);
+                var obj = ResourceManager.GetObject("pass", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -13345,7 +13345,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap pass_orb {
             get {
-                object obj = ResourceManager.GetObject("pass_orb", resourceCulture);
+                var obj = ResourceManager.GetObject("pass_orb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -13355,7 +13355,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap passho_berry {
             get {
-                object obj = ResourceManager.GetObject("passho_berry", resourceCulture);
+                var obj = ResourceManager.GetObject("passho_berry", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -13365,7 +13365,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap payapa_berry {
             get {
-                object obj = ResourceManager.GetObject("payapa_berry", resourceCulture);
+                var obj = ResourceManager.GetObject("payapa_berry", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -13375,7 +13375,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap pearl {
             get {
-                object obj = ResourceManager.GetObject("pearl", resourceCulture);
+                var obj = ResourceManager.GetObject("pearl", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -13385,7 +13385,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap pearl_string {
             get {
-                object obj = ResourceManager.GetObject("pearl_string", resourceCulture);
+                var obj = ResourceManager.GetObject("pearl_string", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -13395,7 +13395,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap pecha_berry {
             get {
-                object obj = ResourceManager.GetObject("pecha_berry", resourceCulture);
+                var obj = ResourceManager.GetObject("pecha_berry", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -13405,7 +13405,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap permit {
             get {
-                object obj = ResourceManager.GetObject("permit", resourceCulture);
+                var obj = ResourceManager.GetObject("permit", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -13415,7 +13415,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap persim_berry {
             get {
-                object obj = ResourceManager.GetObject("persim_berry", resourceCulture);
+                var obj = ResourceManager.GetObject("persim_berry", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -13425,7 +13425,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap petaya_berry {
             get {
-                object obj = ResourceManager.GetObject("petaya_berry", resourceCulture);
+                var obj = ResourceManager.GetObject("petaya_berry", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -13435,7 +13435,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap photo_album {
             get {
-                object obj = ResourceManager.GetObject("photo_album", resourceCulture);
+                var obj = ResourceManager.GetObject("photo_album", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -13445,7 +13445,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap physical {
             get {
-                object obj = ResourceManager.GetObject("physical", resourceCulture);
+                var obj = ResourceManager.GetObject("physical", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -13455,7 +13455,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap pinap_berry {
             get {
-                object obj = ResourceManager.GetObject("pinap_berry", resourceCulture);
+                var obj = ResourceManager.GetObject("pinap_berry", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -13465,7 +13465,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap pink_apricorn {
             get {
-                object obj = ResourceManager.GetObject("pink_apricorn", resourceCulture);
+                var obj = ResourceManager.GetObject("pink_apricorn", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -13475,7 +13475,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap pink_scarf {
             get {
-                object obj = ResourceManager.GetObject("pink_scarf", resourceCulture);
+                var obj = ResourceManager.GetObject("pink_scarf", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -13485,7 +13485,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap pinsirite {
             get {
-                object obj = ResourceManager.GetObject("pinsirite", resourceCulture);
+                var obj = ResourceManager.GetObject("pinsirite", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -13495,7 +13495,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap pixie_plate {
             get {
-                object obj = ResourceManager.GetObject("pixie_plate", resourceCulture);
+                var obj = ResourceManager.GetObject("pixie_plate", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -13505,7 +13505,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap plasma_card {
             get {
-                object obj = ResourceManager.GetObject("plasma_card", resourceCulture);
+                var obj = ResourceManager.GetObject("plasma_card", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -13515,7 +13515,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap plume_fossil {
             get {
-                object obj = ResourceManager.GetObject("plume_fossil", resourceCulture);
+                var obj = ResourceManager.GetObject("plume_fossil", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -13525,7 +13525,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap pnk_apricorn {
             get {
-                object obj = ResourceManager.GetObject("pnk_apricorn", resourceCulture);
+                var obj = ResourceManager.GetObject("pnk_apricorn", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -13535,7 +13535,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap poffin_case {
             get {
-                object obj = ResourceManager.GetObject("poffin_case", resourceCulture);
+                var obj = ResourceManager.GetObject("poffin_case", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -13545,7 +13545,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap point_card {
             get {
-                object obj = ResourceManager.GetObject("point_card", resourceCulture);
+                var obj = ResourceManager.GetObject("point_card", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -13555,7 +13555,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap poison_barb {
             get {
-                object obj = ResourceManager.GetObject("poison_barb", resourceCulture);
+                var obj = ResourceManager.GetObject("poison_barb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -13565,7 +13565,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap poison_gem {
             get {
-                object obj = ResourceManager.GetObject("poison_gem", resourceCulture);
+                var obj = ResourceManager.GetObject("poison_gem", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -13575,7 +13575,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap poisoned {
             get {
-                object obj = ResourceManager.GetObject("poisoned", resourceCulture);
+                var obj = ResourceManager.GetObject("poisoned", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -13585,7 +13585,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap poke_ball {
             get {
-                object obj = ResourceManager.GetObject("poke_ball", resourceCulture);
+                var obj = ResourceManager.GetObject("poke_ball", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -13595,7 +13595,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap poke_doll {
             get {
-                object obj = ResourceManager.GetObject("poke_doll", resourceCulture);
+                var obj = ResourceManager.GetObject("poke_doll", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -13605,7 +13605,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap poke_flute {
             get {
-                object obj = ResourceManager.GetObject("poke_flute", resourceCulture);
+                var obj = ResourceManager.GetObject("poke_flute", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -13615,7 +13615,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap poke_radar {
             get {
-                object obj = ResourceManager.GetObject("poke_radar", resourceCulture);
+                var obj = ResourceManager.GetObject("poke_radar", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -13625,7 +13625,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap poke_toy {
             get {
-                object obj = ResourceManager.GetObject("poke_toy", resourceCulture);
+                var obj = ResourceManager.GetObject("poke_toy", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -13635,7 +13635,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap pokeblock_case {
             get {
-                object obj = ResourceManager.GetObject("pokeblock_case", resourceCulture);
+                var obj = ResourceManager.GetObject("pokeblock_case", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -13645,7 +13645,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap pokerus_cured {
             get {
-                object obj = ResourceManager.GetObject("pokerus_cured", resourceCulture);
+                var obj = ResourceManager.GetObject("pokerus_cured", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -13655,7 +13655,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap pomeg_berry {
             get {
-                object obj = ResourceManager.GetObject("pomeg_berry", resourceCulture);
+                var obj = ResourceManager.GetObject("pomeg_berry", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -13665,7 +13665,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap potion {
             get {
-                object obj = ResourceManager.GetObject("potion", resourceCulture);
+                var obj = ResourceManager.GetObject("potion", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -13675,7 +13675,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap powder_jar {
             get {
-                object obj = ResourceManager.GetObject("powder_jar", resourceCulture);
+                var obj = ResourceManager.GetObject("powder_jar", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -13685,7 +13685,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap power_anklet {
             get {
-                object obj = ResourceManager.GetObject("power_anklet", resourceCulture);
+                var obj = ResourceManager.GetObject("power_anklet", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -13695,7 +13695,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap power_band {
             get {
-                object obj = ResourceManager.GetObject("power_band", resourceCulture);
+                var obj = ResourceManager.GetObject("power_band", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -13705,7 +13705,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap power_belt {
             get {
-                object obj = ResourceManager.GetObject("power_belt", resourceCulture);
+                var obj = ResourceManager.GetObject("power_belt", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -13715,7 +13715,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap power_bracer {
             get {
-                object obj = ResourceManager.GetObject("power_bracer", resourceCulture);
+                var obj = ResourceManager.GetObject("power_bracer", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -13725,7 +13725,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap power_herb {
             get {
-                object obj = ResourceManager.GetObject("power_herb", resourceCulture);
+                var obj = ResourceManager.GetObject("power_herb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -13735,7 +13735,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap power_lens {
             get {
-                object obj = ResourceManager.GetObject("power_lens", resourceCulture);
+                var obj = ResourceManager.GetObject("power_lens", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -13745,7 +13745,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap power_plant_pass {
             get {
-                object obj = ResourceManager.GetObject("power_plant_pass", resourceCulture);
+                var obj = ResourceManager.GetObject("power_plant_pass", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -13755,7 +13755,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap power_weight {
             get {
-                object obj = ResourceManager.GetObject("power_weight", resourceCulture);
+                var obj = ResourceManager.GetObject("power_weight", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -13765,7 +13765,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap pp_max {
             get {
-                object obj = ResourceManager.GetObject("pp_max", resourceCulture);
+                var obj = ResourceManager.GetObject("pp_max", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -13775,7 +13775,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap pp_up {
             get {
-                object obj = ResourceManager.GetObject("pp_up", resourceCulture);
+                var obj = ResourceManager.GetObject("pp_up", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -13785,7 +13785,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap premier_ball {
             get {
-                object obj = ResourceManager.GetObject("premier_ball", resourceCulture);
+                var obj = ResourceManager.GetObject("premier_ball", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -13795,7 +13795,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap pretty_wing {
             get {
-                object obj = ResourceManager.GetObject("pretty_wing", resourceCulture);
+                var obj = ResourceManager.GetObject("pretty_wing", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -13805,7 +13805,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap prism_scale {
             get {
-                object obj = ResourceManager.GetObject("prism_scale", resourceCulture);
+                var obj = ResourceManager.GetObject("prism_scale", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -13815,7 +13815,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap profs_letter {
             get {
-                object obj = ResourceManager.GetObject("profs_letter", resourceCulture);
+                var obj = ResourceManager.GetObject("profs_letter", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -13825,7 +13825,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap prop_case {
             get {
-                object obj = ResourceManager.GetObject("prop_case", resourceCulture);
+                var obj = ResourceManager.GetObject("prop_case", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -13835,7 +13835,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap protector {
             get {
-                object obj = ResourceManager.GetObject("protector", resourceCulture);
+                var obj = ResourceManager.GetObject("protector", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -13845,7 +13845,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap protein {
             get {
-                object obj = ResourceManager.GetObject("protein", resourceCulture);
+                var obj = ResourceManager.GetObject("protein", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -13855,7 +13855,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap psychic_gem {
             get {
-                object obj = ResourceManager.GetObject("psychic_gem", resourceCulture);
+                var obj = ResourceManager.GetObject("psychic_gem", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -13865,7 +13865,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap pure_incense {
             get {
-                object obj = ResourceManager.GetObject("pure_incense", resourceCulture);
+                var obj = ResourceManager.GetObject("pure_incense", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -13875,7 +13875,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap qualot_berry {
             get {
-                object obj = ResourceManager.GetObject("qualot_berry", resourceCulture);
+                var obj = ResourceManager.GetObject("qualot_berry", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -13885,7 +13885,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap quick_ball {
             get {
-                object obj = ResourceManager.GetObject("quick_ball", resourceCulture);
+                var obj = ResourceManager.GetObject("quick_ball", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -13895,7 +13895,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap quick_claw {
             get {
-                object obj = ResourceManager.GetObject("quick_claw", resourceCulture);
+                var obj = ResourceManager.GetObject("quick_claw", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -13905,7 +13905,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap quick_powder {
             get {
-                object obj = ResourceManager.GetObject("quick_powder", resourceCulture);
+                var obj = ResourceManager.GetObject("quick_powder", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -13915,7 +13915,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap rabuta_berry {
             get {
-                object obj = ResourceManager.GetObject("rabuta_berry", resourceCulture);
+                var obj = ResourceManager.GetObject("rabuta_berry", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -13925,7 +13925,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap rage_candy_bar {
             get {
-                object obj = ResourceManager.GetObject("rage_candy_bar", resourceCulture);
+                var obj = ResourceManager.GetObject("rage_candy_bar", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -13935,7 +13935,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap ragecandybar {
             get {
-                object obj = ResourceManager.GetObject("ragecandybar", resourceCulture);
+                var obj = ResourceManager.GetObject("ragecandybar", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -13945,7 +13945,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap rainbow_pass {
             get {
-                object obj = ResourceManager.GetObject("rainbow_pass", resourceCulture);
+                var obj = ResourceManager.GetObject("rainbow_pass", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -13955,7 +13955,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap rainbow_wing {
             get {
-                object obj = ResourceManager.GetObject("rainbow_wing", resourceCulture);
+                var obj = ResourceManager.GetObject("rainbow_wing", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -13965,7 +13965,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap rare_bone {
             get {
-                object obj = ResourceManager.GetObject("rare_bone", resourceCulture);
+                var obj = ResourceManager.GetObject("rare_bone", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -13975,7 +13975,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap rare_candy {
             get {
-                object obj = ResourceManager.GetObject("rare_candy", resourceCulture);
+                var obj = ResourceManager.GetObject("rare_candy", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -13985,7 +13985,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap rawst_berry {
             get {
-                object obj = ResourceManager.GetObject("rawst_berry", resourceCulture);
+                var obj = ResourceManager.GetObject("rawst_berry", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -13995,7 +13995,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap razor_claw {
             get {
-                object obj = ResourceManager.GetObject("razor_claw", resourceCulture);
+                var obj = ResourceManager.GetObject("razor_claw", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -14005,7 +14005,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap razor_fang {
             get {
-                object obj = ResourceManager.GetObject("razor_fang", resourceCulture);
+                var obj = ResourceManager.GetObject("razor_fang", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -14015,7 +14015,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap razz_berry {
             get {
-                object obj = ResourceManager.GetObject("razz_berry", resourceCulture);
+                var obj = ResourceManager.GetObject("razz_berry", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -14025,7 +14025,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap reaper_cloth {
             get {
-                object obj = ResourceManager.GetObject("reaper_cloth", resourceCulture);
+                var obj = ResourceManager.GetObject("reaper_cloth", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -14035,7 +14035,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap red_apricorn {
             get {
-                object obj = ResourceManager.GetObject("red_apricorn", resourceCulture);
+                var obj = ResourceManager.GetObject("red_apricorn", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -14045,7 +14045,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap red_card {
             get {
-                object obj = ResourceManager.GetObject("red_card", resourceCulture);
+                var obj = ResourceManager.GetObject("red_card", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -14055,7 +14055,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap red_chain {
             get {
-                object obj = ResourceManager.GetObject("red_chain", resourceCulture);
+                var obj = ResourceManager.GetObject("red_chain", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -14065,7 +14065,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap red_flute {
             get {
-                object obj = ResourceManager.GetObject("red_flute", resourceCulture);
+                var obj = ResourceManager.GetObject("red_flute", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -14075,7 +14075,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap red_orb {
             get {
-                object obj = ResourceManager.GetObject("red_orb", resourceCulture);
+                var obj = ResourceManager.GetObject("red_orb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -14085,7 +14085,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap red_scale {
             get {
-                object obj = ResourceManager.GetObject("red_scale", resourceCulture);
+                var obj = ResourceManager.GetObject("red_scale", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -14095,7 +14095,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap red_scarf {
             get {
-                object obj = ResourceManager.GetObject("red_scarf", resourceCulture);
+                var obj = ResourceManager.GetObject("red_scarf", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -14105,7 +14105,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap red_shard {
             get {
-                object obj = ResourceManager.GetObject("red_shard", resourceCulture);
+                var obj = ResourceManager.GetObject("red_shard", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -14115,7 +14115,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap relic_band {
             get {
-                object obj = ResourceManager.GetObject("relic_band", resourceCulture);
+                var obj = ResourceManager.GetObject("relic_band", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -14125,7 +14125,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap relic_copper {
             get {
-                object obj = ResourceManager.GetObject("relic_copper", resourceCulture);
+                var obj = ResourceManager.GetObject("relic_copper", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -14135,7 +14135,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap relic_crown {
             get {
-                object obj = ResourceManager.GetObject("relic_crown", resourceCulture);
+                var obj = ResourceManager.GetObject("relic_crown", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -14145,7 +14145,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap relic_gold {
             get {
-                object obj = ResourceManager.GetObject("relic_gold", resourceCulture);
+                var obj = ResourceManager.GetObject("relic_gold", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -14155,7 +14155,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap relic_silver {
             get {
-                object obj = ResourceManager.GetObject("relic_silver", resourceCulture);
+                var obj = ResourceManager.GetObject("relic_silver", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -14165,7 +14165,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap relic_statue {
             get {
-                object obj = ResourceManager.GetObject("relic_statue", resourceCulture);
+                var obj = ResourceManager.GetObject("relic_statue", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -14175,7 +14175,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap relic_vase {
             get {
-                object obj = ResourceManager.GetObject("relic_vase", resourceCulture);
+                var obj = ResourceManager.GetObject("relic_vase", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -14185,7 +14185,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap repeat_ball {
             get {
-                object obj = ResourceManager.GetObject("repeat_ball", resourceCulture);
+                var obj = ResourceManager.GetObject("repeat_ball", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -14195,7 +14195,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap repel {
             get {
-                object obj = ResourceManager.GetObject("repel", resourceCulture);
+                var obj = ResourceManager.GetObject("repel", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -14205,7 +14205,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap reply_mail {
             get {
-                object obj = ResourceManager.GetObject("reply_mail", resourceCulture);
+                var obj = ResourceManager.GetObject("reply_mail", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -14215,7 +14215,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap reset_urge {
             get {
-                object obj = ResourceManager.GetObject("reset_urge", resourceCulture);
+                var obj = ResourceManager.GetObject("reset_urge", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -14225,7 +14225,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap resist_wing {
             get {
-                object obj = ResourceManager.GetObject("resist_wing", resourceCulture);
+                var obj = ResourceManager.GetObject("resist_wing", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -14235,7 +14235,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap retro_mail {
             get {
-                object obj = ResourceManager.GetObject("retro_mail", resourceCulture);
+                var obj = ResourceManager.GetObject("retro_mail", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -14245,7 +14245,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap reveal_glass {
             get {
-                object obj = ResourceManager.GetObject("reveal_glass", resourceCulture);
+                var obj = ResourceManager.GetObject("reveal_glass", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -14255,7 +14255,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap revival_herb {
             get {
-                object obj = ResourceManager.GetObject("revival_herb", resourceCulture);
+                var obj = ResourceManager.GetObject("revival_herb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -14265,7 +14265,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap revive {
             get {
-                object obj = ResourceManager.GetObject("revive", resourceCulture);
+                var obj = ResourceManager.GetObject("revive", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -14275,7 +14275,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap rich_mulch {
             get {
-                object obj = ResourceManager.GetObject("rich_mulch", resourceCulture);
+                var obj = ResourceManager.GetObject("rich_mulch", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -14285,7 +14285,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap rindo_berry {
             get {
-                object obj = ResourceManager.GetObject("rindo_berry", resourceCulture);
+                var obj = ResourceManager.GetObject("rindo_berry", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -14295,7 +14295,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap ring_target {
             get {
-                object obj = ResourceManager.GetObject("ring_target", resourceCulture);
+                var obj = ResourceManager.GetObject("ring_target", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -14305,7 +14305,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap rm_1_key {
             get {
-                object obj = ResourceManager.GetObject("rm_1_key", resourceCulture);
+                var obj = ResourceManager.GetObject("rm_1_key", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -14315,7 +14315,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap rm_2_key {
             get {
-                object obj = ResourceManager.GetObject("rm_2_key", resourceCulture);
+                var obj = ResourceManager.GetObject("rm_2_key", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -14325,7 +14325,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap rm_4_key {
             get {
-                object obj = ResourceManager.GetObject("rm_4_key", resourceCulture);
+                var obj = ResourceManager.GetObject("rm_4_key", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -14335,7 +14335,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap rm_6_key {
             get {
-                object obj = ResourceManager.GetObject("rm_6_key", resourceCulture);
+                var obj = ResourceManager.GetObject("rm_6_key", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -14345,7 +14345,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap rock_gem {
             get {
-                object obj = ResourceManager.GetObject("rock_gem", resourceCulture);
+                var obj = ResourceManager.GetObject("rock_gem", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -14355,7 +14355,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap rock_incense {
             get {
-                object obj = ResourceManager.GetObject("rock_incense", resourceCulture);
+                var obj = ResourceManager.GetObject("rock_incense", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -14365,7 +14365,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap rocky_helmet {
             get {
-                object obj = ResourceManager.GetObject("rocky_helmet", resourceCulture);
+                var obj = ResourceManager.GetObject("rocky_helmet", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -14375,7 +14375,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap roller_skates {
             get {
-                object obj = ResourceManager.GetObject("roller_skates", resourceCulture);
+                var obj = ResourceManager.GetObject("roller_skates", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -14385,7 +14385,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap root_fossil {
             get {
-                object obj = ResourceManager.GetObject("root_fossil", resourceCulture);
+                var obj = ResourceManager.GetObject("root_fossil", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -14395,7 +14395,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap rose_incense {
             get {
-                object obj = ResourceManager.GetObject("rose_incense", resourceCulture);
+                var obj = ResourceManager.GetObject("rose_incense", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -14405,7 +14405,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap roseli_berry {
             get {
-                object obj = ResourceManager.GetObject("roseli_berry", resourceCulture);
+                var obj = ResourceManager.GetObject("roseli_berry", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -14415,7 +14415,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap rowap_berry {
             get {
-                object obj = ResourceManager.GetObject("rowap_berry", resourceCulture);
+                var obj = ResourceManager.GetObject("rowap_berry", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -14425,7 +14425,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap rsvp_mail {
             get {
-                object obj = ResourceManager.GetObject("rsvp_mail", resourceCulture);
+                var obj = ResourceManager.GetObject("rsvp_mail", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -14435,7 +14435,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap ruby {
             get {
-                object obj = ResourceManager.GetObject("ruby", resourceCulture);
+                var obj = ResourceManager.GetObject("ruby", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -14445,7 +14445,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap rule_book {
             get {
-                object obj = ResourceManager.GetObject("rule_book", resourceCulture);
+                var obj = ResourceManager.GetObject("rule_book", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -14455,7 +14455,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap sachet {
             get {
-                object obj = ResourceManager.GetObject("sachet", resourceCulture);
+                var obj = ResourceManager.GetObject("sachet", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -14465,7 +14465,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap sacred_ash {
             get {
-                object obj = ResourceManager.GetObject("sacred_ash", resourceCulture);
+                var obj = ResourceManager.GetObject("sacred_ash", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -14475,7 +14475,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap safari_ball {
             get {
-                object obj = ResourceManager.GetObject("safari_ball", resourceCulture);
+                var obj = ResourceManager.GetObject("safari_ball", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -14485,7 +14485,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap safety_goggles {
             get {
-                object obj = ResourceManager.GetObject("safety_goggles", resourceCulture);
+                var obj = ResourceManager.GetObject("safety_goggles", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -14495,7 +14495,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap sail_fossil {
             get {
-                object obj = ResourceManager.GetObject("sail_fossil", resourceCulture);
+                var obj = ResourceManager.GetObject("sail_fossil", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -14505,7 +14505,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap salac_berry {
             get {
-                object obj = ResourceManager.GetObject("salac_berry", resourceCulture);
+                var obj = ResourceManager.GetObject("salac_berry", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -14515,7 +14515,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap sapphire {
             get {
-                object obj = ResourceManager.GetObject("sapphire", resourceCulture);
+                var obj = ResourceManager.GetObject("sapphire", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -14525,7 +14525,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap scanner {
             get {
-                object obj = ResourceManager.GetObject("scanner", resourceCulture);
+                var obj = ResourceManager.GetObject("scanner", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -14535,7 +14535,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap scizorite {
             get {
-                object obj = ResourceManager.GetObject("scizorite", resourceCulture);
+                var obj = ResourceManager.GetObject("scizorite", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -14545,7 +14545,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap scope_lens {
             get {
-                object obj = ResourceManager.GetObject("scope_lens", resourceCulture);
+                var obj = ResourceManager.GetObject("scope_lens", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -14555,7 +14555,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap sea_incense {
             get {
-                object obj = ResourceManager.GetObject("sea_incense", resourceCulture);
+                var obj = ResourceManager.GetObject("sea_incense", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -14565,7 +14565,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap seal_bag {
             get {
-                object obj = ResourceManager.GetObject("seal_bag", resourceCulture);
+                var obj = ResourceManager.GetObject("seal_bag", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -14575,7 +14575,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap seal_case {
             get {
-                object obj = ResourceManager.GetObject("seal_case", resourceCulture);
+                var obj = ResourceManager.GetObject("seal_case", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -14585,7 +14585,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap secret_key {
             get {
-                object obj = ResourceManager.GetObject("secret_key", resourceCulture);
+                var obj = ResourceManager.GetObject("secret_key", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -14595,7 +14595,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap secret_potion {
             get {
-                object obj = ResourceManager.GetObject("secret_potion", resourceCulture);
+                var obj = ResourceManager.GetObject("secret_potion", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -14605,7 +14605,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap secretpotion {
             get {
-                object obj = ResourceManager.GetObject("secretpotion", resourceCulture);
+                var obj = ResourceManager.GetObject("secretpotion", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -14615,7 +14615,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap shadow_mail {
             get {
-                object obj = ResourceManager.GetObject("shadow_mail", resourceCulture);
+                var obj = ResourceManager.GetObject("shadow_mail", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -14625,7 +14625,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap shalour_sable {
             get {
-                object obj = ResourceManager.GetObject("shalour_sable", resourceCulture);
+                var obj = ResourceManager.GetObject("shalour_sable", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -14635,7 +14635,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap sharp_beak {
             get {
-                object obj = ResourceManager.GetObject("sharp_beak", resourceCulture);
+                var obj = ResourceManager.GetObject("sharp_beak", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -14645,7 +14645,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap shed_shell {
             get {
-                object obj = ResourceManager.GetObject("shed_shell", resourceCulture);
+                var obj = ResourceManager.GetObject("shed_shell", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -14655,7 +14655,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap shell_bell {
             get {
-                object obj = ResourceManager.GetObject("shell_bell", resourceCulture);
+                var obj = ResourceManager.GetObject("shell_bell", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -14665,7 +14665,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap shiny {
             get {
-                object obj = ResourceManager.GetObject("shiny", resourceCulture);
+                var obj = ResourceManager.GetObject("shiny", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -14675,7 +14675,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap shiny_charm {
             get {
-                object obj = ResourceManager.GetObject("shiny_charm", resourceCulture);
+                var obj = ResourceManager.GetObject("shiny_charm", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -14685,7 +14685,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap shiny_leaf {
             get {
-                object obj = ResourceManager.GetObject("shiny_leaf", resourceCulture);
+                var obj = ResourceManager.GetObject("shiny_leaf", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -14695,7 +14695,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap shiny_stone {
             get {
-                object obj = ResourceManager.GetObject("shiny_stone", resourceCulture);
+                var obj = ResourceManager.GetObject("shiny_stone", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -14705,7 +14705,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap shoal_salt {
             get {
-                object obj = ResourceManager.GetObject("shoal_salt", resourceCulture);
+                var obj = ResourceManager.GetObject("shoal_salt", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -14715,7 +14715,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap shoal_shell {
             get {
-                object obj = ResourceManager.GetObject("shoal_shell", resourceCulture);
+                var obj = ResourceManager.GetObject("shoal_shell", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -14725,7 +14725,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap shock_drive {
             get {
-                object obj = ResourceManager.GetObject("shock_drive", resourceCulture);
+                var obj = ResourceManager.GetObject("shock_drive", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -14735,7 +14735,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap shuca_berry {
             get {
-                object obj = ResourceManager.GetObject("shuca_berry", resourceCulture);
+                var obj = ResourceManager.GetObject("shuca_berry", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -14745,7 +14745,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap silk_scarf {
             get {
-                object obj = ResourceManager.GetObject("silk_scarf", resourceCulture);
+                var obj = ResourceManager.GetObject("silk_scarf", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -14755,7 +14755,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap silph_scope {
             get {
-                object obj = ResourceManager.GetObject("silph_scope", resourceCulture);
+                var obj = ResourceManager.GetObject("silph_scope", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -14765,7 +14765,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap silver_powder {
             get {
-                object obj = ResourceManager.GetObject("silver_powder", resourceCulture);
+                var obj = ResourceManager.GetObject("silver_powder", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -14775,7 +14775,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap silver_wing {
             get {
-                object obj = ResourceManager.GetObject("silver_wing", resourceCulture);
+                var obj = ResourceManager.GetObject("silver_wing", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -14785,7 +14785,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap silverpowder {
             get {
-                object obj = ResourceManager.GetObject("silverpowder", resourceCulture);
+                var obj = ResourceManager.GetObject("silverpowder", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -14795,7 +14795,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap sitrus_berry {
             get {
-                object obj = ResourceManager.GetObject("sitrus_berry", resourceCulture);
+                var obj = ResourceManager.GetObject("sitrus_berry", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -14805,7 +14805,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap skull_fossil {
             get {
-                object obj = ResourceManager.GetObject("skull_fossil", resourceCulture);
+                var obj = ResourceManager.GetObject("skull_fossil", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -14815,7 +14815,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap sky_plate {
             get {
-                object obj = ResourceManager.GetObject("sky_plate", resourceCulture);
+                var obj = ResourceManager.GetObject("sky_plate", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -14825,7 +14825,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap slowpoke_tail {
             get {
-                object obj = ResourceManager.GetObject("slowpoke_tail", resourceCulture);
+                var obj = ResourceManager.GetObject("slowpoke_tail", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -14835,7 +14835,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap slowpoketail {
             get {
-                object obj = ResourceManager.GetObject("slowpoketail", resourceCulture);
+                var obj = ResourceManager.GetObject("slowpoketail", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -14845,7 +14845,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap smoke_ball {
             get {
-                object obj = ResourceManager.GetObject("smoke_ball", resourceCulture);
+                var obj = ResourceManager.GetObject("smoke_ball", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -14855,7 +14855,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap smooth_rock {
             get {
-                object obj = ResourceManager.GetObject("smooth_rock", resourceCulture);
+                var obj = ResourceManager.GetObject("smooth_rock", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -14865,7 +14865,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap snow_mail {
             get {
-                object obj = ResourceManager.GetObject("snow_mail", resourceCulture);
+                var obj = ResourceManager.GetObject("snow_mail", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -14875,7 +14875,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap snowball {
             get {
-                object obj = ResourceManager.GetObject("snowball", resourceCulture);
+                var obj = ResourceManager.GetObject("snowball", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -14885,7 +14885,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap soda_pop {
             get {
-                object obj = ResourceManager.GetObject("soda_pop", resourceCulture);
+                var obj = ResourceManager.GetObject("soda_pop", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -14895,7 +14895,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap soft_sand {
             get {
-                object obj = ResourceManager.GetObject("soft_sand", resourceCulture);
+                var obj = ResourceManager.GetObject("soft_sand", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -14905,7 +14905,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap soot_sack {
             get {
-                object obj = ResourceManager.GetObject("soot_sack", resourceCulture);
+                var obj = ResourceManager.GetObject("soot_sack", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -14915,7 +14915,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap soothe_bell {
             get {
-                object obj = ResourceManager.GetObject("soothe_bell", resourceCulture);
+                var obj = ResourceManager.GetObject("soothe_bell", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -14925,7 +14925,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap soul_dew {
             get {
-                object obj = ResourceManager.GetObject("soul_dew", resourceCulture);
+                var obj = ResourceManager.GetObject("soul_dew", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -14935,7 +14935,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap space_mail {
             get {
-                object obj = ResourceManager.GetObject("space_mail", resourceCulture);
+                var obj = ResourceManager.GetObject("space_mail", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -14945,7 +14945,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap special {
             get {
-                object obj = ResourceManager.GetObject("special", resourceCulture);
+                var obj = ResourceManager.GetObject("special", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -14955,7 +14955,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap spell_tag {
             get {
-                object obj = ResourceManager.GetObject("spell_tag", resourceCulture);
+                var obj = ResourceManager.GetObject("spell_tag", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -14965,7 +14965,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap spelon_berry {
             get {
-                object obj = ResourceManager.GetObject("spelon_berry", resourceCulture);
+                var obj = ResourceManager.GetObject("spelon_berry", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -14975,7 +14975,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap splash_plate {
             get {
-                object obj = ResourceManager.GetObject("splash_plate", resourceCulture);
+                var obj = ResourceManager.GetObject("splash_plate", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -14985,7 +14985,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap spooky_plate {
             get {
-                object obj = ResourceManager.GetObject("spooky_plate", resourceCulture);
+                var obj = ResourceManager.GetObject("spooky_plate", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -14995,7 +14995,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap sport_ball {
             get {
-                object obj = ResourceManager.GetObject("sport_ball", resourceCulture);
+                var obj = ResourceManager.GetObject("sport_ball", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -15005,7 +15005,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap sprayduck {
             get {
-                object obj = ResourceManager.GetObject("sprayduck", resourceCulture);
+                var obj = ResourceManager.GetObject("sprayduck", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -15015,7 +15015,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap sprinklotad {
             get {
-                object obj = ResourceManager.GetObject("sprinklotad", resourceCulture);
+                var obj = ResourceManager.GetObject("sprinklotad", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -15025,7 +15025,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap squirt_bottle {
             get {
-                object obj = ResourceManager.GetObject("squirt_bottle", resourceCulture);
+                var obj = ResourceManager.GetObject("squirt_bottle", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -15035,7 +15035,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap squirtbottle {
             get {
-                object obj = ResourceManager.GetObject("squirtbottle", resourceCulture);
+                var obj = ResourceManager.GetObject("squirtbottle", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -15045,7 +15045,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap ss_ticket {
             get {
-                object obj = ResourceManager.GetObject("ss_ticket", resourceCulture);
+                var obj = ResourceManager.GetObject("ss_ticket", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -15055,7 +15055,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap stable_mulch {
             get {
-                object obj = ResourceManager.GetObject("stable_mulch", resourceCulture);
+                var obj = ResourceManager.GetObject("stable_mulch", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -15065,7 +15065,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap star_piece {
             get {
-                object obj = ResourceManager.GetObject("star_piece", resourceCulture);
+                var obj = ResourceManager.GetObject("star_piece", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -15075,7 +15075,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap stardust {
             get {
-                object obj = ResourceManager.GetObject("stardust", resourceCulture);
+                var obj = ResourceManager.GetObject("stardust", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -15085,7 +15085,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap starf_berry {
             get {
-                object obj = ResourceManager.GetObject("starf_berry", resourceCulture);
+                var obj = ResourceManager.GetObject("starf_berry", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -15095,7 +15095,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap steel_gem {
             get {
-                object obj = ResourceManager.GetObject("steel_gem", resourceCulture);
+                var obj = ResourceManager.GetObject("steel_gem", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -15105,7 +15105,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap steel_mail {
             get {
-                object obj = ResourceManager.GetObject("steel_mail", resourceCulture);
+                var obj = ResourceManager.GetObject("steel_mail", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -15115,7 +15115,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap stick {
             get {
-                object obj = ResourceManager.GetObject("stick", resourceCulture);
+                var obj = ResourceManager.GetObject("stick", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -15125,7 +15125,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap sticky_barb {
             get {
-                object obj = ResourceManager.GetObject("sticky_barb", resourceCulture);
+                var obj = ResourceManager.GetObject("sticky_barb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -15135,7 +15135,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap stone_plate {
             get {
-                object obj = ResourceManager.GetObject("stone_plate", resourceCulture);
+                var obj = ResourceManager.GetObject("stone_plate", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -15145,7 +15145,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap storage_key {
             get {
-                object obj = ResourceManager.GetObject("storage_key", resourceCulture);
+                var obj = ResourceManager.GetObject("storage_key", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -15155,7 +15155,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap strange_souvenir {
             get {
-                object obj = ResourceManager.GetObject("strange_souvenir", resourceCulture);
+                var obj = ResourceManager.GetObject("strange_souvenir", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -15165,7 +15165,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap suite_key {
             get {
-                object obj = ResourceManager.GetObject("suite_key", resourceCulture);
+                var obj = ResourceManager.GetObject("suite_key", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -15175,7 +15175,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap sun_stone {
             get {
-                object obj = ResourceManager.GetObject("sun_stone", resourceCulture);
+                var obj = ResourceManager.GetObject("sun_stone", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -15185,7 +15185,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap super_potion {
             get {
-                object obj = ResourceManager.GetObject("super_potion", resourceCulture);
+                var obj = ResourceManager.GetObject("super_potion", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -15195,7 +15195,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap super_repel {
             get {
-                object obj = ResourceManager.GetObject("super_repel", resourceCulture);
+                var obj = ResourceManager.GetObject("super_repel", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -15205,7 +15205,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap super_rod {
             get {
-                object obj = ResourceManager.GetObject("super_rod", resourceCulture);
+                var obj = ResourceManager.GetObject("super_rod", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -15215,7 +15215,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap surprise_mulch {
             get {
-                object obj = ResourceManager.GetObject("surprise_mulch", resourceCulture);
+                var obj = ResourceManager.GetObject("surprise_mulch", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -15225,7 +15225,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap sweet_heart {
             get {
-                object obj = ResourceManager.GetObject("sweet_heart", resourceCulture);
+                var obj = ResourceManager.GetObject("sweet_heart", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -15235,7 +15235,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap swift_wing {
             get {
-                object obj = ResourceManager.GetObject("swift_wing", resourceCulture);
+                var obj = ResourceManager.GetObject("swift_wing", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -15245,7 +15245,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap tamato_berry {
             get {
-                object obj = ResourceManager.GetObject("tamato_berry", resourceCulture);
+                var obj = ResourceManager.GetObject("tamato_berry", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -15255,7 +15255,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap tanga_berry {
             get {
-                object obj = ResourceManager.GetObject("tanga_berry", resourceCulture);
+                var obj = ResourceManager.GetObject("tanga_berry", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -15265,7 +15265,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap tea {
             get {
-                object obj = ResourceManager.GetObject("tea", resourceCulture);
+                var obj = ResourceManager.GetObject("tea", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -15275,7 +15275,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap teachy_tv {
             get {
-                object obj = ResourceManager.GetObject("teachy_tv", resourceCulture);
+                var obj = ResourceManager.GetObject("teachy_tv", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -15285,7 +15285,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap thanks_mail {
             get {
-                object obj = ResourceManager.GetObject("thanks_mail", resourceCulture);
+                var obj = ResourceManager.GetObject("thanks_mail", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -15295,7 +15295,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap thick_club {
             get {
-                object obj = ResourceManager.GetObject("thick_club", resourceCulture);
+                var obj = ResourceManager.GetObject("thick_club", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -15305,7 +15305,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap thunder_stone {
             get {
-                object obj = ResourceManager.GetObject("thunder_stone", resourceCulture);
+                var obj = ResourceManager.GetObject("thunder_stone", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -15315,7 +15315,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap thunderstone {
             get {
-                object obj = ResourceManager.GetObject("thunderstone", resourceCulture);
+                var obj = ResourceManager.GetObject("thunderstone", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -15325,7 +15325,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap tidal_bell {
             get {
-                object obj = ResourceManager.GetObject("tidal_bell", resourceCulture);
+                var obj = ResourceManager.GetObject("tidal_bell", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -15335,7 +15335,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap timer_ball {
             get {
-                object obj = ResourceManager.GetObject("timer_ball", resourceCulture);
+                var obj = ResourceManager.GetObject("timer_ball", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -15345,7 +15345,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap tiny_mushroom {
             get {
-                object obj = ResourceManager.GetObject("tiny_mushroom", resourceCulture);
+                var obj = ResourceManager.GetObject("tiny_mushroom", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -15355,7 +15355,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap tinymushroom {
             get {
-                object obj = ResourceManager.GetObject("tinymushroom", resourceCulture);
+                var obj = ResourceManager.GetObject("tinymushroom", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -15365,7 +15365,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap tm_bug {
             get {
-                object obj = ResourceManager.GetObject("tm_bug", resourceCulture);
+                var obj = ResourceManager.GetObject("tm_bug", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -15375,7 +15375,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap tm_case {
             get {
-                object obj = ResourceManager.GetObject("tm_case", resourceCulture);
+                var obj = ResourceManager.GetObject("tm_case", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -15385,7 +15385,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap tm_dark {
             get {
-                object obj = ResourceManager.GetObject("tm_dark", resourceCulture);
+                var obj = ResourceManager.GetObject("tm_dark", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -15395,7 +15395,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap tm_dragon {
             get {
-                object obj = ResourceManager.GetObject("tm_dragon", resourceCulture);
+                var obj = ResourceManager.GetObject("tm_dragon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -15405,7 +15405,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap tm_electric {
             get {
-                object obj = ResourceManager.GetObject("tm_electric", resourceCulture);
+                var obj = ResourceManager.GetObject("tm_electric", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -15415,7 +15415,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap tm_fairy {
             get {
-                object obj = ResourceManager.GetObject("tm_fairy", resourceCulture);
+                var obj = ResourceManager.GetObject("tm_fairy", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -15425,7 +15425,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap tm_fighting {
             get {
-                object obj = ResourceManager.GetObject("tm_fighting", resourceCulture);
+                var obj = ResourceManager.GetObject("tm_fighting", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -15435,7 +15435,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap tm_fire {
             get {
-                object obj = ResourceManager.GetObject("tm_fire", resourceCulture);
+                var obj = ResourceManager.GetObject("tm_fire", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -15445,7 +15445,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap tm_flying {
             get {
-                object obj = ResourceManager.GetObject("tm_flying", resourceCulture);
+                var obj = ResourceManager.GetObject("tm_flying", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -15455,7 +15455,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap tm_ghost {
             get {
-                object obj = ResourceManager.GetObject("tm_ghost", resourceCulture);
+                var obj = ResourceManager.GetObject("tm_ghost", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -15465,7 +15465,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap tm_grass {
             get {
-                object obj = ResourceManager.GetObject("tm_grass", resourceCulture);
+                var obj = ResourceManager.GetObject("tm_grass", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -15475,7 +15475,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap tm_ground {
             get {
-                object obj = ResourceManager.GetObject("tm_ground", resourceCulture);
+                var obj = ResourceManager.GetObject("tm_ground", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -15485,7 +15485,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap tm_ice {
             get {
-                object obj = ResourceManager.GetObject("tm_ice", resourceCulture);
+                var obj = ResourceManager.GetObject("tm_ice", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -15495,7 +15495,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap tm_normal {
             get {
-                object obj = ResourceManager.GetObject("tm_normal", resourceCulture);
+                var obj = ResourceManager.GetObject("tm_normal", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -15505,7 +15505,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap tm_poison {
             get {
-                object obj = ResourceManager.GetObject("tm_poison", resourceCulture);
+                var obj = ResourceManager.GetObject("tm_poison", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -15515,7 +15515,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap tm_psychic {
             get {
-                object obj = ResourceManager.GetObject("tm_psychic", resourceCulture);
+                var obj = ResourceManager.GetObject("tm_psychic", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -15525,7 +15525,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap tm_rock {
             get {
-                object obj = ResourceManager.GetObject("tm_rock", resourceCulture);
+                var obj = ResourceManager.GetObject("tm_rock", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -15535,7 +15535,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap tm_steel {
             get {
-                object obj = ResourceManager.GetObject("tm_steel", resourceCulture);
+                var obj = ResourceManager.GetObject("tm_steel", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -15545,7 +15545,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap tm_water {
             get {
-                object obj = ResourceManager.GetObject("tm_water", resourceCulture);
+                var obj = ResourceManager.GetObject("tm_water", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -15555,7 +15555,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap tmv_pass {
             get {
-                object obj = ResourceManager.GetObject("tmv_pass", resourceCulture);
+                var obj = ResourceManager.GetObject("tmv_pass", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -15565,7 +15565,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap town_map {
             get {
-                object obj = ResourceManager.GetObject("town_map", resourceCulture);
+                var obj = ResourceManager.GetObject("town_map", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -15575,7 +15575,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap toxic_orb {
             get {
-                object obj = ResourceManager.GetObject("toxic_orb", resourceCulture);
+                var obj = ResourceManager.GetObject("toxic_orb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -15585,7 +15585,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap toxic_plate {
             get {
-                object obj = ResourceManager.GetObject("toxic_plate", resourceCulture);
+                var obj = ResourceManager.GetObject("toxic_plate", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -15595,7 +15595,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap travel_trunk_gold {
             get {
-                object obj = ResourceManager.GetObject("travel_trunk_gold", resourceCulture);
+                var obj = ResourceManager.GetObject("travel_trunk_gold", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -15605,7 +15605,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap travel_trunk_silver {
             get {
-                object obj = ResourceManager.GetObject("travel_trunk_silver", resourceCulture);
+                var obj = ResourceManager.GetObject("travel_trunk_silver", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -15615,7 +15615,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap tri_pass {
             get {
-                object obj = ResourceManager.GetObject("tri_pass", resourceCulture);
+                var obj = ResourceManager.GetObject("tri_pass", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -15625,7 +15625,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap tropic_mail {
             get {
-                object obj = ResourceManager.GetObject("tropic_mail", resourceCulture);
+                var obj = ResourceManager.GetObject("tropic_mail", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -15635,7 +15635,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap tunnel_mail {
             get {
-                object obj = ResourceManager.GetObject("tunnel_mail", resourceCulture);
+                var obj = ResourceManager.GetObject("tunnel_mail", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -15645,7 +15645,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap twisted_spoon {
             get {
-                object obj = ResourceManager.GetObject("twisted_spoon", resourceCulture);
+                var obj = ResourceManager.GetObject("twisted_spoon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -15655,7 +15655,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap twistedspoon {
             get {
-                object obj = ResourceManager.GetObject("twistedspoon", resourceCulture);
+                var obj = ResourceManager.GetObject("twistedspoon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -15665,7 +15665,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap type_0 {
             get {
-                object obj = ResourceManager.GetObject("type_0", resourceCulture);
+                var obj = ResourceManager.GetObject("type_0", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -15675,7 +15675,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap type_1 {
             get {
-                object obj = ResourceManager.GetObject("type_1", resourceCulture);
+                var obj = ResourceManager.GetObject("type_1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -15685,7 +15685,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap type_10 {
             get {
-                object obj = ResourceManager.GetObject("type_10", resourceCulture);
+                var obj = ResourceManager.GetObject("type_10", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -15695,7 +15695,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap type_11 {
             get {
-                object obj = ResourceManager.GetObject("type_11", resourceCulture);
+                var obj = ResourceManager.GetObject("type_11", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -15705,7 +15705,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap type_12 {
             get {
-                object obj = ResourceManager.GetObject("type_12", resourceCulture);
+                var obj = ResourceManager.GetObject("type_12", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -15715,7 +15715,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap type_13 {
             get {
-                object obj = ResourceManager.GetObject("type_13", resourceCulture);
+                var obj = ResourceManager.GetObject("type_13", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -15725,7 +15725,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap type_14 {
             get {
-                object obj = ResourceManager.GetObject("type_14", resourceCulture);
+                var obj = ResourceManager.GetObject("type_14", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -15735,7 +15735,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap type_15 {
             get {
-                object obj = ResourceManager.GetObject("type_15", resourceCulture);
+                var obj = ResourceManager.GetObject("type_15", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -15745,7 +15745,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap type_16 {
             get {
-                object obj = ResourceManager.GetObject("type_16", resourceCulture);
+                var obj = ResourceManager.GetObject("type_16", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -15755,7 +15755,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap type_17 {
             get {
-                object obj = ResourceManager.GetObject("type_17", resourceCulture);
+                var obj = ResourceManager.GetObject("type_17", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -15765,7 +15765,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap type_2 {
             get {
-                object obj = ResourceManager.GetObject("type_2", resourceCulture);
+                var obj = ResourceManager.GetObject("type_2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -15775,7 +15775,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap type_3 {
             get {
-                object obj = ResourceManager.GetObject("type_3", resourceCulture);
+                var obj = ResourceManager.GetObject("type_3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -15785,7 +15785,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap type_4 {
             get {
-                object obj = ResourceManager.GetObject("type_4", resourceCulture);
+                var obj = ResourceManager.GetObject("type_4", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -15795,7 +15795,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap type_5 {
             get {
-                object obj = ResourceManager.GetObject("type_5", resourceCulture);
+                var obj = ResourceManager.GetObject("type_5", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -15805,7 +15805,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap type_6 {
             get {
-                object obj = ResourceManager.GetObject("type_6", resourceCulture);
+                var obj = ResourceManager.GetObject("type_6", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -15815,7 +15815,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap type_7 {
             get {
-                object obj = ResourceManager.GetObject("type_7", resourceCulture);
+                var obj = ResourceManager.GetObject("type_7", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -15825,7 +15825,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap type_8 {
             get {
-                object obj = ResourceManager.GetObject("type_8", resourceCulture);
+                var obj = ResourceManager.GetObject("type_8", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -15835,7 +15835,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap type_9 {
             get {
-                object obj = ResourceManager.GetObject("type_9", resourceCulture);
+                var obj = ResourceManager.GetObject("type_9", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -15845,7 +15845,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap tyranitarite {
             get {
-                object obj = ResourceManager.GetObject("tyranitarite", resourceCulture);
+                var obj = ResourceManager.GetObject("tyranitarite", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -15855,7 +15855,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap ultra_ball {
             get {
-                object obj = ResourceManager.GetObject("ultra_ball", resourceCulture);
+                var obj = ResourceManager.GetObject("ultra_ball", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -15865,7 +15865,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap unknown {
             get {
-                object obj = ResourceManager.GetObject("unknown", resourceCulture);
+                var obj = ResourceManager.GetObject("unknown", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -15875,7 +15875,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap unown_report {
             get {
-                object obj = ResourceManager.GetObject("unown_report", resourceCulture);
+                var obj = ResourceManager.GetObject("unown_report", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -15885,7 +15885,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap up_grade {
             get {
-                object obj = ResourceManager.GetObject("up_grade", resourceCulture);
+                var obj = ResourceManager.GetObject("up_grade", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -15895,7 +15895,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap venusaurite {
             get {
-                object obj = ResourceManager.GetObject("venusaurite", resourceCulture);
+                var obj = ResourceManager.GetObject("venusaurite", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -15905,7 +15905,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap vs_recorder {
             get {
-                object obj = ResourceManager.GetObject("vs_recorder", resourceCulture);
+                var obj = ResourceManager.GetObject("vs_recorder", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -15915,7 +15915,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap vs_seeker {
             get {
-                object obj = ResourceManager.GetObject("vs_seeker", resourceCulture);
+                var obj = ResourceManager.GetObject("vs_seeker", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -15925,7 +15925,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap wacan_berry {
             get {
-                object obj = ResourceManager.GetObject("wacan_berry", resourceCulture);
+                var obj = ResourceManager.GetObject("wacan_berry", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -15935,7 +15935,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap wailmer_pail {
             get {
-                object obj = ResourceManager.GetObject("wailmer_pail", resourceCulture);
+                var obj = ResourceManager.GetObject("wailmer_pail", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -15945,7 +15945,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap water_gem {
             get {
-                object obj = ResourceManager.GetObject("water_gem", resourceCulture);
+                var obj = ResourceManager.GetObject("water_gem", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -15955,7 +15955,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap water_stone {
             get {
-                object obj = ResourceManager.GetObject("water_stone", resourceCulture);
+                var obj = ResourceManager.GetObject("water_stone", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -15965,7 +15965,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap watmel_berry {
             get {
-                object obj = ResourceManager.GetObject("watmel_berry", resourceCulture);
+                var obj = ResourceManager.GetObject("watmel_berry", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -15975,7 +15975,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap wave_incense {
             get {
-                object obj = ResourceManager.GetObject("wave_incense", resourceCulture);
+                var obj = ResourceManager.GetObject("wave_incense", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -15985,7 +15985,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap wave_mail {
             get {
-                object obj = ResourceManager.GetObject("wave_mail", resourceCulture);
+                var obj = ResourceManager.GetObject("wave_mail", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -15995,7 +15995,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap weakness_policy {
             get {
-                object obj = ResourceManager.GetObject("weakness_policy", resourceCulture);
+                var obj = ResourceManager.GetObject("weakness_policy", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -16005,7 +16005,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap wepear_berry {
             get {
-                object obj = ResourceManager.GetObject("wepear_berry", resourceCulture);
+                var obj = ResourceManager.GetObject("wepear_berry", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -16015,7 +16015,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap whipped_dream {
             get {
-                object obj = ResourceManager.GetObject("whipped_dream", resourceCulture);
+                var obj = ResourceManager.GetObject("whipped_dream", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -16025,7 +16025,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap white_apricorn {
             get {
-                object obj = ResourceManager.GetObject("white_apricorn", resourceCulture);
+                var obj = ResourceManager.GetObject("white_apricorn", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -16035,7 +16035,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap white_flute {
             get {
-                object obj = ResourceManager.GetObject("white_flute", resourceCulture);
+                var obj = ResourceManager.GetObject("white_flute", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -16045,7 +16045,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap white_herb {
             get {
-                object obj = ResourceManager.GetObject("white_herb", resourceCulture);
+                var obj = ResourceManager.GetObject("white_herb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -16055,7 +16055,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap wht_apricorn {
             get {
-                object obj = ResourceManager.GetObject("wht_apricorn", resourceCulture);
+                var obj = ResourceManager.GetObject("wht_apricorn", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -16065,7 +16065,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap wide_lens {
             get {
-                object obj = ResourceManager.GetObject("wide_lens", resourceCulture);
+                var obj = ResourceManager.GetObject("wide_lens", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -16075,7 +16075,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap wiki_berry {
             get {
-                object obj = ResourceManager.GetObject("wiki_berry", resourceCulture);
+                var obj = ResourceManager.GetObject("wiki_berry", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -16085,7 +16085,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap wise_glasses {
             get {
-                object obj = ResourceManager.GetObject("wise_glasses", resourceCulture);
+                var obj = ResourceManager.GetObject("wise_glasses", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -16095,7 +16095,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap wood_mail {
             get {
-                object obj = ResourceManager.GetObject("wood_mail", resourceCulture);
+                var obj = ResourceManager.GetObject("wood_mail", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -16105,7 +16105,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap works_key {
             get {
-                object obj = ResourceManager.GetObject("works_key", resourceCulture);
+                var obj = ResourceManager.GetObject("works_key", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -16115,7 +16115,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap x_accuracy {
             get {
-                object obj = ResourceManager.GetObject("x_accuracy", resourceCulture);
+                var obj = ResourceManager.GetObject("x_accuracy", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -16125,7 +16125,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap x_accuracy_2 {
             get {
-                object obj = ResourceManager.GetObject("x_accuracy_2", resourceCulture);
+                var obj = ResourceManager.GetObject("x_accuracy_2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -16135,7 +16135,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap x_accuracy_3 {
             get {
-                object obj = ResourceManager.GetObject("x_accuracy_3", resourceCulture);
+                var obj = ResourceManager.GetObject("x_accuracy_3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -16145,7 +16145,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap x_accuracy_6 {
             get {
-                object obj = ResourceManager.GetObject("x_accuracy_6", resourceCulture);
+                var obj = ResourceManager.GetObject("x_accuracy_6", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -16155,7 +16155,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap x_attack {
             get {
-                object obj = ResourceManager.GetObject("x_attack", resourceCulture);
+                var obj = ResourceManager.GetObject("x_attack", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -16165,7 +16165,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap x_attack_2 {
             get {
-                object obj = ResourceManager.GetObject("x_attack_2", resourceCulture);
+                var obj = ResourceManager.GetObject("x_attack_2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -16175,7 +16175,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap x_attack_3 {
             get {
-                object obj = ResourceManager.GetObject("x_attack_3", resourceCulture);
+                var obj = ResourceManager.GetObject("x_attack_3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -16185,7 +16185,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap x_attack_6 {
             get {
-                object obj = ResourceManager.GetObject("x_attack_6", resourceCulture);
+                var obj = ResourceManager.GetObject("x_attack_6", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -16195,7 +16195,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap x_defend {
             get {
-                object obj = ResourceManager.GetObject("x_defend", resourceCulture);
+                var obj = ResourceManager.GetObject("x_defend", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -16205,7 +16205,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap x_defend_2 {
             get {
-                object obj = ResourceManager.GetObject("x_defend_2", resourceCulture);
+                var obj = ResourceManager.GetObject("x_defend_2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -16215,7 +16215,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap x_defend_3 {
             get {
-                object obj = ResourceManager.GetObject("x_defend_3", resourceCulture);
+                var obj = ResourceManager.GetObject("x_defend_3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -16225,7 +16225,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap x_defend_6 {
             get {
-                object obj = ResourceManager.GetObject("x_defend_6", resourceCulture);
+                var obj = ResourceManager.GetObject("x_defend_6", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -16235,7 +16235,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap x_defense {
             get {
-                object obj = ResourceManager.GetObject("x_defense", resourceCulture);
+                var obj = ResourceManager.GetObject("x_defense", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -16245,7 +16245,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap x_defense_2 {
             get {
-                object obj = ResourceManager.GetObject("x_defense_2", resourceCulture);
+                var obj = ResourceManager.GetObject("x_defense_2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -16255,7 +16255,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap x_defense_3 {
             get {
-                object obj = ResourceManager.GetObject("x_defense_3", resourceCulture);
+                var obj = ResourceManager.GetObject("x_defense_3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -16265,7 +16265,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap x_defense_6 {
             get {
-                object obj = ResourceManager.GetObject("x_defense_6", resourceCulture);
+                var obj = ResourceManager.GetObject("x_defense_6", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -16275,7 +16275,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap x_sp_atk {
             get {
-                object obj = ResourceManager.GetObject("x_sp_atk", resourceCulture);
+                var obj = ResourceManager.GetObject("x_sp_atk", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -16285,7 +16285,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap x_sp_atk_2 {
             get {
-                object obj = ResourceManager.GetObject("x_sp_atk_2", resourceCulture);
+                var obj = ResourceManager.GetObject("x_sp_atk_2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -16295,7 +16295,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap x_sp_atk_3 {
             get {
-                object obj = ResourceManager.GetObject("x_sp_atk_3", resourceCulture);
+                var obj = ResourceManager.GetObject("x_sp_atk_3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -16305,7 +16305,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap x_sp_atk_6 {
             get {
-                object obj = ResourceManager.GetObject("x_sp_atk_6", resourceCulture);
+                var obj = ResourceManager.GetObject("x_sp_atk_6", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -16315,7 +16315,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap x_sp_def {
             get {
-                object obj = ResourceManager.GetObject("x_sp_def", resourceCulture);
+                var obj = ResourceManager.GetObject("x_sp_def", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -16325,7 +16325,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap x_sp_def_2 {
             get {
-                object obj = ResourceManager.GetObject("x_sp_def_2", resourceCulture);
+                var obj = ResourceManager.GetObject("x_sp_def_2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -16335,7 +16335,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap x_sp_def_3 {
             get {
-                object obj = ResourceManager.GetObject("x_sp_def_3", resourceCulture);
+                var obj = ResourceManager.GetObject("x_sp_def_3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -16345,7 +16345,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap x_sp_def_6 {
             get {
-                object obj = ResourceManager.GetObject("x_sp_def_6", resourceCulture);
+                var obj = ResourceManager.GetObject("x_sp_def_6", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -16355,7 +16355,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap x_special {
             get {
-                object obj = ResourceManager.GetObject("x_special", resourceCulture);
+                var obj = ResourceManager.GetObject("x_special", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -16365,7 +16365,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap x_special_2 {
             get {
-                object obj = ResourceManager.GetObject("x_special_2", resourceCulture);
+                var obj = ResourceManager.GetObject("x_special_2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -16375,7 +16375,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap x_special_3 {
             get {
-                object obj = ResourceManager.GetObject("x_special_3", resourceCulture);
+                var obj = ResourceManager.GetObject("x_special_3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -16385,7 +16385,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap x_special_6 {
             get {
-                object obj = ResourceManager.GetObject("x_special_6", resourceCulture);
+                var obj = ResourceManager.GetObject("x_special_6", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -16395,7 +16395,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap x_speed {
             get {
-                object obj = ResourceManager.GetObject("x_speed", resourceCulture);
+                var obj = ResourceManager.GetObject("x_speed", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -16405,7 +16405,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap x_speed_2 {
             get {
-                object obj = ResourceManager.GetObject("x_speed_2", resourceCulture);
+                var obj = ResourceManager.GetObject("x_speed_2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -16415,7 +16415,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap x_speed_3 {
             get {
-                object obj = ResourceManager.GetObject("x_speed_3", resourceCulture);
+                var obj = ResourceManager.GetObject("x_speed_3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -16425,7 +16425,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap x_speed_6 {
             get {
-                object obj = ResourceManager.GetObject("x_speed_6", resourceCulture);
+                var obj = ResourceManager.GetObject("x_speed_6", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -16435,7 +16435,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap xtransceiver {
             get {
-                object obj = ResourceManager.GetObject("xtransceiver", resourceCulture);
+                var obj = ResourceManager.GetObject("xtransceiver", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -16445,7 +16445,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap xtransceiver_red {
             get {
-                object obj = ResourceManager.GetObject("xtransceiver_red", resourceCulture);
+                var obj = ResourceManager.GetObject("xtransceiver_red", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -16455,7 +16455,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap xtransceiver_yellow {
             get {
-                object obj = ResourceManager.GetObject("xtransceiver_yellow", resourceCulture);
+                var obj = ResourceManager.GetObject("xtransceiver_yellow", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -16465,7 +16465,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap yache_berry {
             get {
-                object obj = ResourceManager.GetObject("yache_berry", resourceCulture);
+                var obj = ResourceManager.GetObject("yache_berry", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -16475,7 +16475,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap yellow_apricorn {
             get {
-                object obj = ResourceManager.GetObject("yellow_apricorn", resourceCulture);
+                var obj = ResourceManager.GetObject("yellow_apricorn", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -16485,7 +16485,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap yellow_flute {
             get {
-                object obj = ResourceManager.GetObject("yellow_flute", resourceCulture);
+                var obj = ResourceManager.GetObject("yellow_flute", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -16495,7 +16495,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap yellow_scarf {
             get {
-                object obj = ResourceManager.GetObject("yellow_scarf", resourceCulture);
+                var obj = ResourceManager.GetObject("yellow_scarf", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -16505,7 +16505,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap yellow_shard {
             get {
-                object obj = ResourceManager.GetObject("yellow_shard", resourceCulture);
+                var obj = ResourceManager.GetObject("yellow_shard", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -16515,7 +16515,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap ylw_apricorn {
             get {
-                object obj = ResourceManager.GetObject("ylw_apricorn", resourceCulture);
+                var obj = ResourceManager.GetObject("ylw_apricorn", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -16525,7 +16525,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap zap_plate {
             get {
-                object obj = ResourceManager.GetObject("zap_plate", resourceCulture);
+                var obj = ResourceManager.GetObject("zap_plate", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -16535,7 +16535,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap zinc {
             get {
-                object obj = ResourceManager.GetObject("zinc", resourceCulture);
+                var obj = ResourceManager.GetObject("zinc", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -16545,7 +16545,7 @@ namespace PKMDS_CS.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap zoom_lens {
             get {
-                object obj = ResourceManager.GetObject("zoom_lens", resourceCulture);
+                var obj = ResourceManager.GetObject("zoom_lens", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

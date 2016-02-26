@@ -26,7 +26,7 @@ namespace PKMDS_CS
 
         public static Image GetMarkingImage(Markings mark, bool marked)
         {
-            string identifier = string.Format("m_{0}{1}", (int)mark, Convert.ToInt16(marked));
+            var identifier = string.Format("m_{0}{1}", (int)mark, Convert.ToInt16(marked));
             return GetImageFromResource(identifier);
         }
 
@@ -50,9 +50,15 @@ namespace PKMDS_CS
             if (item == 0) return null;
             try
             {
-                return GetImageFromResource(DBTools.GetItemDataTable.Select(string.Format("game_index = {0}", item))[0].ItemArray[(int)DBTools.ItemDataTableColumns.identifier].ToString().Replace("-", "_"));
+                return
+                    GetImageFromResource(
+                        DBTools.GetItemDataTable.Select(string.Format("game_index = {0}", item))[0].ItemArray[
+                            (int)DBTools.ItemDataTableColumns.identifier].ToString().Replace("-", "_"));
             }
-            catch (Exception) { return null; }
+            catch (Exception)
+            {
+                return null;
+            }
         }
 
         public static Image GetPokemonImage(ushort species, byte formid = 0, Genders gender = Genders.Male)
@@ -61,7 +67,7 @@ namespace PKMDS_CS
             {
                 return GetImageFromResource(string.Format("_{0}", species));
             }
-            string formidstr = string.Empty;
+            var formidstr = string.Empty;
             if (formid != 0)
             {
                 var results = DBTools.GetPokemonDataTable.Select(string.Format("species_id = {0} and form_id = {1}", species, formid));
@@ -73,7 +79,7 @@ namespace PKMDS_CS
                 }
                 else
                 {
-                    int row = 0;
+                    var row = 0;
                     if (species == (ushort)Species.Unown & formid == 27) { formid--; row = 1; }
                     results = DBTools.GetPokemonDataTable.Select(string.Format("species_id = {0} and form_id = {1}", species, formid));
                     if (results.Length > 0)
@@ -84,15 +90,16 @@ namespace PKMDS_CS
                     }
                 }
             }
-            if (gender == Genders.Female)
-                if (
-                    species == (ushort)Species.Unfezant ||
-                    species == (ushort)Species.Frillish ||
-                    species == (ushort)Species.Jellicent ||
-                    species == (ushort)Species.Pyroar ||
-                    species == (ushort)Species.Meowstic
-                    )
-                    formidstr = "_f";
+            if (gender != Genders.Female)
+                return GetImageFromResource(string.Format("_{0}{1}", species, formidstr.Replace("-", "_")));
+            if (
+                species == (ushort)Species.Unfezant ||
+                species == (ushort)Species.Frillish ||
+                species == (ushort)Species.Jellicent ||
+                species == (ushort)Species.Pyroar ||
+                species == (ushort)Species.Meowstic
+                )
+                formidstr = "_f";
             return GetImageFromResource(string.Format("_{0}{1}", species, formidstr.Replace("-", "_")));
         }
     }

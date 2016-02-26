@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Data.Common;
+using System.Data.SQLite;
 using System.Diagnostics;
+using System.Linq;
 using System.Text;
 
 namespace PKMDS_CS
@@ -74,7 +76,7 @@ namespace PKMDS_CS
             try
             {
                 var connString = string.Format(@"Data Source={0}; Pooling=false; FailIfMissing=true;", DBFile);
-                using (var factory = new System.Data.SQLite.SQLiteFactory())
+                using (var factory = new SQLiteFactory())
                     con = factory.CreateConnection();
                 con.ConnectionString = connString;
                 con.Open();
@@ -101,10 +103,10 @@ namespace PKMDS_CS
 
         public static DataTable GetData(string SQL)
         {
-            DataTable table = new DataTable();
+            var table = new DataTable();
             try
             {
-                using (DbCommand cmd = con.CreateCommand())
+                using (var cmd = con.CreateCommand())
                 {
                     cmd.CommandText = SQL;
                     table.Load(cmd.ExecuteReader());
@@ -184,18 +186,18 @@ namespace PKMDS_CS
                         return Types.Fairy;
                 }
             }
-            int typeint = 0;
+            int typeint;
             try
             {
-                PokemonDataTableColumns slot = PokemonDataTableColumns.type_1_id;
+                var slot = PokemonDataTableColumns.type_1_id;
                 if (TypeSlot == TypeSlots.Slot2) slot = PokemonDataTableColumns.type_2_id;
                 if (Species == (ushort)PKMDS_CS.Species.Tornadus || Species == (ushort)PKMDS_CS.Species.Thundurus || Species == (ushort)PKMDS_CS.Species.Landorus)
                 {
                     if (FormID != 0)
                         FormID--;
                 }
-                DataRow[] row = DBTools.GetPokemonDataTable.Select(string.Format("{0} = {1} and {2} = {3}", DBTools.PokemonDataTableColumns.species_id,
-                    Species, DBTools.PokemonDataTableColumns.form_id, FormID));
+                var row = GetPokemonDataTable.Select(string.Format("{0} = {1} and {2} = {3}", PokemonDataTableColumns.species_id,
+                    Species, PokemonDataTableColumns.form_id, FormID));
                 if (!(int.TryParse(row[0].ItemArray[(int)slot].ToString(), out typeint)))
                 {
                 }
@@ -209,9 +211,9 @@ namespace PKMDS_CS
 
         private static int GetGrowthRateID(ushort species)
         {
-            int growthrateid = 0;
-            int.TryParse(DBTools.GetPokemonDataTable.Select(string.Format("{0} = {1}", DBTools.PokemonDataTableColumns.species_id,
-                species))[0].ItemArray[(int)DBTools.PokemonDataTableColumns.growth_rate_id].ToString(), out growthrateid);
+            int growthrateid;
+            int.TryParse(GetPokemonDataTable.Select(string.Format("{0} = {1}", PokemonDataTableColumns.species_id,
+                species))[0].ItemArray[(int)PokemonDataTableColumns.growth_rate_id].ToString(), out growthrateid);
             return growthrateid;
         }
 
@@ -219,20 +221,17 @@ namespace PKMDS_CS
         {
             if (con == null) return 0;
             if (con.State != ConnectionState.Open) return 0;
-            int level = 0;
-            int GrowthRateID = GetGrowthRateID(Species);
-            using (DbCommand cmd = con.CreateCommand())
+            var level = 0;
+            var GrowthRateID = GetGrowthRateID(Species);
+            using (var cmd = con.CreateCommand())
             {
                 cmd.CommandText = string.Format(
                                 @"select experience.level from experience where experience.growth_rate_id = {0} and experience.experience <= {1} order by experience.level desc limit 1",
                                 GrowthRateID, EXP);
-                DataTable dtout = new DataTable();
+                var dtout = new DataTable();
                 dtout.Load(cmd.ExecuteReader());
-                if (dtout != null)
-                {
-                    if (dtout.Rows.Count != 0)
-                        int.TryParse(dtout.Rows[0].ItemArray[0].ToString(), out level);
-                }
+                if (dtout.Rows.Count != 0)
+                    int.TryParse(dtout.Rows[0].ItemArray[0].ToString(), out level);
             }
             return level;
         }
@@ -242,13 +241,13 @@ namespace PKMDS_CS
             if (con == null) return 0u;
             if (con.State != ConnectionState.Open) return 0u;
             uint exp = 0;
-            int GrowthRateID = GetGrowthRateID(Species);
-            using (DbCommand cmd = con.CreateCommand())
+            var GrowthRateID = GetGrowthRateID(Species);
+            using (var cmd = con.CreateCommand())
             {
                 cmd.CommandText = string.Format(
                                 @"select experience.experience from experience where experience.growth_rate_id = {0} and experience.level = {1} order by experience.level desc limit 1",
                                 GrowthRateID, Level);
-                DataTable dtout = new DataTable();
+                var dtout = new DataTable();
                 dtout.Load(cmd.ExecuteReader());
                 if (dtout != null)
                 {
@@ -267,8 +266,8 @@ namespace PKMDS_CS
             PokemonForms = new Dictionary<Species, List<string>>();
             if (con == null) return null;
             if (con.State != ConnectionState.Open) return null;
-            List<Species> SpeciesWithForms = new List<Species>();
-            using (DbCommand cmd = con.CreateCommand())
+            var SpeciesWithForms = new List<Species>();
+            using (var cmd = con.CreateCommand())
             {
                 cmd.CommandText =
                     "select distinct pokemon.species_id from pokemon join pokemon_forms on pokemon.id = pokemon_forms.pokemon_id join pokemon_form_generations on pokemon_form_generations.pokemon_form_id = pokemon_forms.id join pokemon_form_names on pokemon_form_names.pokemon_form_id = pokemon_forms.id where local_language_id = 9 and generation_id = 6 and is_mega = 0 order by species_id asc, game_index asc, form_order asc";
@@ -278,17 +277,17 @@ namespace PKMDS_CS
                     SpeciesWithForms.Add((Species)reader.GetInt16(0));
                 }
             }
-            DataTable results = new DataTable();
-            using (DbCommand cmd = con.CreateCommand())
+            var results = new DataTable();
+            using (var cmd = con.CreateCommand())
             {
                 cmd.CommandText =
                     "select pokemon.species_id, pokemon_form_generations.game_index, form_order, form_name from pokemon join pokemon_forms on pokemon.id = pokemon_forms.pokemon_id join pokemon_form_generations on pokemon_form_generations.pokemon_form_id = pokemon_forms.id join pokemon_form_names on pokemon_form_names.pokemon_form_id = pokemon_forms.id where local_language_id = 9 and generation_id = 6 and is_mega = 0 order by species_id asc, game_index asc, form_order asc";
                 results.Load(cmd.ExecuteReader());
             }
-            DataView view = new DataView(results);
+            var view = new DataView(results);
             foreach (var species in SpeciesWithForms)
             {
-                List<string> thisspecies = new List<string>();
+                var thisspecies = new List<string>();
                 view.RowFilter = string.Format("species_id = {0}", (ushort)species);
                 switch (species)
                 {
@@ -308,10 +307,7 @@ namespace PKMDS_CS
                         thisspecies.Add(string.Format("Ordinary {0}", species.EnumToString()));
                         break;
                 }
-                foreach (var row in view.ToTable().Rows)
-                {
-                    thisspecies.Add(((DataRow)row)[3].ToString());
-                }
+                thisspecies.AddRange(from object row in view.ToTable().Rows select ((DataRow)row)[3].ToString());
                 PokemonForms.Add(species, thisspecies);
             }
             return PokemonForms;
@@ -322,8 +318,8 @@ namespace PKMDS_CS
             if (FormID == 0) return string.Empty;
             if (con == null) return string.Empty;
             if (con.State != ConnectionState.Open) return string.Empty;
-            string formname = string.Empty;
-            using (DbCommand cmd = con.CreateCommand())
+            var formname = string.Empty;
+            using (var cmd = con.CreateCommand())
             {
                 cmd.CommandText = string.Format(
                     @"select form_name from pokemon join pokemon_forms on pokemon.id = pokemon_forms.pokemon_id
@@ -331,13 +327,10 @@ namespace PKMDS_CS
                     join pokemon_form_names on pokemon_form_names.pokemon_form_id = pokemon_forms.id
                     where pokemon.species_id = {0} and pokemon_form_generations.game_index = {1} and local_language_id = {2}",
                     Species, FormID, langid);
-                DataTable dtout = new DataTable();
+                var dtout = new DataTable();
                 dtout.Load(cmd.ExecuteReader());
-                if (dtout != null)
-                {
-                    if (dtout.Rows.Count != 0)
-                        formname = dtout.Rows[0].ItemArray[0].ToString();
-                }
+                if (dtout.Rows.Count != 0)
+                    formname = dtout.Rows[0].ItemArray[0].ToString();
             }
             return formname;
         }
@@ -346,30 +339,27 @@ namespace PKMDS_CS
         {
             if (con == null) return string.Empty;
             if (con.State != ConnectionState.Open) return string.Empty;
-            string pokemonname = string.Empty;
-            using (DbCommand cmd = con.CreateCommand())
+            var pokemonname = string.Empty;
+            using (var cmd = con.CreateCommand())
             {
                 cmd.CommandText = string.Format(@"select pokemon_name from pokemon
                 join pokemon_forms on pokemon.id = pokemon_forms.pokemon_id
                 join pokemon_form_names on pokemon_form_names.pokemon_form_id = pokemon_forms.id
                 where pokemon.species_id = {0} and pokemon_forms.form_order -1 = {1} and local_language_id = {2} order by form_order",
                 Species, FormID, langid);
-                DataTable dtout = new DataTable();
+                var dtout = new DataTable();
                 dtout.Load(cmd.ExecuteReader());
-                if (dtout != null)
+                if (dtout.Rows.Count != 0)
                 {
+                    pokemonname = dtout.Rows[0].ItemArray[0].ToString();
+                }
+                else
+                {
+                    dtout.Clear();
+                    dtout.Load(cmd.ExecuteReader());
                     if (dtout.Rows.Count != 0)
                     {
                         pokemonname = dtout.Rows[0].ItemArray[0].ToString();
-                    }
-                    else
-                    {
-                        dtout.Clear();
-                        dtout.Load(cmd.ExecuteReader());
-                        if (dtout.Rows.Count != 0)
-                        {
-                            pokemonname = dtout.Rows[0].ItemArray[0].ToString();
-                        }
                     }
                 }
             }
@@ -470,7 +460,7 @@ namespace PKMDS_CS
                 if (NatureDataTable != null) return NatureDataTable;
                 using (var cmd = con.CreateCommand())
                 {
-                    cmd.CommandText = string.Format(@"select game_index, name, decreased_stat_id, increased_stat_id from natures join nature_names on natures.id = nature_Names.nature_id where local_language_id = 9 order by game_index asc");
+                    cmd.CommandText = @"select game_index, name, decreased_stat_id, increased_stat_id from natures join nature_names on natures.id = nature_Names.nature_id where local_language_id = 9 order by game_index asc";
                     NatureDataTable = new DataTable();
                     NatureDataTable.Load(cmd.ExecuteReader());
                 }
@@ -487,7 +477,7 @@ namespace PKMDS_CS
                 if (MoveDataTable != null) return MoveDataTable;
                 using (var cmd = con.CreateCommand())
                 {
-                    cmd.CommandText = string.Format(@"select moves.id, move_names.name, moves.type_id - 1, moves.power, moves.pp, moves.accuracy, moves.damage_class_id - 1, move_flavor_text.flavor_text from moves join move_names on moves.id = move_names.move_id join move_flavor_text on moves.id = move_flavor_text.move_id where move_names.local_language_id = 9 and move_flavor_text.language_id = 9 and move_flavor_text.version_group_id = 15 and moves.id < 1000");
+                    cmd.CommandText = @"select moves.id, move_names.name, moves.type_id - 1, moves.power, moves.pp, moves.accuracy, moves.damage_class_id - 1, move_flavor_text.flavor_text from moves join move_names on moves.id = move_names.move_id join move_flavor_text on moves.id = move_flavor_text.move_id where move_names.local_language_id = 9 and move_flavor_text.language_id = 9 and move_flavor_text.version_group_id = 15 and moves.id < 1000";
                     MoveDataTable = new DataTable();
                     MoveDataTable.Load(cmd.ExecuteReader());
                 }
@@ -501,19 +491,19 @@ namespace PKMDS_CS
             byte HP_EV, byte ATK_EV, byte DEF_EV, byte SPE_EV, byte SPA_EV, byte SPD_EV
             )
         {
-            ushort[] stats = new ushort[6];
+            var stats = new ushort[6];
             var results = GetPokemonDataTable.Select(string.Format("species_id = {0} and form_id = {1}", species, formid));
             DataRow PokemonDataRow;
             if (results.Length > 0)
             {
-                PokemonDataRow = (DataRow)results[0];
+                PokemonDataRow = results[0];
             }
             else
             {
                 return stats;
             }
 
-            int HP_B = 0, ATK_B = 0, DEF_B = 0, SPA_B = 0, SPD_B = 0, SPE_B = 0;
+            int HP_B, ATK_B, DEF_B, SPA_B, SPD_B, SPE_B;
 
             int.TryParse(PokemonDataRow["hp"].ToString(), out HP_B);
             int.TryParse(PokemonDataRow["attack"].ToString(), out ATK_B);
@@ -529,8 +519,8 @@ namespace PKMDS_CS
             stats[4] = (ushort)((((SPA_IV + (2 * SPA_B) + (SPA_EV / 4)) * level) / 100) + 5);
             stats[5] = (ushort)((((SPD_IV + (2 * SPD_B) + (SPD_EV / 4)) * level) / 100) + 5);
 
-            int incr = nature / 5 + 1;
-            int decr = nature % 5 + 1;
+            var incr = nature / 5 + 1;
+            var decr = nature % 5 + 1;
             if (incr == decr) return stats; // if neutral return stats without mod
             stats[incr] *= 11; stats[incr] /= 10;
             stats[decr] *= 9; stats[decr] /= 10;

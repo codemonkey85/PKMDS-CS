@@ -19,15 +19,28 @@ namespace PKMDS_Save_Editor
             InitializeComponent();
         }
 
-        private List<NumericUpDown> numIVs = new List<NumericUpDown>();
-        private List<NumericUpDown> numEVs = new List<NumericUpDown>();
+        /*
+                private List<NumericUpDown> numIVs = new List<NumericUpDown>();
+                private List<NumericUpDown> numEVs = new List<NumericUpDown>();
+        */
 
-        private bool FormSet = false;
-        private bool FormPopulated = false;
+        private bool FormSet;
+        private bool FormPopulated;
         private Pokemon _pokemon;
         private Pokemon tempPokemon = new Pokemon();
 
-        public Pokemon Pokemon { get { return _pokemon; } set { _pokemon = value; tempPokemon.CloneFrom(_pokemon); } }
+        public Pokemon Pokemon
+        {
+            get
+            {
+                return _pokemon;
+            }
+            set
+            {
+                _pokemon = value;
+                tempPokemon.CloneFrom(_pokemon);
+            }
+        }
 
         private readonly BindingSource _pokemonBindingSource = new BindingSource();
         private readonly BindingSource _itemBindingSource = new BindingSource();
@@ -89,7 +102,7 @@ namespace PKMDS_Save_Editor
             picType1.DataBindings.Add("Image", _pokemonBindingSource, "Type1.Image", true, DataSourceUpdateMode.Never, null);
             picType2.DataBindings.Add("Image", _pokemonBindingSource, "Type2.Image", true, DataSourceUpdateMode.Never, null);
             picType2.DataBindings[0].Format += Type_2_Image_Format;
-            comboNature.DataSource = Enum.GetValues(typeof(Natures)).Cast<Natures>().ToArray<Natures>();
+            comboNature.DataSource = Enum.GetValues(typeof(Natures)).Cast<Natures>().ToArray();
             comboNature.DataBindings.Add("SelectedItem", _pokemonBindingSource, "Nature", true, DataSourceUpdateMode.OnPropertyChanged, -1);
 
             DBTools.GetPokemonForms();
@@ -130,13 +143,15 @@ namespace PKMDS_Save_Editor
             if (dataGridMoves.Columns.Contains("FlavorText"))
                 dataGridMoves.Columns["FlavorText"].Visible = false;
 
-            DataGridViewComboBoxColumn clmnppup = new DataGridViewComboBoxColumn();
-            clmnppup.Name = "PPUps";
-            clmnppup.HeaderText = "PP Ups";
-            clmnppup.DataSource = new byte[] { 0, 1, 2, 3 };
-            clmnppup.DataPropertyName = "PPUps";
-            clmnppup.DisplayIndex = dataGridMoves.Columns["PPUps"].DisplayIndex;
-            clmnppup.DisplayStyle = DataGridViewComboBoxDisplayStyle.Nothing;
+            var clmnppup = new DataGridViewComboBoxColumn
+            {
+                Name = "PPUps",
+                HeaderText = "PP Ups",
+                DataSource = new byte[] { 0, 1, 2, 3 },
+                DataPropertyName = "PPUps",
+                DisplayIndex = dataGridMoves.Columns["PPUps"].DisplayIndex,
+                DisplayStyle = DataGridViewComboBoxDisplayStyle.Nothing
+            };
             dataGridMoves.Columns.Remove("PPUps");
             dataGridMoves.Columns.Add(clmnppup);
 
@@ -154,27 +169,31 @@ namespace PKMDS_Save_Editor
                 dataGridRelearnableMoves.Columns["MaxPP"].Visible = false;
 
             dataGridMoves.Columns.Remove("Value");
-            DataGridViewComboBoxColumn clmn = new DataGridViewComboBoxColumn();
-            clmn.Name = "Value";
-            clmn.HeaderText = "Move";
-            clmn.DataSource = Lists.MoveList;
-            clmn.DataPropertyName = "Value";
-            clmn.ValueMember = "Value";
-            clmn.DisplayMember = "Name";
-            clmn.DisplayIndex = 0;
-            clmn.DisplayStyle = DataGridViewComboBoxDisplayStyle.Nothing;
+            var clmn = new DataGridViewComboBoxColumn
+            {
+                Name = "Value",
+                HeaderText = "Move",
+                DataSource = Lists.MoveList,
+                DataPropertyName = "Value",
+                ValueMember = "Value",
+                DisplayMember = "Name",
+                DisplayIndex = 0,
+                DisplayStyle = DataGridViewComboBoxDisplayStyle.Nothing
+            };
             dataGridMoves.Columns.Add(clmn);
 
             dataGridRelearnableMoves.Columns.Remove("Value");
-            DataGridViewComboBoxColumn rclmn = new DataGridViewComboBoxColumn();
-            rclmn.Name = "Value";
-            rclmn.HeaderText = "Move";
-            rclmn.DataSource = Lists.MoveList;
-            rclmn.DataPropertyName = "Value";
-            rclmn.ValueMember = "Value";
-            rclmn.DisplayMember = "Name";
-            rclmn.DisplayIndex = 0;
-            rclmn.DisplayStyle = DataGridViewComboBoxDisplayStyle.Nothing;
+            var rclmn = new DataGridViewComboBoxColumn
+            {
+                Name = "Value",
+                HeaderText = "Move",
+                DataSource = Lists.MoveList,
+                DataPropertyName = "Value",
+                ValueMember = "Value",
+                DisplayMember = "Name",
+                DisplayIndex = 0,
+                DisplayStyle = DataGridViewComboBoxDisplayStyle.Nothing
+            };
             dataGridRelearnableMoves.Columns.Add(rclmn);
 
             foreach (DataGridViewColumn col in dataGridMoves.Columns)
@@ -203,14 +222,12 @@ namespace PKMDS_Save_Editor
 
         private void Type_2_Image_Format(object sender, ConvertEventArgs e)
         {
-            var pb = (PictureBox)((Binding)sender).Control;
+            //var pb = (PictureBox)((Binding)sender).Control;
             if (!tempPokemon.Type2.HasValue) e.Value = null;
-            if (tempPokemon.Type1.HasValue && tempPokemon.Type2.HasValue)
+            if (!tempPokemon.Type1.HasValue || !tempPokemon.Type2.HasValue) return;
+            if (tempPokemon.Type1.Value.Value == tempPokemon.Type2.Value.Value)
             {
-                if (tempPokemon.Type1.Value.Value == tempPokemon.Type2.Value.Value)
-                {
-                    e.Value = null;
-                }
+                e.Value = null;
             }
         }
 
@@ -239,7 +256,7 @@ namespace PKMDS_Save_Editor
             _pokemon.CloneFrom(tempPokemon);
         }
 
-        private void buttonApply_Click(object sender, System.EventArgs e)
+        private void buttonApply_Click(object sender, EventArgs e)
         {
             try
             {
@@ -251,7 +268,7 @@ namespace PKMDS_Save_Editor
             }
         }
 
-        private void buttonOk_Click(object sender, System.EventArgs e)
+        private void buttonOk_Click(object sender, EventArgs e)
         {
             try
             {
@@ -262,19 +279,19 @@ namespace PKMDS_Save_Editor
                 MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-            this.Close();
+            Close();
         }
 
-        private void buttonCancel_Click(object sender, System.EventArgs e)
+        private void buttonCancel_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Close();
         }
 
         private void PictureBox_Paint_and_Resize(object sender, PaintEventArgs e)
         {
-            PictureBox picbox = (PictureBox)sender;
+            var picbox = (PictureBox)sender;
             if (picbox.Image == null) return;
-            Graphics g = e.Graphics;
+            var g = e.Graphics;
             g.Clear(picbox.BackColor);
             g.InterpolationMode = InterpolationMode.NearestNeighbor;
             g.DrawImage(picbox.Image, new Rectangle(new Point(0, 0), picbox.Size));
@@ -298,14 +315,16 @@ namespace PKMDS_Save_Editor
             _moveBindingSource.ResetBindings(false);
             _relearnableMoveBindingSource.ResetBindings(false);
             if (markingsPanel.Controls.Count != 0) return;
-            FlowLayoutPanel flp = new FlowLayoutPanel();
-            for (int i = 0; i < 6; i++)
+            var flp = new FlowLayoutPanel();
+            for (var i = 0; i < 6; i++)
             {
-                PictureBox pb = new PictureBox();
-                pb.Name = string.Format("pb{0}", (Markings)i);
-                pb.Tag = (Markings)i;
-                pb.SizeMode = PictureBoxSizeMode.Zoom;
-                pb.Size = new Size(10, 10);
+                var pb = new PictureBox
+                {
+                    Name = string.Format("pb{0}", (Markings)i),
+                    Tag = (Markings)i,
+                    SizeMode = PictureBoxSizeMode.Zoom,
+                    Size = new Size(10, 10)
+                };
                 pb.Click += pbMarkings_Click;
                 flp.Controls.Add(pb);
                 MarkingsBoxes.Add(pb);
@@ -317,7 +336,7 @@ namespace PKMDS_Save_Editor
             MarkingsBoxes[(int)Markings.Star].DataBindings.Add("Image", _pokemonBindingSource, "Star", true, DataSourceUpdateMode.Never, Images.GetMarkingImage(Markings.Star, false));
             MarkingsBoxes[(int)Markings.Diamond].DataBindings.Add("Image", _pokemonBindingSource, "Diamond", true, DataSourceUpdateMode.Never, Images.GetMarkingImage(Markings.Diamond, false));
 
-            foreach (PictureBox pb in MarkingsBoxes)
+            foreach (var pb in MarkingsBoxes)
             {
                 pb.DataBindings[0].Format += MarkingsImageFormat;
             }
@@ -328,8 +347,8 @@ namespace PKMDS_Save_Editor
         private void MarkingsImageFormat(object sender, ConvertEventArgs e)
         {
             var pb = (PictureBox)((Binding)sender).Control;
-            Markings mark = new Markings();
-            Enum.TryParse<Markings>(pb.Tag.ToString(), out mark);
+            Markings mark;
+            Enum.TryParse(pb.Tag.ToString(), out mark);
             e.Value = Images.GetMarkingImage(mark, (bool)e.Value);
         }
 
@@ -391,10 +410,10 @@ namespace PKMDS_Save_Editor
         {
             if (e.ColumnIndex == dataGridMoves.Columns["CurrentPP"].Index && (e.Exception.TargetSite.DeclaringType.FullName) == "System.Windows.Forms.Formatter")
             {
-                e.Cancel = !(MessageBox.Show("Current PP must be between 0 and 255.", "Invalid PP", MessageBoxButtons.RetryCancel, MessageBoxIcon.Error) == DialogResult.Cancel);
+                e.Cancel = MessageBox.Show("Current PP must be between 0 and 255.", "Invalid PP", MessageBoxButtons.RetryCancel, MessageBoxIcon.Error) != DialogResult.Cancel;
                 return;
             }
-            e.Cancel = !(MessageBox.Show(e.Exception.Message, "Data Error", MessageBoxButtons.RetryCancel, MessageBoxIcon.Error) == DialogResult.Cancel);
+            e.Cancel = MessageBox.Show(e.Exception.Message, "Data Error", MessageBoxButtons.RetryCancel, MessageBoxIcon.Error) != DialogResult.Cancel;
         }
 
         private void comboEggLocation_SelectedIndexChanged(object sender, EventArgs e)

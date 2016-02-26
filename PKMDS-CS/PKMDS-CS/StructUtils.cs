@@ -1,6 +1,5 @@
 ﻿#region Using
 
-using System;
 using System.IO;
 using System.Runtime.InteropServices;
 
@@ -12,12 +11,12 @@ namespace PKMDS_CS
     {
         public static TType RawDeserialize<TType>(byte[] rawData, int position = 0)
         {
-            Type anyType = typeof(TType);
-            int rawsize = Marshal.SizeOf(anyType);
+            var anyType = typeof(TType);
+            var rawsize = Marshal.SizeOf(anyType);
             if (rawsize > rawData.Length) return default(TType);
-            IntPtr buffer = Marshal.AllocHGlobal(rawsize);
+            var buffer = Marshal.AllocHGlobal(rawsize);
             Marshal.Copy(rawData, position, buffer, rawsize);
-            object retobj = Marshal.PtrToStructure(buffer, anyType);
+            var retobj = Marshal.PtrToStructure(buffer, anyType);
             Marshal.FreeHGlobal(buffer);
             return (TType)retobj;
         }
@@ -26,10 +25,10 @@ namespace PKMDS_CS
         {
             if (File.Exists(fileName))
             {
-                byte[] data = null;
-                using (FileStream fs = new FileStream(fileName, FileMode.Open, FileAccess.Read))
+                byte[] data;
+                using (var fs = new FileStream(fileName, FileMode.Open, FileAccess.Read))
                 {
-                    using (BinaryReader br = new BinaryReader(fs))
+                    using (var br = new BinaryReader(fs))
                     {
                         data = br.ReadBytes((int)fs.Length);
                         br.Close();
@@ -47,27 +46,25 @@ namespace PKMDS_CS
             {
                 return;
             }
-            byte[] data = RawSerialize(anything);
-            if (data != null)
+            var data = RawSerialize(anything);
+            if (data == null) return;
+            using (var fs = new FileStream(fileName, FileMode.Create, FileAccess.Write))
             {
-                using (FileStream fs = new FileStream(fileName, FileMode.Create, FileAccess.Write))
+                using (var bw = new BinaryWriter(fs))
                 {
-                    using (BinaryWriter bw = new BinaryWriter(fs))
-                    {
-                        bw.Write(data);
-                        bw.Close();
-                        fs.Close();
-                    }
+                    bw.Write(data);
+                    bw.Close();
+                    fs.Close();
                 }
             }
         }
 
         private static byte[] RawSerialize(object anything)
         {
-            int rawSize = Marshal.SizeOf(anything);
-            IntPtr buffer = Marshal.AllocHGlobal(rawSize);
+            var rawSize = Marshal.SizeOf(anything);
+            var buffer = Marshal.AllocHGlobal(rawSize);
             Marshal.StructureToPtr(anything, buffer, false);
-            byte[] rawDatas = new byte[rawSize];
+            var rawDatas = new byte[rawSize];
             Marshal.Copy(buffer, rawDatas, 0, rawSize);
             Marshal.FreeHGlobal(buffer);
             return rawDatas;
@@ -85,12 +82,7 @@ namespace PKMDS_CS
 
         public static void WriteObject<T>(T _object, string fileName)
         {
-            if (_object == null) return;
-            if (_object is ISave)
-            {
-                var sav = (_object as ISave);
-                if (sav == null) return;
-            }
+            if (_object == null || !(_object is ISave)) return;
             RawSerialize(_object, fileName);
         }
     }

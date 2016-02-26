@@ -5,7 +5,6 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
 using System.Linq;
-using System.Reflection;
 
 #endregion Using
 
@@ -24,7 +23,7 @@ namespace PKMDS_CS
             get
             {
                 if (!_moveList.Any())
-                    foreach (var move in Enum.GetValues(typeof(Moves)).Cast<Moves>().ToArray<Moves>())
+                    foreach (var move in Enum.GetValues(typeof(Moves)).Cast<Moves>().ToArray())
                     {
                         _moveList.Add(new MovesObject(move));
                     }
@@ -37,7 +36,7 @@ namespace PKMDS_CS
             get
             {
                 if (!_speciesList.Any())
-                    foreach (var species in Enum.GetValues(typeof(Species)).Cast<Species>().Where(s => s != Species.NoSpecies).ToArray<Species>())
+                    foreach (var species in Enum.GetValues(typeof(Species)).Cast<Species>().Where(s => s != Species.NoSpecies).ToArray())
                     {
                         _speciesList.Add(new SpeciesObject(species));
                     }
@@ -50,7 +49,7 @@ namespace PKMDS_CS
             get
             {
                 if (!_itemList.Any())
-                    foreach (var item in Enum.GetValues(typeof(Items)).Cast<Items>().ToArray<Items>())
+                    foreach (var item in Enum.GetValues(typeof(Items)).Cast<Items>().ToArray())
                     {
                         _itemList.Add(new ItemObject(item));
                     }
@@ -63,7 +62,7 @@ namespace PKMDS_CS
             get
             {
                 if (!_abilityList.Any())
-                    foreach (var ability in Enum.GetValues(typeof(Abilities)).Cast<Abilities>().ToArray<Abilities>())
+                    foreach (var ability in Enum.GetValues(typeof(Abilities)).Cast<Abilities>().ToArray())
                     {
                         _abilityList.Add(new AbilityObject(ability));
                     }
@@ -76,7 +75,7 @@ namespace PKMDS_CS
             get
             {
                 if (!_locationList.Any())
-                    foreach (var location in Enum.GetValues(typeof(Locations)).Cast<Locations>().ToArray<Locations>())
+                    foreach (var location in Enum.GetValues(typeof(Locations)).Cast<Locations>().ToArray())
                     {
                         _locationList.Add(new LocationObject(location));
                     }
@@ -124,14 +123,14 @@ namespace PKMDS_CS
         /// <returns>String</returns>
         public static string EnumToString(this Enum value)
         {
-            Type type = value.GetType();
-            string name = Enum.GetName(type, value);
+            var type = value.GetType();
+            var name = Enum.GetName(type, value);
             if (name != null)
             {
-                FieldInfo field = type.GetField(name);
+                var field = type.GetField(name);
                 if (field != null)
                 {
-                    DescriptionAttribute attr =
+                    var attr =
                         Attribute.GetCustomAttribute(field,
                             typeof(DescriptionAttribute)) as DescriptionAttribute;
                     if (attr != null)
@@ -8185,7 +8184,7 @@ namespace PKMDS_CS
         Expert_Battler_Ribbon = 0x40,
 
         [Description("Effort Ribbon")]
-        Effort_Ribbon = 0x80,
+        Effort_Ribbon = 0x80
     }
 
     [Flags]
@@ -8213,7 +8212,7 @@ namespace PKMDS_CS
         Smile_Ribbon = 0x40,
 
         [Description("Gorgeous Ribbon")]
-        Gorgeous_Ribbon = 0x80,
+        Gorgeous_Ribbon = 0x80
     }
 
     [Flags]
@@ -8241,7 +8240,7 @@ namespace PKMDS_CS
         Country_Ribbon = 0x40,
 
         [Description("National Ribbon")]
-        National_Ribbon = 0x80,
+        National_Ribbon = 0x80
     }
 
     [Flags]
@@ -8269,7 +8268,7 @@ namespace PKMDS_CS
         Special_Ribbon = 0x40,
 
         [Description("Souvenir Ribbon")]
-        Souvenir_Ribbon = 0x80,
+        Souvenir_Ribbon = 0x80
     }
 
     [Flags]
@@ -8291,7 +8290,7 @@ namespace PKMDS_CS
         World_Champion_Ribbon = 0x10,
 
         [Description("Hoenn Champion Ribbon")]
-        Hoenn_Champion_Ribbon = 0x80,
+        Hoenn_Champion_Ribbon = 0x80
     }
 
     [Flags]
@@ -8335,7 +8334,7 @@ namespace PKMDS_CS
         Speed_Level_1 = 0x40,
 
         [Description("Def Level 1")]
-        Def_Level_1 = 0x80,
+        Def_Level_1 = 0x80
     }
 
     [Flags]
@@ -8363,7 +8362,7 @@ namespace PKMDS_CS
         Sp_Atk_Level_3 = 0x40,
 
         [Description("HP Level 3")]
-        HP_Level_3 = 0x80,
+        HP_Level_3 = 0x80
     }
 
     [Flags]
@@ -8391,7 +8390,7 @@ namespace PKMDS_CS
         The_Fire_Stone_Cup_Begins = 0x40,
 
         [Description("The Water Stone Cup Begins!")]
-        The_Water_Stone_Cup_Begins = 0x80,
+        The_Water_Stone_Cup_Begins = 0x80
     }
 
     [Flags]
@@ -8419,7 +8418,7 @@ namespace PKMDS_CS
         Drag_Down_Hydreigon = 0x40,
 
         [Description("The Battle for the Best: Version X/Y!")]
-        The_Battle_for_the_Best_Version_X_Y = 0x80,
+        The_Battle_for_the_Best_Version_X_Y = 0x80
     }
 
     public class ItemObject
@@ -8440,19 +8439,25 @@ namespace PKMDS_CS
             set
             {
                 this.value = Enum.IsDefined(typeof(Items), value)
-                    ? (Items)value
+                    ? value
                     : Items.NoItem;
             }
         }
 
         public Image Image
         {
-            get { return Images.GetItemImage((ushort)Value); }
+            get
+            {
+                return Images.GetItemImage((ushort)Value);
+            }
         }
 
         public string Name
         {
-            get { return value.EnumToString(); }
+            get
+            {
+                return value.EnumToString();
+            }
         }
 
         public override string ToString()
@@ -8460,15 +8465,10 @@ namespace PKMDS_CS
             return Name;
         }
 
-        public override bool Equals(Object obj)
+        public override bool Equals(object obj)
         {
-            if (obj == null)
-            {
-                return false;
-            }
-
-            ItemObject i = obj as ItemObject;
-            if ((Object)i == null)
+            var i = obj as ItemObject;
+            if (i == null)
             {
                 return false;
             }
@@ -8478,11 +8478,6 @@ namespace PKMDS_CS
 
         public bool Equals(Items i)
         {
-            if ((object)i == null)
-            {
-                return false;
-            }
-
             return Value == i;
         }
 
@@ -8493,12 +8488,7 @@ namespace PKMDS_CS
 
         public static bool operator ==(ItemObject a, Items b)
         {
-            if (Object.ReferenceEquals(a, b))
-            {
-                return true;
-            }
-
-            if (((object)a == null) || ((object)b == null))
+            if (a == null)
             {
                 return false;
             }
@@ -8530,14 +8520,17 @@ namespace PKMDS_CS
             set
             {
                 this.value = Enum.IsDefined(typeof(Species), value)
-                    ? (Species)value
+                    ? value
                     : Species.NoSpecies;
             }
         }
 
         public string Name
         {
-            get { return value.EnumToString(); }
+            get
+            {
+                return value.EnumToString();
+            }
         }
 
         public override string ToString()
@@ -8560,20 +8553,23 @@ namespace PKMDS_CS
             get
             {
                 return Enum.IsDefined(typeof(Locations), value)
-                    ? (Locations)value
+                    ? value
                     : Locations.Mystery_Zone;
             }
             set
             {
                 this.value = Enum.IsDefined(typeof(Locations), value)
-                    ? (Locations)value
+                    ? value
                     : Locations.Mystery_Zone;
             }
         }
 
         public string Name
         {
-            get { return value.EnumToString(); }
+            get
+            {
+                return value.EnumToString();
+            }
         }
 
         public override string ToString()
@@ -8606,7 +8602,7 @@ namespace PKMDS_CS
             set
             {
                 this.value = Enum.IsDefined(typeof(Moves), value)
-                    ? (Moves)value
+                    ? value
                     : Moves.NoMove;
             }
         }
@@ -8614,7 +8610,10 @@ namespace PKMDS_CS
         [DisplayName("Name")]
         public string Name
         {
-            get { return value.EnumToString(); }
+            get
+            {
+                return value.EnumToString();
+            }
         }
 
         [DisplayName("Type")]
@@ -8622,10 +8621,10 @@ namespace PKMDS_CS
         {
             get
             {
-                int typeid = 0;
+                var typeid = 0;
                 var typequery = DBTools.GetMoveDataTable.Select(string.Format("id = {0}", (int)value));
                 if (typequery.Length == 0) return null;
-                string typeidstr = typequery[0].ItemArray[(int)DBTools.MoveDataTableColumns.type_id].ToString();
+                var typeidstr = typequery[0].ItemArray[(int)DBTools.MoveDataTableColumns.type_id].ToString();
                 if (!int.TryParse(typeidstr, out typeid)) return new TypeObject();
                 if (!Enum.IsDefined(typeof(Types), typeid)) return new TypeObject();
                 return new TypeObject((Types)typeid);
@@ -8650,7 +8649,7 @@ namespace PKMDS_CS
                 var damageclassquery = DBTools.GetMoveDataTable.Select(string.Format("id = {0}", (int)value));
                 if (damageclassquery.Length == 0) return null;
                 var damageclassidstr = damageclassquery[0].ItemArray[(int)DBTools.MoveDataTableColumns.damage_class_id].ToString();
-                int damageclassid = -1;
+                var damageclassid = -1;
                 int.TryParse(damageclassidstr, out damageclassid);
                 switch (damageclassid)
                 {
@@ -8674,11 +8673,11 @@ namespace PKMDS_CS
         {
             get
             {
-                int power = 0;
+                var power = 0;
                 var powerquery = DBTools.GetMoveDataTable.Select(string.Format("id = {0}", (int)value));
                 if (powerquery.Length != 0)
                 {
-                    string powerstr = powerquery[0].ItemArray[(int)DBTools.MoveDataTableColumns.power].ToString();
+                    var powerstr = powerquery[0].ItemArray[(int)DBTools.MoveDataTableColumns.power].ToString();
                     int.TryParse(powerstr, out power);
                 }
                 return power;
@@ -8690,11 +8689,11 @@ namespace PKMDS_CS
         {
             get
             {
-                decimal accuracy = 0M;
+                var accuracy = 0M;
                 var accuracyquery = DBTools.GetMoveDataTable.Select(string.Format("id = {0}", (int)value));
                 if (accuracyquery.Length != 0)
                 {
-                    string accuracystr = accuracyquery[0].ItemArray[(int)DBTools.MoveDataTableColumns.accuracy].ToString();
+                    var accuracystr = accuracyquery[0].ItemArray[(int)DBTools.MoveDataTableColumns.accuracy].ToString();
                     decimal.TryParse(accuracystr, out accuracy);
                 }
                 return accuracy;
@@ -8710,7 +8709,7 @@ namespace PKMDS_CS
                 var baseppquery = DBTools.GetMoveDataTable.Select(string.Format("id = {0}", (int)value));
                 if (baseppquery.Length != 0)
                 {
-                    string baseppstr = baseppquery[0].ItemArray[(int)DBTools.MoveDataTableColumns.pp].ToString();
+                    var baseppstr = baseppquery[0].ItemArray[(int)DBTools.MoveDataTableColumns.pp].ToString();
                     byte.TryParse(baseppstr, out basepp);
                 }
                 return basepp;
@@ -8742,10 +8741,7 @@ namespace PKMDS_CS
                 {
                     return flavor[0].ItemArray[(int)DBTools.MoveDataTableColumns.flavor_text].ToString();
                 }
-                else
-                {
-                    return string.Empty;
-                }
+                return string.Empty;
             }
         }
 
@@ -8773,14 +8769,17 @@ namespace PKMDS_CS
             set
             {
                 this.value = Enum.IsDefined(typeof(Abilities), value)
-                    ? (Abilities)value
+                    ? value
                     : Abilities.NoAbility;
             }
         }
 
         public string Name
         {
-            get { return value.EnumToString(); }
+            get
+            {
+                return value.EnumToString();
+            }
         }
 
         public override string ToString()
@@ -8807,14 +8806,17 @@ namespace PKMDS_CS
             set
             {
                 this.value = Enum.IsDefined(typeof(Natures), value)
-                    ? (Natures)value
+                    ? value
                     : Natures.Hardy;
             }
         }
 
         public string Name
         {
-            get { return value.EnumToString(); }
+            get
+            {
+                return value.EnumToString();
+            }
         }
 
         public override string ToString()
@@ -8827,8 +8829,8 @@ namespace PKMDS_CS
     {
         public TypeObject(Types Type)
         {
-            this.value = Enum.IsDefined(typeof(Types), Type)
-                ? (Types)Type
+            value = Enum.IsDefined(typeof(Types), Type)
+                ? Type
                 : Types.Normal;
         }
 
@@ -8843,14 +8845,17 @@ namespace PKMDS_CS
             set
             {
                 this.value = Enum.IsDefined(typeof(Types), value)
-                    ? (Types)value
+                    ? value
                     : Types.Normal;
             }
         }
 
         public string Name
         {
-            get { return value.EnumToString(); }
+            get
+            {
+                return value.EnumToString();
+            }
         }
 
         public Image Image

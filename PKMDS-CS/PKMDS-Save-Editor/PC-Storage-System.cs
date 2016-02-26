@@ -1,8 +1,10 @@
 ﻿#region Using
 
 using PKMDS_CS;
+using PKMDS_Save_Editor.Properties;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Drawing;
 using System.Linq;
 using System.Reflection;
@@ -26,7 +28,7 @@ namespace PKMDS_Save_Editor
         private readonly BindingSource _boxenamesBindingSource = new BindingSource();
         private CurrencyManager _boxenamesCurrencyManager;
         private ISave _sav;
-        private bool savLoaded = false;
+        private bool savLoaded;
 
         public PC_Storage_System_Form()
         {
@@ -39,12 +41,14 @@ namespace PKMDS_Save_Editor
         {
             DBTools.OpenDB(veekundb);
             _pokemonBindingSource.DataMember = "Pokemon";
-            FlowLayoutPanel flpMain = new FlowLayoutPanel();
-            flpMain.Name = "flpMain";
-            flpMain.Size = new Size(6 * 40, 5 * 30);
-            flpMain.Location = new Point(0, 0);
+            var flpMain = new FlowLayoutPanel
+            {
+                Name = "flpMain",
+                Size = new Size(6 * 40, 5 * 30),
+                Location = new Point(0, 0)
+            };
             pbSlots.Clear();
-            for (int slot = 0; slot < 30; slot++)
+            for (var slot = 0; slot < 30; slot++)
             {
                 pbSlots.Add(new PictureBox
                 {
@@ -77,14 +81,12 @@ namespace PKMDS_Save_Editor
 
         private void slot_DoubleClick(object sender, EventArgs e)
         {
-            int slot = 0;
-            if (int.TryParse(((PictureBox)sender).Tag.ToString(), out slot))
-            {
-                Pokemon pokemon = (Pokemon)_pokemonBindingSource[slot];
-                if (pokemon.Species == Species.NoSpecies) return;
-                OpenPokemonEditor(pokemon);
-                RefreshBoxSlots(slot);
-            }
+            int slot;
+            if (!int.TryParse(((PictureBox)sender).Tag.ToString(), out slot)) return;
+            var pokemon = (Pokemon)_pokemonBindingSource[slot];
+            if (pokemon.Species == Species.NoSpecies) return;
+            OpenPokemonEditor(pokemon);
+            RefreshBoxSlots(slot);
         }
 
         private static void OpenPokemonEditor(Pokemon pokemon)
@@ -105,7 +107,7 @@ namespace PKMDS_Save_Editor
             _boxenamesCurrencyManager = _boxenamesBindingSource.CurrencyManager;
             _boxesCurrencyManager = _boxesBindingSource.CurrencyManager;
             _pokemonBindingSource.DataSource = _boxesCurrencyManager.Current;
-            for (int slot = 0; slot < 30; slot++)
+            for (var slot = 0; slot < 30; slot++)
             {
                 pbSlots[slot].DataBindings.Clear();
                 pbSlots[slot].DataBindings.Add("Image", _pokemonBindingSource[slot], "BoxIconEgg", true, DataSourceUpdateMode.Never, null);
@@ -131,14 +133,14 @@ namespace PKMDS_Save_Editor
             dgPokemon.AutoGenerateColumns = false;
             dgPokemon.EditMode = DataGridViewEditMode.EditOnKeystrokeOrF2;
 
-            dgPokemon.Columns.Add(new DataGridViewCheckBoxColumn()
+            dgPokemon.Columns.Add(new DataGridViewCheckBoxColumn
             {
                 Name = "IsEgg",
                 HeaderText = "Is Egg",
                 DataPropertyName = "IsEgg"
             });
 
-            dgPokemon.Columns.Add(new DataGridViewTextBoxColumn()
+            dgPokemon.Columns.Add(new DataGridViewTextBoxColumn
             {
                 Name = "Nickname",
                 HeaderText = "Nickname",
@@ -147,7 +149,7 @@ namespace PKMDS_Save_Editor
                 ValueType = typeof(string)
             });
 
-            dgPokemon.Columns.Add(new DataGridViewComboBoxColumn()
+            dgPokemon.Columns.Add(new DataGridViewComboBoxColumn
             {
                 Name = "Species",
                 HeaderText = "Species",
@@ -159,7 +161,7 @@ namespace PKMDS_Save_Editor
                 DisplayStyle = DataGridViewComboBoxDisplayStyle.Nothing
             });
 
-            dgPokemon.Columns.Add(new DataGridViewTextBoxColumn()
+            dgPokemon.Columns.Add(new DataGridViewTextBoxColumn
             {
                 Name = "Level",
                 HeaderText = "Level",
@@ -168,7 +170,7 @@ namespace PKMDS_Save_Editor
                 Tag = "numeric"
             });
 
-            dgPokemon.Columns.Add(new DataGridViewComboBoxColumn()
+            dgPokemon.Columns.Add(new DataGridViewComboBoxColumn
             {
                 Name = "HeldItem",
                 HeaderText = "Held Item",
@@ -180,17 +182,17 @@ namespace PKMDS_Save_Editor
                 DisplayStyle = DataGridViewComboBoxDisplayStyle.Nothing
             });
 
-            dgPokemon.Columns.Add(new DataGridViewComboBoxColumn()
+            dgPokemon.Columns.Add(new DataGridViewComboBoxColumn
             {
                 Name = "Nature",
                 HeaderText = "Nature",
-                DataSource = Enum.GetValues(typeof(Natures)).Cast<Natures>().ToArray<Natures>(),
+                DataSource = Enum.GetValues(typeof(Natures)).Cast<Natures>().ToArray(),
                 DataPropertyName = "Nature",
                 DropDownWidth = 70,
                 DisplayStyle = DataGridViewComboBoxDisplayStyle.Nothing
             });
 
-            dgPokemon.Columns.Add(new DataGridViewComboBoxColumn()
+            dgPokemon.Columns.Add(new DataGridViewComboBoxColumn
             {
                 Name = "Ability",
                 HeaderText = "Ability",
@@ -202,7 +204,7 @@ namespace PKMDS_Save_Editor
                 DisplayStyle = DataGridViewComboBoxDisplayStyle.Nothing
             });
 
-            dgPokemon.Columns.Add(new DataGridViewTextBoxColumn()
+            dgPokemon.Columns.Add(new DataGridViewTextBoxColumn
             {
                 Name = "OTName",
                 HeaderText = "Original Trainer",
@@ -211,7 +213,7 @@ namespace PKMDS_Save_Editor
                 ValueType = typeof(string)
             });
 
-            dgPokemon.Columns.Add(new DataGridViewTextBoxColumn()
+            dgPokemon.Columns.Add(new DataGridViewTextBoxColumn
             {
                 Name = "OTID",
                 HeaderText = "Trainer ID",
@@ -222,7 +224,7 @@ namespace PKMDS_Save_Editor
             });
             dgPokemon.Columns["OTID"].DefaultCellStyle.Format = "00000";
 
-            dgPokemon.Columns.Add(new DataGridViewComboBoxColumn()
+            dgPokemon.Columns.Add(new DataGridViewComboBoxColumn
             {
                 Name = "Move1",
                 HeaderText = "Move 1",
@@ -234,7 +236,7 @@ namespace PKMDS_Save_Editor
                 DisplayStyle = DataGridViewComboBoxDisplayStyle.Nothing
             });
 
-            dgPokemon.Columns.Add(new DataGridViewComboBoxColumn()
+            dgPokemon.Columns.Add(new DataGridViewComboBoxColumn
             {
                 Name = "Move2",
                 HeaderText = "Move 2",
@@ -246,7 +248,7 @@ namespace PKMDS_Save_Editor
                 DisplayStyle = DataGridViewComboBoxDisplayStyle.Nothing
             });
 
-            dgPokemon.Columns.Add(new DataGridViewComboBoxColumn()
+            dgPokemon.Columns.Add(new DataGridViewComboBoxColumn
             {
                 Name = "Move3",
                 HeaderText = "Move 3",
@@ -258,7 +260,7 @@ namespace PKMDS_Save_Editor
                 DisplayStyle = DataGridViewComboBoxDisplayStyle.Nothing
             });
 
-            dgPokemon.Columns.Add(new DataGridViewComboBoxColumn()
+            dgPokemon.Columns.Add(new DataGridViewComboBoxColumn
             {
                 Name = "Move4",
                 HeaderText = "Move 4",
@@ -267,10 +269,10 @@ namespace PKMDS_Save_Editor
                 ValueMember = "Value",
                 DisplayMember = "Name",
                 DropDownWidth = 120,
-                DisplayStyle = DataGridViewComboBoxDisplayStyle.Nothing,
+                DisplayStyle = DataGridViewComboBoxDisplayStyle.Nothing
             });
 
-            dgPokemon.Columns.Add(new DataGridViewTextBoxColumn()
+            dgPokemon.Columns.Add(new DataGridViewTextBoxColumn
             {
                 Name = "HP",
                 HeaderText = "HP",
@@ -279,7 +281,7 @@ namespace PKMDS_Save_Editor
                 ReadOnly = true
             });
 
-            dgPokemon.Columns.Add(new DataGridViewTextBoxColumn()
+            dgPokemon.Columns.Add(new DataGridViewTextBoxColumn
             {
                 Name = "Attack",
                 HeaderText = "Attack",
@@ -288,7 +290,7 @@ namespace PKMDS_Save_Editor
                 ReadOnly = true
             });
 
-            dgPokemon.Columns.Add(new DataGridViewTextBoxColumn()
+            dgPokemon.Columns.Add(new DataGridViewTextBoxColumn
             {
                 Name = "Defense",
                 HeaderText = "Defense",
@@ -297,7 +299,7 @@ namespace PKMDS_Save_Editor
                 ReadOnly = true
             });
 
-            dgPokemon.Columns.Add(new DataGridViewTextBoxColumn()
+            dgPokemon.Columns.Add(new DataGridViewTextBoxColumn
             {
                 Name = "SpAttack",
                 HeaderText = "Special Attack",
@@ -306,7 +308,7 @@ namespace PKMDS_Save_Editor
                 ReadOnly = true
             });
 
-            dgPokemon.Columns.Add(new DataGridViewTextBoxColumn()
+            dgPokemon.Columns.Add(new DataGridViewTextBoxColumn
             {
                 Name = "SpDefense",
                 HeaderText = "Special Defense",
@@ -315,7 +317,7 @@ namespace PKMDS_Save_Editor
                 ReadOnly = true
             });
 
-            dgPokemon.Columns.Add(new DataGridViewTextBoxColumn()
+            dgPokemon.Columns.Add(new DataGridViewTextBoxColumn
             {
                 Name = "Speed",
                 HeaderText = "Speed",
@@ -350,21 +352,21 @@ namespace PKMDS_Save_Editor
 
         private void dgPokemon_CellMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
         {
-            Pokemon pokemon = ((dgPokemon.DataSource as Pokemon[])[e.RowIndex] as Pokemon);
+            var pokemons = dgPokemon.DataSource as Pokemon[];
+            if (pokemons == null) return;
+            var pokemon = pokemons[e.RowIndex];
             OpenPokemonEditor(pokemon);
         }
 
         private void DgPokemon_EditingControlShowing(object sender, DataGridViewEditingControlShowingEventArgs e)
         {
-            e.Control.KeyPress -= new KeyPressEventHandler(NumericColumn_KeyPress);
-            if (dgPokemon.Columns[dgPokemon.CurrentCell.ColumnIndex].Tag != null &&
-                dgPokemon.Columns[dgPokemon.CurrentCell.ColumnIndex].Tag.ToString() == "numeric") //Desired Column
+            e.Control.KeyPress -= NumericColumn_KeyPress;
+            if (dgPokemon.Columns[dgPokemon.CurrentCell.ColumnIndex].Tag == null ||
+                dgPokemon.Columns[dgPokemon.CurrentCell.ColumnIndex].Tag.ToString() != "numeric") return;
+            var tb = e.Control as TextBox;
+            if (tb != null)
             {
-                TextBox tb = e.Control as TextBox;
-                if (tb != null)
-                {
-                    tb.KeyPress += new KeyPressEventHandler(NumericColumn_KeyPress);
-                }
+                tb.KeyPress += NumericColumn_KeyPress;
             }
         }
 
@@ -384,7 +386,7 @@ namespace PKMDS_Save_Editor
         private void DgPokemon_DataError(object sender, DataGridViewDataErrorEventArgs e)
         {
             if (e.Exception != null)
-                e.Cancel = !(MessageBox.Show(e.Exception.Message, "Data Error", MessageBoxButtons.RetryCancel, MessageBoxIcon.Error) == DialogResult.Cancel);
+                e.Cancel = MessageBox.Show(e.Exception.Message, "Data Error", MessageBoxButtons.RetryCancel, MessageBoxIcon.Error) != DialogResult.Cancel;
         }
 
         private void ReportForm_FormClosing(object sender, FormClosingEventArgs e)
@@ -396,7 +398,7 @@ namespace PKMDS_Save_Editor
         private void WriteSave(string saveFileName)
         {
             _sav.PCStorageSystem.Boxes.SelectMany(box => box.Pokemon).ToList().ForEach(pokemon => pokemon.Encrypt());
-            StructUtils.WriteObject<ISave>(_sav, saveFileName);
+            StructUtils.WriteObject(_sav, saveFileName);
         }
 
         private void PKMDS_Save_Editor_FormClosing(object sender, FormClosingEventArgs e)
@@ -405,8 +407,11 @@ namespace PKMDS_Save_Editor
             {
                 DBTools.CloseDB();
             }
-            catch (Exception) { }
-            finally { Properties.Settings.Default.Save(); }
+            catch (Exception)
+            {
+                // ignored
+            }
+            finally { Settings.Default.Save(); }
         }
 
         private void comboBoxes_SelectedIndexChanged(object sender, EventArgs e)
@@ -434,11 +439,11 @@ namespace PKMDS_Save_Editor
             }
             else
             {
-                foreach (PictureBox pbSlot in pbSlots)
+                foreach (var pbSlot in pbSlots)
                 {
                     pbSlot.DataBindings.Clear();
                 }
-                for (int slot = 0; slot < 30; slot++)
+                for (var slot = 0; slot < 30; slot++)
                 {
                     pbSlots[slot].DataBindings.Add("Image", _pokemonBindingSource[slot], "BoxIconEgg", true, DataSourceUpdateMode.Never, null);
                 }
@@ -452,16 +457,16 @@ namespace PKMDS_Save_Editor
 
         private void sortPokémonToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var allpokemon = _sav.PCStorageSystem.Boxes.SelectMany(box => box.Pokemon).ToList().Where(pokemon => pokemon.Species != PKMDS_CS.Species.NoSpecies).ToList();
+            var allpokemon = _sav.PCStorageSystem.Boxes.SelectMany(box => box.Pokemon).ToList().Where(pokemon => pokemon.Species != Species.NoSpecies).ToList();
             allpokemon.Sort();
-            List<Pokemon> sortedList = new List<Pokemon>();
-            for (int i = 0; i < allpokemon.Count; i++)
+            var sortedList = new List<Pokemon>();
+            for (var i = 0; i < allpokemon.Count; i++)
             {
                 sortedList.Add(new Pokemon());
                 sortedList[i].CloneFrom(allpokemon[i]);
             }
-            int p = 0;
-            Pokemon blank = new Pokemon();
+            var p = 0;
+            var blank = new Pokemon();
             foreach (var pokemon in _sav.PCStorageSystem.Boxes.SelectMany(box => box.Pokemon).ToList())
             {
                 if (p < allpokemon.Count)
@@ -477,15 +482,13 @@ namespace PKMDS_Save_Editor
             RefreshBoxSlots();
         }
 
-        private void textBoxName_Validating(object sender, System.ComponentModel.CancelEventArgs e)
+        private void textBoxName_Validating(object sender, CancelEventArgs e)
         {
-            if (textBoxName.Text == string.Empty)
-            {
-                MessageBox.Show("Cannot have an empty box name.", "Box Name", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                textBoxName.Text = "Box";
-                textBoxName.SelectAll();
-                textBoxName.Focus();
-            }
+            if (textBoxName.Text != string.Empty) return;
+            MessageBox.Show("Cannot have an empty box name.", "Box Name", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            textBoxName.Text = "Box";
+            textBoxName.SelectAll();
+            textBoxName.Focus();
         }
 
         private void loadSaveFileToolStripMenuItem_Click(object sender, EventArgs e)
@@ -502,6 +505,7 @@ namespace PKMDS_Save_Editor
             }
             catch (Exception)
             {
+                // ignored
             }
         }
 

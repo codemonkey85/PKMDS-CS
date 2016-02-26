@@ -106,8 +106,8 @@ namespace PKMDS_CS
         {
             get
             {
-                List<Pokemon> pokemon = new List<Pokemon>();
-                for (int i = 0; i < 30; i++)
+                var pokemon = new List<Pokemon>();
+                for (var i = 0; i < 30; i++)
                 {
                     pokemon.Add(this[i]);
                 }
@@ -447,8 +447,8 @@ namespace PKMDS_CS
         {
             get
             {
-                List<PCBox> boxes = new List<PCBox>();
-                for (int i = 0; i < 31; i++)
+                var boxes = new List<PCBox>();
+                for (var i = 0; i < 31; i++)
                 {
                     boxes.Add(this[i]);
                 }
@@ -795,8 +795,8 @@ namespace PKMDS_CS
         {
             get
             {
-                List<BoxName> boxes = new List<BoxName>();
-                for (int i = 0; i < 31; i++)
+                var boxes = new List<BoxName>();
+                for (var i = 0; i < 31; i++)
                 {
                     boxes.Add(this[i]);
                 }
@@ -1051,7 +1051,10 @@ namespace PKMDS_CS
 
         public string Name
         {
-            get { return name; }
+            get
+            {
+                return name;
+            }
             set
             {
                 if (value == string.Empty)
