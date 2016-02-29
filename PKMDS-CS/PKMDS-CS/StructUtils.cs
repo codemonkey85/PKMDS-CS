@@ -23,21 +23,18 @@ namespace PKMDS_CS
 
         public static TType RawDeserialize<TType>(string fileName, int position = 0)
         {
-            if (File.Exists(fileName))
+            if (!File.Exists(fileName)) return default(TType);
+            byte[] data;
+            using (var fs = new FileStream(fileName, FileMode.Open, FileAccess.Read))
             {
-                byte[] data;
-                using (var fs = new FileStream(fileName, FileMode.Open, FileAccess.Read))
+                using (var br = new BinaryReader(fs))
                 {
-                    using (var br = new BinaryReader(fs))
-                    {
-                        data = br.ReadBytes((int)fs.Length);
-                        br.Close();
-                        fs.Close();
-                    }
+                    data = br.ReadBytes((int)fs.Length);
+                    br.Close();
+                    fs.Close();
                 }
-                return RawDeserialize<TType>(data, position);
             }
-            return default(TType);
+            return RawDeserialize<TType>(data, position);
         }
 
         private static void RawSerialize(object anything, string fileName)

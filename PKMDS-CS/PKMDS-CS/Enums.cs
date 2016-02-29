@@ -22,11 +22,11 @@ namespace PKMDS_CS
         {
             get
             {
-                if (!_moveList.Any())
-                    foreach (var move in Enum.GetValues(typeof(Moves)).Cast<Moves>().ToArray())
-                    {
-                        _moveList.Add(new MovesObject(move));
-                    }
+                if (_moveList.Any()) return _moveList;
+                foreach (var move in Enum.GetValues(typeof(Moves)).Cast<Moves>().ToArray())
+                {
+                    _moveList.Add(new MovesObject(move));
+                }
                 return _moveList;
             }
         }
@@ -35,11 +35,11 @@ namespace PKMDS_CS
         {
             get
             {
-                if (!_speciesList.Any())
-                    foreach (var species in Enum.GetValues(typeof(Species)).Cast<Species>().Where(s => s != Species.NoSpecies).ToArray())
-                    {
-                        _speciesList.Add(new SpeciesObject(species));
-                    }
+                if (_speciesList.Any()) return _speciesList;
+                foreach (var species in Enum.GetValues(typeof(Species)).Cast<Species>().Where(s => s != Species.NoSpecies).ToArray())
+                {
+                    _speciesList.Add(new SpeciesObject(species));
+                }
                 return _speciesList;
             }
         }
@@ -48,11 +48,11 @@ namespace PKMDS_CS
         {
             get
             {
-                if (!_itemList.Any())
-                    foreach (var item in Enum.GetValues(typeof(Items)).Cast<Items>().ToArray())
-                    {
-                        _itemList.Add(new ItemObject(item));
-                    }
+                if (_itemList.Any()) return _itemList;
+                foreach (var item in Enum.GetValues(typeof(Items)).Cast<Items>().ToArray())
+                {
+                    _itemList.Add(new ItemObject(item));
+                }
                 return _itemList;
             }
         }
@@ -61,11 +61,11 @@ namespace PKMDS_CS
         {
             get
             {
-                if (!_abilityList.Any())
-                    foreach (var ability in Enum.GetValues(typeof(Abilities)).Cast<Abilities>().ToArray())
-                    {
-                        _abilityList.Add(new AbilityObject(ability));
-                    }
+                if (_abilityList.Any()) return _abilityList;
+                foreach (var ability in Enum.GetValues(typeof(Abilities)).Cast<Abilities>().ToArray())
+                {
+                    _abilityList.Add(new AbilityObject(ability));
+                }
                 return _abilityList;
             }
         }
@@ -74,11 +74,11 @@ namespace PKMDS_CS
         {
             get
             {
-                if (!_locationList.Any())
-                    foreach (var location in Enum.GetValues(typeof(Locations)).Cast<Locations>().ToArray())
-                    {
-                        _locationList.Add(new LocationObject(location));
-                    }
+                if (_locationList.Any()) return _locationList;
+                foreach (var location in Enum.GetValues(typeof(Locations)).Cast<Locations>().ToArray())
+                {
+                    _locationList.Add(new LocationObject(location));
+                }
                 return _locationList;
             }
         }
@@ -125,26 +125,18 @@ namespace PKMDS_CS
         {
             var type = value.GetType();
             var name = Enum.GetName(type, value);
-            if (name != null)
-            {
-                var field = type.GetField(name);
-                if (field != null)
-                {
-                    var attr =
-                        Attribute.GetCustomAttribute(field,
-                            typeof(DescriptionAttribute)) as DescriptionAttribute;
-                    if (attr != null)
-                    {
-                        return attr.Description;
-                    }
-                }
-            }
-            return null;
+            if (name == null) return null;
+            var field = type.GetField(name);
+            if (field == null) return null;
+            var attr =
+                Attribute.GetCustomAttribute(field,
+                    typeof(DescriptionAttribute)) as DescriptionAttribute;
+            return attr != null ? attr.Description : null;
         }
 
         public static Items BallToItem(byte ball)
         {
-            if (ball < 0 || ball >= BallsToItems.Count)
+            if (ball >= BallsToItems.Count)
                 return Items.NoItem;
             return (Items)BallsToItems[ball];
         }
@@ -8621,13 +8613,14 @@ namespace PKMDS_CS
         {
             get
             {
-                var typeid = 0;
+                int typeid;
                 var typequery = DBTools.GetMoveDataTable.Select(string.Format("id = {0}", (int)value));
                 if (typequery.Length == 0) return null;
                 var typeidstr = typequery[0].ItemArray[(int)DBTools.MoveDataTableColumns.type_id].ToString();
                 if (!int.TryParse(typeidstr, out typeid)) return new TypeObject();
-                if (!Enum.IsDefined(typeof(Types), typeid)) return new TypeObject();
-                return new TypeObject((Types)typeid);
+                return !Enum.IsDefined(typeof(Types), typeid) 
+                    ? new TypeObject() 
+                    : new TypeObject((Types)typeid);
             }
         }
 
@@ -8636,8 +8629,9 @@ namespace PKMDS_CS
         {
             get
             {
-                if (!Type.HasValue) return null;
-                return Type.Value.Image;
+                return !Type.HasValue 
+                    ? null 
+                    : Type.Value.Image;
             }
         }
 
@@ -8675,11 +8669,9 @@ namespace PKMDS_CS
             {
                 var power = 0;
                 var powerquery = DBTools.GetMoveDataTable.Select(string.Format("id = {0}", (int)value));
-                if (powerquery.Length != 0)
-                {
-                    var powerstr = powerquery[0].ItemArray[(int)DBTools.MoveDataTableColumns.power].ToString();
-                    int.TryParse(powerstr, out power);
-                }
+                if (powerquery.Length == 0) return power;
+                var powerstr = powerquery[0].ItemArray[(int)DBTools.MoveDataTableColumns.power].ToString();
+                int.TryParse(powerstr, out power);
                 return power;
             }
         }
@@ -8691,11 +8683,9 @@ namespace PKMDS_CS
             {
                 var accuracy = 0M;
                 var accuracyquery = DBTools.GetMoveDataTable.Select(string.Format("id = {0}", (int)value));
-                if (accuracyquery.Length != 0)
-                {
-                    var accuracystr = accuracyquery[0].ItemArray[(int)DBTools.MoveDataTableColumns.accuracy].ToString();
-                    decimal.TryParse(accuracystr, out accuracy);
-                }
+                if (accuracyquery.Length == 0) return accuracy;
+                var accuracystr = accuracyquery[0].ItemArray[(int)DBTools.MoveDataTableColumns.accuracy].ToString();
+                decimal.TryParse(accuracystr, out accuracy);
                 return accuracy;
             }
         }
@@ -8707,11 +8697,9 @@ namespace PKMDS_CS
             {
                 byte basepp = 0;
                 var baseppquery = DBTools.GetMoveDataTable.Select(string.Format("id = {0}", (int)value));
-                if (baseppquery.Length != 0)
-                {
-                    var baseppstr = baseppquery[0].ItemArray[(int)DBTools.MoveDataTableColumns.pp].ToString();
-                    byte.TryParse(baseppstr, out basepp);
-                }
+                if (baseppquery.Length == 0) return basepp;
+                var baseppstr = baseppquery[0].ItemArray[(int)DBTools.MoveDataTableColumns.pp].ToString();
+                byte.TryParse(baseppstr, out basepp);
                 return basepp;
             }
         }
@@ -8737,11 +8725,9 @@ namespace PKMDS_CS
             get
             {
                 var flavor = DBTools.GetMoveDataTable.Select(string.Format("id = {0}", (int)value));
-                if (flavor.Length != 0)
-                {
-                    return flavor[0].ItemArray[(int)DBTools.MoveDataTableColumns.flavor_text].ToString();
-                }
-                return string.Empty;
+                return flavor.Length != 0 
+                    ? flavor[0].ItemArray[(int)DBTools.MoveDataTableColumns.flavor_text].ToString() 
+                    : string.Empty;
             }
         }
 
