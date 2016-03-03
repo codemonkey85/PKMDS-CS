@@ -172,7 +172,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("Trainer ID")]
+        [DisplayName(@"Trainer ID")]
         public ushort OTID
         {
             get
@@ -185,7 +185,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("Trainer Secret ID")]
+        [DisplayName(@"Trainer Secret ID")]
         public ushort OTSecretID
         {
             get
@@ -222,7 +222,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("Ability Number")]
+        [DisplayName(@"Ability Number")]
         public byte AbilityNumber
         {
             get
@@ -235,7 +235,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("[Hits Remaining] on [Training Bag]")]
+        [DisplayName(@"[Hits Remaining] on [Training Bag]")]
         public ushort HitsRemainingonTrainingBag
         {
             get
@@ -248,7 +248,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("Personality Value")]
+        [DisplayName(@"Personality Value")]
         public uint PID
         {
             get
@@ -285,7 +285,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("HP Effort Value")]
+        [DisplayName(@"HP Effort Value")]
         public byte HPEffortValue
         {
             get
@@ -298,7 +298,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("Attack Effort Value")]
+        [DisplayName(@"Attack Effort Value")]
         public byte AttackEffortValue
         {
             get
@@ -311,7 +311,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("Defense Effort Value")]
+        [DisplayName(@"Defense Effort Value")]
         public byte DefenseEffortValue
         {
             get
@@ -324,7 +324,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("Speed Effort Value")]
+        [DisplayName(@"Speed Effort Value")]
         public byte SpeedEffortValue
         {
             get
@@ -337,7 +337,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("SP Attack Effort Value")]
+        [DisplayName(@"SP Attack Effort Value")]
         public byte SpAttackEffortValue
         {
             get
@@ -350,7 +350,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("SP Defense Effort Value")]
+        [DisplayName(@"SP Defense Effort Value")]
         public byte SpDefenseEffortValue
         {
             get
@@ -363,7 +363,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("Contest Stat: Cool")]
+        [DisplayName(@"Contest Stat: Cool")]
         public byte ContestStatCool
         {
             get
@@ -376,7 +376,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("Contest Stat: Beauty")]
+        [DisplayName(@"Contest Stat: Beauty")]
         public byte ContestStatBeauty
         {
             get
@@ -389,7 +389,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("Contest Stat: Cute")]
+        [DisplayName(@"Contest Stat: Cute")]
         public byte ContestStatCute
         {
             get
@@ -402,7 +402,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("Contest Stat: Smart")]
+        [DisplayName(@"Contest Stat: Smart")]
         public byte ContestStatSmart
         {
             get
@@ -415,7 +415,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("Contest Stat: Tough")]
+        [DisplayName(@"Contest Stat: Tough")]
         public byte ContestStatTough
         {
             get
@@ -428,7 +428,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("Contest Stat: Sheen")]
+        [DisplayName(@"Contest Stat: Sheen")]
         public byte ContestStatSheen
         {
             get
@@ -453,7 +453,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("Pokérus")]
+        [DisplayName(@"Pokérus")]
         public byte pokerus
         {
             get
@@ -478,9 +478,9 @@ namespace PKMDS_CS
             }
         }
 
-        //[DisplayName("Ribbons")] public byte[6] Ribbons { get {return ; } set {; } }
-        //[DisplayName("Unused")] public ushort Unused { get {return BitConverter.ToUInt16(data, 0x36); } set {Array.Copy(BitConverter.GetBytes(value),0,data,0x36,2); } }
-        [DisplayName("Contest Memory Ribbon [Count]")]
+        //[DisplayName(@"Ribbons")] public byte[6] Ribbons { get {return ; } set {; } }
+        //[DisplayName(@"Unused")] public ushort Unused { get {return BitConverter.ToUInt16(data, 0x36); } set {Array.Copy(BitConverter.GetBytes(value),0,data,0x36,2); } }
+        [DisplayName(@"Contest Memory Ribbon [Count]")]
         public byte ContestMemoryRibbonCount
         {
             get
@@ -493,7 +493,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("Battle Memory Ribbon [Count]")]
+        [DisplayName(@"Battle Memory Ribbon [Count]")]
         public byte BattleMemoryRibbonCount
         {
             get
@@ -506,7 +506,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("Distribution Super Training Flags")]
+        [DisplayName(@"Distribution Super Training Flags")]
         public byte DistributionSuperTrainingFlags
         {
             get
@@ -519,7 +519,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("Move 1 ID")]
+        [DisplayName(@"Move 1 ID")]
         public ushort move1id
         {
             get
@@ -532,7 +532,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("Move 2 ID")]
+        [DisplayName(@"Move 2 ID")]
         public ushort move2id
         {
             get
@@ -545,7 +545,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("Move 3 ID")]
+        [DisplayName(@"Move 3 ID")]
         public ushort move3id
         {
             get
@@ -558,7 +558,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("Move 4 ID")]
+        [DisplayName(@"Move 4 ID")]
         public ushort move4id
         {
             get
@@ -571,7 +571,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("Move 1 Current PP")]
+        [DisplayName(@"Move 1 Current PP")]
         public byte Move1CurrentPP
         {
             get
@@ -584,7 +584,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("Move 2 Current PP")]
+        [DisplayName(@"Move 2 Current PP")]
         public byte Move2CurrentPP
         {
             get
@@ -597,7 +597,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("Move 3 Current PP")]
+        [DisplayName(@"Move 3 Current PP")]
         public byte Move3CurrentPP
         {
             get
@@ -610,7 +610,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("Move 4 Current PP")]
+        [DisplayName(@"Move 4 Current PP")]
         public byte Move4CurrentPP
         {
             get
@@ -671,7 +671,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("Relearn Move 1 ID")]
+        [DisplayName(@"Relearn Move 1 ID")]
         public ushort relearnmove1id
         {
             get
@@ -684,7 +684,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("Relearn Move 2 ID")]
+        [DisplayName(@"Relearn Move 2 ID")]
         public ushort relearnmove2id
         {
             get
@@ -697,7 +697,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("Relearn Move 3 ID")]
+        [DisplayName(@"Relearn Move 3 ID")]
         public ushort relearnmove3id
         {
             get
@@ -710,7 +710,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("Relearn Move 4 ID")]
+        [DisplayName(@"Relearn Move 4 ID")]
         public ushort relearnmove4id
         {
             get
@@ -806,7 +806,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("Secret Super Training Flag")]
+        [DisplayName(@"Secret Super Training Flag")]
         public byte SecretSuperTrainingFlag
         {
             get
@@ -819,8 +819,8 @@ namespace PKMDS_CS
             }
         }
 
-        //[DisplayName("Unused")] public byte Unused { get {return data[0x73]; } set {Array.Copy(BitConverter.GetBytes(value),0,data,0x73,1); } }
-        [DisplayName("IVs")]
+        //[DisplayName(@"Unused")] public byte Unused { get {return data[0x73]; } set {Array.Copy(BitConverter.GetBytes(value),0,data,0x73,1); } }
+        [DisplayName(@"IVs")]
         internal uint ivs
         {
             get
@@ -857,7 +857,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("Geolocation 1 - Region,Country")]
+        [DisplayName(@"Geolocation 1 - Region,Country")]
         public ushort Geolocation1RegionCountry
         {
             get
@@ -870,7 +870,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("Geolocation 2 - Region,Country")]
+        [DisplayName(@"Geolocation 2 - Region,Country")]
         public ushort Geolocation2RegionCountry
         {
             get
@@ -883,7 +883,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("Geolocation 3 - Region,Country")]
+        [DisplayName(@"Geolocation 3 - Region,Country")]
         public ushort Geolocation3RegionCountry
         {
             get
@@ -896,7 +896,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("Geolocation 4 - Region,Country")]
+        [DisplayName(@"Geolocation 4 - Region,Country")]
         public ushort Geolocation4RegionCountry
         {
             get
@@ -909,7 +909,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("Geolocation 5 - Region,Country")]
+        [DisplayName(@"Geolocation 5 - Region,Country")]
         public ushort Geolocation5RegionCountry
         {
             get
@@ -922,9 +922,9 @@ namespace PKMDS_CS
             }
         }
 
-        //[DisplayName("Unused")] public ushort Unused { get {return BitConverter.ToUInt16(data, 0x9E); } set {Array.Copy(BitConverter.GetBytes(value),0,data,0x9E,2); } }
-        //[DisplayName("Unused")] public ushort Unused { get {return BitConverter.ToUInt16(data, 0xA0); } set {Array.Copy(BitConverter.GetBytes(value),0,data,0xA0,2); } }
-        [DisplayName("NotOT Friendship")]
+        //[DisplayName(@"Unused")] public ushort Unused { get {return BitConverter.ToUInt16(data, 0x9E); } set {Array.Copy(BitConverter.GetBytes(value),0,data,0x9E,2); } }
+        //[DisplayName(@"Unused")] public ushort Unused { get {return BitConverter.ToUInt16(data, 0xA0); } set {Array.Copy(BitConverter.GetBytes(value),0,data,0xA0,2); } }
+        [DisplayName(@"NotOT Friendship")]
         public byte NotOTFriendship
         {
             get
@@ -937,7 +937,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("NotOT Affection")]
+        [DisplayName(@"NotOT Affection")]
         public byte NotOTAffection
         {
             get
@@ -950,7 +950,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("NotOT Memory Intensity")]
+        [DisplayName(@"NotOT Memory Intensity")]
         public byte NotOTMemoryIntensity
         {
             get
@@ -963,7 +963,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("NotOT Memory Line")]
+        [DisplayName(@"NotOT Memory Line")]
         public byte NotOTMemoryLine
         {
             get
@@ -976,7 +976,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("NotOT Memory Feeling")]
+        [DisplayName(@"NotOT Memory Feeling")]
         public byte NotOTMemoryFeeling
         {
             get
@@ -989,8 +989,8 @@ namespace PKMDS_CS
             }
         }
 
-        //[DisplayName("Unused")] public byte Unused { get {return data[0xA7]; } set {Array.Copy(BitConverter.GetBytes(value),0,data,0xA7,1); } }
-        [DisplayName("NotOT Memory TextVar")]
+        //[DisplayName(@"Unused")] public byte Unused { get {return data[0xA7]; } set {Array.Copy(BitConverter.GetBytes(value),0,data,0xA7,1); } }
+        [DisplayName(@"NotOT Memory TextVar")]
         public ushort NotOTMemoryTextVar
         {
             get
@@ -1003,9 +1003,9 @@ namespace PKMDS_CS
             }
         }
 
-        //[DisplayName("Unused")] public ushort Unused { get {return BitConverter.ToUInt16(data, 0xAA); } set {Array.Copy(BitConverter.GetBytes(value),0,data,0xAA,2); } }
-        //[DisplayName("Unused")] public ushort Unused { get {return BitConverter.ToUInt16(data, 0xAC); } set {Array.Copy(BitConverter.GetBytes(value),0,data,0xAC,2); } }
-        [DisplayName("Fullness")]
+        //[DisplayName(@"Unused")] public ushort Unused { get {return BitConverter.ToUInt16(data, 0xAA); } set {Array.Copy(BitConverter.GetBytes(value),0,data,0xAA,2); } }
+        //[DisplayName(@"Unused")] public ushort Unused { get {return BitConverter.ToUInt16(data, 0xAC); } set {Array.Copy(BitConverter.GetBytes(value),0,data,0xAC,2); } }
+        [DisplayName(@"Fullness")]
         public byte Fullness
         {
             get
@@ -1018,7 +1018,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("Enjoyment")]
+        [DisplayName(@"Enjoyment")]
         public byte Enjoyment
         {
             get
@@ -1031,7 +1031,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("OT Friendship")]
+        [DisplayName(@"OT Friendship")]
         public byte OTFriendship
         {
             get
@@ -1044,7 +1044,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("OT Affection")]
+        [DisplayName(@"OT Affection")]
         public byte OTAffection
         {
             get
@@ -1057,7 +1057,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("OT Memory Intensity")]
+        [DisplayName(@"OT Memory Intensity")]
         public byte OTMemoryIntensity
         {
             get
@@ -1070,7 +1070,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("OT Memory Line")]
+        [DisplayName(@"OT Memory Line")]
         public byte OTMemoryLine
         {
             get
@@ -1083,7 +1083,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("OT Memory TextVar")]
+        [DisplayName(@"OT Memory TextVar")]
         public ushort OTMemoryTextVar
         {
             get
@@ -1096,7 +1096,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("OT Memory Feeling")]
+        [DisplayName(@"OT Memory Feeling")]
         public byte OTMemoryFeeling
         {
             get
@@ -1181,10 +1181,10 @@ namespace PKMDS_CS
             }
         }
 
-        //[DisplayName("Date Egg Received")] public byte[3] DateEggReceived { get {return ; } set {; } }
-        //[DisplayName("Date Met")] public byte[3] DateMet { get {return ; } set {; } }
-        //[DisplayName("Unknown / Unused")] public byte UnknownUnused { get {return data[0xD7]; } set {Array.Copy(BitConverter.GetBytes(value),0,data,0xD7,1); } }
-        [DisplayName("Egg Location")]
+        //[DisplayName(@"Date Egg Received")] public byte[3] DateEggReceived { get {return ; } set {; } }
+        //[DisplayName(@"Date Met")] public byte[3] DateMet { get {return ; } set {; } }
+        //[DisplayName(@"Unknown / Unused")] public byte UnknownUnused { get {return data[0xD7]; } set {Array.Copy(BitConverter.GetBytes(value),0,data,0xD7,1); } }
+        [DisplayName(@"Egg Location")]
         public ushort egglocation
         {
             get
@@ -1197,7 +1197,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("Met At Location")]
+        [DisplayName(@"Met At Location")]
         public ushort metlocation
         {
             get
@@ -1210,7 +1210,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("Pokéball")]
+        [DisplayName(@"Pokéball")]
         public byte pokeball
         {
             get
@@ -1235,7 +1235,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("Encounter Type Gen 4")]
+        [DisplayName(@"Encounter Type Gen 4")]
         public byte EncounterTypeGen4
         {
             get
@@ -1248,7 +1248,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("OT Game ID")]
+        [DisplayName(@"OT Game ID")]
         public byte OTGameID
         {
             get
@@ -1261,7 +1261,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("Country ID")]
+        [DisplayName(@"Country ID")]
         public byte CountryID
         {
             get
@@ -1274,7 +1274,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("Region ID")]
+        [DisplayName(@"Region ID")]
         public byte RegionID
         {
             get
@@ -1287,7 +1287,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("3DS Region ID")]
+        [DisplayName(@"3DS Region ID")]
         public byte _3DSRegionID
         {
             get
@@ -1300,7 +1300,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("OT Language ID")]
+        [DisplayName(@"OT Language ID")]
         public byte OTLanguageID
         {
             get
@@ -1313,11 +1313,11 @@ namespace PKMDS_CS
             }
         }
 
-        //[DisplayName("Unused")] public uint Unused { get {return BitConverter.ToUInt32(data, 0xE4); } set {Array.Copy(BitConverter.GetBytes(value),0,data,0xE4,4); } }
+        //[DisplayName(@"Unused")] public uint Unused { get {return BitConverter.ToUInt32(data, 0xE4); } set {Array.Copy(BitConverter.GetBytes(value),0,data,0xE4,4); } }
 
         #region Pokemon Properties
 
-        [DisplayName("HP IV")]
+        [DisplayName(@"HP IV")]
         public uint HP_IV
         {
             get
@@ -1337,7 +1337,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("Attack IV")]
+        [DisplayName(@"Attack IV")]
         public uint Attack_IV
         {
             get
@@ -1357,7 +1357,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("Defense IV")]
+        [DisplayName(@"Defense IV")]
         public uint Defense_IV
         {
             get
@@ -1377,7 +1377,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("Speed IV")]
+        [DisplayName(@"Speed IV")]
         public uint Speed_IV
         {
             get
@@ -1397,7 +1397,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("Special Attack IV")]
+        [DisplayName(@"Special Attack IV")]
         public uint SpecialAttack_IV
         {
             get
@@ -1417,7 +1417,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("Special Defense IV")]
+        [DisplayName(@"Special Defense IV")]
         public uint SpecialDefense_IV
         {
             get
@@ -1437,7 +1437,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("Is Egg")]
+        [DisplayName(@"Is Egg")]
         public bool IsEgg
         {
             get
@@ -1450,7 +1450,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("Is Nicknamed")]
+        [DisplayName(@"Is Nicknamed")]
         public bool IsNicknamed
         {
             get
@@ -1463,7 +1463,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("Is Fateful Encounter")]
+        [DisplayName(@"Is Fateful Encounter")]
         public bool Fateful
         {
             get
@@ -1476,7 +1476,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("Is Female")]
+        [DisplayName(@"Is Female")]
         public bool Female
         {
             get
@@ -1489,7 +1489,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("Is Genderless")]
+        [DisplayName(@"Is Genderless")]
         public bool Genderless
         {
             get
@@ -1502,7 +1502,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("Form ID")]
+        [DisplayName(@"Form ID")]
         public byte FormID
         {
             get
@@ -1515,7 +1515,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("Circle")]
+        [DisplayName(@"Circle")]
         public bool Circle
         {
             get
@@ -1528,7 +1528,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("Triangle")]
+        [DisplayName(@"Triangle")]
         public bool Triangle
         {
             get
@@ -1541,7 +1541,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("Square")]
+        [DisplayName(@"Square")]
         public bool Square
         {
             get
@@ -1554,7 +1554,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("Heart")]
+        [DisplayName(@"Heart")]
         public bool Heart
         {
             get
@@ -1567,7 +1567,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("Star")]
+        [DisplayName(@"Star")]
         public bool Star
         {
             get
@@ -1580,7 +1580,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("Diamond")]
+        [DisplayName(@"Diamond")]
         public bool Diamond
         {
             get
@@ -1593,7 +1593,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("Species")]
+        [DisplayName(@"Species")]
         public Species Species
         {
             get
@@ -1608,7 +1608,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("Held Item")]
+        [DisplayName(@"Held Item")]
         public Items HeldItem
         {
             get
@@ -1623,7 +1623,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("Experience Points")]
+        [DisplayName(@"Experience Points")]
         public uint EXP
         {
             get
@@ -1636,7 +1636,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("Ability")]
+        [DisplayName(@"Ability")]
         public Abilities Ability
         {
             get
@@ -1651,7 +1651,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("Nature")]
+        [DisplayName(@"Nature")]
         public Natures Nature
         {
             get
@@ -1666,7 +1666,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("Move 1")]
+        [DisplayName(@"Move 1")]
         public Moves Move1
         {
             get
@@ -1682,7 +1682,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("Move 2")]
+        [DisplayName(@"Move 2")]
         public Moves Move2
         {
             get
@@ -1697,7 +1697,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("Move 3")]
+        [DisplayName(@"Move 3")]
         public Moves Move3
         {
             get
@@ -1712,7 +1712,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("Move 4")]
+        [DisplayName(@"Move 4")]
         public Moves Move4
         {
             get
@@ -1727,7 +1727,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("Relearn Move 1")]
+        [DisplayName(@"Relearn Move 1")]
         public Moves RelearnMove1
         {
             get
@@ -1742,7 +1742,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("Relearn Move 2")]
+        [DisplayName(@"Relearn Move 2")]
         public Moves RelearnMove2
         {
             get
@@ -1757,7 +1757,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("Relearn Move 3")]
+        [DisplayName(@"Relearn Move 3")]
         public Moves RelearnMove3
         {
             get
@@ -1772,7 +1772,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("Relearn Move 4")]
+        [DisplayName(@"Relearn Move 4")]
         public Moves RelearnMove4
         {
             get
@@ -1787,7 +1787,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("Nickname")]
+        [DisplayName(@"Nickname")]
         public string Nickname
         {
             get
@@ -1803,7 +1803,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("Last Trainer Name")]
+        [DisplayName(@"Last Trainer Name")]
         public string LastTrainerName
         {
             get
@@ -1819,7 +1819,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("OT Name")]
+        [DisplayName(@"OT Name")]
         public string OTName
         {
             get
@@ -1835,7 +1835,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("Ball")]
+        [DisplayName(@"Ball")]
         public Items Ball
         {
             get
@@ -1848,7 +1848,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("Egg Location")]
+        [DisplayName(@"Egg Location")]
         public Locations EggLocation
         {
             get
@@ -1863,7 +1863,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("Met Location")]
+        [DisplayName(@"Met Location")]
         public Locations MetLocation
         {
             get
@@ -1878,7 +1878,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("Type 1")]
+        [DisplayName(@"Type 1")]
         public TypeObject? Type1
         {
             get
@@ -1887,7 +1887,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("Type 2")]
+        [DisplayName(@"Type 2")]
         public TypeObject? Type2
         {
             get
@@ -1896,7 +1896,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("Egg Date")]
+        [DisplayName(@"Egg Date")]
         public DateTime? EggDate
         {
             get
@@ -1930,7 +1930,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("Met Date")]
+        [DisplayName(@"Met Date")]
         public DateTime MetDate
         {
             get
@@ -1955,7 +1955,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("Secret Super Training Available")]
+        [DisplayName(@"Secret Super Training Available")]
         public bool SecretSuperTrainingAvailable
         {
             get
@@ -1968,7 +1968,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("Met At Level")]
+        [DisplayName(@"Met At Level")]
         public int MetLevel
         {
             get
@@ -1983,7 +1983,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("OT Gender")]
+        [DisplayName(@"OT Gender")]
         public Genders OTGender
         {
             get
@@ -1997,7 +1997,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("OT Gender Is Male")]
+        [DisplayName(@"OT Gender Is Male")]
         public bool OTGenderIsMale
         {
             get
@@ -2010,7 +2010,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("OT Gender Is Female")]
+        [DisplayName(@"OT Gender Is Female")]
         public bool OTGenderIsFemale
         {
             get
@@ -2023,7 +2023,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("Level")]
+        [DisplayName(@"Level")]
         public int Level
         {
             get
@@ -2037,7 +2037,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("Form Name")]
+        [DisplayName(@"Form Name")]
         public string FormName
         {
             get
@@ -2055,7 +2055,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("Current Trainer Is OT")]
+        [DisplayName(@"Current Trainer Is OT")]
         public bool CurrentTrainerIsOT
         {
             get
@@ -2068,7 +2068,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("Last Trainer Gender")]
+        [DisplayName(@"Last Trainer Gender")]
         public Genders LastTrainerGender
         {
             get
@@ -2081,7 +2081,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("Move 1 PP Ups")]
+        [DisplayName(@"Move 1 PP Ups")]
         public byte Move1PPUps
         {
             get
@@ -2094,7 +2094,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("Move 2 PP Ups")]
+        [DisplayName(@"Move 2 PP Ups")]
         public byte Move2PPUps
         {
             get
@@ -2107,7 +2107,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("Move 3 PP Ups")]
+        [DisplayName(@"Move 3 PP Ups")]
         public byte Move3PPUps
         {
             get
@@ -2120,7 +2120,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("Move 4 PP Ups")]
+        [DisplayName(@"Move 4 PP Ups")]
         public byte Move4PPUps
         {
             get
@@ -2133,7 +2133,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("PokeRus Days")]
+        [DisplayName(@"PokeRus Days")]
         public int PokeRusDays
         {
             get
@@ -2146,7 +2146,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("PokeRus Strain")]
+        [DisplayName(@"PokeRus Strain")]
         public int PokeRusStrain
         {
             get
@@ -2159,7 +2159,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("Gender")]
+        [DisplayName(@"Gender")]
         public Genders Gender
         {
             get
@@ -2170,7 +2170,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("Gender Icon")]
+        [DisplayName(@"Gender Icon")]
         public Image GenderIcon
         {
             get
@@ -2179,7 +2179,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("Box Icon")]
+        [DisplayName(@"Box Icon")]
         public Image BoxIcon
         {
             get
@@ -2188,7 +2188,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("Box Icon")]
+        [DisplayName(@"Box Icon")]
         public Image BoxIconEgg
         {
             get
@@ -2197,7 +2197,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("HP")]
+        [DisplayName(@"HP")]
         public int HP
         {
             get
@@ -2206,7 +2206,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("Attack")]
+        [DisplayName(@"Attack")]
         public int Attack
         {
             get
@@ -2215,7 +2215,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("Defense")]
+        [DisplayName(@"Defense")]
         public int Defense
         {
             get
@@ -2224,7 +2224,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("Speed")]
+        [DisplayName(@"Speed")]
         public int Speed
         {
             get
@@ -2233,7 +2233,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("Special Attack")]
+        [DisplayName(@"Special Attack")]
         public int SpecialAttack
         {
             get
@@ -2242,7 +2242,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("Special Defense")]
+        [DisplayName(@"Special Defense")]
         public int SpecialDefense
         {
             get

@@ -151,7861 +151,7861 @@ namespace PKMDS_CS
 
     public enum Species : ushort
     {
-        [Description("No Species")]
+        [Description(@"No Species")]
         NoSpecies = 0,
 
-        [Description("Bulbasaur")]
+        [Description(@"Bulbasaur")]
         Bulbasaur = 1,
 
-        [Description("Ivysaur")]
+        [Description(@"Ivysaur")]
         Ivysaur = 2,
 
-        [Description("Venusaur")]
+        [Description(@"Venusaur")]
         Venusaur = 3,
 
-        [Description("Charmander")]
+        [Description(@"Charmander")]
         Charmander = 4,
 
-        [Description("Charmeleon")]
+        [Description(@"Charmeleon")]
         Charmeleon = 5,
 
-        [Description("Charizard")]
+        [Description(@"Charizard")]
         Charizard = 6,
 
-        [Description("Squirtle")]
+        [Description(@"Squirtle")]
         Squirtle = 7,
 
-        [Description("Wartortle")]
+        [Description(@"Wartortle")]
         Wartortle = 8,
 
-        [Description("Blastoise")]
+        [Description(@"Blastoise")]
         Blastoise = 9,
 
-        [Description("Caterpie")]
+        [Description(@"Caterpie")]
         Caterpie = 10,
 
-        [Description("Metapod")]
+        [Description(@"Metapod")]
         Metapod = 11,
 
-        [Description("Butterfree")]
+        [Description(@"Butterfree")]
         Butterfree = 12,
 
-        [Description("Weedle")]
+        [Description(@"Weedle")]
         Weedle = 13,
 
-        [Description("Kakuna")]
+        [Description(@"Kakuna")]
         Kakuna = 14,
 
-        [Description("Beedrill")]
+        [Description(@"Beedrill")]
         Beedrill = 15,
 
-        [Description("Pidgey")]
+        [Description(@"Pidgey")]
         Pidgey = 16,
 
-        [Description("Pidgeotto")]
+        [Description(@"Pidgeotto")]
         Pidgeotto = 17,
 
-        [Description("Pidgeot")]
+        [Description(@"Pidgeot")]
         Pidgeot = 18,
 
-        [Description("Rattata")]
+        [Description(@"Rattata")]
         Rattata = 19,
 
-        [Description("Raticate")]
+        [Description(@"Raticate")]
         Raticate = 20,
 
-        [Description("Spearow")]
+        [Description(@"Spearow")]
         Spearow = 21,
 
-        [Description("Fearow")]
+        [Description(@"Fearow")]
         Fearow = 22,
 
-        [Description("Ekans")]
+        [Description(@"Ekans")]
         Ekans = 23,
 
-        [Description("Arbok")]
+        [Description(@"Arbok")]
         Arbok = 24,
 
-        [Description("Pikachu")]
+        [Description(@"Pikachu")]
         Pikachu = 25,
 
-        [Description("Raichu")]
+        [Description(@"Raichu")]
         Raichu = 26,
 
-        [Description("Sandshrew")]
+        [Description(@"Sandshrew")]
         Sandshrew = 27,
 
-        [Description("Sandslash")]
+        [Description(@"Sandslash")]
         Sandslash = 28,
 
-        [Description("Nidoran♀")]
+        [Description(@"Nidoran♀")]
         Nidoran_F = 29,
 
-        [Description("Nidorina")]
+        [Description(@"Nidorina")]
         Nidorina = 30,
 
-        [Description("Nidoqueen")]
+        [Description(@"Nidoqueen")]
         Nidoqueen = 31,
 
-        [Description("Nidoran♂")]
+        [Description(@"Nidoran♂")]
         Nidoran_M = 32,
 
-        [Description("Nidorino")]
+        [Description(@"Nidorino")]
         Nidorino = 33,
 
-        [Description("Nidoking")]
+        [Description(@"Nidoking")]
         Nidoking = 34,
 
-        [Description("Clefairy")]
+        [Description(@"Clefairy")]
         Clefairy = 35,
 
-        [Description("Clefable")]
+        [Description(@"Clefable")]
         Clefable = 36,
 
-        [Description("Vulpix")]
+        [Description(@"Vulpix")]
         Vulpix = 37,
 
-        [Description("Ninetales")]
+        [Description(@"Ninetales")]
         Ninetales = 38,
 
-        [Description("Jigglypuff")]
+        [Description(@"Jigglypuff")]
         Jigglypuff = 39,
 
-        [Description("Wigglytuff")]
+        [Description(@"Wigglytuff")]
         Wigglytuff = 40,
 
-        [Description("Zubat")]
+        [Description(@"Zubat")]
         Zubat = 41,
 
-        [Description("Golbat")]
+        [Description(@"Golbat")]
         Golbat = 42,
 
-        [Description("Oddish")]
+        [Description(@"Oddish")]
         Oddish = 43,
 
-        [Description("Gloom")]
+        [Description(@"Gloom")]
         Gloom = 44,
 
-        [Description("Vileplume")]
+        [Description(@"Vileplume")]
         Vileplume = 45,
 
-        [Description("Paras")]
+        [Description(@"Paras")]
         Paras = 46,
 
-        [Description("Parasect")]
+        [Description(@"Parasect")]
         Parasect = 47,
 
-        [Description("Venonat")]
+        [Description(@"Venonat")]
         Venonat = 48,
 
-        [Description("Venomoth")]
+        [Description(@"Venomoth")]
         Venomoth = 49,
 
-        [Description("Diglett")]
+        [Description(@"Diglett")]
         Diglett = 50,
 
-        [Description("Dugtrio")]
+        [Description(@"Dugtrio")]
         Dugtrio = 51,
 
-        [Description("Meowth")]
+        [Description(@"Meowth")]
         Meowth = 52,
 
-        [Description("Persian")]
+        [Description(@"Persian")]
         Persian = 53,
 
-        [Description("Psyduck")]
+        [Description(@"Psyduck")]
         Psyduck = 54,
 
-        [Description("Golduck")]
+        [Description(@"Golduck")]
         Golduck = 55,
 
-        [Description("Mankey")]
+        [Description(@"Mankey")]
         Mankey = 56,
 
-        [Description("Primeape")]
+        [Description(@"Primeape")]
         Primeape = 57,
 
-        [Description("Growlithe")]
+        [Description(@"Growlithe")]
         Growlithe = 58,
 
-        [Description("Arcanine")]
+        [Description(@"Arcanine")]
         Arcanine = 59,
 
-        [Description("Poliwag")]
+        [Description(@"Poliwag")]
         Poliwag = 60,
 
-        [Description("Poliwhirl")]
+        [Description(@"Poliwhirl")]
         Poliwhirl = 61,
 
-        [Description("Poliwrath")]
+        [Description(@"Poliwrath")]
         Poliwrath = 62,
 
-        [Description("Abra")]
+        [Description(@"Abra")]
         Abra = 63,
 
-        [Description("Kadabra")]
+        [Description(@"Kadabra")]
         Kadabra = 64,
 
-        [Description("Alakazam")]
+        [Description(@"Alakazam")]
         Alakazam = 65,
 
-        [Description("Machop")]
+        [Description(@"Machop")]
         Machop = 66,
 
-        [Description("Machoke")]
+        [Description(@"Machoke")]
         Machoke = 67,
 
-        [Description("Machamp")]
+        [Description(@"Machamp")]
         Machamp = 68,
 
-        [Description("Bellsprout")]
+        [Description(@"Bellsprout")]
         Bellsprout = 69,
 
-        [Description("Weepinbell")]
+        [Description(@"Weepinbell")]
         Weepinbell = 70,
 
-        [Description("Victreebel")]
+        [Description(@"Victreebel")]
         Victreebel = 71,
 
-        [Description("Tentacool")]
+        [Description(@"Tentacool")]
         Tentacool = 72,
 
-        [Description("Tentacruel")]
+        [Description(@"Tentacruel")]
         Tentacruel = 73,
 
-        [Description("Geodude")]
+        [Description(@"Geodude")]
         Geodude = 74,
 
-        [Description("Graveler")]
+        [Description(@"Graveler")]
         Graveler = 75,
 
-        [Description("Golem")]
+        [Description(@"Golem")]
         Golem = 76,
 
-        [Description("Ponyta")]
+        [Description(@"Ponyta")]
         Ponyta = 77,
 
-        [Description("Rapidash")]
+        [Description(@"Rapidash")]
         Rapidash = 78,
 
-        [Description("Slowpoke")]
+        [Description(@"Slowpoke")]
         Slowpoke = 79,
 
-        [Description("Slowbro")]
+        [Description(@"Slowbro")]
         Slowbro = 80,
 
-        [Description("Magnemite")]
+        [Description(@"Magnemite")]
         Magnemite = 81,
 
-        [Description("Magneton")]
+        [Description(@"Magneton")]
         Magneton = 82,
 
-        [Description("Farfetch'd")]
+        [Description(@"Farfetch'd")]
         Farfetchd = 83,
 
-        [Description("Doduo")]
+        [Description(@"Doduo")]
         Doduo = 84,
 
-        [Description("Dodrio")]
+        [Description(@"Dodrio")]
         Dodrio = 85,
 
-        [Description("Seel")]
+        [Description(@"Seel")]
         Seel = 86,
 
-        [Description("Dewgong")]
+        [Description(@"Dewgong")]
         Dewgong = 87,
 
-        [Description("Grimer")]
+        [Description(@"Grimer")]
         Grimer = 88,
 
-        [Description("Muk")]
+        [Description(@"Muk")]
         Muk = 89,
 
-        [Description("Shellder")]
+        [Description(@"Shellder")]
         Shellder = 90,
 
-        [Description("Cloyster")]
+        [Description(@"Cloyster")]
         Cloyster = 91,
 
-        [Description("Gastly")]
+        [Description(@"Gastly")]
         Gastly = 92,
 
-        [Description("Haunter")]
+        [Description(@"Haunter")]
         Haunter = 93,
 
-        [Description("Gengar")]
+        [Description(@"Gengar")]
         Gengar = 94,
 
-        [Description("Onix")]
+        [Description(@"Onix")]
         Onix = 95,
 
-        [Description("Drowzee")]
+        [Description(@"Drowzee")]
         Drowzee = 96,
 
-        [Description("Hypno")]
+        [Description(@"Hypno")]
         Hypno = 97,
 
-        [Description("Krabby")]
+        [Description(@"Krabby")]
         Krabby = 98,
 
-        [Description("Kingler")]
+        [Description(@"Kingler")]
         Kingler = 99,
 
-        [Description("Voltorb")]
+        [Description(@"Voltorb")]
         Voltorb = 100,
 
-        [Description("Electrode")]
+        [Description(@"Electrode")]
         Electrode = 101,
 
-        [Description("Exeggcute")]
+        [Description(@"Exeggcute")]
         Exeggcute = 102,
 
-        [Description("Exeggutor")]
+        [Description(@"Exeggutor")]
         Exeggutor = 103,
 
-        [Description("Cubone")]
+        [Description(@"Cubone")]
         Cubone = 104,
 
-        [Description("Marowak")]
+        [Description(@"Marowak")]
         Marowak = 105,
 
-        [Description("Hitmonlee")]
+        [Description(@"Hitmonlee")]
         Hitmonlee = 106,
 
-        [Description("Hitmonchan")]
+        [Description(@"Hitmonchan")]
         Hitmonchan = 107,
 
-        [Description("Lickitung")]
+        [Description(@"Lickitung")]
         Lickitung = 108,
 
-        [Description("Koffing")]
+        [Description(@"Koffing")]
         Koffing = 109,
 
-        [Description("Weezing")]
+        [Description(@"Weezing")]
         Weezing = 110,
 
-        [Description("Rhyhorn")]
+        [Description(@"Rhyhorn")]
         Rhyhorn = 111,
 
-        [Description("Rhydon")]
+        [Description(@"Rhydon")]
         Rhydon = 112,
 
-        [Description("Chansey")]
+        [Description(@"Chansey")]
         Chansey = 113,
 
-        [Description("Tangela")]
+        [Description(@"Tangela")]
         Tangela = 114,
 
-        [Description("Kangaskhan")]
+        [Description(@"Kangaskhan")]
         Kangaskhan = 115,
 
-        [Description("Horsea")]
+        [Description(@"Horsea")]
         Horsea = 116,
 
-        [Description("Seadra")]
+        [Description(@"Seadra")]
         Seadra = 117,
 
-        [Description("Goldeen")]
+        [Description(@"Goldeen")]
         Goldeen = 118,
 
-        [Description("Seaking")]
+        [Description(@"Seaking")]
         Seaking = 119,
 
-        [Description("Staryu")]
+        [Description(@"Staryu")]
         Staryu = 120,
 
-        [Description("Starmie")]
+        [Description(@"Starmie")]
         Starmie = 121,
 
-        [Description("Mr. Mime")]
+        [Description(@"Mr. Mime")]
         Mr_Mime = 122,
 
-        [Description("Scyther")]
+        [Description(@"Scyther")]
         Scyther = 123,
 
-        [Description("Jynx")]
+        [Description(@"Jynx")]
         Jynx = 124,
 
-        [Description("Electabuzz")]
+        [Description(@"Electabuzz")]
         Electabuzz = 125,
 
-        [Description("Magmar")]
+        [Description(@"Magmar")]
         Magmar = 126,
 
-        [Description("Pinsir")]
+        [Description(@"Pinsir")]
         Pinsir = 127,
 
-        [Description("Tauros")]
+        [Description(@"Tauros")]
         Tauros = 128,
 
-        [Description("Magikarp")]
+        [Description(@"Magikarp")]
         Magikarp = 129,
 
-        [Description("Gyarados")]
+        [Description(@"Gyarados")]
         Gyarados = 130,
 
-        [Description("Lapras")]
+        [Description(@"Lapras")]
         Lapras = 131,
 
-        [Description("Ditto")]
+        [Description(@"Ditto")]
         Ditto = 132,
 
-        [Description("Eevee")]
+        [Description(@"Eevee")]
         Eevee = 133,
 
-        [Description("Vaporeon")]
+        [Description(@"Vaporeon")]
         Vaporeon = 134,
 
-        [Description("Jolteon")]
+        [Description(@"Jolteon")]
         Jolteon = 135,
 
-        [Description("Flareon")]
+        [Description(@"Flareon")]
         Flareon = 136,
 
-        [Description("Porygon")]
+        [Description(@"Porygon")]
         Porygon = 137,
 
-        [Description("Omanyte")]
+        [Description(@"Omanyte")]
         Omanyte = 138,
 
-        [Description("Omastar")]
+        [Description(@"Omastar")]
         Omastar = 139,
 
-        [Description("Kabuto")]
+        [Description(@"Kabuto")]
         Kabuto = 140,
 
-        [Description("Kabutops")]
+        [Description(@"Kabutops")]
         Kabutops = 141,
 
-        [Description("Aerodactyl")]
+        [Description(@"Aerodactyl")]
         Aerodactyl = 142,
 
-        [Description("Snorlax")]
+        [Description(@"Snorlax")]
         Snorlax = 143,
 
-        [Description("Articuno")]
+        [Description(@"Articuno")]
         Articuno = 144,
 
-        [Description("Zapdos")]
+        [Description(@"Zapdos")]
         Zapdos = 145,
 
-        [Description("Moltres")]
+        [Description(@"Moltres")]
         Moltres = 146,
 
-        [Description("Dratini")]
+        [Description(@"Dratini")]
         Dratini = 147,
 
-        [Description("Dragonair")]
+        [Description(@"Dragonair")]
         Dragonair = 148,
 
-        [Description("Dragonite")]
+        [Description(@"Dragonite")]
         Dragonite = 149,
 
-        [Description("Mewtwo")]
+        [Description(@"Mewtwo")]
         Mewtwo = 150,
 
-        [Description("Mew")]
+        [Description(@"Mew")]
         Mew = 151,
 
-        [Description("Chikorita")]
+        [Description(@"Chikorita")]
         Chikorita = 152,
 
-        [Description("Bayleef")]
+        [Description(@"Bayleef")]
         Bayleef = 153,
 
-        [Description("Meganium")]
+        [Description(@"Meganium")]
         Meganium = 154,
 
-        [Description("Cyndaquil")]
+        [Description(@"Cyndaquil")]
         Cyndaquil = 155,
 
-        [Description("Quilava")]
+        [Description(@"Quilava")]
         Quilava = 156,
 
-        [Description("Typhlosion")]
+        [Description(@"Typhlosion")]
         Typhlosion = 157,
 
-        [Description("Totodile")]
+        [Description(@"Totodile")]
         Totodile = 158,
 
-        [Description("Croconaw")]
+        [Description(@"Croconaw")]
         Croconaw = 159,
 
-        [Description("Feraligatr")]
+        [Description(@"Feraligatr")]
         Feraligatr = 160,
 
-        [Description("Sentret")]
+        [Description(@"Sentret")]
         Sentret = 161,
 
-        [Description("Furret")]
+        [Description(@"Furret")]
         Furret = 162,
 
-        [Description("Hoothoot")]
+        [Description(@"Hoothoot")]
         Hoothoot = 163,
 
-        [Description("Noctowl")]
+        [Description(@"Noctowl")]
         Noctowl = 164,
 
-        [Description("Ledyba")]
+        [Description(@"Ledyba")]
         Ledyba = 165,
 
-        [Description("Ledian")]
+        [Description(@"Ledian")]
         Ledian = 166,
 
-        [Description("Spinarak")]
+        [Description(@"Spinarak")]
         Spinarak = 167,
 
-        [Description("Ariados")]
+        [Description(@"Ariados")]
         Ariados = 168,
 
-        [Description("Crobat")]
+        [Description(@"Crobat")]
         Crobat = 169,
 
-        [Description("Chinchou")]
+        [Description(@"Chinchou")]
         Chinchou = 170,
 
-        [Description("Lanturn")]
+        [Description(@"Lanturn")]
         Lanturn = 171,
 
-        [Description("Pichu")]
+        [Description(@"Pichu")]
         Pichu = 172,
 
-        [Description("Cleffa")]
+        [Description(@"Cleffa")]
         Cleffa = 173,
 
-        [Description("Igglybuff")]
+        [Description(@"Igglybuff")]
         Igglybuff = 174,
 
-        [Description("Togepi")]
+        [Description(@"Togepi")]
         Togepi = 175,
 
-        [Description("Togetic")]
+        [Description(@"Togetic")]
         Togetic = 176,
 
-        [Description("Natu")]
+        [Description(@"Natu")]
         Natu = 177,
 
-        [Description("Xatu")]
+        [Description(@"Xatu")]
         Xatu = 178,
 
-        [Description("Mareep")]
+        [Description(@"Mareep")]
         Mareep = 179,
 
-        [Description("Flaaffy")]
+        [Description(@"Flaaffy")]
         Flaaffy = 180,
 
-        [Description("Ampharos")]
+        [Description(@"Ampharos")]
         Ampharos = 181,
 
-        [Description("Bellossom")]
+        [Description(@"Bellossom")]
         Bellossom = 182,
 
-        [Description("Marill")]
+        [Description(@"Marill")]
         Marill = 183,
 
-        [Description("Azumarill")]
+        [Description(@"Azumarill")]
         Azumarill = 184,
 
-        [Description("Sudowoodo")]
+        [Description(@"Sudowoodo")]
         Sudowoodo = 185,
 
-        [Description("Politoed")]
+        [Description(@"Politoed")]
         Politoed = 186,
 
-        [Description("Hoppip")]
+        [Description(@"Hoppip")]
         Hoppip = 187,
 
-        [Description("Skiploom")]
+        [Description(@"Skiploom")]
         Skiploom = 188,
 
-        [Description("Jumpluff")]
+        [Description(@"Jumpluff")]
         Jumpluff = 189,
 
-        [Description("Aipom")]
+        [Description(@"Aipom")]
         Aipom = 190,
 
-        [Description("Sunkern")]
+        [Description(@"Sunkern")]
         Sunkern = 191,
 
-        [Description("Sunflora")]
+        [Description(@"Sunflora")]
         Sunflora = 192,
 
-        [Description("Yanma")]
+        [Description(@"Yanma")]
         Yanma = 193,
 
-        [Description("Wooper")]
+        [Description(@"Wooper")]
         Wooper = 194,
 
-        [Description("Quagsire")]
+        [Description(@"Quagsire")]
         Quagsire = 195,
 
-        [Description("Espeon")]
+        [Description(@"Espeon")]
         Espeon = 196,
 
-        [Description("Umbreon")]
+        [Description(@"Umbreon")]
         Umbreon = 197,
 
-        [Description("Murkrow")]
+        [Description(@"Murkrow")]
         Murkrow = 198,
 
-        [Description("Slowking")]
+        [Description(@"Slowking")]
         Slowking = 199,
 
-        [Description("Misdreavus")]
+        [Description(@"Misdreavus")]
         Misdreavus = 200,
 
-        [Description("Unown")]
+        [Description(@"Unown")]
         Unown = 201,
 
-        [Description("Wobbuffet")]
+        [Description(@"Wobbuffet")]
         Wobbuffet = 202,
 
-        [Description("Girafarig")]
+        [Description(@"Girafarig")]
         Girafarig = 203,
 
-        [Description("Pineco")]
+        [Description(@"Pineco")]
         Pineco = 204,
 
-        [Description("Forretress")]
+        [Description(@"Forretress")]
         Forretress = 205,
 
-        [Description("Dunsparce")]
+        [Description(@"Dunsparce")]
         Dunsparce = 206,
 
-        [Description("Gligar")]
+        [Description(@"Gligar")]
         Gligar = 207,
 
-        [Description("Steelix")]
+        [Description(@"Steelix")]
         Steelix = 208,
 
-        [Description("Snubbull")]
+        [Description(@"Snubbull")]
         Snubbull = 209,
 
-        [Description("Granbull")]
+        [Description(@"Granbull")]
         Granbull = 210,
 
-        [Description("Qwilfish")]
+        [Description(@"Qwilfish")]
         Qwilfish = 211,
 
-        [Description("Scizor")]
+        [Description(@"Scizor")]
         Scizor = 212,
 
-        [Description("Shuckle")]
+        [Description(@"Shuckle")]
         Shuckle = 213,
 
-        [Description("Heracross")]
+        [Description(@"Heracross")]
         Heracross = 214,
 
-        [Description("Sneasel")]
+        [Description(@"Sneasel")]
         Sneasel = 215,
 
-        [Description("Teddiursa")]
+        [Description(@"Teddiursa")]
         Teddiursa = 216,
 
-        [Description("Ursaring")]
+        [Description(@"Ursaring")]
         Ursaring = 217,
 
-        [Description("Slugma")]
+        [Description(@"Slugma")]
         Slugma = 218,
 
-        [Description("Magcargo")]
+        [Description(@"Magcargo")]
         Magcargo = 219,
 
-        [Description("Swinub")]
+        [Description(@"Swinub")]
         Swinub = 220,
 
-        [Description("Piloswine")]
+        [Description(@"Piloswine")]
         Piloswine = 221,
 
-        [Description("Corsola")]
+        [Description(@"Corsola")]
         Corsola = 222,
 
-        [Description("Remoraid")]
+        [Description(@"Remoraid")]
         Remoraid = 223,
 
-        [Description("Octillery")]
+        [Description(@"Octillery")]
         Octillery = 224,
 
-        [Description("Delibird")]
+        [Description(@"Delibird")]
         Delibird = 225,
 
-        [Description("Mantine")]
+        [Description(@"Mantine")]
         Mantine = 226,
 
-        [Description("Skarmory")]
+        [Description(@"Skarmory")]
         Skarmory = 227,
 
-        [Description("Houndour")]
+        [Description(@"Houndour")]
         Houndour = 228,
 
-        [Description("Houndoom")]
+        [Description(@"Houndoom")]
         Houndoom = 229,
 
-        [Description("Kingdra")]
+        [Description(@"Kingdra")]
         Kingdra = 230,
 
-        [Description("Phanpy")]
+        [Description(@"Phanpy")]
         Phanpy = 231,
 
-        [Description("Donphan")]
+        [Description(@"Donphan")]
         Donphan = 232,
 
-        [Description("Porygon2")]
+        [Description(@"Porygon2")]
         Porygon2 = 233,
 
-        [Description("Stantler")]
+        [Description(@"Stantler")]
         Stantler = 234,
 
-        [Description("Smeargle")]
+        [Description(@"Smeargle")]
         Smeargle = 235,
 
-        [Description("Tyrogue")]
+        [Description(@"Tyrogue")]
         Tyrogue = 236,
 
-        [Description("Hitmontop")]
+        [Description(@"Hitmontop")]
         Hitmontop = 237,
 
-        [Description("Smoochum")]
+        [Description(@"Smoochum")]
         Smoochum = 238,
 
-        [Description("Elekid")]
+        [Description(@"Elekid")]
         Elekid = 239,
 
-        [Description("Magby")]
+        [Description(@"Magby")]
         Magby = 240,
 
-        [Description("Miltank")]
+        [Description(@"Miltank")]
         Miltank = 241,
 
-        [Description("Blissey")]
+        [Description(@"Blissey")]
         Blissey = 242,
 
-        [Description("Raikou")]
+        [Description(@"Raikou")]
         Raikou = 243,
 
-        [Description("Entei")]
+        [Description(@"Entei")]
         Entei = 244,
 
-        [Description("Suicune")]
+        [Description(@"Suicune")]
         Suicune = 245,
 
-        [Description("Larvitar")]
+        [Description(@"Larvitar")]
         Larvitar = 246,
 
-        [Description("Pupitar")]
+        [Description(@"Pupitar")]
         Pupitar = 247,
 
-        [Description("Tyranitar")]
+        [Description(@"Tyranitar")]
         Tyranitar = 248,
 
-        [Description("Lugia")]
+        [Description(@"Lugia")]
         Lugia = 249,
 
-        [Description("Ho-Oh")]
+        [Description(@"Ho-Oh")]
         Ho_Oh = 250,
 
-        [Description("Celebi")]
+        [Description(@"Celebi")]
         Celebi = 251,
 
-        [Description("Treecko")]
+        [Description(@"Treecko")]
         Treecko = 252,
 
-        [Description("Grovyle")]
+        [Description(@"Grovyle")]
         Grovyle = 253,
 
-        [Description("Sceptile")]
+        [Description(@"Sceptile")]
         Sceptile = 254,
 
-        [Description("Torchic")]
+        [Description(@"Torchic")]
         Torchic = 255,
 
-        [Description("Combusken")]
+        [Description(@"Combusken")]
         Combusken = 256,
 
-        [Description("Blaziken")]
+        [Description(@"Blaziken")]
         Blaziken = 257,
 
-        [Description("Mudkip")]
+        [Description(@"Mudkip")]
         Mudkip = 258,
 
-        [Description("Marshtomp")]
+        [Description(@"Marshtomp")]
         Marshtomp = 259,
 
-        [Description("Swampert")]
+        [Description(@"Swampert")]
         Swampert = 260,
 
-        [Description("Poochyena")]
+        [Description(@"Poochyena")]
         Poochyena = 261,
 
-        [Description("Mightyena")]
+        [Description(@"Mightyena")]
         Mightyena = 262,
 
-        [Description("Zigzagoon")]
+        [Description(@"Zigzagoon")]
         Zigzagoon = 263,
 
-        [Description("Linoone")]
+        [Description(@"Linoone")]
         Linoone = 264,
 
-        [Description("Wurmple")]
+        [Description(@"Wurmple")]
         Wurmple = 265,
 
-        [Description("Silcoon")]
+        [Description(@"Silcoon")]
         Silcoon = 266,
 
-        [Description("Beautifly")]
+        [Description(@"Beautifly")]
         Beautifly = 267,
 
-        [Description("Cascoon")]
+        [Description(@"Cascoon")]
         Cascoon = 268,
 
-        [Description("Dustox")]
+        [Description(@"Dustox")]
         Dustox = 269,
 
-        [Description("Lotad")]
+        [Description(@"Lotad")]
         Lotad = 270,
 
-        [Description("Lombre")]
+        [Description(@"Lombre")]
         Lombre = 271,
 
-        [Description("Ludicolo")]
+        [Description(@"Ludicolo")]
         Ludicolo = 272,
 
-        [Description("Seedot")]
+        [Description(@"Seedot")]
         Seedot = 273,
 
-        [Description("Nuzleaf")]
+        [Description(@"Nuzleaf")]
         Nuzleaf = 274,
 
-        [Description("Shiftry")]
+        [Description(@"Shiftry")]
         Shiftry = 275,
 
-        [Description("Taillow")]
+        [Description(@"Taillow")]
         Taillow = 276,
 
-        [Description("Swellow")]
+        [Description(@"Swellow")]
         Swellow = 277,
 
-        [Description("Wingull")]
+        [Description(@"Wingull")]
         Wingull = 278,
 
-        [Description("Pelipper")]
+        [Description(@"Pelipper")]
         Pelipper = 279,
 
-        [Description("Ralts")]
+        [Description(@"Ralts")]
         Ralts = 280,
 
-        [Description("Kirlia")]
+        [Description(@"Kirlia")]
         Kirlia = 281,
 
-        [Description("Gardevoir")]
+        [Description(@"Gardevoir")]
         Gardevoir = 282,
 
-        [Description("Surskit")]
+        [Description(@"Surskit")]
         Surskit = 283,
 
-        [Description("Masquerain")]
+        [Description(@"Masquerain")]
         Masquerain = 284,
 
-        [Description("Shroomish")]
+        [Description(@"Shroomish")]
         Shroomish = 285,
 
-        [Description("Breloom")]
+        [Description(@"Breloom")]
         Breloom = 286,
 
-        [Description("Slakoth")]
+        [Description(@"Slakoth")]
         Slakoth = 287,
 
-        [Description("Vigoroth")]
+        [Description(@"Vigoroth")]
         Vigoroth = 288,
 
-        [Description("Slaking")]
+        [Description(@"Slaking")]
         Slaking = 289,
 
-        [Description("Nincada")]
+        [Description(@"Nincada")]
         Nincada = 290,
 
-        [Description("Ninjask")]
+        [Description(@"Ninjask")]
         Ninjask = 291,
 
-        [Description("Shedinja")]
+        [Description(@"Shedinja")]
         Shedinja = 292,
 
-        [Description("Whismur")]
+        [Description(@"Whismur")]
         Whismur = 293,
 
-        [Description("Loudred")]
+        [Description(@"Loudred")]
         Loudred = 294,
 
-        [Description("Exploud")]
+        [Description(@"Exploud")]
         Exploud = 295,
 
-        [Description("Makuhita")]
+        [Description(@"Makuhita")]
         Makuhita = 296,
 
-        [Description("Hariyama")]
+        [Description(@"Hariyama")]
         Hariyama = 297,
 
-        [Description("Azurill")]
+        [Description(@"Azurill")]
         Azurill = 298,
 
-        [Description("Nosepass")]
+        [Description(@"Nosepass")]
         Nosepass = 299,
 
-        [Description("Skitty")]
+        [Description(@"Skitty")]
         Skitty = 300,
 
-        [Description("Delcatty")]
+        [Description(@"Delcatty")]
         Delcatty = 301,
 
-        [Description("Sableye")]
+        [Description(@"Sableye")]
         Sableye = 302,
 
-        [Description("Mawile")]
+        [Description(@"Mawile")]
         Mawile = 303,
 
-        [Description("Aron")]
+        [Description(@"Aron")]
         Aron = 304,
 
-        [Description("Lairon")]
+        [Description(@"Lairon")]
         Lairon = 305,
 
-        [Description("Aggron")]
+        [Description(@"Aggron")]
         Aggron = 306,
 
-        [Description("Meditite")]
+        [Description(@"Meditite")]
         Meditite = 307,
 
-        [Description("Medicham")]
+        [Description(@"Medicham")]
         Medicham = 308,
 
-        [Description("Electrike")]
+        [Description(@"Electrike")]
         Electrike = 309,
 
-        [Description("Manectric")]
+        [Description(@"Manectric")]
         Manectric = 310,
 
-        [Description("Plusle")]
+        [Description(@"Plusle")]
         Plusle = 311,
 
-        [Description("Minun")]
+        [Description(@"Minun")]
         Minun = 312,
 
-        [Description("Volbeat")]
+        [Description(@"Volbeat")]
         Volbeat = 313,
 
-        [Description("Illumise")]
+        [Description(@"Illumise")]
         Illumise = 314,
 
-        [Description("Roselia")]
+        [Description(@"Roselia")]
         Roselia = 315,
 
-        [Description("Gulpin")]
+        [Description(@"Gulpin")]
         Gulpin = 316,
 
-        [Description("Swalot")]
+        [Description(@"Swalot")]
         Swalot = 317,
 
-        [Description("Carvanha")]
+        [Description(@"Carvanha")]
         Carvanha = 318,
 
-        [Description("Sharpedo")]
+        [Description(@"Sharpedo")]
         Sharpedo = 319,
 
-        [Description("Wailmer")]
+        [Description(@"Wailmer")]
         Wailmer = 320,
 
-        [Description("Wailord")]
+        [Description(@"Wailord")]
         Wailord = 321,
 
-        [Description("Numel")]
+        [Description(@"Numel")]
         Numel = 322,
 
-        [Description("Camerupt")]
+        [Description(@"Camerupt")]
         Camerupt = 323,
 
-        [Description("Torkoal")]
+        [Description(@"Torkoal")]
         Torkoal = 324,
 
-        [Description("Spoink")]
+        [Description(@"Spoink")]
         Spoink = 325,
 
-        [Description("Grumpig")]
+        [Description(@"Grumpig")]
         Grumpig = 326,
 
-        [Description("Spinda")]
+        [Description(@"Spinda")]
         Spinda = 327,
 
-        [Description("Trapinch")]
+        [Description(@"Trapinch")]
         Trapinch = 328,
 
-        [Description("Vibrava")]
+        [Description(@"Vibrava")]
         Vibrava = 329,
 
-        [Description("Flygon")]
+        [Description(@"Flygon")]
         Flygon = 330,
 
-        [Description("Cacnea")]
+        [Description(@"Cacnea")]
         Cacnea = 331,
 
-        [Description("Cacturne")]
+        [Description(@"Cacturne")]
         Cacturne = 332,
 
-        [Description("Swablu")]
+        [Description(@"Swablu")]
         Swablu = 333,
 
-        [Description("Altaria")]
+        [Description(@"Altaria")]
         Altaria = 334,
 
-        [Description("Zangoose")]
+        [Description(@"Zangoose")]
         Zangoose = 335,
 
-        [Description("Seviper")]
+        [Description(@"Seviper")]
         Seviper = 336,
 
-        [Description("Lunatone")]
+        [Description(@"Lunatone")]
         Lunatone = 337,
 
-        [Description("Solrock")]
+        [Description(@"Solrock")]
         Solrock = 338,
 
-        [Description("Barboach")]
+        [Description(@"Barboach")]
         Barboach = 339,
 
-        [Description("Whiscash")]
+        [Description(@"Whiscash")]
         Whiscash = 340,
 
-        [Description("Corphish")]
+        [Description(@"Corphish")]
         Corphish = 341,
 
-        [Description("Crawdaunt")]
+        [Description(@"Crawdaunt")]
         Crawdaunt = 342,
 
-        [Description("Baltoy")]
+        [Description(@"Baltoy")]
         Baltoy = 343,
 
-        [Description("Claydol")]
+        [Description(@"Claydol")]
         Claydol = 344,
 
-        [Description("Lileep")]
+        [Description(@"Lileep")]
         Lileep = 345,
 
-        [Description("Cradily")]
+        [Description(@"Cradily")]
         Cradily = 346,
 
-        [Description("Anorith")]
+        [Description(@"Anorith")]
         Anorith = 347,
 
-        [Description("Armaldo")]
+        [Description(@"Armaldo")]
         Armaldo = 348,
 
-        [Description("Feebas")]
+        [Description(@"Feebas")]
         Feebas = 349,
 
-        [Description("Milotic")]
+        [Description(@"Milotic")]
         Milotic = 350,
 
-        [Description("Castform")]
+        [Description(@"Castform")]
         Castform = 351,
 
-        [Description("Kecleon")]
+        [Description(@"Kecleon")]
         Kecleon = 352,
 
-        [Description("Shuppet")]
+        [Description(@"Shuppet")]
         Shuppet = 353,
 
-        [Description("Banette")]
+        [Description(@"Banette")]
         Banette = 354,
 
-        [Description("Duskull")]
+        [Description(@"Duskull")]
         Duskull = 355,
 
-        [Description("Dusclops")]
+        [Description(@"Dusclops")]
         Dusclops = 356,
 
-        [Description("Tropius")]
+        [Description(@"Tropius")]
         Tropius = 357,
 
-        [Description("Chimecho")]
+        [Description(@"Chimecho")]
         Chimecho = 358,
 
-        [Description("Absol")]
+        [Description(@"Absol")]
         Absol = 359,
 
-        [Description("Wynaut")]
+        [Description(@"Wynaut")]
         Wynaut = 360,
 
-        [Description("Snorunt")]
+        [Description(@"Snorunt")]
         Snorunt = 361,
 
-        [Description("Glalie")]
+        [Description(@"Glalie")]
         Glalie = 362,
 
-        [Description("Spheal")]
+        [Description(@"Spheal")]
         Spheal = 363,
 
-        [Description("Sealeo")]
+        [Description(@"Sealeo")]
         Sealeo = 364,
 
-        [Description("Walrein")]
+        [Description(@"Walrein")]
         Walrein = 365,
 
-        [Description("Clamperl")]
+        [Description(@"Clamperl")]
         Clamperl = 366,
 
-        [Description("Huntail")]
+        [Description(@"Huntail")]
         Huntail = 367,
 
-        [Description("Gorebyss")]
+        [Description(@"Gorebyss")]
         Gorebyss = 368,
 
-        [Description("Relicanth")]
+        [Description(@"Relicanth")]
         Relicanth = 369,
 
-        [Description("Luvdisc")]
+        [Description(@"Luvdisc")]
         Luvdisc = 370,
 
-        [Description("Bagon")]
+        [Description(@"Bagon")]
         Bagon = 371,
 
-        [Description("Shelgon")]
+        [Description(@"Shelgon")]
         Shelgon = 372,
 
-        [Description("Salamence")]
+        [Description(@"Salamence")]
         Salamence = 373,
 
-        [Description("Beldum")]
+        [Description(@"Beldum")]
         Beldum = 374,
 
-        [Description("Metang")]
+        [Description(@"Metang")]
         Metang = 375,
 
-        [Description("Metagross")]
+        [Description(@"Metagross")]
         Metagross = 376,
 
-        [Description("Regirock")]
+        [Description(@"Regirock")]
         Regirock = 377,
 
-        [Description("Regice")]
+        [Description(@"Regice")]
         Regice = 378,
 
-        [Description("Registeel")]
+        [Description(@"Registeel")]
         Registeel = 379,
 
-        [Description("Latias")]
+        [Description(@"Latias")]
         Latias = 380,
 
-        [Description("Latios")]
+        [Description(@"Latios")]
         Latios = 381,
 
-        [Description("Kyogre")]
+        [Description(@"Kyogre")]
         Kyogre = 382,
 
-        [Description("Groudon")]
+        [Description(@"Groudon")]
         Groudon = 383,
 
-        [Description("Rayquaza")]
+        [Description(@"Rayquaza")]
         Rayquaza = 384,
 
-        [Description("Jirachi")]
+        [Description(@"Jirachi")]
         Jirachi = 385,
 
-        [Description("Deoxys")]
+        [Description(@"Deoxys")]
         Deoxys = 386,
 
-        [Description("Turtwig")]
+        [Description(@"Turtwig")]
         Turtwig = 387,
 
-        [Description("Grotle")]
+        [Description(@"Grotle")]
         Grotle = 388,
 
-        [Description("Torterra")]
+        [Description(@"Torterra")]
         Torterra = 389,
 
-        [Description("Chimchar")]
+        [Description(@"Chimchar")]
         Chimchar = 390,
 
-        [Description("Monferno")]
+        [Description(@"Monferno")]
         Monferno = 391,
 
-        [Description("Infernape")]
+        [Description(@"Infernape")]
         Infernape = 392,
 
-        [Description("Piplup")]
+        [Description(@"Piplup")]
         Piplup = 393,
 
-        [Description("Prinplup")]
+        [Description(@"Prinplup")]
         Prinplup = 394,
 
-        [Description("Empoleon")]
+        [Description(@"Empoleon")]
         Empoleon = 395,
 
-        [Description("Starly")]
+        [Description(@"Starly")]
         Starly = 396,
 
-        [Description("Staravia")]
+        [Description(@"Staravia")]
         Staravia = 397,
 
-        [Description("Staraptor")]
+        [Description(@"Staraptor")]
         Staraptor = 398,
 
-        [Description("Bidoof")]
+        [Description(@"Bidoof")]
         Bidoof = 399,
 
-        [Description("Bibarel")]
+        [Description(@"Bibarel")]
         Bibarel = 400,
 
-        [Description("Kricketot")]
+        [Description(@"Kricketot")]
         Kricketot = 401,
 
-        [Description("Kricketune")]
+        [Description(@"Kricketune")]
         Kricketune = 402,
 
-        [Description("Shinx")]
+        [Description(@"Shinx")]
         Shinx = 403,
 
-        [Description("Luxio")]
+        [Description(@"Luxio")]
         Luxio = 404,
 
-        [Description("Luxray")]
+        [Description(@"Luxray")]
         Luxray = 405,
 
-        [Description("Budew")]
+        [Description(@"Budew")]
         Budew = 406,
 
-        [Description("Roserade")]
+        [Description(@"Roserade")]
         Roserade = 407,
 
-        [Description("Cranidos")]
+        [Description(@"Cranidos")]
         Cranidos = 408,
 
-        [Description("Rampardos")]
+        [Description(@"Rampardos")]
         Rampardos = 409,
 
-        [Description("Shieldon")]
+        [Description(@"Shieldon")]
         Shieldon = 410,
 
-        [Description("Bastiodon")]
+        [Description(@"Bastiodon")]
         Bastiodon = 411,
 
-        [Description("Burmy")]
+        [Description(@"Burmy")]
         Burmy = 412,
 
-        [Description("Wormadam")]
+        [Description(@"Wormadam")]
         Wormadam = 413,
 
-        [Description("Mothim")]
+        [Description(@"Mothim")]
         Mothim = 414,
 
-        [Description("Combee")]
+        [Description(@"Combee")]
         Combee = 415,
 
-        [Description("Vespiquen")]
+        [Description(@"Vespiquen")]
         Vespiquen = 416,
 
-        [Description("Pachirisu")]
+        [Description(@"Pachirisu")]
         Pachirisu = 417,
 
-        [Description("Buizel")]
+        [Description(@"Buizel")]
         Buizel = 418,
 
-        [Description("Floatzel")]
+        [Description(@"Floatzel")]
         Floatzel = 419,
 
-        [Description("Cherubi")]
+        [Description(@"Cherubi")]
         Cherubi = 420,
 
-        [Description("Cherrim")]
+        [Description(@"Cherrim")]
         Cherrim = 421,
 
-        [Description("Shellos")]
+        [Description(@"Shellos")]
         Shellos = 422,
 
-        [Description("Gastrodon")]
+        [Description(@"Gastrodon")]
         Gastrodon = 423,
 
-        [Description("Ambipom")]
+        [Description(@"Ambipom")]
         Ambipom = 424,
 
-        [Description("Drifloon")]
+        [Description(@"Drifloon")]
         Drifloon = 425,
 
-        [Description("Drifblim")]
+        [Description(@"Drifblim")]
         Drifblim = 426,
 
-        [Description("Buneary")]
+        [Description(@"Buneary")]
         Buneary = 427,
 
-        [Description("Lopunny")]
+        [Description(@"Lopunny")]
         Lopunny = 428,
 
-        [Description("Mismagius")]
+        [Description(@"Mismagius")]
         Mismagius = 429,
 
-        [Description("Honchkrow")]
+        [Description(@"Honchkrow")]
         Honchkrow = 430,
 
-        [Description("Glameow")]
+        [Description(@"Glameow")]
         Glameow = 431,
 
-        [Description("Purugly")]
+        [Description(@"Purugly")]
         Purugly = 432,
 
-        [Description("Chingling")]
+        [Description(@"Chingling")]
         Chingling = 433,
 
-        [Description("Stunky")]
+        [Description(@"Stunky")]
         Stunky = 434,
 
-        [Description("Skuntank")]
+        [Description(@"Skuntank")]
         Skuntank = 435,
 
-        [Description("Bronzor")]
+        [Description(@"Bronzor")]
         Bronzor = 436,
 
-        [Description("Bronzong")]
+        [Description(@"Bronzong")]
         Bronzong = 437,
 
-        [Description("Bonsly")]
+        [Description(@"Bonsly")]
         Bonsly = 438,
 
-        [Description("Mime Jr.")]
+        [Description(@"Mime Jr.")]
         Mime_Jr = 439,
 
-        [Description("Happiny")]
+        [Description(@"Happiny")]
         Happiny = 440,
 
-        [Description("Chatot")]
+        [Description(@"Chatot")]
         Chatot = 441,
 
-        [Description("Spiritomb")]
+        [Description(@"Spiritomb")]
         Spiritomb = 442,
 
-        [Description("Gible")]
+        [Description(@"Gible")]
         Gible = 443,
 
-        [Description("Gabite")]
+        [Description(@"Gabite")]
         Gabite = 444,
 
-        [Description("Garchomp")]
+        [Description(@"Garchomp")]
         Garchomp = 445,
 
-        [Description("Munchlax")]
+        [Description(@"Munchlax")]
         Munchlax = 446,
 
-        [Description("Riolu")]
+        [Description(@"Riolu")]
         Riolu = 447,
 
-        [Description("Lucario")]
+        [Description(@"Lucario")]
         Lucario = 448,
 
-        [Description("Hippopotas")]
+        [Description(@"Hippopotas")]
         Hippopotas = 449,
 
-        [Description("Hippowdon")]
+        [Description(@"Hippowdon")]
         Hippowdon = 450,
 
-        [Description("Skorupi")]
+        [Description(@"Skorupi")]
         Skorupi = 451,
 
-        [Description("Drapion")]
+        [Description(@"Drapion")]
         Drapion = 452,
 
-        [Description("Croagunk")]
+        [Description(@"Croagunk")]
         Croagunk = 453,
 
-        [Description("Toxicroak")]
+        [Description(@"Toxicroak")]
         Toxicroak = 454,
 
-        [Description("Carnivine")]
+        [Description(@"Carnivine")]
         Carnivine = 455,
 
-        [Description("Finneon")]
+        [Description(@"Finneon")]
         Finneon = 456,
 
-        [Description("Lumineon")]
+        [Description(@"Lumineon")]
         Lumineon = 457,
 
-        [Description("Mantyke")]
+        [Description(@"Mantyke")]
         Mantyke = 458,
 
-        [Description("Snover")]
+        [Description(@"Snover")]
         Snover = 459,
 
-        [Description("Abomasnow")]
+        [Description(@"Abomasnow")]
         Abomasnow = 460,
 
-        [Description("Weavile")]
+        [Description(@"Weavile")]
         Weavile = 461,
 
-        [Description("Magnezone")]
+        [Description(@"Magnezone")]
         Magnezone = 462,
 
-        [Description("Lickilicky")]
+        [Description(@"Lickilicky")]
         Lickilicky = 463,
 
-        [Description("Rhyperior")]
+        [Description(@"Rhyperior")]
         Rhyperior = 464,
 
-        [Description("Tangrowth")]
+        [Description(@"Tangrowth")]
         Tangrowth = 465,
 
-        [Description("Electivire")]
+        [Description(@"Electivire")]
         Electivire = 466,
 
-        [Description("Magmortar")]
+        [Description(@"Magmortar")]
         Magmortar = 467,
 
-        [Description("Togekiss")]
+        [Description(@"Togekiss")]
         Togekiss = 468,
 
-        [Description("Yanmega")]
+        [Description(@"Yanmega")]
         Yanmega = 469,
 
-        [Description("Leafeon")]
+        [Description(@"Leafeon")]
         Leafeon = 470,
 
-        [Description("Glaceon")]
+        [Description(@"Glaceon")]
         Glaceon = 471,
 
-        [Description("Gliscor")]
+        [Description(@"Gliscor")]
         Gliscor = 472,
 
-        [Description("Mamoswine")]
+        [Description(@"Mamoswine")]
         Mamoswine = 473,
 
-        [Description("Porygon-Z")]
+        [Description(@"Porygon-Z")]
         Porygon_Z = 474,
 
-        [Description("Gallade")]
+        [Description(@"Gallade")]
         Gallade = 475,
 
-        [Description("Probopass")]
+        [Description(@"Probopass")]
         Probopass = 476,
 
-        [Description("Dusknoir")]
+        [Description(@"Dusknoir")]
         Dusknoir = 477,
 
-        [Description("Froslass")]
+        [Description(@"Froslass")]
         Froslass = 478,
 
-        [Description("Rotom")]
+        [Description(@"Rotom")]
         Rotom = 479,
 
-        [Description("Uxie")]
+        [Description(@"Uxie")]
         Uxie = 480,
 
-        [Description("Mesprit")]
+        [Description(@"Mesprit")]
         Mesprit = 481,
 
-        [Description("Azelf")]
+        [Description(@"Azelf")]
         Azelf = 482,
 
-        [Description("Dialga")]
+        [Description(@"Dialga")]
         Dialga = 483,
 
-        [Description("Palkia")]
+        [Description(@"Palkia")]
         Palkia = 484,
 
-        [Description("Heatran")]
+        [Description(@"Heatran")]
         Heatran = 485,
 
-        [Description("Regigigas")]
+        [Description(@"Regigigas")]
         Regigigas = 486,
 
-        [Description("Giratina")]
+        [Description(@"Giratina")]
         Giratina = 487,
 
-        [Description("Cresselia")]
+        [Description(@"Cresselia")]
         Cresselia = 488,
 
-        [Description("Phione")]
+        [Description(@"Phione")]
         Phione = 489,
 
-        [Description("Manaphy")]
+        [Description(@"Manaphy")]
         Manaphy = 490,
 
-        [Description("Darkrai")]
+        [Description(@"Darkrai")]
         Darkrai = 491,
 
-        [Description("Shaymin")]
+        [Description(@"Shaymin")]
         Shaymin = 492,
 
-        [Description("Arceus")]
+        [Description(@"Arceus")]
         Arceus = 493,
 
-        [Description("Victini")]
+        [Description(@"Victini")]
         Victini = 494,
 
-        [Description("Snivy")]
+        [Description(@"Snivy")]
         Snivy = 495,
 
-        [Description("Servine")]
+        [Description(@"Servine")]
         Servine = 496,
 
-        [Description("Serperior")]
+        [Description(@"Serperior")]
         Serperior = 497,
 
-        [Description("Tepig")]
+        [Description(@"Tepig")]
         Tepig = 498,
 
-        [Description("Pignite")]
+        [Description(@"Pignite")]
         Pignite = 499,
 
-        [Description("Emboar")]
+        [Description(@"Emboar")]
         Emboar = 500,
 
-        [Description("Oshawott")]
+        [Description(@"Oshawott")]
         Oshawott = 501,
 
-        [Description("Dewott")]
+        [Description(@"Dewott")]
         Dewott = 502,
 
-        [Description("Samurott")]
+        [Description(@"Samurott")]
         Samurott = 503,
 
-        [Description("Patrat")]
+        [Description(@"Patrat")]
         Patrat = 504,
 
-        [Description("Watchog")]
+        [Description(@"Watchog")]
         Watchog = 505,
 
-        [Description("Lillipup")]
+        [Description(@"Lillipup")]
         Lillipup = 506,
 
-        [Description("Herdier")]
+        [Description(@"Herdier")]
         Herdier = 507,
 
-        [Description("Stoutland")]
+        [Description(@"Stoutland")]
         Stoutland = 508,
 
-        [Description("Purrloin")]
+        [Description(@"Purrloin")]
         Purrloin = 509,
 
-        [Description("Liepard")]
+        [Description(@"Liepard")]
         Liepard = 510,
 
-        [Description("Pansage")]
+        [Description(@"Pansage")]
         Pansage = 511,
 
-        [Description("Simisage")]
+        [Description(@"Simisage")]
         Simisage = 512,
 
-        [Description("Pansear")]
+        [Description(@"Pansear")]
         Pansear = 513,
 
-        [Description("Simisear")]
+        [Description(@"Simisear")]
         Simisear = 514,
 
-        [Description("Panpour")]
+        [Description(@"Panpour")]
         Panpour = 515,
 
-        [Description("Simipour")]
+        [Description(@"Simipour")]
         Simipour = 516,
 
-        [Description("Munna")]
+        [Description(@"Munna")]
         Munna = 517,
 
-        [Description("Musharna")]
+        [Description(@"Musharna")]
         Musharna = 518,
 
-        [Description("Pidove")]
+        [Description(@"Pidove")]
         Pidove = 519,
 
-        [Description("Tranquill")]
+        [Description(@"Tranquill")]
         Tranquill = 520,
 
-        [Description("Unfezant")]
+        [Description(@"Unfezant")]
         Unfezant = 521,
 
-        [Description("Blitzle")]
+        [Description(@"Blitzle")]
         Blitzle = 522,
 
-        [Description("Zebstrika")]
+        [Description(@"Zebstrika")]
         Zebstrika = 523,
 
-        [Description("Roggenrola")]
+        [Description(@"Roggenrola")]
         Roggenrola = 524,
 
-        [Description("Boldore")]
+        [Description(@"Boldore")]
         Boldore = 525,
 
-        [Description("Gigalith")]
+        [Description(@"Gigalith")]
         Gigalith = 526,
 
-        [Description("Woobat")]
+        [Description(@"Woobat")]
         Woobat = 527,
 
-        [Description("Swoobat")]
+        [Description(@"Swoobat")]
         Swoobat = 528,
 
-        [Description("Drilbur")]
+        [Description(@"Drilbur")]
         Drilbur = 529,
 
-        [Description("Excadrill")]
+        [Description(@"Excadrill")]
         Excadrill = 530,
 
-        [Description("Audino")]
+        [Description(@"Audino")]
         Audino = 531,
 
-        [Description("Timburr")]
+        [Description(@"Timburr")]
         Timburr = 532,
 
-        [Description("Gurdurr")]
+        [Description(@"Gurdurr")]
         Gurdurr = 533,
 
-        [Description("Conkeldurr")]
+        [Description(@"Conkeldurr")]
         Conkeldurr = 534,
 
-        [Description("Tympole")]
+        [Description(@"Tympole")]
         Tympole = 535,
 
-        [Description("Palpitoad")]
+        [Description(@"Palpitoad")]
         Palpitoad = 536,
 
-        [Description("Seismitoad")]
+        [Description(@"Seismitoad")]
         Seismitoad = 537,
 
-        [Description("Throh")]
+        [Description(@"Throh")]
         Throh = 538,
 
-        [Description("Sawk")]
+        [Description(@"Sawk")]
         Sawk = 539,
 
-        [Description("Sewaddle")]
+        [Description(@"Sewaddle")]
         Sewaddle = 540,
 
-        [Description("Swadloon")]
+        [Description(@"Swadloon")]
         Swadloon = 541,
 
-        [Description("Leavanny")]
+        [Description(@"Leavanny")]
         Leavanny = 542,
 
-        [Description("Venipede")]
+        [Description(@"Venipede")]
         Venipede = 543,
 
-        [Description("Whirlipede")]
+        [Description(@"Whirlipede")]
         Whirlipede = 544,
 
-        [Description("Scolipede")]
+        [Description(@"Scolipede")]
         Scolipede = 545,
 
-        [Description("Cottonee")]
+        [Description(@"Cottonee")]
         Cottonee = 546,
 
-        [Description("Whimsicott")]
+        [Description(@"Whimsicott")]
         Whimsicott = 547,
 
-        [Description("Petilil")]
+        [Description(@"Petilil")]
         Petilil = 548,
 
-        [Description("Lilligant")]
+        [Description(@"Lilligant")]
         Lilligant = 549,
 
-        [Description("Basculin")]
+        [Description(@"Basculin")]
         Basculin = 550,
 
-        [Description("Sandile")]
+        [Description(@"Sandile")]
         Sandile = 551,
 
-        [Description("Krokorok")]
+        [Description(@"Krokorok")]
         Krokorok = 552,
 
-        [Description("Krookodile")]
+        [Description(@"Krookodile")]
         Krookodile = 553,
 
-        [Description("Darumaka")]
+        [Description(@"Darumaka")]
         Darumaka = 554,
 
-        [Description("Darmanitan")]
+        [Description(@"Darmanitan")]
         Darmanitan = 555,
 
-        [Description("Maractus")]
+        [Description(@"Maractus")]
         Maractus = 556,
 
-        [Description("Dwebble")]
+        [Description(@"Dwebble")]
         Dwebble = 557,
 
-        [Description("Crustle")]
+        [Description(@"Crustle")]
         Crustle = 558,
 
-        [Description("Scraggy")]
+        [Description(@"Scraggy")]
         Scraggy = 559,
 
-        [Description("Scrafty")]
+        [Description(@"Scrafty")]
         Scrafty = 560,
 
-        [Description("Sigilyph")]
+        [Description(@"Sigilyph")]
         Sigilyph = 561,
 
-        [Description("Yamask")]
+        [Description(@"Yamask")]
         Yamask = 562,
 
-        [Description("Cofagrigus")]
+        [Description(@"Cofagrigus")]
         Cofagrigus = 563,
 
-        [Description("Tirtouga")]
+        [Description(@"Tirtouga")]
         Tirtouga = 564,
 
-        [Description("Carracosta")]
+        [Description(@"Carracosta")]
         Carracosta = 565,
 
-        [Description("Archen")]
+        [Description(@"Archen")]
         Archen = 566,
 
-        [Description("Archeops")]
+        [Description(@"Archeops")]
         Archeops = 567,
 
-        [Description("Trubbish")]
+        [Description(@"Trubbish")]
         Trubbish = 568,
 
-        [Description("Garbodor")]
+        [Description(@"Garbodor")]
         Garbodor = 569,
 
-        [Description("Zorua")]
+        [Description(@"Zorua")]
         Zorua = 570,
 
-        [Description("Zoroark")]
+        [Description(@"Zoroark")]
         Zoroark = 571,
 
-        [Description("Minccino")]
+        [Description(@"Minccino")]
         Minccino = 572,
 
-        [Description("Cinccino")]
+        [Description(@"Cinccino")]
         Cinccino = 573,
 
-        [Description("Gothita")]
+        [Description(@"Gothita")]
         Gothita = 574,
 
-        [Description("Gothorita")]
+        [Description(@"Gothorita")]
         Gothorita = 575,
 
-        [Description("Gothitelle")]
+        [Description(@"Gothitelle")]
         Gothitelle = 576,
 
-        [Description("Solosis")]
+        [Description(@"Solosis")]
         Solosis = 577,
 
-        [Description("Duosion")]
+        [Description(@"Duosion")]
         Duosion = 578,
 
-        [Description("Reuniclus")]
+        [Description(@"Reuniclus")]
         Reuniclus = 579,
 
-        [Description("Ducklett")]
+        [Description(@"Ducklett")]
         Ducklett = 580,
 
-        [Description("Swanna")]
+        [Description(@"Swanna")]
         Swanna = 581,
 
-        [Description("Vanillite")]
+        [Description(@"Vanillite")]
         Vanillite = 582,
 
-        [Description("Vanillish")]
+        [Description(@"Vanillish")]
         Vanillish = 583,
 
-        [Description("Vanilluxe")]
+        [Description(@"Vanilluxe")]
         Vanilluxe = 584,
 
-        [Description("Deerling")]
+        [Description(@"Deerling")]
         Deerling = 585,
 
-        [Description("Sawsbuck")]
+        [Description(@"Sawsbuck")]
         Sawsbuck = 586,
 
-        [Description("Emolga")]
+        [Description(@"Emolga")]
         Emolga = 587,
 
-        [Description("Karrablast")]
+        [Description(@"Karrablast")]
         Karrablast = 588,
 
-        [Description("Escavalier")]
+        [Description(@"Escavalier")]
         Escavalier = 589,
 
-        [Description("Foongus")]
+        [Description(@"Foongus")]
         Foongus = 590,
 
-        [Description("Amoonguss")]
+        [Description(@"Amoonguss")]
         Amoonguss = 591,
 
-        [Description("Frillish")]
+        [Description(@"Frillish")]
         Frillish = 592,
 
-        [Description("Jellicent")]
+        [Description(@"Jellicent")]
         Jellicent = 593,
 
-        [Description("Alomomola")]
+        [Description(@"Alomomola")]
         Alomomola = 594,
 
-        [Description("Joltik")]
+        [Description(@"Joltik")]
         Joltik = 595,
 
-        [Description("Galvantula")]
+        [Description(@"Galvantula")]
         Galvantula = 596,
 
-        [Description("Ferroseed")]
+        [Description(@"Ferroseed")]
         Ferroseed = 597,
 
-        [Description("Ferrothorn")]
+        [Description(@"Ferrothorn")]
         Ferrothorn = 598,
 
-        [Description("Klink")]
+        [Description(@"Klink")]
         Klink = 599,
 
-        [Description("Klang")]
+        [Description(@"Klang")]
         Klang = 600,
 
-        [Description("Klinklang")]
+        [Description(@"Klinklang")]
         Klinklang = 601,
 
-        [Description("Tynamo")]
+        [Description(@"Tynamo")]
         Tynamo = 602,
 
-        [Description("Eelektrik")]
+        [Description(@"Eelektrik")]
         Eelektrik = 603,
 
-        [Description("Eelektross")]
+        [Description(@"Eelektross")]
         Eelektross = 604,
 
-        [Description("Elgyem")]
+        [Description(@"Elgyem")]
         Elgyem = 605,
 
-        [Description("Beheeyem")]
+        [Description(@"Beheeyem")]
         Beheeyem = 606,
 
-        [Description("Litwick")]
+        [Description(@"Litwick")]
         Litwick = 607,
 
-        [Description("Lampent")]
+        [Description(@"Lampent")]
         Lampent = 608,
 
-        [Description("Chandelure")]
+        [Description(@"Chandelure")]
         Chandelure = 609,
 
-        [Description("Axew")]
+        [Description(@"Axew")]
         Axew = 610,
 
-        [Description("Fraxure")]
+        [Description(@"Fraxure")]
         Fraxure = 611,
 
-        [Description("Haxorus")]
+        [Description(@"Haxorus")]
         Haxorus = 612,
 
-        [Description("Cubchoo")]
+        [Description(@"Cubchoo")]
         Cubchoo = 613,
 
-        [Description("Beartic")]
+        [Description(@"Beartic")]
         Beartic = 614,
 
-        [Description("Cryogonal")]
+        [Description(@"Cryogonal")]
         Cryogonal = 615,
 
-        [Description("Shelmet")]
+        [Description(@"Shelmet")]
         Shelmet = 616,
 
-        [Description("Accelgor")]
+        [Description(@"Accelgor")]
         Accelgor = 617,
 
-        [Description("Stunfisk")]
+        [Description(@"Stunfisk")]
         Stunfisk = 618,
 
-        [Description("Mienfoo")]
+        [Description(@"Mienfoo")]
         Mienfoo = 619,
 
-        [Description("Mienshao")]
+        [Description(@"Mienshao")]
         Mienshao = 620,
 
-        [Description("Druddigon")]
+        [Description(@"Druddigon")]
         Druddigon = 621,
 
-        [Description("Golett")]
+        [Description(@"Golett")]
         Golett = 622,
 
-        [Description("Golurk")]
+        [Description(@"Golurk")]
         Golurk = 623,
 
-        [Description("Pawniard")]
+        [Description(@"Pawniard")]
         Pawniard = 624,
 
-        [Description("Bisharp")]
+        [Description(@"Bisharp")]
         Bisharp = 625,
 
-        [Description("Bouffalant")]
+        [Description(@"Bouffalant")]
         Bouffalant = 626,
 
-        [Description("Rufflet")]
+        [Description(@"Rufflet")]
         Rufflet = 627,
 
-        [Description("Braviary")]
+        [Description(@"Braviary")]
         Braviary = 628,
 
-        [Description("Vullaby")]
+        [Description(@"Vullaby")]
         Vullaby = 629,
 
-        [Description("Mandibuzz")]
+        [Description(@"Mandibuzz")]
         Mandibuzz = 630,
 
-        [Description("Heatmor")]
+        [Description(@"Heatmor")]
         Heatmor = 631,
 
-        [Description("Durant")]
+        [Description(@"Durant")]
         Durant = 632,
 
-        [Description("Deino")]
+        [Description(@"Deino")]
         Deino = 633,
 
-        [Description("Zweilous")]
+        [Description(@"Zweilous")]
         Zweilous = 634,
 
-        [Description("Hydreigon")]
+        [Description(@"Hydreigon")]
         Hydreigon = 635,
 
-        [Description("Larvesta")]
+        [Description(@"Larvesta")]
         Larvesta = 636,
 
-        [Description("Volcarona")]
+        [Description(@"Volcarona")]
         Volcarona = 637,
 
-        [Description("Cobalion")]
+        [Description(@"Cobalion")]
         Cobalion = 638,
 
-        [Description("Terrakion")]
+        [Description(@"Terrakion")]
         Terrakion = 639,
 
-        [Description("Virizion")]
+        [Description(@"Virizion")]
         Virizion = 640,
 
-        [Description("Tornadus")]
+        [Description(@"Tornadus")]
         Tornadus = 641,
 
-        [Description("Thundurus")]
+        [Description(@"Thundurus")]
         Thundurus = 642,
 
-        [Description("Reshiram")]
+        [Description(@"Reshiram")]
         Reshiram = 643,
 
-        [Description("Zekrom")]
+        [Description(@"Zekrom")]
         Zekrom = 644,
 
-        [Description("Landorus")]
+        [Description(@"Landorus")]
         Landorus = 645,
 
-        [Description("Kyurem")]
+        [Description(@"Kyurem")]
         Kyurem = 646,
 
-        [Description("Keldeo")]
+        [Description(@"Keldeo")]
         Keldeo = 647,
 
-        [Description("Meloetta")]
+        [Description(@"Meloetta")]
         Meloetta = 648,
 
-        [Description("Genesect")]
+        [Description(@"Genesect")]
         Genesect = 649,
 
-        [Description("Chespin")]
+        [Description(@"Chespin")]
         Chespin = 650,
 
-        [Description("Quilladin")]
+        [Description(@"Quilladin")]
         Quilladin = 651,
 
-        [Description("Chesnaught")]
+        [Description(@"Chesnaught")]
         Chesnaught = 652,
 
-        [Description("Fennekin")]
+        [Description(@"Fennekin")]
         Fennekin = 653,
 
-        [Description("Braixen")]
+        [Description(@"Braixen")]
         Braixen = 654,
 
-        [Description("Delphox")]
+        [Description(@"Delphox")]
         Delphox = 655,
 
-        [Description("Froakie")]
+        [Description(@"Froakie")]
         Froakie = 656,
 
-        [Description("Frogadier")]
+        [Description(@"Frogadier")]
         Frogadier = 657,
 
-        [Description("Greninja")]
+        [Description(@"Greninja")]
         Greninja = 658,
 
-        [Description("Bunnelby")]
+        [Description(@"Bunnelby")]
         Bunnelby = 659,
 
-        [Description("Diggersby")]
+        [Description(@"Diggersby")]
         Diggersby = 660,
 
-        [Description("Fletchling")]
+        [Description(@"Fletchling")]
         Fletchling = 661,
 
-        [Description("Fletchinder")]
+        [Description(@"Fletchinder")]
         Fletchinder = 662,
 
-        [Description("Talonflame")]
+        [Description(@"Talonflame")]
         Talonflame = 663,
 
-        [Description("Scatterbug")]
+        [Description(@"Scatterbug")]
         Scatterbug = 664,
 
-        [Description("Spewpa")]
+        [Description(@"Spewpa")]
         Spewpa = 665,
 
-        [Description("Vivillon")]
+        [Description(@"Vivillon")]
         Vivillon = 666,
 
-        [Description("Litleo")]
+        [Description(@"Litleo")]
         Litleo = 667,
 
-        [Description("Pyroar")]
+        [Description(@"Pyroar")]
         Pyroar = 668,
 
-        [Description("Flabébé")]
+        [Description(@"Flabébé")]
         Flabebe = 669,
 
-        [Description("Floette")]
+        [Description(@"Floette")]
         Floette = 670,
 
-        [Description("Florges")]
+        [Description(@"Florges")]
         Florges = 671,
 
-        [Description("Skiddo")]
+        [Description(@"Skiddo")]
         Skiddo = 672,
 
-        [Description("Gogoat")]
+        [Description(@"Gogoat")]
         Gogoat = 673,
 
-        [Description("Pancham")]
+        [Description(@"Pancham")]
         Pancham = 674,
 
-        [Description("Pangoro")]
+        [Description(@"Pangoro")]
         Pangoro = 675,
 
-        [Description("Furfrou")]
+        [Description(@"Furfrou")]
         Furfrou = 676,
 
-        [Description("Espurr")]
+        [Description(@"Espurr")]
         Espurr = 677,
 
-        [Description("Meowstic")]
+        [Description(@"Meowstic")]
         Meowstic = 678,
 
-        [Description("Honedge")]
+        [Description(@"Honedge")]
         Honedge = 679,
 
-        [Description("Doublade")]
+        [Description(@"Doublade")]
         Doublade = 680,
 
-        [Description("Aegislash")]
+        [Description(@"Aegislash")]
         Aegislash = 681,
 
-        [Description("Spritzee")]
+        [Description(@"Spritzee")]
         Spritzee = 682,
 
-        [Description("Aromatisse")]
+        [Description(@"Aromatisse")]
         Aromatisse = 683,
 
-        [Description("Swirlix")]
+        [Description(@"Swirlix")]
         Swirlix = 684,
 
-        [Description("Slurpuff")]
+        [Description(@"Slurpuff")]
         Slurpuff = 685,
 
-        [Description("Inkay")]
+        [Description(@"Inkay")]
         Inkay = 686,
 
-        [Description("Malamar")]
+        [Description(@"Malamar")]
         Malamar = 687,
 
-        [Description("Binacle")]
+        [Description(@"Binacle")]
         Binacle = 688,
 
-        [Description("Barbaracle")]
+        [Description(@"Barbaracle")]
         Barbaracle = 689,
 
-        [Description("Skrelp")]
+        [Description(@"Skrelp")]
         Skrelp = 690,
 
-        [Description("Dragalge")]
+        [Description(@"Dragalge")]
         Dragalge = 691,
 
-        [Description("Clauncher")]
+        [Description(@"Clauncher")]
         Clauncher = 692,
 
-        [Description("Clawitzer")]
+        [Description(@"Clawitzer")]
         Clawitzer = 693,
 
-        [Description("Helioptile")]
+        [Description(@"Helioptile")]
         Helioptile = 694,
 
-        [Description("Heliolisk")]
+        [Description(@"Heliolisk")]
         Heliolisk = 695,
 
-        [Description("Tyrunt")]
+        [Description(@"Tyrunt")]
         Tyrunt = 696,
 
-        [Description("Tyrantrum")]
+        [Description(@"Tyrantrum")]
         Tyrantrum = 697,
 
-        [Description("Amaura")]
+        [Description(@"Amaura")]
         Amaura = 698,
 
-        [Description("Aurorus")]
+        [Description(@"Aurorus")]
         Aurorus = 699,
 
-        [Description("Sylveon")]
+        [Description(@"Sylveon")]
         Sylveon = 700,
 
-        [Description("Hawlucha")]
+        [Description(@"Hawlucha")]
         Hawlucha = 701,
 
-        [Description("Dedenne")]
+        [Description(@"Dedenne")]
         Dedenne = 702,
 
-        [Description("Carbink")]
+        [Description(@"Carbink")]
         Carbink = 703,
 
-        [Description("Goomy")]
+        [Description(@"Goomy")]
         Goomy = 704,
 
-        [Description("Sliggoo")]
+        [Description(@"Sliggoo")]
         Sliggoo = 705,
 
-        [Description("Goodra")]
+        [Description(@"Goodra")]
         Goodra = 706,
 
-        [Description("Klefki")]
+        [Description(@"Klefki")]
         Klefki = 707,
 
-        [Description("Phantump")]
+        [Description(@"Phantump")]
         Phantump = 708,
 
-        [Description("Trevenant")]
+        [Description(@"Trevenant")]
         Trevenant = 709,
 
-        [Description("Pumpkaboo")]
+        [Description(@"Pumpkaboo")]
         Pumpkaboo = 710,
 
-        [Description("Gourgeist")]
+        [Description(@"Gourgeist")]
         Gourgeist = 711,
 
-        [Description("Bergmite")]
+        [Description(@"Bergmite")]
         Bergmite = 712,
 
-        [Description("Avalugg")]
+        [Description(@"Avalugg")]
         Avalugg = 713,
 
-        [Description("Noibat")]
+        [Description(@"Noibat")]
         Noibat = 714,
 
-        [Description("Noivern")]
+        [Description(@"Noivern")]
         Noivern = 715,
 
-        [Description("Xerneas")]
+        [Description(@"Xerneas")]
         Xerneas = 716,
 
-        [Description("Yveltal")]
+        [Description(@"Yveltal")]
         Yveltal = 717,
 
-        [Description("Zygarde")]
+        [Description(@"Zygarde")]
         Zygarde = 718,
 
-        [Description("Diancie")]
+        [Description(@"Diancie")]
         Diancie = 719,
 
-        [Description("Hoopa")]
+        [Description(@"Hoopa")]
         Hoopa = 720,
 
-        [Description("Volcanion")]
+        [Description(@"Volcanion")]
         Volcanion = 721
     }
 
     public enum Moves : ushort
     {
-        [Description("No Move")]
+        [Description(@"No Move")]
         NoMove = 0,
 
-        [Description("Pound")]
+        [Description(@"Pound")]
         Pound = 1,
 
-        [Description("Karate Chop")]
+        [Description(@"Karate Chop")]
         Karate_Chop = 2,
 
-        [Description("Double Slap")]
+        [Description(@"Double Slap")]
         Double_Slap = 3,
 
-        [Description("Comet Punch")]
+        [Description(@"Comet Punch")]
         Comet_Punch = 4,
 
-        [Description("Mega Punch")]
+        [Description(@"Mega Punch")]
         Mega_Punch = 5,
 
-        [Description("Pay Day")]
+        [Description(@"Pay Day")]
         Pay_Day = 6,
 
-        [Description("Fire Punch")]
+        [Description(@"Fire Punch")]
         Fire_Punch = 7,
 
-        [Description("Ice Punch")]
+        [Description(@"Ice Punch")]
         Ice_Punch = 8,
 
-        [Description("Thunder Punch")]
+        [Description(@"Thunder Punch")]
         Thunder_Punch = 9,
 
-        [Description("Scratch")]
+        [Description(@"Scratch")]
         Scratch = 10,
 
-        [Description("Vice Grip")]
+        [Description(@"Vice Grip")]
         Vice_Grip = 11,
 
-        [Description("Guillotine")]
+        [Description(@"Guillotine")]
         Guillotine = 12,
 
-        [Description("Razor Wind")]
+        [Description(@"Razor Wind")]
         Razor_Wind = 13,
 
-        [Description("Swords Dance")]
+        [Description(@"Swords Dance")]
         Swords_Dance = 14,
 
-        [Description("Cut")]
+        [Description(@"Cut")]
         Cut = 15,
 
-        [Description("Gust")]
+        [Description(@"Gust")]
         Gust = 16,
 
-        [Description("Wing Attack")]
+        [Description(@"Wing Attack")]
         Wing_Attack = 17,
 
-        [Description("Whirlwind")]
+        [Description(@"Whirlwind")]
         Whirlwind = 18,
 
-        [Description("Fly")]
+        [Description(@"Fly")]
         Fly = 19,
 
-        [Description("Bind")]
+        [Description(@"Bind")]
         Bind = 20,
 
-        [Description("Slam")]
+        [Description(@"Slam")]
         Slam = 21,
 
-        [Description("Vine Whip")]
+        [Description(@"Vine Whip")]
         Vine_Whip = 22,
 
-        [Description("Stomp")]
+        [Description(@"Stomp")]
         Stomp = 23,
 
-        [Description("Double Kick")]
+        [Description(@"Double Kick")]
         Double_Kick = 24,
 
-        [Description("Mega Kick")]
+        [Description(@"Mega Kick")]
         Mega_Kick = 25,
 
-        [Description("Jump Kick")]
+        [Description(@"Jump Kick")]
         Jump_Kick = 26,
 
-        [Description("Rolling Kick")]
+        [Description(@"Rolling Kick")]
         Rolling_Kick = 27,
 
-        [Description("Sand Attack")]
+        [Description(@"Sand Attack")]
         Sand_Attack = 28,
 
-        [Description("Headbutt")]
+        [Description(@"Headbutt")]
         Headbutt = 29,
 
-        [Description("Horn Attack")]
+        [Description(@"Horn Attack")]
         Horn_Attack = 30,
 
-        [Description("Fury Attack")]
+        [Description(@"Fury Attack")]
         Fury_Attack = 31,
 
-        [Description("Horn Drill")]
+        [Description(@"Horn Drill")]
         Horn_Drill = 32,
 
-        [Description("Tackle")]
+        [Description(@"Tackle")]
         Tackle = 33,
 
-        [Description("Body Slam")]
+        [Description(@"Body Slam")]
         Body_Slam = 34,
 
-        [Description("Wrap")]
+        [Description(@"Wrap")]
         Wrap = 35,
 
-        [Description("Take Down")]
+        [Description(@"Take Down")]
         Take_Down = 36,
 
-        [Description("Thrash")]
+        [Description(@"Thrash")]
         Thrash = 37,
 
-        [Description("Double-Edge")]
+        [Description(@"Double-Edge")]
         Double_Edge = 38,
 
-        [Description("Tail Whip")]
+        [Description(@"Tail Whip")]
         Tail_Whip = 39,
 
-        [Description("Poison Sting")]
+        [Description(@"Poison Sting")]
         Poison_Sting = 40,
 
-        [Description("Twineedle")]
+        [Description(@"Twineedle")]
         Twineedle = 41,
 
-        [Description("Pin Missile")]
+        [Description(@"Pin Missile")]
         Pin_Missile = 42,
 
-        [Description("Leer")]
+        [Description(@"Leer")]
         Leer = 43,
 
-        [Description("Bite")]
+        [Description(@"Bite")]
         Bite = 44,
 
-        [Description("Growl")]
+        [Description(@"Growl")]
         Growl = 45,
 
-        [Description("Roar")]
+        [Description(@"Roar")]
         Roar = 46,
 
-        [Description("Sing")]
+        [Description(@"Sing")]
         Sing = 47,
 
-        [Description("Supersonic")]
+        [Description(@"Supersonic")]
         Supersonic = 48,
 
-        [Description("Sonic Boom")]
+        [Description(@"Sonic Boom")]
         Sonic_Boom = 49,
 
-        [Description("Disable")]
+        [Description(@"Disable")]
         Disable = 50,
 
-        [Description("Acid")]
+        [Description(@"Acid")]
         Acid = 51,
 
-        [Description("Ember")]
+        [Description(@"Ember")]
         Ember = 52,
 
-        [Description("Flamethrower")]
+        [Description(@"Flamethrower")]
         Flamethrower = 53,
 
-        [Description("Mist")]
+        [Description(@"Mist")]
         Mist = 54,
 
-        [Description("Water Gun")]
+        [Description(@"Water Gun")]
         Water_Gun = 55,
 
-        [Description("Hydro Pump")]
+        [Description(@"Hydro Pump")]
         Hydro_Pump = 56,
 
-        [Description("Surf")]
+        [Description(@"Surf")]
         Surf = 57,
 
-        [Description("Ice Beam")]
+        [Description(@"Ice Beam")]
         Ice_Beam = 58,
 
-        [Description("Blizzard")]
+        [Description(@"Blizzard")]
         Blizzard = 59,
 
-        [Description("Psybeam")]
+        [Description(@"Psybeam")]
         Psybeam = 60,
 
-        [Description("Bubble Beam")]
+        [Description(@"Bubble Beam")]
         Bubble_Beam = 61,
 
-        [Description("Aurora Beam")]
+        [Description(@"Aurora Beam")]
         Aurora_Beam = 62,
 
-        [Description("Hyper Beam")]
+        [Description(@"Hyper Beam")]
         Hyper_Beam = 63,
 
-        [Description("Peck")]
+        [Description(@"Peck")]
         Peck = 64,
 
-        [Description("Drill Peck")]
+        [Description(@"Drill Peck")]
         Drill_Peck = 65,
 
-        [Description("Submission")]
+        [Description(@"Submission")]
         Submission = 66,
 
-        [Description("Low Kick")]
+        [Description(@"Low Kick")]
         Low_Kick = 67,
 
-        [Description("Counter")]
+        [Description(@"Counter")]
         Counter = 68,
 
-        [Description("Seismic Toss")]
+        [Description(@"Seismic Toss")]
         Seismic_Toss = 69,
 
-        [Description("Strength")]
+        [Description(@"Strength")]
         Strength = 70,
 
-        [Description("Absorb")]
+        [Description(@"Absorb")]
         Absorb = 71,
 
-        [Description("Mega Drain")]
+        [Description(@"Mega Drain")]
         Mega_Drain = 72,
 
-        [Description("Leech Seed")]
+        [Description(@"Leech Seed")]
         Leech_Seed = 73,
 
-        [Description("Growth")]
+        [Description(@"Growth")]
         Growth = 74,
 
-        [Description("Razor Leaf")]
+        [Description(@"Razor Leaf")]
         Razor_Leaf = 75,
 
-        [Description("Solar Beam")]
+        [Description(@"Solar Beam")]
         Solar_Beam = 76,
 
-        [Description("Poison Powder")]
+        [Description(@"Poison Powder")]
         Poison_Powder = 77,
 
-        [Description("Stun Spore")]
+        [Description(@"Stun Spore")]
         Stun_Spore = 78,
 
-        [Description("Sleep Powder")]
+        [Description(@"Sleep Powder")]
         Sleep_Powder = 79,
 
-        [Description("Petal Dance")]
+        [Description(@"Petal Dance")]
         Petal_Dance = 80,
 
-        [Description("String Shot")]
+        [Description(@"String Shot")]
         String_Shot = 81,
 
-        [Description("Dragon Rage")]
+        [Description(@"Dragon Rage")]
         Dragon_Rage = 82,
 
-        [Description("Fire Spin")]
+        [Description(@"Fire Spin")]
         Fire_Spin = 83,
 
-        [Description("Thunder Shock")]
+        [Description(@"Thunder Shock")]
         Thunder_Shock = 84,
 
-        [Description("Thunderbolt")]
+        [Description(@"Thunderbolt")]
         Thunderbolt = 85,
 
-        [Description("Thunder Wave")]
+        [Description(@"Thunder Wave")]
         Thunder_Wave = 86,
 
-        [Description("Thunder")]
+        [Description(@"Thunder")]
         Thunder = 87,
 
-        [Description("Rock Throw")]
+        [Description(@"Rock Throw")]
         Rock_Throw = 88,
 
-        [Description("Earthquake")]
+        [Description(@"Earthquake")]
         Earthquake = 89,
 
-        [Description("Fissure")]
+        [Description(@"Fissure")]
         Fissure = 90,
 
-        [Description("Dig")]
+        [Description(@"Dig")]
         Dig = 91,
 
-        [Description("Toxic")]
+        [Description(@"Toxic")]
         Toxic = 92,
 
-        [Description("Confusion")]
+        [Description(@"Confusion")]
         Confusion = 93,
 
-        [Description("Psychic")]
+        [Description(@"Psychic")]
         Psychic = 94,
 
-        [Description("Hypnosis")]
+        [Description(@"Hypnosis")]
         Hypnosis = 95,
 
-        [Description("Meditate")]
+        [Description(@"Meditate")]
         Meditate = 96,
 
-        [Description("Agility")]
+        [Description(@"Agility")]
         Agility = 97,
 
-        [Description("Quick Attack")]
+        [Description(@"Quick Attack")]
         Quick_Attack = 98,
 
-        [Description("Rage")]
+        [Description(@"Rage")]
         Rage = 99,
 
-        [Description("Teleport")]
+        [Description(@"Teleport")]
         Teleport = 100,
 
-        [Description("Night Shade")]
+        [Description(@"Night Shade")]
         Night_Shade = 101,
 
-        [Description("Mimic")]
+        [Description(@"Mimic")]
         Mimic = 102,
 
-        [Description("Screech")]
+        [Description(@"Screech")]
         Screech = 103,
 
-        [Description("Double Team")]
+        [Description(@"Double Team")]
         Double_Team = 104,
 
-        [Description("Recover")]
+        [Description(@"Recover")]
         Recover = 105,
 
-        [Description("Harden")]
+        [Description(@"Harden")]
         Harden = 106,
 
-        [Description("Minimize")]
+        [Description(@"Minimize")]
         Minimize = 107,
 
-        [Description("Smokescreen")]
+        [Description(@"Smokescreen")]
         Smokescreen = 108,
 
-        [Description("Confuse Ray")]
+        [Description(@"Confuse Ray")]
         Confuse_Ray = 109,
 
-        [Description("Withdraw")]
+        [Description(@"Withdraw")]
         Withdraw = 110,
 
-        [Description("Defense Curl")]
+        [Description(@"Defense Curl")]
         Defense_Curl = 111,
 
-        [Description("Barrier")]
+        [Description(@"Barrier")]
         Barrier = 112,
 
-        [Description("Light Screen")]
+        [Description(@"Light Screen")]
         Light_Screen = 113,
 
-        [Description("Haze")]
+        [Description(@"Haze")]
         Haze = 114,
 
-        [Description("Reflect")]
+        [Description(@"Reflect")]
         Reflect = 115,
 
-        [Description("Focus Energy")]
+        [Description(@"Focus Energy")]
         Focus_Energy = 116,
 
-        [Description("Bide")]
+        [Description(@"Bide")]
         Bide = 117,
 
-        [Description("Metronome")]
+        [Description(@"Metronome")]
         Metronome = 118,
 
-        [Description("Mirror Move")]
+        [Description(@"Mirror Move")]
         Mirror_Move = 119,
 
-        [Description("Self-Destruct")]
+        [Description(@"Self-Destruct")]
         Self_Destruct = 120,
 
-        [Description("Egg Bomb")]
+        [Description(@"Egg Bomb")]
         Egg_Bomb = 121,
 
-        [Description("Lick")]
+        [Description(@"Lick")]
         Lick = 122,
 
-        [Description("Smog")]
+        [Description(@"Smog")]
         Smog = 123,
 
-        [Description("Sludge")]
+        [Description(@"Sludge")]
         Sludge = 124,
 
-        [Description("Bone Club")]
+        [Description(@"Bone Club")]
         Bone_Club = 125,
 
-        [Description("Fire Blast")]
+        [Description(@"Fire Blast")]
         Fire_Blast = 126,
 
-        [Description("Waterfall")]
+        [Description(@"Waterfall")]
         Waterfall = 127,
 
-        [Description("Clamp")]
+        [Description(@"Clamp")]
         Clamp = 128,
 
-        [Description("Swift")]
+        [Description(@"Swift")]
         Swift = 129,
 
-        [Description("Skull Bash")]
+        [Description(@"Skull Bash")]
         Skull_Bash = 130,
 
-        [Description("Spike Cannon")]
+        [Description(@"Spike Cannon")]
         Spike_Cannon = 131,
 
-        [Description("Constrict")]
+        [Description(@"Constrict")]
         Constrict = 132,
 
-        [Description("Amnesia")]
+        [Description(@"Amnesia")]
         Amnesia = 133,
 
-        [Description("Kinesis")]
+        [Description(@"Kinesis")]
         Kinesis = 134,
 
-        [Description("Soft-Boiled")]
+        [Description(@"Soft-Boiled")]
         Soft_Boiled = 135,
 
-        [Description("High Jump Kick")]
+        [Description(@"High Jump Kick")]
         High_Jump_Kick = 136,
 
-        [Description("Glare")]
+        [Description(@"Glare")]
         Glare = 137,
 
-        [Description("Dream Eater")]
+        [Description(@"Dream Eater")]
         Dream_Eater = 138,
 
-        [Description("Poison Gas")]
+        [Description(@"Poison Gas")]
         Poison_Gas = 139,
 
-        [Description("Barrage")]
+        [Description(@"Barrage")]
         Barrage = 140,
 
-        [Description("Leech Life")]
+        [Description(@"Leech Life")]
         Leech_Life = 141,
 
-        [Description("Lovely Kiss")]
+        [Description(@"Lovely Kiss")]
         Lovely_Kiss = 142,
 
-        [Description("Sky Attack")]
+        [Description(@"Sky Attack")]
         Sky_Attack = 143,
 
-        [Description("Transform")]
+        [Description(@"Transform")]
         Transform = 144,
 
-        [Description("Bubble")]
+        [Description(@"Bubble")]
         Bubble = 145,
 
-        [Description("Dizzy Punch")]
+        [Description(@"Dizzy Punch")]
         Dizzy_Punch = 146,
 
-        [Description("Spore")]
+        [Description(@"Spore")]
         Spore = 147,
 
-        [Description("Flash")]
+        [Description(@"Flash")]
         Flash = 148,
 
-        [Description("Psywave")]
+        [Description(@"Psywave")]
         Psywave = 149,
 
-        [Description("Splash")]
+        [Description(@"Splash")]
         Splash = 150,
 
-        [Description("Acid Armor")]
+        [Description(@"Acid Armor")]
         Acid_Armor = 151,
 
-        [Description("Crabhammer")]
+        [Description(@"Crabhammer")]
         Crabhammer = 152,
 
-        [Description("Explosion")]
+        [Description(@"Explosion")]
         Explosion = 153,
 
-        [Description("Fury Swipes")]
+        [Description(@"Fury Swipes")]
         Fury_Swipes = 154,
 
-        [Description("Bonemerang")]
+        [Description(@"Bonemerang")]
         Bonemerang = 155,
 
-        [Description("Rest")]
+        [Description(@"Rest")]
         Rest = 156,
 
-        [Description("Rock Slide")]
+        [Description(@"Rock Slide")]
         Rock_Slide = 157,
 
-        [Description("Hyper Fang")]
+        [Description(@"Hyper Fang")]
         Hyper_Fang = 158,
 
-        [Description("Sharpen")]
+        [Description(@"Sharpen")]
         Sharpen = 159,
 
-        [Description("Conversion")]
+        [Description(@"Conversion")]
         Conversion = 160,
 
-        [Description("Tri Attack")]
+        [Description(@"Tri Attack")]
         Tri_Attack = 161,
 
-        [Description("Super Fang")]
+        [Description(@"Super Fang")]
         Super_Fang = 162,
 
-        [Description("Slash")]
+        [Description(@"Slash")]
         Slash = 163,
 
-        [Description("Substitute")]
+        [Description(@"Substitute")]
         Substitute = 164,
 
-        [Description("Struggle")]
+        [Description(@"Struggle")]
         Struggle = 165,
 
-        [Description("Sketch")]
+        [Description(@"Sketch")]
         Sketch = 166,
 
-        [Description("Triple Kick")]
+        [Description(@"Triple Kick")]
         Triple_Kick = 167,
 
-        [Description("Thief")]
+        [Description(@"Thief")]
         Thief = 168,
 
-        [Description("Spider Web")]
+        [Description(@"Spider Web")]
         Spider_Web = 169,
 
-        [Description("Mind Reader")]
+        [Description(@"Mind Reader")]
         Mind_Reader = 170,
 
-        [Description("Nightmare")]
+        [Description(@"Nightmare")]
         Nightmare = 171,
 
-        [Description("Flame Wheel")]
+        [Description(@"Flame Wheel")]
         Flame_Wheel = 172,
 
-        [Description("Snore")]
+        [Description(@"Snore")]
         Snore = 173,
 
-        [Description("Curse")]
+        [Description(@"Curse")]
         Curse = 174,
 
-        [Description("Flail")]
+        [Description(@"Flail")]
         Flail = 175,
 
-        [Description("Conversion 2")]
+        [Description(@"Conversion 2")]
         Conversion_2 = 176,
 
-        [Description("Aeroblast")]
+        [Description(@"Aeroblast")]
         Aeroblast = 177,
 
-        [Description("Cotton Spore")]
+        [Description(@"Cotton Spore")]
         Cotton_Spore = 178,
 
-        [Description("Reversal")]
+        [Description(@"Reversal")]
         Reversal = 179,
 
-        [Description("Spite")]
+        [Description(@"Spite")]
         Spite = 180,
 
-        [Description("Powder Snow")]
+        [Description(@"Powder Snow")]
         Powder_Snow = 181,
 
-        [Description("Protect")]
+        [Description(@"Protect")]
         Protect = 182,
 
-        [Description("Mach Punch")]
+        [Description(@"Mach Punch")]
         Mach_Punch = 183,
 
-        [Description("Scary Face")]
+        [Description(@"Scary Face")]
         Scary_Face = 184,
 
-        [Description("Feint Attack")]
+        [Description(@"Feint Attack")]
         Feint_Attack = 185,
 
-        [Description("Sweet Kiss")]
+        [Description(@"Sweet Kiss")]
         Sweet_Kiss = 186,
 
-        [Description("Belly Drum")]
+        [Description(@"Belly Drum")]
         Belly_Drum = 187,
 
-        [Description("Sludge Bomb")]
+        [Description(@"Sludge Bomb")]
         Sludge_Bomb = 188,
 
-        [Description("Mud-Slap")]
+        [Description(@"Mud-Slap")]
         Mud_Slap = 189,
 
-        [Description("Octazooka")]
+        [Description(@"Octazooka")]
         Octazooka = 190,
 
-        [Description("Spikes")]
+        [Description(@"Spikes")]
         Spikes = 191,
 
-        [Description("Zap Cannon")]
+        [Description(@"Zap Cannon")]
         Zap_Cannon = 192,
 
-        [Description("Foresight")]
+        [Description(@"Foresight")]
         Foresight = 193,
 
-        [Description("Destiny Bond")]
+        [Description(@"Destiny Bond")]
         Destiny_Bond = 194,
 
-        [Description("Perish Song")]
+        [Description(@"Perish Song")]
         Perish_Song = 195,
 
-        [Description("Icy Wind")]
+        [Description(@"Icy Wind")]
         Icy_Wind = 196,
 
-        [Description("Detect")]
+        [Description(@"Detect")]
         Detect = 197,
 
-        [Description("Bone Rush")]
+        [Description(@"Bone Rush")]
         Bone_Rush = 198,
 
-        [Description("Lock-On")]
+        [Description(@"Lock-On")]
         Lock_On = 199,
 
-        [Description("Outrage")]
+        [Description(@"Outrage")]
         Outrage = 200,
 
-        [Description("Sandstorm")]
+        [Description(@"Sandstorm")]
         Sandstorm = 201,
 
-        [Description("Giga Drain")]
+        [Description(@"Giga Drain")]
         Giga_Drain = 202,
 
-        [Description("Endure")]
+        [Description(@"Endure")]
         Endure = 203,
 
-        [Description("Charm")]
+        [Description(@"Charm")]
         Charm = 204,
 
-        [Description("Rollout")]
+        [Description(@"Rollout")]
         Rollout = 205,
 
-        [Description("False Swipe")]
+        [Description(@"False Swipe")]
         False_Swipe = 206,
 
-        [Description("Swagger")]
+        [Description(@"Swagger")]
         Swagger = 207,
 
-        [Description("Milk Drink")]
+        [Description(@"Milk Drink")]
         Milk_Drink = 208,
 
-        [Description("Spark")]
+        [Description(@"Spark")]
         Spark = 209,
 
-        [Description("Fury Cutter")]
+        [Description(@"Fury Cutter")]
         Fury_Cutter = 210,
 
-        [Description("Steel Wing")]
+        [Description(@"Steel Wing")]
         Steel_Wing = 211,
 
-        [Description("Mean Look")]
+        [Description(@"Mean Look")]
         Mean_Look = 212,
 
-        [Description("Attract")]
+        [Description(@"Attract")]
         Attract = 213,
 
-        [Description("Sleep Talk")]
+        [Description(@"Sleep Talk")]
         Sleep_Talk = 214,
 
-        [Description("Heal Bell")]
+        [Description(@"Heal Bell")]
         Heal_Bell = 215,
 
-        [Description("Return")]
+        [Description(@"Return")]
         Return = 216,
 
-        [Description("Present")]
+        [Description(@"Present")]
         Present = 217,
 
-        [Description("Frustration")]
+        [Description(@"Frustration")]
         Frustration = 218,
 
-        [Description("Safeguard")]
+        [Description(@"Safeguard")]
         Safeguard = 219,
 
-        [Description("Pain Split")]
+        [Description(@"Pain Split")]
         Pain_Split = 220,
 
-        [Description("Sacred Fire")]
+        [Description(@"Sacred Fire")]
         Sacred_Fire = 221,
 
-        [Description("Magnitude")]
+        [Description(@"Magnitude")]
         Magnitude = 222,
 
-        [Description("Dynamic Punch")]
+        [Description(@"Dynamic Punch")]
         Dynamic_Punch = 223,
 
-        [Description("Megahorn")]
+        [Description(@"Megahorn")]
         Megahorn = 224,
 
-        [Description("Dragon Breath")]
+        [Description(@"Dragon Breath")]
         Dragon_Breath = 225,
 
-        [Description("Baton Pass")]
+        [Description(@"Baton Pass")]
         Baton_Pass = 226,
 
-        [Description("Encore")]
+        [Description(@"Encore")]
         Encore = 227,
 
-        [Description("Pursuit")]
+        [Description(@"Pursuit")]
         Pursuit = 228,
 
-        [Description("Rapid Spin")]
+        [Description(@"Rapid Spin")]
         Rapid_Spin = 229,
 
-        [Description("Sweet Scent")]
+        [Description(@"Sweet Scent")]
         Sweet_Scent = 230,
 
-        [Description("Iron Tail")]
+        [Description(@"Iron Tail")]
         Iron_Tail = 231,
 
-        [Description("Metal Claw")]
+        [Description(@"Metal Claw")]
         Metal_Claw = 232,
 
-        [Description("Vital Throw")]
+        [Description(@"Vital Throw")]
         Vital_Throw = 233,
 
-        [Description("Morning Sun")]
+        [Description(@"Morning Sun")]
         Morning_Sun = 234,
 
-        [Description("Synthesis")]
+        [Description(@"Synthesis")]
         Synthesis = 235,
 
-        [Description("Moonlight")]
+        [Description(@"Moonlight")]
         Moonlight = 236,
 
-        [Description("Hidden Power")]
+        [Description(@"Hidden Power")]
         Hidden_Power = 237,
 
-        [Description("Cross Chop")]
+        [Description(@"Cross Chop")]
         Cross_Chop = 238,
 
-        [Description("Twister")]
+        [Description(@"Twister")]
         Twister = 239,
 
-        [Description("Rain Dance")]
+        [Description(@"Rain Dance")]
         Rain_Dance = 240,
 
-        [Description("Sunny Day")]
+        [Description(@"Sunny Day")]
         Sunny_Day = 241,
 
-        [Description("Crunch")]
+        [Description(@"Crunch")]
         Crunch = 242,
 
-        [Description("Mirror Coat")]
+        [Description(@"Mirror Coat")]
         Mirror_Coat = 243,
 
-        [Description("Psych Up")]
+        [Description(@"Psych Up")]
         Psych_Up = 244,
 
-        [Description("Extreme Speed")]
+        [Description(@"Extreme Speed")]
         Extreme_Speed = 245,
 
-        [Description("Ancient Power")]
+        [Description(@"Ancient Power")]
         Ancient_Power = 246,
 
-        [Description("Shadow Ball")]
+        [Description(@"Shadow Ball")]
         Shadow_Ball = 247,
 
-        [Description("Future Sight")]
+        [Description(@"Future Sight")]
         Future_Sight = 248,
 
-        [Description("Rock Smash")]
+        [Description(@"Rock Smash")]
         Rock_Smash = 249,
 
-        [Description("Whirlpool")]
+        [Description(@"Whirlpool")]
         Whirlpool = 250,
 
-        [Description("Beat Up")]
+        [Description(@"Beat Up")]
         Beat_Up = 251,
 
-        [Description("Fake Out")]
+        [Description(@"Fake Out")]
         Fake_Out = 252,
 
-        [Description("Uproar")]
+        [Description(@"Uproar")]
         Uproar = 253,
 
-        [Description("Stockpile")]
+        [Description(@"Stockpile")]
         Stockpile = 254,
 
-        [Description("Spit Up")]
+        [Description(@"Spit Up")]
         Spit_Up = 255,
 
-        [Description("Swallow")]
+        [Description(@"Swallow")]
         Swallow = 256,
 
-        [Description("Heat Wave")]
+        [Description(@"Heat Wave")]
         Heat_Wave = 257,
 
-        [Description("Hail")]
+        [Description(@"Hail")]
         Hail = 258,
 
-        [Description("Torment")]
+        [Description(@"Torment")]
         Torment = 259,
 
-        [Description("Flatter")]
+        [Description(@"Flatter")]
         Flatter = 260,
 
-        [Description("Will-O-Wisp")]
+        [Description(@"Will-O-Wisp")]
         Will_O_Wisp = 261,
 
-        [Description("Memento")]
+        [Description(@"Memento")]
         Memento = 262,
 
-        [Description("Facade")]
+        [Description(@"Facade")]
         Facade = 263,
 
-        [Description("Focus Punch")]
+        [Description(@"Focus Punch")]
         Focus_Punch = 264,
 
-        [Description("Smelling Salts")]
+        [Description(@"Smelling Salts")]
         Smelling_Salts = 265,
 
-        [Description("Follow Me")]
+        [Description(@"Follow Me")]
         Follow_Me = 266,
 
-        [Description("Nature Power")]
+        [Description(@"Nature Power")]
         Nature_Power = 267,
 
-        [Description("Charge")]
+        [Description(@"Charge")]
         Charge = 268,
 
-        [Description("Taunt")]
+        [Description(@"Taunt")]
         Taunt = 269,
 
-        [Description("Helping Hand")]
+        [Description(@"Helping Hand")]
         Helping_Hand = 270,
 
-        [Description("Trick")]
+        [Description(@"Trick")]
         Trick = 271,
 
-        [Description("Role Play")]
+        [Description(@"Role Play")]
         Role_Play = 272,
 
-        [Description("Wish")]
+        [Description(@"Wish")]
         Wish = 273,
 
-        [Description("Assist")]
+        [Description(@"Assist")]
         Assist = 274,
 
-        [Description("Ingrain")]
+        [Description(@"Ingrain")]
         Ingrain = 275,
 
-        [Description("Superpower")]
+        [Description(@"Superpower")]
         Superpower = 276,
 
-        [Description("Magic Coat")]
+        [Description(@"Magic Coat")]
         Magic_Coat = 277,
 
-        [Description("Recycle")]
+        [Description(@"Recycle")]
         Recycle = 278,
 
-        [Description("Revenge")]
+        [Description(@"Revenge")]
         Revenge = 279,
 
-        [Description("Brick Break")]
+        [Description(@"Brick Break")]
         Brick_Break = 280,
 
-        [Description("Yawn")]
+        [Description(@"Yawn")]
         Yawn = 281,
 
-        [Description("Knock Off")]
+        [Description(@"Knock Off")]
         Knock_Off = 282,
 
-        [Description("Endeavor")]
+        [Description(@"Endeavor")]
         Endeavor = 283,
 
-        [Description("Eruption")]
+        [Description(@"Eruption")]
         Eruption = 284,
 
-        [Description("Skill Swap")]
+        [Description(@"Skill Swap")]
         Skill_Swap = 285,
 
-        [Description("Imprison")]
+        [Description(@"Imprison")]
         Imprison = 286,
 
-        [Description("Refresh")]
+        [Description(@"Refresh")]
         Refresh = 287,
 
-        [Description("Grudge")]
+        [Description(@"Grudge")]
         Grudge = 288,
 
-        [Description("Snatch")]
+        [Description(@"Snatch")]
         Snatch = 289,
 
-        [Description("Secret Power")]
+        [Description(@"Secret Power")]
         Secret_Power = 290,
 
-        [Description("Dive")]
+        [Description(@"Dive")]
         Dive = 291,
 
-        [Description("Arm Thrust")]
+        [Description(@"Arm Thrust")]
         Arm_Thrust = 292,
 
-        [Description("Camouflage")]
+        [Description(@"Camouflage")]
         Camouflage = 293,
 
-        [Description("Tail Glow")]
+        [Description(@"Tail Glow")]
         Tail_Glow = 294,
 
-        [Description("Luster Purge")]
+        [Description(@"Luster Purge")]
         Luster_Purge = 295,
 
-        [Description("Mist Ball")]
+        [Description(@"Mist Ball")]
         Mist_Ball = 296,
 
-        [Description("Feather Dance")]
+        [Description(@"Feather Dance")]
         Feather_Dance = 297,
 
-        [Description("Teeter Dance")]
+        [Description(@"Teeter Dance")]
         Teeter_Dance = 298,
 
-        [Description("Blaze Kick")]
+        [Description(@"Blaze Kick")]
         Blaze_Kick = 299,
 
-        [Description("Mud Sport")]
+        [Description(@"Mud Sport")]
         Mud_Sport = 300,
 
-        [Description("Ice Ball")]
+        [Description(@"Ice Ball")]
         Ice_Ball = 301,
 
-        [Description("Needle Arm")]
+        [Description(@"Needle Arm")]
         Needle_Arm = 302,
 
-        [Description("Slack Off")]
+        [Description(@"Slack Off")]
         Slack_Off = 303,
 
-        [Description("Hyper Voice")]
+        [Description(@"Hyper Voice")]
         Hyper_Voice = 304,
 
-        [Description("Poison Fang")]
+        [Description(@"Poison Fang")]
         Poison_Fang = 305,
 
-        [Description("Crush Claw")]
+        [Description(@"Crush Claw")]
         Crush_Claw = 306,
 
-        [Description("Blast Burn")]
+        [Description(@"Blast Burn")]
         Blast_Burn = 307,
 
-        [Description("Hydro Cannon")]
+        [Description(@"Hydro Cannon")]
         Hydro_Cannon = 308,
 
-        [Description("Meteor Mash")]
+        [Description(@"Meteor Mash")]
         Meteor_Mash = 309,
 
-        [Description("Astonish")]
+        [Description(@"Astonish")]
         Astonish = 310,
 
-        [Description("Weather Ball")]
+        [Description(@"Weather Ball")]
         Weather_Ball = 311,
 
-        [Description("Aromatherapy")]
+        [Description(@"Aromatherapy")]
         Aromatherapy = 312,
 
-        [Description("Fake Tears")]
+        [Description(@"Fake Tears")]
         Fake_Tears = 313,
 
-        [Description("Air Cutter")]
+        [Description(@"Air Cutter")]
         Air_Cutter = 314,
 
-        [Description("Overheat")]
+        [Description(@"Overheat")]
         Overheat = 315,
 
-        [Description("Odor Sleuth")]
+        [Description(@"Odor Sleuth")]
         Odor_Sleuth = 316,
 
-        [Description("Rock Tomb")]
+        [Description(@"Rock Tomb")]
         Rock_Tomb = 317,
 
-        [Description("Silver Wind")]
+        [Description(@"Silver Wind")]
         Silver_Wind = 318,
 
-        [Description("Metal Sound")]
+        [Description(@"Metal Sound")]
         Metal_Sound = 319,
 
-        [Description("Grass Whistle")]
+        [Description(@"Grass Whistle")]
         Grass_Whistle = 320,
 
-        [Description("Tickle")]
+        [Description(@"Tickle")]
         Tickle = 321,
 
-        [Description("Cosmic Power")]
+        [Description(@"Cosmic Power")]
         Cosmic_Power = 322,
 
-        [Description("Water Spout")]
+        [Description(@"Water Spout")]
         Water_Spout = 323,
 
-        [Description("Signal Beam")]
+        [Description(@"Signal Beam")]
         Signal_Beam = 324,
 
-        [Description("Shadow Punch")]
+        [Description(@"Shadow Punch")]
         Shadow_Punch = 325,
 
-        [Description("Extrasensory")]
+        [Description(@"Extrasensory")]
         Extrasensory = 326,
 
-        [Description("Sky Uppercut")]
+        [Description(@"Sky Uppercut")]
         Sky_Uppercut = 327,
 
-        [Description("Sand Tomb")]
+        [Description(@"Sand Tomb")]
         Sand_Tomb = 328,
 
-        [Description("Sheer Cold")]
+        [Description(@"Sheer Cold")]
         Sheer_Cold = 329,
 
-        [Description("Muddy Water")]
+        [Description(@"Muddy Water")]
         Muddy_Water = 330,
 
-        [Description("Bullet Seed")]
+        [Description(@"Bullet Seed")]
         Bullet_Seed = 331,
 
-        [Description("Aerial Ace")]
+        [Description(@"Aerial Ace")]
         Aerial_Ace = 332,
 
-        [Description("Icicle Spear")]
+        [Description(@"Icicle Spear")]
         Icicle_Spear = 333,
 
-        [Description("Iron Defense")]
+        [Description(@"Iron Defense")]
         Iron_Defense = 334,
 
-        [Description("Block")]
+        [Description(@"Block")]
         Block = 335,
 
-        [Description("Howl")]
+        [Description(@"Howl")]
         Howl = 336,
 
-        [Description("Dragon Claw")]
+        [Description(@"Dragon Claw")]
         Dragon_Claw = 337,
 
-        [Description("Frenzy Plant")]
+        [Description(@"Frenzy Plant")]
         Frenzy_Plant = 338,
 
-        [Description("Bulk Up")]
+        [Description(@"Bulk Up")]
         Bulk_Up = 339,
 
-        [Description("Bounce")]
+        [Description(@"Bounce")]
         Bounce = 340,
 
-        [Description("Mud Shot")]
+        [Description(@"Mud Shot")]
         Mud_Shot = 341,
 
-        [Description("Poison Tail")]
+        [Description(@"Poison Tail")]
         Poison_Tail = 342,
 
-        [Description("Covet")]
+        [Description(@"Covet")]
         Covet = 343,
 
-        [Description("Volt Tackle")]
+        [Description(@"Volt Tackle")]
         Volt_Tackle = 344,
 
-        [Description("Magical Leaf")]
+        [Description(@"Magical Leaf")]
         Magical_Leaf = 345,
 
-        [Description("Water Sport")]
+        [Description(@"Water Sport")]
         Water_Sport = 346,
 
-        [Description("Calm Mind")]
+        [Description(@"Calm Mind")]
         Calm_Mind = 347,
 
-        [Description("Leaf Blade")]
+        [Description(@"Leaf Blade")]
         Leaf_Blade = 348,
 
-        [Description("Dragon Dance")]
+        [Description(@"Dragon Dance")]
         Dragon_Dance = 349,
 
-        [Description("Rock Blast")]
+        [Description(@"Rock Blast")]
         Rock_Blast = 350,
 
-        [Description("Shock Wave")]
+        [Description(@"Shock Wave")]
         Shock_Wave = 351,
 
-        [Description("Water Pulse")]
+        [Description(@"Water Pulse")]
         Water_Pulse = 352,
 
-        [Description("Doom Desire")]
+        [Description(@"Doom Desire")]
         Doom_Desire = 353,
 
-        [Description("Psycho Boost")]
+        [Description(@"Psycho Boost")]
         Psycho_Boost = 354,
 
-        [Description("Roost")]
+        [Description(@"Roost")]
         Roost = 355,
 
-        [Description("Gravity")]
+        [Description(@"Gravity")]
         Gravity = 356,
 
-        [Description("Miracle Eye")]
+        [Description(@"Miracle Eye")]
         Miracle_Eye = 357,
 
-        [Description("Wake-Up Slap")]
+        [Description(@"Wake-Up Slap")]
         Wake_Up_Slap = 358,
 
-        [Description("Hammer Arm")]
+        [Description(@"Hammer Arm")]
         Hammer_Arm = 359,
 
-        [Description("Gyro Ball")]
+        [Description(@"Gyro Ball")]
         Gyro_Ball = 360,
 
-        [Description("Healing Wish")]
+        [Description(@"Healing Wish")]
         Healing_Wish = 361,
 
-        [Description("Brine")]
+        [Description(@"Brine")]
         Brine = 362,
 
-        [Description("Natural Gift")]
+        [Description(@"Natural Gift")]
         Natural_Gift = 363,
 
-        [Description("Feint")]
+        [Description(@"Feint")]
         Feint = 364,
 
-        [Description("Pluck")]
+        [Description(@"Pluck")]
         Pluck = 365,
 
-        [Description("Tailwind")]
+        [Description(@"Tailwind")]
         Tailwind = 366,
 
-        [Description("Acupressure")]
+        [Description(@"Acupressure")]
         Acupressure = 367,
 
-        [Description("Metal Burst")]
+        [Description(@"Metal Burst")]
         Metal_Burst = 368,
 
-        [Description("U-turn")]
+        [Description(@"U-turn")]
         U_turn = 369,
 
-        [Description("Close Combat")]
+        [Description(@"Close Combat")]
         Close_Combat = 370,
 
-        [Description("Payback")]
+        [Description(@"Payback")]
         Payback = 371,
 
-        [Description("Assurance")]
+        [Description(@"Assurance")]
         Assurance = 372,
 
-        [Description("Embargo")]
+        [Description(@"Embargo")]
         Embargo = 373,
 
-        [Description("Fling")]
+        [Description(@"Fling")]
         Fling = 374,
 
-        [Description("Psycho Shift")]
+        [Description(@"Psycho Shift")]
         Psycho_Shift = 375,
 
-        [Description("Trump Card")]
+        [Description(@"Trump Card")]
         Trump_Card = 376,
 
-        [Description("Heal Block")]
+        [Description(@"Heal Block")]
         Heal_Block = 377,
 
-        [Description("Wring Out")]
+        [Description(@"Wring Out")]
         Wring_Out = 378,
 
-        [Description("Power Trick")]
+        [Description(@"Power Trick")]
         Power_Trick = 379,
 
-        [Description("Gastro Acid")]
+        [Description(@"Gastro Acid")]
         Gastro_Acid = 380,
 
-        [Description("Lucky Chant")]
+        [Description(@"Lucky Chant")]
         Lucky_Chant = 381,
 
-        [Description("Me First")]
+        [Description(@"Me First")]
         Me_First = 382,
 
-        [Description("Copycat")]
+        [Description(@"Copycat")]
         Copycat = 383,
 
-        [Description("Power Swap")]
+        [Description(@"Power Swap")]
         Power_Swap = 384,
 
-        [Description("Guard Swap")]
+        [Description(@"Guard Swap")]
         Guard_Swap = 385,
 
-        [Description("Punishment")]
+        [Description(@"Punishment")]
         Punishment = 386,
 
-        [Description("Last Resort")]
+        [Description(@"Last Resort")]
         Last_Resort = 387,
 
-        [Description("Worry Seed")]
+        [Description(@"Worry Seed")]
         Worry_Seed = 388,
 
-        [Description("Sucker Punch")]
+        [Description(@"Sucker Punch")]
         Sucker_Punch = 389,
 
-        [Description("Toxic Spikes")]
+        [Description(@"Toxic Spikes")]
         Toxic_Spikes = 390,
 
-        [Description("Heart Swap")]
+        [Description(@"Heart Swap")]
         Heart_Swap = 391,
 
-        [Description("Aqua Ring")]
+        [Description(@"Aqua Ring")]
         Aqua_Ring = 392,
 
-        [Description("Magnet Rise")]
+        [Description(@"Magnet Rise")]
         Magnet_Rise = 393,
 
-        [Description("Flare Blitz")]
+        [Description(@"Flare Blitz")]
         Flare_Blitz = 394,
 
-        [Description("Force Palm")]
+        [Description(@"Force Palm")]
         Force_Palm = 395,
 
-        [Description("Aura Sphere")]
+        [Description(@"Aura Sphere")]
         Aura_Sphere = 396,
 
-        [Description("Rock Polish")]
+        [Description(@"Rock Polish")]
         Rock_Polish = 397,
 
-        [Description("Poison Jab")]
+        [Description(@"Poison Jab")]
         Poison_Jab = 398,
 
-        [Description("Dark Pulse")]
+        [Description(@"Dark Pulse")]
         Dark_Pulse = 399,
 
-        [Description("Night Slash")]
+        [Description(@"Night Slash")]
         Night_Slash = 400,
 
-        [Description("Aqua Tail")]
+        [Description(@"Aqua Tail")]
         Aqua_Tail = 401,
 
-        [Description("Seed Bomb")]
+        [Description(@"Seed Bomb")]
         Seed_Bomb = 402,
 
-        [Description("Air Slash")]
+        [Description(@"Air Slash")]
         Air_Slash = 403,
 
-        [Description("X-Scissor")]
+        [Description(@"X-Scissor")]
         X_Scissor = 404,
 
-        [Description("Bug Buzz")]
+        [Description(@"Bug Buzz")]
         Bug_Buzz = 405,
 
-        [Description("Dragon Pulse")]
+        [Description(@"Dragon Pulse")]
         Dragon_Pulse = 406,
 
-        [Description("Dragon Rush")]
+        [Description(@"Dragon Rush")]
         Dragon_Rush = 407,
 
-        [Description("Power Gem")]
+        [Description(@"Power Gem")]
         Power_Gem = 408,
 
-        [Description("Drain Punch")]
+        [Description(@"Drain Punch")]
         Drain_Punch = 409,
 
-        [Description("Vacuum Wave")]
+        [Description(@"Vacuum Wave")]
         Vacuum_Wave = 410,
 
-        [Description("Focus Blast")]
+        [Description(@"Focus Blast")]
         Focus_Blast = 411,
 
-        [Description("Energy Ball")]
+        [Description(@"Energy Ball")]
         Energy_Ball = 412,
 
-        [Description("Brave Bird")]
+        [Description(@"Brave Bird")]
         Brave_Bird = 413,
 
-        [Description("Earth Power")]
+        [Description(@"Earth Power")]
         Earth_Power = 414,
 
-        [Description("Switcheroo")]
+        [Description(@"Switcheroo")]
         Switcheroo = 415,
 
-        [Description("Giga Impact")]
+        [Description(@"Giga Impact")]
         Giga_Impact = 416,
 
-        [Description("Nasty Plot")]
+        [Description(@"Nasty Plot")]
         Nasty_Plot = 417,
 
-        [Description("Bullet Punch")]
+        [Description(@"Bullet Punch")]
         Bullet_Punch = 418,
 
-        [Description("Avalanche")]
+        [Description(@"Avalanche")]
         Avalanche = 419,
 
-        [Description("Ice Shard")]
+        [Description(@"Ice Shard")]
         Ice_Shard = 420,
 
-        [Description("Shadow Claw")]
+        [Description(@"Shadow Claw")]
         Shadow_Claw = 421,
 
-        [Description("Thunder Fang")]
+        [Description(@"Thunder Fang")]
         Thunder_Fang = 422,
 
-        [Description("Ice Fang")]
+        [Description(@"Ice Fang")]
         Ice_Fang = 423,
 
-        [Description("Fire Fang")]
+        [Description(@"Fire Fang")]
         Fire_Fang = 424,
 
-        [Description("Shadow Sneak")]
+        [Description(@"Shadow Sneak")]
         Shadow_Sneak = 425,
 
-        [Description("Mud Bomb")]
+        [Description(@"Mud Bomb")]
         Mud_Bomb = 426,
 
-        [Description("Psycho Cut")]
+        [Description(@"Psycho Cut")]
         Psycho_Cut = 427,
 
-        [Description("Zen Headbutt")]
+        [Description(@"Zen Headbutt")]
         Zen_Headbutt = 428,
 
-        [Description("Mirror Shot")]
+        [Description(@"Mirror Shot")]
         Mirror_Shot = 429,
 
-        [Description("Flash Cannon")]
+        [Description(@"Flash Cannon")]
         Flash_Cannon = 430,
 
-        [Description("Rock Climb")]
+        [Description(@"Rock Climb")]
         Rock_Climb = 431,
 
-        [Description("Defog")]
+        [Description(@"Defog")]
         Defog = 432,
 
-        [Description("Trick Room")]
+        [Description(@"Trick Room")]
         Trick_Room = 433,
 
-        [Description("Draco Meteor")]
+        [Description(@"Draco Meteor")]
         Draco_Meteor = 434,
 
-        [Description("Discharge")]
+        [Description(@"Discharge")]
         Discharge = 435,
 
-        [Description("Lava Plume")]
+        [Description(@"Lava Plume")]
         Lava_Plume = 436,
 
-        [Description("Leaf Storm")]
+        [Description(@"Leaf Storm")]
         Leaf_Storm = 437,
 
-        [Description("Power Whip")]
+        [Description(@"Power Whip")]
         Power_Whip = 438,
 
-        [Description("Rock Wrecker")]
+        [Description(@"Rock Wrecker")]
         Rock_Wrecker = 439,
 
-        [Description("Cross Poison")]
+        [Description(@"Cross Poison")]
         Cross_Poison = 440,
 
-        [Description("Gunk Shot")]
+        [Description(@"Gunk Shot")]
         Gunk_Shot = 441,
 
-        [Description("Iron Head")]
+        [Description(@"Iron Head")]
         Iron_Head = 442,
 
-        [Description("Magnet Bomb")]
+        [Description(@"Magnet Bomb")]
         Magnet_Bomb = 443,
 
-        [Description("Stone Edge")]
+        [Description(@"Stone Edge")]
         Stone_Edge = 444,
 
-        [Description("Captivate")]
+        [Description(@"Captivate")]
         Captivate = 445,
 
-        [Description("Stealth Rock")]
+        [Description(@"Stealth Rock")]
         Stealth_Rock = 446,
 
-        [Description("Grass Knot")]
+        [Description(@"Grass Knot")]
         Grass_Knot = 447,
 
-        [Description("Chatter")]
+        [Description(@"Chatter")]
         Chatter = 448,
 
-        [Description("Judgment")]
+        [Description(@"Judgment")]
         Judgment = 449,
 
-        [Description("Bug Bite")]
+        [Description(@"Bug Bite")]
         Bug_Bite = 450,
 
-        [Description("Charge Beam")]
+        [Description(@"Charge Beam")]
         Charge_Beam = 451,
 
-        [Description("Wood Hammer")]
+        [Description(@"Wood Hammer")]
         Wood_Hammer = 452,
 
-        [Description("Aqua Jet")]
+        [Description(@"Aqua Jet")]
         Aqua_Jet = 453,
 
-        [Description("Attack Order")]
+        [Description(@"Attack Order")]
         Attack_Order = 454,
 
-        [Description("Defend Order")]
+        [Description(@"Defend Order")]
         Defend_Order = 455,
 
-        [Description("Heal Order")]
+        [Description(@"Heal Order")]
         Heal_Order = 456,
 
-        [Description("Head Smash")]
+        [Description(@"Head Smash")]
         Head_Smash = 457,
 
-        [Description("Double Hit")]
+        [Description(@"Double Hit")]
         Double_Hit = 458,
 
-        [Description("Roar of Time")]
+        [Description(@"Roar of Time")]
         Roar_of_Time = 459,
 
-        [Description("Spacial Rend")]
+        [Description(@"Spacial Rend")]
         Spacial_Rend = 460,
 
-        [Description("Lunar Dance")]
+        [Description(@"Lunar Dance")]
         Lunar_Dance = 461,
 
-        [Description("Crush Grip")]
+        [Description(@"Crush Grip")]
         Crush_Grip = 462,
 
-        [Description("Magma Storm")]
+        [Description(@"Magma Storm")]
         Magma_Storm = 463,
 
-        [Description("Dark Void")]
+        [Description(@"Dark Void")]
         Dark_Void = 464,
 
-        [Description("Seed Flare")]
+        [Description(@"Seed Flare")]
         Seed_Flare = 465,
 
-        [Description("Ominous Wind")]
+        [Description(@"Ominous Wind")]
         Ominous_Wind = 466,
 
-        [Description("Shadow Force")]
+        [Description(@"Shadow Force")]
         Shadow_Force = 467,
 
-        [Description("Hone Claws")]
+        [Description(@"Hone Claws")]
         Hone_Claws = 468,
 
-        [Description("Wide Guard")]
+        [Description(@"Wide Guard")]
         Wide_Guard = 469,
 
-        [Description("Guard Split")]
+        [Description(@"Guard Split")]
         Guard_Split = 470,
 
-        [Description("Power Split")]
+        [Description(@"Power Split")]
         Power_Split = 471,
 
-        [Description("Wonder Room")]
+        [Description(@"Wonder Room")]
         Wonder_Room = 472,
 
-        [Description("Psyshock")]
+        [Description(@"Psyshock")]
         Psyshock = 473,
 
-        [Description("Venoshock")]
+        [Description(@"Venoshock")]
         Venoshock = 474,
 
-        [Description("Autotomize")]
+        [Description(@"Autotomize")]
         Autotomize = 475,
 
-        [Description("Rage Powder")]
+        [Description(@"Rage Powder")]
         Rage_Powder = 476,
 
-        [Description("Telekinesis")]
+        [Description(@"Telekinesis")]
         Telekinesis = 477,
 
-        [Description("Magic Room")]
+        [Description(@"Magic Room")]
         Magic_Room = 478,
 
-        [Description("Smack Down")]
+        [Description(@"Smack Down")]
         Smack_Down = 479,
 
-        [Description("Storm Throw")]
+        [Description(@"Storm Throw")]
         Storm_Throw = 480,
 
-        [Description("Flame Burst")]
+        [Description(@"Flame Burst")]
         Flame_Burst = 481,
 
-        [Description("Sludge Wave")]
+        [Description(@"Sludge Wave")]
         Sludge_Wave = 482,
 
-        [Description("Quiver Dance")]
+        [Description(@"Quiver Dance")]
         Quiver_Dance = 483,
 
-        [Description("Heavy Slam")]
+        [Description(@"Heavy Slam")]
         Heavy_Slam = 484,
 
-        [Description("Synchronoise")]
+        [Description(@"Synchronoise")]
         Synchronoise = 485,
 
-        [Description("Electro Ball")]
+        [Description(@"Electro Ball")]
         Electro_Ball = 486,
 
-        [Description("Soak")]
+        [Description(@"Soak")]
         Soak = 487,
 
-        [Description("Flame Charge")]
+        [Description(@"Flame Charge")]
         Flame_Charge = 488,
 
-        [Description("Coil")]
+        [Description(@"Coil")]
         Coil = 489,
 
-        [Description("Low Sweep")]
+        [Description(@"Low Sweep")]
         Low_Sweep = 490,
 
-        [Description("Acid Spray")]
+        [Description(@"Acid Spray")]
         Acid_Spray = 491,
 
-        [Description("Foul Play")]
+        [Description(@"Foul Play")]
         Foul_Play = 492,
 
-        [Description("Simple Beam")]
+        [Description(@"Simple Beam")]
         Simple_Beam = 493,
 
-        [Description("Entrainment")]
+        [Description(@"Entrainment")]
         Entrainment = 494,
 
-        [Description("After You")]
+        [Description(@"After You")]
         After_You = 495,
 
-        [Description("Round")]
+        [Description(@"Round")]
         Round = 496,
 
-        [Description("Echoed Voice")]
+        [Description(@"Echoed Voice")]
         Echoed_Voice = 497,
 
-        [Description("Chip Away")]
+        [Description(@"Chip Away")]
         Chip_Away = 498,
 
-        [Description("Clear Smog")]
+        [Description(@"Clear Smog")]
         Clear_Smog = 499,
 
-        [Description("Stored Power")]
+        [Description(@"Stored Power")]
         Stored_Power = 500,
 
-        [Description("Quick Guard")]
+        [Description(@"Quick Guard")]
         Quick_Guard = 501,
 
-        [Description("Ally Switch")]
+        [Description(@"Ally Switch")]
         Ally_Switch = 502,
 
-        [Description("Scald")]
+        [Description(@"Scald")]
         Scald = 503,
 
-        [Description("Shell Smash")]
+        [Description(@"Shell Smash")]
         Shell_Smash = 504,
 
-        [Description("Heal Pulse")]
+        [Description(@"Heal Pulse")]
         Heal_Pulse = 505,
 
-        [Description("Hex")]
+        [Description(@"Hex")]
         Hex = 506,
 
-        [Description("Sky Drop")]
+        [Description(@"Sky Drop")]
         Sky_Drop = 507,
 
-        [Description("Shift Gear")]
+        [Description(@"Shift Gear")]
         Shift_Gear = 508,
 
-        [Description("Circle Throw")]
+        [Description(@"Circle Throw")]
         Circle_Throw = 509,
 
-        [Description("Incinerate")]
+        [Description(@"Incinerate")]
         Incinerate = 510,
 
-        [Description("Quash")]
+        [Description(@"Quash")]
         Quash = 511,
 
-        [Description("Acrobatics")]
+        [Description(@"Acrobatics")]
         Acrobatics = 512,
 
-        [Description("Reflect Type")]
+        [Description(@"Reflect Type")]
         Reflect_Type = 513,
 
-        [Description("Retaliate")]
+        [Description(@"Retaliate")]
         Retaliate = 514,
 
-        [Description("Final Gambit")]
+        [Description(@"Final Gambit")]
         Final_Gambit = 515,
 
-        [Description("Bestow")]
+        [Description(@"Bestow")]
         Bestow = 516,
 
-        [Description("Inferno")]
+        [Description(@"Inferno")]
         Inferno = 517,
 
-        [Description("Water Pledge")]
+        [Description(@"Water Pledge")]
         Water_Pledge = 518,
 
-        [Description("Fire Pledge")]
+        [Description(@"Fire Pledge")]
         Fire_Pledge = 519,
 
-        [Description("Grass Pledge")]
+        [Description(@"Grass Pledge")]
         Grass_Pledge = 520,
 
-        [Description("Volt Switch")]
+        [Description(@"Volt Switch")]
         Volt_Switch = 521,
 
-        [Description("Struggle Bug")]
+        [Description(@"Struggle Bug")]
         Struggle_Bug = 522,
 
-        [Description("Bulldoze")]
+        [Description(@"Bulldoze")]
         Bulldoze = 523,
 
-        [Description("Frost Breath")]
+        [Description(@"Frost Breath")]
         Frost_Breath = 524,
 
-        [Description("Dragon Tail")]
+        [Description(@"Dragon Tail")]
         Dragon_Tail = 525,
 
-        [Description("Work Up")]
+        [Description(@"Work Up")]
         Work_Up = 526,
 
-        [Description("Electroweb")]
+        [Description(@"Electroweb")]
         Electroweb = 527,
 
-        [Description("Wild Charge")]
+        [Description(@"Wild Charge")]
         Wild_Charge = 528,
 
-        [Description("Drill Run")]
+        [Description(@"Drill Run")]
         Drill_Run = 529,
 
-        [Description("Dual Chop")]
+        [Description(@"Dual Chop")]
         Dual_Chop = 530,
 
-        [Description("Heart Stamp")]
+        [Description(@"Heart Stamp")]
         Heart_Stamp = 531,
 
-        [Description("Horn Leech")]
+        [Description(@"Horn Leech")]
         Horn_Leech = 532,
 
-        [Description("Sacred Sword")]
+        [Description(@"Sacred Sword")]
         Sacred_Sword = 533,
 
-        [Description("Razor Shell")]
+        [Description(@"Razor Shell")]
         Razor_Shell = 534,
 
-        [Description("Heat Crash")]
+        [Description(@"Heat Crash")]
         Heat_Crash = 535,
 
-        [Description("Leaf Tornado")]
+        [Description(@"Leaf Tornado")]
         Leaf_Tornado = 536,
 
-        [Description("Steamroller")]
+        [Description(@"Steamroller")]
         Steamroller = 537,
 
-        [Description("Cotton Guard")]
+        [Description(@"Cotton Guard")]
         Cotton_Guard = 538,
 
-        [Description("Night Daze")]
+        [Description(@"Night Daze")]
         Night_Daze = 539,
 
-        [Description("Psystrike")]
+        [Description(@"Psystrike")]
         Psystrike = 540,
 
-        [Description("Tail Slap")]
+        [Description(@"Tail Slap")]
         Tail_Slap = 541,
 
-        [Description("Hurricane")]
+        [Description(@"Hurricane")]
         Hurricane = 542,
 
-        [Description("Head Charge")]
+        [Description(@"Head Charge")]
         Head_Charge = 543,
 
-        [Description("Gear Grind")]
+        [Description(@"Gear Grind")]
         Gear_Grind = 544,
 
-        [Description("Searing Shot")]
+        [Description(@"Searing Shot")]
         Searing_Shot = 545,
 
-        [Description("Techno Blast")]
+        [Description(@"Techno Blast")]
         Techno_Blast = 546,
 
-        [Description("Relic Song")]
+        [Description(@"Relic Song")]
         Relic_Song = 547,
 
-        [Description("Secret Sword")]
+        [Description(@"Secret Sword")]
         Secret_Sword = 548,
 
-        [Description("Glaciate")]
+        [Description(@"Glaciate")]
         Glaciate = 549,
 
-        [Description("Bolt Strike")]
+        [Description(@"Bolt Strike")]
         Bolt_Strike = 550,
 
-        [Description("Blue Flare")]
+        [Description(@"Blue Flare")]
         Blue_Flare = 551,
 
-        [Description("Fiery Dance")]
+        [Description(@"Fiery Dance")]
         Fiery_Dance = 552,
 
-        [Description("Freeze Shock")]
+        [Description(@"Freeze Shock")]
         Freeze_Shock = 553,
 
-        [Description("Ice Burn")]
+        [Description(@"Ice Burn")]
         Ice_Burn = 554,
 
-        [Description("Snarl")]
+        [Description(@"Snarl")]
         Snarl = 555,
 
-        [Description("Icicle Crash")]
+        [Description(@"Icicle Crash")]
         Icicle_Crash = 556,
 
-        [Description("V-create")]
+        [Description(@"V-create")]
         V_create = 557,
 
-        [Description("Fusion Flare")]
+        [Description(@"Fusion Flare")]
         Fusion_Flare = 558,
 
-        [Description("Fusion Bolt")]
+        [Description(@"Fusion Bolt")]
         Fusion_Bolt = 559,
 
-        [Description("Flying Press")]
+        [Description(@"Flying Press")]
         Flying_Press = 560,
 
-        [Description("Mat Block")]
+        [Description(@"Mat Block")]
         Mat_Block = 561,
 
-        [Description("Belch")]
+        [Description(@"Belch")]
         Belch = 562,
 
-        [Description("Rototiller")]
+        [Description(@"Rototiller")]
         Rototiller = 563,
 
-        [Description("Sticky Web")]
+        [Description(@"Sticky Web")]
         Sticky_Web = 564,
 
-        [Description("Fell Stinger")]
+        [Description(@"Fell Stinger")]
         Fell_Stinger = 565,
 
-        [Description("Phantom Force")]
+        [Description(@"Phantom Force")]
         Phantom_Force = 566,
 
-        [Description("Trick-or-Treat")]
+        [Description(@"Trick-or-Treat")]
         Trick_or_Treat = 567,
 
-        [Description("Noble Roar")]
+        [Description(@"Noble Roar")]
         Noble_Roar = 568,
 
-        [Description("Ion Deluge")]
+        [Description(@"Ion Deluge")]
         Ion_Deluge = 569,
 
-        [Description("Parabolic Charge")]
+        [Description(@"Parabolic Charge")]
         Parabolic_Charge = 570,
 
-        [Description("Forest's Curse")]
+        [Description(@"Forest's Curse")]
         Forests_Curse = 571,
 
-        [Description("Petal Blizzard")]
+        [Description(@"Petal Blizzard")]
         Petal_Blizzard = 572,
 
-        [Description("Freeze-Dry")]
+        [Description(@"Freeze-Dry")]
         Freeze_Dry = 573,
 
-        [Description("Disarming Voice")]
+        [Description(@"Disarming Voice")]
         Disarming_Voice = 574,
 
-        [Description("Parting Shot")]
+        [Description(@"Parting Shot")]
         Parting_Shot = 575,
 
-        [Description("Topsy-Turvy")]
+        [Description(@"Topsy-Turvy")]
         Topsy_Turvy = 576,
 
-        [Description("Draining Kiss")]
+        [Description(@"Draining Kiss")]
         Draining_Kiss = 577,
 
-        [Description("Crafty Shield")]
+        [Description(@"Crafty Shield")]
         Crafty_Shield = 578,
 
-        [Description("Flower Shield")]
+        [Description(@"Flower Shield")]
         Flower_Shield = 579,
 
-        [Description("Grassy Terrain")]
+        [Description(@"Grassy Terrain")]
         Grassy_Terrain = 580,
 
-        [Description("Misty Terrain")]
+        [Description(@"Misty Terrain")]
         Misty_Terrain = 581,
 
-        [Description("Electrify")]
+        [Description(@"Electrify")]
         Electrify = 582,
 
-        [Description("Play Rough")]
+        [Description(@"Play Rough")]
         Play_Rough = 583,
 
-        [Description("Fairy Wind")]
+        [Description(@"Fairy Wind")]
         Fairy_Wind = 584,
 
-        [Description("Moonblast")]
+        [Description(@"Moonblast")]
         Moonblast = 585,
 
-        [Description("Boomburst")]
+        [Description(@"Boomburst")]
         Boomburst = 586,
 
-        [Description("Fairy Lock")]
+        [Description(@"Fairy Lock")]
         Fairy_Lock = 587,
 
-        [Description("King's Shield")]
+        [Description(@"King's Shield")]
         Kings_Shield = 588,
 
-        [Description("Play Nice")]
+        [Description(@"Play Nice")]
         Play_Nice = 589,
 
-        [Description("Confide")]
+        [Description(@"Confide")]
         Confide = 590,
 
-        [Description("Diamond Storm")]
+        [Description(@"Diamond Storm")]
         Diamond_Storm = 591,
 
-        [Description("Steam Eruption")]
+        [Description(@"Steam Eruption")]
         Steam_Eruption = 592,
 
-        [Description("Hyperspace Hole")]
+        [Description(@"Hyperspace Hole")]
         Hyperspace_Hole = 593,
 
-        [Description("Water Shuriken")]
+        [Description(@"Water Shuriken")]
         Water_Shuriken = 594,
 
-        [Description("Mystical Fire")]
+        [Description(@"Mystical Fire")]
         Mystical_Fire = 595,
 
-        [Description("Spiky Shield")]
+        [Description(@"Spiky Shield")]
         Spiky_Shield = 596,
 
-        [Description("Aromatic Mist")]
+        [Description(@"Aromatic Mist")]
         Aromatic_Mist = 597,
 
-        [Description("Eerie Impulse")]
+        [Description(@"Eerie Impulse")]
         Eerie_Impulse = 598,
 
-        [Description("Venom Drench")]
+        [Description(@"Venom Drench")]
         Venom_Drench = 599,
 
-        [Description("Powder")]
+        [Description(@"Powder")]
         Powder = 600,
 
-        [Description("Geomancy")]
+        [Description(@"Geomancy")]
         Geomancy = 601,
 
-        [Description("Magnetic Flux")]
+        [Description(@"Magnetic Flux")]
         Magnetic_Flux = 602,
 
-        [Description("Happy Hour")]
+        [Description(@"Happy Hour")]
         Happy_Hour = 603,
 
-        [Description("Electric Terrain")]
+        [Description(@"Electric Terrain")]
         Electric_Terrain = 604,
 
-        [Description("Dazzling Gleam")]
+        [Description(@"Dazzling Gleam")]
         Dazzling_Gleam = 605,
 
-        [Description("Celebrate")]
+        [Description(@"Celebrate")]
         Celebrate = 606,
 
-        [Description("Hold Hands")]
+        [Description(@"Hold Hands")]
         Hold_Hands = 607,
 
-        [Description("Baby-Doll Eyes")]
+        [Description(@"Baby-Doll Eyes")]
         Baby_Doll_Eyes = 608,
 
-        [Description("Nuzzle")]
+        [Description(@"Nuzzle")]
         Nuzzle = 609,
 
-        [Description("Hold Back")]
+        [Description(@"Hold Back")]
         Hold_Back = 610,
 
-        [Description("Infestation")]
+        [Description(@"Infestation")]
         Infestation = 611,
 
-        [Description("Power-Up Punch")]
+        [Description(@"Power-Up Punch")]
         Power_Up_Punch = 612,
 
-        [Description("Oblivion Wing")]
+        [Description(@"Oblivion Wing")]
         Oblivion_Wing = 613,
 
-        [Description("Thousand Arrows")]
+        [Description(@"Thousand Arrows")]
         Thousand_Arrows = 614,
 
-        [Description("Thousand Waves")]
+        [Description(@"Thousand Waves")]
         Thousand_Waves = 615,
 
-        [Description("Land's Wrath")]
+        [Description(@"Land's Wrath")]
         Lands_Wrath = 616,
 
-        [Description("Light of Ruin")]
+        [Description(@"Light of Ruin")]
         Light_of_Ruin = 617,
 
-        [Description("Origin Pulse")]
+        [Description(@"Origin Pulse")]
         Origin_Pulse = 618,
 
-        [Description("Precipice Blades")]
+        [Description(@"Precipice Blades")]
         Precipice_Blades = 619,
 
-        [Description("Dragon Ascent")]
+        [Description(@"Dragon Ascent")]
         Dragon_Ascent = 620,
 
-        [Description("Hyperspace Fury")]
+        [Description(@"Hyperspace Fury")]
         Hyperspace_Fury = 621
     }
 
     public enum Items : ushort
     {
-        [Description("No Item")]
+        [Description(@"No Item")]
         NoItem = 0x0000,
 
-        [Description("Master Ball")]
+        [Description(@"Master Ball")]
         Master_Ball = 0x0001,
 
-        [Description("Ultra Ball")]
+        [Description(@"Ultra Ball")]
         Ultra_Ball = 0x0002,
 
-        [Description("Great Ball")]
+        [Description(@"Great Ball")]
         Great_Ball = 0x0003,
 
-        [Description("Poké Ball")]
+        [Description(@"Poké Ball")]
         Poke_Ball = 0x0004,
 
-        [Description("Safari Ball")]
+        [Description(@"Safari Ball")]
         Safari_Ball = 0x0005,
 
-        [Description("Net Ball")]
+        [Description(@"Net Ball")]
         Net_Ball = 0x0006,
 
-        [Description("Dive Ball")]
+        [Description(@"Dive Ball")]
         Dive_Ball = 0x0007,
 
-        [Description("Nest Ball")]
+        [Description(@"Nest Ball")]
         Nest_Ball = 0x0008,
 
-        [Description("Repeat Ball")]
+        [Description(@"Repeat Ball")]
         Repeat_Ball = 0x0009,
 
-        [Description("Timer Ball")]
+        [Description(@"Timer Ball")]
         Timer_Ball = 0x000A,
 
-        [Description("Luxury Ball")]
+        [Description(@"Luxury Ball")]
         Luxury_Ball = 0x000B,
 
-        [Description("Premier Ball")]
+        [Description(@"Premier Ball")]
         Premier_Ball = 0x000C,
 
-        [Description("Dusk Ball")]
+        [Description(@"Dusk Ball")]
         Dusk_Ball = 0x000D,
 
-        [Description("Heal Ball")]
+        [Description(@"Heal Ball")]
         Heal_Ball = 0x000E,
 
-        [Description("Quick Ball")]
+        [Description(@"Quick Ball")]
         Quick_Ball = 0x000F,
 
-        [Description("Cherish Ball")]
+        [Description(@"Cherish Ball")]
         Cherish_Ball = 0x0010,
 
-        [Description("Potion")]
+        [Description(@"Potion")]
         Potion = 0x0011,
 
-        [Description("Antidote")]
+        [Description(@"Antidote")]
         Antidote = 0x0012,
 
-        [Description("Burn Heal")]
+        [Description(@"Burn Heal")]
         Burn_Heal = 0x0013,
 
-        [Description("Ice Heal")]
+        [Description(@"Ice Heal")]
         Ice_Heal = 0x0014,
 
-        [Description("Awakening")]
+        [Description(@"Awakening")]
         Awakening = 0x0015,
 
-        [Description("Paralyze Heal")]
+        [Description(@"Paralyze Heal")]
         Paralyze_Heal = 0x0016,
 
-        [Description("Full Restore")]
+        [Description(@"Full Restore")]
         Full_Restore = 0x0017,
 
-        [Description("Max Potion")]
+        [Description(@"Max Potion")]
         Max_Potion = 0x0018,
 
-        [Description("Hyper Potion")]
+        [Description(@"Hyper Potion")]
         Hyper_Potion = 0x0019,
 
-        [Description("Super Potion")]
+        [Description(@"Super Potion")]
         Super_Potion = 0x001A,
 
-        [Description("Full Heal")]
+        [Description(@"Full Heal")]
         Full_Heal = 0x001B,
 
-        [Description("Revive")]
+        [Description(@"Revive")]
         Revive = 0x001C,
 
-        [Description("Max Revive")]
+        [Description(@"Max Revive")]
         Max_Revive = 0x001D,
 
-        [Description("Fresh Water")]
+        [Description(@"Fresh Water")]
         Fresh_Water = 0x001E,
 
-        [Description("Soda Pop")]
+        [Description(@"Soda Pop")]
         Soda_Pop = 0x001F,
 
-        [Description("Lemonade")]
+        [Description(@"Lemonade")]
         Lemonade = 0x0020,
 
-        [Description("Moomoo Milk")]
+        [Description(@"Moomoo Milk")]
         Moomoo_Milk = 0x0021,
 
-        [Description("Energy Powder")]
+        [Description(@"Energy Powder")]
         Energy_Powder = 0x0022,
 
-        [Description("Energy Root")]
+        [Description(@"Energy Root")]
         Energy_Root = 0x0023,
 
-        [Description("Heal Powder")]
+        [Description(@"Heal Powder")]
         Heal_Powder = 0x0024,
 
-        [Description("Revival Herb")]
+        [Description(@"Revival Herb")]
         Revival_Herb = 0x0025,
 
-        [Description("Ether")]
+        [Description(@"Ether")]
         Ether = 0x0026,
 
-        [Description("Max Ether")]
+        [Description(@"Max Ether")]
         Max_Ether = 0x0027,
 
-        [Description("Elixir")]
+        [Description(@"Elixir")]
         Elixir = 0x0028,
 
-        [Description("Max Elixir")]
+        [Description(@"Max Elixir")]
         Max_Elixir = 0x0029,
 
-        [Description("Lava Cookie")]
+        [Description(@"Lava Cookie")]
         Lava_Cookie = 0x002A,
 
-        [Description("Berry Juice")]
+        [Description(@"Berry Juice")]
         Berry_Juice = 0x002B,
 
-        [Description("Sacred Ash")]
+        [Description(@"Sacred Ash")]
         Sacred_Ash = 0x002C,
 
-        [Description("HP Up")]
+        [Description(@"HP Up")]
         HP_Up = 0x002D,
 
-        [Description("Protein")]
+        [Description(@"Protein")]
         Protein = 0x002E,
 
-        [Description("Iron")]
+        [Description(@"Iron")]
         Iron = 0x002F,
 
-        [Description("Carbos")]
+        [Description(@"Carbos")]
         Carbos = 0x0030,
 
-        [Description("Calcium")]
+        [Description(@"Calcium")]
         Calcium = 0x0031,
 
-        [Description("Rare Candy")]
+        [Description(@"Rare Candy")]
         Rare_Candy = 0x0032,
 
-        [Description("PP Up")]
+        [Description(@"PP Up")]
         PP_Up = 0x0033,
 
-        [Description("Zinc")]
+        [Description(@"Zinc")]
         Zinc = 0x0034,
 
-        [Description("PP Max")]
+        [Description(@"PP Max")]
         PP_Max = 0x0035,
 
-        [Description("Old Gateau")]
+        [Description(@"Old Gateau")]
         Old_Gateau = 0x0036,
 
-        [Description("Guard Spec.")]
+        [Description(@"Guard Spec.")]
         Guard_Spec = 0x0037,
 
-        [Description("Dire Hit")]
+        [Description(@"Dire Hit")]
         Dire_Hit = 0x0038,
 
-        [Description("X Attack")]
+        [Description(@"X Attack")]
         X_Attack = 0x0039,
 
-        [Description("X Defense")]
+        [Description(@"X Defense")]
         X_Defense = 0x003A,
 
-        [Description("X Speed")]
+        [Description(@"X Speed")]
         X_Speed = 0x003B,
 
-        [Description("X Accuracy")]
+        [Description(@"X Accuracy")]
         X_Accuracy = 0x003C,
 
-        [Description("X Sp. Atk")]
+        [Description(@"X Sp. Atk")]
         X_Sp_Atk = 0x003D,
 
-        [Description("X Sp. Def")]
+        [Description(@"X Sp. Def")]
         X_Sp_Def = 0x003E,
 
-        [Description("Poké Doll")]
+        [Description(@"Poké Doll")]
         Poke_Doll = 0x003F,
 
-        [Description("Fluffy Tail")]
+        [Description(@"Fluffy Tail")]
         Fluffy_Tail = 0x0040,
 
-        [Description("Blue Flute")]
+        [Description(@"Blue Flute")]
         Blue_Flute = 0x0041,
 
-        [Description("Yellow Flute")]
+        [Description(@"Yellow Flute")]
         Yellow_Flute = 0x0042,
 
-        [Description("Red Flute")]
+        [Description(@"Red Flute")]
         Red_Flute = 0x0043,
 
-        [Description("Black Flute")]
+        [Description(@"Black Flute")]
         Black_Flute = 0x0044,
 
-        [Description("White Flute")]
+        [Description(@"White Flute")]
         White_Flute = 0x0045,
 
-        [Description("Shoal Salt")]
+        [Description(@"Shoal Salt")]
         Shoal_Salt = 0x0046,
 
-        [Description("Shoal Shell")]
+        [Description(@"Shoal Shell")]
         Shoal_Shell = 0x0047,
 
-        [Description("Red Shard")]
+        [Description(@"Red Shard")]
         Red_Shard = 0x0048,
 
-        [Description("Blue Shard")]
+        [Description(@"Blue Shard")]
         Blue_Shard = 0x0049,
 
-        [Description("Yellow Shard")]
+        [Description(@"Yellow Shard")]
         Yellow_Shard = 0x004A,
 
-        [Description("Green Shard")]
+        [Description(@"Green Shard")]
         Green_Shard = 0x004B,
 
-        [Description("Super Repel")]
+        [Description(@"Super Repel")]
         Super_Repel = 0x004C,
 
-        [Description("Max Repel")]
+        [Description(@"Max Repel")]
         Max_Repel = 0x004D,
 
-        [Description("Escape Rope")]
+        [Description(@"Escape Rope")]
         Escape_Rope = 0x004E,
 
-        [Description("Repel")]
+        [Description(@"Repel")]
         Repel = 0x004F,
 
-        [Description("Sun Stone")]
+        [Description(@"Sun Stone")]
         Sun_Stone = 0x0050,
 
-        [Description("Moon Stone")]
+        [Description(@"Moon Stone")]
         Moon_Stone = 0x0051,
 
-        [Description("Fire Stone")]
+        [Description(@"Fire Stone")]
         Fire_Stone = 0x0052,
 
-        [Description("Thunder Stone")]
+        [Description(@"Thunder Stone")]
         Thunder_Stone = 0x0053,
 
-        [Description("Water Stone")]
+        [Description(@"Water Stone")]
         Water_Stone = 0x0054,
 
-        [Description("Leaf Stone")]
+        [Description(@"Leaf Stone")]
         Leaf_Stone = 0x0055,
 
-        [Description("Tiny Mushroom")]
+        [Description(@"Tiny Mushroom")]
         Tiny_Mushroom = 0x0056,
 
-        [Description("Big Mushroom")]
+        [Description(@"Big Mushroom")]
         Big_Mushroom = 0x0057,
 
-        [Description("Pearl")]
+        [Description(@"Pearl")]
         Pearl = 0x0058,
 
-        [Description("Big Pearl")]
+        [Description(@"Big Pearl")]
         Big_Pearl = 0x0059,
 
-        [Description("Stardust")]
+        [Description(@"Stardust")]
         Stardust = 0x005A,
 
-        [Description("Star Piece")]
+        [Description(@"Star Piece")]
         Star_Piece = 0x005B,
 
-        [Description("Nugget")]
+        [Description(@"Nugget")]
         Nugget = 0x005C,
 
-        [Description("Heart Scale")]
+        [Description(@"Heart Scale")]
         Heart_Scale = 0x005D,
 
-        [Description("Honey")]
+        [Description(@"Honey")]
         Honey = 0x005E,
 
-        [Description("Growth Mulch")]
+        [Description(@"Growth Mulch")]
         Growth_Mulch = 0x005F,
 
-        [Description("Damp Mulch")]
+        [Description(@"Damp Mulch")]
         Damp_Mulch = 0x0060,
 
-        [Description("Stable Mulch")]
+        [Description(@"Stable Mulch")]
         Stable_Mulch = 0x0061,
 
-        [Description("Gooey Mulch")]
+        [Description(@"Gooey Mulch")]
         Gooey_Mulch = 0x0062,
 
-        [Description("Root Fossil")]
+        [Description(@"Root Fossil")]
         Root_Fossil = 0x0063,
 
-        [Description("Claw Fossil")]
+        [Description(@"Claw Fossil")]
         Claw_Fossil = 0x0064,
 
-        [Description("Helix Fossil")]
+        [Description(@"Helix Fossil")]
         Helix_Fossil = 0x0065,
 
-        [Description("Dome Fossil")]
+        [Description(@"Dome Fossil")]
         Dome_Fossil = 0x0066,
 
-        [Description("Old Amber")]
+        [Description(@"Old Amber")]
         Old_Amber = 0x0067,
 
-        [Description("Armor Fossil")]
+        [Description(@"Armor Fossil")]
         Armor_Fossil = 0x0068,
 
-        [Description("Skull Fossil")]
+        [Description(@"Skull Fossil")]
         Skull_Fossil = 0x0069,
 
-        [Description("Rare Bone")]
+        [Description(@"Rare Bone")]
         Rare_Bone = 0x006A,
 
-        [Description("Shiny Stone")]
+        [Description(@"Shiny Stone")]
         Shiny_Stone = 0x006B,
 
-        [Description("Dusk Stone")]
+        [Description(@"Dusk Stone")]
         Dusk_Stone = 0x006C,
 
-        [Description("Dawn Stone")]
+        [Description(@"Dawn Stone")]
         Dawn_Stone = 0x006D,
 
-        [Description("Oval Stone")]
+        [Description(@"Oval Stone")]
         Oval_Stone = 0x006E,
 
-        [Description("Odd Keystone")]
+        [Description(@"Odd Keystone")]
         Odd_Keystone = 0x006F,
 
-        [Description("Griseous Orb")]
+        [Description(@"Griseous Orb")]
         Griseous_Orb = 0x0070,
 
-        [Description("Douse Drive")]
+        [Description(@"Douse Drive")]
         Douse_Drive = 0x0074,
 
-        [Description("Shock Drive")]
+        [Description(@"Shock Drive")]
         Shock_Drive = 0x0075,
 
-        [Description("Burn Drive")]
+        [Description(@"Burn Drive")]
         Burn_Drive = 0x0076,
 
-        [Description("Chill Drive")]
+        [Description(@"Chill Drive")]
         Chill_Drive = 0x0077,
 
-        [Description("Sweet Heart")]
+        [Description(@"Sweet Heart")]
         Sweet_Heart = 0x0086,
 
-        [Description("Adamant Orb")]
+        [Description(@"Adamant Orb")]
         Adamant_Orb = 0x0087,
 
-        [Description("Lustrous Orb")]
+        [Description(@"Lustrous Orb")]
         Lustrous_Orb = 0x0088,
 
-        [Description("Greet Mail")]
+        [Description(@"Greet Mail")]
         Greet_Mail = 0x0089,
 
-        [Description("Favored Mail")]
+        [Description(@"Favored Mail")]
         Favored_Mail = 0x008A,
 
-        [Description("RSVP Mail")]
+        [Description(@"RSVP Mail")]
         RSVP_Mail = 0x008B,
 
-        [Description("Thanks Mail")]
+        [Description(@"Thanks Mail")]
         Thanks_Mail = 0x008C,
 
-        [Description("Inquiry Mail")]
+        [Description(@"Inquiry Mail")]
         Inquiry_Mail = 0x008D,
 
-        [Description("Like Mail")]
+        [Description(@"Like Mail")]
         Like_Mail = 0x008E,
 
-        [Description("Reply Mail")]
+        [Description(@"Reply Mail")]
         Reply_Mail = 0x008F,
 
-        [Description("Bridge Mail S")]
+        [Description(@"Bridge Mail S")]
         Bridge_Mail_S = 0x0090,
 
-        [Description("Bridge Mail D")]
+        [Description(@"Bridge Mail D")]
         Bridge_Mail_D = 0x0091,
 
-        [Description("Bridge Mail T")]
+        [Description(@"Bridge Mail T")]
         Bridge_Mail_T = 0x0092,
 
-        [Description("Bridge Mail V")]
+        [Description(@"Bridge Mail V")]
         Bridge_Mail_V = 0x0093,
 
-        [Description("Bridge Mail M")]
+        [Description(@"Bridge Mail M")]
         Bridge_Mail_M = 0x0094,
 
-        [Description("Cheri Berry")]
+        [Description(@"Cheri Berry")]
         Cheri_Berry = 0x0095,
 
-        [Description("Chesto Berry")]
+        [Description(@"Chesto Berry")]
         Chesto_Berry = 0x0096,
 
-        [Description("Pecha Berry")]
+        [Description(@"Pecha Berry")]
         Pecha_Berry = 0x0097,
 
-        [Description("Rawst Berry")]
+        [Description(@"Rawst Berry")]
         Rawst_Berry = 0x0098,
 
-        [Description("Aspear Berry")]
+        [Description(@"Aspear Berry")]
         Aspear_Berry = 0x0099,
 
-        [Description("Leppa Berry")]
+        [Description(@"Leppa Berry")]
         Leppa_Berry = 0x009A,
 
-        [Description("Oran Berry")]
+        [Description(@"Oran Berry")]
         Oran_Berry = 0x009B,
 
-        [Description("Persim Berry")]
+        [Description(@"Persim Berry")]
         Persim_Berry = 0x009C,
 
-        [Description("Lum Berry")]
+        [Description(@"Lum Berry")]
         Lum_Berry = 0x009D,
 
-        [Description("Sitrus Berry")]
+        [Description(@"Sitrus Berry")]
         Sitrus_Berry = 0x009E,
 
-        [Description("Figy Berry")]
+        [Description(@"Figy Berry")]
         Figy_Berry = 0x009F,
 
-        [Description("Wiki Berry")]
+        [Description(@"Wiki Berry")]
         Wiki_Berry = 0x00A0,
 
-        [Description("Mago Berry")]
+        [Description(@"Mago Berry")]
         Mago_Berry = 0x00A1,
 
-        [Description("Aguav Berry")]
+        [Description(@"Aguav Berry")]
         Aguav_Berry = 0x00A2,
 
-        [Description("Iapapa Berry")]
+        [Description(@"Iapapa Berry")]
         Iapapa_Berry = 0x00A3,
 
-        [Description("Razz Berry")]
+        [Description(@"Razz Berry")]
         Razz_Berry = 0x00A4,
 
-        [Description("Bluk Berry")]
+        [Description(@"Bluk Berry")]
         Bluk_Berry = 0x00A5,
 
-        [Description("Nanab Berry")]
+        [Description(@"Nanab Berry")]
         Nanab_Berry = 0x00A6,
 
-        [Description("Wepear Berry")]
+        [Description(@"Wepear Berry")]
         Wepear_Berry = 0x00A7,
 
-        [Description("Pinap Berry")]
+        [Description(@"Pinap Berry")]
         Pinap_Berry = 0x00A8,
 
-        [Description("Pomeg Berry")]
+        [Description(@"Pomeg Berry")]
         Pomeg_Berry = 0x00A9,
 
-        [Description("Kelpsy Berry")]
+        [Description(@"Kelpsy Berry")]
         Kelpsy_Berry = 0x00AA,
 
-        [Description("Qualot Berry")]
+        [Description(@"Qualot Berry")]
         Qualot_Berry = 0x00AB,
 
-        [Description("Hondew Berry")]
+        [Description(@"Hondew Berry")]
         Hondew_Berry = 0x00AC,
 
-        [Description("Grepa Berry")]
+        [Description(@"Grepa Berry")]
         Grepa_Berry = 0x00AD,
 
-        [Description("Tamato Berry")]
+        [Description(@"Tamato Berry")]
         Tamato_Berry = 0x00AE,
 
-        [Description("Cornn Berry")]
+        [Description(@"Cornn Berry")]
         Cornn_Berry = 0x00AF,
 
-        [Description("Magost Berry")]
+        [Description(@"Magost Berry")]
         Magost_Berry = 0x00B0,
 
-        [Description("Rabuta Berry")]
+        [Description(@"Rabuta Berry")]
         Rabuta_Berry = 0x00B1,
 
-        [Description("Nomel Berry")]
+        [Description(@"Nomel Berry")]
         Nomel_Berry = 0x00B2,
 
-        [Description("Spelon Berry")]
+        [Description(@"Spelon Berry")]
         Spelon_Berry = 0x00B3,
 
-        [Description("Pamtre Berry")]
+        [Description(@"Pamtre Berry")]
         Pamtre_Berry = 0x00B4,
 
-        [Description("Watmel Berry")]
+        [Description(@"Watmel Berry")]
         Watmel_Berry = 0x00B5,
 
-        [Description("Durin Berry")]
+        [Description(@"Durin Berry")]
         Durin_Berry = 0x00B6,
 
-        [Description("Belue Berry")]
+        [Description(@"Belue Berry")]
         Belue_Berry = 0x00B7,
 
-        [Description("Occa Berry")]
+        [Description(@"Occa Berry")]
         Occa_Berry = 0x00B8,
 
-        [Description("Passho Berry")]
+        [Description(@"Passho Berry")]
         Passho_Berry = 0x00B9,
 
-        [Description("Wacan Berry")]
+        [Description(@"Wacan Berry")]
         Wacan_Berry = 0x00BA,
 
-        [Description("Rindo Berry")]
+        [Description(@"Rindo Berry")]
         Rindo_Berry = 0x00BB,
 
-        [Description("Yache Berry")]
+        [Description(@"Yache Berry")]
         Yache_Berry = 0x00BC,
 
-        [Description("Chople Berry")]
+        [Description(@"Chople Berry")]
         Chople_Berry = 0x00BD,
 
-        [Description("Kebia Berry")]
+        [Description(@"Kebia Berry")]
         Kebia_Berry = 0x00BE,
 
-        [Description("Shuca Berry")]
+        [Description(@"Shuca Berry")]
         Shuca_Berry = 0x00BF,
 
-        [Description("Coba Berry")]
+        [Description(@"Coba Berry")]
         Coba_Berry = 0x00C0,
 
-        [Description("Payapa Berry")]
+        [Description(@"Payapa Berry")]
         Payapa_Berry = 0x00C1,
 
-        [Description("Tanga Berry")]
+        [Description(@"Tanga Berry")]
         Tanga_Berry = 0x00C2,
 
-        [Description("Charti Berry")]
+        [Description(@"Charti Berry")]
         Charti_Berry = 0x00C3,
 
-        [Description("Kasib Berry")]
+        [Description(@"Kasib Berry")]
         Kasib_Berry = 0x00C4,
 
-        [Description("Haban Berry")]
+        [Description(@"Haban Berry")]
         Haban_Berry = 0x00C5,
 
-        [Description("Colbur Berry")]
+        [Description(@"Colbur Berry")]
         Colbur_Berry = 0x00C6,
 
-        [Description("Babiri Berry")]
+        [Description(@"Babiri Berry")]
         Babiri_Berry = 0x00C7,
 
-        [Description("Chilan Berry")]
+        [Description(@"Chilan Berry")]
         Chilan_Berry = 0x00C8,
 
-        [Description("Liechi Berry")]
+        [Description(@"Liechi Berry")]
         Liechi_Berry = 0x00C9,
 
-        [Description("Ganlon Berry")]
+        [Description(@"Ganlon Berry")]
         Ganlon_Berry = 0x00CA,
 
-        [Description("Salac Berry")]
+        [Description(@"Salac Berry")]
         Salac_Berry = 0x00CB,
 
-        [Description("Petaya Berry")]
+        [Description(@"Petaya Berry")]
         Petaya_Berry = 0x00CC,
 
-        [Description("Apicot Berry")]
+        [Description(@"Apicot Berry")]
         Apicot_Berry = 0x00CD,
 
-        [Description("Lansat Berry")]
+        [Description(@"Lansat Berry")]
         Lansat_Berry = 0x00CE,
 
-        [Description("Starf Berry")]
+        [Description(@"Starf Berry")]
         Starf_Berry = 0x00CF,
 
-        [Description("Enigma Berry")]
+        [Description(@"Enigma Berry")]
         Enigma_Berry = 0x00D0,
 
-        [Description("Micle Berry")]
+        [Description(@"Micle Berry")]
         Micle_Berry = 0x00D1,
 
-        [Description("Custap Berry")]
+        [Description(@"Custap Berry")]
         Custap_Berry = 0x00D2,
 
-        [Description("Jaboca Berry")]
+        [Description(@"Jaboca Berry")]
         Jaboca_Berry = 0x00D3,
 
-        [Description("Rowap Berry")]
+        [Description(@"Rowap Berry")]
         Rowap_Berry = 0x00D4,
 
-        [Description("Bright Powder")]
+        [Description(@"Bright Powder")]
         Bright_Powder = 0x00D5,
 
-        [Description("White Herb")]
+        [Description(@"White Herb")]
         White_Herb = 0x00D6,
 
-        [Description("Macho Brace")]
+        [Description(@"Macho Brace")]
         Macho_Brace = 0x00D7,
 
-        [Description("Exp. Share")]
+        [Description(@"Exp. Share")]
         Exp_Share = 0x00D8,
 
-        [Description("Quick Claw")]
+        [Description(@"Quick Claw")]
         Quick_Claw = 0x00D9,
 
-        [Description("Soothe Bell")]
+        [Description(@"Soothe Bell")]
         Soothe_Bell = 0x00DA,
 
-        [Description("Mental Herb")]
+        [Description(@"Mental Herb")]
         Mental_Herb = 0x00DB,
 
-        [Description("Choice Band")]
+        [Description(@"Choice Band")]
         Choice_Band = 0x00DC,
 
-        [Description("King's Rock")]
+        [Description(@"King's Rock")]
         Kings_Rock = 0x00DD,
 
-        [Description("Silver Powder")]
+        [Description(@"Silver Powder")]
         Silver_Powder = 0x00DE,
 
-        [Description("Amulet Coin")]
+        [Description(@"Amulet Coin")]
         Amulet_Coin = 0x00DF,
 
-        [Description("Cleanse Tag")]
+        [Description(@"Cleanse Tag")]
         Cleanse_Tag = 0x00E0,
 
-        [Description("Soul Dew")]
+        [Description(@"Soul Dew")]
         Soul_Dew = 0x00E1,
 
-        [Description("Deep Sea Tooth")]
+        [Description(@"Deep Sea Tooth")]
         Deep_Sea_Tooth = 0x00E2,
 
-        [Description("Deep Sea Scale")]
+        [Description(@"Deep Sea Scale")]
         Deep_Sea_Scale = 0x00E3,
 
-        [Description("Smoke Ball")]
+        [Description(@"Smoke Ball")]
         Smoke_Ball = 0x00E4,
 
-        [Description("Everstone")]
+        [Description(@"Everstone")]
         Everstone = 0x00E5,
 
-        [Description("Focus Band")]
+        [Description(@"Focus Band")]
         Focus_Band = 0x00E6,
 
-        [Description("Lucky Egg")]
+        [Description(@"Lucky Egg")]
         Lucky_Egg = 0x00E7,
 
-        [Description("Scope Lens")]
+        [Description(@"Scope Lens")]
         Scope_Lens = 0x00E8,
 
-        [Description("Metal Coat")]
+        [Description(@"Metal Coat")]
         Metal_Coat = 0x00E9,
 
-        [Description("Leftovers")]
+        [Description(@"Leftovers")]
         Leftovers = 0x00EA,
 
-        [Description("Dragon Scale")]
+        [Description(@"Dragon Scale")]
         Dragon_Scale = 0x00EB,
 
-        [Description("Light Ball")]
+        [Description(@"Light Ball")]
         Light_Ball = 0x00EC,
 
-        [Description("Soft Sand")]
+        [Description(@"Soft Sand")]
         Soft_Sand = 0x00ED,
 
-        [Description("Hard Stone")]
+        [Description(@"Hard Stone")]
         Hard_Stone = 0x00EE,
 
-        [Description("Miracle Seed")]
+        [Description(@"Miracle Seed")]
         Miracle_Seed = 0x00EF,
 
-        [Description("Black Glasses")]
+        [Description(@"Black Glasses")]
         Black_Glasses = 0x00F0,
 
-        [Description("Black Belt")]
+        [Description(@"Black Belt")]
         Black_Belt = 0x00F1,
 
-        [Description("Magnet")]
+        [Description(@"Magnet")]
         Magnet = 0x00F2,
 
-        [Description("Mystic Water")]
+        [Description(@"Mystic Water")]
         Mystic_Water = 0x00F3,
 
-        [Description("Sharp Beak")]
+        [Description(@"Sharp Beak")]
         Sharp_Beak = 0x00F4,
 
-        [Description("Poison Barb")]
+        [Description(@"Poison Barb")]
         Poison_Barb = 0x00F5,
 
-        [Description("Never-Melt Ice")]
+        [Description(@"Never-Melt Ice")]
         Never_Melt_Ice = 0x00F6,
 
-        [Description("Spell Tag")]
+        [Description(@"Spell Tag")]
         Spell_Tag = 0x00F7,
 
-        [Description("Twisted Spoon")]
+        [Description(@"Twisted Spoon")]
         Twisted_Spoon = 0x00F8,
 
-        [Description("Charcoal")]
+        [Description(@"Charcoal")]
         Charcoal = 0x00F9,
 
-        [Description("Dragon Fang")]
+        [Description(@"Dragon Fang")]
         Dragon_Fang = 0x00FA,
 
-        [Description("Silk Scarf")]
+        [Description(@"Silk Scarf")]
         Silk_Scarf = 0x00FB,
 
-        [Description("Up-Grade")]
+        [Description(@"Up-Grade")]
         Up_Grade = 0x00FC,
 
-        [Description("Shell Bell")]
+        [Description(@"Shell Bell")]
         Shell_Bell = 0x00FD,
 
-        [Description("Sea Incense")]
+        [Description(@"Sea Incense")]
         Sea_Incense = 0x00FE,
 
-        [Description("Lax Incense")]
+        [Description(@"Lax Incense")]
         Lax_Incense = 0x00FF,
 
-        [Description("Lucky Punch")]
+        [Description(@"Lucky Punch")]
         Lucky_Punch = 0x0100,
 
-        [Description("Metal Powder")]
+        [Description(@"Metal Powder")]
         Metal_Powder = 0x0101,
 
-        [Description("Thick Club")]
+        [Description(@"Thick Club")]
         Thick_Club = 0x0102,
 
-        [Description("Stick")]
+        [Description(@"Stick")]
         Stick = 0x0103,
 
-        [Description("Red Scarf")]
+        [Description(@"Red Scarf")]
         Red_Scarf = 0x0104,
 
-        [Description("Blue Scarf")]
+        [Description(@"Blue Scarf")]
         Blue_Scarf = 0x0105,
 
-        [Description("Pink Scarf")]
+        [Description(@"Pink Scarf")]
         Pink_Scarf = 0x0106,
 
-        [Description("Green Scarf")]
+        [Description(@"Green Scarf")]
         Green_Scarf = 0x0107,
 
-        [Description("Yellow Scarf")]
+        [Description(@"Yellow Scarf")]
         Yellow_Scarf = 0x0108,
 
-        [Description("Wide Lens")]
+        [Description(@"Wide Lens")]
         Wide_Lens = 0x0109,
 
-        [Description("Muscle Band")]
+        [Description(@"Muscle Band")]
         Muscle_Band = 0x010A,
 
-        [Description("Wise Glasses")]
+        [Description(@"Wise Glasses")]
         Wise_Glasses = 0x010B,
 
-        [Description("Expert Belt")]
+        [Description(@"Expert Belt")]
         Expert_Belt = 0x010C,
 
-        [Description("Light Clay")]
+        [Description(@"Light Clay")]
         Light_Clay = 0x010D,
 
-        [Description("Life Orb")]
+        [Description(@"Life Orb")]
         Life_Orb = 0x010E,
 
-        [Description("Power Herb")]
+        [Description(@"Power Herb")]
         Power_Herb = 0x010F,
 
-        [Description("Toxic Orb")]
+        [Description(@"Toxic Orb")]
         Toxic_Orb = 0x0110,
 
-        [Description("Flame Orb")]
+        [Description(@"Flame Orb")]
         Flame_Orb = 0x0111,
 
-        [Description("Quick Powder")]
+        [Description(@"Quick Powder")]
         Quick_Powder = 0x0112,
 
-        [Description("Focus Sash")]
+        [Description(@"Focus Sash")]
         Focus_Sash = 0x0113,
 
-        [Description("Zoom Lens")]
+        [Description(@"Zoom Lens")]
         Zoom_Lens = 0x0114,
 
-        [Description("Metronome")]
+        [Description(@"Metronome")]
         Metronome = 0x0115,
 
-        [Description("Iron Ball")]
+        [Description(@"Iron Ball")]
         Iron_Ball = 0x0116,
 
-        [Description("Lagging Tail")]
+        [Description(@"Lagging Tail")]
         Lagging_Tail = 0x0117,
 
-        [Description("Destiny Knot")]
+        [Description(@"Destiny Knot")]
         Destiny_Knot = 0x0118,
 
-        [Description("Black Sludge")]
+        [Description(@"Black Sludge")]
         Black_Sludge = 0x0119,
 
-        [Description("Icy Rock")]
+        [Description(@"Icy Rock")]
         Icy_Rock = 0x011A,
 
-        [Description("Smooth Rock")]
+        [Description(@"Smooth Rock")]
         Smooth_Rock = 0x011B,
 
-        [Description("Heat Rock")]
+        [Description(@"Heat Rock")]
         Heat_Rock = 0x011C,
 
-        [Description("Damp Rock")]
+        [Description(@"Damp Rock")]
         Damp_Rock = 0x011D,
 
-        [Description("Grip Claw")]
+        [Description(@"Grip Claw")]
         Grip_Claw = 0x011E,
 
-        [Description("Choice Scarf")]
+        [Description(@"Choice Scarf")]
         Choice_Scarf = 0x011F,
 
-        [Description("Sticky Barb")]
+        [Description(@"Sticky Barb")]
         Sticky_Barb = 0x0120,
 
-        [Description("Power Bracer")]
+        [Description(@"Power Bracer")]
         Power_Bracer = 0x0121,
 
-        [Description("Power Belt")]
+        [Description(@"Power Belt")]
         Power_Belt = 0x0122,
 
-        [Description("Power Lens")]
+        [Description(@"Power Lens")]
         Power_Lens = 0x0123,
 
-        [Description("Power Band")]
+        [Description(@"Power Band")]
         Power_Band = 0x0124,
 
-        [Description("Power Anklet")]
+        [Description(@"Power Anklet")]
         Power_Anklet = 0x0125,
 
-        [Description("Power Weight")]
+        [Description(@"Power Weight")]
         Power_Weight = 0x0126,
 
-        [Description("Shed Shell")]
+        [Description(@"Shed Shell")]
         Shed_Shell = 0x0127,
 
-        [Description("Big Root")]
+        [Description(@"Big Root")]
         Big_Root = 0x0128,
 
-        [Description("Choice Specs")]
+        [Description(@"Choice Specs")]
         Choice_Specs = 0x0129,
 
-        [Description("Flame Plate")]
+        [Description(@"Flame Plate")]
         Flame_Plate = 0x012A,
 
-        [Description("Splash Plate")]
+        [Description(@"Splash Plate")]
         Splash_Plate = 0x012B,
 
-        [Description("Zap Plate")]
+        [Description(@"Zap Plate")]
         Zap_Plate = 0x012C,
 
-        [Description("Meadow Plate")]
+        [Description(@"Meadow Plate")]
         Meadow_Plate = 0x012D,
 
-        [Description("Icicle Plate")]
+        [Description(@"Icicle Plate")]
         Icicle_Plate = 0x012E,
 
-        [Description("Fist Plate")]
+        [Description(@"Fist Plate")]
         Fist_Plate = 0x012F,
 
-        [Description("Toxic Plate")]
+        [Description(@"Toxic Plate")]
         Toxic_Plate = 0x0130,
 
-        [Description("Earth Plate")]
+        [Description(@"Earth Plate")]
         Earth_Plate = 0x0131,
 
-        [Description("Sky Plate")]
+        [Description(@"Sky Plate")]
         Sky_Plate = 0x0132,
 
-        [Description("Mind Plate")]
+        [Description(@"Mind Plate")]
         Mind_Plate = 0x0133,
 
-        [Description("Insect Plate")]
+        [Description(@"Insect Plate")]
         Insect_Plate = 0x0134,
 
-        [Description("Stone Plate")]
+        [Description(@"Stone Plate")]
         Stone_Plate = 0x0135,
 
-        [Description("Spooky Plate")]
+        [Description(@"Spooky Plate")]
         Spooky_Plate = 0x0136,
 
-        [Description("Draco Plate")]
+        [Description(@"Draco Plate")]
         Draco_Plate = 0x0137,
 
-        [Description("Dread Plate")]
+        [Description(@"Dread Plate")]
         Dread_Plate = 0x0138,
 
-        [Description("Iron Plate")]
+        [Description(@"Iron Plate")]
         Iron_Plate = 0x0139,
 
-        [Description("Odd Incense")]
+        [Description(@"Odd Incense")]
         Odd_Incense = 0x013A,
 
-        [Description("Rock Incense")]
+        [Description(@"Rock Incense")]
         Rock_Incense = 0x013B,
 
-        [Description("Full Incense")]
+        [Description(@"Full Incense")]
         Full_Incense = 0x013C,
 
-        [Description("Wave Incense")]
+        [Description(@"Wave Incense")]
         Wave_Incense = 0x013D,
 
-        [Description("Rose Incense")]
+        [Description(@"Rose Incense")]
         Rose_Incense = 0x013E,
 
-        [Description("Luck Incense")]
+        [Description(@"Luck Incense")]
         Luck_Incense = 0x013F,
 
-        [Description("Pure Incense")]
+        [Description(@"Pure Incense")]
         Pure_Incense = 0x0140,
 
-        [Description("Protector")]
+        [Description(@"Protector")]
         Protector = 0x0141,
 
-        [Description("Electirizer")]
+        [Description(@"Electirizer")]
         Electirizer = 0x0142,
 
-        [Description("Magmarizer")]
+        [Description(@"Magmarizer")]
         Magmarizer = 0x0143,
 
-        [Description("Dubious Disc")]
+        [Description(@"Dubious Disc")]
         Dubious_Disc = 0x0144,
 
-        [Description("Reaper Cloth")]
+        [Description(@"Reaper Cloth")]
         Reaper_Cloth = 0x0145,
 
-        [Description("Razor Claw")]
+        [Description(@"Razor Claw")]
         Razor_Claw = 0x0146,
 
-        [Description("Razor Fang")]
+        [Description(@"Razor Fang")]
         Razor_Fang = 0x0147,
 
-        [Description("TM01")]
+        [Description(@"TM01")]
         TM01 = 0x0148,
 
-        [Description("TM02")]
+        [Description(@"TM02")]
         TM02 = 0x0149,
 
-        [Description("TM03")]
+        [Description(@"TM03")]
         TM03 = 0x014A,
 
-        [Description("TM04")]
+        [Description(@"TM04")]
         TM04 = 0x014B,
 
-        [Description("TM05")]
+        [Description(@"TM05")]
         TM05 = 0x014C,
 
-        [Description("TM06")]
+        [Description(@"TM06")]
         TM06 = 0x014D,
 
-        [Description("TM07")]
+        [Description(@"TM07")]
         TM07 = 0x014E,
 
-        [Description("TM08")]
+        [Description(@"TM08")]
         TM08 = 0x014F,
 
-        [Description("TM09")]
+        [Description(@"TM09")]
         TM09 = 0x0150,
 
-        [Description("TM10")]
+        [Description(@"TM10")]
         TM10 = 0x0151,
 
-        [Description("TM11")]
+        [Description(@"TM11")]
         TM11 = 0x0152,
 
-        [Description("TM12")]
+        [Description(@"TM12")]
         TM12 = 0x0153,
 
-        [Description("TM13")]
+        [Description(@"TM13")]
         TM13 = 0x0154,
 
-        [Description("TM14")]
+        [Description(@"TM14")]
         TM14 = 0x0155,
 
-        [Description("TM15")]
+        [Description(@"TM15")]
         TM15 = 0x0156,
 
-        [Description("TM16")]
+        [Description(@"TM16")]
         TM16 = 0x0157,
 
-        [Description("TM17")]
+        [Description(@"TM17")]
         TM17 = 0x0158,
 
-        [Description("TM18")]
+        [Description(@"TM18")]
         TM18 = 0x0159,
 
-        [Description("TM19")]
+        [Description(@"TM19")]
         TM19 = 0x015A,
 
-        [Description("TM20")]
+        [Description(@"TM20")]
         TM20 = 0x015B,
 
-        [Description("TM21")]
+        [Description(@"TM21")]
         TM21 = 0x015C,
 
-        [Description("TM22")]
+        [Description(@"TM22")]
         TM22 = 0x015D,
 
-        [Description("TM23")]
+        [Description(@"TM23")]
         TM23 = 0x015E,
 
-        [Description("TM24")]
+        [Description(@"TM24")]
         TM24 = 0x015F,
 
-        [Description("TM25")]
+        [Description(@"TM25")]
         TM25 = 0x0160,
 
-        [Description("TM26")]
+        [Description(@"TM26")]
         TM26 = 0x0161,
 
-        [Description("TM27")]
+        [Description(@"TM27")]
         TM27 = 0x0162,
 
-        [Description("TM28")]
+        [Description(@"TM28")]
         TM28 = 0x0163,
 
-        [Description("TM29")]
+        [Description(@"TM29")]
         TM29 = 0x0164,
 
-        [Description("TM30")]
+        [Description(@"TM30")]
         TM30 = 0x0165,
 
-        [Description("TM31")]
+        [Description(@"TM31")]
         TM31 = 0x0166,
 
-        [Description("TM32")]
+        [Description(@"TM32")]
         TM32 = 0x0167,
 
-        [Description("TM33")]
+        [Description(@"TM33")]
         TM33 = 0x0168,
 
-        [Description("TM34")]
+        [Description(@"TM34")]
         TM34 = 0x0169,
 
-        [Description("TM35")]
+        [Description(@"TM35")]
         TM35 = 0x016A,
 
-        [Description("TM36")]
+        [Description(@"TM36")]
         TM36 = 0x016B,
 
-        [Description("TM37")]
+        [Description(@"TM37")]
         TM37 = 0x016C,
 
-        [Description("TM38")]
+        [Description(@"TM38")]
         TM38 = 0x016D,
 
-        [Description("TM39")]
+        [Description(@"TM39")]
         TM39 = 0x016E,
 
-        [Description("TM40")]
+        [Description(@"TM40")]
         TM40 = 0x016F,
 
-        [Description("TM41")]
+        [Description(@"TM41")]
         TM41 = 0x0170,
 
-        [Description("TM42")]
+        [Description(@"TM42")]
         TM42 = 0x0171,
 
-        [Description("TM43")]
+        [Description(@"TM43")]
         TM43 = 0x0172,
 
-        [Description("TM44")]
+        [Description(@"TM44")]
         TM44 = 0x0173,
 
-        [Description("TM45")]
+        [Description(@"TM45")]
         TM45 = 0x0174,
 
-        [Description("TM46")]
+        [Description(@"TM46")]
         TM46 = 0x0175,
 
-        [Description("TM47")]
+        [Description(@"TM47")]
         TM47 = 0x0176,
 
-        [Description("TM48")]
+        [Description(@"TM48")]
         TM48 = 0x0177,
 
-        [Description("TM49")]
+        [Description(@"TM49")]
         TM49 = 0x0178,
 
-        [Description("TM50")]
+        [Description(@"TM50")]
         TM50 = 0x0179,
 
-        [Description("TM51")]
+        [Description(@"TM51")]
         TM51 = 0x017A,
 
-        [Description("TM52")]
+        [Description(@"TM52")]
         TM52 = 0x017B,
 
-        [Description("TM53")]
+        [Description(@"TM53")]
         TM53 = 0x017C,
 
-        [Description("TM54")]
+        [Description(@"TM54")]
         TM54 = 0x017D,
 
-        [Description("TM55")]
+        [Description(@"TM55")]
         TM55 = 0x017E,
 
-        [Description("TM56")]
+        [Description(@"TM56")]
         TM56 = 0x017F,
 
-        [Description("TM57")]
+        [Description(@"TM57")]
         TM57 = 0x0180,
 
-        [Description("TM58")]
+        [Description(@"TM58")]
         TM58 = 0x0181,
 
-        [Description("TM59")]
+        [Description(@"TM59")]
         TM59 = 0x0182,
 
-        [Description("TM60")]
+        [Description(@"TM60")]
         TM60 = 0x0183,
 
-        [Description("TM61")]
+        [Description(@"TM61")]
         TM61 = 0x0184,
 
-        [Description("TM62")]
+        [Description(@"TM62")]
         TM62 = 0x0185,
 
-        [Description("TM63")]
+        [Description(@"TM63")]
         TM63 = 0x0186,
 
-        [Description("TM64")]
+        [Description(@"TM64")]
         TM64 = 0x0187,
 
-        [Description("TM65")]
+        [Description(@"TM65")]
         TM65 = 0x0188,
 
-        [Description("TM66")]
+        [Description(@"TM66")]
         TM66 = 0x0189,
 
-        [Description("TM67")]
+        [Description(@"TM67")]
         TM67 = 0x018A,
 
-        [Description("TM68")]
+        [Description(@"TM68")]
         TM68 = 0x018B,
 
-        [Description("TM69")]
+        [Description(@"TM69")]
         TM69 = 0x018C,
 
-        [Description("TM70")]
+        [Description(@"TM70")]
         TM70 = 0x018D,
 
-        [Description("TM71")]
+        [Description(@"TM71")]
         TM71 = 0x018E,
 
-        [Description("TM72")]
+        [Description(@"TM72")]
         TM72 = 0x018F,
 
-        [Description("TM73")]
+        [Description(@"TM73")]
         TM73 = 0x0190,
 
-        [Description("TM74")]
+        [Description(@"TM74")]
         TM74 = 0x0191,
 
-        [Description("TM75")]
+        [Description(@"TM75")]
         TM75 = 0x0192,
 
-        [Description("TM76")]
+        [Description(@"TM76")]
         TM76 = 0x0193,
 
-        [Description("TM77")]
+        [Description(@"TM77")]
         TM77 = 0x0194,
 
-        [Description("TM78")]
+        [Description(@"TM78")]
         TM78 = 0x0195,
 
-        [Description("TM79")]
+        [Description(@"TM79")]
         TM79 = 0x0196,
 
-        [Description("TM80")]
+        [Description(@"TM80")]
         TM80 = 0x0197,
 
-        [Description("TM81")]
+        [Description(@"TM81")]
         TM81 = 0x0198,
 
-        [Description("TM82")]
+        [Description(@"TM82")]
         TM82 = 0x0199,
 
-        [Description("TM83")]
+        [Description(@"TM83")]
         TM83 = 0x019A,
 
-        [Description("TM84")]
+        [Description(@"TM84")]
         TM84 = 0x019B,
 
-        [Description("TM85")]
+        [Description(@"TM85")]
         TM85 = 0x019C,
 
-        [Description("TM86")]
+        [Description(@"TM86")]
         TM86 = 0x019D,
 
-        [Description("TM87")]
+        [Description(@"TM87")]
         TM87 = 0x019E,
 
-        [Description("TM88")]
+        [Description(@"TM88")]
         TM88 = 0x019F,
 
-        [Description("TM89")]
+        [Description(@"TM89")]
         TM89 = 0x01A0,
 
-        [Description("TM90")]
+        [Description(@"TM90")]
         TM90 = 0x01A1,
 
-        [Description("TM91")]
+        [Description(@"TM91")]
         TM91 = 0x01A2,
 
-        [Description("TM92")]
+        [Description(@"TM92")]
         TM92 = 0x01A3,
 
-        [Description("HM01")]
+        [Description(@"HM01")]
         HM01 = 0x01A4,
 
-        [Description("HM02")]
+        [Description(@"HM02")]
         HM02 = 0x01A5,
 
-        [Description("HM03")]
+        [Description(@"HM03")]
         HM03 = 0x01A6,
 
-        [Description("HM04")]
+        [Description(@"HM04")]
         HM04 = 0x01A7,
 
-        [Description("HM05")]
+        [Description(@"HM05")]
         HM05 = 0x01A8,
 
-        [Description("HM06")]
+        [Description(@"HM06")]
         HM06 = 0x01A9,
 
-        [Description("Explorer Kit")]
+        [Description(@"Explorer Kit")]
         Explorer_Kit = 0x01AC,
 
-        [Description("Loot Sack")]
+        [Description(@"Loot Sack")]
         Loot_Sack = 0x01AD,
 
-        [Description("Rule Book")]
+        [Description(@"Rule Book")]
         Rule_Book = 0x01AE,
 
-        [Description("Poké Radar")]
+        [Description(@"Poké Radar")]
         Poke_Radar = 0x01AF,
 
-        [Description("Point Card")]
+        [Description(@"Point Card")]
         Point_Card = 0x01B0,
 
-        [Description("Journal")]
+        [Description(@"Journal")]
         Journal = 0x01B1,
 
-        [Description("Seal Case")]
+        [Description(@"Seal Case")]
         Seal_Case = 0x01B2,
 
-        [Description("Fashion Case")]
+        [Description(@"Fashion Case")]
         Fashion_Case = 0x01B3,
 
-        [Description("Seal Bag")]
+        [Description(@"Seal Bag")]
         Seal_Bag = 0x01B4,
 
-        [Description("Pal Pad")]
+        [Description(@"Pal Pad")]
         Pal_Pad = 0x01B5,
 
-        [Description("Works Key")]
+        [Description(@"Works Key")]
         Works_Key = 0x01B6,
 
-        [Description("Old Charm")]
+        [Description(@"Old Charm")]
         Old_Charm = 0x01B7,
 
-        [Description("Galactic Key")]
+        [Description(@"Galactic Key")]
         Galactic_Key = 0x01B8,
 
-        [Description("Red Chain")]
+        [Description(@"Red Chain")]
         Red_Chain = 0x01B9,
 
-        [Description("Town Map")]
+        [Description(@"Town Map")]
         Town_Map = 0x01BA,
 
-        [Description("Vs. Seeker")]
+        [Description(@"Vs. Seeker")]
         Vs_Seeker = 0x01BB,
 
-        [Description("Coin Case")]
+        [Description(@"Coin Case")]
         Coin_Case = 0x01BC,
 
-        [Description("Old Rod")]
+        [Description(@"Old Rod")]
         Old_Rod = 0x01BD,
 
-        [Description("Good Rod")]
+        [Description(@"Good Rod")]
         Good_Rod = 0x01BE,
 
-        [Description("Super Rod")]
+        [Description(@"Super Rod")]
         Super_Rod = 0x01BF,
 
-        [Description("Sprayduck")]
+        [Description(@"Sprayduck")]
         Sprayduck = 0x01C0,
 
-        [Description("Poffin Case")]
+        [Description(@"Poffin Case")]
         Poffin_Case = 0x01C1,
 
-        [Description("Bicycle")]
+        [Description(@"Bicycle")]
         Bicycle = 0x01C2,
 
-        //[Description("Bike")]
+        //[Description(@"Bike")]
         //Bike = 0x01C2,
 
-        [Description("Suite Key")]
+        [Description(@"Suite Key")]
         Suite_Key = 0x01C3,
 
-        [Description("Oak's Letter")]
+        [Description(@"Oak's Letter")]
         Oaks_Letter = 0x01C4,
 
-        [Description("Lunar Wing")]
+        [Description(@"Lunar Wing")]
         Lunar_Wing = 0x01C5,
 
-        [Description("Member Card")]
+        [Description(@"Member Card")]
         Member_Card = 0x01C6,
 
-        [Description("Azure Flute")]
+        [Description(@"Azure Flute")]
         Azure_Flute = 0x01C7,
 
-        [Description("S.S. Ticket")]
+        [Description(@"S.S. Ticket")]
         SS_Ticket = 0x01C8,
 
-        [Description("Contest Pass")]
+        [Description(@"Contest Pass")]
         Contest_Pass = 0x01C9,
 
-        [Description("Magma Stone")]
+        [Description(@"Magma Stone")]
         Magma_Stone = 0x01CA,
 
-        [Description("Parcel")]
+        [Description(@"Parcel")]
         Parcel = 0x01CB,
 
-        [Description("Coupon 1")]
+        [Description(@"Coupon 1")]
         Coupon_1 = 0x01CC,
 
-        [Description("Coupon 2")]
+        [Description(@"Coupon 2")]
         Coupon_2 = 0x01CD,
 
-        [Description("Coupon 3")]
+        [Description(@"Coupon 3")]
         Coupon_3 = 0x01CE,
 
-        [Description("Storage Key")]
+        [Description(@"Storage Key")]
         Storage_Key = 0x01CF,
 
-        [Description("Secret Potion")]
+        [Description(@"Secret Potion")]
         Secret_Potion = 0x01D0,
 
-        [Description("Vs. Recorder")]
+        [Description(@"Vs. Recorder")]
         Vs_Recorder = 0x01D1,
 
-        [Description("Gracidea")]
+        [Description(@"Gracidea")]
         Gracidea = 0x01D2,
 
-        [Description("Secret Key")]
+        [Description(@"Secret Key")]
         Secret_Key = 0x01D3,
 
-        [Description("Apricorn Box")]
+        [Description(@"Apricorn Box")]
         Apricorn_Box = 0x01D4,
 
-        [Description("Unown Report")]
+        [Description(@"Unown Report")]
         Unown_Report = 0x01D5,
 
-        [Description("Berry Pots")]
+        [Description(@"Berry Pots")]
         Berry_Pots = 0x01D6,
 
-        [Description("Dowsing Machine")]
+        [Description(@"Dowsing Machine")]
         Dowsing_Machine = 0x01D7,
 
-        [Description("Blue Card")]
+        [Description(@"Blue Card")]
         Blue_Card = 0x01D8,
 
-        [Description("Slowpoke Tail")]
+        [Description(@"Slowpoke Tail")]
         Slowpoke_Tail = 0x01D9,
 
-        [Description("Clear Bell")]
+        [Description(@"Clear Bell")]
         Clear_Bell = 0x01DA,
 
-        [Description("Card Key")]
+        [Description(@"Card Key")]
         Card_Key = 0x01DB,
 
-        [Description("Basement Key")]
+        [Description(@"Basement Key")]
         Basement_Key = 0x01DC,
 
-        [Description("Squirt Bottle")]
+        [Description(@"Squirt Bottle")]
         Squirt_Bottle = 0x01DD,
 
-        [Description("Red Scale")]
+        [Description(@"Red Scale")]
         Red_Scale = 0x01DE,
 
-        [Description("Lost Item")]
+        [Description(@"Lost Item")]
         Lost_Item = 0x01DF,
 
-        [Description("Pass")]
+        [Description(@"Pass")]
         Pass = 0x01E0,
 
-        [Description("Machine Part")]
+        [Description(@"Machine Part")]
         Machine_Part = 0x01E1,
 
-        [Description("Silver Wing")]
+        [Description(@"Silver Wing")]
         Silver_Wing = 0x01E2,
 
-        [Description("Rainbow Wing")]
+        [Description(@"Rainbow Wing")]
         Rainbow_Wing = 0x01E3,
 
-        [Description("Mystery Egg")]
+        [Description(@"Mystery Egg")]
         Mystery_Egg = 0x01E4,
 
-        [Description("Red Apricorn")]
+        [Description(@"Red Apricorn")]
         Red_Apricorn = 0x01E5,
 
-        [Description("Yellow Apricorn")]
+        [Description(@"Yellow Apricorn")]
         Yellow_Apricorn = 0x01E6,
 
-        [Description("Blue Apricorn")]
+        [Description(@"Blue Apricorn")]
         Blue_Apricorn = 0x01E7,
 
-        [Description("Green Apricorn")]
+        [Description(@"Green Apricorn")]
         Green_Apricorn = 0x01E8,
 
-        [Description("Pink Apricorn")]
+        [Description(@"Pink Apricorn")]
         Pink_Apricorn = 0x01E9,
 
-        [Description("White Apricorn")]
+        [Description(@"White Apricorn")]
         White_Apricorn = 0x01EA,
 
-        [Description("Black Apricorn")]
+        [Description(@"Black Apricorn")]
         Black_Apricorn = 0x01EB,
 
-        [Description("Fast Ball")]
+        [Description(@"Fast Ball")]
         Fast_Ball = 0x01EC,
 
-        [Description("Level Ball")]
+        [Description(@"Level Ball")]
         Level_Ball = 0x01ED,
 
-        [Description("Lure Ball")]
+        [Description(@"Lure Ball")]
         Lure_Ball = 0x01EE,
 
-        [Description("Heavy Ball")]
+        [Description(@"Heavy Ball")]
         Heavy_Ball = 0x01EF,
 
-        [Description("Love Ball")]
+        [Description(@"Love Ball")]
         Love_Ball = 0x01F0,
 
-        [Description("Friend Ball")]
+        [Description(@"Friend Ball")]
         Friend_Ball = 0x01F1,
 
-        [Description("Moon Ball")]
+        [Description(@"Moon Ball")]
         Moon_Ball = 0x01F2,
 
-        [Description("Sport Ball")]
+        [Description(@"Sport Ball")]
         Sport_Ball = 0x01F3,
 
-        [Description("Park Ball")]
+        [Description(@"Park Ball")]
         Park_Ball = 0x01F4,
 
-        [Description("Photo Album")]
+        [Description(@"Photo Album")]
         Photo_Album = 0x01F5,
 
-        [Description("GB Sounds")]
+        [Description(@"GB Sounds")]
         GB_Sounds = 0x01F6,
 
-        [Description("Tidal Bell")]
+        [Description(@"Tidal Bell")]
         Tidal_Bell = 0x01F7,
 
-        [Description("Rage Candy Bar")]
+        [Description(@"Rage Candy Bar")]
         Rage_Candy_Bar = 0x01F8,
 
-        [Description("Data Card 01")]
+        [Description(@"Data Card 01")]
         Data_Card_01 = 0x01F9,
 
-        [Description("Data Card 02")]
+        [Description(@"Data Card 02")]
         Data_Card_02 = 0x01FA,
 
-        [Description("Data Card 03")]
+        [Description(@"Data Card 03")]
         Data_Card_03 = 0x01FB,
 
-        [Description("Data Card 04")]
+        [Description(@"Data Card 04")]
         Data_Card_04 = 0x01FC,
 
-        [Description("Data Card 05")]
+        [Description(@"Data Card 05")]
         Data_Card_05 = 0x01FD,
 
-        [Description("Data Card 06")]
+        [Description(@"Data Card 06")]
         Data_Card_06 = 0x01FE,
 
-        [Description("Data Card 07")]
+        [Description(@"Data Card 07")]
         Data_Card_07 = 0x01FF,
 
-        [Description("Data Card 08")]
+        [Description(@"Data Card 08")]
         Data_Card_08 = 0x0200,
 
-        [Description("Data Card 09")]
+        [Description(@"Data Card 09")]
         Data_Card_09 = 0x0201,
 
-        [Description("Data Card 10")]
+        [Description(@"Data Card 10")]
         Data_Card_10 = 0x0202,
 
-        [Description("Data Card 11")]
+        [Description(@"Data Card 11")]
         Data_Card_11 = 0x0203,
 
-        [Description("Data Card 12")]
+        [Description(@"Data Card 12")]
         Data_Card_12 = 0x0204,
 
-        [Description("Data Card 13")]
+        [Description(@"Data Card 13")]
         Data_Card_13 = 0x0205,
 
-        [Description("Data Card 14")]
+        [Description(@"Data Card 14")]
         Data_Card_14 = 0x0206,
 
-        [Description("Data Card 15")]
+        [Description(@"Data Card 15")]
         Data_Card_15 = 0x0207,
 
-        [Description("Data Card 16")]
+        [Description(@"Data Card 16")]
         Data_Card_16 = 0x0208,
 
-        [Description("Data Card 17")]
+        [Description(@"Data Card 17")]
         Data_Card_17 = 0x0209,
 
-        [Description("Data Card 18")]
+        [Description(@"Data Card 18")]
         Data_Card_18 = 0x020A,
 
-        [Description("Data Card 19")]
+        [Description(@"Data Card 19")]
         Data_Card_19 = 0x020B,
 
-        [Description("Data Card 20")]
+        [Description(@"Data Card 20")]
         Data_Card_20 = 0x020C,
 
-        [Description("Data Card 21")]
+        [Description(@"Data Card 21")]
         Data_Card_21 = 0x020D,
 
-        [Description("Data Card 22")]
+        [Description(@"Data Card 22")]
         Data_Card_22 = 0x020E,
 
-        [Description("Data Card 23")]
+        [Description(@"Data Card 23")]
         Data_Card_23 = 0x020F,
 
-        [Description("Data Card 24")]
+        [Description(@"Data Card 24")]
         Data_Card_24 = 0x0210,
 
-        [Description("Data Card 25")]
+        [Description(@"Data Card 25")]
         Data_Card_25 = 0x0211,
 
-        [Description("Data Card 26")]
+        [Description(@"Data Card 26")]
         Data_Card_26 = 0x0212,
 
-        [Description("Data Card 27")]
+        [Description(@"Data Card 27")]
         Data_Card_27 = 0x0213,
 
-        [Description("Jade Orb")]
+        [Description(@"Jade Orb")]
         Jade_Orb = 0x0214,
 
-        [Description("Lock Capsule")]
+        [Description(@"Lock Capsule")]
         Lock_Capsule = 0x0215,
 
-        [Description("Red Orb")]
+        [Description(@"Red Orb")]
         Red_Orb = 0x0216,
 
-        [Description("Blue Orb")]
+        [Description(@"Blue Orb")]
         Blue_Orb = 0x0217,
 
-        [Description("Enigma Stone")]
+        [Description(@"Enigma Stone")]
         Enigma_Stone = 0x0218,
 
-        [Description("Prism Scale")]
+        [Description(@"Prism Scale")]
         Prism_Scale = 0x0219,
 
-        [Description("Eviolite")]
+        [Description(@"Eviolite")]
         Eviolite = 0x021A,
 
-        [Description("Float Stone")]
+        [Description(@"Float Stone")]
         Float_Stone = 0x021B,
 
-        [Description("Rocky Helmet")]
+        [Description(@"Rocky Helmet")]
         Rocky_Helmet = 0x021C,
 
-        [Description("Air Balloon")]
+        [Description(@"Air Balloon")]
         Air_Balloon = 0x021D,
 
-        [Description("Red Card")]
+        [Description(@"Red Card")]
         Red_Card = 0x021E,
 
-        [Description("Ring Target")]
+        [Description(@"Ring Target")]
         Ring_Target = 0x021F,
 
-        [Description("Binding Band")]
+        [Description(@"Binding Band")]
         Binding_Band = 0x0220,
 
-        [Description("Absorb Bulb")]
+        [Description(@"Absorb Bulb")]
         Absorb_Bulb = 0x0221,
 
-        [Description("Cell Battery")]
+        [Description(@"Cell Battery")]
         Cell_Battery = 0x0222,
 
-        [Description("Eject Button")]
+        [Description(@"Eject Button")]
         Eject_Button = 0x0223,
 
-        [Description("Fire Gem")]
+        [Description(@"Fire Gem")]
         Fire_Gem = 0x0224,
 
-        [Description("Water Gem")]
+        [Description(@"Water Gem")]
         Water_Gem = 0x0225,
 
-        [Description("Electric Gem")]
+        [Description(@"Electric Gem")]
         Electric_Gem = 0x0226,
 
-        [Description("Grass Gem")]
+        [Description(@"Grass Gem")]
         Grass_Gem = 0x0227,
 
-        [Description("Ice Gem")]
+        [Description(@"Ice Gem")]
         Ice_Gem = 0x0228,
 
-        [Description("Fighting Gem")]
+        [Description(@"Fighting Gem")]
         Fighting_Gem = 0x0229,
 
-        [Description("Poison Gem")]
+        [Description(@"Poison Gem")]
         Poison_Gem = 0x022A,
 
-        [Description("Ground Gem")]
+        [Description(@"Ground Gem")]
         Ground_Gem = 0x022B,
 
-        [Description("Flying Gem")]
+        [Description(@"Flying Gem")]
         Flying_Gem = 0x022C,
 
-        [Description("Psychic Gem")]
+        [Description(@"Psychic Gem")]
         Psychic_Gem = 0x022D,
 
-        [Description("Bug Gem")]
+        [Description(@"Bug Gem")]
         Bug_Gem = 0x022E,
 
-        [Description("Rock Gem")]
+        [Description(@"Rock Gem")]
         Rock_Gem = 0x022F,
 
-        [Description("Ghost Gem")]
+        [Description(@"Ghost Gem")]
         Ghost_Gem = 0x0230,
 
-        [Description("Dragon Gem")]
+        [Description(@"Dragon Gem")]
         Dragon_Gem = 0x0231,
 
-        [Description("Dark Gem")]
+        [Description(@"Dark Gem")]
         Dark_Gem = 0x0232,
 
-        [Description("Steel Gem")]
+        [Description(@"Steel Gem")]
         Steel_Gem = 0x0233,
 
-        [Description("Normal Gem")]
+        [Description(@"Normal Gem")]
         Normal_Gem = 0x0234,
 
-        [Description("Health Wing")]
+        [Description(@"Health Wing")]
         Health_Wing = 0x0235,
 
-        [Description("Muscle Wing")]
+        [Description(@"Muscle Wing")]
         Muscle_Wing = 0x0236,
 
-        [Description("Resist Wing")]
+        [Description(@"Resist Wing")]
         Resist_Wing = 0x0237,
 
-        [Description("Genius Wing")]
+        [Description(@"Genius Wing")]
         Genius_Wing = 0x0238,
 
-        [Description("Clever Wing")]
+        [Description(@"Clever Wing")]
         Clever_Wing = 0x0239,
 
-        [Description("Swift Wing")]
+        [Description(@"Swift Wing")]
         Swift_Wing = 0x023A,
 
-        [Description("Pretty Wing")]
+        [Description(@"Pretty Wing")]
         Pretty_Wing = 0x023B,
 
-        [Description("Cover Fossil")]
+        [Description(@"Cover Fossil")]
         Cover_Fossil = 0x023C,
 
-        [Description("Plume Fossil")]
+        [Description(@"Plume Fossil")]
         Plume_Fossil = 0x023D,
 
-        [Description("Liberty Pass")]
+        [Description(@"Liberty Pass")]
         Liberty_Pass = 0x023E,
 
-        [Description("Pass Orb")]
+        [Description(@"Pass Orb")]
         Pass_Orb = 0x023F,
 
-        [Description("Dream Ball")]
+        [Description(@"Dream Ball")]
         Dream_Ball = 0x0240,
 
-        [Description("Poké Toy")]
+        [Description(@"Poké Toy")]
         Poke_Toy = 0x0241,
 
-        [Description("Prop Case")]
+        [Description(@"Prop Case")]
         Prop_Case = 0x0242,
 
-        [Description("Dragon Skull")]
+        [Description(@"Dragon Skull")]
         Dragon_Skull = 0x0243,
 
-        [Description("Balm Mushroom")]
+        [Description(@"Balm Mushroom")]
         Balm_Mushroom = 0x0244,
 
-        [Description("Big Nugget")]
+        [Description(@"Big Nugget")]
         Big_Nugget = 0x0245,
 
-        [Description("Pearl String")]
+        [Description(@"Pearl String")]
         Pearl_String = 0x0246,
 
-        [Description("Comet Shard")]
+        [Description(@"Comet Shard")]
         Comet_Shard = 0x0247,
 
-        [Description("Relic Copper")]
+        [Description(@"Relic Copper")]
         Relic_Copper = 0x0248,
 
-        [Description("Relic Silver")]
+        [Description(@"Relic Silver")]
         Relic_Silver = 0x0249,
 
-        [Description("Relic Gold")]
+        [Description(@"Relic Gold")]
         Relic_Gold = 0x024A,
 
-        [Description("Relic Vase")]
+        [Description(@"Relic Vase")]
         Relic_Vase = 0x024B,
 
-        [Description("Relic Band")]
+        [Description(@"Relic Band")]
         Relic_Band = 0x024C,
 
-        [Description("Relic Statue")]
+        [Description(@"Relic Statue")]
         Relic_Statue = 0x024D,
 
-        [Description("Relic Crown")]
+        [Description(@"Relic Crown")]
         Relic_Crown = 0x024E,
 
-        [Description("Casteliacone")]
+        [Description(@"Casteliacone")]
         Casteliacone = 0x024F,
 
-        [Description("Dire Hit 2")]
+        [Description(@"Dire Hit 2")]
         Dire_Hit_2 = 0x0250,
 
-        [Description("X Speed 2")]
+        [Description(@"X Speed 2")]
         X_Speed_2 = 0x0251,
 
-        [Description("X Sp. Atk 2")]
+        [Description(@"X Sp. Atk 2")]
         X_Sp_Atk_2 = 0x0252,
 
-        [Description("X Sp. Def 2")]
+        [Description(@"X Sp. Def 2")]
         X_Sp_Def_2 = 0x0253,
 
-        [Description("X Defense 2")]
+        [Description(@"X Defense 2")]
         X_Defense_2 = 0x0254,
 
-        [Description("X Attack 2")]
+        [Description(@"X Attack 2")]
         X_Attack_2 = 0x0255,
 
-        [Description("X Accuracy 2")]
+        [Description(@"X Accuracy 2")]
         X_Accuracy_2 = 0x0256,
 
-        [Description("X Speed 3")]
+        [Description(@"X Speed 3")]
         X_Speed_3 = 0x0257,
 
-        [Description("X Sp. Atk 3")]
+        [Description(@"X Sp. Atk 3")]
         X_Sp_Atk_3 = 0x0258,
 
-        [Description("X Sp. Def 3")]
+        [Description(@"X Sp. Def 3")]
         X_Sp_Def_3 = 0x0259,
 
-        [Description("X Defense 3")]
+        [Description(@"X Defense 3")]
         X_Defense_3 = 0x025A,
 
-        [Description("X Attack 3")]
+        [Description(@"X Attack 3")]
         X_Attack_3 = 0x025B,
 
-        [Description("X Accuracy 3")]
+        [Description(@"X Accuracy 3")]
         X_Accuracy_3 = 0x025C,
 
-        [Description("X Speed 6")]
+        [Description(@"X Speed 6")]
         X_Speed_6 = 0x025D,
 
-        [Description("X Sp. Atk 6")]
+        [Description(@"X Sp. Atk 6")]
         X_Sp_Atk_6 = 0x025E,
 
-        [Description("X Sp. Def 6")]
+        [Description(@"X Sp. Def 6")]
         X_Sp_Def_6 = 0x025F,
 
-        [Description("X Defense 6")]
+        [Description(@"X Defense 6")]
         X_Defense_6 = 0x0260,
 
-        [Description("X Attack 6")]
+        [Description(@"X Attack 6")]
         X_Attack_6 = 0x0261,
 
-        [Description("X Accuracy 6")]
+        [Description(@"X Accuracy 6")]
         X_Accuracy_6 = 0x0262,
 
-        [Description("Ability Urge")]
+        [Description(@"Ability Urge")]
         Ability_Urge = 0x0263,
 
-        [Description("Item Drop")]
+        [Description(@"Item Drop")]
         Item_Drop = 0x0264,
 
-        [Description("Item Urge")]
+        [Description(@"Item Urge")]
         Item_Urge = 0x0265,
 
-        [Description("Reset Urge")]
+        [Description(@"Reset Urge")]
         Reset_Urge = 0x0266,
 
-        [Description("Dire Hit 3")]
+        [Description(@"Dire Hit 3")]
         Dire_Hit_3 = 0x0267,
 
-        [Description("Light Stone")]
+        [Description(@"Light Stone")]
         Light_Stone = 0x0268,
 
-        [Description("Dark Stone")]
+        [Description(@"Dark Stone")]
         Dark_Stone = 0x0269,
 
-        [Description("TM93")]
+        [Description(@"TM93")]
         TM93 = 0x026A,
 
-        [Description("TM94")]
+        [Description(@"TM94")]
         TM94 = 0x026B,
 
-        [Description("TM95")]
+        [Description(@"TM95")]
         TM95 = 0x026C,
 
-        [Description("Xtransceiver")]
+        [Description(@"Xtransceiver")]
         Xtransceiver = 0x026D,
 
-        [Description("???")]
+        [Description(@"???")]
         UNKNOWN = 0x026E,
 
-        [Description("Gram 1")]
+        [Description(@"Gram 1")]
         Gram_1 = 0x026F,
 
-        [Description("Gram 2")]
+        [Description(@"Gram 2")]
         Gram_2 = 0x0270,
 
-        [Description("Gram 3")]
+        [Description(@"Gram 3")]
         Gram_3 = 0x0271,
 
-        [Description("Xtransceiver")]
+        [Description(@"Xtransceiver")]
         Xtransceiver2 = 0x0272,
 
-        [Description("Medal Box")]
+        [Description(@"Medal Box")]
         Medal_Box = 0x0273,
 
-        [Description("DNA Splicers")]
+        [Description(@"DNA Splicers")]
         DNA_Splicers = 0x0274,
 
-        [Description("DNA Splicers")]
+        [Description(@"DNA Splicers")]
         DNA_Splicers2 = 0x0275,
 
-        [Description("Permit")]
+        [Description(@"Permit")]
         Permit = 0x0276,
 
-        [Description("Oval Charm")]
+        [Description(@"Oval Charm")]
         Oval_Charm = 0x0277,
 
-        [Description("Shiny Charm")]
+        [Description(@"Shiny Charm")]
         Shiny_Charm = 0x0278,
 
-        [Description("Plasma Card")]
+        [Description(@"Plasma Card")]
         Plasma_Card = 0x0279,
 
-        [Description("Grubby Hanky")]
+        [Description(@"Grubby Hanky")]
         Grubby_Hanky = 0x027A,
 
-        [Description("Colress Machine")]
+        [Description(@"Colress Machine")]
         Colress_Machine = 0x027B,
 
-        [Description("Dropped Item")]
+        [Description(@"Dropped Item")]
         Dropped_Item = 0x027C,
 
-        [Description("Dropped Item")]
+        [Description(@"Dropped Item")]
         Dropped_Item2 = 0x027D,
 
-        [Description("Reveal Glass")]
+        [Description(@"Reveal Glass")]
         Reveal_Glass = 0x027E,
 
-        [Description("Weakness Policy")]
+        [Description(@"Weakness Policy")]
         Weakness_Policy = 0x027F,
 
-        [Description("Assault Vest")]
+        [Description(@"Assault Vest")]
         Assault_Vest = 0x0280,
 
-        [Description("Holo Caster")]
+        [Description(@"Holo Caster")]
         Holo_Caster2 = 0x0281,
 
-        [Description("Prof's Letter")]
+        [Description(@"Prof's Letter")]
         Profs_Letter = 0x0282,
 
-        [Description("Roller Skates")]
+        [Description(@"Roller Skates")]
         Roller_Skates = 0x0283,
 
-        [Description("Pixie Plate")]
+        [Description(@"Pixie Plate")]
         Pixie_Plate = 0x0284,
 
-        [Description("Ability Capsule")]
+        [Description(@"Ability Capsule")]
         Ability_Capsule = 0x0285,
 
-        [Description("Whipped Dream")]
+        [Description(@"Whipped Dream")]
         Whipped_Dream = 0x0286,
 
-        [Description("Sachet")]
+        [Description(@"Sachet")]
         Sachet = 0x0287,
 
-        [Description("Luminous Moss")]
+        [Description(@"Luminous Moss")]
         Luminous_Moss = 0x0288,
 
-        [Description("Snowball")]
+        [Description(@"Snowball")]
         Snowball = 0x0289,
 
-        [Description("Safety Goggles")]
+        [Description(@"Safety Goggles")]
         Safety_Goggles = 0x028A,
 
-        [Description("Poké Flute")]
+        [Description(@"Poké Flute")]
         Poke_Flute = 0x028B,
 
-        [Description("Rich Mulch")]
+        [Description(@"Rich Mulch")]
         Rich_Mulch = 0x028C,
 
-        [Description("Surprise Mulch")]
+        [Description(@"Surprise Mulch")]
         Surprise_Mulch = 0x028D,
 
-        [Description("Boost Mulch")]
+        [Description(@"Boost Mulch")]
         Boost_Mulch = 0x028E,
 
-        [Description("Amaze Mulch")]
+        [Description(@"Amaze Mulch")]
         Amaze_Mulch = 0x028F,
 
-        [Description("Gengarite")]
+        [Description(@"Gengarite")]
         Gengarite = 0x0290,
 
-        [Description("Gardevoirite")]
+        [Description(@"Gardevoirite")]
         Gardevoirite = 0x0291,
 
-        [Description("Ampharosite")]
+        [Description(@"Ampharosite")]
         Ampharosite = 0x0292,
 
-        [Description("Venusaurite")]
+        [Description(@"Venusaurite")]
         Venusaurite = 0x0293,
 
-        [Description("Charizardite X")]
+        [Description(@"Charizardite X")]
         Charizardite_X = 0x0294,
 
-        [Description("Blastoisinite")]
+        [Description(@"Blastoisinite")]
         Blastoisinite = 0x0295,
 
-        [Description("Mewtwonite X")]
+        [Description(@"Mewtwonite X")]
         Mewtwonite_X = 0x0296,
 
-        [Description("Mewtwonite Y")]
+        [Description(@"Mewtwonite Y")]
         Mewtwonite_Y = 0x0297,
 
-        [Description("Blazikenite")]
+        [Description(@"Blazikenite")]
         Blazikenite = 0x0298,
 
-        [Description("Medichamite")]
+        [Description(@"Medichamite")]
         Medichamite = 0x0299,
 
-        [Description("Houndoominite")]
+        [Description(@"Houndoominite")]
         Houndoominite = 0x029A,
 
-        [Description("Aggronite")]
+        [Description(@"Aggronite")]
         Aggronite = 0x029B,
 
-        [Description("Banettite")]
+        [Description(@"Banettite")]
         Banettite = 0x029C,
 
-        [Description("Tyranitarite")]
+        [Description(@"Tyranitarite")]
         Tyranitarite = 0x029D,
 
-        [Description("Scizorite")]
+        [Description(@"Scizorite")]
         Scizorite = 0x029E,
 
-        [Description("Pinsirite")]
+        [Description(@"Pinsirite")]
         Pinsirite = 0x029F,
 
-        [Description("Aerodactylite")]
+        [Description(@"Aerodactylite")]
         Aerodactylite = 0x02A0,
 
-        [Description("Lucarionite")]
+        [Description(@"Lucarionite")]
         Lucarionite = 0x02A1,
 
-        [Description("Abomasite")]
+        [Description(@"Abomasite")]
         Abomasite = 0x02A2,
 
-        [Description("Kangaskhanite")]
+        [Description(@"Kangaskhanite")]
         Kangaskhanite = 0x02A3,
 
-        [Description("Gyaradosite")]
+        [Description(@"Gyaradosite")]
         Gyaradosite = 0x02A4,
 
-        [Description("Absolite")]
+        [Description(@"Absolite")]
         Absolite = 0x02A5,
 
-        [Description("Charizardite Y")]
+        [Description(@"Charizardite Y")]
         Charizardite_Y = 0x02A6,
 
-        [Description("Alakazite")]
+        [Description(@"Alakazite")]
         Alakazite = 0x02A7,
 
-        [Description("Heracronite")]
+        [Description(@"Heracronite")]
         Heracronite = 0x02A8,
 
-        [Description("Mawilite")]
+        [Description(@"Mawilite")]
         Mawilite = 0x02A9,
 
-        [Description("Manectite")]
+        [Description(@"Manectite")]
         Manectite = 0x02AA,
 
-        [Description("Garchompite")]
+        [Description(@"Garchompite")]
         Garchompite = 0x02AB,
 
-        [Description("Latiasite")]
+        [Description(@"Latiasite")]
         Latiasite = 0x02AC,
 
-        [Description("Latiosite")]
+        [Description(@"Latiosite")]
         Latiosite = 0x02AD,
 
-        [Description("Roseli Berry")]
+        [Description(@"Roseli Berry")]
         Roseli_Berry = 0x02AE,
 
-        [Description("Kee Berry")]
+        [Description(@"Kee Berry")]
         Kee_Berry = 0x02AF,
 
-        [Description("Maranga Berry")]
+        [Description(@"Maranga Berry")]
         Maranga_Berry = 0x02B0,
 
-        [Description("Sprinklotad")]
+        [Description(@"Sprinklotad")]
         Sprinklotad = 0x02B1,
 
-        [Description("TM96")]
+        [Description(@"TM96")]
         TM96 = 0x02B2,
 
-        [Description("TM97")]
+        [Description(@"TM97")]
         TM97 = 0x02B3,
 
-        [Description("TM98")]
+        [Description(@"TM98")]
         TM98 = 0x02B4,
 
-        [Description("TM99")]
+        [Description(@"TM99")]
         TM99 = 0x02B5,
 
-        [Description("TM100")]
+        [Description(@"TM100")]
         TM100 = 0x02B6,
 
-        [Description("Power Plant Pass")]
+        [Description(@"Power Plant Pass")]
         Power_Plant_Pass = 0x02B7,
 
-        [Description("Mega Ring")]
+        [Description(@"Mega Ring")]
         Mega_Ring = 0x02B8,
 
-        [Description("Intriguing Stone")]
+        [Description(@"Intriguing Stone")]
         Intriguing_Stone = 0x02B9,
 
-        [Description("Common Stone")]
+        [Description(@"Common Stone")]
         Common_Stone = 0x02BA,
 
-        [Description("Discount Coupon")]
+        [Description(@"Discount Coupon")]
         Discount_Coupon = 0x02BB,
 
-        [Description("Elevator Key")]
+        [Description(@"Elevator Key")]
         Elevator_Key = 0x02BC,
 
-        [Description("TMV Pass")]
+        [Description(@"TMV Pass")]
         TMV_Pass = 0x02BD,
 
-        [Description("Honor of Kalos")]
+        [Description(@"Honor of Kalos")]
         Honor_of_Kalos = 0x02BE,
 
-        [Description("Adventure Rules")]
+        [Description(@"Adventure Rules")]
         Adventure_Rules = 0x02BF,
 
-        [Description("Strange Souvenir")]
+        [Description(@"Strange Souvenir")]
         Strange_Souvenir = 0x02C0,
 
-        [Description("Lens Case")]
+        [Description(@"Lens Case")]
         Lens_Case = 0x02C1,
 
-        [Description("Travel Trunk")]
+        [Description(@"Travel Trunk")]
         Travel_Trunk = 0x02C2,
 
-        [Description("Travel Trunk")]
+        [Description(@"Travel Trunk")]
         Travel_Trunk2 = 0x02C3,
 
-        [Description("Lumiose Galette")]
+        [Description(@"Lumiose Galette")]
         Lumiose_Galette = 0x02C4,
 
-        [Description("Shalour Sable")]
+        [Description(@"Shalour Sable")]
         Shalour_Sable = 0x02C5,
 
-        [Description("Jaw Fossil")]
+        [Description(@"Jaw Fossil")]
         Jaw_Fossil = 0x02C6,
 
-        [Description("Sail Fossil")]
+        [Description(@"Sail Fossil")]
         Sail_Fossil = 0x02C7,
 
-        [Description("Looker Ticket")]
+        [Description(@"Looker Ticket")]
         Looker_Ticket = 0x02C8,
 
-        [Description("Bicycle")]
+        [Description(@"Bicycle")]
         Bicycle2 = 0x02C9,
 
-        [Description("Bike")]
+        [Description(@"Bike")]
         Bike2 = 0x02C9,
 
-        [Description("Holo Caster")]
+        [Description(@"Holo Caster")]
         Holo_Caster = 0x02CA,
 
-        [Description("Fairy Gem")]
+        [Description(@"Fairy Gem")]
         Fairy_Gem = 0x02CB,
 
-        [Description("Mega Charm")]
+        [Description(@"Mega Charm")]
         Mega_Charm = 0x02CC,
 
-        [Description("Mega Glove")]
+        [Description(@"Mega Glove")]
         Mega_Glove = 0x02CD,
 
-        [Description("Mach Bike")]
+        [Description(@"Mach Bike")]
         Mach_Bike = 0x02CE,
 
-        [Description("Acro Bike")]
+        [Description(@"Acro Bike")]
         Acro_Bike = 0x02CF,
 
-        [Description("Wailmer Pail")]
+        [Description(@"Wailmer Pail")]
         Wailmer_Pail = 0x02D0,
 
-        [Description("Devon Parts")]
+        [Description(@"Devon Parts")]
         Devon_Parts = 0x02D1,
 
-        [Description("Soot Sack")]
+        [Description(@"Soot Sack")]
         Soot_Sack = 0x02D2,
 
-        [Description("Basement Key")]
+        [Description(@"Basement Key")]
         Basement_Key2 = 0x02D3,
 
-        [Description("Pokéblock Kit")]
+        [Description(@"Pokéblock Kit")]
         Pokeblock_Kit = 0x02D4,
 
-        [Description("Letter")]
+        [Description(@"Letter")]
         Letter = 0x02D5,
 
-        [Description("Eon Ticket")]
+        [Description(@"Eon Ticket")]
         Eon_Ticket = 0x02D6,
 
-        [Description("Scanner")]
+        [Description(@"Scanner")]
         Scanner = 0x02D7,
 
-        [Description("Go-Goggles")]
+        [Description(@"Go-Goggles")]
         Go_Goggles = 0x02D8,
 
-        [Description("Meteorite")]
+        [Description(@"Meteorite")]
         Meteorite = 0x02D9,
 
-        [Description("Key to Room 1")]
+        [Description(@"Key to Room 1")]
         Key_to_Room_1 = 0x02DA,
 
-        [Description("Key to Room 2")]
+        [Description(@"Key to Room 2")]
         Key_to_Room_2 = 0x02DB,
 
-        [Description("Key to Room 4")]
+        [Description(@"Key to Room 4")]
         Key_to_Room_4 = 0x02DC,
 
-        [Description("Key to Room 6")]
+        [Description(@"Key to Room 6")]
         Key_to_Room_6 = 0x02DD,
 
-        [Description("Storage Key")]
+        [Description(@"Storage Key")]
         Storage_Key2 = 0x02DE,
 
-        [Description("Devon Scope")]
+        [Description(@"Devon Scope")]
         Devon_Scope = 0x02DF,
 
-        [Description("S.S. Ticket")]
+        [Description(@"S.S. Ticket")]
         SS_Ticket2 = 0x02E0,
 
-        [Description("HM07")]
+        [Description(@"HM07")]
         HM07 = 0x02E1,
 
-        [Description("Devon Scuba Gear")]
+        [Description(@"Devon Scuba Gear")]
         Devon_Scuba_Gear = 0x02E2,
 
-        [Description("Contest Costume")]
+        [Description(@"Contest Costume")]
         Contest_Costume = 0x02E3,
 
-        [Description("Contest Costume")]
+        [Description(@"Contest Costume")]
         Contest_Costume2 = 0x02E4,
 
-        [Description("Magma Suit")]
+        [Description(@"Magma Suit")]
         Magma_Suit = 0x02E5,
 
-        [Description("Aqua Suit")]
+        [Description(@"Aqua Suit")]
         Aqua_Suit = 0x02E6,
 
-        [Description("Pair of Tickets")]
+        [Description(@"Pair of Tickets")]
         Pair_of_Tickets = 0x02E7,
 
-        [Description("Mega Bracelet")]
+        [Description(@"Mega Bracelet")]
         Mega_Bracelet = 0x02E8,
 
-        [Description("Mega Pendant")]
+        [Description(@"Mega Pendant")]
         Mega_Pendant = 0x02E9,
 
-        [Description("Mega Glasses")]
+        [Description(@"Mega Glasses")]
         Mega_Glasses = 0x02EA,
 
-        [Description("Mega Anchor")]
+        [Description(@"Mega Anchor")]
         Mega_Anchor = 0x02EB,
 
-        [Description("Mega Stickpin")]
+        [Description(@"Mega Stickpin")]
         Mega_Stickpin = 0x02EC,
 
-        [Description("Mega Tiara")]
+        [Description(@"Mega Tiara")]
         Mega_Tiara = 0x02ED,
 
-        [Description("Mega Anklet")]
+        [Description(@"Mega Anklet")]
         Mega_Anklet = 0x02EE,
 
-        [Description("Meteorite")]
+        [Description(@"Meteorite")]
         Meteorite2 = 0x02EF,
 
-        [Description("Swampertite")]
+        [Description(@"Swampertite")]
         Swampertite = 0x02F0,
 
-        [Description("Sceptilite")]
+        [Description(@"Sceptilite")]
         Sceptilite = 0x02F1,
 
-        [Description("Sablenite")]
+        [Description(@"Sablenite")]
         Sablenite = 0x02F2,
 
-        [Description("Altarianite")]
+        [Description(@"Altarianite")]
         Altarianite = 0x02F3,
 
-        [Description("Galladite")]
+        [Description(@"Galladite")]
         Galladite = 0x02F4,
 
-        [Description("Audinite")]
+        [Description(@"Audinite")]
         Audinite = 0x02F5,
 
-        [Description("Metagrossite")]
+        [Description(@"Metagrossite")]
         Metagrossite = 0x02F6,
 
-        [Description("Sharpedonite")]
+        [Description(@"Sharpedonite")]
         Sharpedonite = 0x02F7,
 
-        [Description("Slowbronite")]
+        [Description(@"Slowbronite")]
         Slowbronite = 0x02F8,
 
-        [Description("Steelixite")]
+        [Description(@"Steelixite")]
         Steelixite = 0x02F9,
 
-        [Description("Pidgeotite")]
+        [Description(@"Pidgeotite")]
         Pidgeotite = 0x02FA,
 
-        [Description("Glalitite")]
+        [Description(@"Glalitite")]
         Glalitite = 0x02FB,
 
-        [Description("Diancite")]
+        [Description(@"Diancite")]
         Diancite = 0x02FC,
 
-        [Description("Prison Bottle")]
+        [Description(@"Prison Bottle")]
         Prison_Bottle = 0x02FD,
 
-        [Description("Mega Cuff")]
+        [Description(@"Mega Cuff")]
         Mega_Cuff = 0x02FE,
 
-        [Description("Cameruptite")]
+        [Description(@"Cameruptite")]
         Cameruptite = 0x02FF,
 
-        [Description("Lopunnite")]
+        [Description(@"Lopunnite")]
         Lopunnite = 0x0300,
 
-        [Description("Salamencite")]
+        [Description(@"Salamencite")]
         Salamencite = 0x0301,
 
-        [Description("Beedrillite")]
+        [Description(@"Beedrillite")]
         Beedrillite = 0x0302,
 
-        [Description("Meteorite")]
+        [Description(@"Meteorite")]
         Meteorite3 = 0x0303,
 
-        [Description("Meteorite")]
+        [Description(@"Meteorite")]
         Meteorite4 = 0x0304,
 
-        [Description("Key Stone")]
+        [Description(@"Key Stone")]
         Key_Stone = 0x0305,
 
-        [Description("Meteorite Shard")]
+        [Description(@"Meteorite Shard")]
         Meteorite_Shard = 0x0306,
 
-        [Description("Eon Flute")]
+        [Description(@"Eon Flute")]
         Eon_Flute = 0x0307
     }
 
     public enum Locations : ushort
     {
-        [Description("Mystery Zone")]
+        [Description(@"Mystery Zone")]
         Mystery_Zone = 0,
 
-        [Description("Mystery Zone")]
+        [Description(@"Mystery Zone")]
         Mystery_Zone2 = 2,
 
-        [Description("Faraway Place")]
+        [Description(@"Faraway Place")]
         Faraway_Place = 4,
 
-        [Description("Vaniville Town")]
+        [Description(@"Vaniville Town")]
         Vaniville_Town = 6,
 
-        [Description("Route 1")]
+        [Description(@"Route 1")]
         Route_1 = 8,
 
-        [Description("Vaniville Pathway")]
+        [Description(@"Vaniville Pathway")]
         Vaniville_Pathway = 9,
 
-        [Description("Aquacorde Town")]
+        [Description(@"Aquacorde Town")]
         Aquacorde_Town = 10,
 
-        [Description("Route 2")]
+        [Description(@"Route 2")]
         Route_2 = 12,
 
-        [Description("Avance Trail")]
+        [Description(@"Avance Trail")]
         Avance_Trail = 13,
 
-        [Description("Santalune Forest")]
+        [Description(@"Santalune Forest")]
         Santalune_Forest = 14,
 
-        [Description("Route 3")]
+        [Description(@"Route 3")]
         Route_3 = 16,
 
-        [Description("Ouvert Way")]
+        [Description(@"Ouvert Way")]
         Ouvert_Way = 17,
 
-        [Description("Santalune City")]
+        [Description(@"Santalune City")]
         Santalune_City = 18,
 
-        [Description("Route 4")]
+        [Description(@"Route 4")]
         Route_4 = 20,
 
-        [Description("Parterre Way")]
+        [Description(@"Parterre Way")]
         Parterre_Way = 21,
 
-        [Description("Lumiose City")]
+        [Description(@"Lumiose City")]
         Lumiose_City = 22,
 
-        [Description("Prism Tower")]
+        [Description(@"Prism Tower")]
         Prism_Tower = 24,
 
-        [Description("Lysandre Labs")]
+        [Description(@"Lysandre Labs")]
         Lysandre_Labs = 26,
 
-        [Description("Route 5")]
+        [Description(@"Route 5")]
         Route_5 = 28,
 
-        [Description("Versant Road")]
+        [Description(@"Versant Road")]
         Versant_Road = 29,
 
-        [Description("Camphrier Town")]
+        [Description(@"Camphrier Town")]
         Camphrier_Town = 30,
 
-        [Description("Shabboneau Castle")]
+        [Description(@"Shabboneau Castle")]
         Shabboneau_Castle = 32,
 
-        [Description("Route 6")]
+        [Description(@"Route 6")]
         Route_6 = 34,
 
-        [Description("Palais Lane")]
+        [Description(@"Palais Lane")]
         Palais_Lane = 35,
 
-        [Description("Parfum Palace")]
+        [Description(@"Parfum Palace")]
         Parfum_Palace = 36,
 
-        [Description("Route 7")]
+        [Description(@"Route 7")]
         Route_7 = 38,
 
-        [Description("Rivière Walk")]
+        [Description(@"Rivière Walk")]
         Rivière_Walk = 39,
 
-        [Description("Cyllage City")]
+        [Description(@"Cyllage City")]
         Cyllage_City = 40,
 
-        [Description("Route 8")]
+        [Description(@"Route 8")]
         Route_8 = 42,
 
-        [Description("Muraille Coast")]
+        [Description(@"Muraille Coast")]
         Muraille_Coast = 43,
 
-        [Description("Ambrette Town")]
+        [Description(@"Ambrette Town")]
         Ambrette_Town = 44,
 
-        [Description("Route 9")]
+        [Description(@"Route 9")]
         Route_9 = 46,
 
-        [Description("Spikes Passage")]
+        [Description(@"Spikes Passage")]
         Spikes_Passage = 47,
 
-        [Description("Battle Chateau")]
+        [Description(@"Battle Chateau")]
         Battle_Chateau = 48,
 
-        [Description("Route 10")]
+        [Description(@"Route 10")]
         Route_10 = 50,
 
-        [Description("Menhir Trail")]
+        [Description(@"Menhir Trail")]
         Menhir_Trail = 51,
 
-        [Description("Geosenge Town")]
+        [Description(@"Geosenge Town")]
         Geosenge_Town = 52,
 
-        [Description("Route 11")]
+        [Description(@"Route 11")]
         Route_11 = 54,
 
-        [Description("Miroir Way")]
+        [Description(@"Miroir Way")]
         Miroir_Way = 55,
 
-        [Description("Reflection Cave")]
+        [Description(@"Reflection Cave")]
         Reflection_Cave = 56,
 
-        [Description("Shalour City")]
+        [Description(@"Shalour City")]
         Shalour_City = 58,
 
-        [Description("Tower of Mastery")]
+        [Description(@"Tower of Mastery")]
         Tower_of_Mastery = 60,
 
-        [Description("Route 12")]
+        [Description(@"Route 12")]
         Route_12 = 62,
 
-        [Description("Fourrage Road")]
+        [Description(@"Fourrage Road")]
         Fourrage_Road = 63,
 
-        [Description("Coumarine City")]
+        [Description(@"Coumarine City")]
         Coumarine_City = 64,
 
-        [Description("Route 13")]
+        [Description(@"Route 13")]
         Route_13 = 66,
 
-        [Description("Lumiose Badlands")]
+        [Description(@"Lumiose Badlands")]
         Lumiose_Badlands = 67,
 
-        [Description("Route 14")]
+        [Description(@"Route 14")]
         Route_14 = 68,
 
-        [Description("Laverre Nature Trail")]
+        [Description(@"Laverre Nature Trail")]
         Laverre_Nature_Trail = 69,
 
-        [Description("Laverre City")]
+        [Description(@"Laverre City")]
         Laverre_City = 70,
 
-        [Description("Poke Ball Factory")]
+        [Description(@"Poke Ball Factory")]
         Poke_Ball_Factory = 72,
 
-        [Description("Route 15")]
+        [Description(@"Route 15")]
         Route_15 = 74,
 
-        [Description("Brun Way")]
+        [Description(@"Brun Way")]
         Brun_Way = 75,
 
-        [Description("Dendemille Town")]
+        [Description(@"Dendemille Town")]
         Dendemille_Town = 76,
 
-        [Description("Route 16")]
+        [Description(@"Route 16")]
         Route_16 = 78,
 
-        [Description("Mélancolie Path")]
+        [Description(@"Mélancolie Path")]
         Melancolie_Path = 79,
 
-        [Description("Frost Cavern")]
+        [Description(@"Frost Cavern")]
         Frost_Cavern = 82,
 
-        [Description("Route 17")]
+        [Description(@"Route 17")]
         Route_17 = 84,
 
-        [Description("Mamoswine Road")]
+        [Description(@"Mamoswine Road")]
         Mamoswine_Road = 85,
 
-        [Description("Anistar City")]
+        [Description(@"Anistar City")]
         Anistar_City = 86,
 
-        [Description("Route 18")]
+        [Description(@"Route 18")]
         Route_18 = 88,
 
-        [Description("Vallée Étroite Way")]
+        [Description(@"Vallée Étroite Way")]
         Vallee_Étroite_Way = 89,
 
-        [Description("Couriway Town")]
+        [Description(@"Couriway Town")]
         Couriway_Town = 90,
 
-        [Description("Route 19")]
+        [Description(@"Route 19")]
         Route_19 = 92,
 
-        [Description("Grande Vallée Way")]
+        [Description(@"Grande Vallée Way")]
         Grande_Vallee_Way = 93,
 
-        [Description("Snowbelle City")]
+        [Description(@"Snowbelle City")]
         Snowbelle_City = 94,
 
-        [Description("Route 20")]
+        [Description(@"Route 20")]
         Route_20 = 96,
 
-        [Description("Winding Woods")]
+        [Description(@"Winding Woods")]
         Winding_Woods = 97,
 
-        [Description("Pokémon Village")]
+        [Description(@"Pokémon Village")]
         Pokemon_Village = 98,
 
-        [Description("Route 21")]
+        [Description(@"Route 21")]
         Route_21 = 100,
 
-        [Description("Dernière Way")]
+        [Description(@"Dernière Way")]
         Dernière_Way = 101,
 
-        [Description("Route 22")]
+        [Description(@"Route 22")]
         Route_22 = 102,
 
-        [Description("Détourner Way")]
+        [Description(@"Détourner Way")]
         Detourner_Way = 103,
 
-        [Description("Victory Road (Kalos)")]
+        [Description(@"Victory Road (Kalos)")]
         Victory_Road_Kalos = 104,
 
-        [Description("Pokémon League (Kalos)")]
+        [Description(@"Pokémon League (Kalos)")]
         Pokemon_League_Kalos = 106,
 
-        [Description("Kiloude City")]
+        [Description(@"Kiloude City")]
         Kiloude_City = 108,
 
-        [Description("Battle Maison")]
+        [Description(@"Battle Maison")]
         Battle_Maison = 110,
 
-        [Description("Azure Bay")]
+        [Description(@"Azure Bay")]
         Azure_Bay = 112,
 
-        [Description("Dendemille Gate")]
+        [Description(@"Dendemille Gate")]
         Dendemille_Gate = 114,
 
-        [Description("Couriway Gate")]
+        [Description(@"Couriway Gate")]
         Couriway_Gate = 116,
 
-        [Description("Ambrette Gate")]
+        [Description(@"Ambrette Gate")]
         Ambrette_Gate = 118,
 
-        [Description("Lumiose Gate")]
+        [Description(@"Lumiose Gate")]
         Lumiose_Gate = 120,
 
-        [Description("Shalour Gate")]
+        [Description(@"Shalour Gate")]
         Shalour_Gate = 122,
 
-        [Description("Coumarine Gate")]
+        [Description(@"Coumarine Gate")]
         Coumarine_Gate = 124,
 
-        [Description("Laverre Gate")]
+        [Description(@"Laverre Gate")]
         Laverre_Gate = 126,
 
-        [Description("Anistar Gate")]
+        [Description(@"Anistar Gate")]
         Anistar_Gate = 128,
 
-        [Description("Snowbelle Gate")]
+        [Description(@"Snowbelle Gate")]
         Snowbelle_Gate = 130,
 
-        [Description("Glittering Cave")]
+        [Description(@"Glittering Cave")]
         Glittering_Cave = 132,
 
-        [Description("Connecting Cave")]
+        [Description(@"Connecting Cave")]
         Connecting_Cave = 134,
 
-        [Description("Zubat Roost")]
+        [Description(@"Zubat Roost")]
         Zubat_Roost = 135,
 
-        [Description("Kalos Power Plant")]
+        [Description(@"Kalos Power Plant")]
         Kalos_Power_Plant = 136,
 
-        [Description("Team Flare Secret HQ")]
+        [Description(@"Team Flare Secret HQ")]
         Team_Flare_Secret_HQ = 138,
 
-        [Description("Terminus Cave")]
+        [Description(@"Terminus Cave")]
         Terminus_Cave = 140,
 
-        [Description("Lost Hotel")]
+        [Description(@"Lost Hotel")]
         Lost_Hotel = 142,
 
-        [Description("Chamber of Emptiness")]
+        [Description(@"Chamber of Emptiness")]
         Chamber_of_Emptiness = 144,
 
-        [Description("Sea Spirit's Den")]
+        [Description(@"Sea Spirit's Den")]
         Sea_Spirits_Den = 146,
 
-        [Description("Friend Safari")]
+        [Description(@"Friend Safari")]
         Friend_Safari = 148,
 
-        [Description("Blazing Chamber")]
+        [Description(@"Blazing Chamber")]
         Blazing_Chamber = 150,
 
-        [Description("Flood Chamber")]
+        [Description(@"Flood Chamber")]
         Flood_Chamber = 152,
 
-        [Description("Ironworks Chamber")]
+        [Description(@"Ironworks Chamber")]
         Ironworks_Chamber = 154,
 
-        [Description("Dragonmark Chamber")]
+        [Description(@"Dragonmark Chamber")]
         Dragonmark_Chamber = 156,
 
-        [Description("Radiant Chamber")]
+        [Description(@"Radiant Chamber")]
         Radiant_Chamber = 158,
 
-        [Description("Pokémon League Gate")]
+        [Description(@"Pokémon League Gate")]
         Pokemon_League_Gate = 160,
 
-        [Description("Lumiose Station")]
+        [Description(@"Lumiose Station")]
         Lumiose_Station = 162,
 
-        [Description("Kiloude Station")]
+        [Description(@"Kiloude Station")]
         Kiloude_Station = 164,
 
-        [Description("Ambrette Aquarium")]
+        [Description(@"Ambrette Aquarium")]
         Ambrette_Aquarium = 166,
 
-        [Description("Unknown Dungeon")]
+        [Description(@"Unknown Dungeon")]
         Unknown_Dungeon = 168,
 
-        [Description("Littleroot Town")]
+        [Description(@"Littleroot Town")]
         Littleroot_Town = 170,
 
-        [Description("Oldale Town")]
+        [Description(@"Oldale Town")]
         Oldale_Town = 172,
 
-        [Description("Dewford Town")]
+        [Description(@"Dewford Town")]
         Dewford_Town = 174,
 
-        [Description("Lavaridge Town")]
+        [Description(@"Lavaridge Town")]
         Lavaridge_Town = 176,
 
-        [Description("Fallarbor Town")]
+        [Description(@"Fallarbor Town")]
         Fallarbor_Town = 178,
 
-        [Description("Verdanturf Town")]
+        [Description(@"Verdanturf Town")]
         Verdanturf_Town = 180,
 
-        [Description("Pacifidlog Town")]
+        [Description(@"Pacifidlog Town")]
         Pacifidlog_Town = 182,
 
-        [Description("Petalburg City")]
+        [Description(@"Petalburg City")]
         Petalburg_City = 184,
 
-        [Description("Slateport City")]
+        [Description(@"Slateport City")]
         Slateport_City = 186,
 
-        [Description("Mauville City")]
+        [Description(@"Mauville City")]
         Mauville_City = 188,
 
-        [Description("Rustboro City")]
+        [Description(@"Rustboro City")]
         Rustboro_City = 190,
 
-        [Description("Fortree City")]
+        [Description(@"Fortree City")]
         Fortree_City = 192,
 
-        [Description("Lilycove City")]
+        [Description(@"Lilycove City")]
         Lilycove_City = 194,
 
-        [Description("Mossdeep City")]
+        [Description(@"Mossdeep City")]
         Mossdeep_City = 196,
 
-        [Description("Sootopolis City")]
+        [Description(@"Sootopolis City")]
         Sootopolis_City = 198,
 
-        [Description("Ever Grande City")]
+        [Description(@"Ever Grande City")]
         Ever_Grande_City = 200,
 
-        [Description("Pokémon League (Hoenn)")]
+        [Description(@"Pokémon League (Hoenn)")]
         Pokemon_League_Hoenn = 202,
 
-        [Description("Route 101")]
+        [Description(@"Route 101")]
         Route_101 = 204,
 
-        [Description("Route 102")]
+        [Description(@"Route 102")]
         Route_102 = 206,
 
-        [Description("Route 103")]
+        [Description(@"Route 103")]
         Route_103 = 208,
 
-        [Description("Route 104")]
+        [Description(@"Route 104")]
         Route_104 = 210,
 
-        [Description("Route 105")]
+        [Description(@"Route 105")]
         Route_105 = 212,
 
-        [Description("Route 106")]
+        [Description(@"Route 106")]
         Route_106 = 214,
 
-        [Description("Route 107")]
+        [Description(@"Route 107")]
         Route_107 = 216,
 
-        [Description("Route 108")]
+        [Description(@"Route 108")]
         Route_108 = 218,
 
-        [Description("Route 109")]
+        [Description(@"Route 109")]
         Route_109 = 220,
 
-        [Description("Route 110")]
+        [Description(@"Route 110")]
         Route_110 = 222,
 
-        [Description("Route 111")]
+        [Description(@"Route 111")]
         Route_111 = 224,
 
-        [Description("Route 112")]
+        [Description(@"Route 112")]
         Route_112 = 226,
 
-        [Description("Route 113")]
+        [Description(@"Route 113")]
         Route_113 = 228,
 
-        [Description("Route 114")]
+        [Description(@"Route 114")]
         Route_114 = 230,
 
-        [Description("Route 115")]
+        [Description(@"Route 115")]
         Route_115 = 232,
 
-        [Description("Route 116")]
+        [Description(@"Route 116")]
         Route_116 = 234,
 
-        [Description("Route 117")]
+        [Description(@"Route 117")]
         Route_117 = 236,
 
-        [Description("Route 118")]
+        [Description(@"Route 118")]
         Route_118 = 238,
 
-        [Description("Route 119")]
+        [Description(@"Route 119")]
         Route_119 = 240,
 
-        [Description("Route 120")]
+        [Description(@"Route 120")]
         Route_120 = 242,
 
-        [Description("Route 121")]
+        [Description(@"Route 121")]
         Route_121 = 244,
 
-        [Description("Route 122")]
+        [Description(@"Route 122")]
         Route_122 = 246,
 
-        [Description("Route 123")]
+        [Description(@"Route 123")]
         Route_123 = 248,
 
-        [Description("Route 124")]
+        [Description(@"Route 124")]
         Route_124 = 250,
 
-        [Description("Route 125")]
+        [Description(@"Route 125")]
         Route_125 = 252,
 
-        [Description("Route 126")]
+        [Description(@"Route 126")]
         Route_126 = 254,
 
-        [Description("Route 127")]
+        [Description(@"Route 127")]
         Route_127 = 256,
 
-        [Description("Route 128")]
+        [Description(@"Route 128")]
         Route_128 = 258,
 
-        [Description("Route 129")]
+        [Description(@"Route 129")]
         Route_129 = 260,
 
-        [Description("Route 130")]
+        [Description(@"Route 130")]
         Route_130 = 262,
 
-        [Description("Route 131")]
+        [Description(@"Route 131")]
         Route_131 = 264,
 
-        [Description("Route 132")]
+        [Description(@"Route 132")]
         Route_132 = 266,
 
-        [Description("Route 133")]
+        [Description(@"Route 133")]
         Route_133 = 268,
 
-        [Description("Route 134")]
+        [Description(@"Route 134")]
         Route_134 = 270,
 
-        [Description("Meteor Falls")]
+        [Description(@"Meteor Falls")]
         Meteor_Falls = 272,
 
-        [Description("Rusturf Tunnel")]
+        [Description(@"Rusturf Tunnel")]
         Rusturf_Tunnel = 274,
 
-        [Description(" ??? (Inside of Truck)")]
+        [Description(@" ??? (Inside of Truck)")]
         Inside_of_Truck = 276,
 
-        [Description("Desert Ruins")]
+        [Description(@"Desert Ruins")]
         Desert_Ruins = 278,
 
-        [Description("Granite Cave")]
+        [Description(@"Granite Cave")]
         Granite_Cave = 280,
 
-        [Description("Petalburg Woods")]
+        [Description(@"Petalburg Woods")]
         Petalburg_Woods = 282,
 
-        [Description("Mt. Chimney")]
+        [Description(@"Mt. Chimney")]
         Mt_Chimney = 284,
 
-        [Description("Jagged Pass")]
+        [Description(@"Jagged Pass")]
         Jagged_Pass = 286,
 
-        [Description("Fiery Path")]
+        [Description(@"Fiery Path")]
         Fiery_Path = 288,
 
-        [Description("Mt. Pyre")]
+        [Description(@"Mt. Pyre")]
         Mt_Pyre = 290,
 
-        [Description("Team Aqua Hideout")]
+        [Description(@"Team Aqua Hideout")]
         Team_Aqua_Hideout = 292,
 
-        [Description("Seafloor Cavern")]
+        [Description(@"Seafloor Cavern")]
         Seafloor_Cavern = 294,
 
-        [Description("Cave of Origin")]
+        [Description(@"Cave of Origin")]
         Cave_of_Origin = 296,
 
-        [Description("Victory Road (Hoenn)")]
+        [Description(@"Victory Road (Hoenn)")]
         Victory_Road_Hoenn = 298,
 
-        [Description("Shoal Cave")]
+        [Description(@"Shoal Cave")]
         Shoal_Cave = 300,
 
-        [Description("New Mauville")]
+        [Description(@"New Mauville")]
         New_Mauville = 302,
 
-        [Description("Sea Mauville")]
+        [Description(@"Sea Mauville")]
         Sea_Mauville = 304,
 
-        [Description("Island Cave")]
+        [Description(@"Island Cave")]
         Island_Cave = 306,
 
-        [Description("Ancient Tomb")]
+        [Description(@"Ancient Tomb")]
         Ancient_Tomb = 308,
 
-        [Description("Sealed Chamber")]
+        [Description(@"Sealed Chamber")]
         Sealed_Chamber = 310,
 
-        [Description("Scorched Slab")]
+        [Description(@"Scorched Slab")]
         Scorched_Slab = 312,
 
-        [Description("Team Magma Hideout")]
+        [Description(@"Team Magma Hideout")]
         Team_Magma_Hideout = 314,
 
-        [Description("Sky Pillar")]
+        [Description(@"Sky Pillar")]
         Sky_Pillar = 316,
 
-        [Description("Battle Resort")]
+        [Description(@"Battle Resort")]
         Battle_Resort = 318,
 
-        [Description("Southern Island")]
+        [Description(@"Southern Island")]
         Southern_Island = 320,
 
-        [Description("S.S. Tidal")]
+        [Description(@"S.S. Tidal")]
         SS_Tidal = 322,
 
-        [Description("Safari Zone")]
+        [Description(@"Safari Zone")]
         Safari_Zone = 324,
 
-        [Description("Mirage Forest")]
+        [Description(@"Mirage Forest")]
         Mirage_Forest = 326,
 
-        [Description("Mirage Cave")]
+        [Description(@"Mirage Cave")]
         Mirage_Cave = 328,
 
-        [Description("Mirage Island")]
+        [Description(@"Mirage Island")]
         Mirage_Island = 330,
 
-        [Description("Mirage Mountain")]
+        [Description(@"Mirage Mountain")]
         Mirage_Mountain = 332,
 
-        [Description("Trackless Forest")]
+        [Description(@"Trackless Forest")]
         Trackless_Forest = 334,
 
-        [Description("Pathless Plain")]
+        [Description(@"Pathless Plain")]
         Pathless_Plain = 336,
 
-        [Description("Nameless Cavern")]
+        [Description(@"Nameless Cavern")]
         Nameless_Cavern = 338,
 
-        [Description("Fabled Cave")]
+        [Description(@"Fabled Cave")]
         Fabled_Cave = 340,
 
-        [Description("Gnarled Den")]
+        [Description(@"Gnarled Den")]
         Gnarled_Den = 342,
 
-        [Description("Crescent Isle")]
+        [Description(@"Crescent Isle")]
         Crescent_Isle = 344,
 
-        [Description("Secret Islet")]
+        [Description(@"Secret Islet")]
         Secret_Islet = 346,
 
-        [Description("Soaring in the sky")]
+        [Description(@"Soaring in the sky")]
         Soaring_in_the_sky = 348,
 
-        [Description("Secret Shore")]
+        [Description(@"Secret Shore")]
         Secret_Shore = 350,
 
-        [Description("Secret Meadow")]
+        [Description(@"Secret Meadow")]
         Secret_Meadow = 352,
 
-        [Description("Secret Base")]
+        [Description(@"Secret Base")]
         Secret_Base = 354,
 
-        [Description("a Link Trade")]
+        [Description(@"a Link Trade")]
         a_Link_Trade = 30001,
 
-        [Description("a Link Trade")]
+        [Description(@"a Link Trade")]
         a_Link_Trade2 = 30002,
 
-        [Description("the Kanto region")]
+        [Description(@"the Kanto region")]
         the_Kanto_region = 30003,
 
-        [Description("the Johto region")]
+        [Description(@"the Johto region")]
         the_Johto_region = 30004,
 
-        [Description("the Hoenn region")]
+        [Description(@"the Hoenn region")]
         the_Hoenn_region = 30005,
 
-        [Description("the Sinnoh region")]
+        [Description(@"the Sinnoh region")]
         the_Sinnoh_region = 30006,
 
-        [Description("a distant land")]
+        [Description(@"a distant land")]
         a_distant_land = 30007,
 
-        [Description("----------")]
+        [Description(@"----------")]
         __________ = 30008,
 
-        [Description("the Unova region")]
+        [Description(@"the Unova region")]
         the_Unova_region = 30009,
 
-        [Description("the Kalos region")]
+        [Description(@"the Kalos region")]
         the_Kalos_region = 30010,
 
-        [Description("Pokémon Link")]
+        [Description(@"Pokémon Link")]
         Pokemon_Link = 30011,
 
-        [Description("a lovely place")]
+        [Description(@"a lovely place")]
         a_lovely_place = 40001,
 
-        [Description("a faraway place")]
+        [Description(@"a faraway place")]
         a_faraway_place = 40002,
 
-        [Description("a Pokémon movie")]
+        [Description(@"a Pokémon movie")]
         a_Pokemon_movie = 40003,
 
-        [Description("Pokémon Movie 13")]
+        [Description(@"Pokémon Movie 13")]
         Pokemon_Movie_13 = 40004,
 
-        [Description("Pokémon Movie 14")]
+        [Description(@"Pokémon Movie 14")]
         Pokemon_Movie_14 = 40005,
 
-        [Description("Pokémon Movie 15")]
+        [Description(@"Pokémon Movie 15")]
         Pokemon_Movie_15 = 40006,
 
-        [Description("Pokémon Movie 16")]
+        [Description(@"Pokémon Movie 16")]
         Pokemon_Movie_16 = 40007,
 
-        [Description("Pokémon Movie 17")]
+        [Description(@"Pokémon Movie 17")]
         Pokemon_Movie_17 = 40008,
 
-        [Description("Pokémon Movie 18")]
+        [Description(@"Pokémon Movie 18")]
         Pokemon_Movie_18 = 40009,
 
-        [Description("a Pokémon Center")]
+        [Description(@"a Pokémon Center")]
         a_Pokemon_Center = 40010,
 
-        [Description("the Pokémon cartoon")]
+        [Description(@"the Pokémon cartoon")]
         the_Pokemon_cartoon = 40011,
 
-        [Description("PC Tokyo")]
+        [Description(@"PC Tokyo")]
         PC_Tokyo = 40012,
 
-        [Description("PC Osaka")]
+        [Description(@"PC Osaka")]
         PC_Osaka = 40013,
 
-        [Description("PC Fukuoka")]
+        [Description(@"PC Fukuoka")]
         PC_Fukuoka = 40014,
 
-        [Description("PC Nagoya")]
+        [Description(@"PC Nagoya")]
         PC_Nagoya = 40015,
 
-        [Description("PC Sapporo")]
+        [Description(@"PC Sapporo")]
         PC_Sapporo = 40016,
 
-        [Description("PC Yokohama")]
+        [Description(@"PC Yokohama")]
         PC_Yokohama = 40017,
 
-        [Description("PC Tohoku")]
+        [Description(@"PC Tohoku")]
         PC_Tohoku = 40018,
 
-        [Description("PC Tokyo Bay")]
+        [Description(@"PC Tokyo Bay")]
         PC_Tokyo_Bay = 40019,
 
-        [Description("a Pokémon Store")]
+        [Description(@"a Pokémon Store")]
         a_Pokemon_Store = 40020,
 
-        [Description("a WCS")]
+        [Description(@"a WCS")]
         a_WCS = 40021,
 
-        [Description("WCS 2013")]
+        [Description(@"WCS 2013")]
         WCS_2013 = 40022,
 
-        [Description("WCS 2014")]
+        [Description(@"WCS 2014")]
         WCS_2014 = 40023,
 
-        [Description("WCS 2015")]
+        [Description(@"WCS 2015")]
         WCS_2015 = 40024,
 
-        [Description("WCS 2016")]
+        [Description(@"WCS 2016")]
         WCS_2016 = 40025,
 
-        [Description("WCS 2017")]
+        [Description(@"WCS 2017")]
         WCS_2017 = 40026,
 
-        [Description("WCS 2018")]
+        [Description(@"WCS 2018")]
         WCS_2018 = 40027,
 
-        [Description("Worlds")]
+        [Description(@"Worlds")]
         Worlds = 40028,
 
-        [Description("Worlds 2013")]
+        [Description(@"Worlds 2013")]
         Worlds_2013 = 40029,
 
-        [Description("Worlds 2014")]
+        [Description(@"Worlds 2014")]
         Worlds_2014 = 40030,
 
-        [Description("Worlds 2015")]
+        [Description(@"Worlds 2015")]
         Worlds_2015 = 40031,
 
-        [Description("Worlds 2016")]
+        [Description(@"Worlds 2016")]
         Worlds_2016 = 40032,
 
-        [Description("Worlds 2017")]
+        [Description(@"Worlds 2017")]
         Worlds_2017 = 40033,
 
-        [Description("Worlds 2018")]
+        [Description(@"Worlds 2018")]
         Worlds_2018 = 40034,
 
-        [Description("a VGE")]
+        [Description(@"a VGE")]
         a_VGE = 40035,
 
-        [Description("VGE 2013")]
+        [Description(@"VGE 2013")]
         VGE_2013 = 40036,
 
-        [Description("VGE 2014")]
+        [Description(@"VGE 2014")]
         VGE_2014 = 40037,
 
-        [Description("VGE 2015")]
+        [Description(@"VGE 2015")]
         VGE_2015 = 40038,
 
-        [Description("VGE 2016")]
+        [Description(@"VGE 2016")]
         VGE_2016 = 40039,
 
-        [Description("VGE 2017")]
+        [Description(@"VGE 2017")]
         VGE_2017 = 40040,
 
-        [Description("VGE 2018")]
+        [Description(@"VGE 2018")]
         VGE_2018 = 40041,
 
-        [Description("a Pokémon event")]
+        [Description(@"a Pokémon event")]
         a_Pokemon_event = 40042,
 
-        [Description("a Battle Competition")]
+        [Description(@"a Battle Competition")]
         a_Battle_Competition = 40043,
 
-        [Description("a game event")]
+        [Description(@"a game event")]
         a_game_event = 40044,
 
-        [Description("the Pokémon Fan Club")]
+        [Description(@"the Pokémon Fan Club")]
         the_Pokemon_Fan_Club = 40045,
 
-        [Description("a Pokémon TV program")]
+        [Description(@"a Pokémon TV program")]
         a_Pokemon_TV_program = 40046,
 
-        [Description("a concert")]
+        [Description(@"a concert")]
         a_concert = 40047,
 
-        [Description("an online Present")]
+        [Description(@"an online Present")]
         an_online_Present = 40048,
 
-        [Description("the PGL")]
+        [Description(@"the PGL")]
         the_PGL = 40049,
 
-        [Description("Pokémon Event 13")]
+        [Description(@"Pokémon Event 13")]
         Pokemon_Event_13 = 40050,
 
-        [Description("Pokémon Event 14")]
+        [Description(@"Pokémon Event 14")]
         Pokemon_Event_14 = 40051,
 
-        [Description("Pokémon Event 15")]
+        [Description(@"Pokémon Event 15")]
         Pokemon_Event_15 = 40052,
 
-        [Description("Pokémon Event 16")]
+        [Description(@"Pokémon Event 16")]
         Pokemon_Event_16 = 40053,
 
-        [Description("Pokémon Event 17")]
+        [Description(@"Pokémon Event 17")]
         Pokemon_Event_17 = 40054,
 
-        [Description("Pokémon Event 18")]
+        [Description(@"Pokémon Event 18")]
         Pokemon_Event_18 = 40055,
 
-        [Description("Pokémon Festa")]
+        [Description(@"Pokémon Festa")]
         Pokemon_Festa = 40056,
 
-        [Description("Pokémon Festa 13")]
+        [Description(@"Pokémon Festa 13")]
         Pokemon_Festa_13 = 40057,
 
-        [Description("Pokémon Festa 14")]
+        [Description(@"Pokémon Festa 14")]
         Pokemon_Festa_14 = 40058,
 
-        [Description("Pokémon Festa 15")]
+        [Description(@"Pokémon Festa 15")]
         Pokemon_Festa_15 = 40059,
 
-        [Description("Pokémon Festa 16")]
+        [Description(@"Pokémon Festa 16")]
         Pokemon_Festa_16 = 40060,
 
-        [Description("Pokémon Festa 17")]
+        [Description(@"Pokémon Festa 17")]
         Pokemon_Festa_17 = 40061,
 
-        [Description("Pokémon Festa 18")]
+        [Description(@"Pokémon Festa 18")]
         Pokemon_Festa_18 = 40062,
 
-        [Description("POKÉPARK")]
+        [Description(@"POKÉPARK")]
         POKEPARK = 40063,
 
-        [Description("POKÉPARK")]
+        [Description(@"POKÉPARK")]
         POKEPARK2 = 40064,
 
-        [Description("POKÉPARK")]
+        [Description(@"POKÉPARK")]
         POKEPARK3 = 40065,
 
-        [Description("POKÉPARK")]
+        [Description(@"POKÉPARK")]
         POKEPARK4 = 40066,
 
-        [Description("POKÉPARK")]
+        [Description(@"POKÉPARK")]
         POKEPARK5 = 40067,
 
-        [Description("POKÉPARK")]
+        [Description(@"POKÉPARK")]
         POKEPARK6 = 40068,
 
-        [Description("POKÉPARK")]
+        [Description(@"POKÉPARK")]
         POKEPARK7 = 40069,
 
-        [Description("an event site")]
+        [Description(@"an event site")]
         an_event_site = 40070,
 
-        [Description("GAME FREAK")]
+        [Description(@"GAME FREAK")]
         GAME_FREAK = 40071,
 
-        [Description("a stadium")]
+        [Description(@"a stadium")]
         a_stadium = 40072,
 
-        [Description("a VGC")]
+        [Description(@"a VGC")]
         a_VGC = 40073,
 
-        [Description("the VGC 2013")]
+        [Description(@"the VGC 2013")]
         the_VGC_2013 = 40074,
 
-        [Description("the VGC 2014")]
+        [Description(@"the VGC 2014")]
         the_VGC_2014 = 40075,
 
-        [Description("the VGC 2015")]
+        [Description(@"the VGC 2015")]
         the_VGC_2015 = 40076,
 
-        [Description("the VGC 2016")]
+        [Description(@"the VGC 2016")]
         the_VGC_2016 = 40077,
 
-        [Description("the VGC 2017")]
+        [Description(@"the VGC 2017")]
         the_VGC_2017 = 40078,
 
-        [Description("the VGC 2018")]
+        [Description(@"the VGC 2018")]
         the_VGC_2018 = 40079,
 
-        [Description("a stranger")]
+        [Description(@"a stranger")]
         a_stranger = 60001,
 
-        [Description("Day-Care")]
+        [Description(@"Day-Care")]
         Day_Care = 60002,
 
-        [Description("a treasure hunter")]
+        [Description(@"a treasure hunter")]
         a_treasure_hunter = 60003,
 
-        [Description("an old hot-springs visitor")]
+        [Description(@"an old hot-springs visitor")]
         an_old_hot_springs_visitor = 60004
     }
 
     public enum Abilities : byte
     {
-        [Description("No Ability")]
+        [Description(@"No Ability")]
         NoAbility = 0,
 
-        [Description("Stench")]
+        [Description(@"Stench")]
         Stench = 1,
 
-        [Description("Drizzle")]
+        [Description(@"Drizzle")]
         Drizzle = 2,
 
-        [Description("Speed Boost")]
+        [Description(@"Speed Boost")]
         Speed_Boost = 3,
 
-        [Description("Battle Armor")]
+        [Description(@"Battle Armor")]
         Battle_Armor = 4,
 
-        [Description("Sturdy")]
+        [Description(@"Sturdy")]
         Sturdy = 5,
 
-        [Description("Damp")]
+        [Description(@"Damp")]
         Damp = 6,
 
-        [Description("Limber")]
+        [Description(@"Limber")]
         Limber = 7,
 
-        [Description("Sand Veil")]
+        [Description(@"Sand Veil")]
         Sand_Veil = 8,
 
-        [Description("Static")]
+        [Description(@"Static")]
         Static = 9,
 
-        [Description("Volt Absorb")]
+        [Description(@"Volt Absorb")]
         Volt_Absorb = 10,
 
-        [Description("Water Absorb")]
+        [Description(@"Water Absorb")]
         Water_Absorb = 11,
 
-        [Description("Oblivious")]
+        [Description(@"Oblivious")]
         Oblivious = 12,
 
-        [Description("Cloud Nine")]
+        [Description(@"Cloud Nine")]
         Cloud_Nine = 13,
 
-        [Description("Compound Eyes")]
+        [Description(@"Compound Eyes")]
         Compound_Eyes = 14,
 
-        [Description("Insomnia")]
+        [Description(@"Insomnia")]
         Insomnia = 15,
 
-        [Description("Color Change")]
+        [Description(@"Color Change")]
         Color_Change = 16,
 
-        [Description("Immunity")]
+        [Description(@"Immunity")]
         Immunity = 17,
 
-        [Description("Flash Fire")]
+        [Description(@"Flash Fire")]
         Flash_Fire = 18,
 
-        [Description("Shield Dust")]
+        [Description(@"Shield Dust")]
         Shield_Dust = 19,
 
-        [Description("Own Tempo")]
+        [Description(@"Own Tempo")]
         Own_Tempo = 20,
 
-        [Description("Suction Cups")]
+        [Description(@"Suction Cups")]
         Suction_Cups = 21,
 
-        [Description("Intimidate")]
+        [Description(@"Intimidate")]
         Intimidate = 22,
 
-        [Description("Shadow Tag")]
+        [Description(@"Shadow Tag")]
         Shadow_Tag = 23,
 
-        [Description("Rough Skin")]
+        [Description(@"Rough Skin")]
         Rough_Skin = 24,
 
-        [Description("Wonder Guard")]
+        [Description(@"Wonder Guard")]
         Wonder_Guard = 25,
 
-        [Description("Levitate")]
+        [Description(@"Levitate")]
         Levitate = 26,
 
-        [Description("Effect Spore")]
+        [Description(@"Effect Spore")]
         Effect_Spore = 27,
 
-        [Description("Synchronize")]
+        [Description(@"Synchronize")]
         Synchronize = 28,
 
-        [Description("Clear Body")]
+        [Description(@"Clear Body")]
         Clear_Body = 29,
 
-        [Description("Natural Cure")]
+        [Description(@"Natural Cure")]
         Natural_Cure = 30,
 
-        [Description("Lightning Rod")]
+        [Description(@"Lightning Rod")]
         Lightning_Rod = 31,
 
-        [Description("Serene Grace")]
+        [Description(@"Serene Grace")]
         Serene_Grace = 32,
 
-        [Description("Swift Swim")]
+        [Description(@"Swift Swim")]
         Swift_Swim = 33,
 
-        [Description("Chlorophyll")]
+        [Description(@"Chlorophyll")]
         Chlorophyll = 34,
 
-        [Description("Illuminate")]
+        [Description(@"Illuminate")]
         Illuminate = 35,
 
-        [Description("Trace")]
+        [Description(@"Trace")]
         Trace = 36,
 
-        [Description("Huge Power")]
+        [Description(@"Huge Power")]
         Huge_Power = 37,
 
-        [Description("Poison Point")]
+        [Description(@"Poison Point")]
         Poison_Point = 38,
 
-        [Description("Inner Focus")]
+        [Description(@"Inner Focus")]
         Inner_Focus = 39,
 
-        [Description("Magma Armor")]
+        [Description(@"Magma Armor")]
         Magma_Armor = 40,
 
-        [Description("Water Veil")]
+        [Description(@"Water Veil")]
         Water_Veil = 41,
 
-        [Description("Magnet Pull")]
+        [Description(@"Magnet Pull")]
         Magnet_Pull = 42,
 
-        [Description("Soundproof")]
+        [Description(@"Soundproof")]
         Soundproof = 43,
 
-        [Description("Rain Dish")]
+        [Description(@"Rain Dish")]
         Rain_Dish = 44,
 
-        [Description("Sand Stream")]
+        [Description(@"Sand Stream")]
         Sand_Stream = 45,
 
-        [Description("Pressure")]
+        [Description(@"Pressure")]
         Pressure = 46,
 
-        [Description("Thick Fat")]
+        [Description(@"Thick Fat")]
         Thick_Fat = 47,
 
-        [Description("Early Bird")]
+        [Description(@"Early Bird")]
         Early_Bird = 48,
 
-        [Description("Flame Body")]
+        [Description(@"Flame Body")]
         Flame_Body = 49,
 
-        [Description("Run Away")]
+        [Description(@"Run Away")]
         Run_Away = 50,
 
-        [Description("Keen Eye")]
+        [Description(@"Keen Eye")]
         Keen_Eye = 51,
 
-        [Description("Hyper Cutter")]
+        [Description(@"Hyper Cutter")]
         Hyper_Cutter = 52,
 
-        [Description("Pickup")]
+        [Description(@"Pickup")]
         Pickup = 53,
 
-        [Description("Truant")]
+        [Description(@"Truant")]
         Truant = 54,
 
-        [Description("Hustle")]
+        [Description(@"Hustle")]
         Hustle = 55,
 
-        [Description("Cute Charm")]
+        [Description(@"Cute Charm")]
         Cute_Charm = 56,
 
-        [Description("Plus")]
+        [Description(@"Plus")]
         Plus = 57,
 
-        [Description("Minus")]
+        [Description(@"Minus")]
         Minus = 58,
 
-        [Description("Forecast")]
+        [Description(@"Forecast")]
         Forecast = 59,
 
-        [Description("Sticky Hold")]
+        [Description(@"Sticky Hold")]
         Sticky_Hold = 60,
 
-        [Description("Shed Skin")]
+        [Description(@"Shed Skin")]
         Shed_Skin = 61,
 
-        [Description("Guts")]
+        [Description(@"Guts")]
         Guts = 62,
 
-        [Description("Marvel Scale")]
+        [Description(@"Marvel Scale")]
         Marvel_Scale = 63,
 
-        [Description("Liquid Ooze")]
+        [Description(@"Liquid Ooze")]
         Liquid_Ooze = 64,
 
-        [Description("Overgrow")]
+        [Description(@"Overgrow")]
         Overgrow = 65,
 
-        [Description("Blaze")]
+        [Description(@"Blaze")]
         Blaze = 66,
 
-        [Description("Torrent")]
+        [Description(@"Torrent")]
         Torrent = 67,
 
-        [Description("Swarm")]
+        [Description(@"Swarm")]
         Swarm = 68,
 
-        [Description("Rock Head")]
+        [Description(@"Rock Head")]
         Rock_Head = 69,
 
-        [Description("Drought")]
+        [Description(@"Drought")]
         Drought = 70,
 
-        [Description("Arena Trap")]
+        [Description(@"Arena Trap")]
         Arena_Trap = 71,
 
-        [Description("Vital Spirit")]
+        [Description(@"Vital Spirit")]
         Vital_Spirit = 72,
 
-        [Description("White Smoke")]
+        [Description(@"White Smoke")]
         White_Smoke = 73,
 
-        [Description("Pure Power")]
+        [Description(@"Pure Power")]
         Pure_Power = 74,
 
-        [Description("Shell Armor")]
+        [Description(@"Shell Armor")]
         Shell_Armor = 75,
 
-        [Description("Air Lock")]
+        [Description(@"Air Lock")]
         Air_Lock = 76,
 
-        [Description("Tangled Feet")]
+        [Description(@"Tangled Feet")]
         Tangled_Feet = 77,
 
-        [Description("Motor Drive")]
+        [Description(@"Motor Drive")]
         Motor_Drive = 78,
 
-        [Description("Rivalry")]
+        [Description(@"Rivalry")]
         Rivalry = 79,
 
-        [Description("Steadfast")]
+        [Description(@"Steadfast")]
         Steadfast = 80,
 
-        [Description("Snow Cloak")]
+        [Description(@"Snow Cloak")]
         Snow_Cloak = 81,
 
-        [Description("Gluttony")]
+        [Description(@"Gluttony")]
         Gluttony = 82,
 
-        [Description("Anger Point")]
+        [Description(@"Anger Point")]
         Anger_Point = 83,
 
-        [Description("Unburden")]
+        [Description(@"Unburden")]
         Unburden = 84,
 
-        [Description("Heatproof")]
+        [Description(@"Heatproof")]
         Heatproof = 85,
 
-        [Description("Simple")]
+        [Description(@"Simple")]
         Simple = 86,
 
-        [Description("Dry Skin")]
+        [Description(@"Dry Skin")]
         Dry_Skin = 87,
 
-        [Description("Download")]
+        [Description(@"Download")]
         Download = 88,
 
-        [Description("Iron Fist")]
+        [Description(@"Iron Fist")]
         Iron_Fist = 89,
 
-        [Description("Poison Heal")]
+        [Description(@"Poison Heal")]
         Poison_Heal = 90,
 
-        [Description("Adaptability")]
+        [Description(@"Adaptability")]
         Adaptability = 91,
 
-        [Description("Skill Link")]
+        [Description(@"Skill Link")]
         Skill_Link = 92,
 
-        [Description("Hydration")]
+        [Description(@"Hydration")]
         Hydration = 93,
 
-        [Description("Solar Power")]
+        [Description(@"Solar Power")]
         Solar_Power = 94,
 
-        [Description("Quick Feet")]
+        [Description(@"Quick Feet")]
         Quick_Feet = 95,
 
-        [Description("Normalize")]
+        [Description(@"Normalize")]
         Normalize = 96,
 
-        [Description("Sniper")]
+        [Description(@"Sniper")]
         Sniper = 97,
 
-        [Description("Magic Guard")]
+        [Description(@"Magic Guard")]
         Magic_Guard = 98,
 
-        [Description("No Guard")]
+        [Description(@"No Guard")]
         No_Guard = 99,
 
-        [Description("Stall")]
+        [Description(@"Stall")]
         Stall = 100,
 
-        [Description("Technician")]
+        [Description(@"Technician")]
         Technician = 101,
 
-        [Description("Leaf Guard")]
+        [Description(@"Leaf Guard")]
         Leaf_Guard = 102,
 
-        [Description("Klutz")]
+        [Description(@"Klutz")]
         Klutz = 103,
 
-        [Description("Mold Breaker")]
+        [Description(@"Mold Breaker")]
         Mold_Breaker = 104,
 
-        [Description("Super Luck")]
+        [Description(@"Super Luck")]
         Super_Luck = 105,
 
-        [Description("Aftermath")]
+        [Description(@"Aftermath")]
         Aftermath = 106,
 
-        [Description("Anticipation")]
+        [Description(@"Anticipation")]
         Anticipation = 107,
 
-        [Description("Forewarn")]
+        [Description(@"Forewarn")]
         Forewarn = 108,
 
-        [Description("Unaware")]
+        [Description(@"Unaware")]
         Unaware = 109,
 
-        [Description("Tinted Lens")]
+        [Description(@"Tinted Lens")]
         Tinted_Lens = 110,
 
-        [Description("Filter")]
+        [Description(@"Filter")]
         Filter = 111,
 
-        [Description("Slow Start")]
+        [Description(@"Slow Start")]
         Slow_Start = 112,
 
-        [Description("Scrappy")]
+        [Description(@"Scrappy")]
         Scrappy = 113,
 
-        [Description("Storm Drain")]
+        [Description(@"Storm Drain")]
         Storm_Drain = 114,
 
-        [Description("Ice Body")]
+        [Description(@"Ice Body")]
         Ice_Body = 115,
 
-        [Description("Solid Rock")]
+        [Description(@"Solid Rock")]
         Solid_Rock = 116,
 
-        [Description("Snow Warning")]
+        [Description(@"Snow Warning")]
         Snow_Warning = 117,
 
-        [Description("Honey Gather")]
+        [Description(@"Honey Gather")]
         Honey_Gather = 118,
 
-        [Description("Frisk")]
+        [Description(@"Frisk")]
         Frisk = 119,
 
-        [Description("Reckless")]
+        [Description(@"Reckless")]
         Reckless = 120,
 
-        [Description("Multitype")]
+        [Description(@"Multitype")]
         Multitype = 121,
 
-        [Description("Flower Gift")]
+        [Description(@"Flower Gift")]
         Flower_Gift = 122,
 
-        [Description("Bad Dreams")]
+        [Description(@"Bad Dreams")]
         Bad_Dreams = 123,
 
-        [Description("Pickpocket")]
+        [Description(@"Pickpocket")]
         Pickpocket = 124,
 
-        [Description("Sheer Force")]
+        [Description(@"Sheer Force")]
         Sheer_Force = 125,
 
-        [Description("Contrary")]
+        [Description(@"Contrary")]
         Contrary = 126,
 
-        [Description("Unnerve")]
+        [Description(@"Unnerve")]
         Unnerve = 127,
 
-        [Description("Defiant")]
+        [Description(@"Defiant")]
         Defiant = 128,
 
-        [Description("Defeatist")]
+        [Description(@"Defeatist")]
         Defeatist = 129,
 
-        [Description("Cursed Body")]
+        [Description(@"Cursed Body")]
         Cursed_Body = 130,
 
-        [Description("Healer")]
+        [Description(@"Healer")]
         Healer = 131,
 
-        [Description("Friend Guard")]
+        [Description(@"Friend Guard")]
         Friend_Guard = 132,
 
-        [Description("Weak Armor")]
+        [Description(@"Weak Armor")]
         Weak_Armor = 133,
 
-        [Description("Heavy Metal")]
+        [Description(@"Heavy Metal")]
         Heavy_Metal = 134,
 
-        [Description("Light Metal")]
+        [Description(@"Light Metal")]
         Light_Metal = 135,
 
-        [Description("Multiscale")]
+        [Description(@"Multiscale")]
         Multiscale = 136,
 
-        [Description("Toxic Boost")]
+        [Description(@"Toxic Boost")]
         Toxic_Boost = 137,
 
-        [Description("Flare Boost")]
+        [Description(@"Flare Boost")]
         Flare_Boost = 138,
 
-        [Description("Harvest")]
+        [Description(@"Harvest")]
         Harvest = 139,
 
-        [Description("Telepathy")]
+        [Description(@"Telepathy")]
         Telepathy = 140,
 
-        [Description("Moody")]
+        [Description(@"Moody")]
         Moody = 141,
 
-        [Description("Overcoat")]
+        [Description(@"Overcoat")]
         Overcoat = 142,
 
-        [Description("Poison Touch")]
+        [Description(@"Poison Touch")]
         Poison_Touch = 143,
 
-        [Description("Regenerator")]
+        [Description(@"Regenerator")]
         Regenerator = 144,
 
-        [Description("Big Pecks")]
+        [Description(@"Big Pecks")]
         Big_Pecks = 145,
 
-        [Description("Sand Rush")]
+        [Description(@"Sand Rush")]
         Sand_Rush = 146,
 
-        [Description("Wonder Skin")]
+        [Description(@"Wonder Skin")]
         Wonder_Skin = 147,
 
-        [Description("Analytic")]
+        [Description(@"Analytic")]
         Analytic = 148,
 
-        [Description("Illusion")]
+        [Description(@"Illusion")]
         Illusion = 149,
 
-        [Description("Imposter")]
+        [Description(@"Imposter")]
         Imposter = 150,
 
-        [Description("Infiltrator")]
+        [Description(@"Infiltrator")]
         Infiltrator = 151,
 
-        [Description("Mummy")]
+        [Description(@"Mummy")]
         Mummy = 152,
 
-        [Description("Moxie")]
+        [Description(@"Moxie")]
         Moxie = 153,
 
-        [Description("Justified")]
+        [Description(@"Justified")]
         Justified = 154,
 
-        [Description("Rattled")]
+        [Description(@"Rattled")]
         Rattled = 155,
 
-        [Description("Magic Bounce")]
+        [Description(@"Magic Bounce")]
         Magic_Bounce = 156,
 
-        [Description("Sap Sipper")]
+        [Description(@"Sap Sipper")]
         Sap_Sipper = 157,
 
-        [Description("Prankster")]
+        [Description(@"Prankster")]
         Prankster = 158,
 
-        [Description("Sand Force")]
+        [Description(@"Sand Force")]
         Sand_Force = 159,
 
-        [Description("Iron Barbs")]
+        [Description(@"Iron Barbs")]
         Iron_Barbs = 160,
 
-        [Description("Zen Mode")]
+        [Description(@"Zen Mode")]
         Zen_Mode = 161,
 
-        [Description("Victory Star")]
+        [Description(@"Victory Star")]
         Victory_Star = 162,
 
-        [Description("Turboblaze")]
+        [Description(@"Turboblaze")]
         Turboblaze = 163,
 
-        [Description("Teravolt")]
+        [Description(@"Teravolt")]
         Teravolt = 164,
 
-        [Description("Aroma Veil")]
+        [Description(@"Aroma Veil")]
         Aroma_Veil = 165,
 
-        [Description("Flower Veil")]
+        [Description(@"Flower Veil")]
         Flower_Veil = 166,
 
-        [Description("Cheek Pouch")]
+        [Description(@"Cheek Pouch")]
         Cheek_Pouch = 167,
 
-        [Description("Protean")]
+        [Description(@"Protean")]
         Protean = 168,
 
-        [Description("Fur Coat")]
+        [Description(@"Fur Coat")]
         Fur_Coat = 169,
 
-        [Description("Magician")]
+        [Description(@"Magician")]
         Magician = 170,
 
-        [Description("Bulletproof")]
+        [Description(@"Bulletproof")]
         Bulletproof = 171,
 
-        [Description("Competitive")]
+        [Description(@"Competitive")]
         Competitive = 172,
 
-        [Description("Strong Jaw")]
+        [Description(@"Strong Jaw")]
         Strong_Jaw = 173,
 
-        [Description("Refrigerate")]
+        [Description(@"Refrigerate")]
         Refrigerate = 174,
 
-        [Description("Sweet Veil")]
+        [Description(@"Sweet Veil")]
         Sweet_Veil = 175,
 
-        [Description("Stance Change")]
+        [Description(@"Stance Change")]
         Stance_Change = 176,
 
-        [Description("Gale Wings")]
+        [Description(@"Gale Wings")]
         Gale_Wings = 177,
 
-        [Description("Mega Launcher")]
+        [Description(@"Mega Launcher")]
         Mega_Launcher = 178,
 
-        [Description("Grass Pelt")]
+        [Description(@"Grass Pelt")]
         Grass_Pelt = 179,
 
-        [Description("Symbiosis")]
+        [Description(@"Symbiosis")]
         Symbiosis = 180,
 
-        [Description("Tough Claws")]
+        [Description(@"Tough Claws")]
         Tough_Claws = 181,
 
-        [Description("Pixilate")]
+        [Description(@"Pixilate")]
         Pixilate = 182,
 
-        [Description("Gooey")]
+        [Description(@"Gooey")]
         Gooey = 183,
 
-        [Description("Aerilate")]
+        [Description(@"Aerilate")]
         Aerilate = 184,
 
-        [Description("Parental Bond")]
+        [Description(@"Parental Bond")]
         Parental_Bond = 185,
 
-        [Description("Dark Aura")]
+        [Description(@"Dark Aura")]
         Dark_Aura = 186,
 
-        [Description("Fairy Aura")]
+        [Description(@"Fairy Aura")]
         Fairy_Aura = 187,
 
-        [Description("Aura Break")]
+        [Description(@"Aura Break")]
         Aura_Break = 188,
 
-        [Description("Primordial Sea")]
+        [Description(@"Primordial Sea")]
         Primordial_Sea = 189,
 
-        [Description("Desolate Land")]
+        [Description(@"Desolate Land")]
         Desolate_Land = 190,
 
-        [Description("Delta Stream")]
+        [Description(@"Delta Stream")]
         Delta_Stream = 191
     }
 
     public enum Natures : byte
     {
-        [Description("Hardy")]
+        [Description(@"Hardy")]
         Hardy = 0,
 
-        [Description("Lonely")]
+        [Description(@"Lonely")]
         Lonely = 1,
 
-        [Description("Brave")]
+        [Description(@"Brave")]
         Brave = 2,
 
-        [Description("Adamant")]
+        [Description(@"Adamant")]
         Adamant = 3,
 
-        [Description("Naughty")]
+        [Description(@"Naughty")]
         Naughty = 4,
 
-        [Description("Bold")]
+        [Description(@"Bold")]
         Bold = 5,
 
-        [Description("Docile")]
+        [Description(@"Docile")]
         Docile = 6,
 
-        [Description("Relaxed")]
+        [Description(@"Relaxed")]
         Relaxed = 7,
 
-        [Description("Impish")]
+        [Description(@"Impish")]
         Impish = 8,
 
-        [Description("Lax")]
+        [Description(@"Lax")]
         Lax = 9,
 
-        [Description("Timid")]
+        [Description(@"Timid")]
         Timid = 10,
 
-        [Description("Hasty")]
+        [Description(@"Hasty")]
         Hasty = 11,
 
-        [Description("Serious")]
+        [Description(@"Serious")]
         Serious = 12,
 
-        [Description("Jolly")]
+        [Description(@"Jolly")]
         Jolly = 13,
 
-        [Description("Naive")]
+        [Description(@"Naive")]
         Naive = 14,
 
-        [Description("Modest")]
+        [Description(@"Modest")]
         Modest = 15,
 
-        [Description("Mild")]
+        [Description(@"Mild")]
         Mild = 16,
 
-        [Description("Quiet")]
+        [Description(@"Quiet")]
         Quiet = 17,
 
-        [Description("Bashful")]
+        [Description(@"Bashful")]
         Bashful = 18,
 
-        [Description("Rash")]
+        [Description(@"Rash")]
         Rash = 19,
 
-        [Description("Calm")]
+        [Description(@"Calm")]
         Calm = 20,
 
-        [Description("Gentle")]
+        [Description(@"Gentle")]
         Gentle = 21,
 
-        [Description("Sassy")]
+        [Description(@"Sassy")]
         Sassy = 22,
 
-        [Description("Careful")]
+        [Description(@"Careful")]
         Careful = 23,
 
-        [Description("Quirky")]
+        [Description(@"Quirky")]
         Quirky = 24
     }
 
@@ -8089,58 +8089,58 @@ namespace PKMDS_CS
 
     public enum Types
     {
-        [Description("Normal")]
+        [Description(@"Normal")]
         Normal,
 
-        [Description("Fighting")]
+        [Description(@"Fighting")]
         Fighting,
 
-        [Description("Flying")]
+        [Description(@"Flying")]
         Flying,
 
-        [Description("Poison")]
+        [Description(@"Poison")]
         Poison,
 
-        [Description("Ground")]
+        [Description(@"Ground")]
         Ground,
 
-        [Description("Rock")]
+        [Description(@"Rock")]
         Rock,
 
-        [Description("Bug")]
+        [Description(@"Bug")]
         Bug,
 
-        [Description("Ghost")]
+        [Description(@"Ghost")]
         Ghost,
 
-        [Description("Steel")]
+        [Description(@"Steel")]
         Steel,
 
-        [Description("Fire")]
+        [Description(@"Fire")]
         Fire,
 
-        [Description("Water")]
+        [Description(@"Water")]
         Water,
 
-        [Description("Grass")]
+        [Description(@"Grass")]
         Grass,
 
-        [Description("Electric")]
+        [Description(@"Electric")]
         Electric,
 
-        [Description("Psychic")]
+        [Description(@"Psychic")]
         Psychic,
 
-        [Description("Ice")]
+        [Description(@"Ice")]
         Ice,
 
-        [Description("Dragon")]
+        [Description(@"Dragon")]
         Dragon,
 
-        [Description("Dark")]
+        [Description(@"Dark")]
         Dark,
 
-        [Description("Fairy")]
+        [Description(@"Fairy")]
         Fairy
     }
 
@@ -8154,262 +8154,262 @@ namespace PKMDS_CS
     [Flags]
     public enum Ribbons_0x30
     {
-        [Description("Kalos Champ Ribbon")]
+        [Description(@"Kalos Champ Ribbon")]
         Kalos_Champ_Ribbon = 0x01,
 
-        [Description("Champion Ribbon")]
+        [Description(@"Champion Ribbon")]
         Champion_Ribbon = 0x02,
 
-        [Description("Sinnoh Champ Ribbon")]
+        [Description(@"Sinnoh Champ Ribbon")]
         Sinnoh_Champ_Ribbon = 0x04,
 
-        [Description("Best Friends Ribbon")]
+        [Description(@"Best Friends Ribbon")]
         Best_Friends_Ribbon = 0x08,
 
-        [Description("Training Ribbon")]
+        [Description(@"Training Ribbon")]
         Training_Ribbon = 0x10,
 
-        [Description("Skillful Battler Ribbon")]
+        [Description(@"Skillful Battler Ribbon")]
         Skillful_Battler_Ribbon = 0x20,
 
-        [Description("Expert Battler Ribbon")]
+        [Description(@"Expert Battler Ribbon")]
         Expert_Battler_Ribbon = 0x40,
 
-        [Description("Effort Ribbon")]
+        [Description(@"Effort Ribbon")]
         Effort_Ribbon = 0x80
     }
 
     [Flags]
     public enum Ribbons_0x31
     {
-        [Description("Alert Ribbon")]
+        [Description(@"Alert Ribbon")]
         Alert_Ribbon = 0x01,
 
-        [Description("Shock Ribbon")]
+        [Description(@"Shock Ribbon")]
         Shock_Ribbon = 0x02,
 
-        [Description("Downcast Ribbon")]
+        [Description(@"Downcast Ribbon")]
         Downcast_Ribbon = 0x04,
 
-        [Description("Careless Ribbon")]
+        [Description(@"Careless Ribbon")]
         Careless_Ribbon = 0x08,
 
-        [Description("Relax Ribbon")]
+        [Description(@"Relax Ribbon")]
         Relax_Ribbon = 0x10,
 
-        [Description("Snooze Ribbon")]
+        [Description(@"Snooze Ribbon")]
         Snooze_Ribbon = 0x20,
 
-        [Description("Smile Ribbon")]
+        [Description(@"Smile Ribbon")]
         Smile_Ribbon = 0x40,
 
-        [Description("Gorgeous Ribbon")]
+        [Description(@"Gorgeous Ribbon")]
         Gorgeous_Ribbon = 0x80
     }
 
     [Flags]
     public enum Ribbons_0x32
     {
-        [Description("Royal Ribbon")]
+        [Description(@"Royal Ribbon")]
         Royal_Ribbon = 0x01,
 
-        [Description("Gorgeous Royal Ribbon")]
+        [Description(@"Gorgeous Royal Ribbon")]
         Gorgeous_Royal_Ribbon = 0x02,
 
-        [Description("Artist Ribbon")]
+        [Description(@"Artist Ribbon")]
         Artist_Ribbon = 0x04,
 
-        [Description("Footprint Ribbon")]
+        [Description(@"Footprint Ribbon")]
         Footprint_Ribbon = 0x08,
 
-        [Description("Record Ribbon")]
+        [Description(@"Record Ribbon")]
         Record_Ribbon = 0x10,
 
-        [Description("Legend Ribbon")]
+        [Description(@"Legend Ribbon")]
         Legend_Ribbon = 0x20,
 
-        [Description("Country Ribbon")]
+        [Description(@"Country Ribbon")]
         Country_Ribbon = 0x40,
 
-        [Description("National Ribbon")]
+        [Description(@"National Ribbon")]
         National_Ribbon = 0x80
     }
 
     [Flags]
     public enum Ribbons_0x33
     {
-        [Description("Earth Ribbon")]
+        [Description(@"Earth Ribbon")]
         Earth_Ribbon = 0x01,
 
-        [Description("World Ribbon")]
+        [Description(@"World Ribbon")]
         World_Ribbon = 0x02,
 
-        [Description("Classic Ribbon")]
+        [Description(@"Classic Ribbon")]
         Classic_Ribbon = 0x04,
 
-        [Description("Premier Ribbon")]
+        [Description(@"Premier Ribbon")]
         Premier_Ribbon = 0x08,
 
-        [Description("Event Ribbon")]
+        [Description(@"Event Ribbon")]
         Event_Ribbon = 0x10,
 
-        [Description("Birthday Ribbon")]
+        [Description(@"Birthday Ribbon")]
         Birthday_Ribbon = 0x20,
 
-        [Description("Special Ribbon")]
+        [Description(@"Special Ribbon")]
         Special_Ribbon = 0x40,
 
-        [Description("Souvenir Ribbon")]
+        [Description(@"Souvenir Ribbon")]
         Souvenir_Ribbon = 0x80
     }
 
     [Flags]
     public enum Ribbons_0x34
     {
-        [Description("Wishing Ribbon")]
+        [Description(@"Wishing Ribbon")]
         Wishing_Ribbon = 0x01,
 
-        [Description("Battle Champion Ribbon")]
+        [Description(@"Battle Champion Ribbon")]
         Battle_Champion_Ribbon = 0x02,
 
-        [Description("Regional Champion Ribbon")]
+        [Description(@"Regional Champion Ribbon")]
         Regional_Champion_Ribbon = 0x04,
 
-        [Description("National Champion Ribbon")]
+        [Description(@"National Champion Ribbon")]
         National_Champion_Ribbon = 0x08,
 
-        [Description("World Champion Ribbon")]
+        [Description(@"World Champion Ribbon")]
         World_Champion_Ribbon = 0x10,
 
-        [Description("Hoenn Champion Ribbon")]
+        [Description(@"Hoenn Champion Ribbon")]
         Hoenn_Champion_Ribbon = 0x80
     }
 
     [Flags]
     public enum Ribbons_0x35
     {
-        [Description("Contest Star Ribbon")]
+        [Description(@"Contest Star Ribbon")]
         Contest_Star_Ribbon = 0x01,
 
-        [Description("Coolness Master Ribbon")]
+        [Description(@"Coolness Master Ribbon")]
         Coolness_Master_Ribbon = 0x02,
 
-        [Description("Beauty Master Ribbon")]
+        [Description(@"Beauty Master Ribbon")]
         Beauty_Master_Ribbon = 0x04,
 
-        [Description("Cuteness Master Ribbon")]
+        [Description(@"Cuteness Master Ribbon")]
         Cuteness_Master_Ribbon = 0x08,
 
-        [Description("Cleverness Master Ribbon")]
+        [Description(@"Cleverness Master Ribbon")]
         Cleverness_Master_Ribbon = 0x10,
 
-        [Description("Toughness Master Ribbon")]
+        [Description(@"Toughness Master Ribbon")]
         Toughness_Master_Ribbon = 0x20
     }
 
     [Flags]
     public enum Medals_0x2C
     {
-        [Description("Sp. Atk Level 1")]
+        [Description(@"Sp. Atk Level 1")]
         Sp_Atk_Level_1 = 0x04,
 
-        [Description("HP Level 1")]
+        [Description(@"HP Level 1")]
         HP_Level_1 = 0x08,
 
-        [Description("Atk Level 1")]
+        [Description(@"Atk Level 1")]
         Atk_Level_1 = 0x10,
 
-        [Description("Sp. Def Level 1")]
+        [Description(@"Sp. Def Level 1")]
         Sp_Def_Level_1 = 0x20,
 
-        [Description("Speed Level 1")]
+        [Description(@"Speed Level 1")]
         Speed_Level_1 = 0x40,
 
-        [Description("Def Level 1")]
+        [Description(@"Def Level 1")]
         Def_Level_1 = 0x80
     }
 
     [Flags]
     public enum Medals_0x2D
     {
-        [Description("Sp. Atk Level 2")]
+        [Description(@"Sp. Atk Level 2")]
         Sp_Atk_Level_2 = 0x01,
 
-        [Description("HP Level 2")]
+        [Description(@"HP Level 2")]
         HP_Level_2 = 0x02,
 
-        [Description("Atk Level 2")]
+        [Description(@"Atk Level 2")]
         Atk_Level_2 = 0x04,
 
-        [Description("Sp. Def Level 2")]
+        [Description(@"Sp. Def Level 2")]
         Sp_Def_Level_2 = 0x08,
 
-        [Description("Speed Level 2")]
+        [Description(@"Speed Level 2")]
         Speed_Level_2 = 0x10,
 
-        [Description("Def Level 2")]
+        [Description(@"Def Level 2")]
         Def_Level_2 = 0x20,
 
-        [Description("Sp. Atk Level 3")]
+        [Description(@"Sp. Atk Level 3")]
         Sp_Atk_Level_3 = 0x40,
 
-        [Description("HP Level 3")]
+        [Description(@"HP Level 3")]
         HP_Level_3 = 0x80
     }
 
     [Flags]
     public enum Medals_0x2E
     {
-        [Description("Atk Level 3")]
+        [Description(@"Atk Level 3")]
         Atk_Level_3 = 0x01,
 
-        [Description("Sp. Def Level 3")]
+        [Description(@"Sp. Def Level 3")]
         Sp_Def_Level_3 = 0x02,
 
-        [Description("Speed Level 3")]
+        [Description(@"Speed Level 3")]
         Speed_Level_3 = 0x04,
 
-        [Description("Def Level 3")]
+        [Description(@"Def Level 3")]
         Def_Level_3 = 0x08,
 
-        [Description("The Troubles Keep on Coming?!")]
+        [Description(@"The Troubles Keep on Coming?!")]
         The_Troubles_Keep_on_Coming = 0x10,
 
-        [Description("The Leaf Stone Cup Begins!")]
+        [Description(@"The Leaf Stone Cup Begins!")]
         The_Leaf_Stone_Cup_Begins = 0x20,
 
-        [Description("The Fire Stone Cup Begins!")]
+        [Description(@"The Fire Stone Cup Begins!")]
         The_Fire_Stone_Cup_Begins = 0x40,
 
-        [Description("The Water Stone Cup Begins!")]
+        [Description(@"The Water Stone Cup Begins!")]
         The_Water_Stone_Cup_Begins = 0x80
     }
 
     [Flags]
     public enum Medals_0x2F
     {
-        [Description("Follow Those Fleeing Goals!")]
+        [Description(@"Follow Those Fleeing Goals!")]
         Follow_Those_Fleeing_Goals = 0x01,
 
-        [Description("Watch Out! That's One Tricky Second Half!")]
+        [Description(@"Watch Out! That's One Tricky Second Half!")]
         Watch_Out_Thats_One_Tricky_Second_Half = 0x02,
 
-        [Description("An Opening of Lighting-Quick Attacks!")]
+        [Description(@"An Opening of Lighting-Quick Attacks!")]
         An_Opening_of_Lighting_Quick_Attacks = 0x04,
 
-        [Description("Those Long Shots Are No Long Shot!")]
+        [Description(@"Those Long Shots Are No Long Shot!")]
         Those_Long_Shots_Are_No_Long_Shot = 0x08,
 
-        [Description("Scatterbug Lugs Back!")]
+        [Description(@"Scatterbug Lugs Back!")]
         Scatterbug_Lugs_Back = 0x10,
 
-        [Description("A Barrage of Bitbots!")]
+        [Description(@"A Barrage of Bitbots!")]
         A_Barrage_of_Bitbots = 0x20,
 
-        [Description("Drag Down Hydreigon!")]
+        [Description(@"Drag Down Hydreigon!")]
         Drag_Down_Hydreigon = 0x40,
 
-        [Description("The Battle for the Best: Version X/Y!")]
+        [Description(@"The Battle for the Best: Version X/Y!")]
         The_Battle_for_the_Best_Version_X_Y = 0x80
     }
 
@@ -8584,7 +8584,7 @@ namespace PKMDS_CS
 
         private Moves value;
 
-        [DisplayName("Move")]
+        [DisplayName(@"Move")]
         public Moves Value
         {
             get
@@ -8599,7 +8599,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("Name")]
+        [DisplayName(@"Name")]
         public string Name
         {
             get
@@ -8608,7 +8608,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("Type")]
+        [DisplayName(@"Type")]
         public TypeObject? Type
         {
             get
@@ -8624,7 +8624,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("Type")]
+        [DisplayName(@"Type")]
         public Image TypeImage
         {
             get
@@ -8635,7 +8635,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("Category")]
+        [DisplayName(@"Category")]
         public Image CategoryImage
         {
             get
@@ -8662,7 +8662,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("Power")]
+        [DisplayName(@"Power")]
         public int Power
         {
             get
@@ -8676,7 +8676,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("Accuracy")]
+        [DisplayName(@"Accuracy")]
         public decimal Accuracy
         {
             get
@@ -8690,7 +8690,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("Base PP")]
+        [DisplayName(@"Base PP")]
         public byte BasePP
         {
             get
@@ -8704,13 +8704,13 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("Current PP")]
+        [DisplayName(@"Current PP")]
         public byte CurrentPP { get; set; }
 
-        [DisplayName("PP Ups")]
+        [DisplayName(@"PP Ups")]
         public byte PPUps { get; set; }
 
-        [DisplayName("Max PP")]
+        [DisplayName(@"Max PP")]
         public byte MaxPP
         {
             get
@@ -8719,7 +8719,7 @@ namespace PKMDS_CS
             }
         }
 
-        [DisplayName("Flavor Text")]
+        [DisplayName(@"Flavor Text")]
         public string FlavorText
         {
             get

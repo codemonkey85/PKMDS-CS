@@ -41,7 +41,7 @@ namespace PKMDS_CS
         [MarshalAs(UnmanagedType.U1)]
         private byte currentbox;
 
-        [DisplayName("Current Box")]
+        [DisplayName(@"Current Box")]
         public byte CurrentBox
         {
             get
@@ -95,7 +95,7 @@ namespace PKMDS_CS
         [MarshalAs(UnmanagedType.U1)]
         private byte currentbox;
 
-        [DisplayName("Current Box")]
+        [DisplayName(@"Current Box")]
         public byte CurrentBox
         {
             get
