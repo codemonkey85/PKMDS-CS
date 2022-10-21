@@ -1,113 +1,100 @@
-﻿using System;
-using System.Diagnostics;
-using System.Drawing;
+﻿namespace PKMDS_CS;
 
-namespace PKMDS_CS
+public static class Images
 {
-    public static class Images
+    public static Image GetImageFromResource(string identifier)
     {
-        public static Image GetImageFromResource(string identifier)
+        try
         {
-            try
-            {
-                return (Image)Properties.Resources.ResourceManager.GetObject(identifier);
-            }
-            catch (Exception ex)
-            {
-                Debug.WriteLine("There was an issue in GetImageFromResource: {0}", ex.Message);
-                return null;
-            }
+            return (Image)Properties.Resources.ResourceManager.GetObject(identifier);
+        }
+        catch (Exception ex)
+        {
+            Debug.WriteLine("There was an issue in GetImageFromResource: {0}", ex.Message);
+            return null;
+        }
+    }
+
+    public static Image GetTypeImage(Types type) => GetImageFromResource(string.Format("type_{0}", (int)type));
+
+    public static Image GetMarkingImage(Markings mark, bool marked)
+    {
+        var identifier = string.Format("m_{0}{1}", (int)mark, Convert.ToInt16(marked));
+        return GetImageFromResource(identifier);
+    }
+
+    public static Image GetGenderIcon(Genders gender) => gender switch
+    {
+        Genders.Male => GetImageFromResource("male"),
+        Genders.Female => GetImageFromResource("female"),
+        _ => null,
+    };
+
+    public static Image GetItemImage(ushort item)
+    {
+        if (item == 0)
+        {
+            return null;
         }
 
-        public static Image GetTypeImage(Types type) => GetImageFromResource(string.Format("type_{0}", (int)type));
-
-        public static Image GetMarkingImage(Markings mark, bool marked)
+        try
         {
-            var identifier = string.Format("m_{0}{1}", (int)mark, Convert.ToInt16(marked));
-            return GetImageFromResource(identifier);
+            return
+                GetImageFromResource(
+                    DBTools.GetItemDataTable.Select(string.Format("game_index = {0}", item))[0].ItemArray[
+                        (int)DBTools.ItemDataTableColumns.identifier].ToString().Replace("-", "_"));
         }
-
-        public static Image GetGenderIcon(Genders gender)
+        catch (Exception)
         {
-            switch (gender)
-            {
-                case Genders.Male:
-                    return GetImageFromResource("male");
-
-                case Genders.Female:
-                    return GetImageFromResource("female");
-
-                default:
-                    return null;
-            }
+            return null;
         }
+    }
 
-        public static Image GetItemImage(ushort item)
+    public static Image GetPokemonImage(ushort species, byte formid = 0, Genders gender = Genders.Male)
+    {
+        if (species == (ushort)Species.Arceus)
         {
-            if (item == 0)
-            {
-                return null;
-            }
-
-            try
-            {
-                return
-                    GetImageFromResource(
-                        DBTools.GetItemDataTable.Select(string.Format("game_index = {0}", item))[0].ItemArray[
-                            (int)DBTools.ItemDataTableColumns.identifier].ToString().Replace("-", "_"));
-            }
-            catch (Exception)
-            {
-                return null;
-            }
+            return GetImageFromResource(string.Format("_{0}", species));
         }
-
-        public static Image GetPokemonImage(ushort species, byte formid = 0, Genders gender = Genders.Male)
+        var formidstr = string.Empty;
+        if (formid != 0)
         {
-            if (species == (ushort)Species.Arceus)
+            var results = DBTools.GetPokemonDataTable.Select(string.Format("species_id = {0} and form_id = {1}", species, formid));
+            if (results.Length > 0)
             {
-                return GetImageFromResource(string.Format("_{0}", species));
+                formidstr = string.Format("_{0}",
+                    results[0].ItemArray[(int)DBTools.PokemonDataTableColumns.form_identifier]
+                    );
             }
-            var formidstr = string.Empty;
-            if (formid != 0)
+            else
             {
-                var results = DBTools.GetPokemonDataTable.Select(string.Format("species_id = {0} and form_id = {1}", species, formid));
+                var row = 0;
+                if (species == (ushort)Species.Unown & formid == 27) { formid--; row = 1; }
+                results = DBTools.GetPokemonDataTable.Select(string.Format("species_id = {0} and form_id = {1}", species, formid));
                 if (results.Length > 0)
                 {
                     formidstr = string.Format("_{0}",
-                        results[0].ItemArray[(int)DBTools.PokemonDataTableColumns.form_identifier]
+                        results[row].ItemArray[(int)DBTools.PokemonDataTableColumns.form_identifier]
                         );
                 }
-                else
-                {
-                    var row = 0;
-                    if (species == (ushort)Species.Unown & formid == 27) { formid--; row = 1; }
-                    results = DBTools.GetPokemonDataTable.Select(string.Format("species_id = {0} and form_id = {1}", species, formid));
-                    if (results.Length > 0)
-                    {
-                        formidstr = string.Format("_{0}",
-                            results[row].ItemArray[(int)DBTools.PokemonDataTableColumns.form_identifier]
-                            );
-                    }
-                }
             }
-            if (gender != Genders.Female)
-            {
-                return GetImageFromResource(string.Format("_{0}{1}", species, formidstr.Replace("-", "_")));
-            }
-
-            if (
-                species == (ushort)Species.Unfezant ||
-                species == (ushort)Species.Frillish ||
-                species == (ushort)Species.Jellicent ||
-                species == (ushort)Species.Pyroar ||
-                species == (ushort)Species.Meowstic
-                )
-            {
-                formidstr = "_f";
-            }
-
+        }
+        if (gender != Genders.Female)
+        {
             return GetImageFromResource(string.Format("_{0}{1}", species, formidstr.Replace("-", "_")));
         }
+
+        if (
+            species is ((ushort)Species.Unfezant) or
+            ((ushort)Species.Frillish) or
+            ((ushort)Species.Jellicent) or
+            ((ushort)Species.Pyroar) or
+            ((ushort)Species.Meowstic)
+            )
+        {
+            formidstr = "_f";
+        }
+
+        return GetImageFromResource(string.Format("_{0}{1}", species, formidstr.Replace("-", "_")));
     }
 }
