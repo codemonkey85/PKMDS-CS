@@ -57,272 +57,272 @@ public class Pokemon : IEquatable<Pokemon>, IComparable<Pokemon>
     internal uint EncryptionKey
     {
         get => BitConverter.ToUInt32(data, 0x00);
-        set => Array.Copy(BitConverter.GetBytes(value), 0, data, 0x00, 4);
+        set => Array.Copy(Extensions.GetBytes(value), 0, data, 0x00, 4);
     }
 
     internal ushort SanityPlaceholder
     {
         get => BitConverter.ToUInt16(data, 0x04);
-        set => Array.Copy(BitConverter.GetBytes(value), 0, data, 0x04, 2);
+        set => Array.Copy(Extensions.GetBytes(value), 0, data, 0x04, 2);
     }
 
     internal ushort Checksum
     {
         get => BitConverter.ToUInt16(data, 0x06);
-        set => Array.Copy(BitConverter.GetBytes(value), 0, data, 0x06, 2);
+        set => Array.Copy(Extensions.GetBytes(value), 0, data, 0x06, 2);
     }
 
     private ushort species
     {
         get => BitConverter.ToUInt16(data, 0x08);
-        set => Array.Copy(BitConverter.GetBytes(value), 0, data, 0x08, 2);
+        set => Array.Copy(Extensions.GetBytes(value), 0, data, 0x08, 2);
     }
 
     private ushort helditem
     {
         get => BitConverter.ToUInt16(data, 0x0A);
-        set => Array.Copy(BitConverter.GetBytes(value), 0, data, 0x0A, 2);
+        set => Array.Copy(Extensions.GetBytes(value), 0, data, 0x0A, 2);
     }
 
     [DisplayName(@"Trainer ID")]
     public ushort OTID
     {
         get => BitConverter.ToUInt16(data, 0x0C);
-        set => Array.Copy(BitConverter.GetBytes(value), 0, data, 0x0C, 2);
+        set => Array.Copy(Extensions.GetBytes(value), 0, data, 0x0C, 2);
     }
 
     [DisplayName(@"Trainer Secret ID")]
     public ushort OTSecretID
     {
         get => BitConverter.ToUInt16(data, 0x0E);
-        set => Array.Copy(BitConverter.GetBytes(value), 0, data, 0x0E, 2);
+        set => Array.Copy(Extensions.GetBytes(value), 0, data, 0x0E, 2);
     }
 
     private uint exp
     {
         get => BitConverter.ToUInt32(data, 0x10);
-        set => Array.Copy(BitConverter.GetBytes(value), 0, data, 0x10, 4);
+        set => Array.Copy(Extensions.GetBytes(value), 0, data, 0x10, 4);
     }
 
     private byte ability
     {
         get => data[0x14];
-        set => Array.Copy(BitConverter.GetBytes(value), 0, data, 0x14, 1);
+        set => Array.Copy(Extensions.GetBytes(value), 0, data, 0x14, 1);
     }
 
     [DisplayName(@"Ability Number")]
     public byte AbilityNumber
     {
         get => data[0x15];
-        set => Array.Copy(BitConverter.GetBytes(value), 0, data, 0x15, 1);
+        set => Array.Copy(Extensions.GetBytes(value), 0, data, 0x15, 1);
     }
 
     [DisplayName(@"[Hits Remaining] on [Training Bag]")]
     public ushort HitsRemainingonTrainingBag
     {
         get => BitConverter.ToUInt16(data, 0x16);
-        set => Array.Copy(BitConverter.GetBytes(value), 0, data, 0x16, 2);
+        set => Array.Copy(Extensions.GetBytes(value), 0, data, 0x16, 2);
     }
 
     [DisplayName(@"Personality Value")]
     public uint PID
     {
         get => BitConverter.ToUInt32(data, 0x18);
-        set => Array.Copy(BitConverter.GetBytes(value), 0, data, 0x18, 4);
+        set => Array.Copy(Extensions.GetBytes(value), 0, data, 0x18, 4);
     }
 
     private byte nature
     {
         get => data[0x1C];
-        set => Array.Copy(BitConverter.GetBytes(value), 0, data, 0x1C, 1);
+        set => Array.Copy(Extensions.GetBytes(value), 0, data, 0x1C, 1);
     }
 
     private byte forms
     {
         get => data[0x1D];
-        set => Array.Copy(BitConverter.GetBytes(value), 0, data, 0x1D, 1);
+        set => Array.Copy(Extensions.GetBytes(value), 0, data, 0x1D, 1);
     }
 
     [DisplayName(@"HP Effort Value")]
     public byte HPEffortValue
     {
         get => data[0x1E];
-        set => Array.Copy(BitConverter.GetBytes(value), 0, data, 0x1E, 1);
+        set => Array.Copy(Extensions.GetBytes(value), 0, data, 0x1E, 1);
     }
 
     [DisplayName(@"Attack Effort Value")]
     public byte AttackEffortValue
     {
         get => data[0x1F];
-        set => Array.Copy(BitConverter.GetBytes(value), 0, data, 0x1F, 1);
+        set => Array.Copy(Extensions.GetBytes(value), 0, data, 0x1F, 1);
     }
 
     [DisplayName(@"Defense Effort Value")]
     public byte DefenseEffortValue
     {
         get => data[0x20];
-        set => Array.Copy(BitConverter.GetBytes(value), 0, data, 0x20, 1);
+        set => Array.Copy(Extensions.GetBytes(value), 0, data, 0x20, 1);
     }
 
     [DisplayName(@"Speed Effort Value")]
     public byte SpeedEffortValue
     {
         get => data[0x21];
-        set => Array.Copy(BitConverter.GetBytes(value), 0, data, 0x21, 1);
+        set => Array.Copy(Extensions.GetBytes(value), 0, data, 0x21, 1);
     }
 
     [DisplayName(@"SP Attack Effort Value")]
     public byte SpAttackEffortValue
     {
         get => data[0x22];
-        set => Array.Copy(BitConverter.GetBytes(value), 0, data, 0x22, 1);
+        set => Array.Copy(Extensions.GetBytes(value), 0, data, 0x22, 1);
     }
 
     [DisplayName(@"SP Defense Effort Value")]
     public byte SpDefenseEffortValue
     {
         get => data[0x23];
-        set => Array.Copy(BitConverter.GetBytes(value), 0, data, 0x23, 1);
+        set => Array.Copy(Extensions.GetBytes(value), 0, data, 0x23, 1);
     }
 
     [DisplayName(@"Contest Stat: Cool")]
     public byte ContestStatCool
     {
         get => data[0x24];
-        set => Array.Copy(BitConverter.GetBytes(value), 0, data, 0x24, 1);
+        set => Array.Copy(Extensions.GetBytes(value), 0, data, 0x24, 1);
     }
 
     [DisplayName(@"Contest Stat: Beauty")]
     public byte ContestStatBeauty
     {
         get => data[0x25];
-        set => Array.Copy(BitConverter.GetBytes(value), 0, data, 0x25, 1);
+        set => Array.Copy(Extensions.GetBytes(value), 0, data, 0x25, 1);
     }
 
     [DisplayName(@"Contest Stat: Cute")]
     public byte ContestStatCute
     {
         get => data[0x26];
-        set => Array.Copy(BitConverter.GetBytes(value), 0, data, 0x26, 1);
+        set => Array.Copy(Extensions.GetBytes(value), 0, data, 0x26, 1);
     }
 
     [DisplayName(@"Contest Stat: Smart")]
     public byte ContestStatSmart
     {
         get => data[0x27];
-        set => Array.Copy(BitConverter.GetBytes(value), 0, data, 0x27, 1);
+        set => Array.Copy(Extensions.GetBytes(value), 0, data, 0x27, 1);
     }
 
     [DisplayName(@"Contest Stat: Tough")]
     public byte ContestStatTough
     {
         get => data[0x28];
-        set => Array.Copy(BitConverter.GetBytes(value), 0, data, 0x28, 1);
+        set => Array.Copy(Extensions.GetBytes(value), 0, data, 0x28, 1);
     }
 
     [DisplayName(@"Contest Stat: Sheen")]
     public byte ContestStatSheen
     {
         get => data[0x29];
-        set => Array.Copy(BitConverter.GetBytes(value), 0, data, 0x29, 1);
+        set => Array.Copy(Extensions.GetBytes(value), 0, data, 0x29, 1);
     }
 
     private byte markings
     {
         get => data[0x2A];
-        set => Array.Copy(BitConverter.GetBytes(value), 0, data, 0x2A, 1);
+        set => Array.Copy(Extensions.GetBytes(value), 0, data, 0x2A, 1);
     }
 
     [DisplayName(@"Pokérus")]
     public byte pokerus
     {
         get => data[0x2B];
-        set => Array.Copy(BitConverter.GetBytes(value), 0, data, 0x2B, 1);
+        set => Array.Copy(Extensions.GetBytes(value), 0, data, 0x2B, 1);
     }
 
     private uint secretsupertrainingflag
     {
         get => BitConverter.ToUInt32(data, 0x2C);
-        set => Array.Copy(BitConverter.GetBytes(value), 0, data, 0x2C, 4);
+        set => Array.Copy(Extensions.GetBytes(value), 0, data, 0x2C, 4);
     }
 
     //[DisplayName(@"Ribbons")] public byte[6] Ribbons { get {return ; } set {; } }
-    //[DisplayName(@"Unused")] public ushort Unused { get {return BitConverter.ToUInt16(data, 0x36); } set {Array.Copy(BitConverter.GetBytes(value),0,data,0x36,2); } }
+    //[DisplayName(@"Unused")] public ushort Unused { get {return BitConverter.ToUInt16(data, 0x36); } set {Array.Copy(Extensions.GetBytes(value),0,data,0x36,2); } }
     [DisplayName(@"Contest Memory Ribbon [Count]")]
     public byte ContestMemoryRibbonCount
     {
         get => data[0x38];
-        set => Array.Copy(BitConverter.GetBytes(value), 0, data, 0x38, 1);
+        set => Array.Copy(Extensions.GetBytes(value), 0, data, 0x38, 1);
     }
 
     [DisplayName(@"Battle Memory Ribbon [Count]")]
     public byte BattleMemoryRibbonCount
     {
         get => data[0x39];
-        set => Array.Copy(BitConverter.GetBytes(value), 0, data, 0x39, 1);
+        set => Array.Copy(Extensions.GetBytes(value), 0, data, 0x39, 1);
     }
 
     [DisplayName(@"Distribution Super Training Flags")]
     public byte DistributionSuperTrainingFlags
     {
         get => data[0x3A];
-        set => Array.Copy(BitConverter.GetBytes(value), 0, data, 0x3A, 1);
+        set => Array.Copy(Extensions.GetBytes(value), 0, data, 0x3A, 1);
     }
 
     [DisplayName(@"Move 1 ID")]
     public ushort move1id
     {
         get => BitConverter.ToUInt16(data, 0x5A);
-        set => Array.Copy(BitConverter.GetBytes(value), 0, data, 0x5A, 2);
+        set => Array.Copy(Extensions.GetBytes(value), 0, data, 0x5A, 2);
     }
 
     [DisplayName(@"Move 2 ID")]
     public ushort move2id
     {
         get => BitConverter.ToUInt16(data, 0x5C);
-        set => Array.Copy(BitConverter.GetBytes(value), 0, data, 0x5C, 2);
+        set => Array.Copy(Extensions.GetBytes(value), 0, data, 0x5C, 2);
     }
 
     [DisplayName(@"Move 3 ID")]
     public ushort move3id
     {
         get => BitConverter.ToUInt16(data, 0x5E);
-        set => Array.Copy(BitConverter.GetBytes(value), 0, data, 0x5E, 2);
+        set => Array.Copy(Extensions.GetBytes(value), 0, data, 0x5E, 2);
     }
 
     [DisplayName(@"Move 4 ID")]
     public ushort move4id
     {
         get => BitConverter.ToUInt16(data, 0x60);
-        set => Array.Copy(BitConverter.GetBytes(value), 0, data, 0x60, 2);
+        set => Array.Copy(Extensions.GetBytes(value), 0, data, 0x60, 2);
     }
 
     [DisplayName(@"Move 1 Current PP")]
     public byte Move1CurrentPP
     {
         get => data[0x62];
-        set => Array.Copy(BitConverter.GetBytes(value > 255u ? 255u : value < 0u ? 0u : value), 0, data, 0x62, 1);
+        set => Array.Copy(Extensions.GetBytes(value > 255u ? 255u : value < 0u ? 0u : value), 0, data, 0x62, 1);
     }
 
     [DisplayName(@"Move 2 Current PP")]
     public byte Move2CurrentPP
     {
         get => data[0x63];
-        set => Array.Copy(BitConverter.GetBytes(value > 255u ? 255u : value < 0u ? 0u : value), 0, data, 0x63, 1);
+        set => Array.Copy(Extensions.GetBytes(value > 255u ? 255u : value < 0u ? 0u : value), 0, data, 0x63, 1);
     }
 
     [DisplayName(@"Move 3 Current PP")]
     public byte Move3CurrentPP
     {
         get => data[0x64];
-        set => Array.Copy(BitConverter.GetBytes(value > 255u ? 255u : value < 0u ? 0u : value), 0, data, 0x64, 1);
+        set => Array.Copy(Extensions.GetBytes(value > 255u ? 255u : value < 0u ? 0u : value), 0, data, 0x64, 1);
     }
 
     [DisplayName(@"Move 4 Current PP")]
     public byte Move4CurrentPP
     {
         get => data[0x65];
-        set => Array.Copy(BitConverter.GetBytes(value > 255u ? 255u : value < 0u ? 0u : value), 0, data, 0x65, 1);
+        set => Array.Copy(Extensions.GetBytes(value > 255u ? 255u : value < 0u ? 0u : value), 0, data, 0x65, 1);
     }
 
     private byte move1ppups
@@ -353,28 +353,28 @@ public class Pokemon : IEquatable<Pokemon>, IComparable<Pokemon>
     public ushort relearnmove1id
     {
         get => BitConverter.ToUInt16(data, 0x6A);
-        set => Array.Copy(BitConverter.GetBytes(value), 0, data, 0x6A, 2);
+        set => Array.Copy(Extensions.GetBytes(value), 0, data, 0x6A, 2);
     }
 
     [DisplayName(@"Relearn Move 2 ID")]
     public ushort relearnmove2id
     {
         get => BitConverter.ToUInt16(data, 0x6C);
-        set => Array.Copy(BitConverter.GetBytes(value), 0, data, 0x6C, 2);
+        set => Array.Copy(Extensions.GetBytes(value), 0, data, 0x6C, 2);
     }
 
     [DisplayName(@"Relearn Move 3 ID")]
     public ushort relearnmove3id
     {
         get => BitConverter.ToUInt16(data, 0x6E);
-        set => Array.Copy(BitConverter.GetBytes(value), 0, data, 0x6E, 2);
+        set => Array.Copy(Extensions.GetBytes(value), 0, data, 0x6E, 2);
     }
 
     [DisplayName(@"Relearn Move 4 ID")]
     public ushort relearnmove4id
     {
         get => BitConverter.ToUInt16(data, 0x70);
-        set => Array.Copy(BitConverter.GetBytes(value), 0, data, 0x70, 2);
+        set => Array.Copy(Extensions.GetBytes(value), 0, data, 0x70, 2);
     }
 
     public List<MovesObject> Moves
@@ -481,165 +481,165 @@ public class Pokemon : IEquatable<Pokemon>, IComparable<Pokemon>
     public byte SecretSuperTrainingFlag
     {
         get => data[0x72];
-        set => Array.Copy(BitConverter.GetBytes(value), 0, data, 0x72, 1);
+        set => Array.Copy(Extensions.GetBytes(value), 0, data, 0x72, 1);
     }
 
-    //[DisplayName(@"Unused")] public byte Unused { get {return data[0x73]; } set {Array.Copy(BitConverter.GetBytes(value),0,data,0x73,1); } }
+    //[DisplayName(@"Unused")] public byte Unused { get {return data[0x73]; } set {Array.Copy(Extensions.GetBytes(value),0,data,0x73,1); } }
     [DisplayName(@"IVs")]
     internal uint ivs
     {
         get => BitConverter.ToUInt32(data, 0x74);
-        set => Array.Copy(BitConverter.GetBytes(value), 0, data, 0x74, 4);
+        set => Array.Copy(Extensions.GetBytes(value), 0, data, 0x74, 4);
     }
 
     public byte lasttrainergender
     {
         get => data[0x92];
-        set => Array.Copy(BitConverter.GetBytes(value), 0, data, 0x92, 1);
+        set => Array.Copy(Extensions.GetBytes(value), 0, data, 0x92, 1);
     }
 
     public byte currenthandler
     {
         get => data[0x93];
-        set => Array.Copy(BitConverter.GetBytes(value), 0, data, 0x93, 1);
+        set => Array.Copy(Extensions.GetBytes(value), 0, data, 0x93, 1);
     }
 
     [DisplayName(@"Geolocation 1 - Region,Country")]
     public ushort Geolocation1RegionCountry
     {
         get => BitConverter.ToUInt16(data, 0x94);
-        set => Array.Copy(BitConverter.GetBytes(value), 0, data, 0x94, 2);
+        set => Array.Copy(Extensions.GetBytes(value), 0, data, 0x94, 2);
     }
 
     [DisplayName(@"Geolocation 2 - Region,Country")]
     public ushort Geolocation2RegionCountry
     {
         get => BitConverter.ToUInt16(data, 0x96);
-        set => Array.Copy(BitConverter.GetBytes(value), 0, data, 0x96, 2);
+        set => Array.Copy(Extensions.GetBytes(value), 0, data, 0x96, 2);
     }
 
     [DisplayName(@"Geolocation 3 - Region,Country")]
     public ushort Geolocation3RegionCountry
     {
         get => BitConverter.ToUInt16(data, 0x98);
-        set => Array.Copy(BitConverter.GetBytes(value), 0, data, 0x98, 2);
+        set => Array.Copy(Extensions.GetBytes(value), 0, data, 0x98, 2);
     }
 
     [DisplayName(@"Geolocation 4 - Region,Country")]
     public ushort Geolocation4RegionCountry
     {
         get => BitConverter.ToUInt16(data, 0x9A);
-        set => Array.Copy(BitConverter.GetBytes(value), 0, data, 0x9A, 2);
+        set => Array.Copy(Extensions.GetBytes(value), 0, data, 0x9A, 2);
     }
 
     [DisplayName(@"Geolocation 5 - Region,Country")]
     public ushort Geolocation5RegionCountry
     {
         get => BitConverter.ToUInt16(data, 0x9C);
-        set => Array.Copy(BitConverter.GetBytes(value), 0, data, 0x9C, 2);
+        set => Array.Copy(Extensions.GetBytes(value), 0, data, 0x9C, 2);
     }
 
-    //[DisplayName(@"Unused")] public ushort Unused { get {return BitConverter.ToUInt16(data, 0x9E); } set {Array.Copy(BitConverter.GetBytes(value),0,data,0x9E,2); } }
-    //[DisplayName(@"Unused")] public ushort Unused { get {return BitConverter.ToUInt16(data, 0xA0); } set {Array.Copy(BitConverter.GetBytes(value),0,data,0xA0,2); } }
+    //[DisplayName(@"Unused")] public ushort Unused { get {return BitConverter.ToUInt16(data, 0x9E); } set {Array.Copy(Extensions.GetBytes(value),0,data,0x9E,2); } }
+    //[DisplayName(@"Unused")] public ushort Unused { get {return BitConverter.ToUInt16(data, 0xA0); } set {Array.Copy(Extensions.GetBytes(value),0,data,0xA0,2); } }
     [DisplayName(@"NotOT Friendship")]
     public byte NotOTFriendship
     {
         get => data[0xA2];
-        set => Array.Copy(BitConverter.GetBytes(value), 0, data, 0xA2, 1);
+        set => Array.Copy(Extensions.GetBytes(value), 0, data, 0xA2, 1);
     }
 
     [DisplayName(@"NotOT Affection")]
     public byte NotOTAffection
     {
         get => data[0xA3];
-        set => Array.Copy(BitConverter.GetBytes(value), 0, data, 0xA3, 1);
+        set => Array.Copy(Extensions.GetBytes(value), 0, data, 0xA3, 1);
     }
 
     [DisplayName(@"NotOT Memory Intensity")]
     public byte NotOTMemoryIntensity
     {
         get => data[0xA4];
-        set => Array.Copy(BitConverter.GetBytes(value), 0, data, 0xA4, 1);
+        set => Array.Copy(Extensions.GetBytes(value), 0, data, 0xA4, 1);
     }
 
     [DisplayName(@"NotOT Memory Line")]
     public byte NotOTMemoryLine
     {
         get => data[0xA5];
-        set => Array.Copy(BitConverter.GetBytes(value), 0, data, 0xA5, 1);
+        set => Array.Copy(Extensions.GetBytes(value), 0, data, 0xA5, 1);
     }
 
     [DisplayName(@"NotOT Memory Feeling")]
     public byte NotOTMemoryFeeling
     {
         get => data[0xA6];
-        set => Array.Copy(BitConverter.GetBytes(value), 0, data, 0xA6, 1);
+        set => Array.Copy(Extensions.GetBytes(value), 0, data, 0xA6, 1);
     }
 
-    //[DisplayName(@"Unused")] public byte Unused { get {return data[0xA7]; } set {Array.Copy(BitConverter.GetBytes(value),0,data,0xA7,1); } }
+    //[DisplayName(@"Unused")] public byte Unused { get {return data[0xA7]; } set {Array.Copy(Extensions.GetBytes(value),0,data,0xA7,1); } }
     [DisplayName(@"NotOT Memory TextVar")]
     public ushort NotOTMemoryTextVar
     {
         get => BitConverter.ToUInt16(data, 0xA8);
-        set => Array.Copy(BitConverter.GetBytes(value), 0, data, 0xA8, 2);
+        set => Array.Copy(Extensions.GetBytes(value), 0, data, 0xA8, 2);
     }
 
-    //[DisplayName(@"Unused")] public ushort Unused { get {return BitConverter.ToUInt16(data, 0xAA); } set {Array.Copy(BitConverter.GetBytes(value),0,data,0xAA,2); } }
-    //[DisplayName(@"Unused")] public ushort Unused { get {return BitConverter.ToUInt16(data, 0xAC); } set {Array.Copy(BitConverter.GetBytes(value),0,data,0xAC,2); } }
+    //[DisplayName(@"Unused")] public ushort Unused { get {return BitConverter.ToUInt16(data, 0xAA); } set {Array.Copy(Extensions.GetBytes(value),0,data,0xAA,2); } }
+    //[DisplayName(@"Unused")] public ushort Unused { get {return BitConverter.ToUInt16(data, 0xAC); } set {Array.Copy(Extensions.GetBytes(value),0,data,0xAC,2); } }
     [DisplayName(@"Fullness")]
     public byte Fullness
     {
         get => data[0xAE];
-        set => Array.Copy(BitConverter.GetBytes(value), 0, data, 0xAE, 1);
+        set => Array.Copy(Extensions.GetBytes(value), 0, data, 0xAE, 1);
     }
 
     [DisplayName(@"Enjoyment")]
     public byte Enjoyment
     {
         get => data[0xAF];
-        set => Array.Copy(BitConverter.GetBytes(value), 0, data, 0xAF, 1);
+        set => Array.Copy(Extensions.GetBytes(value), 0, data, 0xAF, 1);
     }
 
     [DisplayName(@"OT Friendship")]
     public byte OTFriendship
     {
         get => data[0xCA];
-        set => Array.Copy(BitConverter.GetBytes(value), 0, data, 0xCA, 1);
+        set => Array.Copy(Extensions.GetBytes(value), 0, data, 0xCA, 1);
     }
 
     [DisplayName(@"OT Affection")]
     public byte OTAffection
     {
         get => data[0xCB];
-        set => Array.Copy(BitConverter.GetBytes(value), 0, data, 0xCB, 1);
+        set => Array.Copy(Extensions.GetBytes(value), 0, data, 0xCB, 1);
     }
 
     [DisplayName(@"OT Memory Intensity")]
     public byte OTMemoryIntensity
     {
         get => data[0xCC];
-        set => Array.Copy(BitConverter.GetBytes(value), 0, data, 0xCC, 1);
+        set => Array.Copy(Extensions.GetBytes(value), 0, data, 0xCC, 1);
     }
 
     [DisplayName(@"OT Memory Line")]
     public byte OTMemoryLine
     {
         get => data[0xCD];
-        set => Array.Copy(BitConverter.GetBytes(value), 0, data, 0xCD, 1);
+        set => Array.Copy(Extensions.GetBytes(value), 0, data, 0xCD, 1);
     }
 
     [DisplayName(@"OT Memory TextVar")]
     public ushort OTMemoryTextVar
     {
         get => BitConverter.ToUInt16(data, 0xCE);
-        set => Array.Copy(BitConverter.GetBytes(value), 0, data, 0xCE, 2);
+        set => Array.Copy(Extensions.GetBytes(value), 0, data, 0xCE, 2);
     }
 
     [DisplayName(@"OT Memory Feeling")]
     public byte OTMemoryFeeling
     {
         get => data[0xD0];
-        set => Array.Copy(BitConverter.GetBytes(value), 0, data, 0xD0, 1);
+        set => Array.Copy(Extensions.GetBytes(value), 0, data, 0xD0, 1);
     }
 
     private byte datemetyear
@@ -680,77 +680,77 @@ public class Pokemon : IEquatable<Pokemon>, IComparable<Pokemon>
 
     //[DisplayName(@"Date Egg Received")] public byte[3] DateEggReceived { get {return ; } set {; } }
     //[DisplayName(@"Date Met")] public byte[3] DateMet { get {return ; } set {; } }
-    //[DisplayName(@"Unknown / Unused")] public byte UnknownUnused { get {return data[0xD7]; } set {Array.Copy(BitConverter.GetBytes(value),0,data,0xD7,1); } }
+    //[DisplayName(@"Unknown / Unused")] public byte UnknownUnused { get {return data[0xD7]; } set {Array.Copy(Extensions.GetBytes(value),0,data,0xD7,1); } }
     [DisplayName(@"Egg Location")]
     public ushort egglocation
     {
         get => BitConverter.ToUInt16(data, 0xD8);
-        set => Array.Copy(BitConverter.GetBytes(value), 0, data, 0xD8, 2);
+        set => Array.Copy(Extensions.GetBytes(value), 0, data, 0xD8, 2);
     }
 
     [DisplayName(@"Met At Location")]
     public ushort metlocation
     {
         get => BitConverter.ToUInt16(data, 0xDA);
-        set => Array.Copy(BitConverter.GetBytes(value), 0, data, 0xDA, 2);
+        set => Array.Copy(Extensions.GetBytes(value), 0, data, 0xDA, 2);
     }
 
     [DisplayName(@"Pokéball")]
     public byte pokeball
     {
         get => data[0xDC];
-        set => Array.Copy(BitConverter.GetBytes(value), 0, data, 0xDC, 1);
+        set => Array.Copy(Extensions.GetBytes(value), 0, data, 0xDC, 1);
     }
 
     private byte metlevelotgender
     {
         get => data[0xDD];
-        set => Array.Copy(BitConverter.GetBytes(value), 0, data, 0xDD, 1);
+        set => Array.Copy(Extensions.GetBytes(value), 0, data, 0xDD, 1);
     }
 
     [DisplayName(@"Encounter Type Gen 4")]
     public byte EncounterTypeGen4
     {
         get => data[0xDE];
-        set => Array.Copy(BitConverter.GetBytes(value), 0, data, 0xDE, 1);
+        set => Array.Copy(Extensions.GetBytes(value), 0, data, 0xDE, 1);
     }
 
     [DisplayName(@"OT Game ID")]
     public byte OTGameID
     {
         get => data[0xDF];
-        set => Array.Copy(BitConverter.GetBytes(value), 0, data, 0xDF, 1);
+        set => Array.Copy(Extensions.GetBytes(value), 0, data, 0xDF, 1);
     }
 
     [DisplayName(@"Country ID")]
     public byte CountryID
     {
         get => data[0xE0];
-        set => Array.Copy(BitConverter.GetBytes(value), 0, data, 0xE0, 1);
+        set => Array.Copy(Extensions.GetBytes(value), 0, data, 0xE0, 1);
     }
 
     [DisplayName(@"Region ID")]
     public byte RegionID
     {
         get => data[0xE1];
-        set => Array.Copy(BitConverter.GetBytes(value), 0, data, 0xE1, 1);
+        set => Array.Copy(Extensions.GetBytes(value), 0, data, 0xE1, 1);
     }
 
     [DisplayName(@"3DS Region ID")]
     public byte _3DSRegionID
     {
         get => data[0xE2];
-        set => Array.Copy(BitConverter.GetBytes(value), 0, data, 0xE2, 1);
+        set => Array.Copy(Extensions.GetBytes(value), 0, data, 0xE2, 1);
     }
 
     [DisplayName(@"OT Language ID")]
     public byte OTLanguageID
     {
         get => data[0xE3];
-        set => Array.Copy(BitConverter.GetBytes(value), 0, data, 0xE3, 1);
+        set => Array.Copy(Extensions.GetBytes(value), 0, data, 0xE3, 1);
     }
 
-    //[DisplayName(@"Unused")] public uint Unused { get {return BitConverter.ToUInt32(data, 0xE4); } set {Array.Copy(BitConverter.GetBytes(value),0,data,0xE4,4); } }
+    //[DisplayName(@"Unused")] public uint Unused { get {return BitConverter.ToUInt32(data, 0xE4); } set {Array.Copy(Extensions.GetBytes(value),0,data,0xE4,4); } }
 
     #region Pokemon Properties
 

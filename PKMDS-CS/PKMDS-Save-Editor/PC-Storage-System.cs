@@ -3,7 +3,7 @@
 public partial class PC_Storage_System_Form : Form
 {
     private const string veekundb = @"veekun-pokedex.sqlite";
-    private const string xysavfile = @"..\..\..\files\sav\PokemonXYDecrypted.sav";
+    private const string xysavfile = @"..\..\..\..\files\sav\PokemonXYDecrypted.sav";
     private static readonly Pokemon_Editor_Form PokemonEditorForm = new();
     private static readonly Form reportForm = new();
     private static readonly DataGridView dgPokemon = new();

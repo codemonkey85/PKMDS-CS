@@ -1,7 +1,9 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<TargetFramework>net6.0</TargetFramework>
+		<TargetFramework>net7.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<LangVersion>preview</LangVersion>
 		<OutputType>Library</OutputType>
 		<RootNamespace>PKMDS_CS</RootNamespace>
 		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
@@ -31,7 +33,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />
+		<PackageReference Include="System.ComponentModel.Annotations" Version="6.0.0-preview.4.21253.7" />
 		<PackageReference Include="Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers" Version="0.4.346202">
 			<PrivateAssets>all</PrivateAssets>
 		</PackageReference>
@@ -42,8 +44,8 @@
 		<PackageReference Include="EntityFramework">
 			<Version>6.4.4</Version>
 		</PackageReference>
-		<PackageReference Include="System.Drawing.Common" Version="6.0.0" />
-		<PackageReference Include="System.Resources.Extensions" Version="6.0.0" />
+		<PackageReference Include="System.Drawing.Common" Version="7.0.0-rc.2.22472.3" />
+		<PackageReference Include="System.Resources.Extensions" Version="7.0.0-rc.2.22472.3" />
 	</ItemGroup>
 
 </Project>

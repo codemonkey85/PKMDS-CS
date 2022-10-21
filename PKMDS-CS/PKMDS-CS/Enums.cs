@@ -94,7 +94,7 @@ public static class Lists
     }
 }
 
-public static class Extensions
+public static partial class Extensions
 {
     internal static List<ushort> BallsToItems = new()
         {
