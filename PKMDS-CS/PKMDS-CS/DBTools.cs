@@ -72,12 +72,19 @@ namespace PKMDS_CS
 
         public static void OpenDB(string DBFile)
         {
-            if (con != null) return;
+            if (con != null)
+            {
+                return;
+            }
+
             try
             {
                 var connString = string.Format(@"Data Source={0}; Pooling=false; FailIfMissing=true;", DBFile);
                 using (var factory = new SQLiteFactory())
+                {
                     con = factory.CreateConnection();
+                }
+
                 con.ConnectionString = connString;
                 con.Open();
             }
@@ -91,9 +98,15 @@ namespace PKMDS_CS
         {
             try
             {
-                if (con == null) return;
+                if (con == null)
+                {
+                    return;
+                }
+
                 if (con.State == ConnectionState.Open)
+                {
                     con.Close();
+                }
             }
             catch (Exception ex)
             {
@@ -190,15 +203,21 @@ namespace PKMDS_CS
             try
             {
                 var slot = PokemonDataTableColumns.type_1_id;
-                if (TypeSlot == TypeSlots.Slot2) slot = PokemonDataTableColumns.type_2_id;
+                if (TypeSlot == TypeSlots.Slot2)
+                {
+                    slot = PokemonDataTableColumns.type_2_id;
+                }
+
                 if (Species == (ushort)PKMDS_CS.Species.Tornadus || Species == (ushort)PKMDS_CS.Species.Thundurus || Species == (ushort)PKMDS_CS.Species.Landorus)
                 {
                     if (FormID != 0)
+                    {
                         FormID--;
+                    }
                 }
                 var row = GetPokemonDataTable.Select(string.Format("{0} = {1} and {2} = {3}", PokemonDataTableColumns.species_id,
                     Species, PokemonDataTableColumns.form_id, FormID));
-                if (!(int.TryParse(row[0].ItemArray[(int)slot].ToString(), out typeint)))
+                if (!int.TryParse(row[0].ItemArray[(int)slot].ToString(), out typeint))
                 {
                 }
             }
@@ -211,16 +230,23 @@ namespace PKMDS_CS
 
         private static int GetGrowthRateID(ushort species)
         {
-            int growthrateid;
             int.TryParse(GetPokemonDataTable.Select(string.Format("{0} = {1}", PokemonDataTableColumns.species_id,
-                species))[0].ItemArray[(int)PokemonDataTableColumns.growth_rate_id].ToString(), out growthrateid);
+                species))[0].ItemArray[(int)PokemonDataTableColumns.growth_rate_id].ToString(), out var growthrateid);
             return growthrateid;
         }
 
         public static int GetLevel(ushort Species, uint EXP)
         {
-            if (con == null) return 0;
-            if (con.State != ConnectionState.Open) return 0;
+            if (con == null)
+            {
+                return 0;
+            }
+
+            if (con.State != ConnectionState.Open)
+            {
+                return 0;
+            }
+
             var level = 0;
             var GrowthRateID = GetGrowthRateID(Species);
             using (var cmd = con.CreateCommand())
@@ -231,15 +257,25 @@ namespace PKMDS_CS
                 var dtout = new DataTable();
                 dtout.Load(cmd.ExecuteReader());
                 if (dtout.Rows.Count != 0)
+                {
                     int.TryParse(dtout.Rows[0].ItemArray[0].ToString(), out level);
+                }
             }
             return level;
         }
 
         public static uint GetEXPAtLevel(ushort Species, int Level)
         {
-            if (con == null) return 0u;
-            if (con.State != ConnectionState.Open) return 0u;
+            if (con == null)
+            {
+                return 0u;
+            }
+
+            if (con.State != ConnectionState.Open)
+            {
+                return 0u;
+            }
+
             uint exp = 0;
             var GrowthRateID = GetGrowthRateID(Species);
             using (var cmd = con.CreateCommand())
@@ -252,7 +288,9 @@ namespace PKMDS_CS
                 if (dtout != null)
                 {
                     if (dtout.Rows.Count != 0)
+                    {
                         uint.TryParse(dtout.Rows[0].ItemArray[0].ToString(), out exp);
+                    }
                 }
             }
             return exp;
@@ -262,10 +300,22 @@ namespace PKMDS_CS
 
         public static Dictionary<Species, List<string>> GetPokemonForms()
         {
-            if (PokemonForms != null) return PokemonForms;
+            if (PokemonForms != null)
+            {
+                return PokemonForms;
+            }
+
             PokemonForms = new Dictionary<Species, List<string>>();
-            if (con == null) return null;
-            if (con.State != ConnectionState.Open) return null;
+            if (con == null)
+            {
+                return null;
+            }
+
+            if (con.State != ConnectionState.Open)
+            {
+                return null;
+            }
+
             var SpeciesWithForms = new List<Species>();
             using (var cmd = con.CreateCommand())
             {
@@ -315,9 +365,21 @@ namespace PKMDS_CS
 
         public static string GetFormName(ushort Species, byte FormID, int langid = 9)
         {
-            if (FormID == 0) return string.Empty;
-            if (con == null) return string.Empty;
-            if (con.State != ConnectionState.Open) return string.Empty;
+            if (FormID == 0)
+            {
+                return string.Empty;
+            }
+
+            if (con == null)
+            {
+                return string.Empty;
+            }
+
+            if (con.State != ConnectionState.Open)
+            {
+                return string.Empty;
+            }
+
             var formname = string.Empty;
             using (var cmd = con.CreateCommand())
             {
@@ -330,15 +392,25 @@ namespace PKMDS_CS
                 var dtout = new DataTable();
                 dtout.Load(cmd.ExecuteReader());
                 if (dtout.Rows.Count != 0)
+                {
                     formname = dtout.Rows[0].ItemArray[0].ToString();
+                }
             }
             return formname;
         }
 
         internal static string GetPokemonName(ushort Species, byte FormID, int langid = 9)
         {
-            if (con == null) return string.Empty;
-            if (con.State != ConnectionState.Open) return string.Empty;
+            if (con == null)
+            {
+                return string.Empty;
+            }
+
+            if (con.State != ConnectionState.Open)
+            {
+                return string.Empty;
+            }
+
             var pokemonname = string.Empty;
             using (var cmd = con.CreateCommand())
             {
@@ -370,9 +442,21 @@ namespace PKMDS_CS
         {
             get
             {
-                if (con == null) return null;
-                if (con.State != ConnectionState.Open) return null;
-                if (PokemonDataTable != null) return PokemonDataTable;
+                if (con == null)
+                {
+                    return null;
+                }
+
+                if (con.State != ConnectionState.Open)
+                {
+                    return null;
+                }
+
+                if (PokemonDataTable != null)
+                {
+                    return PokemonDataTable;
+                }
+
                 var sbSQL = new StringBuilder();
                 sbSQL.Append("select \n");
                 sbSQL.Append("pokemon_species_names.name as [name], \n");
@@ -438,9 +522,21 @@ namespace PKMDS_CS
         {
             get
             {
-                if (con == null) return null;
-                if (con.State != ConnectionState.Open) return null;
-                if (ItemDataTable != null) return ItemDataTable;
+                if (con == null)
+                {
+                    return null;
+                }
+
+                if (con.State != ConnectionState.Open)
+                {
+                    return null;
+                }
+
+                if (ItemDataTable != null)
+                {
+                    return ItemDataTable;
+                }
+
                 using (var cmd = con.CreateCommand())
                 {
                     cmd.CommandText = "select id, game_index, identifier, name from items join item_names on item_names.item_id = items.id join item_game_indices on item_game_indices.item_id = items.id where item_names.local_language_id = 9 and item_game_indices.generation_id = 6 order by game_index asc";
@@ -455,9 +551,21 @@ namespace PKMDS_CS
         {
             get
             {
-                if (con == null) return null;
-                if (con.State != ConnectionState.Open) return null;
-                if (NatureDataTable != null) return NatureDataTable;
+                if (con == null)
+                {
+                    return null;
+                }
+
+                if (con.State != ConnectionState.Open)
+                {
+                    return null;
+                }
+
+                if (NatureDataTable != null)
+                {
+                    return NatureDataTable;
+                }
+
                 using (var cmd = con.CreateCommand())
                 {
                     cmd.CommandText = @"select game_index, name, decreased_stat_id, increased_stat_id from natures join nature_names on natures.id = nature_Names.nature_id where local_language_id = 9 order by game_index asc";
@@ -472,9 +580,21 @@ namespace PKMDS_CS
         {
             get
             {
-                if (con == null) return null;
-                if (con.State != ConnectionState.Open) return null;
-                if (MoveDataTable != null) return MoveDataTable;
+                if (con == null)
+                {
+                    return null;
+                }
+
+                if (con.State != ConnectionState.Open)
+                {
+                    return null;
+                }
+
+                if (MoveDataTable != null)
+                {
+                    return MoveDataTable;
+                }
+
                 using (var cmd = con.CreateCommand())
                 {
                     cmd.CommandText = @"select moves.id, move_names.name, moves.type_id - 1, moves.power, moves.pp, moves.accuracy, moves.damage_class_id - 1, move_flavor_text.flavor_text from moves join move_names on moves.id = move_names.move_id join move_flavor_text on moves.id = move_flavor_text.move_id where move_names.local_language_id = 9 and move_flavor_text.language_id = 9 and move_flavor_text.version_group_id = 15 and moves.id < 1000";
@@ -503,25 +623,28 @@ namespace PKMDS_CS
                 return stats;
             }
 
-            int HP_B, ATK_B, DEF_B, SPA_B, SPD_B, SPE_B;
 
-            int.TryParse(PokemonDataRow["hp"].ToString(), out HP_B);
-            int.TryParse(PokemonDataRow["attack"].ToString(), out ATK_B);
-            int.TryParse(PokemonDataRow["defense"].ToString(), out DEF_B);
-            int.TryParse(PokemonDataRow["sp_attack"].ToString(), out SPA_B);
-            int.TryParse(PokemonDataRow["sp_defense"].ToString(), out SPD_B);
-            int.TryParse(PokemonDataRow["speed"].ToString(), out SPE_B);
+            int.TryParse(PokemonDataRow["hp"].ToString(), out var HP_B);
+            int.TryParse(PokemonDataRow["attack"].ToString(), out var ATK_B);
+            int.TryParse(PokemonDataRow["defense"].ToString(), out var DEF_B);
+            int.TryParse(PokemonDataRow["sp_attack"].ToString(), out var SPA_B);
+            int.TryParse(PokemonDataRow["sp_defense"].ToString(), out var SPD_B);
+            int.TryParse(PokemonDataRow["speed"].ToString(), out var SPE_B);
 
-            stats[0] = (HP_B == 1) ? (ushort)1 : (ushort)((((HP_IV + (2 * HP_B) + (HP_EV / 4) + 100) * level) / 100) + 10);
-            stats[1] = (ushort)((((ATK_IV + (2 * ATK_B) + (ATK_EV / 4)) * level) / 100) + 5);
-            stats[2] = (ushort)((((DEF_IV + (2 * DEF_B) + (DEF_EV / 4)) * level) / 100) + 5);
-            stats[3] = (ushort)((((SPE_IV + (2 * SPE_B) + (SPE_EV / 4)) * level) / 100) + 5);
-            stats[4] = (ushort)((((SPA_IV + (2 * SPA_B) + (SPA_EV / 4)) * level) / 100) + 5);
-            stats[5] = (ushort)((((SPD_IV + (2 * SPD_B) + (SPD_EV / 4)) * level) / 100) + 5);
+            stats[0] = (HP_B == 1) ? (ushort)1 : (ushort)((HP_IV + 2 * HP_B + HP_EV / 4 + 100) * level / 100 + 10);
+            stats[1] = (ushort)((ATK_IV + 2 * ATK_B + ATK_EV / 4) * level / 100 + 5);
+            stats[2] = (ushort)((DEF_IV + 2 * DEF_B + DEF_EV / 4) * level / 100 + 5);
+            stats[3] = (ushort)((SPE_IV + 2 * SPE_B + SPE_EV / 4) * level / 100 + 5);
+            stats[4] = (ushort)((SPA_IV + 2 * SPA_B + SPA_EV / 4) * level / 100 + 5);
+            stats[5] = (ushort)((SPD_IV + 2 * SPD_B + SPD_EV / 4) * level / 100 + 5);
 
             var incr = nature / 5 + 1;
             var decr = nature % 5 + 1;
-            if (incr == decr) return stats; // if neutral return stats without mod
+            if (incr == decr)
+            {
+                return stats; // if neutral return stats without mod
+            }
+
             stats[incr] *= 11; stats[incr] /= 10;
             stats[decr] *= 9; stats[decr] /= 10;
 

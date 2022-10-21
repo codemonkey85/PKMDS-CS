@@ -1,6 +1,4 @@
-﻿#region Using
-
-using PKMDS_CS;
+﻿using PKMDS_CS;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
@@ -8,16 +6,11 @@ using System.Drawing.Drawing2D;
 using System.Linq;
 using System.Windows.Forms;
 
-#endregion Using
-
 namespace PKMDS_Save_Editor
 {
     public partial class Pokemon_Editor_Form : Form
     {
-        public Pokemon_Editor_Form()
-        {
-            InitializeComponent();
-        }
+        public Pokemon_Editor_Form() => InitializeComponent();
 
         /*
                 private List<NumericUpDown> numIVs = new List<NumericUpDown>();
@@ -27,14 +20,11 @@ namespace PKMDS_Save_Editor
         private bool FormSet;
         private bool FormPopulated;
         private Pokemon _pokemon;
-        private Pokemon tempPokemon = new Pokemon();
+        private readonly Pokemon tempPokemon = new Pokemon();
 
         public Pokemon Pokemon
         {
-            get
-            {
-                return _pokemon;
-            }
+            get => _pokemon;
             set
             {
                 _pokemon = value;
@@ -48,12 +38,15 @@ namespace PKMDS_Save_Editor
         private readonly BindingSource _relearnableMoveBindingSource = new BindingSource();
         private CurrencyManager _itemCurrencyManger;
 
-        private LocationObject[] metList = new LocationObject[Lists.LocationList.Count];
-        private LocationObject[] eggList = new LocationObject[Lists.LocationList.Count];
+        private readonly LocationObject[] metList = new LocationObject[Lists.LocationList.Count];
+        private readonly LocationObject[] eggList = new LocationObject[Lists.LocationList.Count];
 
         public void PopulateForm()
         {
-            if (FormPopulated) return;
+            if (FormPopulated)
+            {
+                return;
+            }
 
             speciesComboBox.DataSource = Lists.SpeciesList;
             speciesComboBox.ValueMember = "Value";
@@ -135,13 +128,24 @@ namespace PKMDS_Save_Editor
             dataGridRelearnableMoves.DataSource = _relearnableMoveBindingSource;
 
             if (dataGridMoves.Columns.Contains("Name"))
+            {
                 dataGridMoves.Columns["Name"].Visible = false;
+            }
+
             if (dataGridMoves.Columns.Contains("Type"))
+            {
                 dataGridMoves.Columns["Type"].Visible = false;
+            }
+
             if (dataGridMoves.Columns.Contains("BasePP"))
+            {
                 dataGridMoves.Columns["BasePP"].Visible = false;
+            }
+
             if (dataGridMoves.Columns.Contains("FlavorText"))
+            {
                 dataGridMoves.Columns["FlavorText"].Visible = false;
+            }
 
             var clmnppup = new DataGridViewComboBoxColumn
             {
@@ -156,17 +160,34 @@ namespace PKMDS_Save_Editor
             dataGridMoves.Columns.Add(clmnppup);
 
             if (dataGridRelearnableMoves.Columns.Contains("Name"))
+            {
                 dataGridRelearnableMoves.Columns["Name"].Visible = false;
+            }
+
             if (dataGridRelearnableMoves.Columns.Contains("Type"))
+            {
                 dataGridRelearnableMoves.Columns["Type"].Visible = false;
+            }
+
             if (dataGridRelearnableMoves.Columns.Contains("FlavorText"))
+            {
                 dataGridRelearnableMoves.Columns["FlavorText"].Visible = false;
+            }
+
             if (dataGridRelearnableMoves.Columns.Contains("CurrentPP"))
+            {
                 dataGridRelearnableMoves.Columns["CurrentPP"].Visible = false;
+            }
+
             if (dataGridRelearnableMoves.Columns.Contains("PPUps"))
+            {
                 dataGridRelearnableMoves.Columns["PPUps"].Visible = false;
+            }
+
             if (dataGridRelearnableMoves.Columns.Contains("MaxPP"))
+            {
                 dataGridRelearnableMoves.Columns["MaxPP"].Visible = false;
+            }
 
             dataGridMoves.Columns.Remove("Value");
             var clmn = new DataGridViewComboBoxColumn
@@ -199,14 +220,20 @@ namespace PKMDS_Save_Editor
             foreach (DataGridViewColumn col in dataGridMoves.Columns)
             {
                 if (col is DataGridViewImageColumn)
+                {
                     (col as DataGridViewImageColumn).DefaultCellStyle.NullValue = null;
+                }
+
                 col.SortMode = DataGridViewColumnSortMode.NotSortable;
                 col.HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
             }
             foreach (DataGridViewColumn col in dataGridRelearnableMoves.Columns)
             {
                 if (col is DataGridViewImageColumn)
+                {
                     (col as DataGridViewImageColumn).DefaultCellStyle.NullValue = null;
+                }
+
                 col.SortMode = DataGridViewColumnSortMode.NotSortable;
                 col.HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
             }
@@ -223,8 +250,16 @@ namespace PKMDS_Save_Editor
         private void Type_2_Image_Format(object sender, ConvertEventArgs e)
         {
             //var pb = (PictureBox)((Binding)sender).Control;
-            if (!tempPokemon.Type2.HasValue) e.Value = null;
-            if (!tempPokemon.Type1.HasValue || !tempPokemon.Type2.HasValue) return;
+            if (!tempPokemon.Type2.HasValue)
+            {
+                e.Value = null;
+            }
+
+            if (!tempPokemon.Type1.HasValue || !tempPokemon.Type2.HasValue)
+            {
+                return;
+            }
+
             if (tempPokemon.Type1.Value.Value == tempPokemon.Type2.Value.Value)
             {
                 e.Value = null;
@@ -239,7 +274,7 @@ namespace PKMDS_Save_Editor
             _relearnableMoveBindingSource.DataSource = (_pokemonBindingSource.Current as Pokemon).RelearnableMoves;
             PopulateForm();
             FormSet = true;
-            checkBoxEggMet.Checked = (tempPokemon.IsEgg || tempPokemon.EggDate.HasValue || tempPokemon.EggLocation != Locations.Mystery_Zone);
+            checkBoxEggMet.Checked = tempPokemon.IsEgg || tempPokemon.EggDate.HasValue || tempPokemon.EggLocation != Locations.Mystery_Zone;
         }
 
         private void SavePokemon()
@@ -282,15 +317,16 @@ namespace PKMDS_Save_Editor
             Close();
         }
 
-        private void buttonCancel_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
+        private void buttonCancel_Click(object sender, EventArgs e) => Close();
 
         private void PictureBox_Paint_and_Resize(object sender, PaintEventArgs e)
         {
             var picbox = (PictureBox)sender;
-            if (picbox.Image == null) return;
+            if (picbox.Image == null)
+            {
+                return;
+            }
+
             var g = e.Graphics;
             g.Clear(picbox.BackColor);
             g.InterpolationMode = InterpolationMode.NearestNeighbor;
@@ -299,14 +335,21 @@ namespace PKMDS_Save_Editor
 
         private void itemComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (itemComboBox.SelectedIndex == -1) return;
+            if (itemComboBox.SelectedIndex == -1)
+            {
+                return;
+            }
             //if ((ItemObject)itemComboBox.SelectedValue == Items.NoItem) return;
-            if (itemComboBox.SelectedValue as ItemObject == Items.NoItem) return;
+            if (itemComboBox.SelectedValue as ItemObject == Items.NoItem)
+            {
+                return;
+            }
+
             var item = new ItemObject((Items)itemComboBox.SelectedValue);
             _itemCurrencyManger.Position = _itemCurrencyManger.List.IndexOf(item);
         }
 
-        private List<PictureBox> MarkingsBoxes = new List<PictureBox>();
+        private readonly List<PictureBox> MarkingsBoxes = new List<PictureBox>();
 
         private void Pokemon_Editor_Form_Load(object sender, EventArgs e)
         {
@@ -314,7 +357,11 @@ namespace PKMDS_Save_Editor
             _itemBindingSource.ResetBindings(false);
             _moveBindingSource.ResetBindings(false);
             _relearnableMoveBindingSource.ResetBindings(false);
-            if (markingsPanel.Controls.Count != 0) return;
+            if (markingsPanel.Controls.Count != 0)
+            {
+                return;
+            }
+
             var flp = new FlowLayoutPanel();
             for (var i = 0; i < 6; i++)
             {
@@ -347,15 +394,14 @@ namespace PKMDS_Save_Editor
         private void MarkingsImageFormat(object sender, ConvertEventArgs e)
         {
             var pb = (PictureBox)((Binding)sender).Control;
-            Markings mark;
-            Enum.TryParse(pb.Tag.ToString(), out mark);
+            Enum.TryParse(pb.Tag.ToString(), out Markings mark);
             e.Value = Images.GetMarkingImage(mark, (bool)e.Value);
         }
 
         private void pbMarkings_Click(object sender, EventArgs e)
         {
             var pb = (PictureBox)sender;
-            switch ((Markings)((pb).Tag))
+            switch ((Markings)pb.Tag)
             {
                 case Markings.Circle:
                     tempPokemon.Circle = !tempPokemon.Circle;
@@ -388,7 +434,10 @@ namespace PKMDS_Save_Editor
         {
             tempPokemon.FormID = 0;
             if (formsComboBox.DataBindings.Count != 0)
+            {
                 formsComboBox.DataBindings.RemoveAt(0);
+            }
+
             formsComboBox.DataSource = null;
             if (DBTools.GetPokemonForms().Keys.Contains(tempPokemon.Species))
             {
@@ -401,14 +450,19 @@ namespace PKMDS_Save_Editor
                 formsComboBox.Enabled = false;
             }
             if (picType1.DataBindings.Count != 0)
+            {
                 picType1.DataBindings[0].ReadValue();
+            }
+
             if (picType2.DataBindings.Count != 0)
+            {
                 picType2.DataBindings[0].ReadValue();
+            }
         }
 
         private void dataGridMoves_DataError(object sender, DataGridViewDataErrorEventArgs e)
         {
-            if (e.ColumnIndex == dataGridMoves.Columns["CurrentPP"].Index && (e.Exception.TargetSite.DeclaringType.FullName) == "System.Windows.Forms.Formatter")
+            if (e.ColumnIndex == dataGridMoves.Columns["CurrentPP"].Index && e.Exception.TargetSite.DeclaringType.FullName == "System.Windows.Forms.Formatter")
             {
                 e.Cancel = MessageBox.Show("Current PP must be between 0 and 255.", "Invalid PP", MessageBoxButtons.RetryCancel, MessageBoxIcon.Error) != DialogResult.Cancel;
                 return;
@@ -418,13 +472,21 @@ namespace PKMDS_Save_Editor
 
         private void comboEggLocation_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (!FormSet) return;
+            if (!FormSet)
+            {
+                return;
+            }
+
             tempPokemon.EggLocation = (Locations)comboEggLocation.SelectedValue;
         }
 
         private void comboMetLocation_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (!FormSet) return;
+            if (!FormSet)
+            {
+                return;
+            }
+
             tempPokemon.MetLocation = (Locations)comboMetLocation.SelectedValue;
         }
     }

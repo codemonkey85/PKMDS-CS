@@ -1,28 +1,28 @@
-﻿#region Using
-
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
 using System.Linq;
 
-#endregion Using
-
 namespace PKMDS_CS
 {
     public static class Lists
     {
-        private static List<MovesObject> _moveList = new List<MovesObject>();
-        private static List<SpeciesObject> _speciesList = new List<SpeciesObject>();
-        private static List<ItemObject> _itemList = new List<ItemObject>();
-        private static List<AbilityObject> _abilityList = new List<AbilityObject>();
-        private static List<LocationObject> _locationList = new List<LocationObject>();
+        private static readonly List<MovesObject> _moveList = new List<MovesObject>();
+        private static readonly List<SpeciesObject> _speciesList = new List<SpeciesObject>();
+        private static readonly List<ItemObject> _itemList = new List<ItemObject>();
+        private static readonly List<AbilityObject> _abilityList = new List<AbilityObject>();
+        private static readonly List<LocationObject> _locationList = new List<LocationObject>();
 
         public static List<MovesObject> MoveList
         {
             get
             {
-                if (_moveList.Any()) return _moveList;
+                if (_moveList.Any())
+                {
+                    return _moveList;
+                }
+
                 foreach (var move in Enum.GetValues(typeof(Moves)).Cast<Moves>().ToArray())
                 {
                     _moveList.Add(new MovesObject(move));
@@ -35,7 +35,11 @@ namespace PKMDS_CS
         {
             get
             {
-                if (_speciesList.Any()) return _speciesList;
+                if (_speciesList.Any())
+                {
+                    return _speciesList;
+                }
+
                 foreach (var species in Enum.GetValues(typeof(Species)).Cast<Species>().Where(s => s != Species.NoSpecies).ToArray())
                 {
                     _speciesList.Add(new SpeciesObject(species));
@@ -48,7 +52,11 @@ namespace PKMDS_CS
         {
             get
             {
-                if (_itemList.Any()) return _itemList;
+                if (_itemList.Any())
+                {
+                    return _itemList;
+                }
+
                 foreach (var item in Enum.GetValues(typeof(Items)).Cast<Items>().ToArray())
                 {
                     _itemList.Add(new ItemObject(item));
@@ -61,7 +69,11 @@ namespace PKMDS_CS
         {
             get
             {
-                if (_abilityList.Any()) return _abilityList;
+                if (_abilityList.Any())
+                {
+                    return _abilityList;
+                }
+
                 foreach (var ability in Enum.GetValues(typeof(Abilities)).Cast<Abilities>().ToArray())
                 {
                     _abilityList.Add(new AbilityObject(ability));
@@ -74,7 +86,11 @@ namespace PKMDS_CS
         {
             get
             {
-                if (_locationList.Any()) return _locationList;
+                if (_locationList.Any())
+                {
+                    return _locationList;
+                }
+
                 foreach (var location in Enum.GetValues(typeof(Locations)).Cast<Locations>().ToArray())
                 {
                     _locationList.Add(new LocationObject(location));
@@ -125,28 +141,26 @@ namespace PKMDS_CS
         {
             var type = value.GetType();
             var name = Enum.GetName(type, value);
-            if (name == null) return null;
+            if (name == null)
+            {
+                return null;
+            }
+
             var field = type.GetField(name);
-            if (field == null) return null;
+            if (field == null)
+            {
+                return null;
+            }
+
             var attr =
                 Attribute.GetCustomAttribute(field,
                     typeof(DescriptionAttribute)) as DescriptionAttribute;
-            return attr != null ? attr.Description : null;
+            return attr?.Description;
         }
 
-        public static Items BallToItem(byte ball)
-        {
-            if (ball >= BallsToItems.Count)
-                return Items.NoItem;
-            return (Items)BallsToItems[ball];
-        }
+        public static Items BallToItem(byte ball) => ball >= BallsToItems.Count ? Items.NoItem : (Items)BallsToItems[ball];
 
-        public static byte ItemToBall(Items item)
-        {
-            if (!BallsToItems.Contains((ushort)item))
-                return 0;
-            return (byte)(BallsToItems.IndexOf((ushort)item));
-        }
+        public static byte ItemToBall(Items item) => !BallsToItems.Contains((ushort)item) ? (byte)0 : (byte)BallsToItems.IndexOf((ushort)item);
     }
 
     public enum Species : ushort
@@ -8415,225 +8429,119 @@ namespace PKMDS_CS
 
     public class ItemObject
     {
-        public ItemObject(Items item)
-        {
-            Value = item;
-        }
+        public ItemObject(Items item) => Value = item;
 
         private Items value;
 
         public Items Value
         {
-            get
-            {
-                return value;
-            }
-            set
-            {
-                this.value = Enum.IsDefined(typeof(Items), value)
+            get => value;
+            set => this.value = Enum.IsDefined(typeof(Items), value)
                     ? value
                     : Items.NoItem;
-            }
         }
 
-        public Image Image
-        {
-            get
-            {
-                return Images.GetItemImage((ushort)Value);
-            }
-        }
+        public Image Image => Images.GetItemImage((ushort)Value);
 
-        public string Name
-        {
-            get
-            {
-                return value.EnumToString();
-            }
-        }
+        public string Name => value.EnumToString();
 
-        public override string ToString()
-        {
-            return Name;
-        }
+        public override string ToString() => Name;
 
-        public override bool Equals(object obj)
-        {
-            var i = obj as ItemObject;
-            if (i == null)
-            {
-                return false;
-            }
+        public override bool Equals(object obj) => obj is ItemObject i && Value == i.Value;
 
-            return Value == i.Value;
-        }
+        public bool Equals(Items i) => Value == i;
 
-        public bool Equals(Items i)
-        {
-            return Value == i;
-        }
+        public override int GetHashCode() => (int)value;
 
-        public override int GetHashCode()
-        {
-            return (int)value;
-        }
+        public static bool operator ==(ItemObject a, Items b) => a != null && a.Value == b;
 
-        public static bool operator ==(ItemObject a, Items b)
-        {
-            if (a == null)
-            {
-                return false;
-            }
-
-            return a.Value == b;
-        }
-
-        public static bool operator !=(ItemObject a, Items b)
-        {
-            return !(a == b);
-        }
+        public static bool operator !=(ItemObject a, Items b) => !(a == b);
     }
 
     public class SpeciesObject
     {
-        public SpeciesObject(Species species)
-        {
-            Value = species;
-        }
+        public SpeciesObject(Species species) => Value = species;
 
         private Species value;
 
         public Species Value
         {
-            get
-            {
-                return value;
-            }
-            set
-            {
-                this.value = Enum.IsDefined(typeof(Species), value)
+            get => value;
+            set => this.value = Enum.IsDefined(typeof(Species), value)
                     ? value
                     : Species.NoSpecies;
-            }
         }
 
-        public string Name
-        {
-            get
-            {
-                return value.EnumToString();
-            }
-        }
+        public string Name => value.EnumToString();
 
-        public override string ToString()
-        {
-            return value.EnumToString();
-        }
+        public override string ToString() => value.EnumToString();
     }
 
     public class LocationObject
     {
-        public LocationObject(Locations location)
-        {
-            Value = location;
-        }
+        public LocationObject(Locations location) => Value = location;
 
         private Locations value;
 
         public Locations Value
         {
-            get
-            {
-                return Enum.IsDefined(typeof(Locations), value)
+            get => Enum.IsDefined(typeof(Locations), value)
                     ? value
                     : Locations.Mystery_Zone;
-            }
-            set
-            {
-                this.value = Enum.IsDefined(typeof(Locations), value)
+            set => this.value = Enum.IsDefined(typeof(Locations), value)
                     ? value
                     : Locations.Mystery_Zone;
-            }
         }
 
-        public string Name
-        {
-            get
-            {
-                return value.EnumToString();
-            }
-        }
+        public string Name => value.EnumToString();
 
-        public override string ToString()
-        {
-            return value.EnumToString();
-        }
+        public override string ToString() => value.EnumToString();
     }
 
     public class MovesObject
     {
-        public MovesObject(Moves move)
-        {
-            Value = move;
-        }
+        public MovesObject(Moves move) => Value = move;
 
-        public static implicit operator MovesObject(Moves move)
-        {
-            return new MovesObject(move);
-        }
+        public static implicit operator MovesObject(Moves move) => new MovesObject(move);
 
         private Moves value;
 
         [DisplayName(@"Move")]
         public Moves Value
         {
-            get
-            {
-                return value;
-            }
-            set
-            {
-                this.value = Enum.IsDefined(typeof(Moves), value)
+            get => value;
+            set => this.value = Enum.IsDefined(typeof(Moves), value)
                     ? value
                     : Moves.NoMove;
-            }
         }
 
         [DisplayName(@"Name")]
-        public string Name
-        {
-            get
-            {
-                return value.EnumToString();
-            }
-        }
+        public string Name => value.EnumToString();
 
         [DisplayName(@"Type")]
         public TypeObject? Type
         {
             get
             {
-                int typeid;
                 var typequery = DBTools.GetMoveDataTable.Select(string.Format("id = {0}", (int)value));
-                if (typequery.Length == 0) return null;
+                if (typequery.Length == 0)
+                {
+                    return null;
+                }
+
                 var typeidstr = typequery[0].ItemArray[(int)DBTools.MoveDataTableColumns.type_id].ToString();
-                if (!int.TryParse(typeidstr, out typeid)) return new TypeObject();
-                return !Enum.IsDefined(typeof(Types), typeid) 
-                    ? new TypeObject() 
+                return !int.TryParse(typeidstr, out var typeid)
+                    ? new TypeObject()
+                    : !Enum.IsDefined(typeof(Types), typeid)
+                    ? new TypeObject()
                     : new TypeObject((Types)typeid);
             }
         }
 
         [DisplayName(@"Type")]
-        public Image TypeImage
-        {
-            get
-            {
-                return !Type.HasValue 
-                    ? null 
+        public Image TypeImage => !Type.HasValue
+                    ? null
                     : Type.Value.Image;
-            }
-        }
 
         [DisplayName(@"Category")]
         public Image CategoryImage
@@ -8641,7 +8549,11 @@ namespace PKMDS_CS
             get
             {
                 var damageclassquery = DBTools.GetMoveDataTable.Select(string.Format("id = {0}", (int)value));
-                if (damageclassquery.Length == 0) return null;
+                if (damageclassquery.Length == 0)
+                {
+                    return null;
+                }
+
                 var damageclassidstr = damageclassquery[0].ItemArray[(int)DBTools.MoveDataTableColumns.damage_class_id].ToString();
                 var damageclassid = -1;
                 int.TryParse(damageclassidstr, out damageclassid);
@@ -8669,7 +8581,11 @@ namespace PKMDS_CS
             {
                 var power = 0;
                 var powerquery = DBTools.GetMoveDataTable.Select(string.Format("id = {0}", (int)value));
-                if (powerquery.Length == 0) return power;
+                if (powerquery.Length == 0)
+                {
+                    return power;
+                }
+
                 var powerstr = powerquery[0].ItemArray[(int)DBTools.MoveDataTableColumns.power].ToString();
                 int.TryParse(powerstr, out power);
                 return power;
@@ -8683,7 +8599,11 @@ namespace PKMDS_CS
             {
                 var accuracy = 0M;
                 var accuracyquery = DBTools.GetMoveDataTable.Select(string.Format("id = {0}", (int)value));
-                if (accuracyquery.Length == 0) return accuracy;
+                if (accuracyquery.Length == 0)
+                {
+                    return accuracy;
+                }
+
                 var accuracystr = accuracyquery[0].ItemArray[(int)DBTools.MoveDataTableColumns.accuracy].ToString();
                 decimal.TryParse(accuracystr, out accuracy);
                 return accuracy;
@@ -8697,7 +8617,11 @@ namespace PKMDS_CS
             {
                 byte basepp = 0;
                 var baseppquery = DBTools.GetMoveDataTable.Select(string.Format("id = {0}", (int)value));
-                if (baseppquery.Length == 0) return basepp;
+                if (baseppquery.Length == 0)
+                {
+                    return basepp;
+                }
+
                 var baseppstr = baseppquery[0].ItemArray[(int)DBTools.MoveDataTableColumns.pp].ToString();
                 byte.TryParse(baseppstr, out basepp);
                 return basepp;
@@ -8711,13 +8635,7 @@ namespace PKMDS_CS
         public byte PPUps { get; set; }
 
         [DisplayName(@"Max PP")]
-        public byte MaxPP
-        {
-            get
-            {
-                return (byte)(BasePP + (BasePP * 0.2 * PPUps));
-            }
-        }
+        public byte MaxPP => (byte)(BasePP + BasePP * 0.2 * PPUps);
 
         [DisplayName(@"Flavor Text")]
         public string FlavorText
@@ -8725,137 +8643,74 @@ namespace PKMDS_CS
             get
             {
                 var flavor = DBTools.GetMoveDataTable.Select(string.Format("id = {0}", (int)value));
-                return flavor.Length != 0 
-                    ? flavor[0].ItemArray[(int)DBTools.MoveDataTableColumns.flavor_text].ToString() 
+                return flavor.Length != 0
+                    ? flavor[0].ItemArray[(int)DBTools.MoveDataTableColumns.flavor_text].ToString()
                     : string.Empty;
             }
         }
 
-        public override string ToString()
-        {
-            return value.EnumToString();
-        }
+        public override string ToString() => value.EnumToString();
     }
 
     public class AbilityObject
     {
-        public AbilityObject(Abilities abilities)
-        {
-            Value = abilities;
-        }
+        public AbilityObject(Abilities abilities) => Value = abilities;
 
         private Abilities value;
 
         public Abilities Value
         {
-            get
-            {
-                return value;
-            }
-            set
-            {
-                this.value = Enum.IsDefined(typeof(Abilities), value)
+            get => value;
+            set => this.value = Enum.IsDefined(typeof(Abilities), value)
                     ? value
                     : Abilities.NoAbility;
-            }
         }
 
-        public string Name
-        {
-            get
-            {
-                return value.EnumToString();
-            }
-        }
+        public string Name => value.EnumToString();
 
-        public override string ToString()
-        {
-            return value.EnumToString();
-        }
+        public override string ToString() => value.EnumToString();
     }
 
     public class NatureObject
     {
-        public NatureObject(Natures nature)
-        {
-            Value = nature;
-        }
+        public NatureObject(Natures nature) => Value = nature;
 
         private Natures value;
 
         public Natures Value
         {
-            get
-            {
-                return value;
-            }
-            set
-            {
-                this.value = Enum.IsDefined(typeof(Natures), value)
+            get => value;
+            set => this.value = Enum.IsDefined(typeof(Natures), value)
                     ? value
                     : Natures.Hardy;
-            }
         }
 
-        public string Name
-        {
-            get
-            {
-                return value.EnumToString();
-            }
-        }
+        public string Name => value.EnumToString();
 
-        public override string ToString()
-        {
-            return value.EnumToString();
-        }
+        public override string ToString() => value.EnumToString();
     }
 
     public struct TypeObject
     {
-        public TypeObject(Types Type)
-        {
-            value = Enum.IsDefined(typeof(Types), Type)
+        public TypeObject(Types Type) => value = Enum.IsDefined(typeof(Types), Type)
                 ? Type
                 : Types.Normal;
-        }
 
         private Types value;
 
         public Types Value
         {
-            get
-            {
-                return value;
-            }
-            set
-            {
-                this.value = Enum.IsDefined(typeof(Types), value)
+            get => value;
+            set => this.value = Enum.IsDefined(typeof(Types), value)
                     ? value
                     : Types.Normal;
-            }
         }
 
-        public string Name
-        {
-            get
-            {
-                return value.EnumToString();
-            }
-        }
+        public string Name => value.EnumToString();
 
-        public Image Image
-        {
-            get
-            {
-                return Images.GetTypeImage(Value);
-            }
-        }
+        public Image Image => Images.GetTypeImage(Value);
 
-        public override string ToString()
-        {
-            return value.EnumToString();
-        }
+        public override string ToString() => value.EnumToString();
     }
 
     /*

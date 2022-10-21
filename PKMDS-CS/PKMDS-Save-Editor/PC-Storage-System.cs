@@ -1,6 +1,4 @@
-﻿#region Using
-
-using PKMDS_CS;
+﻿using PKMDS_CS;
 using PKMDS_Save_Editor.Properties;
 using System;
 using System.Collections.Generic;
@@ -10,17 +8,15 @@ using System.Linq;
 using System.Reflection;
 using System.Windows.Forms;
 
-#endregion Using
-
 namespace PKMDS_Save_Editor
 {
     public partial class PC_Storage_System_Form : Form
     {
         private const string veekundb = @"veekun-pokedex.sqlite";
         private const string xysavfile = @"..\..\..\files\sav\PokemonXYDecrypted.sav";
-        private static Pokemon_Editor_Form PokemonEditorForm = new Pokemon_Editor_Form();
-        private static Form reportForm = new Form();
-        private static DataGridView dgPokemon = new DataGridView();
+        private static readonly Pokemon_Editor_Form PokemonEditorForm = new Pokemon_Editor_Form();
+        private static readonly Form reportForm = new Form();
+        private static readonly DataGridView dgPokemon = new DataGridView();
         private static readonly Color SelectionColor = Color.Wheat;
         private readonly BindingSource _boxesBindingSource = new BindingSource();
         private readonly BindingSource _pokemonBindingSource = new BindingSource();
@@ -30,12 +26,9 @@ namespace PKMDS_Save_Editor
         private ISave _sav;
         private bool savLoaded;
 
-        public PC_Storage_System_Form()
-        {
-            InitializeComponent();
-        }
+        public PC_Storage_System_Form() => InitializeComponent();
 
-        private List<PictureBox> pbSlots = new List<PictureBox>();
+        private readonly List<PictureBox> pbSlots = new List<PictureBox>();
 
         private void PC_Storage_System_Load(object sender, EventArgs e)
         {
@@ -68,23 +61,29 @@ namespace PKMDS_Save_Editor
             SetReportForm();
         }
 
-        private void slot_MouseLeave(object sender, EventArgs e)
-        {
-            ((PictureBox)sender).BackColor = SystemColors.Control;
-        }
+        private void slot_MouseLeave(object sender, EventArgs e) => ((PictureBox)sender).BackColor = SystemColors.Control;
 
         private void slot_MouseEnter(object sender, EventArgs e)
         {
             if (savLoaded)
+            {
                 ((PictureBox)sender).BackColor = SelectionColor;
+            }
         }
 
         private void slot_DoubleClick(object sender, EventArgs e)
         {
-            int slot;
-            if (!int.TryParse(((PictureBox)sender).Tag.ToString(), out slot)) return;
+            if (!int.TryParse(((PictureBox)sender).Tag.ToString(), out var slot))
+            {
+                return;
+            }
+
             var pokemon = (Pokemon)_pokemonBindingSource[slot];
-            if (pokemon.Species == Species.NoSpecies) return;
+            if (pokemon.Species == Species.NoSpecies)
+            {
+                return;
+            }
+
             OpenPokemonEditor(pokemon);
             RefreshBoxSlots(slot);
         }
@@ -352,8 +351,11 @@ namespace PKMDS_Save_Editor
 
         private void dgPokemon_CellMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
         {
-            var pokemons = dgPokemon.DataSource as Pokemon[];
-            if (pokemons == null) return;
+            if (!(dgPokemon.DataSource is Pokemon[] pokemons))
+            {
+                return;
+            }
+
             var pokemon = pokemons[e.RowIndex];
             OpenPokemonEditor(pokemon);
         }
@@ -362,9 +364,12 @@ namespace PKMDS_Save_Editor
         {
             e.Control.KeyPress -= NumericColumn_KeyPress;
             if (dgPokemon.Columns[dgPokemon.CurrentCell.ColumnIndex].Tag == null ||
-                dgPokemon.Columns[dgPokemon.CurrentCell.ColumnIndex].Tag.ToString() != "numeric") return;
-            var tb = e.Control as TextBox;
-            if (tb != null)
+                dgPokemon.Columns[dgPokemon.CurrentCell.ColumnIndex].Tag.ToString() != "numeric")
+            {
+                return;
+            }
+
+            if (e.Control is TextBox tb)
             {
                 tb.KeyPress += NumericColumn_KeyPress;
             }
@@ -378,15 +383,14 @@ namespace PKMDS_Save_Editor
             }
         }
 
-        private void ReportForm_Load(object sender, EventArgs e)
-        {
-            dgPokemon.AutoResizeColumns(DataGridViewAutoSizeColumnsMode.DisplayedCells);
-        }
+        private void ReportForm_Load(object sender, EventArgs e) => dgPokemon.AutoResizeColumns(DataGridViewAutoSizeColumnsMode.DisplayedCells);
 
         private void DgPokemon_DataError(object sender, DataGridViewDataErrorEventArgs e)
         {
             if (e.Exception != null)
+            {
                 e.Cancel = MessageBox.Show(e.Exception.Message, "Data Error", MessageBoxButtons.RetryCancel, MessageBoxIcon.Error) != DialogResult.Cancel;
+            }
         }
 
         private void ReportForm_FormClosing(object sender, FormClosingEventArgs e)
@@ -416,7 +420,11 @@ namespace PKMDS_Save_Editor
 
         private void comboBoxes_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (comboBoxes.SelectedIndex == -1) return;
+            if (comboBoxes.SelectedIndex == -1)
+            {
+                return;
+            }
+
             try
             {
                 _boxesCurrencyManager.Position = comboBoxes.SelectedIndex;
@@ -450,10 +458,7 @@ namespace PKMDS_Save_Editor
             }
         }
 
-        private void viewAllPokemonToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            reportForm.ShowDialog();
-        }
+        private void viewAllPokemonToolStripMenuItem_Click(object sender, EventArgs e) => reportForm.ShowDialog();
 
         private void sortPokémonToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -484,7 +489,11 @@ namespace PKMDS_Save_Editor
 
         private void textBoxName_Validating(object sender, CancelEventArgs e)
         {
-            if (textBoxName.Text != string.Empty) return;
+            if (textBoxName.Text != string.Empty)
+            {
+                return;
+            }
+
             MessageBox.Show("Cannot have an empty box name.", "Box Name", MessageBoxButtons.OK, MessageBoxIcon.Error);
             textBoxName.Text = "Box";
             textBoxName.SelectAll();
@@ -509,9 +518,6 @@ namespace PKMDS_Save_Editor
             }
         }
 
-        private void writeSaveFileToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            WriteSave(xysavfile);
-        }
+        private void writeSaveFileToolStripMenuItem_Click(object sender, EventArgs e) => WriteSave(xysavfile);
     }
 }

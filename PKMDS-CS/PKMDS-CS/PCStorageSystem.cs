@@ -1,10 +1,6 @@
-﻿#region Using
-
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
-
-#endregion Using
 
 namespace PKMDS_CS
 {
@@ -1051,23 +1047,23 @@ namespace PKMDS_CS
 
         public string Name
         {
-            get
-            {
-                return name;
-            }
+            get => name;
             set
             {
                 if (value == string.Empty)
+                {
                     throw new Exception("Cannot have an empty box name.");
+                }
+
                 if (value.Length > 17)
+                {
                     value = value.Substring(0, 17);
+                }
+
                 name = value;
             }
         }
 
-        public override string ToString()
-        {
-            return Name;
-        }
+        public override string ToString() => Name;
     }
 }

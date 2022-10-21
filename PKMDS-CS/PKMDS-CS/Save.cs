@@ -44,38 +44,20 @@ namespace PKMDS_CS
         [DisplayName(@"Current Box")]
         public byte CurrentBox
         {
-            get
-            {
-                return currentbox;
-            }
-            set
-            {
-                currentbox = value;
-            }
+            get => currentbox;
+            set => currentbox = value;
         }
 
         public PCStorageSystem PCStorageSystem
         {
-            get
-            {
-                return pcstoragesystem;
-            }
-            set
-            {
-                pcstoragesystem = value;
-            }
+            get => pcstoragesystem;
+            set => pcstoragesystem = value;
         }
 
         public PCStorageBoxNames PCStorageBoxNames
         {
-            get
-            {
-                return pcstorageboxnames;
-            }
-            set
-            {
-                pcstorageboxnames = value;
-            }
+            get => pcstorageboxnames;
+            set => pcstorageboxnames = value;
         }
     }
 
@@ -98,38 +80,20 @@ namespace PKMDS_CS
         [DisplayName(@"Current Box")]
         public byte CurrentBox
         {
-            get
-            {
-                return currentbox;
-            }
-            set
-            {
-                currentbox = value;
-            }
+            get => currentbox;
+            set => currentbox = value;
         }
 
         public PCStorageSystem PCStorageSystem
         {
-            get
-            {
-                return pcstoragesystem;
-            }
-            set
-            {
-                pcstoragesystem = value;
-            }
+            get => pcstoragesystem;
+            set => pcstoragesystem = value;
         }
 
         public PCStorageBoxNames PCStorageBoxNames
         {
-            get
-            {
-                return pcstorageboxnames;
-            }
-            set
-            {
-                pcstorageboxnames = value;
-            }
+            get => pcstorageboxnames;
+            set => pcstorageboxnames = value;
         }
     }
 }

@@ -19,10 +19,7 @@ namespace PKMDS_CS
             }
         }
 
-        public static Image GetTypeImage(Types type)
-        {
-            return GetImageFromResource(string.Format("type_{0}", (int)type));
-        }
+        public static Image GetTypeImage(Types type) => GetImageFromResource(string.Format("type_{0}", (int)type));
 
         public static Image GetMarkingImage(Markings mark, bool marked)
         {
@@ -47,7 +44,11 @@ namespace PKMDS_CS
 
         public static Image GetItemImage(ushort item)
         {
-            if (item == 0) return null;
+            if (item == 0)
+            {
+                return null;
+            }
+
             try
             {
                 return
@@ -91,7 +92,10 @@ namespace PKMDS_CS
                 }
             }
             if (gender != Genders.Female)
+            {
                 return GetImageFromResource(string.Format("_{0}{1}", species, formidstr.Replace("-", "_")));
+            }
+
             if (
                 species == (ushort)Species.Unfezant ||
                 species == (ushort)Species.Frillish ||
@@ -99,7 +103,10 @@ namespace PKMDS_CS
                 species == (ushort)Species.Pyroar ||
                 species == (ushort)Species.Meowstic
                 )
+            {
                 formidstr = "_f";
+            }
+
             return GetImageFromResource(string.Format("_{0}{1}", species, formidstr.Replace("-", "_")));
         }
     }

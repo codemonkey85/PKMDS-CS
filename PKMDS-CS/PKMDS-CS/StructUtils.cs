@@ -1,9 +1,5 @@
-﻿#region Using
-
-using System.IO;
+﻿using System.IO;
 using System.Runtime.InteropServices;
-
-#endregion Using
 
 namespace PKMDS_CS
 {
@@ -13,7 +9,11 @@ namespace PKMDS_CS
         {
             var anyType = typeof(TType);
             var rawsize = Marshal.SizeOf(anyType);
-            if (rawsize > rawData.Length) return default(TType);
+            if (rawsize > rawData.Length)
+            {
+                return default;
+            }
+
             var buffer = Marshal.AllocHGlobal(rawsize);
             Marshal.Copy(rawData, position, buffer, rawsize);
             var retobj = Marshal.PtrToStructure(buffer, anyType);
@@ -23,7 +23,11 @@ namespace PKMDS_CS
 
         public static TType RawDeserialize<TType>(string fileName, int position = 0)
         {
-            if (!File.Exists(fileName)) return default(TType);
+            if (!File.Exists(fileName))
+            {
+                return default;
+            }
+
             byte[] data;
             using (var fs = new FileStream(fileName, FileMode.Open, FileAccess.Read))
             {
@@ -44,7 +48,11 @@ namespace PKMDS_CS
                 return;
             }
             var data = RawSerialize(anything);
-            if (data == null) return;
+            if (data == null)
+            {
+                return;
+            }
+
             using (var fs = new FileStream(fileName, FileMode.Create, FileAccess.Write))
             {
                 using (var bw = new BinaryWriter(fs))
@@ -67,19 +75,17 @@ namespace PKMDS_CS
             return rawDatas;
         }
 
-        public static FileInfo GetTempFileInfo()
-        {
-            return new FileInfo(Path.GetTempFileName());
-        }
+        public static FileInfo GetTempFileInfo() => new FileInfo(Path.GetTempFileName());
 
-        public static FileStream GetTempFileStream(FileMode fileMode, FileAccess fileAccess)
-        {
-            return new FileStream(Path.GetTempFileName(), fileMode, fileAccess);
-        }
+        public static FileStream GetTempFileStream(FileMode fileMode, FileAccess fileAccess) => new FileStream(Path.GetTempFileName(), fileMode, fileAccess);
 
         public static void WriteObject<T>(T _object, string fileName)
         {
-            if (_object == null || !(_object is ISave)) return;
+            if (_object == null || !(_object is ISave))
+            {
+                return;
+            }
+
             RawSerialize(_object, fileName);
         }
     }
